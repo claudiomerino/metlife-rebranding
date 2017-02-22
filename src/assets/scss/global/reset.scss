@@ -1,0 +1,73 @@
+
+	*,
+	*:before,
+	*:after {
+		box-sizing: border-box;
+	}
+
+	header,
+	footer,
+	nav,
+	section,
+	article,
+	hgroup,
+	figure, {
+		display: block;
+	}
+
+	input[type="text"],
+	input[type="search"],
+	input[type="url"],
+	input[type="number"],
+	textarea {
+		-webkit-appearance: none;
+	}
+
+	img,
+	video,
+	object {
+		height: auto;
+		max-width: 100%;
+		vertical-align: top;
+	}
+
+	button,
+	input[type="checkbox"] {
+		outline: none;
+	}
+
+	ul,
+	li {
+		list-style: none;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		transition: all .2s cubic-bezier( .4,0,.2,1 );
+		text-decoration: none;
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: none;
+		}
+	}
+
+	body {
+		background-color: initial;
+		color: initial;
+		font-size: initial;
+		line-height: initial;
+	}
+
+	html {
+		font-size: initial;
+	}
+
+	figure {
+		margin: 0;
+		padding: 0;
+	}

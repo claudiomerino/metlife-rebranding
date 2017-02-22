@@ -1,0 +1,32 @@
+
+	.card {
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+		border: 0;
+		border-left: 10px solid;
+		border-right: 1px solid;
+	}
+
+	.card_container {
+		padding: 1rem;
+	}
+
+	.card-blue {
+		border-color: $primary;
+	}
+
+	.card_more {
+		margin: 10px 0;
+	}
+
+	.card-pink {
+		border-color: $pink;
+	}
+
+	.card_section {
+		padding: 1rem 0;
+	}
+
+	.card_list-item-link {
+		padding-left: 3rem;
+	}

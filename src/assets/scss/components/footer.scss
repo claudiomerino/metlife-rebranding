@@ -1,0 +1,47 @@
+
+	.footer {
+		background-color: $gray;
+		border-top: 1px solid $dark-gray;
+	}
+
+	.footer_col {
+		&:nth-of-type(2) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	.footer_container {
+		padding: 2rem 1rem;
+	}
+
+	.footer_image {
+		margin-bottom: 1rem;
+	}
+
+	.footer_info {
+		i {
+			margin-right: 6px;
+			position: relative;
+			top: 5px;
+		}
+	}
+
+	.footer_list-item {
+		margin-right: 10px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	@media screen and ( min-width: 48em ) {
+
+		.footer_col {
+			&:nth-of-type(2) {
+				margin-bottom: 0;
+			}
+		}
+
+		.footer_image {
+			margin-bottom: 0;
+		}
+	}

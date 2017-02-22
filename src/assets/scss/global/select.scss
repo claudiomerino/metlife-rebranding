@@ -1,0 +1,169 @@
+@import './color.scss';
+
+/* Default custom select styles */
+.cs-select {
+	background: #fff;
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	user-select: none;
+	vertical-align: middle;
+	width: 100%;
+	z-index: 100;
+}
+
+.cs-select:focus {
+	outline: none; /* For better accessibility add a style for this in your skin */
+}
+
+.cs-select select {
+	display: none;
+}
+
+.cs-select span {
+	color: $dark-gray-2;
+	cursor: pointer;
+	display: block;
+	overflow: hidden;
+	padding: 10px;
+	position: relative;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* Placeholder and selected option */
+.cs-select > span {
+	padding-right: 3em;
+}
+
+.cs-select > span::after,
+.cs-select .cs-selected span::after {
+	position: absolute;
+	speak: none;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.cs-select > span::after {
+	content: '\25BE';
+	right: 1em;
+}
+
+.cs-select .cs-selected span::after {
+	content: "\f062";
+	margin-left: 1em;
+}
+
+.cs-select.cs-active > span::after {
+	transform: translateY(-50%) rotate(180deg);
+}
+
+div.cs-active {
+	z-index: 200;
+}
+
+/* Options */
+.cs-select .cs-options {
+	background: #fff;
+	overflow: hidden;
+	position: absolute;
+	visibility: hidden;
+	width: 100%;
+}
+
+.cs-select.cs-active .cs-options {
+	visibility: visible;
+}
+
+.cs-select ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.cs-select ul span {
+	padding: 1em;
+}
+
+.cs-select ul li.cs-focus span {
+	background-color: #ddd;
+}
+
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+	padding-left: 1em;
+}
+
+.cs-select li.cs-optgroup > span {
+	cursor: default;
+}
+
+.cs-skin-border {
+	background: transparent;
+	font-size: 1em;
+}
+
+@media screen and (max-width: 30em) {
+	.cs-skin-border { font-size: 1em; }
+}
+
+.cs-select-error {
+	&.cs-skin-border > span {
+		background-color: $error-light;
+		border-color: $error;
+	}
+}
+
+.cs-skin-border > span {
+	border: 1px solid $gray;
+	border-color: inherit;
+	transition: background 0.2s, border-color 0.2s;
+}
+
+.cs-skin-border > span::after,
+.cs-skin-border .cs-selected span::after {
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f063";
+}
+
+.cs-skin-border ul span::after {
+	content: '';
+	opacity: 0;
+}
+
+.cs-skin-border .cs-selected span::after {
+	content: "\f00c";
+	color: #ddd9c9;
+	font-size: 1.5em;
+	opacity: 1;
+	transition: opacity 0.2s;
+}
+
+.cs-skin-border.cs-active > span {
+	background: #fff;
+	border-color: $primary;
+}
+
+.cs-skin-border .cs-options {
+	color: #2980b9;
+	font-size: 0.75em;
+	opacity: 0;
+	transition: opacity 0.2s, visibility 0s 0.2s;
+}
+
+.cs-skin-border.cs-active .cs-options {
+	opacity: 1;
+	transition: opacity 0.2s;
+}
+
+.cs-skin-border ul span {
+	padding: 1em 2em;
+	backface-visibility: hidden;
+}
+
+.cs-skin-border .cs-options li span:hover,
+.cs-skin-border li.cs-focus span {
+	background-color: $primary;
+	color: white;
+}
