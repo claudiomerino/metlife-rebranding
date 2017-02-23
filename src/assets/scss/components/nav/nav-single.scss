@@ -2,20 +2,3 @@
 	.single-nav {
 		padding: 2rem 1rem;
 	}
-
-	.single-nav_container {
-		position: relative;
-	}
-
-	.single-nav_col {
-		&:first-of-type {
-			left: 0;
-			position: absolute;
-		}
-	}
-
-	.single-nav_link {
-		i {
-			font-size: 27px;
-		}
-	}

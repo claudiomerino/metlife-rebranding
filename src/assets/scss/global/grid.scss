@@ -10,7 +10,7 @@
   }
 
   .u-section {
-    padding: 1.6rem;
+    padding: 3rem 0;
   }
 
   .u-row {
@@ -19,9 +19,6 @@
     flex: 0 1 auto;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 .5rem;
-    margin-right: -.5rem;
-    margin-left: -.5rem;
     &.reverse {
       flex-direction: row-reverse;
     }
@@ -349,8 +346,10 @@
       max-width: 1200px;
     }
 
-    .u-section {
-      padding: 3rem 0;
+    .u-row {
+      padding: 0 .5rem;
+      margin-right: -.5rem;
+      margin-left: -.5rem;
     }
 
     .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {

@@ -6,25 +6,38 @@
 	}
 
 	.login_content {
+		margin: 0 auto;
+		max-width: 400px;
 		width: 100%;
 	}
 
-	.login_col {
-		&:first-of-type {
-			padding-right: 0;
-			position: relative;
-			&:after {
-				background-color: rgba( 0, 97, 160, .7 );
-				bottom: 0;
-				content: "";
-				position: absolute;
-				right: 0;
-				top: 0;
-				width: 100px;
+	@media screen and ( min-width: 62em ) {
+
+		.login_col {
+			&:first-of-type {
+				padding-right: 0;
+				position: relative;
+				&:after {
+					background-color: rgba( 0, 97, 160, .7 );
+					bottom: 0;
+					content: "";
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 100px;
+				}
+			}
+			&:nth-of-type(2) {
+				border-right: 100px solid $secondary;
+				padding: 0 3rem;
 			}
 		}
-		&:nth-of-type(2) {
-			border-right: 100px solid $secondary;
-			padding: 0 3rem;
+
+		.login_image {
+			img {
+				height: 100%;
+				object-fit: cover;
+			}
 		}
+
 	}
