@@ -2,7 +2,7 @@
   @import './color.scss';
 
   .u-space {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .u-divider {
@@ -10,7 +10,7 @@
   }
 
   .u-section {
-    padding: 3rem 0;
+    padding: 1.6rem;
   }
 
   .u-row {
@@ -19,6 +19,9 @@
     flex: 0 1 auto;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 .5rem;
+    margin-right: -.5rem;
+    margin-left: -.5rem;
     &.reverse {
       flex-direction: row-reverse;
     }
@@ -346,10 +349,8 @@
       max-width: 1200px;
     }
 
-    .u-row {
-      padding: 0 .5rem;
-      margin-right: -.5rem;
-      margin-left: -.5rem;
+    .u-section {
+      padding: 3rem 0;
     }
 
     .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {

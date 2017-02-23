@@ -3,22 +3,21 @@
 
 	.input {
 		display: inline-block;
+		max-width: 350px;
 		position: relative;
 		vertical-align: top;
-		width: calc(100%);
+		width: calc(100% - 2em);
 		z-index: 1;
 	}
 
 	.input__field {
 		-webkit-appearance: none; /* for box shadows to show on iOS */
-		background: #f0f0f0;
-		border-radius: 0;
-		border: none;
-		color: #aaa;
+		border: 1px;
+		border-radius: 3px;
+		border-color: $medium-gray;
+		color: $gray;
 		display: block;
 		float: right;
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight: bold;
 		padding: 0.8em;
 		position: relative;
 		width: 60%;
@@ -26,14 +25,15 @@
 
 	.input__field:focus {
 		outline: none;
+		border-color: $primary;
+		border-radius: 3px;
 	}
 
 	.input__label {
-		color: #6a7989;
+		color: $dark-gray-2;
 		display: inline-block;
 		float: right;
-		font-size: 70.25%;
-		font-weight: bold;
+		font-weight: 400;
 		padding: 0 1em;
 		user-select: none;
 		width: 40%;
@@ -51,10 +51,9 @@
 	}
 
 	.input__field--ichiro {
-		background: #f0f0f0;
-		color: #7F8994;
+		background: $black-05;
+		color: $dark-gray;
 		display: block;
-		height: calc(100% - 8px);
 		left: 4px;
 		opacity: 0;
 		padding: 0 0.55em;
@@ -71,6 +70,7 @@
 		cursor: text;
 		text-align: left;
 		width: 100%;
+		border-radius: 3px;
 	}
 
 	.input__label--ichiro::before {
@@ -88,6 +88,7 @@
 	.input__label-content--ichiro {
 		transform-origin: 0% 50%;
 		transition: transform 0.3s;
+		border: none;
 	}
 
 	.input__field--ichiro:focus,

@@ -2,14 +2,15 @@
 
 /* Default custom select styles */
 .cs-select {
-	background: #fff;
 	display: inline-block;
+	vertical-align: middle;
 	position: relative;
 	text-align: left;
-	user-select: none;
-	vertical-align: middle;
-	width: 100%;
+	background: #fff;
 	z-index: 100;
+	width: 100%;
+	max-width: 500px;
+	user-select: none;
 }
 
 .cs-select:focus {
@@ -21,11 +22,10 @@
 }
 
 .cs-select span {
-	color: $dark-gray-2;
 	cursor: pointer;
 	display: block;
 	overflow: hidden;
-	padding: 10px;
+	padding: 1em;
 	position: relative;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -38,8 +38,8 @@
 
 .cs-select > span::after,
 .cs-select .cs-selected span::after {
-	position: absolute;
 	speak: none;
+	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -64,11 +64,11 @@ div.cs-active {
 
 /* Options */
 .cs-select .cs-options {
-	background: #fff;
-	overflow: hidden;
 	position: absolute;
-	visibility: hidden;
+	overflow: hidden;
 	width: 100%;
+	background: $white;
+	visibility: hidden;
 }
 
 .cs-select.cs-active .cs-options {
@@ -116,8 +116,8 @@ div.cs-active {
 }
 
 .cs-skin-border > span {
-	border: 1px solid $gray;
-	border-color: inherit;
+	border: 1px solid $medium-gray;
+	border-radius: 3px;
 	transition: background 0.2s, border-color 0.2s;
 }
 
@@ -146,8 +146,8 @@ div.cs-active {
 }
 
 .cs-skin-border .cs-options {
-	color: #2980b9;
-	font-size: 0.75em;
+	color: $dark-gray-2;
+	font-size: 16px;
 	opacity: 0;
 	transition: opacity 0.2s, visibility 0s 0.2s;
 }
@@ -155,13 +155,14 @@ div.cs-active {
 .cs-skin-border.cs-active .cs-options {
 	opacity: 1;
 	transition: opacity 0.2s;
+	margin-top: -2px;
 }
 
 .cs-skin-border ul span {
-	padding: 1em 2em;
+	padding: 0.7em 1.5em;
 	backface-visibility: hidden;
+	border: 1px solid $primary;
 }
-
 .cs-skin-border .cs-options li span:hover,
 .cs-skin-border li.cs-focus span {
 	background-color: $primary;
