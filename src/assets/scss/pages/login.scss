@@ -1,5 +1,5 @@
 
-	@import './../../global/color.scss';
+	@import './../global/color.scss';
 
 	.login_button {
 		margin-bottom: 0;
@@ -9,6 +9,16 @@
 		margin: 0 auto;
 		max-width: 400px;
 		width: 100%;
+	}
+
+	.login_list {
+		padding-left: 1rem;
+	}
+
+	.login_list-item {
+		p {
+			margin-bottom: 4px;
+		}
 	}
 
 	.login_support {
