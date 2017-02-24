@@ -1,6 +1,11 @@
 
 	@import 'color.scss';
 
+	[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea {
+		border: 1px solid !important;
+		box-shadow: none !important;
+	}
+
 	.input {
 		display: inline-block;
 		max-width: 350px;
@@ -24,9 +29,10 @@
 	}
 
 	.input__field:focus {
-		outline: none;
+		background-color: $black-05;
 		border-color: $primary;
 		border-radius: 3px;
+		outline: none;
 	}
 
 	.input__label {
@@ -61,7 +67,7 @@
 		top: 4px;
 		transform-origin: 50% 100%;
 		transform: scale3d(1, 0, 1);
-		transition: opacity 0.3s, transform 0.3s;
+		transition: opacity 0.3s, transform 0.3s !important;
 		width: calc(100% - 8px);
 		z-index: 100;
 	}
