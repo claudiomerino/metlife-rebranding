@@ -158,10 +158,15 @@ div.cs-active {
 	margin-top: -2px;
 }
 
+.cs-skin-border ul li:last-of-type {
+	border-bottom: 1px solid $primary;
+}
+
 .cs-skin-border ul span {
 	padding: 0.7em 1.5em;
 	backface-visibility: hidden;
 	border: 1px solid $primary;
+	border-bottom: 0;
 }
 .cs-skin-border .cs-options li span:hover,
 .cs-skin-border li.cs-focus span {
