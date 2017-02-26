@@ -1,18 +1,16 @@
 
 	@import 'color.scss';
 
-	[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea {
-		border: 1px solid !important;
-		box-shadow: none !important;
-	}
-
-	.input {
+	input {
 		display: inline-block;
-		max-width: 350px;
 		position: relative;
 		vertical-align: top;
-		width: calc(100% - 2em);
+		width: 100%;
+		padding: 0.7em 1em;
 		z-index: 1;
+		border: 1px solid $medium-gray;
+		border-radius: 3px;
+		margin-top: 30px;
 	}
 
 	.input__field {
@@ -23,16 +21,14 @@
 		color: $gray;
 		display: block;
 		float: right;
-		padding: 0.8em;
 		position: relative;
 		width: 60%;
 	}
 
 	.input__field:focus {
-		background-color: $black-05;
+		outline: none;
 		border-color: $primary;
 		border-radius: 3px;
-		outline: none;
 	}
 
 	.input__label {
@@ -57,7 +53,7 @@
 	}
 
 	.input__field--ichiro {
-		background: $black-05;
+		background: $bg-gray;
 		color: $dark-gray;
 		display: block;
 		left: 4px;
@@ -67,7 +63,7 @@
 		top: 4px;
 		transform-origin: 50% 100%;
 		transform: scale3d(1, 0, 1);
-		transition: opacity 0.3s, transform 0.3s !important;
+		transition: opacity 0.3s, transform 0.3s;
 		width: calc(100% - 8px);
 		z-index: 100;
 	}
