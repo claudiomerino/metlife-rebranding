@@ -14,6 +14,10 @@
 		border-color: $primary;
 	}
 
+	.card_icon {
+		font-size: 38px;
+	}
+
 	.card_more {
 		margin: 10px 0;
 	}
@@ -24,8 +28,33 @@
 
 	.card_section {
 		padding: 1rem 0;
+		&:first-of-type {
+			padding-top: 0;
+		}
 	}
 
 	.card_list-item-link {
 		padding-left: 3rem;
+	}
+
+	.openContent {
+		&.is-open {
+			i {
+				transform: rotate( 180deg );
+			}
+		}
+	}
+
+	.toggleContent {
+		height: 0;
+		opacity: 0;
+		padding: 0;
+		transition: all .2s cubic-bezier( .4, 0, .2, 1 );
+		visibility: hidden;
+		&.is-open {
+			height: auto;
+			opacity: 1;
+			padding: 1rem 0;
+			visibility: visible;
+		}
 	}

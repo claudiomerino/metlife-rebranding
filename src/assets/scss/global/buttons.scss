@@ -10,8 +10,9 @@
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 1;
+		margin-bottom: 0;
 		outline: none;
-		padding: 10px 30px;
+		padding: 1em 30px;
 		text-transform: uppercase;
 		transition: all .2s cubic-bezier( .4, 0, .2, 1 );
 	}
@@ -70,9 +71,7 @@
 	// Sizes
 
 	.button-full {
-		margin-top: 30px;
 		display: block;
-		padding: 1em 0;
 		width: 100%;
 	}
 

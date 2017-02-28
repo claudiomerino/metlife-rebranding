@@ -2,7 +2,7 @@
 	@import './../global/color.scss';
 
 	.login {
-		background-color: $bg-gray;
+		background-color: $white-light;
 		padding-top: 1rem;
 		padding-bottom: 3rem;
 	}
@@ -12,11 +12,10 @@
 	}
 
 	.login_content {
-		background-color: #FFF;
-		margin: 0;
+		background-color: white;
+		margin: 0 auto;
 		max-width: 400px;
-		width: 100%;
-		padding: 2.5rem 1rem;	
+		padding: 2.5rem 1.6rem;
 	}
 
 	.login_list {
@@ -57,7 +56,6 @@
 		margin-top: 38px;
 	}
 
-
 	@media screen and ( min-width: 62em ) {
 
 		.login_col {
@@ -84,7 +82,7 @@
 			img {
 				height: 100%;
 				object-fit: cover;
-				margin-left: -1rem;
+				width: 100%;
 			}
 		}
 

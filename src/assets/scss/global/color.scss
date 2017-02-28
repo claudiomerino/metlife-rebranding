@@ -24,10 +24,11 @@
   $dark-gray: #666666;
   $medium-gray: #BBBBBB;
   $gray: #DEDEDE;
-  $bg-gray: #F2F2F2;
+  $black-05: #F4F4F4;
   $white: #FFF;
   $green: #b7dd58;
   $pink: #db0a5b;
+  $white-light: #f2f2f2;
 
 // Utility
   $success: #7A9816;
@@ -46,4 +47,8 @@
 
   .black {
     color: $black;
+  }
+
+  .primary {
+    color: $primary;
   }

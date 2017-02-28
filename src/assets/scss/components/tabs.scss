@@ -1,0 +1,47 @@
+
+	@import './../global/color.scss';
+
+	.tabs {
+		border: 0;
+		border-bottom: 1px solid $primary;
+		&:before {
+			display: none;
+		}
+	}
+
+	.tabs-content {
+		border-bottom-left-radius: 3px;
+		border-bottom-right-radius: 3px;
+		border: 0;
+	}
+
+	.tabs-subtitle {
+		border-bottom: 2px solid $primary;
+		margin-bottom: 1rem;
+		padding: 1rem 0;
+	}
+
+	.tabs-title {
+		a {
+			border-bottom: 4px solid white;
+			color: $dark-gray;
+		}
+
+		& > a {
+			padding: 20px 1.5rem 16px;
+		}
+
+		&.is-active {
+			a {
+				background-color: white;
+				border-bottom: 4px solid $primary;
+				color: $primary;
+				font-weight: bolder;
+			}
+		}
+	}
+
+	.tabs_wrap_container {
+		border: 1px solid $dark-gray;
+		padding: 0 10px;
+	}

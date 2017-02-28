@@ -11,8 +11,6 @@
 /*jshint browser: true, strict: true, undef: true */
 /*global define: false */
 
-console.log( 'classie work' );
-
 ( function( window ) {
 
 'use strict';
