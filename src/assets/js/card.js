@@ -7,13 +7,13 @@
 		e.stopPropagation();
 
 
-		let $openContentData = $( '.openContent' ).data( 'open-content' );
+		let $openContentData = $( e.currentTarget ).data( 'open-content' );
 		let $toggleContentData = $( '.toggleContent[data-toggle-content=' + $openContentData + ']' );
-		let $openContentText = $( '.openContentText' );
+		let $openContentText = $( e.currentTarget ).find( 'span' );
 
 		$toggleContentData.toggleClass( 'is-open' );
 		$openContentText.toggleClass( 'is-open' );
-		$openContent.toggleClass( 'is-open' );
+		$( e.currentTarget ).toggleClass( 'is-open' );
 
 		if( $openContentText.hasClass( 'is-open' ) ) {
 			$openContentText.html( 'Mostrar menos información' );

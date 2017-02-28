@@ -1,10 +1,14 @@
 
 	.nav {
 		background-color: $primary-accent;
-		padding: 2rem 1.5rem;
-		
+		padding: 1rem 1.5rem;
 	}
 
 	.dropdown.menu>li.is-dropdown-submenu-parent>a:after {
 		border-color: white transparent transparent !important;
+	}
+
+	.menu > li > a {
+		font-size: 14px;
+		padding: 0.7rem 0;
 	}

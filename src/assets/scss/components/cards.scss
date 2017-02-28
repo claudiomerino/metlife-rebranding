@@ -12,6 +12,9 @@
 
 	.card-blue {
 		border-color: $primary;
+		.card_icon {
+			color: $primary;
+		}
 	}
 
 	.card_icon {
@@ -24,6 +27,9 @@
 
 	.card-pink {
 		border-color: $pink;
+		.card_icon {
+			color: $pink;
+		}
 	}
 
 	.card_section {
