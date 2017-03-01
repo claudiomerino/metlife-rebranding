@@ -3,9 +3,12 @@
 
 	.login {
 		background-color: $white-light;
-		padding-top: 1rem;
+		padding-top: 4px;
 		padding-bottom: 3rem;
 	}
+
+	.login_container {
+		min-height: 500px;	}
 
 	.login_button {
 		margin-bottom: 0;
@@ -15,12 +18,12 @@
 		background-color: white;
 		margin: 0 auto;
 		max-width: 400px;
-		padding: 2.5rem 1.6rem;
+		padding: 0.5rem 1.6rem;
 	}
 
 	.login_list {
-		padding-left: 1rem;
-		padding-bottom: 1rem;
+		// padding-left: 1rem;
+		// padding-bottom: 1rem;
 	}
 
 	.login_list-item {
@@ -30,7 +33,7 @@
 	}
 
 	.login_support {
-		margin-top: 1rem;
+		margin-top: 2rem;
 	}
 
 	.login_title {
@@ -43,6 +46,18 @@
 		font-size: 1rem;
 		text-align: center;
 		line-height: 130%;
+	}
+	.login_image {
+		background-color: $secondary;
+	}
+	.recover_form {
+		padding: 0.5rem 0;
+	}
+	.recover_form p {
+		margin-top: 0.2rem;
+	}
+	.recover_form .button {
+		margin-top: 1rem;
 	}
 
 	@media screen and ( min-width: 62em ) {
