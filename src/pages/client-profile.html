@@ -1,0 +1,41 @@
+
+	{{> nav-off-canvas}}
+
+  <div class="off-canvas-content" data-off-canvas-content>
+
+		{{> nav-sub}}
+		{{> nav-main}}
+
+		<section class="client-profile bg-white-light">
+			<div class="client-profile_container u-container">
+				<div class="breadcrumb client-profile_breadcrumb">
+					<ul class="u-row u-row-xs-full middle-xs">
+						<li>
+							<a href="#" class="f-link f-small">Inicio</a>
+						</li>
+						<li>
+							<a href="/" class="f-link f-small">/ Mi Cuenta</a>
+						</li>
+						<li>
+							<p class="f-small">/ Perfil de Cliente</p>
+						</li>
+					</ul>
+				</div>
+
+				<section class="client-profile_heading center-xs u-space">
+					<h2 class="client-profile_title">Perfil de Cliente</h2>
+					<p class="client-profile_desc"><strong>Daniel Llanos</strong></p>
+				</section>
+
+				<section class="client-profile_cards">
+					{{> client-profile-cards}}
+				</section>
+
+				<div class="client-profile_info u-section center-xs">
+					<p class="client-profile_info_desc f-tiny">Los datos e información contenido corresponde a aquella proporcionada por el cliente contratante al momento de la contratación del seguro y otorgamiento del crédito según corresponda. El cliente será responsable de comunicar a la Compañía Aseguradora cualquier modificación de sus datos personales, información de contacto u otro.</p>
+				</div>
+
+			</div>
+		</section>
+
+	</div>
