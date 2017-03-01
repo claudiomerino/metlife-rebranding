@@ -17,16 +17,17 @@
 		transition: all .2s cubic-bezier( .4, 0, .2, 1 );
 	}
 
-	.button-disabled {
-		opacity: .7;
-	}
-
 	.button-primary {
 		background-color: $primary-accent;
 		color: $white;
 		&:hover {
 			background-color: $primary;
 			text-decoration: underline;
+		}
+		&.button-disabled {
+			&:hover {
+				background-color: $primary-accent;
+			}
 		}
 	}
 
@@ -74,6 +75,14 @@
 		&:focus,
 		&:active {
 			background-color: transparent;
+		}
+	}
+
+	.button-disabled {
+		opacity: .4;
+		&:hover {
+			cursor: default;
+			text-decoration: none;
 		}
 	}
 

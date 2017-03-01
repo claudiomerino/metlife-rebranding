@@ -12,7 +12,9 @@
 				<div class="col-xs-12 col-md-4 col-xs-full">
 					<div class="login_content u-section">
 						<h3 class="login_title u-space center-xs"><strong>Ingreso para clientes</strong></h3>
-						<form class="login_form" action="" method="">
+
+
+						<form class="login_form" id="loginForm" action="products.html" data-abide novalidate>
 							<section class="u-select u-space">
 								<select class="cs-select cs-skin-border">
 									<option value="personal" selected>Personas</option>
@@ -24,19 +26,21 @@
 
 							<section class="u-field u-space">
 								<span class="input input--ichiro">
-									<input class="input__field input__field--ichiro" type="text" id="loginRut" />
+									<input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="loginRut" required />
 									<label class="input__label input__label--ichiro" for="loginRut">
 										<span class="input__label-content input__label-content--ichiro">Ingrese su Rut</span>
 									</label>
+									<p class="form-error f-tiny">No tenemos registrado este RUT.<br/>Por favor, revisa que esté correcto.</p>
 								</span>
 							</section>
 
 							<section class="u-field u-space">
 								<span class="input input--ichiro">
-									<input class="input__field input__field--ichiro" type="password" id="loginPass" />
+									<input class="input__field input__field--ichiro" data-live-validate="true" type="password" id="loginPass" required />
 									<label class="input__label input__label--ichiro" for="loginPass">
 										<span class="input__label-content input__label-content--ichiro">Ingrese su clave</span>
 									</label>
+									<p class="form-error f-tiny">La clave ingresada es incorrecta.<br/>Por favor, vuelve a ingresarla.</p>
 								</span>
 							</section>
 
@@ -45,10 +49,12 @@
 									<p><a href="recover-pass.html">¿Olvidaste tu clave?</a></p>
 								</div>
 								<div class="col-xs-12 col-xs-full end-xs">
-									<a href="products.html" class="button button-full button-primary button-disabled">Ingresar</a>
+									<input type="submit" id="loginSubmit" class="button button-full button-primary button-disabled" value="Ingresar">
 								</div>
 							</section>
 						</form>
+
+
 					</div>
 				</div>
 			</div>
