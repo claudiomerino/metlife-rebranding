@@ -115,7 +115,7 @@
 
 	.input__field--ichiro:focus + .input__label--ichiro .input__label-content--ichiro,
 	.input--filled .input__label-content--ichiro {
-		transform: translate3d(0, -2em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
+		transform: translate3d(-1rem, -2em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
 	}
 
 	.input--error .input__label {
