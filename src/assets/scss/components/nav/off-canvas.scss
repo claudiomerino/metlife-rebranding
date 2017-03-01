@@ -1,0 +1,40 @@
+
+	@import './../../global/color.scss';
+
+	.js-off-canvas-overlay {
+		background-color: rgba( 0, 0, 0, .5 );
+		z-index: 103;
+	}
+
+	.off-canvas.is-transition-overlap {
+		z-index: 110;
+	}
+
+	.off-canvas {
+		background-color: $white-light-2;
+		padding: 20px;
+	}
+
+	.off-canvas_close {
+		cursor: pointer;
+		left: 20px;
+		position: absolute;
+		top: 20px;
+		i {
+			color: $primary-accent;
+			font-size: 32px;
+		}
+	}
+
+	.off-canvas_menu_item {
+		padding: 8px 0;
+		a {
+			font-size: 14px;
+			font-weight: bolder;
+		}
+	}
+
+	.position-left {
+		transform: translateX(-300px);
+		width: 300px;
+	}

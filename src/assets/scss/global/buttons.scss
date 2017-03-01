@@ -64,7 +64,12 @@
 		line-height: 1.2;
 		padding: 0;
 		&:hover {
+			background-color: transparent;
 			color: $link-hover;
+		}
+		&:focus,
+		&:active {
+			background-color: transparent;
 		}
 	}
 
