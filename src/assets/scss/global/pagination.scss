@@ -1,0 +1,18 @@
+
+	.pagination {
+		button {
+			padding: 1rem 30px;
+		}
+	}
+
+	.pagination_numbers {
+		padding: 10px 1rem;
+	}
+
+	.pagination_numbers_item {
+		margin-right: 10px;
+		&:last-of-type {
+			margin-left: 10px;
+			margin-right: 0;
+		}
+	}

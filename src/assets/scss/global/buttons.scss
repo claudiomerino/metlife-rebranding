@@ -61,6 +61,15 @@
 		}
 	}
 
+	.button-transparent {
+		background-color: white;
+		border: 1px solid $white-light;
+		&:hover {
+			background-color: $white-light-2;
+			color: $primary;
+		}
+	}
+
 
 	.button-link {
 		background-color: transparent;
