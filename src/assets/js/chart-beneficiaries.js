@@ -1,5 +1,5 @@
 
-	let ctx = document.getElementById("myChart");
+	let ctx = document.getElementById("chartBeneficiaries");
 
 	let data = {
 		labels: [
