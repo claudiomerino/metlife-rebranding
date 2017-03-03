@@ -14,23 +14,48 @@
 						<h3 class="u-space center-xs"><strong>Recupera tu clave</strong></h3>
 						<p class="login_support f-small text-center">Si tienes un correo electrónico registrado con nosotros, ingresa tu RUT en el recuadro, presiona "Recuperar clave" y te la enviaremos de forma inmediata a tu casilla registrada.</p>
 
-						<form class="recover_form" action="" method="">
+						<form class="recover_form" id="recoverPassForm" action="" method="" data-abide novalidate>
+							<div class="loading hide-xs" id="loadingRecoverPass">
+								{{> loading-1}}
+								<p class="loading_message center-xs"><strong>Estamos procesando su solicitud</strong></p>
+							</div>
 
-							<section class="u-field u-space">
-								<span class="input input--ichiro">
-									<input class="input__field input__field--ichiro" type="text" id="recoverRut" />
-									<label class="input__label input__label--ichiro" for="recoverRut">
-										<span class="input__label-content input__label-content--ichiro">Ingrese su Rut</span>
-									</label>
-								</span>
-							</section>
+							<div class="alert alert-success u-space hide-xs" id="successRecoverPass">
+								<p class="alert_desc center-xs">
+									Estimado cliente:<br/>
+									Su clave ha sido enviada al correo <br/>
+									<strong>xxxxxxx@sucorreo.com,</strong> que se encuentra<br/>
+									registrado en nuestros sistemas.<br/>
+									Si necesita ayuda o actualizar sus datos, por<br/>
+									favor contáctenos al <strong>600 390 3000.</strong>
+								</p>
+							</div>
 
-							<div class="u-row middle-xs">
-								<div class="col-xs-4 recover_link">
-									<a href="login.html" class="f-link">Cancelar</a>
-								</div>
-								<div class="col-xs-8 end-xs">
-									<a href="change-pass.html" class="recover_button button button-primary">Recuperar clave</a>
+							<div class="alert alert-error hide-xs" id="errorRecoverPass">
+								<p class="alert_desc center-xs">
+									No se pudo obtener su Email. Por favor<br/>
+									comuníquese al <strong>600 390 3000.</strong>
+								</p>
+							</div>
+
+							<div class="login_toggle_content" id="toggleRecoverPass">
+								<section class="u-field u-space">
+									<span class="input input--ichiro">
+										<input class="input__field input__field--ichiro" type="text" id="recoverRut"  data-live-validate="true" required />
+										<label class="input__label input__label--ichiro" for="recoverRut">
+											<span class="input__label-content input__label-content--ichiro">Ingrese su Rut</span>
+										</label>
+										<p class="form-error f-tiny">No tenemos registrado este RUT.<br/>Por favor, revisa que esté correcto.</p>
+									</span>
+								</section>
+
+								<div class="u-row middle-xs">
+									<div class="col-xs-4 recover_link">
+										<a href="login.html" class="f-link">Cancelar</a>
+									</div>
+									<div class="col-xs-8 end-xs">
+										<input type="submit" id="submitRecoverPass" class="button button-full button-primary button-disabled" value="Recuperar clave">
+									</div>
 								</div>
 							</div>
 						</form>

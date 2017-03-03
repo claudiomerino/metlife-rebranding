@@ -1,0 +1,22 @@
+
+	@import './../global/color.scss';
+
+	.alert {
+		border: 1px solid;
+		border-radius: 3px;
+		padding: 1rem .6rem;
+	}
+
+	.alert_desc {
+		margin-bottom: 0;
+	}
+
+	.alert-error {
+		background-color: $error-light;
+		border-color: $error;
+	}
+
+	.alert-success {
+		background-color: $success-light;
+		border-color: $success;
+	}

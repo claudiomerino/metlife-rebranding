@@ -61,6 +61,7 @@
 @import 'global/lists';
 @import 'global/table';
 @import 'global/pagination';
+@import 'global/loading';
 
 @import 'components/nav/nav';
 @import 'components/nav/nav-sub';
@@ -70,6 +71,7 @@
 @import 'components/cards';
 @import 'components/tabs';
 @import 'components/breadcrumb';
+@import 'components/alerts';
 
 @import 'pages/login';
 @import 'pages/products';
