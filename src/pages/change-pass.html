@@ -34,13 +34,14 @@
 										<label class="input__label input__label--ichiro" for="changeActualPass">
 											<span class="input__label-content input__label-content--ichiro">Clave Actual</span>
 										</label>
+										<p class="form-error f-tiny">La Clave Ingresada no corresponde a la enviada al correo.</p>
 									</span>
 								</section>
 								<p class="f-tiny start-xs"><em>Ingrese la clave enviada al correo</em></p>
 
 								<section class="u-field">
 									<span class="input input--ichiro">
-										<input class="input__field input__field--ichiro" type="password" id="changeNewPass" data-live-validate="true" required />
+										<input class="input__field input__field--ichiro" type="password" id="changeNewPass" pattern="length" data-validator="letters_only numbers_only" data-live-validate="true" required />
 										<label class="input__label input__label--ichiro" for="changeNewPass">
 											<span class="input__label-content input__label-content--ichiro">Clave Nueva</span>
 										</label>
@@ -51,13 +52,13 @@
 
 								<ul class="login_list u-space">
 									<li class="login_list-item">
-										<p class="f-tiny start-xs"><em>Que contenga al menos 8 carácteres.</em></p>
+										<p id="errorLength" class="f-tiny start-xs"><em>Que contenga al menos 8 carácteres.</em></p>
 									</li>
 									<li class="login_list-item">
-										<p class="f-tiny start-xs"><em>Que contenga letras [A-Z]</em></p>
+										<p id="errorAZ" class="f-tiny start-xs"><em>Que contenga letras [A-Z]</em></p>
 									</li>
 									<li class="login_list-item">
-										<p class="f-tiny start-xs"><em>Que contenga números [0-9]</em></p>
+										<p id="errorNumbers" class="f-tiny start-xs"><em>Que contenga números [0-9]</em></p>
 									</li>
 								</ul>
 
