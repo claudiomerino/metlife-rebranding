@@ -1,11 +1,21 @@
 
+	@import './../global/color.scss';
+
 	.breadcrumb {
 		padding: 1rem 1.6rem;
+		a {
+			color: $primary-accent;
+			font-weight: bolder;
+		}
 		li {
 			margin-right: 4px;
 		}
 		p {
+			color: $dark-gray-3;
 			margin-bottom: 0;
+		}
+		i {
+			color: $dark-gray-3;
 		}
 	}
 
