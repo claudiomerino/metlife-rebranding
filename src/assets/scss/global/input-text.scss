@@ -16,7 +16,7 @@
 	}
 
 	.is-invalid-input:not(:focus) {
-		border-color: #cc4b37;
+		border: 1px solid $error-border !important;
 		background-color: #f9ecea;
 	}
 
@@ -39,13 +39,11 @@
 		padding: 0.8em;
 		position: relative;
 		width: 60%;
-	}
-
-	.input__field:focus {
-		background-color: $black-05;
-		border-color: $primary;
-		border-radius: 3px;
-		outline: none;
+		&:active,
+		&:focus {
+			border: 1px solid $active-border !important;
+			outline: none;
+		}
 	}
 
 	.input__label {
