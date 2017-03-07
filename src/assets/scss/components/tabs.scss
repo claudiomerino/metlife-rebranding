@@ -15,12 +15,6 @@
 		border: 0;
 	}
 
-	.tabs_icol {
-		p {
-			margin-bottom: 8px;
-		}
-	}
-
 	.tabs-panel {
 		padding: 1rem 19px;
 	}
@@ -35,6 +29,7 @@
 		a {
 			border-bottom: 4px solid white;
 			color: $dark-gray;
+			font-size: 16px;
 		}
 
 		& > a {
