@@ -12,27 +12,15 @@
 	let $errorNumbers = $( '#errorNumbers' );
 
 
-
-	$changeAgainPass.on("valid.zf.abide", function(ev,el) {
-	  $submitChangePass.removeClass( 'button-disabled' );
-	});
-
-	$changeAgainPass.on("invalid.zf.abide", function(ev,el) {
-	  $submitChangePass.addClass( 'button-disabled' );
-	});
-
-
 	// Change New Pass
 	$changeNewPass.on("valid.zf.abide", function(ev,el) {
 		$errorLength.removeClass( 'pink' );
 		$errorLength.addClass( 'green' );
-	  $submitChangePass.removeClass( 'button-disabled' );
 	});
 
 	$changeNewPass.on("invalid.zf.abide", function(ev,el) {
 		$errorLength.removeClass( 'green' );
 		$errorLength.addClass( 'pink' );
-	  $submitChangePass.addClass( 'button-disabled' );
 	});
 
 

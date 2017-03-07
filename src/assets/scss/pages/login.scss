@@ -2,13 +2,13 @@
 	@import './../global/color.scss';
 
 	.login {
-		background-color: $white-light;
-		padding-top: 4px;
+		padding-top: 1px;
 		padding-bottom: 3rem;
 	}
 
 	.login_container {
-		min-height: 500px;	}
+		min-height: 500px;
+	}
 
 	.login_button {
 		margin-bottom: 0;
@@ -19,6 +19,10 @@
 		margin: 0 auto;
 		max-width: 400px;
 		padding: 0.5rem 1.6rem;
+	}
+
+	.login_form_pass {
+		margin-bottom: 6px;
 	}
 
 	.login_list-item {

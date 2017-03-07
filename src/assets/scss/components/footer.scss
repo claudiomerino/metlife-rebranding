@@ -14,11 +14,8 @@
 		border-top: 1px solid $medium-gray;
 	}
 
-	.footer_image {
-		margin-bottom: 1rem;
-	}
-
 	.footer_info {
+		margin-top: 15px;
 		i {
 			margin-right: 6px;
 			position: relative;
@@ -44,7 +41,8 @@
 			}
 		}
 
-		.footer_image {
-			margin-bottom: 0;
+		.footer_info {
+			margin-top: 20px;
 		}
+
 	}

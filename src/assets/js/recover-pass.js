@@ -7,16 +7,6 @@
 	let $errorRecoverPass = $( '#errorRecoverPass' );
 	let $recoverRut = $( '#recoverRut' );
 
-
-	$recoverRut.on("valid.zf.abide", function(ev,el) {
-	  $submitRecoverPass.removeClass( 'button-disabled' );
-	});
-
-	$recoverRut.on("invalid.zf.abide", function(ev,el) {
-	  $submitRecoverPass.addClass( 'button-disabled' );
-	});
-
-
 	$recoverPassForm.on("submit", ( ev ) => {
 		ev.preventDefault();
 		$toggleRecoverPass.addClass( 'hide-xs' );
