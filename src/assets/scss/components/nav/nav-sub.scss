@@ -1,7 +1,13 @@
 
 	.sub-nav {
 		background-color: white;
-		padding: 2rem 1rem 1rem;
+		padding: 1rem 0;
+	}
+
+	.sub-nav_image {
+		img {
+			max-width: 120px;
+		}
 	}
 
 	.sub-nav_list {
@@ -21,6 +27,17 @@
 	}
 
 	@media screen and ( min-width: 62em ) {
+		.sub-nav {
+			background-color: white;
+			padding: 2rem 0 1rem;
+		}
+
+		.sub-nav_image {
+			img {
+				max-width: 150px;
+			}
+		}
+
 		.sub-nav_name {
 			h6 {
 				display: inline-block;

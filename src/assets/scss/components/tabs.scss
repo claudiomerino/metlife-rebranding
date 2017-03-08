@@ -57,15 +57,7 @@
 		}
 	}
 
-	.tabs_wrap {
-		padding: 0 15px;
-	}
-
-	@media screen and ( min-width: 62em ) {
-		.tabs_wrap {
-			padding: 0;
-		}
-
+	@media screen and ( min-width: 48em ) {
 		.tabs_wrap_container {
 			background-color: white;
 			border: 1px solid $dark-gray;

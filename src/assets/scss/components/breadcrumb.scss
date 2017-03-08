@@ -2,7 +2,7 @@
 	@import './../global/color.scss';
 
 	.breadcrumb {
-		padding: 1rem 1.6rem;
+		padding: 1rem 0;
 		a {
 			color: $primary-accent;
 			font-weight: bolder;
@@ -17,12 +17,4 @@
 		i {
 			color: $dark-gray-3;
 		}
-	}
-
-	@media screen and ( min-width: 48em ) {
-
-		.breadcrumb {
-			padding: 1rem 0;
-		}
-
 	}

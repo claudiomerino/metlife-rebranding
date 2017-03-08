@@ -5,6 +5,10 @@
   margin-bottom: 30px;
 }
 
+.u-container {
+  padding: 0 15px;
+}
+
 .u-divider {
   border-top: 2px solid $gray;
 }
@@ -366,6 +370,7 @@ ul.u-row {
   .u-container {
     margin: 0 auto;
     max-width: 1200px;
+    padding: 0;
   }
 
   .u-section {
