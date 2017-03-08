@@ -2,3 +2,18 @@
 	.life-apv_desc {
 		margin-bottom: 0;
 	}
+
+	.life-apv_title {
+		line-height: 1;
+		margin-right: 10px;
+	}
+
+	.life-apv_heading_irow {
+		display: block;
+	}
+
+	@media screen and ( min-width: 48em ) {
+		.life-apv_heading_irow {
+			display: flex;
+		}
+	}
