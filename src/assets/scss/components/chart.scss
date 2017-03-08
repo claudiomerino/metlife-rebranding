@@ -1,0 +1,18 @@
+
+	.chartCanvas {
+		position: relative;
+		z-index: 1000;
+	}
+
+	.chartCanvasMain {
+		position: relative;
+	}
+
+	.chartCanvasContent {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 100;
+	}
