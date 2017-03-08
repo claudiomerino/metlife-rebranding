@@ -2,8 +2,14 @@
 	@import './../global/color.scss';
 
 	.tabs {
-		border: 0;
 		border-bottom: 1px solid $primary;
+		border: 0;
+		display: flex;
+		overflow-x: auto;
+		overflow-y: hidden;
+		position: relative;
+		white-space: nowrap;
+		width: 100%;
 		&:before {
 			display: none;
 		}
@@ -22,10 +28,11 @@
 	.tabs-subtitle {
 		border-bottom: 2px solid $primary;
 		margin-bottom: 1rem;
-		padding: 1rem 0;
+		padding: 0 0 1rem 0;
 	}
 
 	.tabs-title {
+		flex-grow: 1;
 		a {
 			border-bottom: 4px solid white;
 			color: $dark-gray;
