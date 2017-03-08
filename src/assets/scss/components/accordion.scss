@@ -1,0 +1,46 @@
+
+	.accordion {
+		background-color: transparent;
+	}
+
+	.accordion-content {
+		border: 0;
+		padding: 80px 40px;
+		.tabs-subtitle {
+			display: none;
+		}
+	}
+
+	.accordion-item {
+		background-color: white;
+		border: 1px solid $dark-gray;
+		border-radius: 3px;
+		margin-bottom: 1rem;
+		padding: 0 1rem;
+		&.is-active {
+			.accordion-title {
+				background-color: white;
+				border-bottom: 2px solid $primary;
+				color: $black;
+				&:before {
+					content: "\f077";
+				}
+			}
+		}
+		h5 {
+			display: inline-block;
+		}
+	}
+	.accordion-title {
+		border: 0;
+		padding: 14px 0;
+		text-align: left;
+		&:before {
+			color: $primary;
+			content: "\f078";
+			font: normal normal normal 14px/1 FontAwesome;
+		}
+		&:hover {
+			background-color: white;
+		}
+	}
