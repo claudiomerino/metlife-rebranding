@@ -37,7 +37,8 @@
 			},
 	    legend: {
 	    	display: false
-	    }
+	    },
+	    cutoutPercentage: 80
 		}
 
 		let myDoughnutChart = new Chart(ctx, {
