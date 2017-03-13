@@ -4,11 +4,7 @@
 		thead {
 			background: #fff;
 		}
-		tbody {
-			td {
-				padding: 1rem .625rem;
-			}
-		}
+		
 	}
 
 	.u-striped {
@@ -55,7 +51,47 @@
 		margin-bottom: 0;
 	}
 
+
+	
+
 	.table-1 {
+		min-width:70px;
+	}
+
+	.table-2 {
+		min-width: 120px;
+	}
+
+	.table-3 {
+		min-width: 205px;
+	}
+
+	.table-4 {
+		min-width: 280px;
+	}
+
+	.table-5 {
+		min-width: 355px;
+	}
+
+	.table-6 {
+		min-width: 470px;
+	}
+
+	.table-7 {
+		min-width: 565px;
+	}
+
+	.table-8 {
+		min-width: 660px;
+	}
+	.table-10 {
+		min-width: 700px;
+	}
+
+	@media screen and ( max-width: 30em ) {
+
+		.table-1 {
 		min-width: 95px;
 	}
 
@@ -86,3 +122,9 @@
 	.table-8 {
 		min-width: 760px;
 	}
+	.table-10 {
+		min-width: 860px;
+	}
+	
+	
+}

@@ -30,6 +30,18 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+.cs-select-plain {
+	height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-align: left;
+	background: #fff;
+	z-index: 100;
+	width: 100%;
+	max-width: 500px;
+	user-select: none;
+}
 
 /* Placeholder and selected option */
 .cs-select > span {
