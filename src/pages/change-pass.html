@@ -11,7 +11,7 @@
 				</div>
 				<div class="col-xs-12 col-md-5 col-lg-4 col-xs-full">
 					<div class="login_content u-section">
-						<h3 class="center-xs u-space"><strong>Cambio de clave</strong></h3>
+						<h3 class="center-xs u-space login_title"><strong>Cambio de clave</strong></h3>
 						<form class="recover_form" action="" method="" id="ChangePassForm" data-abide novalidate>
 
 							<div class="loading hide-xs" id="loadingChangePass">
@@ -28,17 +28,16 @@
 							</div>
 
 							<div class="login_toggle_content" id="toggleChangePass">
-								<section class="u-field">
+								<section class="u-field u-space">
 									<span class="input input--ichiro">
 										<input class="input__field input__field--ichiro" type="password" id="changeActualPass" data-live-validate="true" required />
 										<label class="input__label input__label--ichiro" for="changeActualPass">
-											<span class="input__label-content input__label-content--ichiro">Clave Actual</span>
+											<span class="input__label-content input__label-content--ichiro">Ingrese Clave Enviada al correo</span>
 										</label>
 										<p class="form-error f-tiny">La Clave Ingresada no corresponde a la enviada al correo.</p>
 									</span>
 								</section>
-								<p class="f-tiny start-xs u-space"><em>Ingrese la clave enviada al correo</em></p>
-
+								
 								<section class="u-field">
 									<span class="input input--ichiro">
 										<input class="input__field input__field--ichiro" type="password" id="changeNewPass" pattern="length" data-validator="letters_only numbers_only" data-live-validate="true" required />
@@ -48,7 +47,7 @@
 									</span>
 								</section>
 
-								<p class="f-tiny start-xs"><strong>Su clave nueva debe cumplir con lo siguiente:</strong></p>
+								<p class="f-tiny start-xs">Su clave nueva debe cumplir con lo siguiente:</p>
 
 								<ul class="login_list u-space">
 									<li class="login_list-item">

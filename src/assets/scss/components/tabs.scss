@@ -30,17 +30,25 @@
 		margin-bottom: 1rem;
 		padding: 0 0 1rem 0;
 	}
+	.tabs-subtitle-profile {
+		border-bottom: 2px solid $primary;
+		margin-bottom: 1rem;
+		padding: 3rem 0 1rem 0;
+	}
 
 	.tabs-title {
 		flex-grow: 1;
 		a {
 			border-bottom: 4px solid white;
 			color: $dark-gray;
+			width: 70%;
 		}
 
 		h5 {
 			font-family: 'Arial', sans-serif;
-			font-size: 13px;
+			font-size: 14px;
+			font-weight: 400;
+
 		}
 
 		& > a {
@@ -51,16 +59,14 @@
 			a {
 				background-color: white;
 				border-bottom: 4px solid $primary;
-				color: $primary;
-				font-weight: bolder;
-			}
+				color: $primary;			}
 		}
 	}
 
 	@media screen and ( min-width: 48em ) {
 		.tabs_wrap_container {
 			background-color: white;
-			border: 1px solid $dark-gray;
+			border: 1px solid $medium-gray;
 			padding: 0 10px;
 		}
 	}
