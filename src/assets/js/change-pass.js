@@ -10,22 +10,16 @@
 	let $errorLength = $( '#errorLength' );
 	let $errorAZ = $( '#errorAZ' );
 	let $errorNumbers = $( '#errorNumbers' );
-		console.log( "outside", $changeNewPass );
 
-	$changeNewPass.on( "input", ( e ) => {
-		console.log( "change input", $changeNewPass );
-		// Change New Pass
-		$changeNewPass.on("valid.zf.abide", function(ev,el) {
-			console.log( "valid form" );
-			$errorLength.removeClass( 'pink' );
-			$errorLength.addClass( 'green' );
-		});
+	// Change New Pass
+	$changeNewPass.on("valid.zf.abide", function(ev,el) {
+		$errorLength.removeClass( 'pink' );
+		$errorLength.addClass( 'green' );
+	});
 
-		$changeNewPass.on("invalid.zf.abide", function(ev,el) {
-			console.log( "invalid form" );
-			$errorLength.removeClass( 'green' );
-			$errorLength.addClass( 'pink' );
-		});
+	$changeNewPass.on("invalid.zf.abide", function(ev,el) {
+		$errorLength.removeClass( 'green' );
+		$errorLength.addClass( 'pink' );
 	});
 
 
@@ -42,7 +36,6 @@
 
 
 	Foundation.Abide.defaults.patterns['length'] = /^(.){8,}$/;
-
 
 	Foundation.Abide.defaults.validators['letters_only'] = ( $el, required, parent ) => {
 
