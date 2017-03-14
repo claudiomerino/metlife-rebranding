@@ -3,8 +3,12 @@
 
   <div class="off-canvas-content" data-off-canvas-content>
 
-		{{> nav-sub}}
-		{{> nav-main}}
+		<div class="double-nav_sticky" data-sticky-container>
+			<div class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+				{{> nav-sub}}
+				{{> nav-main}}
+			</div>
+		</div>
 
 		<section class="client-profile bg-white-light">
 			<div class="client-profile_container u-container">

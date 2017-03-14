@@ -4,6 +4,30 @@
 		padding: 0 1.5rem;
 	}
 
+	.double-nav_sticky {
+		.sub-nav {
+			transition: all .3s cubic-bezier( .4,0,.2,1 );
+		}
+		.sub-nav_image {
+			img {
+				transition: all .3s cubic-bezier( .4,0,.2,1 );
+			}
+		}
+		.is-stuck {
+			.menu > li > a {
+				padding: .5rem 40px;
+			}
+			.sub-nav {
+				padding: 11px 0;
+			}
+			.sub-nav_image {
+				img {
+					max-width: 120px;
+				}
+			}
+		}
+	}
+
 	.dropdown.menu>li.is-dropdown-submenu-parent>a:after {
 		border-color: white transparent transparent !important;
 	}
