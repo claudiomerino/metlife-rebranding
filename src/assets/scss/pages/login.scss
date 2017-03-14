@@ -46,8 +46,29 @@
 		text-align: center;
 		line-height: 130%;
 	}
+
 	.login_image {
-		background-color: $secondary;
+		img {
+			height: 380px;
+			max-height: 300px;
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+
+	.login_image_complement {
+		border-right: 40px solid $secondary;
+		position: relative;
+		&:before {
+			background-color: $primary-accent;
+			bottom: 0;
+			content: "";
+			left: 0;
+			opacity: .5;
+			position: absolute;
+			top: 0;
+			width: 50px;
+		}
 	}
 	.recover_form p {
 		margin-top: 0.2rem;
@@ -77,9 +98,7 @@
 
 		.login_image {
 			img {
-				height: 100%;
-				object-fit: cover;
-				width: 100%;
+				max-height: none;
 			}
 		}
 
