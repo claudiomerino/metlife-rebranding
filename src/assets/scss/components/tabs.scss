@@ -39,9 +39,21 @@
 	.tabs-title {
 		flex-grow: 1;
 		a {
-			border-bottom: 4px solid white;
 			color: $dark-gray;
+			position: relative;
+			transition: color 0.3s;
 			width: 70%;
+			&:before {
+				background-color: $primary;
+				bottom: 0;
+				content: '';
+				height: 4px;
+				left: 0;
+				position: absolute;
+				transform: scale3d(0, 1, 1);
+				transition: transform 0.1s;
+				width: 100%;
+			}
 		}
 
 		h5 {
@@ -58,8 +70,13 @@
 		&.is-active {
 			a {
 				background-color: white;
-				border-bottom: 4px solid $primary;
-				color: $primary;			}
+				color: $primary;
+				&:before {
+					transform: scale3d(1, 1, 1);
+					transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+					transition-duration: 0.3s;
+				}
+			}
 		}
 	}
 
