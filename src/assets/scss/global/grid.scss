@@ -1,12 +1,18 @@
 
 @import './color.scss';
 
+$space-xs: 30px;
+$gutter-xs: 15px;
+$gutter-sm: 30px;
+$gutter-md: 30px;
+$gutter-lg: 30px;
+
 .u-space {
-  margin-bottom: 30px;
+  margin-bottom: $space-xs;
 }
 
 .u-container {
-  padding: 0 15px;
+  padding: 0 $gutter-xs;
 }
 
 .u-divider {
@@ -14,7 +20,10 @@
 }
 
 .u-section {
-  padding: 1.6rem 15px;
+  padding: 1.6rem $gutter-xs;
+  .u-container {
+    padding: 0;
+  }
 }
 
 .u-row {
@@ -23,16 +32,32 @@
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-left: -30px;
   &.reverse {
     flex-direction: row-reverse;
   }
 }
 
-.u-row-xs-full {
+.col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+
+.no-gutter-xs {
   margin-left: 0;
   margin-right: 0;
+  & > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.gutter-xs {
+  margin-left: -$gutter-xs;
+  margin-right: -$gutter-xs;
+  & > [class*="col-"] {
+    padding-right: $gutter-xs;
+    padding-left: $gutter-xs;
+  }
 }
 
 ul.u-row {
@@ -48,18 +73,6 @@ ul.u-row {
 
 .col.reverse {
   flex-direction: column-reverse;
-}
-
-.col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
-  box-sizing: border-box;
-  flex: 0 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.col-xs-full {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 }
 
 .col-xs {
@@ -225,24 +238,40 @@ ul.u-row {
 
 @media only screen and (min-width: 48em) {
 
-  .u-row-sm-full {
-    margin-left: 0;
-    margin-right: 0;
+  .u-section {
+    padding: 1.6rem $gutter-sm;
+  }
+
+  .u-container {
+    padding: 0 $gutter-sm;
   }
 
   .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
+
+  .no-gutter-sm {
+    margin-left: 0;
+    margin-right: 0;
+    & > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .gutter-sm {
+    margin-left: -$gutter-sm;
+    margin-right: -$gutter-sm;
+    & > [class*="col-"] {
+      padding-right: $gutter-sm;
+      padding-left: $gutter-sm;
+    }
+  }
+
   .col-sm {
     flex-grow: 1;
     max-width: 100%;
-  }
-  .col-sm-full {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
   }
   .col-sm-1 {
     flex-basis: 8.333%;
@@ -367,34 +396,43 @@ ul.u-row {
 }
 
 @media only screen and (min-width: 62em) {
+
   .u-container {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0;
+    padding: 0 $gutter-md;
   }
 
   .u-section {
-    padding: 3rem 0;
-  }
-
-  .u-row-md-full {
-    margin-left: 0;
-    margin-right: 0;
+    padding: 3rem $gutter-md;
   }
 
   .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
   }
+
+  .no-gutter-md {
+    margin-left: 0;
+    margin-right: 0;
+    & > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .gutter-md {
+    margin-left: -$gutter-md;
+    margin-right: -$gutter-md;
+    & > [class*="col-"] {
+      padding-right: $gutter-md;
+      padding-left: $gutter-md;
+    }
+  }
+
   .col-md {
     flex-grow: 1;
     max-width: 100%;
-  }
-  .col-md-full {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
   }
   .col-md-1 {
     flex-basis: 8.333%;
@@ -520,24 +558,41 @@ ul.u-row {
 }
 
 @media only screen and (min-width: 75em) {
-  .u-row-lg-full {
-    margin-left: 0;
-    margin-right: 0;
+
+  .u-section {
+    padding: 3rem 0;
+  }
+
+  .u-container {
+    padding: 0;
   }
 
   .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
+
+  .no-gutter-lg {
+    margin-left: 0;
+    margin-right: 0;
+    & > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .gutter-lg {
+    margin-left: -$gutter-lg;
+    margin-right: -$gutter-lg;
+    & > [class*="col-"] {
+      padding-right: $gutter-lg;
+      padding-left: $gutter-lg;
+    }
+  }
+
   .col-lg {
     flex-grow: 1;
     max-width: 100%;
-  }
-  .col-lg-full {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
   }
   .col-lg-1 {
     flex-basis: 8.333%;

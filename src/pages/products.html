@@ -2,39 +2,44 @@
 	{{> nav-off-canvas}}
 
   <div class="off-canvas-content" data-off-canvas-content>
-		{{> nav-sub}}
-		{{> nav-main}}
+		<div class="double-nav_sticky" data-sticky-container>
+			<div class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+				{{> nav-sub}}
+				{{> nav-main}}
+			</div>
+		</div>
 
 		<section class="products bg-white-light">
 			<div class="products_container u-container">
-				<div class="breadcrumb products_breadcrumb">
-					<ul class="u-row u-row-xs-full middle-xs">
-						<li>
-							<a href="" class="f-link f-tiny">Inicio</a>
-						</li>
-						<li>
-							<i class="fa fa-angle-right" aria-hidden="true"></i>
-						</li>
-						<li>
-							<p class="f-tiny"> Resumen de productos</p>
-						</li>
-					</ul>
+				<div class="products_row u-row">
+					<div class="products_col col-xs-12">
+						<div class="breadcrumb products_breadcrumb">
+							<ul class="u-row u-row-xs-full middle-xs">
+								<li>
+									<a href="" class="f-link f-tiny">Inicio</a>
+								</li>
+								<li>
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+								</li>
+								<li>
+									<p class="f-tiny"> Resumen de productos</p>
+								</li>
+							</ul>
+						</div>
+
+						<section class="products_heading center-xs u-space">
+							<h2 class="products_title">Mis productos</h2>
+						</section>
+
+						<section class="products_card">
+							{{> products-cards}}
+						</section>
+
+						<div class="products_info u-section">
+							<p class="f-legal">Los datos e información contenido corresponde a aquella proporcionada por el cliente contratante al momento de la contratación del seguro y otorgamiento del crédito según corresponda. El cliente será responsable de comunicar a la Compañía Aseguradora cualquier modificación de sus datos personales, información de contacto u otro.</p>
+						</div>
+					</div>
 				</div>
-
-				<section class="products_heading center-xs">
-					<h2 class="products_title">Mis productos</h2>
-					<!-- <p class="products_desc">Bienvenido a tu resumen de productos.</p>
-					<p class="products_desc">Aquí podrás ver todas las pólizas que tienes con MetLife.</p> -->
-				</section>
-
-				<section class="products_card u-section">
-					{{> products-cards}}
-				</section>
-
-				<div class="products_info u-section">
-					<p class="f-legal">Los datos e información contenido corresponde a aquella proporcionada por el cliente contratante al momento de la contratación del seguro y otorgamiento del crédito según corresponda. El cliente será responsable de comunicar a la Compañía Aseguradora cualquier modificación de sus datos personales, información de contacto u otro.</p>
-				</div>
-
 			</div>
 		</section>
 	</div>
