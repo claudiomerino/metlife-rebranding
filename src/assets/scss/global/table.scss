@@ -4,13 +4,11 @@
 		thead {
 			background: #fff;
 		}
-		
+
 	}
 
 	.u-striped {
-		padding: 1rem 0;
 		tbody {
-
 			td {
 				border-top: 1px solid $medium-gray;
 			}
@@ -41,6 +39,34 @@
 		margin-bottom: 0;
 	}
 
+	.table-responsive {
+		display: block;
+		width: 100%;
+		table,
+		tbody,
+		td,
+		tr {
+			display: block;
+		}
+		td[data-table-title] {
+			position: relative;
+			&:before {
+				content: attr( data-table-title );
+				font-weight: bolder;
+				left: 0.625rem;
+				position: absolute;
+			}
+		}
+		thead {
+			display: none;
+		}
+		.table_desc {
+			margin: 0 0 0 auto;
+			max-width: 50%;
+			text-align: left;
+		}
+	}
+
 	.table-scroll {
 		table {
 			border-spacing: initial;
@@ -52,79 +78,81 @@
 	}
 
 
-	
+	@media screen and ( min-width: 62em ) {
+		.u-striped {
+			padding: 1rem 0;
+		}
 
-	.table-1 {
-		min-width:70px;
-	}
-
-	.table-2 {
-		min-width: 120px;
-	}
-
-	.table-3 {
-		min-width: 205px;
-	}
-
-	.table-4 {
-		min-width: 280px;
-	}
-
-	.table-5 {
-		min-width: 355px;
-	}
-
-	.table-6 {
-		min-width: 470px;
-	}
-
-	.table-7 {
-		min-width: 565px;
-	}
-
-	.table-8 {
-		min-width: 660px;
-	}
-	.table-10 {
-		min-width: 700px;
-	}
-
-	@media screen and ( max-width: 30em ) {
+		.table-responsive {
+			border-collapse: collapse;
+			display: table;
+			table,
+			tbody,
+			td {
+				border: 0;
+				display: table-cell;
+			}
+			thead {
+				border: 0;
+				display: table-caption;
+			}
+			tr {
+				display: table;
+				width: 100%;
+				td {
+					&:first-of-type {
+						.table_desc {
+							text-align: left;
+						}
+					}
+				}
+			}
+			.table_desc {
+				max-width: 100%;
+			}
+		}
 
 		.table-1 {
-		min-width: 95px;
-	}
+			min-width: 95px;
+		}
 
-	.table-2 {
-		min-width: 190px;
-	}
+		.table-2 {
+			min-width: 190px;
+		}
 
-	.table-3 {
-		min-width: 285px;
-	}
+		.table-3 {
+			min-width: 285px;
+		}
 
-	.table-4 {
-		min-width: 380px;
-	}
+		.table-4 {
+			min-width: 380px;
+		}
 
-	.table-5 {
-		min-width: 475px;
-	}
+		.table-5 {
+			min-width: 475px;
+		}
 
-	.table-6 {
-		min-width: 570px;
-	}
+		.table-6 {
+			min-width: 570px;
+		}
 
-	.table-7 {
-		min-width: 665px;
-	}
+		.table-7 {
+			min-width: 665px;
+		}
 
-	.table-8 {
-		min-width: 760px;
+		.table-8 {
+			min-width: 760px;
+		}
+		.table-10 {
+			min-width: 860px;
+		}
+
+		.table-responsive {
+			td[data-table-title] {
+				&:before {
+					content: none;
+				}
+			}
+		}
+
 	}
-	.table-10 {
-		min-width: 860px;
-	}
-	
-	
-}

@@ -42,7 +42,6 @@
 			color: $dark-gray;
 			position: relative;
 			transition: color 0.3s;
-			width: 70%;
 			&:before {
 				background-color: $primary;
 				bottom: 0;
@@ -77,13 +76,5 @@
 					transition-duration: 0.3s;
 				}
 			}
-		}
-	}
-
-	@media screen and ( min-width: 48em ) {
-		.tabs_wrap_container {
-			background-color: white;
-			border: 1px solid $medium-gray;
-			padding: 0 10px;
 		}
 	}
