@@ -1,6 +1,8 @@
 
 	if( document.getElementById("chartInvestment") ) {
-		let ctx = document.getElementById("chartInvestment");
+		let ctxInvestment = document.getElementById("chartInvestment");
+		let $tableInvestment = $( '#chartInvestmentTable' );
+		let $tabsChartActiveInvestment = $( '.tabs-chart-investment' );
 
 		let dataInvestment = {
 			labels: [
@@ -27,50 +29,6 @@
 			}]
 		};
 
-		let optionsInvestment = {
-			animation: {
-				animateScale: true
-			},
-	    legend: {
-	    	display: false
-	    }
-		}
 
-		let myDoughnutInvestmentChart = new Chart(ctx, {
-		    type: 'doughnut',
-		    data: dataInvestment,
-		    options: optionsInvestment
-		});
-
-		function customInvestmentLabelsFn() {
-			let dataInvestmentLabel = dataInvestment.labels;
-			let dataInvestmentRelation = dataInvestment.relation;
-			let dataInvestmentValue = dataInvestment.datasets[0].data;
-			let dataInvestmentBackgroundColor = dataInvestment.datasets[0].backgroundColor;
-
-			let $chartInvestmentTable = $( '#chartInvestmentTable' );
-
-			$.each( dataInvestmentLabel, function( key, dataLabelText ) {
-
-				let chartInvestmentTemplate = `
-					<tr>
-			      <td bgcolor="${ dataInvestmentBackgroundColor[key] }" width="10"></td>
-			      <td class="table-6" valign="middle">
-			      	<p class="table_label_title f-big">${ dataLabelText }</p>
-							<p class="table_desc f-small"><strong>Relación:</strong> ${ dataInvestmentRelation[key] }</p>
-						</td>
-			      <td class="table-4" valign="middle">
-							<p class="table_desc f-big"><strong>${ dataInvestmentValue[key] } %</strong></p>
-						</td>
-					</tr>
-				`;
-
-				$chartInvestmentTable.append( chartInvestmentTemplate );
-
-			});
-
-
-		}
-
-		customInvestmentLabelsFn();
+		chartFn( dataInvestment, ctxInvestment, $tableInvestment, $tabsChartActiveInvestment );
 	}
