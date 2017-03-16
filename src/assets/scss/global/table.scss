@@ -1,10 +1,9 @@
 
 	table {
-		margin-bottom: 0;
+		margin-bottom: x0;
 		thead {
 			background: #fff;
 		}
-
 	}
 
 	.u-striped {
@@ -66,6 +65,7 @@
 	.table-scroll {
 		table {
 			border-spacing: initial;
+			width: 100%;
 		}
 	}
 
@@ -73,10 +73,15 @@
 		margin-bottom: 0;
 	}
 
-
 	@media screen and ( min-width: 62em ) {
 		.u-striped {
 			padding: 1rem 0;
+		}
+
+		.table-scroll {
+			table {
+				width: auto;
+			}
 		}
 
 		.table-responsive {
