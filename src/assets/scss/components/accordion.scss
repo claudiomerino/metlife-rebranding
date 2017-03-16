@@ -7,7 +7,7 @@
 		border: 0;
 		padding: 30px 0;
 		.tabs-subtitle {
-			display: none;
+			border-bottom: 0;
 		}
 	}
 
@@ -27,14 +27,14 @@
 				}
 			}
 		}
-		h5 {
-			display: inline-block;
-		}
 	}
 	.accordion-title {
 		border: 0;
-		padding: 14px 0;
+		padding: 14px 40px 14px 0;
 		text-align: left;
+		h5 {
+			display: inline-block;
+		}
 		&:before {
 			color: $primary;
 			content: "\f078";
