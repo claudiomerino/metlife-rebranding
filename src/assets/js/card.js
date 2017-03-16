@@ -1,6 +1,11 @@
 
 	let $openContent = $( '.openContent' );
 	let $toggleContent = $( '.toggleContent' ).data( 'toggle-content' );
+	let $restText = $( '.openContentText' ).data( 'rest-text' );
+	let $openText = $( '.openContentText' ).data( 'open-text' );
+
+	console.log( '$restText', $restText );
+	console.log( '$openText', $openText );
 
 	$openContent.on( 'click', ( e ) => {
 		e.preventDefault();
@@ -16,10 +21,10 @@
 		$( e.currentTarget ).toggleClass( 'is-open' );
 
 		if( $openContentText.hasClass( 'is-open' ) ) {
-			$openContentText.html( 'Mostrar menos información' );
+			$openContentText.html( $restText );
 		}
 		else {
-			$openContentText.html( 'Mostrar más información' );
+			$openContentText.html( $openText );
 		}
 
 	});
