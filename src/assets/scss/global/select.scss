@@ -1,27 +1,37 @@
 @import './color.scss';
 
 /* Default custom select styles */
-.cs-select {
+.u-select {
+	position: relative;
+}
+
+.u-select-tag {
+	border-radius: 3px;
+	border-color: #666;
+	cursor: pointer;
 	display: inline-block;
 	vertical-align: middle;
 	position: relative;
 	text-align: left;
 	background: #fff;
+	padding: 10px 14px;
+  height: 40px;
 	z-index: 100;
 	width: 100%;
 	max-width: 500px;
 	user-select: none;
+	-webkit-appearance: none;
 }
 
-.cs-select:focus {
+.u-select-tag:focus {
 	outline: none; /* For better accessibility add a style for this in your skin */
 }
 
-.cs-select select {
+.u-select-tag select {
 	display: none;
 }
 
-.cs-select span {
+.u-select-tag span {
 	cursor: pointer;
 	display: block;
 	overflow: hidden;
@@ -30,7 +40,7 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-.cs-select-plain {
+.select-plain {
 	height: 40px;
 	display: inline-block;
 	vertical-align: middle;
@@ -44,38 +54,36 @@
 }
 
 /* Placeholder and selected option */
-.cs-select > span {
-	padding-right: 3em;
-}
 
-.cs-select > span::after,
-.cs-select .cs-selected span::after {
+.u-select::after,
+.u-select .selected::after {
 	speak: none;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	z-index: 100;
 }
 
-.cs-select > span::after {
+.u-select::after {
 	content: '\25BE';
 	right: 1em;
 }
 
-.cs-select .cs-selected span::after {
+.u-select .selected::after {
 	content: "\f062";
 	margin-left: 1em;
 }
 
-.cs-select.cs-active > span::after {
+.u-select.active::after {
 	transform: translateY(-50%) rotate(180deg);
 }
 
-div.cs-active {
+div.active {
 	z-index: 200;
 }
 
 /* Options */
-.cs-select .cs-options {
+.u-select-tag .options {
 	position: absolute;
 	overflow: hidden;
 	width: 100%;
@@ -83,68 +91,68 @@ div.cs-active {
 	visibility: hidden;
 }
 
-.cs-select.cs-active .cs-options {
+.u-select-tag.active .options {
 	visibility: visible;
 }
 
-.cs-select ul {
+.u-select-tag ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	width: 100%;
 }
 
-.cs-select ul span {
+.u-select-tag ul span {
 	padding: 1em;
 }
 
-.cs-select ul li.cs-focus span {
+.u-select-tag ul li.focus span {
 	background-color: #ddd;
 }
 
 /* Optgroup and optgroup label */
-.cs-select li.cs-optgroup ul {
+.u-select-tag li.optgroup ul {
 	padding-left: 1em;
 }
 
-.cs-select li.cs-optgroup > span {
+.u-select-tag li.optgroup > span {
 	cursor: default;
 }
 
-.cs-skin-border {
+.u-skin-border {
 	font-size: 1em;
 }
 
 @media screen and (max-width: 30em) {
-	.cs-skin-border { font-size: 1em; }
+	.u-skin-border { font-size: 1em; }
 }
 
-.cs-select-error {
-	&.cs-skin-border > span {
+.select-error {
+	&.u-skin-border > span {
 		background-color: $error-light;
 		border-color: $error;
 	}
 }
 
-.cs-skin-border > span {
+.u-skin-border > span {
 	background: white;
 	border: 1px solid $medium-gray;
 	border-radius: 3px;
 	transition: background 0.2s, border-color 0.2s;
 }
 
-.cs-skin-border > span::after,
-.cs-skin-border .cs-selected span::after {
+.u-skin-border > span::after,
+.u-skin-border .selected span::after {
 	font: normal normal normal 14px/1 FontAwesome;
 	content: "\f078";
 }
 
-.cs-skin-border ul span::after {
+.u-skin-border ul span::after {
 	content: '';
 	opacity: 0;
 }
 
-.cs-skin-border .cs-selected span::after {
+.u-skin-border .selected span::after {
 	content: "\f00c";
 	color: #ddd9c9;
 	font-size: 1.5em;
@@ -152,36 +160,36 @@ div.cs-active {
 	transition: opacity 0.2s;
 }
 
-.cs-skin-border.cs-active > span {
+.u-skin-border.active > span {
 	background: #fff;
 	border-color: $primary;
 }
 
-.cs-skin-border .cs-options {
+.u-skin-border .options {
 	color: $dark-gray-2;
 	font-size: 16px;
 	opacity: 0;
 	transition: opacity 0.2s, visibility 0s 0.2s;
 }
 
-.cs-skin-border.cs-active .cs-options {
+.u-skin-border.active .options {
 	opacity: 1;
 	transition: opacity 0.2s;
 	margin-top: -2px;
 }
 
-.cs-skin-border ul li:last-of-type {
+.u-skin-border ul li:last-of-type {
 	border-bottom: 1px solid $primary;
 }
 
-.cs-skin-border ul span {
+.u-skin-border ul span {
 	padding: 8px 16px;
 	backface-visibility: hidden;
 	border: 1px solid $primary;
 	border-bottom: 0;
 }
-.cs-skin-border .cs-options li span:hover,
-.cs-skin-border li.cs-focus span {
+.u-skin-border .options li span:hover,
+.u-skin-border li.focus span {
 	background-color: $primary;
 	color: white;
 }
