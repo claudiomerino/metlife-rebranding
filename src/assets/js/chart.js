@@ -7,7 +7,25 @@
 	    legend: {
 	    	display: false
 	    },
-	    cutoutPercentage: 80
+	    cutoutPercentage: 80,
+	    tooltips: {
+	    	titleFontSize: 10,
+	    	callbacks: {
+        label: function(tooltipItem, data) {
+          return ' Asignación: ' + data.datasets[0].data[tooltipItem.index] + '%';
+        },
+        title: function(tooltipItem, data) {
+        	let tooltipData = data.labels[tooltipItem[0].index];
+        	let tooltipLimit = tooltipData.substring( 0, 20 );
+        	if( tooltipData.length > 20 ) {
+          	return tooltipLimit + '...';
+        	}
+        	else {
+        		return tooltipLimit;
+        	}
+        }
+      }
+	    }
 		}
 
 		function customLabelsFn() {
