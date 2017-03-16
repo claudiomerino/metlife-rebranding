@@ -4,9 +4,6 @@
 	let $restText = $( '.openContentText' ).data( 'rest-text' );
 	let $openText = $( '.openContentText' ).data( 'open-text' );
 
-	console.log( '$restText', $restText );
-	console.log( '$openText', $openText );
-
 	$openContent.on( 'click', ( e ) => {
 		e.preventDefault();
 		e.stopPropagation();

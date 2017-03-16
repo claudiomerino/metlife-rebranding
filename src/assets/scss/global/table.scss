@@ -53,16 +53,12 @@
 			&:before {
 				content: attr( data-table-title );
 				font-weight: bolder;
-				left: 0.625rem;
-				position: absolute;
 			}
 		}
 		thead {
 			display: none;
 		}
 		.table_desc {
-			margin: 0 0 0 auto;
-			max-width: 50%;
 			text-align: left;
 		}
 	}
