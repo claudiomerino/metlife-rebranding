@@ -8,21 +8,14 @@
 
 	.u-striped {
 		tbody {
-			td {
-				border-top: 1px solid $medium-gray;
-			}
-
 			tr {
+				border-bottom: 1px solid $medium-gray;
+				border-top: 1px solid $medium-gray;
 				&:nth-of-type( even ) {
 					background-color: white;
 				}
 				&:nth-of-type( odd ) {
 					background-color: $white-light-2;
-				}
-				&:last-of-type {
-					td {
-						border-bottom: 1px solid $medium-gray;
-					}
 				}
 			}
 
@@ -76,6 +69,14 @@
 	@media screen and ( min-width: 62em ) {
 		.u-striped {
 			padding: 1rem 0;
+			tbody {
+				tr {
+					border-bottom: 0;
+					&:last-of-type {
+						border-bottom: 1px solid $medium-gray;
+					}
+				}
+			}
 		}
 
 		.table-responsive {
