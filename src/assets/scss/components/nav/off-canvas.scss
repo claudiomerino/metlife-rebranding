@@ -2,27 +2,37 @@
 	@import './../../global/color.scss';
 
 	.js-off-canvas-overlay {
-		background-color: rgba( 0, 0, 0, .5 );
+		background-color: rgba( 0, 0, 0, 0 );
 		z-index: 103;
 	}
 
 	.off-canvas.is-transition-overlap {
 		z-index: 110;
+		&.is-open {
+			box-shadow: none;
+		}
 	}
 
 	.off-canvas {
 		background-color: $white-light-2;
 		padding: 20px;
+		margin-top: 50px;
 	}
 
 	.off-canvas_close {
+		display: none;
 		cursor: pointer;
-		left: 20px;
-		position: absolute;
-		top: 20px;
 		i {
 			color: $primary-accent;
-			font-size: 32px;
+		}
+	}
+
+	.off-canvas_open[aria-expanded="true"] {
+		.off-canvas_open_button {
+			display: none;
+		}
+		.off-canvas_close {
+			display: inline-block;
 		}
 	}
 
@@ -35,6 +45,6 @@
 	}
 
 	.position-left {
-		transform: translateX(-300px);
-		width: 300px;
+		transform: translateX(-100%);
+		width: 100%;
 	}
