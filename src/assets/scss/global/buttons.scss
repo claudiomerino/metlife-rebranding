@@ -31,6 +31,15 @@
 		}
 	}
 
+	.button-pink {
+		background-color: $pink-accent;
+		color: $white;
+		&:hover {
+			background-color: $pink;
+			text-decoration: underline;
+		}
+	}
+
 	.button-dark {
 		background-color: $secondary;
 		color: $dark-gray-2;
