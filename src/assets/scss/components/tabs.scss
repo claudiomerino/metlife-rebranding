@@ -78,3 +78,12 @@
 			}
 		}
 	}
+
+	.tabs_wrap-pink {
+		.tabs-subtitle {
+			border-color: $pink;
+		}
+		.tabs-title a:before {
+			background-color: $pink;
+		}
+	}
