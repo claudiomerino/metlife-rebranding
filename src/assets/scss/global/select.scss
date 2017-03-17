@@ -18,7 +18,6 @@
   height: 40px;
 	z-index: 100;
 	width: 100%;
-	max-width: 500px;
 	user-select: none;
 	-webkit-appearance: none;
 }
@@ -67,6 +66,15 @@
 .u-select::after {
 	content: '\25BE';
 	right: 1em;
+}
+
+.gutter-xs,
+.gutter-sm,
+.gutter-md,
+.gutter-lg {
+	.u-select::after {
+		right: 2em;
+	}
 }
 
 .u-select .selected::after {
@@ -192,4 +200,10 @@ div.active {
 .u-skin-border li.focus span {
 	background-color: $primary;
 	color: white;
+}
+
+@media screen and ( min-width: 48em ) {
+	.u-select-tag {
+		max-width: 500px;
+	}
 }
