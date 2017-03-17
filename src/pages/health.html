@@ -33,7 +33,7 @@
 				</div>
 
 				<div class="u-row u-row-xs-full bottom-sm">
-					<section class="life-apv_heading col-xs-12 col-sm-8 col-xs-full center-xs start-sm u-space">
+					<section id="selectHealth" class="life-apv_heading col-xs-12 col-sm-8 col-xs-full center-xs start-sm u-space">
 						<p class="life-apv_desc">Seguros de Salud</p>
 						<div class="life-apv_heading_irow u-row u-row-xs-full bottom-xs center-xs start-sm">
 							<h2 class="life-apv_title">Seguro Gastos Médicos</h2>
@@ -41,14 +41,20 @@
 						</div>
 					</section>
 
-					<div class="life-apv_select col-xs-12 col-sm-4 col-xs-full center-xs end-sm u-space">
-						<section class="u-select">
-							<select class="u-select-tag u-skin-border">
-								<option value="" disabled selected>¿Qué quieres hacer?</option>
-								<option value="email">Comprar</option>
-								<option value="twitter">Ceder</option>
-							</select>
-						</section>
+					<div class="col-xs-12 col-sm-4 col-xs-full center-xs end-sm u-space">
+						<div data-sticky-container class="u-select-sticky">
+							<div class="sticky" data-sticky data-top-anchor="selectHealth:top" data-options="anchor: page; marginTop: 0; stickyOn: small;">
+								<div class="life-apv_select">
+									<section class="u-select">
+										<select class="u-select-tag u-skin-border">
+											<option value="" disabled selected>¿Qué quieres hacer?</option>
+											<option value="email">Comprar</option>
+											<option value="twitter">Ceder</option>
+										</select>
+									</section>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
