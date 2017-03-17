@@ -44,3 +44,20 @@
 			background-color: white;
 		}
 	}
+
+
+	.tabs_wrap-pink {
+
+		.accordion-item {
+			&.is-active {
+				.accordion-title {
+					border-bottom: 2px solid $pink;
+				}
+			}
+		}
+		.accordion-title {
+			&:before {
+				color: $pink;
+			}
+		}
+	}

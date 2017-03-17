@@ -5,6 +5,24 @@
 	position: relative;
 }
 
+.u-select-sticky {
+	width: 100%;
+	.sticky {
+		max-width: 100% !important;
+	}
+	.is-stuck.sticky {
+		background: white;
+		left: 0;
+		padding: 0 15px;
+		right: 0;
+		top: 50px !important;
+		width: 100%;
+		.life-apv_select {
+			margin-bottom: 4px;
+		}
+	}
+}
+
 .u-select-tag {
 	border-radius: 3px;
 	border-color: #666;
@@ -205,5 +223,8 @@ div.active {
 @media screen and ( min-width: 48em ) {
 	.u-select-tag {
 		max-width: 500px;
+	}
+	.u-select-sticky .is-stuck.sticky {
+		display: none;
 	}
 }
