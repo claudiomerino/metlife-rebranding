@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NNPCQ3N');</script>
 <!-- End Google Tag Manager -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.js"></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -31,5 +32,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
     <script src="{{root}}assets/js/app.js"></script>
+    <script>
+    (function() {
+      // Fake loading.
+      setTimeout(init, 1000);
+
+      function init() {
+
+        var splitContent = document.querySelector('.dual__content'),
+          rev1 = new RevealFx(document.querySelector('#rev-1'), {
+            revealSettings : {
+              bgcolor: '#A4CE4E',
+              direction: 'lr',
+              duration: 800,
+              easing: 'easeInOutCirc',
+              coverArea: 0,
+              onCover: function(contentEl, revealerEl) {
+                console.log( contentEl, 'contentEl' );
+                console.log( revealerEl, 'revealerEl' );
+                contentEl.style.opacity = 1;
+                splitContent.classList.add('dual__content--show');
+              }
+            }
+          });
+
+        rev1.reveal();
+      }
+    })();
+    </script>
   </body>
 </html>
