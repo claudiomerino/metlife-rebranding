@@ -1,0 +1,45 @@
+
+	{{> nav-off-canvas}}
+
+  <div class="off-canvas-content" data-off-canvas-content>
+
+		<div class="double-nav_sticky" data-sticky-container>
+			<div class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+				{{> nav-sub}}
+				{{> nav-main}}
+			</div>
+		</div>
+
+		<section class="client-profile bg-white-light">
+			<div class="client-profile_container u-container">
+				<div class="breadcrumb life-apv_breadcrumb">
+					<ul class="u-row middle-xs">
+						<li>
+							<a href="products.html" class="f-link f-tiny">Inicio</a>
+						</li>
+						<li>
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+						</li>
+						<li>
+							<p class="f-tiny">Formularios y Documentos</p>
+						</li>
+					</ul>
+				</div>
+
+
+				<section class="client-profile_heading center-xs u-space">
+					<h2 class="client-profile_title">Formularios y documentos</h2>
+				</section>
+
+				<section class="client-profile_cards">
+					{{> form-and-documents-cards}}
+				</section>
+
+				<div class="client-profile_info u-section">
+					<p class="client-profile_info_desc f-legal">Los datos e información contenido corresponde a aquella proporcionada por el cliente contratante al momento de la contratación del seguro y otorgamiento del crédito según corresponda. El cliente será responsable de comunicar a la Compañía Aseguradora cualquier modificación de sus datos personales, información de contacto u otro.</p>
+				</div>
+
+			</div>
+		</section>
+
+	</div>
