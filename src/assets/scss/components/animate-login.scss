@@ -3,14 +3,13 @@
 }
 
 .dual__inner {
+	opacity: 0;
 	width: 100%;
 	height: 100%;
 }
 
-.block-revealer__content {
-	.dual__half {
-		opacity: 1;
-	}
+.block-revealer {
+	opacity: 1;
 }
 
 .dual__content {
