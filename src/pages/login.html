@@ -23,21 +23,18 @@
 
 				<div class="col-xs-12 col-lg-4 col-xs-full dual__content">
 					<div class="login_content u-section">
-						<div class="alert callout show-for-small-only" data-closable>
-						  <p>Este sitio no está enteramente optimizado para ser visto desde dispositivos móviles.</p>
-						  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-						    <span aria-hidden="true">&times;</span>
-						  </button>
+						<div class="warning callout show-for-small-only center-xs">
+						  <p>Este sitio no está optimizado para móviles. Te recomendamos iniciar tu sesión desde una computadora para una mejor experiencia de navegación.</p>
 						</div>
-						<h3 class="login_title u-space center-xs"><strong>Ingreso para clientes</strong></h3>
+						<h3 class="login_title u-space center-xs"><strong>Acceso para Clientes</strong></h3>
 
 
 						<form class="login_form" id="loginForm" action="products.html" data-abide novalidate data-live-validate="true">
 							<section class="u-select u-space">
 								<select class="u-select-tag u-skin-border">
 									<option value="personas" selected>Personas</option>
-									<option value="corredores" selected>Corredores/Empresas</option>
-									<option value="intermediarios">Intermediarios</option>
+									<option value="corredores">Corredores o Empresas</option>
+									<option value="intermediarios">Intermediarios RV</option>
 								</select>
 							</section>
 
@@ -45,9 +42,9 @@
 								<span class="input input--ichiro">
 									<input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="loginRut" required />
 									<label class="input__label input__label--ichiro" for="loginRut">
-										<span class="input__label-content input__label-content--ichiro">Ingrese su Rut</span>
+										<span class="input__label-content input__label-content--ichiro">Ingresa tu RUT</span>
 									</label>
-									<p class="form-error f-tiny">No tenemos registrado este RUT.<br/>Por favor, revisa que esté correcto.</p>
+									<p class="form-error f-tiny">No tenemos registrado este RUT.<br/>Revisa que esté correcto e inténtalo nuevamente.</p>
 								</span>
 							</section>
 
@@ -55,15 +52,15 @@
 								<span class="input input--ichiro">
 									<input class="input__field input__field--ichiro" data-live-validate="true" type="password" id="loginPass" required />
 									<label class="input__label input__label--ichiro" for="loginPass">
-										<span class="input__label-content input__label-content--ichiro">Ingrese su clave</span>
+										<span class="input__label-content input__label-content--ichiro">Ingresa tu Clave de Acceso</span>
 									</label>
-									<p class="form-error f-tiny">La clave ingresada es incorrecta.<br/>Por favor, vuelve a ingresarla.</p>
+									<p class="form-error f-tiny">La clave que ingresaste no es correcta.<br/>Inténtalo nuevamente.</p>
 								</span>
 							</section>
 
 							<section class="u-row u-field u-space">
 								<div class="col-xs-12 col-xs-full f-small u-space">
-									<p><a href="recover-pass.html" class="f-link">¿Olvidaste tu clave?</a></p>
+									<p><a href="recover-pass.html" class="f-link">¿Tienes Problemas con tu Clave de Acceso?</a></p>
 								</div>
 								<div class="col-xs-12 col-xs-full end-xs">
 									<input type="submit" id="loginSubmit" class="button button-full button-primary" value="Ingresar">
