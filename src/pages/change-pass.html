@@ -18,7 +18,7 @@
 				</div>
 				<div class="col-xs-12 col-lg-4 col-xs-full dual__content">
 					<div class="login_content u-section">
-						<h3 class="center-xs u-space login_title"><strong>Cambio de clave</strong></h3>
+						<h3 class="center-xs u-space login_title"><strong>Cambio de Clave de Acceso</strong></h3>
 						<form class="recover_form" action="" method="" id="ChangePassForm" data-abide novalidate  data-live-validate="true">
 
 							<div class="loading hide-xs" id="loadingChangePass">
@@ -28,9 +28,7 @@
 
 							<div class="alert alert-success u-space hide-xs" id="successChangePass">
 								<p class="alert_desc center-xs">
-									<strong>Clave cambiada con éxito.</strong><br/>
-									Lo estamos redirigiendo a la página de login<br/>
-									para que pueda ingresar al sitio privado
+									<strong>Tu clave de acceso ha sido cambiada con éxito.</strong> Te estamos redirigiendo a la página de Acceso para Clientes, donde podrás ingresar al sitio usando tu nueva clave.
 								</p>
 							</div>
 
@@ -39,9 +37,9 @@
 									<span class="input input--ichiro">
 										<input class="input__field input__field--ichiro" type="password" id="changeActualPass" data-live-validate="true" required />
 										<label class="input__label input__label--ichiro" for="changeActualPass">
-											<span class="input__label-content input__label-content--ichiro">Ingrese Clave Enviada al correo</span>
+											<span class="input__label-content input__label-content--ichiro">Ingresa Clave Enviada</span>
 										</label>
-										<p class="form-error f-tiny">La Clave Ingresada no corresponde a la enviada al correo.</p>
+										<p class="form-error f-tiny">La clave ingresada no corresponde a la enviada al correo electrónico.</p>
 									</span>
 								</section>
 
@@ -49,22 +47,22 @@
 									<span class="input input--ichiro">
 										<input class="input__field input__field--ichiro" type="password" id="changeNewPass" pattern="length" data-validator="letters_only numbers_only" required />
 										<label class="input__label input__label--ichiro" for="changeNewPass">
-											<span class="input__label-content input__label-content--ichiro">Clave Nueva</span>
+											<span class="input__label-content input__label-content--ichiro">Clave de Acceso Nueva</span>
 										</label>
 									</span>
 								</section>
 
-								<p class="f-tiny start-xs">Su clave nueva debe cumplir con lo siguiente:</p>
+								<p class="select_clave_nueva f-tiny start-xs">Por motivos de seguridad, la nueva clave debe contener:</p>
 
 								<ul class="login_list u-space">
 									<li class="login_list-item">
-										<p id="errorLength" class="f-tiny start-xs"><em>Que contenga al menos 8 carácteres.</em></p>
+										<p id="errorLength" class="f-tiny start-xs">- Al menos 8 caracteres.</p>
 									</li>
 									<li class="login_list-item">
-										<p id="errorAZ" class="f-tiny start-xs"><em>Que contenga letras [A-Z]</em></p>
+										<p id="errorAZ" class="f-tiny start-xs">- Al Menos una letra [A-Z]</p>
 									</li>
 									<li class="login_list-item">
-										<p id="errorNumbers" class="f-tiny start-xs"><em>Que contenga números [0-9]</em></p>
+										<p id="errorNumbers" class="f-tiny start-xs">- Al menos un número [0-9]</p>
 									</li>
 								</ul>
 
@@ -72,9 +70,9 @@
 									<span class="input input--ichiro">
 										<input class="input__field input__field--ichiro" type="password" id="changeAgainPass" data-live-validate="true" data-equalto="changeNewPass" required />
 										<label class="input__label input__label--ichiro" for="changeAgainPass">
-											<span class="input__label-content input__label-content--ichiro">Reingrese Clave Nueva</span>
+											<span class="input__label-content input__label-content--ichiro">Reingresa la Clave de Acceso Nueva</span>
 										</label>
-										<p class="form-error f-tiny">Claves ingresadas no coinciden</p>
+										<p class="form-error f-tiny">Las claves que ingresaste no coinciden.</p>
 									</span>
 								</section>
 
@@ -85,7 +83,7 @@
 								</div>
 							</div>
 						</form>
-						<p class="login_support text-center f-small">Si tiene algún problema le solicitamos nos contacte al <strong>600 390 3000.</strong></p>
+						<p class="login_support text-center f-small">Si tienes algún problema, contáctate con nuestro Servicio al Cliente al <a href="tel:+566003903000"><strong>600 390 3000</strong></a></p>
 					</div>
 				</div>
 			</div>
