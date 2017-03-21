@@ -26,6 +26,14 @@
 		margin-left: 1rem;
 	}
 
+	@media screen and ( min-width: 48em ) {
+		.sub-nav_name {
+			h6 {
+				display: inline-block;
+			}
+		}
+	}
+
 	@media screen and ( min-width: 62em ) {
 		.sub-nav {
 			background-color: white;
@@ -35,12 +43,6 @@
 		.sub-nav_image {
 			img {
 				max-width: 150px;
-			}
-		}
-
-		.sub-nav_name {
-			h6 {
-				display: inline-block;
 			}
 		}
 	}
