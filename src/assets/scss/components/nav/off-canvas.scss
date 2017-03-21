@@ -14,8 +14,8 @@
 	}
 
 	.off-canvas {
-		background-color: $white-light-2;
-		padding: 20px;
+		background-color: $white-light;
+		padding: 20px 0;
 		margin-top: 50px;
 	}
 
@@ -37,11 +37,29 @@
 	}
 
 	.off-canvas_menu_item {
-		padding: 8px 0;
+		background-color: #e3e3e3;
+		position: relative;
 		a {
+			color: $dark-gray-2;
+			display: block;
 			font-size: 14px;
 			font-weight: bolder;
+			letter-spacing: 1px;
+			line-height: 20px;
+			padding: 14px 10px;
+			position: relative;
+			text-transform: uppercase;
+			z-index: 1;
 		}
+		i {
+			position: absolute;
+			right: 10px;
+			top: 12px;
+		}
+	}
+
+	.off-canvas_heading_menu_item {
+		padding: 14px 10px 0;
 	}
 
 	.position-left {
