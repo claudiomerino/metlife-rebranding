@@ -7,7 +7,7 @@
 		display: flex;
 		overflow-x: auto;
 		overflow-y: hidden;
-		padding: 0 19px;
+		padding: 0 10px;
 		position: relative;
 		white-space: nowrap;
 		width: 100%;
@@ -29,6 +29,10 @@
 
 	.tabs-panel {
 		padding: 2rem 19px;
+	}
+
+	.tabs_row {
+		padding: 0 1.6rem;
 	}
 
 	.tabs-subtitle {
