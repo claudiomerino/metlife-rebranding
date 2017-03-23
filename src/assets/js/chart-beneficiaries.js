@@ -9,26 +9,31 @@
 				"Esperanza del Carmen Risopatrón Goycochea",
 				"Maria Francisca Llanos Risopatrón",
 				"Felipe Martin Llanos Risopatrón",
-				"Maria Silva Lopez Llanos"
+				"Maria Silva Lopez Llanos",
+				"martin"
 			],
 			relation: [
 				"Conyugue",
 				"Hija",
 				"Hijo",
-				"Nieta"
+				"Nieta",
+				"nieta"
+
 			],
 	    datasets: [{
 				data: [
-					25,
-					25,
-					25,
+					30,
+					20,
+					15,
+					10,
 					25
 				],
 				backgroundColor: [
 					"#0e4678",
 					"#e67f48",
 					"#947bba",
-					"#40967b"
+					"#40967b",
+					"#B0488D"
 				]
 			}]
 		};
