@@ -19,13 +19,13 @@
 	.bullet-item_footer {
 		position: relative;
 		&:before {
-			background-color: $dark-gray;
+			background-color: $dark-gray-3;
 			border-radius: 50%;
 			content: "";
-			height: 6px;
+			height: 4px;
 			left: 0;
 			position: absolute;
-			top: 10px;
-			width: 6px;
+			top: 12px;
+			width: 4px;
 		}
 	}
