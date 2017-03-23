@@ -149,6 +149,45 @@
 			min-width: 860px;
 		}
 
+
+
+		.table-double {
+			.table-1 {
+				min-width: 56.5px;
+			}
+
+			.table-2 {
+				min-width: 113px;
+			}
+
+			.table-3 {
+				min-width: 169.5px;
+			}
+
+			.table-4 {
+				min-width: 226px;
+			}
+
+			.table-5 {
+				min-width: 282.5px;
+			}
+
+			.table-6 {
+				min-width: 339px;
+			}
+
+			.table-7 {
+				min-width: 395.5px;
+			}
+
+			.table-8 {
+				min-width: 452px;
+			}
+			.table-10 {
+				min-width: 565px;
+			}
+		}
+
 		.table-responsive {
 			td[data-table-title] {
 				&:before {
