@@ -1,7 +1,8 @@
 
 @import './color.scss';
 
-$space-xs: 30px;
+$space-xs: 15px;
+$space-md: 30px;
 $gutter-xs: 15px;
 $gutter-sm: 30px;
 $gutter-md: 30px;
@@ -396,6 +397,10 @@ ul.u-row {
 }
 
 @media only screen and (min-width: 62em) {
+
+  .u-space {
+    margin-bottom: $space-md;
+  }
 
   .u-container {
     margin: 0 auto;
