@@ -26,9 +26,15 @@
 	}
 
 	.footer_list-item {
+		padding-left: 10px;
+		position: relative;
 		margin-right: 10px;
 		&:last-of-type {
+			padding-left: 0;
 			margin-right: 0;
+			&:before {
+				background-color: transparent;
+			}
 		}
 		p {
 			margin-bottom: 0;
