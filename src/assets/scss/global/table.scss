@@ -6,10 +6,16 @@
 		}
 	}
 
+	table thead,
+	table tbody,
+	table tfoot {
+		border-top: 0;
+		border-bottom: 1px solid $medium-gray;
+	}
+
 	.u-striped {
 		tbody {
 			tr {
-				border-bottom: 1px solid $medium-gray;
 				border-top: 1px solid $medium-gray;
 				&:nth-of-type( even ) {
 					background-color: white;
