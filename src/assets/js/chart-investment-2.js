@@ -1,7 +1,7 @@
 
-	if( document.getElementById("chartInvestment") ) {
-		let ctxInvestment = document.getElementById("chartInvestment");
-		let $tableInvestment = $( '#chartInvestmentTable' );
+	if( document.getElementById("chartInvestment2") ) {
+		let ctxInvestment = document.getElementById("chartInvestment2");
+		let $tableInvestment = $( '#chartInvestmentTable2' );
 		let $tabsChartActiveInvestment = $( '.tabs-chart-investment' );
 
 		let dataInvestment = {
@@ -26,7 +26,6 @@
 				]
 			}]
 		};
-
 
 		chartFn( dataInvestment, ctxInvestment, $tableInvestment, $tabsChartActiveInvestment );
 	}
