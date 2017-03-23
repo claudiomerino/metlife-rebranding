@@ -11,7 +11,7 @@
 				"Nombre del Fondo de Inversión con un nombre extremadamente largo"
 			],
 			relation: [
-				
+
 			],
 	    datasets: [{
 				data: [

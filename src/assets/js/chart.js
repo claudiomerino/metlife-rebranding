@@ -36,18 +36,39 @@
 
 			$.each( dataLabel, function( key, dataLabelText ) {
 
-				let chartTemplate = `
-					<tr>
-			      <td bgcolor="${ dataBackgroundColor[key] }" width="10"></td>
-			      <td class="table-6" valign="middle">
-			      	<p class="table_label_title f-big">${ dataLabelText }</p>
-							<p class="table_desc f-small"><strong>Relación:</strong> ${ dataRelation[key] }</p>
-						</td>
-			      <td class="table-4" valign="middle">
-							<p class="table_desc f-big"><strong>${ dataValue[key] } %</strong></p>
-						</td>
-					</tr>
-				`;
+				let chartTemplate;
+
+				if( dataRelation.length > 0 ) {
+
+					chartTemplate = `
+						<tr>
+				      <td bgcolor="${ dataBackgroundColor[key] }" width="10"></td>
+				      <td class="table-6" valign="middle">
+				      	<p class="table_label_title f-big">${ dataLabelText }</p>
+								<p class="table_desc f-small"><strong>Relación:</strong> ${ dataRelation[key] }</p>
+							</td>
+				      <td class="table-4" valign="middle">
+								<p class="table_desc f-big"><strong>${ dataValue[key] } %</strong></p>
+							</td>
+						</tr>
+					`;
+
+				}
+				else {
+
+					chartTemplate = `
+						<tr>
+				      <td bgcolor="${ dataBackgroundColor[key] }" width="10"></td>
+				      <td class="table-6" valign="middle">
+				      	<p class="table_label_title f-big">${ dataLabelText }</p>
+							</td>
+				      <td class="table-4" valign="middle">
+								<p class="table_desc f-big"><strong>${ dataValue[key] } %</strong></p>
+							</td>
+						</tr>
+					`;
+
+				}
 
 				chartTable.append( chartTemplate );
 
