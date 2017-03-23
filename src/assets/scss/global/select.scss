@@ -227,4 +227,8 @@ div.active {
 	.u-select-sticky .is-stuck.sticky {
 		display: none;
 	}
+
+	.u-select-sticky {
+		height: 40px !important;
+	}
 }
