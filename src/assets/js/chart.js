@@ -47,7 +47,7 @@
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
 								<p class="table_desc f-small"><strong>Relación:</strong> ${ dataRelation[key] }</p>
 							</td>
-				      <td class="table-4" valign="middle">
+				      <td class="table-1" valign="middle">
 								<p class="table_desc f-big"><strong>${ dataValue[key] } %</strong></p>
 							</td>
 						</tr>
@@ -62,7 +62,7 @@
 				      <td class="table-6" valign="middle">
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
 							</td>
-				      <td class="table-4" valign="middle">
+				      <td class="table-1" valign="middle">
 								<p class="table_desc f-big"><strong>${ dataValue[key] } %</strong></p>
 							</td>
 						</tr>
