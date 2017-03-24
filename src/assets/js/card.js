@@ -12,16 +12,32 @@
 		let $openContentData = $( e.currentTarget ).data( 'open-content' );
 		let $toggleContentData = $( '.toggleContent[data-toggle-content=' + $openContentData + ']' );
 		let $openContentText = $( e.currentTarget ).find( 'span' );
+		let $dataClose = $( e.currentTarget ).find( 'span' ).data( 'close' );
 
 		$toggleContentData.toggleClass( 'is-open' );
 		$openContentText.toggleClass( 'is-open' );
 		$( e.currentTarget ).toggleClass( 'is-open' );
 
-		if( $openContentText.hasClass( 'is-open' ) ) {
-			$openContentText.html( $restText );
+		if( $dataClose ) {
+
+			if( !$openContentText.hasClass( 'is-open' ) ) {
+				$openContentText.html( $restText );
+			}
+			else {
+				$openContentText.html( $openText );
+			}
+
 		}
+
 		else {
-			$openContentText.html( $openText );
+
+			if( $openContentText.hasClass( 'is-open' ) ) {
+				$openContentText.html( $restText );
+			}
+			else {
+				$openContentText.html( $openText );
+			}
+
 		}
 
 	});
