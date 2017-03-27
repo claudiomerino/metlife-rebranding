@@ -132,3 +132,16 @@
 		background-color: $error-light;
 		color: $error;
 	}
+
+	.input--datepicker {
+		.input__field {
+			cursor: pointer;
+		}
+		.material-icons {
+			color: $primary;
+			position: absolute;
+			right: 10px;
+			top: 7px;
+			z-index: 101;
+		}
+	}

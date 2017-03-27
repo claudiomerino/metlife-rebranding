@@ -9,6 +9,7 @@
     <title>Metlife re branding</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation-datepicker/1.5.6/css/foundation-datepicker.css">
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -32,6 +33,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
     <script src="{{root}}assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation-datepicker/1.5.6/js/foundation-datepicker.js"></script>
     <script>
     (function() {
       // Fake loading.
@@ -59,6 +61,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         rev1.reveal();
       }
     })();
+
+    // Datepicker
+    (function ( $ ) {
+      let today = new Date();
+      let dd = today.getDate();
+      let mm = today.getMonth() + 1;
+
+      let yyyy = today.getFullYear();
+      if( dd < 10 ){
+          dd = '0' + dd;
+      }
+      if( mm < 10 ){
+          mm = '0' + mm;
+      }
+      let todayDate = dd + '-' + mm + '-' + yyyy;
+
+      $('#dp1').fdatepicker({
+        initialDate: todayDate,
+        format: 'dd-mm-yyyy',
+        disableDblClickSelection: true,
+        leftArrow:'<<',
+        rightArrow:'>>',
+        closeIcon:'X',
+        closeButton: false
+      });
+
+    }( jQuery ));
     </script>
   </body>
 </html>
