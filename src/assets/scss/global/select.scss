@@ -6,6 +6,153 @@
 	}
 
 	/* Default custom select styles */
+	.cs-select {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		text-align: left;
+		background: #fff;
+		z-index: 100;
+		width: 100%;
+		max-width: 500px;
+		user-select: none;
+	}
+
+	.cs-select:focus {
+		outline: none; /* For better accessibility add a style for this in your skin */
+	}
+
+	.cs-select select {
+		display: none;
+	}
+
+	.cs-select span {
+		cursor: pointer;
+		display: block;
+		overflow: hidden;
+		padding: 10px;
+		position: relative;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	/* Placeholder and selected option */
+	.cs-select > span {
+		padding-right: 3em;
+	}
+
+	div.cs-active {
+		z-index: 200;
+	}
+
+	/* Options */
+	.cs-select .cs-options {
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		background: $white;
+		visibility: hidden;
+	}
+
+	.cs-select.cs-active .cs-options {
+		visibility: visible;
+	}
+
+	.cs-select ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.cs-select ul span {
+		padding: 1em;
+	}
+
+	.cs-select ul li.cs-focus span {
+		background-color: #ddd;
+	}
+
+	/* Optgroup and optgroup label */
+	.cs-select li.cs-optgroup ul {
+		padding-left: 1em;
+	}
+
+	.cs-select li.cs-optgroup > span {
+		cursor: default;
+	}
+
+	.cs-skin-border {
+		background: transparent;
+		font-size: 1em;
+	}
+
+	@media screen and (max-width: 30em) {
+		.cs-skin-border { font-size: 1em; }
+	}
+
+	.cs-select-error {
+		&.cs-skin-border > span {
+			background-color: $error-light;
+			border-color: $error;
+		}
+	}
+
+	.cs-skin-border > span {
+		background-color: white;
+		border: 1px solid $dark-gray-2;
+		border-radius: 3px;
+		transition: background 0.2s, border-color 0.2s;
+	}
+
+	.cs-skin-border ul span::after {
+		content: '';
+		opacity: 0;
+	}
+
+	.cs-skin-border.cs-active > span {
+		background-color: $white-light;
+		border-color: $medium-gray;
+		border-bottom: 0;
+		color: $dark-gray;
+		font-size: 13px;
+	}
+
+	.cs-skin-border .cs-options {
+		color: $dark-gray-2;
+		font-size: 16px;
+		opacity: 0;
+		transition: opacity 0.2s, visibility 0s 0.2s;
+	}
+
+	.cs-skin-border.cs-active .cs-options {
+		opacity: 1;
+		transition: opacity 0.2s;
+		margin-top: -2px;
+	}
+
+	.cs-skin-border ul li:last-of-type {
+		border-bottom: 1px solid $medium-gray;
+	}
+
+	.cs-skin-border ul span {
+		background-color: $white-light;
+		color: $dark-gray-2;
+		font-size: 13px;
+		font-weight: bold;
+		padding: 10px;
+		backface-visibility: hidden;
+		border: 1px solid $medium-gray;
+		border-bottom: 0;
+		border-top: 0;
+	}
+	.cs-skin-border .cs-options li span:hover,
+	.cs-skin-border li.cs-focus span {
+		background-color: $primary;
+		color: white;
+	}
+
+	/* Default custom select styles */
 	.u-select {
 		position: relative;
 	}
