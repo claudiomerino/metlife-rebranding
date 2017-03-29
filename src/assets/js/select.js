@@ -53,7 +53,7 @@
 	SelectFx.prototype.options = {
 		// if true all the links will open in a new tab.
 		// if we want to be redirected when we click an option, we need to define a data-link attr on the option of the native select element
-		newTab : true,
+		newTab : false,
 		// when opening the select element, the default placeholder (if any) is shown
 		stickyPlaceholder : true,
 		// callback when changing the value

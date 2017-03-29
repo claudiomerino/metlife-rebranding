@@ -161,9 +161,11 @@
 		width: 100%;
 		.sticky {
 			max-width: 100% !important;
+			z-index: 102;
 		}
 		.is-stuck.sticky {
 			background: white;
+			box-shadow: none;
 			left: 0;
 			padding: 0 15px;
 			right: 0;
@@ -235,7 +237,7 @@
 
 	.u-select::after {
 		content: '\25BE';
-		right: 1em;
+		right: 2em;
 	}
 
 	.gutter-xs,
@@ -371,6 +373,10 @@
 	}
 
 	@media screen and ( min-width: 48em ) {
+
+		.u-select::after {
+			right: 1em;
+		}
 		.u-select-tag {
 			max-width: 500px;
 		}
