@@ -1,234 +1,237 @@
-@import './color.scss';
 
-/* Default custom select styles */
-.u-select {
-	position: relative;
-}
+	@import './color.scss';
 
-.u-select-sticky {
-	width: 100%;
-	.sticky {
-		max-width: 100% !important;
+	select {
+		margin: 0;
 	}
-	.is-stuck.sticky {
-		background: white;
-		left: 0;
-		padding: 0 15px;
-		right: 0;
-		top: 50px !important;
-		width: 100%;
-		.life-apv_select {
-			margin-bottom: 8px;
-		}
-	}
-}
 
-.u-select-tag {
-	border-radius: 3px;
-	border-color: #666;
-	cursor: pointer;
-	display: inline-block;
-	vertical-align: middle;
-	position: relative;
-	text-align: left;
-	background: #fff;
-	padding: 10px 28px 10px 14px;
-  height: 40px;
-	z-index: 100;
-	width: 100%;
-	user-select: none;
-	-webkit-appearance: none;
-}
-
-.u-select-tag:focus {
-	outline: none; /* For better accessibility add a style for this in your skin */
-}
-
-.u-select-tag select {
-	display: none;
-}
-
-.u-select-tag span {
-	cursor: pointer;
-	display: block;
-	overflow: hidden;
-	padding: 10px;
-	position: relative;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-.select-plain {
-	height: 40px;
-	display: inline-block;
-	vertical-align: middle;
-	position: relative;
-	text-align: left;
-	background: #fff;
-	z-index: 100;
-	width: 100%;
-	max-width: 500px;
-	user-select: none;
-}
-
-/* Placeholder and selected option */
-
-.u-select::after,
-.u-select .selected::after {
-	speak: none;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 100;
-}
-
-.u-select::after {
-	content: '\25BE';
-	right: 1em;
-}
-
-.gutter-xs,
-.gutter-sm,
-.gutter-md,
-.gutter-lg {
-	.u-select::after {
-		right: 2em;
-	}
-}
-
-.u-select .selected::after {
-	content: "\f062";
-	margin-left: 1em;
-}
-
-.u-select.active::after {
-	transform: translateY(-50%) rotate(180deg);
-}
-
-div.active {
-	z-index: 200;
-}
-
-/* Options */
-.u-select-tag .options {
-	position: absolute;
-	overflow: hidden;
-	width: 100%;
-	background: $white;
-	visibility: hidden;
-}
-
-.u-select-tag.active .options {
-	visibility: visible;
-}
-
-.u-select-tag ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-
-.u-select-tag ul span {
-	padding: 1em;
-}
-
-.u-select-tag ul li.focus span {
-	background-color: #ddd;
-}
-
-/* Optgroup and optgroup label */
-.u-select-tag li.optgroup ul {
-	padding-left: 1em;
-}
-
-.u-select-tag li.optgroup > span {
-	cursor: default;
-}
-
-.u-skin-border {
-	font-size: 1em;
-}
-
-@media screen and (max-width: 30em) {
-	.u-skin-border { font-size: 1em; }
-}
-
-.select-error {
-	&.u-skin-border > span {
-		background-color: $error-light;
-		border-color: $error;
-	}
-}
-
-.u-skin-border > span {
-	background: white;
-	border: 1px solid $medium-gray;
-	border-radius: 3px;
-	transition: background 0.2s, border-color 0.2s;
-}
-
-.u-skin-border > span::after,
-.u-skin-border .selected span::after {
-	font: normal normal normal 14px/1 FontAwesome;
-	content: "\f078";
-}
-
-.u-skin-border ul span::after {
-	content: '';
-	opacity: 0;
-}
-
-.u-skin-border .selected span::after {
-	content: "\f00c";
-	color: #ddd9c9;
-	font-size: 1.5em;
-	opacity: 1;
-	transition: opacity 0.2s;
-}
-
-.u-skin-border.active > span {
-	background: #fff;
-	border-color: $primary;
-}
-
-.u-skin-border .options {
-	color: $dark-gray-2;
-	font-size: 16px;
-	opacity: 0;
-	transition: opacity 0.2s, visibility 0s 0.2s;
-}
-
-.u-skin-border.active .options {
-	opacity: 1;
-	transition: opacity 0.2s;
-	margin-top: -2px;
-}
-
-.u-skin-border ul li:last-of-type {
-	border-bottom: 1px solid $primary;
-}
-
-.u-skin-border ul span {
-	padding: 8px 16px;
-	backface-visibility: hidden;
-	border: 1px solid $primary;
-	border-bottom: 0;
-}
-.u-skin-border .options li span:hover,
-.u-skin-border li.focus span {
-	background-color: $primary;
-	color: white;
-}
-
-@media screen and ( min-width: 48em ) {
-	.u-select-tag {
-		max-width: 500px;
-	}
-	.u-select-sticky .is-stuck.sticky {
-		display: none;
+	/* Default custom select styles */
+	.u-select {
+		position: relative;
 	}
 
 	.u-select-sticky {
-		height: 40px !important;
+		width: 100%;
+		.sticky {
+			max-width: 100% !important;
+		}
+		.is-stuck.sticky {
+			background: white;
+			left: 0;
+			padding: 0 15px;
+			right: 0;
+			top: 50px !important;
+			width: 100%;
+			.life-apv_select {
+				margin-bottom: 8px;
+			}
+		}
 	}
-}
+
+	.u-select-tag {
+		border-radius: 3px;
+		border-color: #666;
+		cursor: pointer;
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		text-align: left;
+		background: #fff;
+		padding: 10px 28px 10px 14px;
+	  height: 40px;
+		z-index: 100;
+		width: 100%;
+		user-select: none;
+		-webkit-appearance: none;
+	}
+
+	.u-select-tag:focus {
+		outline: none; /* For better accessibility add a style for this in your skin */
+	}
+
+	.u-select-tag select {
+		display: none;
+	}
+
+	.u-select-tag span {
+		cursor: pointer;
+		display: block;
+		overflow: hidden;
+		padding: 10px;
+		position: relative;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.select-plain {
+		height: 40px;
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		text-align: left;
+		background: #fff;
+		z-index: 100;
+		width: 100%;
+		max-width: 500px;
+		user-select: none;
+	}
+
+	/* Placeholder and selected option */
+
+	.u-select::after,
+	.u-select .selected::after {
+		speak: none;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 100;
+	}
+
+	.u-select::after {
+		content: '\25BE';
+		right: 1em;
+	}
+
+	.gutter-xs,
+	.gutter-sm,
+	.gutter-md,
+	.gutter-lg {
+		.u-select::after {
+			right: 2em;
+		}
+	}
+
+	.u-select .selected::after {
+		content: "\f062";
+		margin-left: 1em;
+	}
+
+	.u-select.active::after {
+		transform: translateY(-50%) rotate(180deg);
+	}
+
+	div.active {
+		z-index: 200;
+	}
+
+	/* Options */
+	.u-select-tag .options {
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		background: $white;
+		visibility: hidden;
+	}
+
+	.u-select-tag.active .options {
+		visibility: visible;
+	}
+
+	.u-select-tag ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.u-select-tag ul span {
+		padding: 1em;
+	}
+
+	.u-select-tag ul li.focus span {
+		background-color: #ddd;
+	}
+
+	/* Optgroup and optgroup label */
+	.u-select-tag li.optgroup ul {
+		padding-left: 1em;
+	}
+
+	.u-select-tag li.optgroup > span {
+		cursor: default;
+	}
+
+	.u-skin-border {
+		font-size: 1em;
+	}
+
+	@media screen and (max-width: 30em) {
+		.u-skin-border { font-size: 1em; }
+	}
+
+	.select-error {
+		background-color: $error-light;
+		border-color: $error;
+	}
+
+	.u-skin-border > span {
+		background: white;
+		border: 1px solid $medium-gray;
+		border-radius: 3px;
+		transition: background 0.2s, border-color 0.2s;
+	}
+
+	.u-skin-border > span::after,
+	.u-skin-border .selected span::after {
+		font: normal normal normal 14px/1 FontAwesome;
+		content: "\f078";
+	}
+
+	.u-skin-border ul span::after {
+		content: '';
+		opacity: 0;
+	}
+
+	.u-skin-border .selected span::after {
+		content: "\f00c";
+		color: #ddd9c9;
+		font-size: 1.5em;
+		opacity: 1;
+		transition: opacity 0.2s;
+	}
+
+	.u-skin-border.active > span {
+		background: #fff;
+		border-color: $primary;
+	}
+
+	.u-skin-border .options {
+		color: $dark-gray-2;
+		font-size: 16px;
+		opacity: 0;
+		transition: opacity 0.2s, visibility 0s 0.2s;
+	}
+
+	.u-skin-border.active .options {
+		opacity: 1;
+		transition: opacity 0.2s;
+		margin-top: -2px;
+	}
+
+	.u-skin-border ul li:last-of-type {
+		border-bottom: 1px solid $primary;
+	}
+
+	.u-skin-border ul span {
+		padding: 8px 16px;
+		backface-visibility: hidden;
+		border: 1px solid $primary;
+		border-bottom: 0;
+	}
+	.u-skin-border .options li span:hover,
+	.u-skin-border li.focus span {
+		background-color: $primary;
+		color: white;
+	}
+
+	@media screen and ( min-width: 48em ) {
+		.u-select-tag {
+			max-width: 500px;
+		}
+		.u-select-sticky .is-stuck.sticky {
+			display: none;
+		}
+
+		.u-select-sticky {
+			height: 40px !important;
+		}
+	}
