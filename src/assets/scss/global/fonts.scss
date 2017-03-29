@@ -61,11 +61,11 @@
 	}
 
 	.f-link {
-		border-bottom: 1px solid transparent;
+		border-bottom: 1px solid $link-hover;
 		color: $link-rest;
 		line-height: 1.2;
 		&:hover {
-			border-bottom: 1px solid $link-hover;
+			border-bottom: 1px solid transparent;
 			color: $link-hover;
 		}
 	}
