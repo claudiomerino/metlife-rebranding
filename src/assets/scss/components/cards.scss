@@ -18,6 +18,20 @@
 		}
 	}
 
+	.card_item {
+		line-height: 1.2;
+		&:nth-of-type( even ) {
+			margin-bottom: 8px;
+		}
+		&:nth-of-type( odd ) {
+			margin-bottom: 0;
+		}
+	}
+
+	.card_sub-title {
+		margin-bottom: 10px;
+	}
+
 	.card_title {
 		margin-bottom: 10px;
 	}
@@ -28,6 +42,11 @@
 
 	.card_more {
 		margin: 10px 0;
+		i {
+			font-size: 24px;
+			position: relative;
+			top: 3px;
+		}
 	}
 
 	.card-pink {
