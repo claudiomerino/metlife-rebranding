@@ -21,8 +21,19 @@
 		padding: 0.5rem 1.6rem;
 	}
 
+	.login_form {
+		.u-field {
+			margin-top: 36px;
+		}
+		.u-space {
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+
 	.login_form_pass {
-		margin-bottom: 6px;
+		margin-bottom: 5px;
 	}
 
 	.login_list-item {
@@ -63,21 +74,25 @@
 	}
 
 	.login_image_complement {
-		border-right: 40px solid $secondary;
+		border-right: 50px solid $secondary;
 		position: relative;
 		&:before {
 			background-color: $primary-accent;
 			bottom: 0;
 			content: "";
 			left: 0;
-			opacity: .5;
+			opacity: .8;
 			position: absolute;
 			top: 0;
-			width: 50px;
+			width: 80px;
 		}
 	}
 	.recover_form p {
 		margin-top: 0.2rem;
+	}
+
+	.recover_link {
+		margin-top: 20px;
 	}
 
 	@media screen and ( min-width: 62em ) {

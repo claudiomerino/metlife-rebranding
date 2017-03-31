@@ -237,7 +237,9 @@
 
 	.u-select::after {
 		content: '\25BE';
-		right: 2em;
+		font-size: 24px;
+		right: 40px;
+		top: 18px;
 	}
 
 	.gutter-xs,
@@ -375,7 +377,7 @@
 	@media screen and ( min-width: 48em ) {
 
 		.u-select::after {
-			right: 1em;
+			right: 10px;
 		}
 		.u-select-tag {
 			max-width: 500px;
