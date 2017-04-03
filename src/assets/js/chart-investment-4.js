@@ -8,6 +8,13 @@
 			labels: [
 				"Fondo Mutuo Santander Global Emergente Serie Universal",
 				"Tasa Fija Garantizada en U.F.",
+				"Nombre del Fondo de Inversión con un nombre extremadamente largo",
+				"Nombre del Fondo de Inversión con un nombre extremadamente largo",
+				"Nombre del Fondo de Inversión con un nombre extremadamente largo",
+				"Nombre del Fondo de Inversión con un nombre extremadamente largo",
+				"Nombre del Fondo de Inversión con un nombre extremadamente largo",
+				"Nombre del Fondo de Inversión con un nombre extremadamente largo",
+				"Nombre del Fondo de Inversión con un nombre extremadamente largo",
 				"Nombre del Fondo de Inversión con un nombre extremadamente largo"
 			],
 			relation: [
@@ -15,14 +22,29 @@
 			],
 	    datasets: [{
 				data: [
-					50,
-					35,
-					15
+					10,
+					10,
+					10,
+					10,
+					10,
+					10,
+					10,
+					10,
+					10,
+					10
+
 				],
 				backgroundColor: [
-					"#0e4678",
-					"#e67f48",
-					"#947bba"
+					"#0a3c6e",
+					"#1fc2a2",
+					"#896eb3",
+					"#efa020",
+					"#348c6f",
+					"#e57339",
+					"#58a5b8",
+					"#b0488d",
+					"#ccaf37",
+					"#5b749e"
 				]
 			}]
 		};
