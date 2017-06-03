@@ -83,7 +83,7 @@
 	}
 
 	.cs-skin-border {
-		background: transparent;
+		background-color: transparent;
 		font-size: 1em;
 	}
 
@@ -99,7 +99,7 @@
 	}
 
 	.cs-skin-border > span {
-		background-color: white;
+		background-color: transparent;
 		border: 1px solid $dark-gray-2;
 		border-radius: 3px;
 		transition: background 0.2s, border-color 0.2s;
@@ -232,7 +232,7 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		z-index: 100;
+		z-index: 99;
 	}
 
 	.u-select::after {
