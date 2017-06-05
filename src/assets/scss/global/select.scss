@@ -238,7 +238,7 @@
 	.u-select::after {
 		content: '\25BE';
 		font-size: 24px;
-		right: 40px;
+		right: 10px;
 		top: 18px;
 	}
 
@@ -376,9 +376,6 @@
 
 	@media screen and ( min-width: 48em ) {
 
-		.u-select::after {
-			right: 10px;
-		}
 		.u-select-tag {
 			max-width: 500px;
 		}
