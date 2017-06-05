@@ -36,45 +36,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="{{root}}assets/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation-datepicker/1.5.6/js/foundation-datepicker.js"></script>
     <script>
-      (function() {
-        // Fake loading.
-        setTimeout(init, 1000);
-
-        function init() {
-
-          var splitContent = document.querySelector('.dual__content'),
-            rev1 = new RevealFx(document.querySelector('.revLogin'), {
-              revealSettings : {
-                bgcolor: '#A4CE4E',
-                direction: 'lr',
-                duration: 800,
-                easing: 'easeInOutCirc',
-                coverArea: 0,
-                onCover: function(contentEl, revealerEl) {
-                  contentEl.style.opacity = 1;
-                  splitContent.classList.add('dual__content--show');
-                }
-              }
-            });
-
-          rev1.reveal();
-        }
-      })();
-
       // Datepicker
       (function ( $ ) {
-        let today = new Date();
-        let dd = today.getDate();
-        let mm = today.getMonth() + 1;
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1;
 
-        let yyyy = today.getFullYear();
+        var yyyy = today.getFullYear();
         if( dd < 10 ){
             dd = '0' + dd;
         }
         if( mm < 10 ){
             mm = '0' + mm;
         }
-        let todayDate = dd + '-' + mm + '-' + yyyy;
+        var todayDate = dd + '-' + mm + '-' + yyyy;
 
         $('#dp1').fdatepicker({
           initialDate: todayDate,
@@ -89,21 +64,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }( jQuery ));
 
 
-
-
-
       function detectIE() {
-        var ua = window.navigator.userAgent;
-        var msie = ua.indexOf("MSIE ");
+          var ua = window.navigator.userAgent;
 
-        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
-          tkObjectFit()
-        }
+          var msie = ua.indexOf('MSIE ');
+          if (msie > 0) {
+            // IE 10 or older
+            tkObjectFit();
+          }
 
-        return false;
+          var trident = ua.indexOf('Trident/');
+          if (trident > 0) {
+              // IE 11
+            tkObjectFit();
+          }
+
+          // other browser
+          return false;
       }
 
-      detectIE()
+      detectIE();
 
     </script>
   </body>
