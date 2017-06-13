@@ -97,6 +97,14 @@
 			background-color: $pink;
 		}
 	}
+		.tabs_wrap-mortages {
+		.tabs-subtitle {
+			border-color: $mortgages;
+		}
+		.tabs-title a:before {
+			background-color: $mortgages;
+		}
+	}
 
 	@media screen and ( min-width: 62em ) {
 		.tabs_wrap_container {

@@ -1,0 +1,75 @@
+
+	{{> nav-off-canvas}}
+
+  <div class="off-canvas-content" data-off-canvas-content>
+		<div class="double-nav_sticky" data-sticky-container>
+			<div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+				{{> nav-sub}}
+				{{> nav-main}}
+			</div>
+		</div>
+
+		<section class="products bg-white-light">
+			<div class="products_container u-container">
+				<div class="products_row u-row">
+					<div class="products_col col-xs-12">
+						<div class="breadcrumb products_breadcrumb">
+							<ul class="u-row u-row-xs-full middle-xs">
+								<li>
+									<a href="" class="f-link f-tiny">Inicio</a>
+								</li>
+								<li>
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+								</li>
+								<li>
+									<p class="f-tiny"> Resumen de productos</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xs-12">
+
+							<section class="products_heading center-xs u-space">
+								<h2 class="products_title">Mis Productos</h2>
+							</section>
+
+						</div>
+					</div>
+					<div class="products_col col-xs-12 col-lg-8">
+
+						<section class="products_card">
+							{{> products-cards}}
+						</section>
+					</div>
+					<div class="col-xs-12 col-lg-4 end-lg">
+						<div class="u-row center-xs">
+							<div class="col-sm-6 col-lg-12">
+								<div class="media-object stack-for-small u-space">
+									<div class="media-object-section">
+									    <div class="thumbnail">
+									     <img src="{{root}}assets/img/paga-poliza.png" alt="Logotipo" width="100%" />
+									    </div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-lg-12">
+								<div class="media-object stack-for-small u-space">
+									<div class="media-object-section">
+									    <div class="thumbnail">
+									       <a href="http://www.metlife.cl/publico/en_letra_grande/en_letra_grande.asp" target="_blank"><img src="{{root}}assets/img/salud-uc.png" alt="Logotipo" width="100%" /></a>
+									    </div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+						<div class="products_info u-section">
+							<p class="f-legal">Los datos e información contenido corresponde a aquella proporcionada por el cliente contratante al momento de la contratación del seguro y otorgamiento del crédito según corresponda. El cliente será responsable de comunicar a la Compañía Aseguradora cualquier modificación de sus datos personales, información de contacto u otro.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
