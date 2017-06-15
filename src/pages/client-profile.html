@@ -32,7 +32,20 @@
 				</section>
 
 				<section class="client-profile_cards">
-					{{> client-profile-cards}}
+					<form action="">
+						{{> client-profile-cards}}
+						<section class="u-row center-xs middle-xs gutter-xs">
+							<div class="col-xs-4 col-xs-full end-xs" id="clientProfileUpdateData">
+								<button class="button button-full button-primary">Actualizar datos</button>
+							</div>
+							<div class="col-xs-4 col-xs-full end-xs hide-xs" id="clientProfileCancelUpdateData">
+								<a href="#" class="f-link">Cancelar actualización de datos</a>
+							</div>
+							<div class="col-xs-4 col-xs-full end-xs hide-xs" id="clientProfileSaveUpdateData">
+								<input type="submit" class="button button-full button-primary" value="Guardar cambios">
+							</div>
+						</section>
+					</form>
 				</section>
 
 				<div class="client-profile_info u-section">
