@@ -35,6 +35,14 @@
 		padding: 0 1.6rem;
 	}
 
+	.tabs_irow-empty {
+		min-height: 52px;
+	}
+
+	.tabs_irow-empty-multi-line {
+		min-height: 78px;
+	}
+
 	.tabs-subtitle {
 		border-bottom: 2px solid $primary;
 		margin-bottom: 1rem;
