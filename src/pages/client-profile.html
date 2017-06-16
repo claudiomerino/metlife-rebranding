@@ -32,7 +32,7 @@
 				</section>
 
 				<section class="client-profile_cards">
-					<form action="" data-abide novalidate data-live-validate="true">
+					<form action="" data-abide novalidate data-live-validate="true" id="UpdateDataForm">
 						{{> client-profile-cards}}
 						<section class="u-row center-xs middle-xs gutter-xs">
 							<!--Modal aceptar actualizar datos-->
@@ -49,14 +49,30 @@
 							</div>
 
 
-							<div class="col-xs-4 col-xs-full end-xs ClientProfileToggleHide">
+							<div class="col-xs-4 col-xs-full end-xs ClientProfileToggleHide u-space">
 								<a class="button button-full button-primary" data-open="clientProfileModal">Actualizar datos</a>
 							</div>
-							<div class="col-xs-4 col-xs-full end-xs hide-xs" id="clientProfileCancelUpdateData">
+							<div class="col-xs-4 col-xs-full end-xs hide-xs u-space" id="clientProfileCancelUpdateData">
 								<a href="#" class="f-link">Cancelar actualización de datos</a>
 							</div>
-							<div class="col-xs-4 col-xs-full end-xs hide-xs" id="clientProfileSaveUpdateData">
-								<input type="submit" class="button button-full button-primary" value="Guardar cambios">
+							<div class="col-xs-4 col-xs-full end-xs hide-xs u-space" id="clientProfileSaveUpdateData">
+								<button type="submit" class="button button-full button-primary">Guardar cambios</button>
+							</div>
+
+							<div class="col-xs-12">
+								<div class="alert alert-success u-space hide-xs" id="ClientProfileMessageSuccess">
+									<p class="alert_desc center-xs">
+										Tus cambios han sido guardados con exito
+									</p>
+								</div>
+							</div>
+
+							<div class="col-xs-12">
+								<div class="alert alert-error u-space hide-xs" id="ClientProfileMessageCancel">
+									<p class="alert_desc center-xs">
+										Tus cambios han sido cancelados
+									</p>
+								</div>
 							</div>
 						</section>
 					</form>
