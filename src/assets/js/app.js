@@ -1,7 +1,6 @@
 
 	$( document ).foundation();
 
-
-    $(document).ready( function(e) {
-        inputFilled();
-    });
+  $( document ).ready( function(e) {
+      inputFilled();
+  });
