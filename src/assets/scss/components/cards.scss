@@ -56,6 +56,13 @@
 		}
 	}
 
+	.card-mortgage {
+		border-color: $mortgages;
+		.card_icon {
+			color: $mortgages;
+		}
+	}
+
 	.card_list-item-link {
 		padding-left: 3rem;
 	}
