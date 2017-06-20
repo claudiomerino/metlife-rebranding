@@ -21,13 +21,13 @@
 						<h3 class="u-space login_title center-xs"><strong>Recupera tu Clave de Acceso</strong></h3>
 						<p class="login_support f-small text-center">Si tienes un correo electrónico registrado con nosotros, ingresa tu RUT en el recuadro, presiona "Recuperar Clave" y te la enviaremos de forma inmediata a tu casilla registrada.</p>
 
-						<form class="recover_form" id="recoverPassForm" action="" method="" data-abide novalidate data-live-validate="true">
-							<div class="loading hide-xs" id="loadingRecoverPass">
+						<form class="recover_form loadingForm" id="recoverPassForm" action="" method="" data-abide novalidate data-live-validate="true">
+							<div class="loading hide-xs loadingMessage">
 								{{> loading-1}}
 								<p class="loading_message center-xs"><strong>Estamos procesando tu solicitud</strong></p>
 							</div>
 
-							<div class="alert alert-success u-space hide-xs" id="successRecoverPass">
+							<div class="alert alert-success u-space hide-xs loadingSuccess">
 								<p class="alert_desc center-xs">
 									Tu clave ha sido enviada al correo<br/>
 									<strong>xxxxxxx@sucorreo.com</strong> que se encuentra<br/>
@@ -36,13 +36,13 @@
 								</p>
 							</div>
 
-							<div class="alert alert-error hide-xs" id="errorRecoverPass">
+							<div class="alert alert-error hide-xs errorLoading">
 								<p class="alert_desc center-xs">
 									No se pudo obtener tu correo electrónico. Comunícate con nuestro Servicio al Cliente al <a href="tel:+566003903000"><strong>600 390 3000</strong></a>
 								</p>
 							</div>
 
-							<div class="login_toggle_content" id="toggleRecoverPass">
+							<div class="login_toggle_content toggleMainLoading">
 								<section class="u-field u-space">
 									<span class="input input--ichiro">
 										<input class="input__field input__field--ichiro" type="text" id="recoverRut"  data-live-validate="true" required />
@@ -58,7 +58,7 @@
 										<a href="login.html" class="f-link">Cancelar</a>
 									</div>
 									<div class="col-xs-8 end-xs">
-										<input type="submit" id="submitRecoverPass" class="button button-full button-primary" value="Recuperar Clave">
+										<input type="submit" class="button button-full button-primary submitLoading" value="Recuperar Clave">
 									</div>
 								</div>
 							</div>

@@ -1,19 +1,17 @@
 
-	let $toggleRecoverPass = $( '#toggleRecoverPass' );
-	let $loadingRecoverPass = $( '#loadingRecoverPass' );
-	let $submitRecoverPass = $( '#submitRecoverPass' );
-	let $recoverPassForm = $( '#recoverPassForm' );
-	let $successRecoverPass = $( '#successRecoverPass' );
-	let $errorRecoverPass = $( '#errorRecoverPass' );
-	let $recoverRut = $( '#recoverRut' );
+	let $toggleMainLoading = $( '.toggleMainLoading' );
+	let $loadingMessage = $( '.loadingMessage' );
+	let $loadingForm = $( '.loadingForm' );
+	let $loadingSuccess = $( '.loadingSuccess' );
+	let $errorLoading = $( '.errorLoading' );
 
-	$recoverPassForm.on("submit", ( ev ) => {
+	$loadingForm.on("submit", ( ev ) => {
 		ev.preventDefault();
-		$toggleRecoverPass.addClass( 'hide-xs' );
-		$loadingRecoverPass.removeClass( 'hide-xs' );
+		$toggleMainLoading.addClass( 'hide-xs' );
+		$loadingMessage.removeClass( 'hide-xs' );
 		setTimeout( () => {
-			$loadingRecoverPass.addClass( 'hide-xs' );
-			$successRecoverPass.removeClass( 'hide-xs' );
-			$errorRecoverPass.removeClass( 'hide-xs' );
+			$loadingMessage.addClass( 'hide-xs' );
+			$loadingSuccess.removeClass( 'hide-xs' );
+			$errorLoading.removeClass( 'hide-xs' );
 		}, 3000);
 	});
