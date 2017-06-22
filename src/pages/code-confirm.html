@@ -1,0 +1,64 @@
+{{> nav-off-canvas}}
+
+  <div class="off-canvas-content" data-off-canvas-content>
+
+		<div class="double-nav_sticky" data-sticky-container>
+			<div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+				{{> nav-sub}}
+				{{> nav-main}}
+			</div>
+		</div>
+
+		<section class="client-profile bg-white-light">
+			<div class="client-profile_container u-container">
+				<div class="breadcrumb life-apv_breadcrumb">
+					<ul class="u-row middle-xs">
+						<li>
+							<a href="products.html" class="f-link f-tiny">Inicio</a>
+						</li>
+						<li>
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+						</li>
+						<li>
+							<p class="f-tiny">Mi Perfil</p>
+						</li>
+					</ul>
+				</div>
+
+
+				<section class="client-profile_heading center-xs u-space">
+					<h2 class="client-profile_title"></h2>
+				</section>
+
+				<section class="tabs_wrap u-space">
+					<div class="client_wrap_container">
+
+						<h4 class="tabs-subtitle-profile center-xs">Codigo de verificación</h4>
+						<section class="u-field u-section">
+							<div class="u-row center-xs u-space">
+								<div class="col-xs-4">
+									<span class="input input--ichiro">
+										<input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="comments" required />
+										<label class="input__label input__label--ichiro" for="comments">
+											<span class="input__label-content input__label-content--ichiro">Ingresar codigo </span>
+										</label>
+										<p class="form-error f-tiny">Ingresa un comentario.</p>
+									</span>
+								</div>
+							</div>
+
+							<div class="u-row center-xs">
+								<div class="col-xs-4 col-xs-full end-xs ClientProfileToggleHide u-space">
+									<a class="button button-full button-primary" data-open="clientProfileModal">Verificar codigo</a>
+								</div>
+							</div>
+
+						</section>
+					</div>
+				</section>
+
+
+			</div>
+		</section>
+
+	</div>
