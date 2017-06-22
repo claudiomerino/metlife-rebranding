@@ -34,31 +34,55 @@
 					<div class="client_wrap_container">
 
 						<h4 class="tabs-subtitle-profile center-xs">Codigo de verificación</h4>
-						<section class="u-field u-section">
-							<div class="u-row center-xs u-space">
-								<div class="col-xs-4">
-									<span class="input input--ichiro">
-										<input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="comments" required />
-										<label class="input__label input__label--ichiro" for="comments">
-											<span class="input__label-content input__label-content--ichiro">Ingresar codigo </span>
-										</label>
-										<p class="form-error f-tiny">Ingresa un comentario.</p>
-									</span>
-								</div>
-							</div>
+						<div class="login_row u-row center-xs">
+							<div class="col-xs-4">
+								<form class="recover_form" action="" method="" id="ChangePassForm" data-abide novalidate  data-live-validate="true">
 
-							<div class="u-row center-xs">
-								<div class="col-xs-4 col-xs-full end-xs ClientProfileToggleHide u-space">
-									<a class="button button-full button-primary" data-open="clientProfileModal">Verificar codigo</a>
-								</div>
-							</div>
+									<div class="loading hide-xs" id="loadingChangePass">
+										{{> loading-1}}
+										<p class="loading_message center-xs"><strong>Estamos validando su codigo de seguridad</strong></p>
+									</div>
 
-						</section>
+									<div class="alert alert-success u-space hide-xs" id="successChangePass">
+										<p class="alert_desc center-xs">
+											<strong>Tu clave de acceso ha sido cambiada con éxito.</strong> Te estamos redirigiendo a la página de Acceso para Clientes, donde podrás ingresar al sitio usando tu nueva clave.
+										</p>
+									</div>
+
+									<div class="login_toggle_content " id="toggleChangePass">
+
+										<section class="u-field u-section">
+											<div class="u-row center-xs u-space">
+												<div class="col-xs-12">
+													<span class="input input--ichiro">
+														<input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="comments" required />
+														<label class="input__label input__label--ichiro" for="comments">
+															<span class="input__label-content input__label-content--ichiro">Ingresar codigo </span>
+														</label>
+														<p class="form-error f-tiny">Ingresa un comentario.</p>
+													</span>
+												</div>
+											</div>
+
+											<div class="u-row no-gutter-xs middle-xs u-space">
+												<div class="col-xs-12 end-xs">
+													<input type="submit" id="submitChangePass" class="button button-full button-primary" value="verificar codigo">
+												</div>
+											</div>
+
+											<div>
+												<p class="login_support text-center f-small">Si tienes algún problema, contáctate con nuestro Servicio al Cliente algún <a href="tel:+566003903000"><strong>600 390 3000</strong></a>
+												</p>
+											</div>
+										</section>
+
+									</div>
+								</form>
+
+							</div>
+						</div>
 					</div>
 				</section>
-
-
 			</div>
 		</section>
-
 	</div>
