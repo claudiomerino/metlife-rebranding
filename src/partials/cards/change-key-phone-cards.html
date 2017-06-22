@@ -1,0 +1,78 @@
+
+	<section class="tabs_wrap u-space">
+		<div class="client_wrap_container">
+
+			<h3 class="tabs-subtitle-profile center-xs u-space"><strong>Solicitar Envío y Cambiar Clave Telefónica</strong></h3>
+			<div class="login_row u-row center-xs">
+				<div class="col-xs-4 col-xs-full dual__content">
+					<form class="recover_form" action="" method="" id="ChangePassForm" data-abide novalidate  data-live-validate="true">
+
+						<div class="loading hide-xs" id="loadingChangePass">
+							{{> loading-1}}
+							<p class="loading_message center-xs"><strong>Estamos procesando su solicitud</strong></p>
+						</div>
+
+						<div class="alert alert-success u-space hide-xs" id="successChangePass">
+							<p class="alert_desc center-xs">
+								<strong>Tu clave de acceso ha sido cambiada con éxito.</strong> Te estamos redirigiendo a la página de Acceso para Clientes, donde podrás ingresar al sitio usando tu nueva clave.
+							</p>
+						</div>
+
+						<div class="login_toggle_content u-section" id="toggleChangePass">
+							<section class="u-field u-space">
+								<span class="input input--ichiro">
+									<input class="input__field input__field--ichiro" type="password" id="changeActualPass" data-live-validate="true" required />
+									<label class="input__label input__label--ichiro" for="changeActualPass">
+										<span class="input__label-content input__label-content--ichiro">Clave Actual</span>
+									</label>
+									<p class="form-error f-tiny">La clave ingresada no corresponde a la enviada al correo electrónico.</p>
+								</span>
+							</section>
+
+							<section class="u-field">
+								<span class="input input--ichiro">
+									<input class="input__field input__field--ichiro" type="password" id="changeNewPass" pattern="length" data-validator="letters_only numbers_only" required />
+									<label class="input__label input__label--ichiro" for="changeNewPass">
+										<span class="input__label-content input__label-content--ichiro">Nueva Clave</span>
+									</label>
+								</span>
+							</section>
+
+							<p class="select_clave_nueva f-tiny start-xs">Por motivos de seguridad, la nueva clave debe contener:</p>
+
+							<ul class="login_list u-space">
+								<li class="login_list-item">
+									<p id="errorLength" class="f-tiny start-xs">- Al menos 8 caracteres.</p>
+								</li>
+								<li class="login_list-item">
+									<p id="errorAZ" class="f-tiny start-xs">- Al Menos una letra [A-Z]</p>
+								</li>
+								<li class="login_list-item">
+									<p id="errorNumbers" class="f-tiny start-xs">- Al menos un número [0-9]</p>
+								</li>
+							</ul>
+
+							<section class="u-field u-space">
+								<span class="input input--ichiro">
+									<input class="input__field input__field--ichiro" type="password" id="changeAgainPass" data-live-validate="true" data-equalto="changeNewPass" required />
+									<label class="input__label input__label--ichiro" for="changeAgainPass">
+										<span class="input__label-content input__label-content--ichiro">Confirmación Nueva Clave</span>
+									</label>
+									<p class="form-error f-tiny">Las claves que ingresaste no coinciden.</p>
+								</span>
+							</section>
+
+							<div class="u-row no-gutter-xs middle-xs">
+								<div class="col-xs-12 end-xs">
+									<input type="submit" id="submitChangePass" class="button button-full button-primary" value="Cambiar Clave">
+								</div>
+							</div>
+						</div>
+					</form>
+
+						<p class="login_support text-center f-small">Si tienes algún problema, contáctate con nuestro Servicio al Cliente al <a href="tel:+566003903000"><strong>600 390 3000</strong></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
