@@ -242,6 +242,25 @@
 		top: 18px;
 	}
 
+
+
+	.contact_client_u-select::after,
+	.contact_client_u-select .selected::after {
+		speak: none;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 99;
+	}
+
+	.contact_client_u-select::after {
+		content: '\25BE';
+		font-size: 24px;
+		top: -37px;
+		left: 167px;
+	}
+
+
 	.gutter-xs,
 	.gutter-sm,
 	.gutter-md,

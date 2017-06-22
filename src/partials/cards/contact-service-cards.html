@@ -1,0 +1,86 @@
+
+	<section class="tabs_wrap u-space">
+		<div class="client_wrap_container">
+
+			<h4 class="tabs-subtitle-profile center-xs">Servicio de Contacto al Cliente</h4>
+			<div class="client-profile_row u-row">
+				<div class="contact_client col-xs-12 center-xs">
+
+					<form class="login_form loadingForm" id="contactServiceClientForm" action="" data-abide novalidate data-live-validate="true">
+
+						<div class="loading hide-xs loadingMessage">
+							{{> loading-1}}
+							<p class="loading_message center-xs"><strong>Estamos procesando tu solicitud</strong></p>
+						</div>
+
+						<div class="alert alert-success u-space hide-xs loadingSuccess">
+							<p class="alert_desc center-xs">
+								Tus comentarios han sido enviados al correo<br/>
+								<strong>xxxxxxx@metlife.cl</strong><br/>
+								Te responderemos pronto
+							</p>
+						</div>
+
+						<div class="alert alert-error hide-xs errorLoading">
+							<p class="alert_desc center-xs">
+								No se pudo enviar tus comentarios. Comunícate con nuestro Servicio al Cliente al <a href="tel:+566003903000"><strong>600 390 3000</strong></a>
+							</p>
+						</div>
+
+						<div class="toggleMainLoading u-section">
+
+							<section class="u-field u-space">
+								<div class="u-row center-xs">
+									<div class="col-xs-4">
+										<span class="input input--ichiro">
+											<input class="input__field input__field--ichiro" data-live-validate="true" type="email" id="email" required />
+											<label class="input__label input__label--ichiro" for="email">
+												<span class="input__label-content input__label-content--ichiro">Email</span>
+											</label>
+											<p class="form-error f-tiny">Ingresa un correo válido.</p>
+										</span>
+									</div>
+								</div>
+							</section>
+
+							<section class="u-field u-space">
+								<div class="u-row center-xs">
+									<div class="col-xs-4">
+										<span class="input input--ichiro">
+											<input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="comments" required />
+											<label class="input__label input__label--ichiro" for="comments">
+												<span class="input__label-content input__label-content--ichiro">Comentarios</span>
+											</label>
+											<p class="form-error f-tiny">Ingresa un comentario.</p>
+										</span>
+									</div>
+								</div>
+							</section>
+
+							<section class="contact_client_u-select u-space">
+								<div class="u-row center-xs">
+									<div class="col-xs-4">
+										<select class="cs-select cs-skin-border">
+											<option value="poliza1" selected>Póliza 1</option>
+											<option value="poliza2">Póliza 2</option>
+											<option value="poliza3">Póliza 3</option>
+										</select>
+									</div>
+								</div>
+							</section>
+
+							<div class="u-row center-xs">
+								<div class="col-xs-4 col-xs-full end-xs ClientProfileToggleHide u-space">
+									<a class="button button-full button-primary" data-open="clientProfileModal">Ingresar</a>
+								</div>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
