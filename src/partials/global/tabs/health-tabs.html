@@ -1,0 +1,35 @@
+
+	<section class="tabs_wrap tabs_wrap-pink">
+		<div class="tabs_wrap_container">
+			<ul class="tabs" data-responsive-accordion-tabs="accordion medium-tabs" id="tabs">
+				<li class="tabs-title is-active">
+					<a href="#panel1" class="center-xs" aria-selected="true"><h5 class="heading_sub-title">Información</h5> <h5 class="heading_sub-title"> de la Póliza</h5></a>
+				</li>
+				<li class="tabs-title">
+					<a href="#panel2" class="center-xs"><h5 class="heading_sub-title">Información</h5> <h5 class="heading_sub-title"> de pagos</h5></a>
+				</li>
+				<li class="tabs-title tabs-chart-health-beneficiaries">
+					<a href="#panel3" class="center-xs"><h5 class="heading_sub-title">Asegurados</h5> <h5 class="heading_sub-title"> y Beneficiarios</h5></a>
+				</li>
+				<li class="tabs-title">
+					<a href="#panel5" class="center-xs"><h5 class="heading_sub-title">Histórico</h5> <h5 class="heading_sub-title"> de Siniestros</h5></a>
+				</li>
+			</ul>
+
+			<div class="tabs-content" data-tabs-content="tabs">
+				<div class="tabs-panel is-active" id="panel1">
+					{{> tabs-health-1}}
+				</div>
+				<div class="tabs-panel" id="panel2">
+					{{> tabs-health-2}}
+				</div>
+				<div class="tabs-panel" id="panel3">
+					{{> tabs-health-3}}
+				</div>
+				<div class="tabs-panel" id="panel5">
+					{{> tabs-health-5}}
+				</div>
+			</div>
+
+		</div>
+	</section>
