@@ -1,37 +1,41 @@
 
-	let $toggleChangePass = $( '#toggleChangePass' );
-	let $loadingChangePass = $( '#loadingChangePass' );
-	let $submitChangePass = $( '#submitChangePass' );
-	let $changePassForm = $( '#ChangePassForm' );
-	let $successChangePass = $( '#successChangePass' );
-	let $changeAgainPass = $( '#changeAgainPass' );
-	let $changeNewPass = $( '#changeNewPass' );
+	// Variables Change-key-access-cards
 
-	let $errorLength = $( '#errorLength' );
-	let $errorAZ = $( '#errorAZ' );
-	let $errorNumbers = $( '#errorNumbers' );
+	let $toggleChangePass = $( '.toggleChangePass' );
+	let $loadingChangePass = $( '.loadingChangePass' );
+	let $changePassForm = $( '.ChangePassForm' );
+	let $successChangePass = $( '.successChangePass' );
+	let $changeNewPass = $( '.changeNewPass input' );
+	let $changeNewPassParent = $( '.changeNewPass' );
+
+	let $errorLength = $( '.errorLength' );
+	let $errorAZ = $( '.errorAZ' );
+	let $errorNumbers = $( '.errorNumbers' );
+
+
 
 	// Change New Pass
 	$changeNewPass.on("valid.zf.abide", function(ev,el) {
-		$errorLength.removeClass( 'pink' );
-		$errorLength.addClass( 'green' );
+		$(el).closest($changeNewPassParent).find($errorLength).removeClass( 'pink' );
+		$(el).closest($changeNewPassParent).find($errorLength).addClass( 'green' );
 	});
 
 	$changeNewPass.on("invalid.zf.abide", function(ev,el) {
-		$errorLength.removeClass( 'green' );
-		$errorLength.addClass( 'pink' );
+		$(el).closest($changeNewPassParent).find($errorLength).removeClass( 'green' );
+		$(el).closest($changeNewPassParent).find($errorLength).addClass( 'pink' );
 	});
-
 
 	// Change Pass Form
 	$changePassForm.on("submit", ( ev ) => {
+
 		ev.preventDefault();
-		$toggleChangePass.addClass( 'hide-xs' );
-		$loadingChangePass.removeClass( 'hide-xs' );
+		$(ev.currentTarget).find($toggleChangePass).addClass( 'hide-xs' );
+		$(ev.currentTarget).find($loadingChangePass).removeClass( 'hide-xs' );
 		setTimeout( () => {
-			$loadingChangePass.addClass( 'hide-xs' );
-			$successChangePass.removeClass( 'hide-xs' );
+			$(ev.currentTarget).find($loadingChangePass).addClass( 'hide-xs' );
+			$(ev.currentTarget).find($successChangePass).removeClass( 'hide-xs' );
 		}, 3000);
+
 	});
 
 
@@ -43,12 +47,12 @@
 		let letterPattern = new RegExp(/[a-zA-Z]/);
 
 		if( letterPattern.test( letterValue ) ) {
-			$errorAZ.addClass( 'green' );
-			$errorAZ.removeClass( 'pink' );
+			$el.closest($changeNewPassParent).find($errorAZ).addClass( 'green' );
+			$el.closest($changeNewPassParent).find($errorAZ).removeClass( 'pink' );
 		}
 		else {
-			$errorAZ.addClass( 'pink' );
-			$errorAZ.removeClass( 'green' );
+			$el.closest($changeNewPassParent).find($errorAZ).addClass( 'pink' );
+			$el.closest($changeNewPassParent).find($errorAZ).removeClass( 'green' );
 		}
 
 	};
@@ -59,12 +63,12 @@
 		let numbersPattern = new RegExp(/[0-9]/);
 
 		if( numbersPattern.test( numbersValue ) ) {
-			$errorNumbers.addClass( 'green' );
-			$errorNumbers.removeClass( 'pink' );
+			$el.closest($changeNewPassParent).find($errorNumbers).addClass( 'green' );
+			$el.closest($changeNewPassParent).find($errorNumbers).removeClass( 'pink' );
 		}
 		else {
-			$errorNumbers.addClass( 'pink' );
-			$errorNumbers.removeClass( 'green' );
+			$el.closest($changeNewPassParent).find($errorNumbers).addClass( 'pink' );
+			$el.closest($changeNewPassParent).find($errorNumbers).removeClass( 'green' );
 		}
 
 	};
