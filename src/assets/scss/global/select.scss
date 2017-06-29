@@ -14,7 +14,6 @@
 		background: #fff;
 		z-index: 100;
 		width: 100%;
-		max-width: 500px;
 		user-select: none;
 	}
 
@@ -268,12 +267,18 @@
 	}
 
 
-	.gutter-xs,
-	.gutter-sm,
-	.gutter-md,
-	.gutter-lg {
+	.gutter-xs {
 		.u-select::after {
-			right: 2em;
+			right: 10px;
+			top: 45px;
+			color: #555;
+		}
+		.gutter-sm,
+		.gutter-md,
+		.gutter-lg {
+			.u-select::after {
+				right: 2em;
+			}
 		}
 	}
 
