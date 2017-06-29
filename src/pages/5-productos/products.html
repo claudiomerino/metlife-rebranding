@@ -13,6 +13,7 @@
 			<div class="products_container u-container">
 				<div class="products_row u-row">
 					<div class="products_col col-xs-12">
+
 						<div class="breadcrumb products_breadcrumb">
 							<ul class="u-row u-row-xs-full middle-xs">
 								<li>
@@ -26,50 +27,78 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-xs-12">
 
+						<div class="col-xs-12">
 							<section class="products_heading center-xs u-space">
 								<h2 class="products_title">Mis Productos</h2>
 							</section>
-
 						</div>
-					</div>
-					<div class="products_col col-xs-12 col-lg-8">
 
-						<section class="products_card">
-							{{> products-cards}}
+					</div>
+				</div>
+
+
+				<div class="products_row u-row u-space">
+					<div class="products_col col-xs-12 col-md-5">
+						<figure>
+							<img src="{{root}}assets/img/products_banner_img.png">
+						</figure>
+					</div>
+
+					<div class="products_col col-xs-12 col-md-7">
+						<p>Sofía en 8 años más entrará a la Universidad. Comienza a ahorrar con nosotros hoy.</p>
+						<ul>
+							<li>Característica 1 de la promoción</li>
+							<li>Característica 2 de la promoción con más texto</li>
+						</ul>
+						<a href="" class="button">Saber más</a>
+					</div>
+				</div>
+
+
+				<div class="products_row u-row">
+					<div class="products_col col-xs-12 col-md-8">
+						<section class="products_card u-space">
+							{{> card-insurance-life-products }}
+						</section>
+						<section class="products_card u-space">
+							{{> card-insurance-life-apv-products }}
+						</section>
+						<section class="products_card u-space">
+							{{> card-insurance-accident-products }}
+						</section>
+						<section class="products_card u-space">
+							{{> card-credit-mortgage-universal-products }}
 						</section>
 					</div>
-					<div class="col-xs-12 col-lg-4 end-lg">
+
+					<div class="products_col col-xs-12 col-md-4">
 						<div class="u-row center-xs">
 							<div class="col-sm-6 col-lg-12">
-								<div class="media-object stack-for-small u-space">
-									<div class="media-object-section">
-									    <div class="thumbnail">
-									     <img src="{{root}}assets/img/paga-poliza.png" alt="Logotipo" width="100%" />
-									    </div>
-									</div>
-								</div>
+								<p>Aprende a Pagar tu Póliza en Línea</p>
+								<i>icono</i>
+								<p>Olvidate de hacer filas. A partir de ahora paga todas tus polizas de manera segura sin moverte de casa</p>
 							</div>
-
-							<div class="col-sm-6 col-lg-12">
-								<div class="media-object stack-for-small u-space">
-									<div class="media-object-section">
-									    <div class="thumbnail">
-									       <a href="http://www.metlife.cl/publico/en_letra_grande/en_letra_grande.asp" target="_blank"><img src="{{root}}assets/img/salud-uc.png" alt="Logotipo" width="100%" /></a>
-									    </div>
-									</div>
-								</div>
-							</div>
-
 						</div>
-					</div>
 
-						<div class="products_info u-section">
-							<p class="f-legal">Los datos e información contenido corresponde a aquella proporcionada por el cliente contratante al momento de la contratación del seguro y otorgamiento del crédito según corresponda. El cliente será responsable de comunicar a la Compañía Aseguradora cualquier modificación de sus datos personales, información de contacto u otro.</p>
+						<div class="u-row center-xs">
+							<div class="col-sm-6 col-lg-12">
+								<p>Protege a tu familia con los nuevos seguros de Salud UC</p>
+								<figure>
+									<img src="{{root}}assets/img/products_protect_family.png">
+								</figure>
+								<p>Siente la seguridad y tranquilidad de tener acceso a la Red de Salud UC CHRISTUS, la red más importante del pais, la única que cuenta con el respaldo y excelencia de la medicina UC.</p>
+								<a href="" class="button">Más información</a>
+							</div>
 						</div>
 					</div>
 				</div>
+
+
+				<div class="products_info u-section">
+					<p class="f-legal">Los datos e información contenido corresponde a aquella proporcionada por el cliente contratante al momento de la contratación del seguro y otorgamiento del crédito según corresponda. El cliente será responsable de comunicar a la Compañía Aseguradora cualquier modificación de sus datos personales, información de contacto u otro.</p>
+				</div>
+
 			</div>
 		</section>
 	</div>
