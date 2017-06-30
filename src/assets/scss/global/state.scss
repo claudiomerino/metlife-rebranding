@@ -1,0 +1,33 @@
+
+	@import './color.scss';
+
+
+	.state::after {
+		border-radius: 50%;
+		content: '';
+		position: absolute;
+	}
+
+	.active::after,
+	.inactive::after {
+		height: 17px;
+		width: 17px;
+		margin-left: 5px;
+		margin-top: 5px;
+	}
+
+	.active::after {
+		background-color: $secondary;
+	}
+
+	.inactive::after {
+		background-color: $pink;
+	}
+
+	.bullet-point::after {
+		background-color: $secondary-accent;
+		height: 10px;
+		left: 0;
+		top: 6px;
+		width: 10px;
+	}

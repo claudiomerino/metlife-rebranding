@@ -18,6 +18,13 @@
 		}
 	}
 
+	.card-green {
+		border-color: $accident;
+		.card_icon {
+			color: $accident;
+		}
+	}
+
 	.card_item {
 		line-height: 1.2;
 		&:nth-of-type( even ) {
