@@ -101,10 +101,35 @@
 		.tabs-subtitle {
 			border-color: $pink;
 		}
-		.tabs-title a:before {
-			background-color: $pink;
+		.tabs-title	{
+			a:before {
+				background-color: $pink;
+			}
+			&.is-active {
+				a {
+					color: $pink;
+				}
+			}
 		}
 	}
+
+	.tabs_wrap-green {
+		.tabs-subtitle {
+			border-color: $accident;
+		}
+		.tabs-title {
+			&.is-active {
+				a {
+					color: $accident;
+				}
+			}
+			a:before {
+				background-color: $accident;
+			}
+		}
+	}
+
+
 
 	@media screen and ( min-width: 62em ) {
 		.tabs_wrap_container {
