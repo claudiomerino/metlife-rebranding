@@ -3,17 +3,9 @@
 	<h6 class="tabs-subtitle">Información de Dividendos</h6>
 
 		<div class="u-row gutter-xs">
-			<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-md-3 u-space u-select">
 				<p class="f-small"><strong>Filtrar por estado de Dividendo:</strong></p>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-6">
-				<p class="f-small"><strong>Filtrar por rango de fechas:</strong></p>
-			</div>
-		</div>
-
-		<div class="u-row gutter-xs">
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<select class="cs-select cs-skin-border items_select_box u-select u-field clientProfileEdit label_select">
+				<select class="cs-select cs-skin-border items_select_box">
 					<option value="">Todos los etados</option>
 					<option value="">Pagado</option>
 					<option value="">Por Pagar</option>
@@ -21,31 +13,42 @@
 				</select>
 			</div>
 
+			<div class="col-xs-12 col-sm-6 col-md-6 u-space">
+				<p class="f-small"><strong>Filtrar por rango de fechas:</strong></p>
+				<div class="u-row gutter-xs">
+					<div class="col-xs-12 col-md-5">
+						<section class="u-space u-field">
+							<span class="input input--ichiro input--datepicker">
+								<input class="input__field input__field--ichiro DatePicker" data-placeholder="dfgdfgdfgdfg" type="text" class="span3">
+								<i class="material-icons">date_range</i>
+							</span>
+						</section>
+					</div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3">
-				<section class="u-field">
-					<span class="input input--ichiro input--datepicker">
-						<input class="input__field input__field--ichiro DatePicker" data-placeholder="dfgdfgdfgdfg" type="text" class="span3">
-						<i class="material-icons">date_range</i>
-					</span>
-				</section>
+					<div class="col-xs-12 col-md-5 u-space">
+						<section class="u-field">
+							<span class="input input--ichiro input--datepicker">
+								<input class="input__field input__field--ichiro DatePicker" placeholder="Hasta" type="text" class="span2">
+								<i class="material-icons">date_range</i>
+							</span>
+						</section>
+					</div>
+				</div>
 			</div>
-			<p><strong>-</strong></p>
-			<div class="col-xs-12 col-sm-6 col-md-3">
+
+			<div class="col-xs-12 col-md-3 u-space">
+			<p class="f-small"><strong>Exportar a Excel:</strong></p>
 				<section class="u-field">
-					<span class="input input--ichiro input--datepicker">
-						<input class="input__field input__field--ichiro DatePicker" placeholder="Hasta" type="text" class="span2">
-						<i class="material-icons">date_range</i>
+					<span class="input input--ichiro">
+						<a href="" class="export_excel button button-primary">Exportar <i class="material-icons icon_export_excel">file_download</i></a>
 					</span>
 				</section>
 			</div>
 		</div>
 
 
-
-		<div class="table-responsive table-scroll table gutter-xs">
-
-		  <table class="u-striped">
+		<div class="table-scroll table gutter-xs">
+		  <table class="table-responsive">
 		    <thead>
 	      	<tr>
 		        <th class="table-2">
@@ -102,6 +105,80 @@
 							<a href="">Mostrar más información</a>
 						</td>
 	      	</tr>
+
+	      	<tr>
+		      	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
+							<p class="table_desc">54 / 240</p>
+						</td>
+		      	<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
+							<p class="table_desc">Pagado</p>
+						</td>
+		      	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
+							<p class="table_desc">20/06/2017 - 05/06/2017</p>
+						</td>
+						<td class="table-3" valign="middle" data-table-title="Total Dividendo">
+							<p class="table_desc">UF 20.05 / $ 554.865</p>
+						</td>
+
+		      	<td class="table-2" valign="middle" data-table-title="Información">
+		        	<div class="card_more end-xs">
+								<a href="" class="f-link openContent" data-open-content="54">
+									<span class="openContentText" data-rest-text="¿Qué quieres hacer?" data-open-text="Mostrar menos información" data-close="true">¿Qué quieres hacer?</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
+							</div>
+						</td>
+				 	</tr>
+
+
+
+	    		<tr class="u-divider toggleContent" data-toggle-content="54">
+	    			<td class="table-12" valign="middle">
+	    				<div class="u-row">
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Amortización:</strong></p>
+									<p class="card_item">UF 18 / 555.065</p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Amortización Extraordinaria:</strong></p>
+									<p class="card_item">UF 0 / $0</p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Interés:</strong></p>
+									<p class="card_item">UF 0.98 / $25.993</p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Interés penal o Mora:</strong></p>
+									<p class="card_item">UF 0 / $0</p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Seguro Incendio:</strong></p>
+									<p class="card_item">UF 2.24 / $ 60.352 </p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Seguro Degravamen:</strong></p>
+									<p class="card_item">UF 0.65 / $ 18.223</p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Otros Seguros</strong></p>
+									<p class="card_item">UF 0 / $0</p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Total Seguros:</strong></p>
+									<p class="card_item">UF 3.54 / $ 87.773</p>
+								</div>
+							</div>
+						</td>
+		 			</tr>
+
+
 
 	      	<tr>
 	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
@@ -228,10 +305,12 @@
 							<a href="">Mostrar más información</a>
 						</td>
 	      	</tr>
+
 				</tbody>
 			</table>
 		</div>
 	</section>
+
 
 	<section class="pagination">
 		<div class="u-row u-row-xs-full center-xs">
@@ -263,3 +342,6 @@
 			</div>
 		</div>
 	</section>
+
+
+
