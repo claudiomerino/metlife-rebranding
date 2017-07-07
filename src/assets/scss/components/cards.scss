@@ -96,3 +96,12 @@
 			visibility: visible;
 		}
 	}
+
+	table {
+		.toggleContent {
+			display: block !important;
+			&.is-open {
+				display: table !important;
+			}
+		}
+	}

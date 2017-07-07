@@ -248,6 +248,15 @@
 		top: 18px;
 	}
 
+	.u-select_label::after {
+		top: 43px;
+	}
+
+	.u-select_labels::after {
+		top: 43px;
+		right: 11px !important;
+	}
+
 
 
 	.contact_client_u-select::after,
@@ -267,20 +276,15 @@
 	}
 
 
-	.gutter-xs {
+	.gutter-xs,
+	.gutter-sm,
+	.gutter-md,
+	.gutter-lg {
 		.u-select::after {
-			right: 10px;
-			top: 45px;
-			color: #555;
-		}
-		.gutter-sm,
-		.gutter-md,
-		.gutter-lg {
-			.u-select::after {
-				right: 2em;
-			}
+			right: 1em;
 		}
 	}
+
 
 	.u-select .selected::after {
 		content: "\f062";

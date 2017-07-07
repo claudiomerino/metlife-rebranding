@@ -21,12 +21,24 @@
 					background-color: white;
 				}
 				&:nth-of-type( odd ) {
-					background-color: $white-light-2;
+					background-color: $gray;
 				}
 			}
-
 		}
+	}
 
+	.u-striped-more {
+		tbody {
+			tr {
+				background-color: white !important;
+				&.u-striped-gray {
+					background-color: $white-light !important;
+				}
+				&.toggleContent {
+					background-color: $white-light !important;
+				}
+			}
+		}
 	}
 
 	.table_desc {

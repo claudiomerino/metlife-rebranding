@@ -3,9 +3,9 @@
 	<h6 class="tabs-subtitle">Información de Dividendos</h6>
 
 		<div class="u-row gutter-xs">
-			<div class="col-xs-12 col-sm-6 col-md-3 u-space u-select">
+			<div class="col-xs-12 col-sm-6 col-md-3 u-space u-select u-select_label">
 				<p class="f-small"><strong>Filtrar por estado de Dividendo:</strong></p>
-				<select class="cs-select cs-skin-border items_select_box">
+				<select class="cs-select cs-skin-border">
 					<option value="">Todos los etados</option>
 					<option value="">Pagado</option>
 					<option value="">Por Pagar</option>
@@ -48,7 +48,7 @@
 
 
 		<div class="table-scroll table gutter-xs">
-		  <table class="table-responsive">
+		  <table class="table-responsive u-striped u-striped-more">
 		    <thead>
 	      	<tr>
 		        <th class="table-2">
@@ -60,17 +60,17 @@
 				    <th class="table-3">
 							<p class="table_title"><strong>Fecha Vencimiento - Pago</strong></p>
 						</th>
-						<th class="table-3">
+						<th class="table-2">
 							<p class="table_title"><strong>Total Dividendo</strong></p>
 						</th>
-				    <th class="table-2">
+				    <th class="table-3 center-xs">
 							<p class="table_title"><strong>Información</strong></p>
 						</th>
 	      	</tr>
 		    </thead>
 
 		    <tbody>
-	      	<tr>
+	      	<tr class="u-striped-gray">
 	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
 							<p class="table_desc">56 / 240</p>
 						</td>
@@ -80,11 +80,11 @@
 	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - </p>
 						</td>
-						<td class="table-3" valign="middle" data-table-title="Total Dividendo">
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
 							<p class="table_desc">UF 20.05 / $ 554.865</p>
 						</td>
-	        	<td class="table-2" valign="middle" data-table-title="Información">
-							<a href="">Mostrar más información</a>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						</td>
 	      	</tr>
 
@@ -98,15 +98,16 @@
 	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - 05/06/2017</p>
 						</td>
-						<td class="table-3" valign="middle" data-table-title="Total Dividendo">
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
 							<p class="table_desc">UF 20.05 / $ 554.865</p>
 						</td>
-	        	<td class="table-2" valign="middle" data-table-title="Información">
-							<a href="">Mostrar más información</a>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						</td>
 	      	</tr>
 
-	      	<tr>
+	      	<tr class="u-striped-gray">
+	      		<div class="testToggle">TEST</div>
 		      	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
 							<p class="table_desc">54 / 240</p>
 						</td>
@@ -116,23 +117,12 @@
 		      	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - 05/06/2017</p>
 						</td>
-						<td class="table-3" valign="middle" data-table-title="Total Dividendo">
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
 							<p class="table_desc">UF 20.05 / $ 554.865</p>
-						</td>
-
-		      	<td class="table-2" valign="middle" data-table-title="Información">
-		        	<div class="card_more end-xs">
-								<a href="" class="f-link openContent" data-open-content="54">
-									<span class="openContentText" data-rest-text="¿Qué quieres hacer?" data-open-text="Mostrar menos información" data-close="true">¿Qué quieres hacer?</span>
-									<i class="fa fa-angle-down" aria-hidden="true"></i>
-								</a>
-							</div>
 						</td>
 				 	</tr>
 
-
-
-	    		<tr class="u-divider toggleContent" data-toggle-content="54">
+	    		<tr class="toggleContent" data-toggle-content="54">
 	    			<td class="table-12" valign="middle">
 	    				<div class="u-row">
 								<div class="col-xs-12 col-sm-6 col-md-3">
@@ -178,8 +168,6 @@
 						</td>
 		 			</tr>
 
-
-
 	      	<tr>
 	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
 							<p class="table_desc">53 / 240</p>
@@ -190,15 +178,15 @@
 	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - 05/06/2017</p>
 						</td>
-						<td class="table-3" valign="middle" data-table-title="Total Dividendo">
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
 							<p class="table_desc">UF 20.05 / $ 554.865</p>
 						</td>
-	        	<td class="table-2" valign="middle" data-table-title="Información">
-							<a href="">Mostrar más información</a>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						</td>
 	      	</tr>
 
-	      	<tr>
+	      	<tr class="u-striped-gray">
 	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
 							<p class="table_desc">52 / 240</p>
 						</td>
@@ -208,11 +196,11 @@
 	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - 05/06/2017</p>
 						</td>
-						<td class="table-3" valign="middle" data-table-title="Total Dividendo">
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
 							<p class="table_desc">UF 20.05 / $ 554.865</p>
 						</td>
-	        	<td class="table-2" valign="middle" data-table-title="Información">
-							<a href="">Mostrar más información</a>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						</td>
 	      	</tr>
 
@@ -226,15 +214,15 @@
 	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - 05/06/2017</p>
 						</td>
-						<td class="table-3" valign="middle" data-table-title="Total Dividendo">
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
 							<p class="table_desc">UF 20.05 / $ 554.865</p>
 						</td>
-	        	<td class="table-2" valign="middle" data-table-title="Información">
-							<a href="">Mostrar más información</a>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						</td>
 	      	</tr>
 
-	      	<tr>
+	      	<tr class="u-striped-gray">
 	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
 							<p class="table_desc">50 / 240</p>
 						</td>
@@ -244,11 +232,11 @@
 	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - 05/06/2017</p>
 						</td>
-						<td class="table-3" valign="middle" data-table-title="Total Dividendo">
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
 							<p class="table_desc">UF 20.05 / $ 554.865</p>
 						</td>
-	        	<td class="table-2" valign="middle" data-table-title="Información">
-							<a href="">Mostrar más información</a>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						</td>
 	      	</tr>
 
@@ -262,15 +250,15 @@
 	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - 05/06/2017</p>
 						</td>
-						<td class="table-3" valign="middle" data-table-title="Total Dividendo">
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
 							<p class="table_desc">UF 20.05 / $ 554.865</p>
 						</td>
-	        	<td class="table-2" valign="middle" data-table-title="Información">
-							<a href="">Mostrar más información</a>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						</td>
 	      	</tr>
 
-	      	<tr>
+	      	<tr class="u-striped-gray">
 	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
 							<p class="table_desc">48 / 240</p>
 						</td>
@@ -280,11 +268,11 @@
 	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - 05/06/2017</p>
 						</td>
-						<td class="table-3" valign="middle" data-table-title="Total Dividendo">
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
 							<p class="table_desc">UF 20.05 / $ 554.865</p>
 						</td>
-	        	<td class="table-2" valign="middle" data-table-title="Información">
-							<a href="">Mostrar más información</a>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						</td>
 	      	</tr>
 
@@ -298,11 +286,11 @@
 	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - 05/06/2017</p>
 						</td>
-						<td class="table-3" valign="middle" data-table-title="Total Dividendo">
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
 							<p class="table_desc">UF 20.05 / $ 554.865</p>
 						</td>
-	        	<td class="table-2" valign="middle" data-table-title="Información">
-							<a href="">Mostrar más información</a>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						</td>
 	      	</tr>
 
