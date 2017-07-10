@@ -19,22 +19,22 @@
 				<div class="col-xs-12 col-lg-4 col-xs-full dual__content">
 					<div class="login_content u-section">
 						<h3 class="center-xs u-space login_title"><strong>Cambio de Clave de Acceso</strong></h3>
-						<form class="recover_form" action="" method="" id="ChangePassForm" data-abide novalidate  data-live-validate="true">
+						<form class="recover_form ChangePassForm" data-abide novalidate  data-live-validate="true">
 
-							<div class="loading hide-xs" id="loadingChangePass">
+							<div class="loading hide-xs loadingChangePass">
 								{{> loading-1}}
 								<p class="loading_message center-xs"><strong>Estamos procesando su solicitud</strong></p>
 							</div>
 
-							<div class="alert alert-success u-space hide-xs" id="successChangePass">
+							<div class="alert alert-success u-space hide-xs successChangePass">
 								<p class="alert_desc center-xs">
 									<strong>Tu clave de acceso ha sido cambiada con éxito.</strong> Te estamos redirigiendo a la página de Acceso para Clientes, donde podrás ingresar al sitio usando tu nueva clave.
 								</p>
 							</div>
 
-							<div class="login_toggle_content" id="toggleChangePass">
+							<div class="login_toggle_content toggleChangePass">
 								<section class="u-field u-space">
-									<span class="input input--ichiro">
+									<span class="input input--ichiro key_actual-space_bottom">
 										<input class="input__field input__field--ichiro" type="password" id="changeActualPass" data-live-validate="true" required />
 										<label class="input__label input__label--ichiro" for="changeActualPass">
 											<span class="input__label-content input__label-content--ichiro">Ingresa Clave Actual</span>
@@ -43,28 +43,31 @@
 									</span>
 								</section>
 
-								<section class="u-field">
-									<span class="input input--ichiro">
-										<input class="input__field input__field--ichiro" type="password" id="changeNewPass" pattern="length" data-validator="letters_only numbers_only" required />
-										<label class="input__label input__label--ichiro" for="changeNewPass">
-											<span class="input__label-content input__label-content--ichiro">Clave de Acceso Nueva</span>
-										</label>
-									</span>
-								</section>
+								<div class="changeNewPass">
+									<section class="u-field">
+										<span class="input input--ichiro">
+											<input class="input__field input__field--ichiro" type="password" id="changeNewPass" pattern="length" data-validator="letters_only numbers_only" required />
+											<label class="input__label input__label--ichiro" for="changeNewPass">
+												<span class="input__label-content input__label-content--ichiro">Clave de Acceso Nueva</span>
+											</label>
+										</span>
+									</section>
 
-								<p class="select_clave_nueva f-tiny start-xs">Por motivos de seguridad, la nueva clave debe contener:</p>
-
-								<ul class="login_list u-space">
-									<li class="login_list-item">
-										<p id="errorLength" class="f-tiny start-xs">- Al menos 8 caracteres.</p>
-									</li>
-									<li class="login_list-item">
-										<p id="errorAZ" class="f-tiny start-xs">- Al Menos una letra [A-Z]</p>
-									</li>
-									<li class="login_list-item">
-										<p id="errorNumbers" class="f-tiny start-xs">- Al menos un número [0-9]</p>
-									</li>
-								</ul>
+									<section class="parameters-space_bottom">
+										<p class="select_clave_nueva f-tiny start-xs">Por motivos de seguridad, la nueva clave debe contener:</p>
+										<ul class="login_list u-space">
+											<li class="login_list-item">
+												<p class="f-tiny start-xs errorLength">- Al menos 8 caracteres.</p>
+											</li>
+											<li class="login_list-item">
+												<p class="f-tiny start-xs errorAZ">- Al Menos una letra [A-Z]</p>
+											</li>
+											<li class="login_list-item">
+												<p class="f-tiny start-xs errorNumbers">- Al menos un número [0-9]</p>
+											</li>
+										</ul>
+									</section>
+								</div>
 
 								<section class="u-field u-space">
 									<span class="input input--ichiro">
