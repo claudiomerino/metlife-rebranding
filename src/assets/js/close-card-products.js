@@ -10,7 +10,7 @@ $closeCardMainButton.on( 'click', ( e ) => {
 
 
 
-	const $accordion = $( '.accordion' )
+/*	const $accordion = $( '.accordion' )
 	const $tabsWrap = $( '.tabs_wrap' )
 
 	console.log($accordion, 'ACCORDION')
@@ -22,4 +22,4 @@ $closeCardMainButton.on( 'click', ( e ) => {
 	}
 	else {
 		console.log('no hay')
-	}
+	}*/
