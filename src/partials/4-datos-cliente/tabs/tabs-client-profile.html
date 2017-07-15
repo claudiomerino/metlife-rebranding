@@ -1,11 +1,10 @@
-<section class="client_profile" >
+
+<section class="tabs-client-profile" >
   <div id="parentHorizontalTab">
     <ul class="resp-tabs-list hor_1">
-      <div class="rojo">
-        <li class="tabs-title 1"><h5 class="heading_sub-title">Información personal</h5></li>
-        <li class="tabs-title"><h5 class="heading_sub-title">Cambia tu Clave de Acceso</h5></li>
-        <li class="tabs-title"><h5 class="heading_sub-title">Solicita Calve Telefónica</h5></li>
-      </div>
+      <li class="tab-accordion gutter-a"><h5>Información personal</h5></li>
+      <li class="tab-accordion gutter-a"><h5>Cambia tu Clave de Acceso</h5></li>
+      <li class="tab-accordion gutter-f"><h5>Solicita Calve Telefónica</h5></li>
     </ul>
 
     <div class="resp-tabs-container hor_1">
@@ -13,34 +12,5 @@
       <div>{{> tab-client-profile-2 }}</div>
       <div>{{> tab-client-profile-3 }}</div>
     </div>
-
 	</div>
-</section>
-
-<section class="client_profile">
-  <div class="">
-    <ul class="tabs" data-responsive-accordion-tabs="accordion large-tabs" id="tabs">
-      <li class="tabs-title is-active">
-        <a href="#tab1" class="center-xs" aria-selected="true"><h5 class="heading_sub-title">Información personal</h5></a>
-      </li>
-      <li class="tabs-title">
-        <a href="#tab2" class="center-xs"><h5 class="heading_sub-title">Cambia tu Clave de Acceso</h5></a>
-      </li>
-      <li class="tabs-title tabs-chart-beneficiaries">
-        <a href="#tab3" class="center-xs"><h5 class="heading_sub-title">Solicita Calve Telefónica</h5></a>
-      </li>
-    </ul>
-
-    <div class="tabs-content" data-tabs-content="tabs">
-      <div class="tabs-panel is-active" id="tab1">
-        {{> tab-client-profile-1}}
-      </div>
-      <div class="tabs-panel" id="tab2">
-        {{> tab-client-profile-2}}
-      </div>
-      <div class="tabs-panel" id="tab3">
-        {{> tab-client-profile-3}}
-      </div>
-    </div>
-  </div>
 </section>

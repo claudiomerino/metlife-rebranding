@@ -49,50 +49,46 @@
 		padding: 0 0 1rem 0;
 	}
 	.tabs-subtitle-profile {
-		border-bottom: 2px solid $primary;
+		&.single_line {
+			margin-top: 60px;
+		}
+
+		&.double_line {
+			margin-top: 90px;
+		}
+		border-bottom: 2px solid $medium-gray;
 		margin-bottom: 1rem;
-		padding: 3rem 0 1rem 0;
+		padding: 15px 0 10px 0;
 	}
 
-	.tabs-title {
+
+	.tab-accordion {
 		flex-grow: 1;
-		a {
-			color: $dark-gray;
-			position: relative;
-			transition: color 0.3s;
-			&:before {
-				background-color: $primary;
-				bottom: 0;
-				content: '';
-				height: 4px;
-				left: 0;
-				position: absolute;
-				transform: scale3d(0, 1, 1);
-				transition: transform 0.1s;
-				width: 100%;
-			}
+		position: relative;
+		transition: color 0.3s;
+		&:before {
+			background-color: $primary;
+			bottom: 0;
+			content: '';
+			height: 4px;
+			left: 0;
+			position: absolute;
+			transform: scale3d(0, 1, 1);
+			transition: transform 0.1s;
+			width: 100%;
 		}
 
 		h5 {
-			font-family: 'Arial', sans-serif;
 			font-size: 16px;
-			font-weight: 400;
-
+			font-weight: 600;
 		}
 
-		& > a {
-			padding: 20px 1.5rem 16px;
-		}
-
-		&.is-active {
-			a {
-				background-color: white;
-				color: $primary;
-				&:before {
-					transform: scale3d(1, 1, 1);
-					transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-					transition-duration: 0.3s;
-				}
+		&.resp-tab-active {
+			background-color: white;
+			&:before {
+				transform: scale3d(1, 1, 1);
+				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+				transition-duration: 0.3s;
 			}
 		}
 	}

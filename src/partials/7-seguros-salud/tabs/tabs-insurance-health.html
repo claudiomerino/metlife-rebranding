@@ -1,35 +1,18 @@
 
-	<section class="tabs_wrap tabs_wrap-pink">
-		<div class="tabs_wrap_container">
-			<ul class="tabs" data-responsive-accordion-tabs="accordion medium-tabs" id="tabs">
-				<li class="tabs-title is-active">
-					<a href="#panel1" class="center-xs" aria-selected="true"><h5 class="heading_sub-title">Información</h5> <h5 class="heading_sub-title"> de la Póliza</h5></a>
-				</li>
-				<li class="tabs-title">
-					<a href="#panel2" class="center-xs"><h5 class="heading_sub-title">Información</h5> <h5 class="heading_sub-title"> de pagos</h5></a>
-				</li>
-				<li class="tabs-title tabs-chart-health-beneficiaries">
-					<a href="#panel3" class="center-xs"><h5 class="heading_sub-title">Asegurados</h5> <h5 class="heading_sub-title"> y Beneficiarios</h5></a>
-				</li>
-				<li class="tabs-title">
-					<a href="#panel5" class="center-xs"><h5 class="heading_sub-title">Histórico</h5> <h5 class="heading_sub-title"> de Siniestros</h5></a>
-				</li>
-			</ul>
+<section class="tabs-insurance-health" >
+  <div id="parentHorizontalTab">
+    <ul class="resp-tabs-list hor_1">
+      <li class="tab-accordion gutter-a"><h5>Información</h5><h5>de la Póliza</h5></li>
+      <li class="tab-accordion gutter-a"><h5>Información</h5><h5>de Pagos</h5></li>
+      <li class="tab-accordion gutter-a"><h5>Asegurados</h5><h5>y Beneficiarios</h5></li>
+      <li class="tab-accordion gutter-f"><h5>Histórico</h5><h5>de Siniestros</h5></li>
+    </ul>
 
-			<div class="tabs-content" data-tabs-content="tabs">
-				<div class="tabs-panel is-active" id="panel1">
-					{{> tab-health-1}}
-				</div>
-				<div class="tabs-panel" id="panel2">
-					{{> tab-health-2}}
-				</div>
-				<div class="tabs-panel" id="panel3">
-					{{> tab-health-3}}
-				</div>
-				<div class="tabs-panel" id="panel5">
-					{{> tab-health-5}}
-				</div>
-			</div>
-
-		</div>
-	</section>
+    <div class="resp-tabs-container hor_1">
+      <div>{{> tab-health-1 }}</div>
+      <div>{{> tab-health-2 }}</div>
+      <div>{{> tab-health-3 }}</div>
+      <div>{{> tab-health-5 }}</div>
+    </div>
+	</div>
+</section>

@@ -1,40 +1,47 @@
 
-
-.resp-tabs-list li {
+  .resp-tabs-list li {
     font-weight: 600;
     font-size: 13px;
     display: inline-block;
-    padding: 13px 15px;
-    margin: 0 4px 0 0;
+    padding: 13px 10px;
+
+    &.gutter-a {
+      margin: 10px 75px 0 20px;
+    }
+
+    &.gutter-f {
+      margin:10px 0 0 20px;
+    }
+
+    &.gutter-b {
+      margin: 10px 50px 0 20px;
+    }
+
     list-style: none;
     cursor: pointer;
     float: left;
-}
+  }
 
-
-h2.resp-accordion {
-  cursor: pointer;
-  display: none;
-}
-
-.resp-tab-content {
+  h2.resp-accordion {
+    cursor: pointer;
     display: none;
-}
+  }
 
+  .resp-tab-content {
+    display: none;
+  }
 
-h2.resp-accordion {
+  h2.resp-accordion {
     font-size: 28px;
     border: 1px solid red;
     border-top: 0px solid red;
     margin: 0px;
     padding: 10px 15px;
-}
+  }
 
+  /*-----------Vertical tabs-----------*/
 
-
-/*-----------Vertical tabs-----------*/
-
-.resp-arrow {
+  .resp-arrow {
     width: 0;
     height: 0;
     float: right;
@@ -42,18 +49,15 @@ h2.resp-accordion {
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-top: 12px solid #c1c1c1;
-}
+  }
 
+  /*-----------Accordion styles-----------*/
 
-/*-----------Accordion styles-----------*/
-
-h2.resp-accordion:first-child {
+  h2.resp-accordion:first-child {
     border-top: 1px solid #c1c1c1;/* !important;*/
-}
+  }
 
-
-/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
-@media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
 
     ul.resp-tabs-list {
       display: none;
@@ -82,4 +86,4 @@ h2.resp-accordion:first-child {
     .resp-vtabs .resp-tab-content:last-child {
       border-bottom: 1px solid #c1c1c1 !important;
     }
-}
+  }
