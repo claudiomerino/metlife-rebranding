@@ -119,7 +119,7 @@
                     $($respTabs.find('.resp-accordion.' + options.tabidentify)[tabNum]).addClass('resp-tab-active').css({
                         'background-color': options.activetab_bg + ' !important',
                         'border-color': options.active_border_color,
-                        'background': 'none'
+                        'background': 'white'
                     });
 
                     $($respTabs.find('.resp-tab-content.' + options.tabidentify)[tabNum]).addClass('resp-tab-content-active').addClass(options.tabidentify).attr('style', 'display:block');

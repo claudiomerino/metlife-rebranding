@@ -67,10 +67,6 @@
 		padding-left: 3rem;
 	}
 
-	.client-profile_row {
-		padding: 0 1.6rem;
-	}
-
 	.card_section_irow {
 		min-height: 62px;
 	}
@@ -79,6 +75,7 @@
 		&.is-open {
 			i {
 				transform: rotate( 180deg );
+				z-index: 10000000;
 			}
 		}
 	}
