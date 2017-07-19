@@ -55,7 +55,7 @@
 		}
 
 		&.double_line {
-			margin-top: 90px;
+			margin-top: 0;
 		}
 		border-bottom: 2px solid $medium-gray;
 		margin-bottom: 1rem;
@@ -85,8 +85,11 @@
 		}
 
 		&.resp-tab-active {
-			background-color: yellow;
-			font-size: 72px;
+			.tab_arrow {
+				i {
+					transform: rotate(-180deg);
+				}
+			}
 			&:before {
 				transform: scale3d(1, 1, 1);
 				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -140,15 +143,14 @@
 		}
 	}
 
-.box:after {
-  background: $primary;
-  position: absolute;
-  content: '';
-  height: 2px;
-  right: 0;
-  left: 0;
-  top: 30px;
-}
+	.resp-tab-active {
+		.tab_arrow {
+			i {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+
 
 
 	@media screen and ( min-width: 62em ) {
@@ -169,17 +171,4 @@
 			margin-bottom: 1rem;
 			padding: 15px 0 10px 0;
 		}
-
-		.tab_arrow {
-			position: relative;
-			i {
-				position: absolute;
-			}
-		}
-
-		.box:after {
-		  background: none;
-  		position: none;
-		}
-
 	}

@@ -34,21 +34,27 @@
   }
 
   h2.resp-accordion {
-    font-size: 28px;
-    border: 1px solid #c1c1c1;
-    margin: 0px;
-    padding: 10px 15px;
-  }
-
-  /*-----------Vertical tabs-----------*/
-
-
-
-  /*-----------Accordion styles-----------*/
-
-  h2.resp-accordion {
     border-top: 1px solid #c1c1c1;/* !important;*/
+    border: 1px solid #c1c1c1;
+    font-size: 28px;
+    margin: 0px;
     margin-top: 1rem;
+    padding: 10px 15px;
+    position: relative;
+    &.resp-tab-active {
+      border-bottom: 0;
+      &:after {
+        background-color: $primary;
+        bottom: 0;
+        content: "";
+        height: 4px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        width: calc(100% - 30px);
+      }
+    }
   }
 
   @media only screen and (max-width: 62em) {
@@ -79,5 +85,11 @@
 
     .resp-vtabs .resp-tab-content:last-child {
       border-bottom: 1px solid #c1c1c1 !important;
+    }
+  }
+
+  @media screen and (min-width: 62em) {
+    .resp-accordion-closed {
+      display: block !important;
     }
   }

@@ -6,7 +6,7 @@
 
 	$openContent.on( 'click', ( e ) => {
 		e.preventDefault();
-		e.stopPropagation();
+
 
 
 		let $openContentData = $( e.currentTarget ).data( 'open-content' );

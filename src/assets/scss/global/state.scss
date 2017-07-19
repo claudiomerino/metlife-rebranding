@@ -1,7 +1,6 @@
 
 	@import './color.scss';
 
-
 	.state::after {
 		border-radius: 50%;
 		content: '';
@@ -9,7 +8,8 @@
 	}
 
 	.active::after,
-	.inactive::after {
+	.inactive::after,
+	.pending::after {
 		height: 17px;
 		width: 17px;
 		margin-left: 5px;
@@ -22,6 +22,10 @@
 
 	.inactive::after {
 		background-color: $pink;
+	}
+
+	.pending::after {
+		background-color: $information;
 	}
 
 	.bullet-point::after {
