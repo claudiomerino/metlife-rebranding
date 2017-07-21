@@ -157,3 +157,9 @@
 	.input_responsive {
 		margin-bottom: 30px;
 	}
+
+	.input-range-out {
+		border: 1px solid $error;
+		color: $error;
+		font-weight: 800;
+	}

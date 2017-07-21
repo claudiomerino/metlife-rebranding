@@ -54,12 +54,13 @@
 			margin-top: 0;
 		}
 
-		&.double_line {
-			margin-top: 0;
-		}
 		border-bottom: 2px solid $medium-gray;
 		margin-bottom: 1rem;
 		padding: 15px 0 10px 0;
+	}
+
+	.double_line {
+		margin-top: 90px;
 	}
 
 
