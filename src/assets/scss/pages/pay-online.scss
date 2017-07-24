@@ -1,0 +1,8 @@
+
+	@import './../global/color.scss';
+
+	.box {
+		background-color: $primary-light;
+		border: 1px solid $single-light;
+		padding: 8px 25px;
+	}

@@ -1,66 +1,66 @@
 
-	{{> nav-off-canvas}}
+{{> nav-off-canvas}}
 
-  <div class="off-canvas-content" data-off-canvas-content>
+<div class="off-canvas-content" data-off-canvas-content>
 
-		<div class="double-nav_sticky" data-sticky-container>
-			<div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
-				{{> nav-sub}}
-				{{> nav-main}}
-			</div>
+	<div class="double-nav_sticky" data-sticky-container>
+		<div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+			{{> nav-sub}}
+			{{> nav-main}}
 		</div>
+	</div>
 
-		<section class="life-apv bg-white-light">
-			<div class="life-apv_container u-container">
-				<div class="breadcrumb life-apv_breadcrumb">
-					<ul class="u-row u-row-xs-full middle-xs">
-						<li>
-							<a href="{{root}}5-productos/products.html" class="f-link f-tiny"> Mis Productos</a>
-						</li>
-						<li>
-							<i class="fa fa-angle-right" aria-hidden="true"></i>
-						</li>
-						<li>
-							<p class="f-tiny"> Seguro de Gastos Médicos</p>
-						</li>
-					</ul>
-				</div>
+	<section class="health bg-white-light">
+		<div class="health_container u-container">
+			<div class="breadcrumb health_breadcrumb">
+				<ul class="u-row u-row-xs-full middle-xs">
+					<li>
+						<a href="{{root}}5-productos/products.html" class="f-link f-tiny"> Mis Productos</a>
+					</li>
+					<li>
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</li>
+					<li>
+						<p class="f-tiny"> Seguro de Gastos Médicos</p>
+					</li>
+				</ul>
+			</div>
 
-				<div class="u-row u-row-xs-full bottom-sm">
-					<section id="selectHealth" class="life-apv_heading col-xs-12 col-sm-8 col-xs-full center-xs start-sm u-space">
-						<p class="life-apv_desc">Seguros de Salud</p>
-						<div class="life-apv_heading_irow u-row u-row-xs-full bottom-xs center-xs start-sm">
-							<h2 class="life-apv_title">Seguro Gastos Médicos</h2>
-							<p class=" f-big life-apv_desc"><strong>Póliza Nº: 0056705543-A</strong></p>
-						</div>
-					</section>
+			<div class="u-row u-row-xs-full bottom-sm">
+				<section id="selectHealth" class="health_heading col-xs-12 col-sm-8 col-xs-full center-xs start-sm u-space">
+					<p class="health_desc">Seguros de Salud</p>
+					<div class="health_heading_irow u-row u-row-xs-full bottom-xs center-xs start-sm">
+						<h2 class="health_title">Seguro Gastos Médicos</h2>
+						<p class=" f-big health_desc"><strong>Póliza Nº: 0056705543-A</strong></p>
+					</div>
+				</section>
 
-					<div class="col-xs-12 col-sm-4 col-xs-full center-xs end-sm u-space">
-						<div data-sticky-container class="u-select-sticky life-apv_select_options">
-							<div class="sticky" data-sticky data-top-anchor="selectHealth:top" data-options="anchor: page; marginTop: 0; stickyOn: small;">
-								<div class="life-apv_select">
-									<section class="u-space u-select">
-										<select class="cs-select cs-skin-border ">
-											<option value="" disabled selected>¿Qué quieres hacer?</option>
-											<option value="email">Comprar</option>
-											<option value="twitter">Ceder</option>
-										</select>
-									</section>
-								</div>
+				<div class="col-xs-12 col-sm-4 col-xs-full center-xs end-sm u-space">
+					<div data-sticky-container class="u-select-sticky health_select_options">
+						<div class="sticky" data-sticky data-top-anchor="selectHealth:top" data-options="anchor: page; marginTop: 0; stickyOn: small;">
+							<div class="health_select">
+
+								<section class="u-space u-select">
+									<select class="cs-select cs-skin-border ">
+										<option value="" disabled selected>¿Qué quieres hacer?</option>
+										<option value="email">Comprar</option>
+										<option value="twitter">Ceder</option>
+									</select>
+								</section>
+
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<section class="life-apv_tabs">
-					{{> tabs-health }}
-				</section>
-
-				<div class="life-apv_info u-section">
-					<p class="life-apv_info_desc f-legal">Los datos e información contenido corresponde a aquella proporcionada por el cliente contratante al momento de la contratación del seguro y otorgamiento del crédito según corresponda. El cliente será responsable de comunicar a la Compañía Aseguradora cualquier modificación de sus datos personales, información de contacto u otro.</p>
-				</div>
-
 			</div>
-		</section>
 
-	</div>
+			{{> tabs-health }}
+
+			<div class="health_legal center-xs f-legal u-section">
+				{{> legal }}
+			</div>
+
+		</div>
+	</section>
+
+</div>
