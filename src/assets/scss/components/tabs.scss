@@ -23,6 +23,10 @@
 		}
 	}
 
+	.tabs_col_white {
+		min-height: 70px;
+	}
+
 	.tabs-content {
 		border-bottom-left-radius: 3px;
 		border-bottom-right-radius: 3px;
@@ -59,7 +63,7 @@
 	.tabs-subtitle-profile {
 		border-bottom: 2px solid $medium-gray;
 		margin-bottom: 1rem;
-		padding: 15px 0 10px 0;
+		padding: 0 0 10px 0;
 	}
 
 	.tab-accordion,

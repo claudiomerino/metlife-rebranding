@@ -1,10 +1,11 @@
-<section class="tabs_wrap u-space">
-			<div class="client_wrap_container">
-	<section class="info_dividents">
-	<h6 class="tabs-subtitle-profile double_line">Información de Dividendos</h6>
+
+<div class="tabs_wrap u-space">
+	<section class="info_dividents client_wrap_container">
+
+		<h6 class="tabs-subtitle-profile double_line">Información de Dividendos</h6>
 
 		<div class="u-row gutter-xs">
-			<div class="col-xs-12 col-sm-6 col-md-3 u-space u-select u-select_label">
+			<div class="col-xs-12 col-sm-6 col-md-3 u-select u-select_label u-space">
 				<p class="f-small"><strong>Filtrar por estado de Dividendo:</strong></p>
 				<select class="cs-select cs-skin-border">
 					<option value="">Todos los etados</option>
@@ -14,20 +15,20 @@
 				</select>
 			</div>
 
-			<div class="col-xs-12 col-sm-6 col-md-6 u-space">
+			<div class="col-xs-12 col-sm-6 col-md-5">
 				<p class="f-small"><strong>Filtrar por rango de fechas:</strong></p>
 				<div class="u-row gutter-xs">
-					<div class="col-xs-12 col-md-5">
-						<section class="u-space u-field">
-							<span class="input input--ichiro input--datepicker">
+					<div class="col-xs-12 col-md-6 u-space">
+						<section class="u-space">
+							<span class="input input--ichiro input--datepicker u-space">
 								<input class="input__field input__field--ichiro DatePicker" data-placeholder="dfgdfgdfgdfg" type="text" class="span3">
 								<i class="material-icons">date_range</i>
 							</span>
 						</section>
 					</div>
 
-					<div class="col-xs-12 col-md-5 u-space">
-						<section class="u-field">
+					<div class="col-xs-12 col-md-6 u-space">
+						<section class="u-space">
 							<span class="input input--ichiro input--datepicker">
 								<input class="input__field input__field--ichiro DatePicker" placeholder="Hasta" type="text" class="span2">
 								<i class="material-icons">date_range</i>
@@ -37,19 +38,12 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-md-3 u-space">
-			<p class="f-small"><strong>Exportar a Excel:</strong></p>
-				<section class="u-field">
-					<span class="input input--ichiro">
-						<a href="" class="export_excel button button-primary">Exportar <i class="material-icons icon_export_excel">file_download</i></a>
-					</span>
-				</section>
+			<div class="col-xs-12 col-md-4 u-space">
+				<a href="" class="ico">Exportar resultados a excel<img src="{{root}}assets/img/xlsx.png" class="ico_excel"></a>
 			</div>
 		</div>
 
-
-
-		<div class="table table-scroll center-xs col-xs-12 ">
+		<div class="table table-scroll col-xs-12 ">
 		  <table class="table-responsive u-striped u-striped-more">
 		    <thead>
 	      	<tr>
@@ -65,7 +59,7 @@
 						<th class="table-2">
 							<p class="table_title"><strong>Total Dividendo</strong></p>
 						</th>
-				    <th class="table-3 center-xs">
+				    <th class="table-3">
 							<p class="table_title"><strong>Información</strong></p>
 						</th>
 	      	</tr>
@@ -306,38 +300,37 @@
 				</tbody>
 			</table>
 		</div>
-	</section>
 
+		<section class="pagination">
+			<div class="u-row u-row-xs-full center-xs">
+				<div class="pagination_new">
+					<button class="button button-transparent">Nuevos</button>
+				</div>
+				<div class="pagination_numbers u-row u-row-xs-full middle-xs">
+					<div class="pagination_numbers_item pagination-active">
+						<a href="">1</a>
+					</div>
+					<div class="pagination_numbers_item">
+						<a href="">2</a>
+					</div>
+					<div class="pagination_numbers_item">
+						<a href="">3</a>
+					</div>
+					<div class="pagination_numbers_item">
+						<a href="">4</a>
+					</div>
+					<div class="pagination_numbers_dots">
+						<span>...</span>
+					</div>
+					<div class="pagination_numbers_item">
+						<a href="">16</a>
+					</div>
+				</div>
+				<div class="pagination_old">
+					<button class="button button-transparent">Anteriores</button>
+				</div>
+			</div>
+		</section>
 
-	<section class="pagination">
-		<div class="u-row u-row-xs-full center-xs">
-			<div class="pagination_new">
-				<button class="button button-transparent">Nuevos</button>
-			</div>
-			<div class="pagination_numbers u-row u-row-xs-full middle-xs">
-				<div class="pagination_numbers_item pagination-active">
-					<a href="">1</a>
-				</div>
-				<div class="pagination_numbers_item">
-					<a href="">2</a>
-				</div>
-				<div class="pagination_numbers_item">
-					<a href="">3</a>
-				</div>
-				<div class="pagination_numbers_item">
-					<a href="">4</a>
-				</div>
-				<div class="pagination_numbers_dots">
-					<span>...</span>
-				</div>
-				<div class="pagination_numbers_item">
-					<a href="">16</a>
-				</div>
-			</div>
-			<div class="pagination_old">
-				<button class="button button-transparent">Anteriores</button>
-			</div>
-		</div>
 	</section>
 </div>
-</section>

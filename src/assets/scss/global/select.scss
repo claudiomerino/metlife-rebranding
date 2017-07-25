@@ -92,6 +92,10 @@
 		height: 80px;
 	}
 
+	.select_input {
+		background-color: $white;
+	}
+
 
 	@media screen and (max-width: 30em) {
 		.cs-skin-border { font-size: 1em; }
