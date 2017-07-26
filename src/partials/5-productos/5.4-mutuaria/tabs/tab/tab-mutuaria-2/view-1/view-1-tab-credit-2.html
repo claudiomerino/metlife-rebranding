@@ -7,11 +7,11 @@
 		<div class="u-row gutter-xs">
 			<div class="col-xs-12 col-sm-6 col-md-3 u-select u-select_label u-space">
 				<p class="f-small"><strong>Filtrar por estado de Dividendo:</strong></p>
-				<select class="cs-select cs-skin-border">
-					<option value="">Todos los etados</option>
-					<option value="">Pagado</option>
-					<option value="">Por Pagar</option>
-					<option value="">Vencido</option>
+				<select class="cs-select cs-skin-border DataSelectFilter">
+					<option value="allStateDividend" selected>Todos los estados</option>
+					<option value="paidStateDividend">Pagado</option>
+					<option value="forPayStateDividend">Por Pagar</option>
+					<option value="defeatedStateDividend">Vencido</option>
 				</select>
 			</div>
 
@@ -71,7 +71,7 @@
 							<p class="table_desc">56 / 240</p>
 						</td>
         		<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
-							<p class="table_desc">Vencido</p>
+							<p class="table_desc filterDataDesc" data-filter-data-desc="defeatedStateDividend">Vencido</p>
 						</td>
 	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - </p>
@@ -89,7 +89,7 @@
 							<p class="table_desc">55 / 240</p>
 						</td>
 	        	<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
-							<p class="table_desc">Pagado</p>
+							<p class="table_desc filterDataDesc" data-filter-data-desc="paidStateDividend">Pagado</p>
 						</td>
 	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - 05/06/2017</p>
@@ -108,7 +108,7 @@
 							<p class="table_desc">54 / 240</p>
 						</td>
 		      	<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
-							<p class="table_desc">Pagado</p>
+							<p class="table_desc" data-filter-data-desc="paidStateDividend>Pagado"</p>
 						</td>
 		      	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
 							<p class="table_desc">20/06/2017 - 05/06/2017</p>

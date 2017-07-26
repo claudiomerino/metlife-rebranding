@@ -77,11 +77,11 @@
 			bottom: 0;
 			content: '';
 			height: 4px;
-			left: 0;
+			left: 10px;
 			position: absolute;
 			transform: scale3d(0, 1, 1);
 			transition: transform 0.1s;
-			width: 100%;
+			width: calc(100% - 20px);
 		}
 
 		h5 {
