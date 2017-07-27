@@ -15,14 +15,6 @@
 		margin-bottom: 0;
 	}
 
-	.label_select {
-		margin-top: -4px;
-		p {
-			margin-bottom: 2px;
-			color: #5c5c5c;
-		}
-	}
-
 	.title_label_select{
 		font-size: 14px;
 	}
@@ -44,7 +36,17 @@
 		margin-top: 20px;
 	}
 
-	@media screen and (min-width: 62em) {
+	.label_select,
+	.label_select_code {
+		p {
+			margin-bottom: 2px;
+		}
+	}
 
+	.label_select {
+		margin-top: -5px;
+	}
 
+	.label_select_code {
+		margin-top: -4px
 	}

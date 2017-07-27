@@ -14,6 +14,7 @@
 	.card_row_1 {
 		padding-bottom: 10px;
 	}
+
 	.card_row_2 {
 		padding-top: 10px;
 	}
@@ -23,6 +24,12 @@
 		.card_icon {
 			color: $primary;
 		}
+	}
+
+	.card-gray {
+		border: 1px solid $medium-gray;
+		border-radius: 4px;
+		padding: 15px !important;
 	}
 
 	.card-green {
