@@ -30,6 +30,9 @@
 		border: 1px solid $medium-gray;
 		border-radius: 4px;
 		padding: 15px !important;
+		div {
+			margin-bottom: 15px;
+		}
 	}
 
 	.card-green {
@@ -85,6 +88,16 @@
 		min-height: 62px;
 	}
 
+	.see_detail {
+		position: relative;
+		top: 10px;
+		a {
+			position: relative;
+			top: -5px;
+			left: 53px;
+		}
+	}
+
 	.openContent {
 		&.is-open {
 			i {
@@ -114,4 +127,14 @@
 				display: table !important;
 			}
 		}
+	}
+
+	@media screen and ( min-width: 62em )  {
+
+		.card-gray {
+			div {
+				margin-bottom: 0;
+			}
+		}
+
 	}

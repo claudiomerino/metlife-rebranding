@@ -7,8 +7,6 @@
 	$openContent.on( 'click', ( e ) => {
 		e.preventDefault();
 
-
-
 		let $openContentData = $( e.currentTarget ).data( 'open-content' );
 		let $toggleContentData = $( '.toggleContent[data-toggle-content=' + $openContentData + ']' );
 		let $openContentText = $( e.currentTarget ).find( 'span' );
