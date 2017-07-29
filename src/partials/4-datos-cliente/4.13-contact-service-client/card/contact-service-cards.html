@@ -1,86 +1,90 @@
 
-	<section class="tabs_wrap u-space">
-		<div class="client_wrap_container">
+<h2 class="center-xs u-space">Contactar Servicio al Cliente</h2>
+<section class="tabs_wrap u-space">
+	<div class="client_wrap_container">
+		<p>José Arcadio Buendía los pagó, y entonces puso la mano sobre el hielo, y la mantuvo puesta por varios minutos, mientras el corazón se le hinchaba de temor y de júbilo al contacto del misterio.</p>
 
-			<h4 class="tabs-subtitle-profile center-xs">Servicio de Contacto al Cliente</h4>
-			<div class="client-profile_row u-row">
-				<div class="contact_client col-xs-12 center-xs u-section">
+		<div class="client-profile_row u-row">
+			<div class="contact_client col-xs-12 center-xs u-section">
 
-					<form class="login_form loadingForm" action="" data-abide novalidate data-live-validate="true">
+				<form class="login_form loadingForm" action="" data-abide novalidate data-live-validate="true">
 
-						<div class="loading hide-xs loadingMessage">
-							{{> loading-1}}
-							<p class="loading_message center-xs"><strong>Estamos procesando tu solicitud</strong></p>
-						</div>
+					<div class="loading hide-xs loadingMessage">
+						{{> loading-1}}
+						<p class="loading_message center-xs"><strong>Estamos procesando tu solicitud</strong></p>
+					</div>
 
-						<div class="alert alert-success u-space hide-xs loadingSuccess">
-							<p class="alert_desc center-xs">
-								Tus comentarios han sido enviados al correo<br/>
-								<strong>xxxxxxx@metlife.cl</strong><br/>
-								Te responderemos pronto
-							</p>
-						</div>
+					<div class="alert alert-success u-space hide-xs loadingSuccess">
+						<p class="alert_desc center-xs">
+							Tus comentarios han sido enviados al correo<br/>
+							<strong>xxxxxxx@metlife.cl</strong><br/>
+							Te responderemos pronto
+						</p>
+					</div>
 
-						<div class="alert alert-error hide-xs errorLoading">
-							<p class="alert_desc center-xs">
-								No se pudo enviar tus comentarios. Comunícate con nuestro Servicio al Cliente al <a href="tel:+566003903000"><strong>600 390 3000</strong></a>
-							</p>
-						</div>
+					<div class="alert alert-error hide-xs errorLoading">
+						<p class="alert_desc center-xs">
+							No se pudo enviar tus comentarios. Comunícate con nuestro Servicio al Cliente al <a href="tel:+566003903000"><strong>600 390 3000</strong></a>
+						</p>
+					</div>
 
-						<div class="toggleMainLoading  u-row center-xs">
-							<div class="col-xs-4">
-								<section class="">
-									<div class="u-row center-xs">
-										<div class="col-xs-12">
-											<span class="input input--ichiro">
-												<input class="input__field input__field--ichiro" data-live-validate="true" type="email" id="email" required />
-												<label class="input__label input__label--ichiro" for="email">
-													<span class="input__label-content input__label-content--ichiro">Email</span>
-												</label>
-												<p class="form-error f-tiny">Ingresa un correo válido.</p>
-											</span>
-										</div>
-									</div>
-								</section>
-
-								<section class="u-field u-space">
-									<div class="u-row center-xs">
-										<div class="col-xs-12">
-											<span class="input input--ichiro">
-												<input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="comments" required />
-												<label class="input__label input__label--ichiro" for="comments">
-													<span class="input__label-content input__label-content--ichiro">Comentarios</span>
-												</label>
-												<p class="form-error f-tiny">Ingresa un comentario.</p>
-											</span>
-										</div>
-									</div>
-								</section>
-
-								<section class="u-select">
-									<div class="u-row center-xs">
-										<div class="col-xs-12">
-											<select class="cs-select cs-skin-border u-space">
-												<option value="poliza1" selected>Póliza 1</option>
-												<option value="poliza2">Póliza 2</option>
-												<option value="poliza3">Póliza 3</option>
-											</select>
-										</div>
-									</div>
-								</section>
-
+					<div class="toggleMainLoading">
+						<div class="col-xs-4 start-xs">
+							<section class="u-space">
 								<div class="u-row center-xs">
-									<div class="col-xs-12 u-space">
-										<input type="submit" id="loginSubmit" class="button button-full button-primary" value="Ingresar">
+									<div class="col-xs-12">
+										<span class="input input--ichiro">
+											<input class="input__field input__field--ichiro" data-live-validate="true" type="email" id="email" required />
+											<label class="input__label input__label--ichiro" for="email">
+												<span class="input__label-content input__label-content--ichiro">Email</span>
+											</label>
+											<p class="form-error f-tiny">Ingresa un correo válido.</p>
+										</span>
 									</div>
 								</div>
+							</section>
+
+							<label class="f-small">Póliza Asociada:</label>
+							<section class="u-select">
+								<div class="u-row center-xs">
+									<div class="col-xs-12">
+										<select class="cs-select cs-skin-border u-space">
+											<option value="poliza1" selected>Póliza 1</option>
+											<option value="poliza2">Póliza 2</option>
+											<option value="poliza3">Póliza 3</option>
+										</select>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 u-space">
+							<section class="u-space">
+								<div class="u-row center-xs">
+									<div class="col-xs-12">
+										<span class="input input--ichiro">
+											<textarea class="input__field input__field--ichiro u-space" data-live-validate="true" type="text" id="comments" required></textarea>
+											<label class="input__label input__label--ichiro" for="comments">
+												<span class="input__label-content input__label-content--ichiro">Comentario:</span>
+											</label>
+											<p class="form-error f-tiny">Ingresa un comentario.</p>
+										</span>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="end-xs">
+							<div class="col-xs-12 end-xs">
+								<input type="submit" id="loginSubmit" class="end-xs button  button-primary" value="Enviar">
 							</div>
 						</div>
 
-					</form>
+					</div>
 
-				</div>
+				</form>
+
 			</div>
 		</div>
-	</section>
-
+	</div>
+</section>

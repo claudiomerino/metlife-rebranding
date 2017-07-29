@@ -109,6 +109,11 @@
 			td {
 				border: 0;
 				display: table-cell;
+				p {
+					&.middle{
+						margin-bottom: -1px;
+					}
+				}
 			}
 			thead {
 				border: 0;
