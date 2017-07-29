@@ -5,12 +5,20 @@
 
 		const options = {
 			onChange : function( val ) {
+				console.log(val, 'val')
 				$filterSelect.each( (index, elDesc) => {
-					if( $dataFilterDesc == val ) {
+					console.log($(elDesc).data('filter-data-desc'), 'elDesc')
+					const $dataFilterDesc = $(elDesc).data('filter-data-desc')
+					if(val == 'allStateDividend') {
 						$($(elDesc).closest('tr')[0]).removeClass('hide-filter-data-desc')
 					}
 					else {
-						$($(elDesc).closest('tr')[0]).addClass('hide-filter-data-desc')
+						if( $dataFilterDesc == val ) {
+							$($(elDesc).closest('tr')[0]).removeClass('hide-filter-data-desc')
+						}
+						else {
+							$($(elDesc).closest('tr')[0]).addClass('hide-filter-data-desc')
+						}
 					}
 				})
 			}

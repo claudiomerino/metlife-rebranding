@@ -13,7 +13,7 @@
 		height: 17px;
 		width: 17px;
 		margin-left: 5px;
-		margin-top: 5px;
+		margin-top: 4px;
 	}
 
 	.active::after {
@@ -21,7 +21,7 @@
 	}
 
 	.inactive::after {
-		background-color: $pink;
+		background-color: $error;
 	}
 
 	.pending::after {

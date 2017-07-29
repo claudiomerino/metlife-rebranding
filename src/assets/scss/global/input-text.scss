@@ -85,6 +85,9 @@
 		transition: opacity 0.3s, transform 0.3s !important;
 		width: 100%;
 		z-index: 100;
+		&.middle {
+			top: -22px;
+		}
 	}
 
 	.input__label--ichiro {
