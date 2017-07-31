@@ -1,0 +1,127 @@
+
+	{{> nav-off-canvas}}
+
+  <div class="off-canvas-content" data-off-canvas-content>
+		<div class="double-nav_sticky" data-sticky-container>
+			<div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+				{{> nav-sub}}
+				{{> nav-main}}
+			</div>
+		</div>
+
+		<section class="products bg-white-light">
+			<div class="products_container u-container">
+				<div class="products_row u-row">
+					<div class="products_col col-xs-12">
+
+						<div class="breadcrumb products_breadcrumb">
+							<ul class="u-row u-row-xs-full middle-xs">
+								<li>
+									<a href="/" class="f-link f-tiny">Inicio</a>
+								</li>
+								<li>
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+								</li>
+								<li>
+									<p class="f-tiny"> Resumen de Productos</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-xs-12">
+							<section class="products_heading center-xs u-space">
+								<h2 class="products_title">Mis Productos</h2>
+							</section>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Para habilitar componente descomentar lo siguiente -->
+
+				<!-- <div class="hide-xs show-md closeCardMain">
+					<div class="products_row u-row u-space z-depth-2">
+						<div class="products_col col-xs-12 col-md-5">
+							<figure>
+								<img src="{{root}}assets/img/products_banner_img.png" data-fit-type class="objFit products_img">
+							</figure>
+						</div>
+
+						<div class="products_col col-xs-12 col-md-7 card_container products_col-card_banner">
+							<a href="" class="closeCardMainButton"><i class="material-icons products_col-ico_close">close</i></a>
+							<h5 class="f-bigger u-space">Sofía en 8 años más entrará a la Universidad. Comienza a ahorrar con nosotros hoy.</h5>
+								<li class="f-small state bullet-point"><em>Característica 1 de la promoción</em></li>
+								<li class="f-small state bullet-point"><em>Característica 2 de la promoción con más texto</em></li>
+							<div class="u-row end-xs">
+								<a href="" class="button button-dark">Saber más</a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+
+				<div class="products_row u-row gutter-xs">
+					<div class="products_col col-xs-12 col-md-8">
+						<section class="products_card u-space">
+							{{> card-vida-sin-ap-products }}
+						</section>
+						<section class="products_card u-space">
+							{{> card-vida-con-ap-products }}
+						</section>
+						<section class="products_card u-space">
+							{{> card-vida-con-apv-products }}
+						</section>
+						<section class="products_card u-space">
+							{{> card-vida-universitarios-products }}
+						</section>
+						<section class="products_card u-space">
+							{{> card-vida-dotal-products }}
+						</section>
+						<section class="products_card u-space">
+							{{> card-salud-products }}
+						</section>
+						<section class="products_card u-space">
+							{{> card-mutuaria-products }}
+						</section>
+					</div>
+
+					<div class="products_col col-xs-12 col-md-4">
+						<div class="u-row center-xs u-space">
+							<div class="col-xs-12 z-depth-2 card_container">
+								<p class="f-bigger"><strong>Aprende a Pagar tu Póliza en Línea</strong></p>
+								<div class="u-row middle-xs">
+									<div class="col-xs-12 col-sm-3">
+										<figure class="products_figure_ico">
+											<img src="{{root}}assets/img/ico_policy_pay.png" >
+										</figure>
+									</div>
+									<div class="col-xs-12 col-sm-9 start-xs">
+										<p class="">Olvidate de hacer filas. A partir de ahora paga todas tus polizas de manera segura sin moverte de casa</p>
+									</div>
+								</div>
+								<div class="u-row end-xs show-xs hide-md">
+									<a href="" class="button button-dark" >Aprende a Pagar</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="u-row center-xs">
+							<div class="col-xs-12 z-depth-2 card_container">
+								<p class="f-bigger"><strong>Protege a tu familia con los nuevos seguros de Salud UC</strong></p>
+								<figure class="u-space">
+									<img src="{{root}}assets/img/products_protect_family.png">
+								</figure>
+								<p>Siente la seguridad y tranquilidad de tener acceso a la Red de Salud UC CHRISTUS, la red más importante del pais, la única que cuenta con el respaldo y excelencia de la medicina UC.</p>
+								<a href="" class="button button-dark">Más información</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="products_info u-section">
+					<p class="f-legal">Los datos e información contenido corresponde a aquella proporcionada por el cliente contratante al momento de la contratación del seguro y otorgamiento del crédito según corresponda. El cliente será responsable de comunicar a la Compañía Aseguradora cualquier modificación de sus datos personales, información de contacto u otro.</p>
+				</div>
+
+			</div>
+		</section>
+	</div>
