@@ -1,0 +1,68 @@
+
+{{> nav-off-canvas}}
+
+<div class="off-canvas-content" data-off-canvas-content>
+
+	<div class="double-nav_sticky" data-sticky-container>
+		<div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+			{{> nav-sub}}
+			{{> nav-main}}
+		</div>
+	</div>
+
+	<section class="mutuaria bg-white-light">
+		<div class="mutuaria_container u-container">
+			<div class="breadcrumb mutuaria_breadcrumb">
+				<ul class="u-row u-row-xs-full middle-xs">
+					<li>
+						<a href="{{root}}productos/productos.html" class="f-link f-tiny">Mis productos</a>
+					</li>
+					<li>
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</li>
+					<li>
+						<p class="f-tiny"> MetLife Crédito Hipotecario Universal</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="u-row u-row-xs-full middle-sm">
+				<section id="selectLifeApv" class="mutuaria_heading col-xs-12 col-sm-8 col-xs-full center-xs start-sm u-space">
+					<p class="life-apv_desc">Mutuaria</p>
+					<div class="u-row-xs-full bottom-xs center-xs start-sm">
+						<h2 class="mutuaria_title">MetLife Crédito Hipotecario Universal</h2>
+						<p class="mutuaria_desc f-big"><strong>Crédito Nº: 0056705543-A</strong></p>
+					</div>
+				</section>
+
+				<div class="col-xs-12 col-sm-4 col-xs-full center-xs end-sm u-space">
+					<div data-sticky-container class="u-select-sticky mutuaria_select_options">
+						<div class="sticky" data-sticky data-top-anchor="selectLifeApv:top" data-options="anchor: page; marginTop: 0; stickyOn: small;">
+							<div class="mutuaria_select">
+
+								<section class="u-space u-select select_input">
+									<select class="cs-select cs-skin-border">
+										<option value="" disabled selected>¿Qué Quieres Hacer?</option>
+										<option value="">Pagar Dividendo</option>
+										<option value="">Descargar Dividendo</option>
+										<option value="">Descargar Histórico de Pagos</option>
+										<option value="">Descargar Última Cartola Trimestral</option>
+									</select>
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{{> tabs-mutuaria }}
+
+			<div class="mutuaria_legal center-xs f-legal u-section">
+				{{> legal }}
+			</div>
+
+		</div>
+	</section>
+
+</div>

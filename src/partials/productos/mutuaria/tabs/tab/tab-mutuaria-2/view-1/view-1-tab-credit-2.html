@@ -1,0 +1,340 @@
+
+<div class="tabs_wrap u-space">
+	<section class="info_dividents client_wrap_container">
+
+		<h6 class="tabs-subtitle-profile double_line">Información de Dividendos</h6>
+
+		<div class="u-row gutter-xs">
+			<div class="col-xs-12 col-sm-6 col-md-3 u-select u-select_label u-space">
+				<p class="f-small"><strong>Filtrar por Estado de Dividendo:</strong></p>
+				<select class="cs-select cs-skin-border DataSelectFilter">
+					<option value="allStateDividend" selected>Todos los Estados</option>
+					<option value="paidStateDividend">Pagado</option>
+					<option value="forPayStateDividend">Por Pagar</option>
+					<option value="defeatedStateDividend">Vencido</option>
+				</select>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-5">
+				<p class="f-small"><strong>Filtrar por Rango de Fechas:</strong></p>
+				<div class="u-row gutter-xs">
+					<div class="col-xs-12 col-md-6 u-space">
+						<section class="u-space">
+							<span class="input input--ichiro input--datepicker u-space">
+								<input class="input__field input__field--ichiro DatePicker" data-placeholder="dfgdfgdfgdfg" type="text" class="span3">
+								<i class="material-icons">date_range</i>
+							</span>
+						</section>
+					</div>
+
+					<div class="col-xs-12 col-md-6 u-space">
+						<section class="u-space">
+							<span class="input input--ichiro input--datepicker">
+								<input class="input__field input__field--ichiro DatePicker" placeholder="Hasta" type="text" class="span2">
+								<i class="material-icons">date_range</i>
+							</span>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4 u-space">
+				<a href="" class="ico">Exportar Resultados a Excel</a>
+			</div>
+		</div>
+
+		<div class="table table-scroll col-xs-12 ">
+		  <table class="table-responsive u-striped u-striped-more">
+		    <thead>
+	      	<tr>
+		        <th class="table-2">
+							<p class="table_title"><strong>Dividendo Nº</strong></p>
+						</th>
+				    <th class="table-2">
+							<p class="table_title"><strong>Estado Dividendo</strong></p>
+						</th>
+				    <th class="table-3">
+							<p class="table_title"><strong>Fecha Vencimiento - Pago</strong></p>
+						</th>
+						<th class="table-2">
+							<p class="table_title"><strong>Total Dividendo</strong></p>
+						</th>
+				    <th class="table-3">
+							<p class="table_title"><strong>&nbsp;</strong></p>
+						</th>
+	      	</tr>
+		    </thead>
+
+		    <tbody>
+	      	<tr class="u-striped-gray">
+	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
+							<p class="table_desc">56 / 240</p>
+						</td>
+        		<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
+							<p class="table_desc filterDataDesc" data-filter-data-desc="defeatedStateDividend">Vencido</p>
+						</td>
+	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
+							<p class="table_desc">20/06/2017 - </p>
+						</td>
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
+							<p class="table_desc">UF 20.05 / $ 554.865</p>
+						</td>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más Información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+	      	</tr>
+
+	      	<tr>
+	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
+							<p class="table_desc">55 / 240</p>
+						</td>
+	        	<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
+							<p class="table_desc filterDataDesc" data-filter-data-desc="paidStateDividend">Pagado</p>
+						</td>
+	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
+							<p class="table_desc">20/06/2017 - 05/06/2017</p>
+						</td>
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
+							<p class="table_desc">UF 20.05 / $ 554.865</p>
+						</td>
+
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más Información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						</td>
+	      	</tr>
+
+
+	      	<tr class="u-striped-gray">
+		      	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
+							<p class="table_desc">54 / 240</p>
+						</td>
+		      	<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
+							<p class="table_desc filterDataDesc" data-filter-data-desc="paidStateDividend">Pagado</p>
+						</td>
+		      	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
+							<p class="table_desc">20/06/2017 - 05/06/2017</p>
+						</td>
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
+							<p class="table_desc">UF 20.05 / $ 554.865</p>
+						</td>
+						<td class="table-3" valign="middle" data-table-title="Información">
+							<a href="" class="f-link openContent" data-open-content="54">
+								<span class="openContentText" data-rest-text="Mostar más información" data-open-text="Mostrar menos información" data-close="true">Mostrar más Información</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+						</td>
+				 	</tr>
+
+
+	    		<tr class="toggleContent" data-toggle-content="54">
+	    			<td class="table-12" valign="middle">
+	    				<div class="u-row">
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Amortización:</strong></p>
+									<p class="card_item">UF 18 / 555.065</p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Amortización Extraordinaria:</strong></p>
+									<p class="card_item">UF 0 / $0</p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Interés:</strong></p>
+									<p class="card_item">UF 0.98 / $25.993</p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Interés Penal o Mora:</strong></p>
+									<p class="card_item">UF 0 / $0</p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Seguro Incendio:</strong></p>
+									<p class="card_item">UF 2.24 / $ 60.352 </p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Seguro Degravamen:</strong></p>
+									<p class="card_item">UF 0.65 / $ 18.223</p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Otros Seguros</strong></p>
+									<p class="card_item">UF 0 / $0</p>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<p class="card_item"><strong>Total Seguros:</strong></p>
+									<p class="card_item">UF 3.54 / $ 87.773</p>
+								</div>
+							</div>
+						</td>
+		 			</tr>
+
+	      	<tr>
+	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
+							<p class="table_desc">53 / 240</p>
+						</td>
+	        	<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
+							<p class="table_desc filterDataDesc" data-filter-data-desc="forPayStateDividend">Por Pagar</p>
+						</td>
+	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
+							<p class="table_desc">20/06/2017 - 05/06/2017</p>
+						</td>
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
+							<p class="table_desc">UF 20.05 / $ 554.865</p>
+						</td>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más Información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						</td>
+	      	</tr>
+
+	      	<tr class="u-striped-gray">
+	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
+							<p class="table_desc">52 / 240</p>
+						</td>
+	        	<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
+							<p class="table_desc filterDataDesc" data-filter-data-desc="forPayStateDividend">Por Pagar</p>
+						</td>
+	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
+							<p class="table_desc">20/06/2017 - 05/06/2017</p>
+						</td>
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
+							<p class="table_desc">UF 20.05 / $ 554.865</p>
+						</td>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más Información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						</td>
+	      	</tr>
+
+	      	<tr>
+	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
+							<p class="table_desc">51 / 240</p>
+						</td>
+	        	<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
+							<p class="table_desc filterDataDesc" data-filter-data-desc="defeatedStateDividend">Vencido</p>
+						</td>
+	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
+							<p class="table_desc">20/06/2017 - 05/06/2017</p>
+						</td>
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
+							<p class="table_desc">UF 20.05 / $ 554.865</p>
+						</td>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más Información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						</td>
+	      	</tr>
+
+	      	<tr class="u-striped-gray">
+	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
+							<p class="table_desc">50 / 240</p>
+						</td>
+	        	<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
+							<p class="table_desc filterDataDesc" data-filter-data-desc="paidStateDividend">Pagado</p>
+						</td>
+	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
+							<p class="table_desc">20/06/2017 - 05/06/2017</p>
+						</td>
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
+							<p class="table_desc">UF 20.05 / $ 554.865</p>
+						</td>
+
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más Información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+						</td>
+	      	</tr>
+
+	      	<tr>
+	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
+							<p class="table_desc">49 / 240</p>
+						</td>
+	        	<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
+							<p class="table_desc filterDataDesc" data-filter-data-desc="paidStateDividend">Pagado</p>
+						</td>
+	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
+							<p class="table_desc">20/06/2017 - 05/06/2017</p>
+						</td>
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
+							<p class="table_desc">UF 20.05 / $ 554.865</p>
+						</td>
+
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más Información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						</td>
+	      	</tr>
+
+	      	<tr class="u-striped-gray">
+	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
+							<p class="table_desc">48 / 240</p>
+						</td>
+	        	<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
+							<p class="table_desc filterDataDesc" data-filter-data-desc="defeatedStateDividend">Vencido</p>
+						</td>
+	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
+							<p class="table_desc">20/06/2017 - 05/06/2017</p>
+						</td>
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
+							<p class="table_desc">UF 20.05 / $ 554.865</p>
+						</td>
+
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más Información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						</td>
+	      	</tr>
+
+	      	<tr>
+	        	<td class="table-2" valign="middle" data-table-title="Número Dividendo">
+							<p class="table_desc">47 / 240</p>
+						</td>
+	        	<td class="table-2" valign="middle" data-table-title="Estado Dividendo">
+							<p class="table_desc filterDataDesc" data-filter-data-desc="defeatedStateDividend">Vencido</p>
+						</td>
+	        	<td class="table-3" valign="middle" data-table-title="Fecha Vencimiento - Pago">
+							<p class="table_desc">20/06/2017 - 05/06/2017</p>
+						</td>
+						<td class="table-2" valign="middle" data-table-title="Total Dividendo">
+							<p class="table_desc">UF 20.05 / $ 554.865</p>
+						</td>
+	        	<td class="table-3 center-xs" valign="middle" data-table-title="Información">
+							<a href="">Mostrar más Información <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						</td>
+	      	</tr>
+
+				</tbody>
+			</table>
+		</div>
+
+		<section class="pagination">
+			<div class="u-row u-row-xs-full center-xs">
+				<div class="pagination_new">
+					<button class="button button-transparent">Recientes</button>
+				</div>
+				<div class="pagination_numbers u-row u-row-xs-full middle-xs">
+					<div class="pagination_numbers_item pagination-active">
+						<a href="">1</a>
+					</div>
+					<div class="pagination_numbers_item">
+						<a href="">2</a>
+					</div>
+					<div class="pagination_numbers_item">
+						<a href="">3</a>
+					</div>
+					<div class="pagination_numbers_item">
+						<a href="">4</a>
+					</div>
+					<div class="pagination_numbers_dots">
+						<span>...</span>
+					</div>
+					<div class="pagination_numbers_item">
+						<a href="">16</a>
+					</div>
+				</div>
+				<div class="pagination_old">
+					<button class="button button-transparent">Anteriores</button>
+				</div>
+			</div>
+		</section>
+
+	</section>
+</div>
