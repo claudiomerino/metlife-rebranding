@@ -160,8 +160,7 @@
                             });
 
                             $respTabs.find('.resp-tab-content[aria-labelledby = ' + $tabAria + '].' + options.tabidentify).slideDown().addClass('resp-tab-content-active');
-                        } else {
-                            console.log('here');
+                        } else {                            
                             $respTabs.find('.resp-tab-active.' + options.tabidentify).removeClass('resp-tab-active').css({
                                 'background-color': options.inactive_bg,
                                 'border-color': 'none'
@@ -217,17 +216,17 @@
 
 //Horizontal Tab
 $('#parentHorizontalTab').easyResponsiveTabs({
-    type: 'default', //Types: default, vertical, accordion
-    width: 'auto', //auto or any width like 600px
-    fit: true, // 100% fit in a container
-    tabidentify: 'hor_1', // The tab groups identifier
-    activate: function( event ) { // Callback function if tab is switched
-        var $tab = $(this);
-        console.log($tab.offset().top , 'before')
-
-        setTimeout( function() {
-            $( 'html,body' ).animate({ scrollTop: $tab.offset().top - 80 }, 'fast');
-            console.log($tab.offset().top , 'after')
-        }, 750);
+  type: 'default', //Types: default, vertical, accordion
+  width: 'auto', //auto or any width like 600px
+  fit: true, // 100% fit in a container
+  tabidentify: 'hor_1', // The tab groups identifier
+  activate: function( event ) { // Callback function if tab is switched
+      
+    if (!Foundation.MediaQuery.atLeast('large')) {
+      var $tab = $(this);
+      setTimeout( function() {
+        $( 'html,body' ).animate({ scrollTop: $tab.offset().top - 80 }, 'fast');
+      }, 750);
     }
+  }
 });
