@@ -1,8 +1,5 @@
 
 	let $openContent = $( '.openContent' );
-	let $toggleContent = $( '.toggleContent' ).data( 'toggle-content' );
-	let $restText = $( '.openContentText' ).data( 'rest-text' );
-	let $openText = $( '.openContentText' ).data( 'open-text' );
 
 	$openContent.on( 'click', ( e ) => {
 		e.preventDefault();
@@ -12,8 +9,12 @@
 		let $openContentText = $( e.currentTarget ).find( 'span' );
 		let $dataClose = $( e.currentTarget ).find( 'span' ).data( 'close' );
 
+		let $restText = $( e.currentTarget ).find( '.openContentText' ).data( 'rest-text' );
+		let $openText = $( e.currentTarget ).find( '.openContentText' ).data( 'open-text' );
+
 		$toggleContentData.toggleClass( 'is-open' );
 		$openContentText.toggleClass( 'is-open' );
+
 		$( e.currentTarget ).toggleClass( 'is-open' );
 
 		if( $dataClose ) {
