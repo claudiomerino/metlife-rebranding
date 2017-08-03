@@ -9,14 +9,14 @@
 	table thead,
 	table tbody,
 	table tfoot {
-		border-top: 0;
+	
 		border-bottom: 1px solid $medium-gray;
 	}
 
 	.u-striped {
 		tbody {
 			tr {
-				border-top: 1px solid $medium-gray;
+				border-bottom: 1px solid $medium-gray !important;
 				&:nth-of-type( even ) {
 					background-color: white;
 				}
@@ -30,12 +30,22 @@
 	.u-striped-more {
 		tbody {
 			tr {
-				background-color: white !important;
-				&.u-striped-gray {
-					background-color: $white-light !important;
+				border-bottom: 1px solid $white-light;
+				border-top: 0;
+				&:nth-of-type(4n + 1) {
+					background-color: $white;
 				}
+
 				&.toggleContent {
-					background-color: $white-light !important;
+					background-color: $white-light;
+				}
+
+				&.expire {
+					background-color: $expiration !important;
+					border-bottom: 1px solid black !important;
+					.filterDataDesc {
+						color: $error;
+					}
 				}
 			}
 		}
@@ -75,6 +85,7 @@
 	}
 
 	.table-scroll {
+		overflow-y: hidden !important;
 		table {
 			border-spacing: initial;
 			width: 100%;
@@ -85,12 +96,29 @@
 		margin-bottom: 0;
 	}
 
+
+	.hide-filter-data-desc {
+		display: none !important;
+	}
+
+	.hide-filter-date {
+		display: none !important;
+	}
+
+	.hide-filter-data-date {
+		display: none !important;
+	}
+
+
+
+
+
 	@media screen and ( min-width: 62em ) {
 		.u-striped {
 			padding: 1rem 0;
 			tbody {
 				tr {
-					border-bottom: 0;
+					border-top: 0;
 					&:last-of-type {
 						border-bottom: 1px solid $medium-gray;
 					}
@@ -215,16 +243,4 @@
 			}
 		}
 
-	}
-
-	.hide-filter-data-desc {
-		display: none !important;
-	}
-
-	.hide-filter-date {
-		display: none !important;
-	}
-
-	.hide-filter-data-date {
-		display: none !important;
 	}
