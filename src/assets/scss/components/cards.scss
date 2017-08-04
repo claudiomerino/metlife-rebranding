@@ -7,7 +7,7 @@
 	}
 
 	.card_container {
-		padding: 1rem;
+		padding: 1rem 1rem 0.3rem 1rem;
 		background-color: white;
 	}
 
@@ -115,7 +115,7 @@
 		&.is-open {
 			height: auto;
 			opacity: 1;
-			padding: 1rem 0;
+			padding: 1rem 0 1rem 0;
 			visibility: visible;
 		}
 	}
