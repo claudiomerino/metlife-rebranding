@@ -46,7 +46,10 @@
 		&.line_jump {
 			line-height: 1;
 			margin-bottom: 3px;
+			font-size: 14px;
+			color: $dark-gray;
 		}
+
 		&.jump_line {
 			line-height: 1.5;
 			margin-bottom: 0;
