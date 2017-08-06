@@ -13,8 +13,6 @@
             $($(elDesc).closest('tr')[0]).addClass('expire')
             console.log( $($(elDesc).closest('tr')[0]).addClass('expire'))
           }
-
-
           if($('.DataSelectFilter option:selected').val() == 'allStateDividend') {
             $($(elDesc).closest('tr')[0]).removeClass('hide-filter-date')
           }
