@@ -125,7 +125,9 @@
 		&.number-dividend {
 			padding: 0;
 		}
-
+    &.no-padding-bottom {
+      padding-bottom: 0px;
+    }
 	}
 
 	table {
