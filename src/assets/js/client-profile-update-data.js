@@ -37,17 +37,17 @@
 			$clientProfileCancelUpdateData
 				.add($clientProfileSaveUpdateData)
 				.add($clientProfileEdit)
-				.addClass('hide-xs')
+				.addClass('hide-state-update')
 
 			$buttonUpdate
 				.add($clientProfileInitialData)
 				.add($ClientProfileToggleHide)
 				.add($ClientProfileMessageSuccess)
-				.removeClass('hide-xs')
+				.removeClass('hide-state-update')
 
 			setTimeout( () => {
 				$ClientProfileMessageSuccess
-					.addClass('hide-xs')
+					.addClass('hide-state-update')
 			}, 5000 );
 		}
 		else if( cancel === 'true' ) {
@@ -55,17 +55,17 @@
 			$clientProfileCancelUpdateData
 				.add($clientProfileSaveUpdateData)
 				.add($clientProfileEdit)
-				.addClass('hide-xs')
+				.addClass('hide-state-update')
 
 			$buttonUpdate
 				.add($clientProfileInitialData)
 				.add($ClientProfileToggleHide)
 				.add($ClientProfileMessageCancel)
-				.removeClass('hide-xs')
+				.removeClass('hide-state-update')
 
 			setTimeout( () => {
 				$ClientProfileMessageCancel
-					.addClass('hide-xs')
+					.addClass('hide-state-update')
 			}, 5000 );
 		}
 	}
@@ -74,10 +74,10 @@
 		$clientProfileCancelUpdateData
 			.add($clientProfileSaveUpdateData)
 			.add($clientProfileEdit)
-			.removeClass('hide-xs')
+			.removeClass('hide-state-update')
 
 		$clientProfileInitialData
 			.add($buttonUpdate)
 			.add($ClientProfileToggleHide)
-			.addClass('hide-xs')
+			.addClass('hide-state-update')
 	}
