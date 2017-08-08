@@ -9,7 +9,7 @@
 	table thead,
 	table tbody,
 	table tfoot {
-	
+
 		border-bottom: 1px solid $medium-gray;
 	}
 
@@ -73,7 +73,13 @@
 			position: relative;
 			&:before {
 				content: attr( data-table-title );
-				font-weight: bolder;
+				position: absolute;
+				right: 0;
+			}
+			&.is-open {
+				&:before {
+					opacity: 0;
+				}
 			}
 		}
 		thead {
@@ -96,22 +102,14 @@
 		margin-bottom: 0;
 	}
 
-
-	.hide-filter-data-desc {
-		display: none !important;
+	.toggleContent {
+		&.is-open {
+			.card-gray {
+				border: 0;
+				padding: 0 !important;
+			}
+		}
 	}
-
-	.hide-filter-date {
-		display: none !important;
-	}
-
-	.hide-filter-data-date {
-		display: none !important;
-	}
-
-
-
-
 
 	@media screen and ( min-width: 62em ) {
 		.u-striped {
@@ -239,6 +237,15 @@
 			td[data-table-title] {
 				&:before {
 					content: none;
+				}
+			}
+		}
+
+		.toggleContent {
+			&.is-open {
+				.card-gray {
+					border: 1px solid $medium-gray;
+					padding: 15px !important;
 				}
 			}
 		}
