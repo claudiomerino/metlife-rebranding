@@ -2,32 +2,73 @@
 	let $Bounty = $( '.Bounty' );
 	let $Total = $( '.Total' );
 	let $BountyValueUF = $('.BountyValueUF')
-	
- 	console.log($Bounty)
+	let $BountyValueConvertUF = $('.BountyValueConvertUF')
+	let UFVALUE = '26573.27'
+	let $UFValue = $('.UFValue')
+	let $UFConvertion = $('.UFConvertion')
 
- 		$($Bounty).on('change', (ev) => {
+	$.getJSON('http://mindicador.cl/api', function(data) {
+		const dailyIndicators = data
 
- 			if( $(ev.currentTarget).is(':checked') ) {
-		 		$(ev.currentTarget).parent().next().children().attr('disabled', false)
-	 			let sumTotal = 0;
+		UFVALUE = dailyIndicators.uf.valor
 
-			 	$Total.each( (index, data) => {
-			 		const $BountyValue = $('body').find( '.BountyValue-' + index )
-			 		if( $BountyValue.is(':checked') ) {
-			 			sumTotal += parseInt( $( data ).text() )
-			 		}	 	
-			 	})
+		$UFValue.each( (index, data) => {
+			const UFTOTAL = parseFloat( $(data).text() ) * UFVALUE
 
-			 	$BountyValueUF.text(sumTotal)
-				console.log('sumTotal', sumTotal)		 	
- 			}
+			$( $UFConvertion[index] ).text( numeral(UFTOTAL).format('0,0') )
+		})
 
- 			else {
- 				$(ev.currentTarget).parent().nextAll().children().attr('disabled', true)
- 				$(ev.currentTarget).parent().nextAll().children().attr('checked', false)
- 			}
 
- 		})
+	}).fail(function() {
+		console.log('Error al consumir la API UF!');
+	});
+
+
+	$($Bounty).on('change', (ev) => {
+
+		if( $(ev.currentTarget).is(':checked') ) {
+			$(ev.currentTarget).parent().next().children().attr('disabled', false)
+			let sumTotal = 0;
+
+			$Bounty.each( (index, data) => {
+				const $BountyValue = $(data)
+				if( $BountyValue.is(':checked') ) {
+					sumTotal += parseFloat( $( data ).data('value-uf') )
+				}	
+			})
+
+			$BountyValueUF.text( numeral(sumTotal).format( '0,0.00' ) )
+			$BountyValueConvertUF.text( numeral( sumTotal * UFVALUE ).format('0,0') )
+		}
+
+		else {
+			$(ev.currentTarget).parent().nextAll().children().attr('disabled', true)
+
+			let sumTotal = numeral($BountyValueUF.text()).format( '0,0.00' )
+
+			sumTotal -= numeral( $(ev.currentTarget).data('value-uf') ).format( '0,0.00' )
+
+			$BountyValueUF.text( numeral(sumTotal).format( '0,0.00' ) )
+			$BountyValueConvertUF.text( numeral( sumTotal * UFVALUE ).format('0,0') )
+
+			let $arrayNextAll = $(ev.currentTarget).parent().nextAll().children('.Bounty').toArray()
+
+			$( $arrayNextAll ).each( (index, data) => {
+				if( $(data).is(':checked') ) {
+					const $nextAllValueUf = numeral( $(data).data('value-uf') ).format( '0,0.00' )
+
+					sumTotal = numeral(sumTotal).format( '0,0.00' ) - $nextAllValueUf
+
+					$BountyValueUF.text( numeral(sumTotal).format( '0,0.00' ) )
+					$BountyValueConvertUF.text( numeral( sumTotal * UFVALUE ).format('0,0') )
+				}
+			})
+
+			$(ev.currentTarget).parent().nextAll().children().attr('checked', false)
+
+		}
+
+	})
 
  	$Bounty.each( (index, data) => {
 
