@@ -19,6 +19,10 @@ $gutter-lg: 15px;
   margin-bottom: $space-md;
 }
 
+.u-space-sm {
+  margin-bottom: $space-xs;
+}
+
 .u-space-md {
   margin-bottom: $space-xs;
 }
@@ -450,6 +454,10 @@ ul.u-row {
 
   .u-space {
     margin-bottom: $space-md;
+  }
+
+  .u-space-sm {
+    margin-bottom: 0;
   }
 
   .u-container {
