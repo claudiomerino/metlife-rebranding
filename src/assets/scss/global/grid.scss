@@ -19,6 +19,10 @@ $gutter-lg: 15px;
   margin-bottom: $space-md;
 }
 
+.u-space-md {
+  margin-bottom: $space-xs;
+}
+
 .u-right {
   padding-right: $gutter-sm;
 }
@@ -619,6 +623,10 @@ ul.u-row {
 }
 
 @media only screen and (min-width: 75em) {
+
+  .u-space-md {
+    margin-bottom: 0;
+  }
 
   .u-section {
     padding: 3rem 0;
