@@ -99,8 +99,10 @@
 	}
 
 	.tab-accordion,
-	.tab-accordion-pink,
-	.tab-accordion-green {
+	.tab-accordion-pink .resp-accordion,
+	.tab-accordion-pink .tab-accordion,
+	.tab-accordion-green .resp-accordion,
+	.tab-accordion-green .tab-accordion {
 		flex-grow: 0;
 		position: relative;
 		transition: color 0.3s;
