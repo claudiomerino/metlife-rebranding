@@ -67,9 +67,12 @@
 	}
 
 	.tab-accordion,
-	.tab-accordion-pink,
-	.tab-accordion-green {
-		flex-grow: 0;
+
+	.tab-accordion-pink .resp-accordion,
+	.tab-accordion-pink .tab-accordion,
+	.tab-accordion-green .resp-accordion,
+	.tab-accordion-green .tab-accordion {
+		flex-grow: 1;
 		position: relative;
 		transition: color 0.3s;
 		&:before {
@@ -104,19 +107,6 @@
 			}
 		}
 	}
-
-	.tab-accordion-pink {
-		&:before {
-			background-color: $pink;
-		}
-	}
-
-	.tab-accordion-green {
-		&:before {
-			background-color: $accident;
-		}
-	}
-
 
 	.tabs_wrap-green {
 		.tabs-subtitle {

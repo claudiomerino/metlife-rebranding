@@ -11,7 +11,6 @@
 
           if ( $dataFilterDesc == 'defeatedStateDividend') {
             $($(elDesc).closest('tr')[0]).addClass('expire')
-            console.log( $($(elDesc).closest('tr')[0]).addClass('expire'))
           }
           if($('.DataSelectFilter option:selected').val() == 'allStateDividend') {
             $($(elDesc).closest('tr')[0]).removeClass('hide-filter-date')
@@ -53,7 +52,6 @@
 
         let momentStartDate = moment(ev.date).add(1, 'days').format('DD MM YYYY')
 
-        console.log(momentStartDate, 'momentStartDate')
         const msStartDate = moment(momentStartDate, 'DD MM YYYY').valueOf()
 
         $('.DataExpiration').each( (index, data) => {
