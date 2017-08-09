@@ -8,7 +8,7 @@
     cursor: pointer;
   }
 
-  h2.resp-accordion {
+  .resp-accordion {
     cursor: pointer;
     display: none;
     background-color: white;
@@ -19,7 +19,7 @@
     display: none;
   }
 
-  h2.resp-accordion {
+  .resp-accordion {
     border-top: 1px solid #c1c1c1;/* !important;*/
     border: 1px solid #c1c1c1;
     font-size: 28px;
@@ -29,7 +29,7 @@
     position: relative;
     &.resp-tab-active {
       border-bottom: 0;
-      &:after {
+      &:before {
         background-color: $primary;
         bottom: 0;
         content: "";
@@ -43,13 +43,27 @@
     }
   }
 
+  .tab-accordion-green .resp-accordion,
+  .tab-accordion-green .tab-accordion {
+    &:before {
+      background-color: $accident !important;
+    }
+  }
+
+  .tab-accordion-pink .resp-accordion,
+  .tab-accordion-pink .tab-accordion {
+    &:before {
+      background-color: $pink !important;
+    }
+  }
+
   @media only screen and (max-width: 48em) {
 
     ul.resp-tabs-list {
       display: none;
     }
 
-    h2.resp-accordion {
+    .resp-accordion {
       display: block;
     }
 
@@ -71,6 +85,16 @@
 
     .resp-vtabs .resp-tab-content:last-child {
       border-bottom: 1px solid #c1c1c1 !important;
+    }
+
+    .tab-accordion-green .resp-accordion,
+    .tab-accordion-green .tab-accordion {
+      color: $accident !important;
+    }
+
+    .tab-accordion-pink .resp-accordion,
+    .tab-accordion-pink .tab-accordion {
+      color: $pink !important;
     }
   }
 
