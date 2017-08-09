@@ -160,7 +160,7 @@
                             });
 
                             $respTabs.find('.resp-tab-content[aria-labelledby = ' + $tabAria + '].' + options.tabidentify).slideDown().addClass('resp-tab-content-active');
-                        } else {                            
+                        } else {
                             $respTabs.find('.resp-tab-active.' + options.tabidentify).removeClass('resp-tab-active').css({
                                 'background-color': options.inactive_bg,
                                 'border-color': 'none'
@@ -221,8 +221,8 @@ $('#parentHorizontalTab').easyResponsiveTabs({
   fit: true, // 100% fit in a container
   tabidentify: 'hor_1', // The tab groups identifier
   activate: function( event ) { // Callback function if tab is switched
-      
-    if (!Foundation.MediaQuery.atLeast('large')) {
+
+    if (!Foundation.MediaQuery.atLeast('medium')) {
       var $tab = $(this);
       setTimeout( function() {
         $( 'html,body' ).animate({ scrollTop: $tab.offset().top - 80 }, 'fast');

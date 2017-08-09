@@ -43,7 +43,7 @@
     }
   }
 
-  @media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 48em) {
 
     ul.resp-tabs-list {
       display: none;
@@ -74,7 +74,7 @@
     }
   }
 
-  @media screen and (min-width: 62em) {
+  @media screen and (min-width: 48em) {
     .resp-accordion-closed {
       display: block !important;
     }
