@@ -46,14 +46,14 @@
 					chartTemplate = `
 						<tr>
 				      <td bgcolor="${ dataBackgroundColor[key] }" width="10"></td>
-				      <td class="table-6" valign="middle">
+				      <td class="table-4" valign="middle">
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
 								<p class="table_desc f-small"><strong>Relación:</strong> ${ dataRelation[key] }</p>
 								<p class="table_desc f-small"><strong>Teléfono:</strong> ${ dataPhone[key] }</p>
 								<p class="table_desc f-small"><strong>Dirección:</strong> ${ dataAddress[key] }</p>
 								<p class="table_desc f-small"><strong>Correo Electrónico:</strong> ${ dataEmail[key] }</p>
 							</td>
-				      <td class="table-1" valign="middle">
+				      <td class="table-2" valign="middle">
 								<p class="table_desc f-big"><strong>${ dataValue[key] } %</strong></p>
 							</td>
 						</tr>
@@ -65,10 +65,10 @@
 					chartTemplate = `
 						<tr>
 				      <td bgcolor="${ dataBackgroundColor[key] }" width="10"></td>
-				      <td class="table-6" valign="middle">
+				      <td class="table-4" valign="middle">
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
 							</td>
-				      <td class="table-1" valign="middle">
+				      <td class="table-2" valign="middle">
 								<p class="table_desc f-big"><strong>${ dataValue[key] } %</strong></p>
 							</td>
 						</tr>

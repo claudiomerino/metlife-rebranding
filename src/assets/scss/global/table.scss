@@ -16,7 +16,7 @@
 	.u-striped {
 		tbody {
 			tr {
-				border-bottom: 1px solid $medium-gray !important;
+				border-bottom: 1px solid white !important;
 				&:nth-of-type( even ) {
 					background-color: white;
 				}
@@ -30,7 +30,7 @@
 	.u-striped-more {
 		tbody {
 			tr {
-				border-bottom: 1px solid $white-light;
+				border-bottom: 1px solid white;
 				border-top: 0;
 				&:nth-of-type(4n + 1) {
 					background-color: $white;
@@ -81,11 +81,22 @@
 		.table_desc {
 			text-align: left;
 		}
+		tr {
+			&.table-display {
+				align-items: center;
+				display: flex;
+				td[data-table-title] {
+					&:before {
+						content: none;
+					}
+				}
+			}
+		}
 		&.u-striped-more {
 			td[data-table-title] {
 				&:before {
 					position: absolute;
-					right: 0;
+					right: 0.625rem;
 				}
 				&.is-open {
 					&:before {
@@ -160,6 +171,9 @@
 							text-align: left;
 						}
 					}
+				}
+				&.table-display {
+					display: table;
 				}
 			}
 			.table_desc {
