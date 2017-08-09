@@ -6,7 +6,7 @@
 	.tab-accordion-pink .tab-accordion,
 	.tab-accordion-green .resp-accordion,
 	.tab-accordion-green .tab-accordion {
-		flex-grow: 1;
+		flex-grow: 0;
 		position: relative;
 		transition: color 0.3s;
 		&:before {
@@ -14,11 +14,11 @@
 			bottom: 0;
 			content: '';
 			height: 4px;
-			left: 10px;
+			left: -20px;
 			position: absolute;
 			transform: scale3d(0, 1, 1);
 			transition: transform 0.1s;
-			width: calc(100% - 20px);
+			width: calc(100% + 40px);
 		}
 
 		h5 {
@@ -99,12 +99,11 @@
 	}
 
 	.tab-accordion,
-
 	.tab-accordion-pink .resp-accordion,
 	.tab-accordion-pink .tab-accordion,
 	.tab-accordion-green .resp-accordion,
 	.tab-accordion-green .tab-accordion {
-		flex-grow: 1;
+		flex-grow: 0;
 		position: relative;
 		transition: color 0.3s;
 		&:before {
@@ -118,7 +117,7 @@
 			position: absolute;
 			transform: scale3d(0, 1, 1);
 			transition: transform 0.1s;
-			width: 80%;
+			width: calc(80% + 10px);
 		}
 
 		h5 {
@@ -139,6 +138,19 @@
 			}
 		}
 	}
+
+	.tab-accordion-pink {
+		&:before {
+			background-color: $pink;
+		}
+	}
+
+	.tab-accordion-green {
+		&:before {
+			background-color: $accident;
+		}
+	}
+
 
 	.tabs_wrap-green {
 		.tabs-subtitle {
