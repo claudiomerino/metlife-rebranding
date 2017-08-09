@@ -31,6 +31,9 @@
 		function customLabelsFn() {
 			let dataLabel = data.labels;
 			let dataRelation = data.relation;
+			let dataPhone = data.phone;
+			let dataAddress = data.address;
+			let dataEmail = data.email;
 			let dataValue = data.datasets[0].data;
 			let dataBackgroundColor = data.datasets[0].backgroundColor;
 
@@ -46,6 +49,9 @@
 				      <td class="table-6" valign="middle">
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
 								<p class="table_desc f-small"><strong>Relación:</strong> ${ dataRelation[key] }</p>
+								<p class="table_desc f-small"><strong>Teléfono:</strong> ${ dataPhone[key] }</p>
+								<p class="table_desc f-small"><strong>Dirección:</strong> ${ dataAddress[key] }</p>
+								<p class="table_desc f-small"><strong>Correo Electrónico:</strong> ${ dataEmail[key] }</p>
 							</td>
 				      <td class="table-1" valign="middle">
 								<p class="table_desc f-big"><strong>${ dataValue[key] } %</strong></p>
@@ -109,4 +115,29 @@
 
 			});
 		})
+
+
+		let $chartTabElement = $( $chartTabActive );
+
+		if( $chartTabElement.hasClass( 'is-active' ) ) {
+			$( window ).scroll( function() {
+
+				let hT = $( ctx ).offset().top,
+						hH = $( ctx ).outerHeight(),
+						wH = $( window ).height(),
+						wS = $( this ).scrollTop();
+				if ( wS > ( hT + hH - wH ) ) {
+					if( animateChart ) { return; }
+
+					let myDoughnutChart = new Chart(ctx, {
+						type: 'doughnut',
+						data: data,
+						options: options
+					});
+
+					animateChart = true;
+
+				}
+			});
+		}
 	}
