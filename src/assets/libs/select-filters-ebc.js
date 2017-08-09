@@ -25,7 +25,7 @@
             }
           }
 
-          
+
         })
       }
 
@@ -96,7 +96,7 @@
           else {
             $($(data).closest('tr')[0]).addClass('hide-filter-data-date')
           }
-          
+
         })
       }).data('datepicker');
     }
@@ -106,7 +106,7 @@
 
     const $filterSelect = $('.filterDataDesc');
 
-    [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( (el) => {
+    [].slice.call( document.querySelectorAll( 'select.DataSelectFilter.cs-select' ) ).forEach( (el) => {
 
       const options = {
         onChange : function( val ) {

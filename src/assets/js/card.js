@@ -14,6 +14,7 @@
 
 		$toggleContentData.toggleClass( 'is-open' );
 		$openContentText.toggleClass( 'is-open' );
+		$openContentText.closest('td').toggleClass( 'is-open' );
 
 		$( e.currentTarget ).toggleClass( 'is-open' );
 
