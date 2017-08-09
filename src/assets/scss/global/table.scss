@@ -73,13 +73,7 @@
 			position: relative;
 			&:before {
 				content: attr( data-table-title );
-				position: absolute;
-				right: 0;
-			}
-			&.is-open {
-				&:before {
-					opacity: 0;
-				}
+				font-weight: bold;
 			}
 		}
 		thead {
@@ -87,6 +81,19 @@
 		}
 		.table_desc {
 			text-align: left;
+		}
+		&.u-striped-more {
+			td[data-table-title] {
+				&:before {
+					position: absolute;
+					right: 0;
+				}
+				&.is-open {
+					&:before {
+						opacity: 0;
+					}
+				}
+			}
 		}
 	}
 
