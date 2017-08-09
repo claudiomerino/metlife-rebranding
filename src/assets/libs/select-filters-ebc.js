@@ -30,14 +30,13 @@
 
       filterStateDividendFn()
 
-     let checkin =  $('.DatePickerStart').fdatepicker({
-
+      let checkin =  $('.DatePickerStart').fdatepicker({
         format: 'dd-mm-yyyy',
         disableDblClickSelection: true,
-        leftArrow:'<<',
-        rightArrow:'>>',
+        leftArrow:'<i class="material-icons primary">keyboard_arrow_left</i>',
+        rightArrow:'<i class="material-icons primary">keyboard_arrow_right</i>',
         closeIcon:'X',
-        closeButton: false
+        closeButton: false,
       }).on('changeDate', (ev) => {
         if (ev.date.valueOf() > checkout.date.valueOf()) {
           var newDate = new Date(ev.date)
@@ -46,9 +45,11 @@
         }
         checkin.hide();
 
+        $(ev.currentTarget).find('.input__field').val(moment(ev.date).add(1, 'days').format('DD / MM / YYYY'))
+
         filterStateDividendFn();
 
-        $('.DatePickerEnd')[0].focus();
+        $('.DatePickerEnd').fdatepicker('show');
 
         let momentStartDate = moment(ev.date).add(1, 'days').format('DD MM YYYY')
 
@@ -67,11 +68,11 @@
         })
       }).data('datepicker');
 
-     let checkout =  $('.DatePickerEnd').fdatepicker({
+      let checkout =  $('.DatePickerEnd').fdatepicker({
         format: 'dd-mm-yyyy',
         disableDblClickSelection: true,
-        leftArrow:'<<',
-        rightArrow:'>>',
+        leftArrow:'<i class="material-icons primary">keyboard_arrow_left</i>',
+        rightArrow:'<i class="material-icons primary">keyboard_arrow_right</i>',
         closeIcon:'X',
         closeButton: false,
         onRender: function (date) {
@@ -80,6 +81,8 @@
       }).on('changeDate', (ev) => {
         let momentEndDate = moment(ev.date).add(1, 'days').format('DD MM YYYY')
         const msEndDate = moment(momentEndDate, 'DD MM YYYY').valueOf()
+
+        $(ev.currentTarget).find('.input__field').val(moment(ev.date).add(1, 'days').format('DD / MM / YYYY'))
 
         checkout.hide();
 
