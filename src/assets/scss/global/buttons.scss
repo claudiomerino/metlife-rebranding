@@ -106,9 +106,18 @@
 
 	// Sizes
 
-	.button-full {
+  .button-full {
 		display: block;
 		width: 100%;
+	}
+
+  .button-full-xs {
+		display: block;
+		width: 100%;
+    @media screen and (min-width: 48em) {
+      display: inline-block;
+      width: auto;
+    }
 	}
 
 	.button-small {
