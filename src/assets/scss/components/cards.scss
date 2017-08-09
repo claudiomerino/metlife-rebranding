@@ -88,6 +88,10 @@
 		min-height: 62px;
 	}
 
+  .card_irow .fa-angle-right {
+    margin-top: 15px;
+  }
+
 	.see_detail {
 		position: relative;
 		top: 10px;
@@ -115,13 +119,15 @@
 		&.is-open {
 			height: auto;
 			opacity: 1;
-			padding: 1rem 0 1rem 0;
+			padding: 0 0 1rem 0;
 			visibility: visible;
 		}
 		&.number-dividend {
 			padding: 0;
 		}
-
+    &.no-padding-bottom {
+      padding-bottom: 0px;
+    }
 	}
 
 	table {

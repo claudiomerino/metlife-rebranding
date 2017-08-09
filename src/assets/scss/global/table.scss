@@ -42,7 +42,6 @@
 
 				&.expire {
 					background-color: $expiration !important;
-					border-bottom: 1px solid black !important;
 					.filterDataDesc {
 						color: $error;
 					}
@@ -120,7 +119,7 @@
 
 	@media screen and ( min-width: 48em ) {
 		.u-striped {
-			padding: 1rem 0;
+			padding: 0;
 			tbody {
 				tr {
 					border-top: 0;

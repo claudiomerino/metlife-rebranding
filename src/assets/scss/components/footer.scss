@@ -18,11 +18,16 @@
 
 	.footer_info {
 		margin-top: 15px;
+    font-size: 13px;
+    text-align: center;
 		i {
 			margin-right: 6px;
 			position: relative;
 			top: 5px;
 		}
+    a {
+      color: $primary-accent;
+    }
 	}
 
 	.footer_list-item {
@@ -50,7 +55,8 @@
 		}
 
 		.footer_info {
-			margin-top: 20px;
+			margin-top: 15px;
+      max-width: 120px;
 		}
 
 	}

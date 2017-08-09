@@ -11,6 +11,13 @@ $gutter-lg: 15px;
 .u-space {
   margin-bottom: $space-xs;
 }
+.u-top {
+  margin-top: $space-xs;
+}
+
+.u-space-2x {
+  margin-bottom: $space-md;
+}
 
 .u-right {
   padding-right: $gutter-sm;
@@ -192,7 +199,7 @@ ul.u-row {
 
 .start-xs {
   justify-content: flex-start;
-  text-align: start;
+  text-align: left;
 }
 
 .center-xs {
@@ -202,7 +209,7 @@ ul.u-row {
 
 .end-xs {
   justify-content: flex-end;
-  text-align: end;
+  text-align: right;
 }
 
 .top-xs {
@@ -385,7 +392,7 @@ ul.u-row {
   }
   .start-sm {
     justify-content: flex-start;
-    text-align: start;
+    text-align: left;
   }
   .center-sm {
     justify-content: center;
@@ -393,7 +400,7 @@ ul.u-row {
   }
   .end-sm {
     justify-content: flex-end;
-    text-align: end;
+    text-align: right;
   }
   .top-sm {
     align-items: flex-start;
@@ -561,7 +568,7 @@ ul.u-row {
   }
   .start-md {
     justify-content: flex-start;
-    text-align: start;
+    text-align: left;
   }
   .center-md {
     justify-content: center;
@@ -569,7 +576,7 @@ ul.u-row {
   }
   .end-md {
     justify-content: flex-end;
-    text-align: end;
+    text-align: right;
   }
   .top-md {
     align-items: flex-start;
@@ -731,7 +738,7 @@ ul.u-row {
   }
   .start-lg {
     justify-content: flex-start;
-    text-align: start;
+    text-align: left;
   }
   .center-lg {
     justify-content: center;
@@ -739,7 +746,7 @@ ul.u-row {
   }
   .end-lg {
     justify-content: flex-end;
-    text-align: end;
+    text-align: right;
   }
   .top-lg {
     align-items: flex-start;
@@ -768,7 +775,6 @@ ul.u-row {
   .show-lg {
     display: block;
   }
-
 
   .hide-lg-important {
     display: none !important;
