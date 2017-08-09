@@ -18,6 +18,27 @@
 				"Hijo",
 				"Nieta"
 			],
+			address: [
+				"Monseñor Escribá de Balaguer",
+				"Monseñor Escribá de Balaguer",
+				"Monseñor Escribá de Balaguer",
+				"Monseñor Escribá de Balaguer",
+				"Monseñor Escribá de Balaguer"
+			],
+			phone: [
+				"+56 966 554 644",
+				"+56 966 554 644",
+				"+56 966 554 644",
+				"+56 966 554 644",
+				"+56 966 554 644"
+			],
+			email: [
+				"daniel.llanos58@gmail.com",
+				"daniel.llanos58@gmail.com",
+				"daniel.llanos58@gmail.com",
+				"daniel.llanos58@gmail.com",
+				"daniel.llanos58@gmail.com"
+			],
 	    datasets: [{
 				data: [
 					25,

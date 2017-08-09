@@ -1,11 +1,43 @@
 
 	@import './../global/color.scss';
 
-	.tabs_wrapper {
-		background-color: $white;
-		border-top: 1px solid $medium-gray;
-		border-left: 1px solid $medium-gray;
-		border-right: 1px solid $medium-gray;
+	.tab-accordion,
+	.tab-accordion-pink .resp-accordion,
+	.tab-accordion-pink .tab-accordion,
+	.tab-accordion-green .resp-accordion,
+	.tab-accordion-green .tab-accordion {
+		flex-grow: 1;
+		position: relative;
+		transition: color 0.3s;
+		&:before {
+			background-color: $primary;
+			bottom: 0;
+			content: '';
+			height: 4px;
+			left: 10px;
+			position: absolute;
+			transform: scale3d(0, 1, 1);
+			transition: transform 0.1s;
+			width: calc(100% - 20px);
+		}
+
+		h5 {
+			font-size: 16px;
+			font-weight: 600;
+		}
+
+		&.resp-tab-active {
+			.tab_arrow {
+				i {
+					transform: rotate(-180deg);
+				}
+			}
+			&:before {
+				transform: scale3d(1, 1, 1);
+				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+				transition-duration: 0.3s;
+			}
+		}
 	}
 
 	.tabs {
@@ -145,8 +177,16 @@
 		}
 	}
 
+	.tabs_wrap & > div {
+		min-height: 433px;
+	}
 
-
+	.tabs_wrapper {
+		background-color: $white;
+		border-top: 1px solid $medium-gray;
+		border-left: 1px solid $medium-gray;
+		border-right: 1px solid $medium-gray;
+	}
 
 
 	@media screen and ( min-width: 62em ) {
