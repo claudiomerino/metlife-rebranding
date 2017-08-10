@@ -108,6 +108,22 @@
 		}
 	}
 
+	.table-responsive-label {
+		&.u-striped-more {
+			td[data-table-title] {
+				&:before {
+					position: relative;
+					right: 0;
+				}
+				&.is-open {
+					&:before {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
 	.table-scroll {
 		overflow-y: hidden !important;
 		table {
