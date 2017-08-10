@@ -110,7 +110,7 @@
 
 	.cs-skin-border > span {
 		background-color: transparent;
-		border: 1px solid $dark-gray-2;
+		border: 1px solid $dark-gray;
 		border-radius: 3px;
 		transition: background 0.2s, border-color 0.2s;
 	}
@@ -129,7 +129,7 @@
 	}
 
 	.cs-skin-border .cs-options {
-		color: $dark-gray-2;
+		color: $dark-gray;
 		font-size: 16px;
 		opacity: 0;
 		transition: opacity 0.2s, visibility 0s 0.2s;
