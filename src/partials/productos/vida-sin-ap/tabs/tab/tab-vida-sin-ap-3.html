@@ -55,7 +55,39 @@
 		</section>
 
 		<section class="u-space u-top">
+			<p class="f-big tabs-subtitle-profile"><strong>Información de Beneficiarios Directos</strong></p>
+			<div class="u-row u-row-xs-full middle-xs">
+				<div class="chartCanvasMain hide-xs show-md col-xs-12 col-md-4">
+					<canvas id="chartBeneficiaries" class="chartCanvas" width="200" height="200"></canvas>
+					<div class="chartCanvasContent u-row middle-xs center-xs"><h3>100%</h3></div>
+				</div>
+				<div class="col-xs-12 col-md-8">
+
+					<div class="table-scroll table">
+					  <table class="u-striped">
+					    <thead>
+					      <tr>
+					        <th></th>
+					        <th>
+										<p class="f-small table_title"><strong>Nombre Beneficiario</strong></p>
+									</th>
+					        <th>
+										<p class="f-small table_title"><strong>Distribución de Pago</strong></p>
+									</th>
+					      </tr>
+					    </thead>
+					    <tbody id="chartTable">
+					    	<!-- Template from chart.js -->
+					    </tbody>
+					  </table>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="u-space u-top">
 			<p class="f-big tabs-subtitle-profile"><strong>Información de Beneficiarios Contingentes</strong></p>
+			<p class="f-small"><strong>Ten presente que:</strong> un beneficiario contingente es la persona que el asegurado elige para que reciba los beneficios del seguro de vida solo si todos los beneficiarios directos dejan de cumplir con las condiciones para serlo o fallecen antes que el asegurado.</p>
 			<div class="u-row u-row-xs-full middle-xs">
 				<div class="chartCanvasMain hide-xs show-md col-xs-12 col-md-4">
 					<canvas id="chartBeneficiaries" class="chartCanvas" width="200" height="200"></canvas>
