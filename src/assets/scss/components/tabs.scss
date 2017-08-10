@@ -3,9 +3,9 @@
 
 	.tabs_wrapper {
 		background-color: $white;
-		border-top: 1px solid $medium-gray;
-		border-left: 1px solid $medium-gray;
-		border-right: 1px solid $medium-gray;
+		
+		    padding: 20px 0 20px 0;
+    border-bottom: 1px solid $white-light;
 	}
 
 	.tabs {
@@ -55,13 +55,13 @@
 	}
 
 	.tabs-subtitle {
-		border-bottom: 2px solid $primary;
+		border-bottom: 1px solid $primary;
 		margin-bottom: 1rem;
 		padding: 0 0 1rem 0;
 	}
 
 	.tabs-subtitle-profile {
-		border-bottom: 2px solid $medium-gray;
+		border-bottom: 1px solid $white-light;
 		margin-bottom: 1rem;
 		padding: 0 0 10px 0;
 	}
