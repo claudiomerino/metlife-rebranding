@@ -1,84 +1,87 @@
 
-	{{> nav-off-canvas}}
+  {{> nav-off-canvas}}
 
-	<div class="off-canvas-content" data-off-canvas-content>
-		<div class="double-nav_sticky" data-sticky-container>
-			<div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
-				{{> nav-sub}}
-				{{> nav-main}}
-			</div>
-		</div>
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="double-nav_sticky" data-sticky-container>
+      <div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+        {{> nav-sub}}
+        {{> nav-main}}
+      </div>
+    </div>
 
-		<section class="products bg-white-light">
-			<div class="products_container u-container">
-				<div class="products_row u-row">
-					<div class="products_col col-xs-12">
+    <section class="products bg-white-light">
+      <div class="products_container u-container">
+        <div class="products_row u-row">
+          <div class="products_col col-xs-12">
 
-						<div class="breadcrumb products_breadcrumb">
-							<ul class="u-row u-row-xs-full middle-xs">
-								<li>
-									<p class="f-tiny">Mis Productos</p>
-								</li>
-							</ul>
-						</div>
+            <div class="breadcrumb products_breadcrumb">
+              <ul class="u-row u-row-xs-full middle-xs">
+                <li>
+                  <p class="f-tiny">Mis Productos</p>
+                </li>
+              </ul>
+            </div>
 
-						<div class="col-xs-12">
-							<section class="products_heading center-xs u-space">
-								<h2 class="products_title">Mis Productos</h2>
-							</section>
-						</div>
+            <div class="col-xs-12">
+              <section class="products_heading center-xs u-space">
+                <h2 class="products_title">Mis Productos</h2>
+              </section>
+            </div>
 
-					</div>
-				</div>
+          </div>
+        </div>
 
-				<div class="products_row u-row gutter-xs">
-					<div class="products_col col-xs-12 col-md-8 col-md-offset-2">
-						<section class="products_card u-space">
-							{{> card-mutuaria-products }}
-						</section>
-						<section class="products_card u-space">
-							{{> card-vida-sin-ap-products }}
-						</section>
-						<section class="products_card u-space">
-							{{> card-salud-products }}
-						</section>
-						<section class="products_card u-space">
-							{{> card-vida-dotal-products }}
-						</section>
-						<section class="products_card u-space">
-							{{> card-vida-con-ap-products }}
-						</section>
-						<section class="products_card u-space">
-							{{> card-vida-con-apv-products }}
-						</section>
-						<section class="products_card u-space">
-							{{> card-vida-universitarios-products }}
-						</section>
-					</div>
-					<div class="col-md-8 col-md-offset-2 ">
-						<div class="u-row u-space z-depth-2">
-							<div class="products_col col-xs-12 col-sm-5">
-								<figure>
-									<img src="{{root}}assets/img/products_banner_img.png" data-fit-type class="objFit products_img">
-								</figure>
-							</div>
+        <div class="products_row u-row gutter-xs">
+          <div class="products_col col-xs-12 col-md-8 col-md-offset-2">
+            <section class="products_card u-space">
+              {{> card-mutuaria-products }}
+            </section>
+            <section class="products_card u-space">
+              {{> card-vida-sin-ap-products }}
+            </section>
+            <section class="products_card u-space">
+              {{> card-salud-products }}
+            </section>
+            <section class="products_card u-space">
+              {{> card-vida-dotal-products }}
+            </section>
+            <section class="products_card u-space">
+              {{> card-vida-con-ap-products }}
+            </section>
+            <section class="products_card u-space">
+              {{> card-vida-con-apv-products }}
+            </section>
+            <section class="products_card u-space">
+              {{> card-vida-universitarios-products }}
+            </section>
+          </div>
 
-							<div class="products_col col-xs-12 col-sm-7 card_container ">
-								<h6>Financiar tu vivienda y pagar un dividendo que se ajuste a tus necesidades es posible.</h6>
-								<p class="f-small u-top"><em>Paga mes a mes el dividendo que te resulte conveniente entre la cuota mínima y máxima. Nosotros nos ajustamos a ti.</em></p>
-									
-								</ul>
-								<div class="col-md-12 end-xs u-top">
-								<a href="http://w3.metlife.cl/personas/creditos-hipotecarios/credito-hipotecario-flexible/index.html#simulador" target="_blank" class="button button-small">Simula tu crédito</a>
-							</div>
-							</div>
-						</div>
-					</div>
-				
+          <div class="col-md-8 col-md-offset-2 ">
+            <div class="u-row u-space z-depth-2">
+              <div class="products_col col-xs-12 col-sm-5">
+                <figure>
+                  <img src="{{root}}assets/img/products_banner_img.png" data-fit-type class="objFit products_img">
+                </figure>
+              </div>
 
+              <div class="products_col col-xs-12 col-sm-7 card_container ">
+                <h6>
+                  Financiar tu vivienda y pagar un dividendo que se ajuste a tus necesidades es posible.
+                </h6>
+                <p class="f-small u-top">
+                  <em>Paga mes a mes el dividendo que te resulte conveniente entre la cuota mínima y máxima. Nosotros nos ajustamos a ti.</em>
+                </p>
+                <div class="col-md-12 end-xs u-top">
+                  <a href="http://w3.metlife.cl/personas/creditos-hipotecarios/credito-hipotecario-flexible/index.html#simulador" target="_blank" class="button button-small">Simula tu crédito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<div class="life_legal f-legal u-section">
-					{{> legal }}
-					</div>
-			</section>
-		</div>
+        <div class="life_legal f-legal u-section">
+          {{> legal }}
+        </div>
+      </div>
+    </section>
+  </div>
