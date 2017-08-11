@@ -39,6 +39,8 @@
 
 			$.each( dataLabel, function( key, dataLabelText ) {
 
+				console.log(key, 'key')
+
 				let chartTemplate;
 
 				if( dataRelation.length > 0 ) {
@@ -49,9 +51,15 @@
 				      <td class="table-4" valign="middle">
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
 								<p class="table_desc f-small"><strong>Relación:</strong> ${ dataRelation[key] }</p>
-								<p class="table_desc f-small"><strong>Teléfono:</strong> ${ dataPhone[key] }</p>
-								<p class="table_desc f-small"><strong>Dirección:</strong> ${ dataAddress[key] }</p>
-								<p class="table_desc f-small"><strong>Correo Electrónico:</strong> ${ dataEmail[key] }</p>
+								<a href="#" class="f-link openContent" data-open-content="openChartMoreInfo-${key}">
+									<span class="openContentText is-open" data-rest-text="Ver más" data-open-text="Ver menos">Ver más</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
+								<section class="toggleContent" data-toggle-content="openChartMoreInfo-${key}">
+									<p class="table_desc f-small"><strong>Teléfono:</strong> ${ dataPhone[key] }</p>
+									<p class="table_desc f-small"><strong>Dirección:</strong> ${ dataAddress[key] }</p>
+									<p class="table_desc f-small"><strong>Correo Electrónico:</strong> ${ dataEmail[key] }</p>
+								</section>
 							</td>
 				      <td class="table-2" valign="middle">
 								<p class="table_desc f-big"><strong>${ dataValue[key] } %</strong></p>
