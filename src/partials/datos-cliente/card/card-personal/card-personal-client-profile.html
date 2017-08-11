@@ -3,12 +3,12 @@
 	<div class="u-row gutter-xs u-space">
 
 		<div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="clientProfileInitialData u-space">
+			<div class="u-space">
 				<p class="line_jump"><strong>RUT:</strong></p>
 				<p class="line_jump">15.454.665-6</p>
 			</div>
 
-			<section class="u-field  clientProfileEdit hide-xs u-space">
+			<section class="u-field clientProfileEdit hide-xs u-space">
 				<span class="input input--ichiro">
 					<input class="input__field input__field--ichiro" data-live-validate="true" value="15.367.219-9" type="text" id="RUT" required>
 					<label class="input__label input__label--ichiro" for="RUT">
@@ -25,12 +25,10 @@
 				<p class="line_jump">10/11/1978</p>
 			</div>
 
-			<section class="u-field u-space clientProfileEdit hide-xs">
+			<section class="u-field u-space clientProfileEdit hide-state-update label_select">
+				<p class="title_label_select"><strong>Fecha de Nacimiento:</strong></p>
 				<span class="input input--ichiro input--datepicker">
-					<input class="input__field input__field--ichiro DatePicker" type="text" id="dp1">
-					<label class="input__label input__label--ichiro">
-						<span class="input__label-content input__label-content--ichiro"><strong>Fecha de Nacimiento:</strong></span>
-					</label>
+					<input class="input__field input__field--ichiro GeneralDatePicker" type="text" readonly>
 					<i class="material-icons">date_range</i>
 				</span>
 			</section>
@@ -42,7 +40,7 @@
 				<p class="line_jump">Masculino</p>
 			</div>
 
-			<section class="u-select u-field clientProfileEdit hide-xs label_select u-select_labels u-space">
+			<section class="u-select u-field clientProfileEdit hide-state-update label_select u-select_labels u-space">
 				<p class="title_label_select"><strong>Genero:</strong></p>
 				<select class="cs-select cs-skin-border GeneralSelect items_select_box">
 					<option value="" selected>Masculino</option>
@@ -57,7 +55,7 @@
 				<p class="line_jump">Soltero</p>
 			</div>
 
-			<section class="u-select u-field u-space clientProfileEdit hide-xs label_select u-select_labels">
+			<section class="u-select u-field u-space clientProfileEdit hide-state-update label_select u-select_labels">
 				<p class="title_label_select"><strong>Estado Civil</strong></p>
 				<select class="cs-select cs-skin-border GeneralSelect items_select_box">
 					<option value="" selected>Soltero/a</option>
@@ -69,13 +67,13 @@
 			</section>
 		</div>
 
-		<div class="col-xs-12 col-sm-6 col-md-3 ">
+		<div class="col-xs-12 col-sm-6 col-md-3">
 			<div class="clientProfileInitialData u-space u-space">
 				<p class="line_jump"><strong>Nombres:</strong></p>
 				<p class="line_jump">Daniel Esteban</p>
 			</div>
 
-			<section class="u-field u-space clientProfileEdit hide-xs">
+			<section class="u-field u-space clientProfileEdit hide-state-update">
 				<span class="input input--ichiro">
 					<input class="input__field input__field--ichiro" data-live-validate="true" value="Daniel Esteban" min="5" type="text" id="clientName" required>
 					<label class="input__label input__label--ichiro" for="clientName">
@@ -87,16 +85,16 @@
 		</div>
 
 		<div class="col-xs-12 col-sm-6 col-md-3">
-			<div class=" clientProfileInitialData u-space">
+			<div class="clientProfileInitialData u-space">
 				<p class="line_jump"><strong>Apellido Paterno:</strong></p>
 				<p class="line_jump">Llanos</p>
 			</div>
 
-			<section class="u-field u-space clientProfileEdit hide-xs">
+			<section class="u-field u-space clientProfileEdit hide-state-update">
 				<span class="input input--ichiro">
 					<input class="input__field input__field--ichiro" data-live-validate="true" value="Llanos" type="text" id="clientLastName" required>
 					<label class="input__label input__label--ichiro" for="clientLastName">
-						<span class="input__label-content input__label-content--ichiro"><strong>Apellido Paterno:</strong></span>
+						<span class="input__label-content input__label-content--ichiro title_label_select"><strong>Apellido Paterno:</strong></span>
 					</label>
 					<p class="form-error f-tiny">Este campo es requerido.</p>
 				</span>
@@ -109,7 +107,7 @@
 				<p class="line_jump">Marquez</p>
 			</div>
 
-			<section class="u-field u-space clientProfileEdit hide-xs">
+			<section class="u-field u-space clientProfileEdit hide-state-update">
 				<span class="input input--ichiro">
 					<input class="input__field input__field--ichiro" data-live-validate="true" value="Marquez" type="text" id="clientLastNameMother" required>
 					<label class="input__label input__label--ichiro" for="clientLastNameMother">
