@@ -1,9 +1,13 @@
 
 	table {
-		margin-bottom: x0;
+		margin-bottom: 0px;
 		thead {
-			background: $primary;
+			background-color: $primary;
 			color: white;
+			&.InitialStyle {
+				background-color: white;
+				color: black;
+			}
 		}
 	}
 
@@ -35,17 +39,23 @@
 				border-top: 0;
 				&:nth-of-type(4n + 1) {
 					background-color: $white;
+					& + .toggleContent {
+						background-color: $white;
+					}
 				}
 
 				&.toggleContent {
 					background-color: $white-light;
-					width: 100%
+					width: 100%;
 				}
 
 				&.expire {
-					background-color: $expiration !important;
+					background-color: $expiration;
 					.filterDataDesc {
 						color: $error;
+					}
+					& + .toggleContent {
+						background-color: $expiration;
 					}
 				}
 			}
