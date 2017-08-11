@@ -148,7 +148,7 @@
 	.input--datepicker {
 		.input__field {
 			cursor: pointer;
-			width: calc( 100% - 50px );
+			width: 100%;
 		}
 		.material-icons {
 			color: $primary;
@@ -181,4 +181,3 @@
 		}
 
 	}
-
