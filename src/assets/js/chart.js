@@ -39,8 +39,7 @@
 
 			$.each( dataLabel, function( key, dataLabelText ) {
 
-				console.log(key, 'key')
-
+				let UID = chartTable.attr('id')
 				let chartTemplate;
 
 				if( dataRelation.length > 0 ) {
@@ -51,11 +50,11 @@
 				      <td class="table-4" valign="middle">
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
 								<p class="table_desc f-small"><strong>Relación:</strong> ${ dataRelation[key] }</p>
-								<a href="#" class="f-link openContent" data-open-content="openChartMoreInfo-${key}">
+								<a href="#" class="f-link openContent" data-open-content="openChartMoreInfo-${UID}-${key}">
 									<span class="openContentText is-open" data-rest-text="Ver más" data-open-text="Ver menos">Ver más</span>
 									<i class="fa fa-angle-down" aria-hidden="true"></i>
 								</a>
-								<section class="toggleContent" data-toggle-content="openChartMoreInfo-${key}">
+								<section class="toggleContent" data-toggle-content="openChartMoreInfo-${UID}-${key}">
 									<p class="table_desc f-small"><strong>Teléfono:</strong> ${ dataPhone[key] }</p>
 									<p class="table_desc f-small"><strong>Dirección:</strong> ${ dataAddress[key] }</p>
 									<p class="table_desc f-small"><strong>Correo Electrónico:</strong> ${ dataEmail[key] }</p>
@@ -110,6 +109,8 @@
 					if ( wS > ( hT + hH - wH ) ) {
 						if( animateChart ) { return; }
 
+						console.log(ctx, 'context')
+
 						let myDoughnutChart = new Chart(ctx, {
 							type: 'doughnut',
 							data: data,
@@ -136,6 +137,7 @@
 						wS = $( this ).scrollTop();
 				if ( wS > ( hT + hH - wH ) ) {
 					if( animateChart ) { return; }
+						console.log(ctx, 'context if')
 
 					let myDoughnutChart = new Chart(ctx, {
 						type: 'doughnut',

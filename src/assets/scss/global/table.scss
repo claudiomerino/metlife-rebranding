@@ -1,9 +1,13 @@
 
 	table {
-		margin-bottom: x0;
+		margin-bottom: 0px;
 		thead {
-			background: $primary;
+			background-color: $primary;
 			color: white;
+			&.InitialStyle {
+				background-color: white;
+				color: black;
+			}
 		}
 	}
 
