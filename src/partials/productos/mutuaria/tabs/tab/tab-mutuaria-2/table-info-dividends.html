@@ -3,49 +3,12 @@
 	<p class="hide-xs show-md"><strong>Detalle del Dividendo</strong></p>
 	<div class="u-row card-gray">
 
+		{{#each dividends}}
 		<div class="col-xs-12 col-sm-6 col-md-3">
-			<p class="card_item"><strong>Medio de Pago:</strong></p>
-			<p class="card_item table_desc filterDataDesc" data-filter-data-desc="PayStateDividend"><span class="DataExpiration"><a href="#">Pago en Línea</a></span></p>
+			<p class="card_item"><strong>{{name}}</strong></p>
+			<p class="card_item">{{value}}</p>
 		</div>
+		{{/each}}
 
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<p class="card_item"><strong>Amortización:</strong></p>
-			<p class="card_item">UF 18 / 555.065</p>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<p class="card_item"><strong>Amortización Extraordinaria:</strong></p>
-			<p class="card_item">UF 0 / $0</p>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<p class="card_item"><strong>Interés:</strong></p>
-			<p class="card_item">UF 0.98 / $25.993</p>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<p class="card_item"><strong>Interés Penal o Mora:</strong></p>
-			<p class="card_item">UF 0 / $0</p>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<p class="card_item"><strong>Seguro Incendio:</strong></p>
-			<p class="card_item">UF 2.24 / $ 60.352 </p>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<p class="card_item"><strong>Seguro Degravamen:</strong></p>
-			<p class="card_item">UF 0.65 / $ 18.223</p>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<p class="card_item"><strong>Otros Seguros</strong></p>
-			<p class="card_item">UF 0 / $0</p>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<p class="card_item"><strong>Total Seguros:</strong></p>
-			<p class="card_item">UF 3.54 / $ 87.773</p>
-		</div>
 	</div>
 </td>

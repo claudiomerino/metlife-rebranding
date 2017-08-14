@@ -5,99 +5,14 @@
 		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Condiciones de Otorgamiento del Crédito</strong></p>
 
 		<section class="info_credit u-row u-row-xs-full gutter-xs">
-
+			{{#each tab-mutuaria-1.credits}}
 			<div class="tabs_col col-xs-12 col-sm-6 col-md-3 u-space">
-				<p class="tabs_content_subtitle"><strong>Rut Deudor:</strong></p>
-				<p class="line_jump">12.334.657-7</p>
+				<p class="tabs_content_subtitle"><strong>{{subtitle}}</strong></p>
+				<p class="line_jump">{{data}}</p>
 			</div>
-
-			<div class="tabs_col col-xs-12 col-sm-6 col-md-3 u-space">
-				<p class="tabs_content_subtitle"><strong>Nombre Deudor:</strong></p>
-				<p class="line_jump">Daniel Esteban Llanos Marquez</p>
-			</div>
-
-			<div class="tabs_col col-xs-12 col-sm-6 col-md-3 u-space">
-				<p class="tabs_content_subtitle"><strong>Rut Codeudor:</strong></p>
-				<p class="line_jump">6.636.555-6</p>
-			</div>
-
-			<div class="tabs_col col-xs-12 col-sm-6 col-md-3 u-space">
-				<p class="tabs_content_subtitle"><strong>Nombre Codeudor:</strong></p>
-				<p class="line_jump">María Expropiación Petronila de las Nieves Bolaños</p>
-			</div>
-
-			<div class="tabs_col col-xs-12 col-sm-6 col-md-3 u-space">
-				<p class="tabs_content_subtitle"><strong>Fecha de Otorgamiento del Crédito:</strong></p>
-				<p class="line_jump">26/05/2014</p>
-			</div>
-
-			<div class="tabs_col col-xs-12 col-sm-6 col-md-3 u-space">
-				<p class="tabs_content_subtitle"><strong>Email de Soporte Mutuaria:</strong></p>
-				<p class="line_jump">jorge.salome@metlife.cl</p>
-			</div>
-
-			<div class="tabs_col col-xs-12 col-sm-6 col-md-3 u-space">
-				<p class="tabs_content_subtitle"><strong>Deuda Original:</strong></p>
-				<p class="line_jump">UF 3400 / $165.554.935</p>
-			</div>
-
-			<div class="tabs_col col-xs-12 col-sm-6 col-md-3 u-space">
-				<p class="tabs_content_subtitle"><strong>Saldo Insoluto:</strong></p>
-				<p class="line_jump">UF 3400 / $165.554.935</p>
-			</div>
-
-			<div class="tabs_col col-xs-12 col-sm-6 col-md-3 u-space">
-				<p class="tabs_content_subtitle"><strong>Monto Cuota Mínima:</strong></p>
-				<p class="line_jump">UF 20 / $554.965</p>
-			</div>
-
-
-			<div class="tabs_col col-xs-12 col-sm-6 col-md-3 u-space">
-				<p class="tabs_content_subtitle"><strong>Monto Cuota Máxima:</strong></p>
-				<p class="line_jump">UF 50 / $1.633.065</p>
-			</div>
-
-			<div class="tabs_col col-xs-12 col-sm-6 col-md-3 u-space">
-				<p class="tabs_content_subtitle"><strong>Último Dividendo Pagado:</strong></p>
-				<p class="line_jump">UF 20 / $554.965</p>
-			</div>
-
-
-
+			{{/each}}
 		</section>
 
-
-		<section class="pagination u-top">
-			<div class="u-row u-row-xs-full center-xs">
-				<div class="pagination_new">
-					<button class="button button-transparent">Recientes</button>
-				</div>
-
-				<div class="pagination_numbers u-row u-row-xs-full middle-xs">
-					<div class="pagination_numbers_item pagination-active">
-						<a href="">1</a>
-					</div>
-					<div class="pagination_numbers_item">
-						<a href="">2</a>
-					</div>
-					<div class="pagination_numbers_item">
-						<a href="">3</a>
-					</div>
-					<div class="pagination_numbers_item">
-						<a href="">4</a>
-					</div>
-					<div class="pagination_numbers_dots">
-						<span>...</span>
-					</div>
-					<div class="pagination_numbers_item">
-						<a href="">16</a>
-					</div>
-				</div>
-
-				<div class="pagination_old">
-					<button class="button button-transparent">Anteriores</button>
-				</div>
-			</div>
-		</section>
+		{{> pagination}}
 	</div>
 </div>
