@@ -1,14 +1,9 @@
 
-<div class="tabs_wrap u-space">
+<div class="tabs_wrap">
 	<div class="client_wrap_container">
 
-		<section class="box u-space">
-			<p class="line_jump"><strong>Haz que tu Cuenta se Pague Sola</strong></p>
-			<p class="line_jump">Activa el Pago automático de tu póliza y despreocúpate. <a href="">Activar Mandato PAT / PAC</a></p>
-		</section>
-
 		<section class="premium_payment u-space-2x">
-			<p class="f-big tabs-subtitle-profile double_line"><strong>Pago de Prima</strong></p>
+			<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Pago de Primas en Línea</strong></p>
 			<div class="card card-blue card_container u-row middle-xs z-depth-2">
 				<div class="col-xs-12 col-sm-12 col-md-3 u-space">
 					<p class="line_jump table_title"><strong>Periodo a Pagar</strong></p>
@@ -26,19 +21,18 @@
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-3 end-xs u-space">
-		      <a href="#" class="button button-primary button-full-xs">Pagar en Línea</a>
+		      <a href="#" class="button button-small button-full-xs">Pagar en Línea</a>
 				</div>
 
-				<p class="col-xs-12">Si prefieres puedes descargar tu cupón de pago y pagar en tu sucursal más cercana.
-					<a href=""> Descarga Cupón de Pago.</a>
-				</p>
+				<p class="col-xs-12">Si prefieres, puedes descargar tu cupón de pago y pagar en cualquiera de nuestras sucursales. <a href="">Descargar Cupón de Pago.</a></p>
 			</div>
 		</section>
+
 
 		<section class="payment_history u-space">
 			<p class="f-big tabs-subtitle-profile"><strong>Histórico de Pago de Primas</strong></p>
 			<div class="table table-scroll center-xs col-xs-12">
-			  <table class="table-responsive u-striped">
+			  <table class="table-responsive table-responsive-label u-striped u-striped-more">
 			    <thead>
 			      <tr>
 			        <th class="table-3">
@@ -57,161 +51,241 @@
 			    </thead>
 
 			    <tbody>
-			      <tr>
+			      <tr class="u-striped-gray">
 			        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
 								<p class="table_desc">Febrero 2017</p>
+								<a href="" class="f-link openContent hide-sm" data-open-content="feb-2017">
+									<span class="openContentText" data-rest-text="Más información" data-open-text="Menos información" data-close="true">Más información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Fecha de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
 								<p class="table_desc">05/02/2017</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Forma de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
 								<p class="table_desc">PAC</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
 								<p class="table_desc">UF 2,35 / $55.556</p>
 							</td>
 			      </tr>
+
+  	      	<tr class="toggleContent" data-toggle-content="feb-2017">
+  	    			{{> tables-vida-sin-ap }}
+  		 			</tr>
 
 			      <tr>
 			        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
 								<p class="table_desc">Enero 2017</p>
+								<a href="" class="f-link openContent hide-sm" data-open-content="ene-2017">
+									<span class="openContentText" data-rest-text="Más información" data-open-text="Menos información" data-close="true">Más información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Fecha de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
 								<p class="table_desc">05/01/2017</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Forma de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
 								<p class="table_desc">PAC</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
 								<p class="table_desc">UF 2,35 / $55.556</p>
 							</td>
 			      </tr>
 
-			      <tr>
+  	      	<tr class="toggleContent" data-toggle-content="ene-2017">
+  	    			{{> tables-vida-sin-ap }}
+  		 			</tr>
+
+			      <tr class="u-striped-gray">
 			        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
 								<p class="table_desc">Diciembre 2016</p>
+								<a href="" class="f-link openContent hide-sm" data-open-content="dic-2016">
+									<span class="openContentText" data-rest-text="Más información" data-open-text="Menos información" data-close="true">Más información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Fecha de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
 								<p class="table_desc">05/12/2016</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Forma de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
 								<p class="table_desc">PAC</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
 								<p class="table_desc">UF 2,35 / $55.556</p>
 							</td>
 			      </tr>
+
+  	      	<tr class="toggleContent" data-toggle-content="dic-2016">
+  	    			{{> tables-vida-sin-ap }}
+  		 			</tr>
 
 			      <tr>
 			        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
 								<p class="table_desc">Noviembre 2016</p>
+								<a href="" class="f-link openContent hide-sm" data-open-content="nov-2016">
+									<span class="openContentText" data-rest-text="Más información" data-open-text="Menos información" data-close="true">Más información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Fecha de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
 								<p class="table_desc">05/11/2016</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Forma de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
 								<p class="table_desc">PAC</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
 								<p class="table_desc">UF 2,35 / $55.556</p>
 							</td>
 			      </tr>
 
-			      <tr>
+  	      	<tr class="toggleContent" data-toggle-content="nov-2016">
+  	    			{{> tables-vida-sin-ap }}
+  		 			</tr>
+
+			      <tr class="u-striped-gray">
 			        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
 								<p class="table_desc">Octubre 2016</p>
+								<a href="" class="f-link openContent hide-sm" data-open-content="oct-2016">
+									<span class="openContentText" data-rest-text="Más información" data-open-text="Menos información" data-close="true">Más información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Fecha de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
 								<p class="table_desc">05/10/2016</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Forma de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
 								<p class="table_desc">PAC</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
 								<p class="table_desc">UF 2,35 / $55.556</p>
 							</td>
 			      </tr>
+
+  	      	<tr class="toggleContent" data-toggle-content="oct-2016">
+  	    			{{> tables-vida-sin-ap }}
+  		 			</tr>
 
 			      <tr>
 			        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
 								<p class="table_desc">Septiembre 2016</p>
+								<a href="" class="f-link openContent hide-sm" data-open-content="sep-2016">
+									<span class="openContentText" data-rest-text="Más información" data-open-text="Menos información" data-close="true">Más información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Fecha de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
 								<p class="table_desc">05/09/2016</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Forma de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
 								<p class="table_desc">PAC</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
 								<p class="table_desc">UF 2,35 / $55.556</p>
 							</td>
 			      </tr>
 
-			      <tr>
+  	      	<tr class="toggleContent" data-toggle-content="sep-2016">
+  	    			{{> tables-vida-sin-ap }}
+  		 			</tr>
+
+			      <tr class="u-striped-gray">
 			        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
 								<p class="table_desc">Agosto 2016</p>
+								<a href="" class="f-link openContent hide-sm" data-open-content="ago-2016">
+									<span class="openContentText" data-rest-text="Más información" data-open-text="Menos información" data-close="true">Más información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Fecha de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
 								<p class="table_desc">05/08/2016</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Forma de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
 								<p class="table_desc">PAC</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
 								<p class="table_desc">UF 2,35 / $55.556</p>
 							</td>
 			      </tr>
+
+  	      	<tr class="toggleContent" data-toggle-content="ago-2016">
+  	    			{{> tables-vida-sin-ap }}
+  		 			</tr>
 
 			      <tr>
 			        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
 								<p class="table_desc">Julio 2016</p>
+								<a href="" class="f-link openContent hide-sm" data-open-content="jul-2016">
+									<span class="openContentText" data-rest-text="Más información" data-open-text="Menos información" data-close="true">Más información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Fecha de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
 								<p class="table_desc">05/07/2016</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Forma de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
 								<p class="table_desc">PAC</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
 								<p class="table_desc">UF 2,35 / $55.556</p>
 							</td>
 			      </tr>
 
-			      <tr>
+  	      	<tr class="toggleContent" data-toggle-content="jul-2016">
+  	    			{{> tables-vida-sin-ap }}
+  		 			</tr>
+
+			      <tr class="u-striped-gray">
 			        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
 								<p class="table_desc">Junio 2016</p>
+								<a href="" class="f-link openContent hide-sm" data-open-content="jun-2016">
+									<span class="openContentText" data-rest-text="Más información" data-open-text="Menos información" data-close="true">Más información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Fecha de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
 								<p class="table_desc">05/06/2016</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Forma de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
 								<p class="table_desc">PAC</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
 								<p class="table_desc">UF 2,35 / $55.556</p>
 							</td>
 			      </tr>
+
+  	      	<tr class="toggleContent" data-toggle-content="jun-2016">
+  	    			{{> tables-vida-sin-ap }}
+  		 			</tr>
 
 			      <tr>
 			        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
 								<p class="table_desc">Mayo 2016</p>
+								<a href="" class="f-link openContent hide-sm" data-open-content="may-2016">
+									<span class="openContentText" data-rest-text="Más información" data-open-text="Menos información" data-close="true">Más información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Fecha de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
 								<p class="table_desc">05/05/2016</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Forma de Pago">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
 								<p class="table_desc">PAC</p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
 								<p class="table_desc">UF 2,35 / $55.556</p>
 							</td>
 			      </tr>
+
+  	      	<tr class="toggleContent" data-toggle-content="may-2016">
+  	    			{{> tables-vida-sin-ap }}
+  		 			</tr>
 			    </tbody>
 			  </table>
 			</div>
 		</section>
 
-		<section class="pagination">
+		<section class="pagination u-space">
 			<div class="u-row u-row-xs-full center-xs">
 				<div class="pagination_new">
 					<button class="button button-transparent">Recientes</button>
@@ -242,92 +316,32 @@
 			</div>
 		</section>
 
-		<section class="u-space">
 
-			<p class="f-big tabs-subtitle-profile"><strong>Movimientos de la Cuenta</strong></p>
+		<section class="contribution hide-xs show-md">
+	      <div class="col-md-12 align-middle">
+	        <div class="u-row z-depth-2">
+	          <div class="products_col col-xs-12 col-sm-3">
+	            <figure>
+	              <img src="{{root}}assets/img/contribution.png" data-fit-type class="objFit products_img">
+	            </figure>
+	          </div>
 
-			<div class="u-row gutter-xs">
-				<section class="u-select col-xs-12 col-sm-6 col-md-4 u-space">
-					<select class="cs-select cs-skin-border GeneralSelect">
-						<option value="" disabled selected>Seleccionar por Año</option>
-						<option value="asegurado1">2017</option>
-						<option value="asegurado2">2016</option>
-						<option value="asegurado3">2015</option>
-					</select>
-				</section>
-
-				<section class="u-select col-xs-12 col-sm-6 col-md-4 u-space">
-					<select class="cs-select cs-skin-border GeneralSelect">
-						<option value="" disabled selected>Seleccionar por Mes</option>
-						<option value="asegurado1">Diciembre</option>
-						<option value="asegurado2">Noviembre</option>
-						<option value="asegurado3">Octubre</option>
-					</select>
-				</section>
-			</div>
-
-			<div class="table-scroll table center-xs">
-			  <table class="table-responsive u-striped">
-			    <thead>
-			      <tr>
-			        <th class="table-4">
-						<p class="f-small table_title"><strong>Movimiento</strong></p>
-					</th>
-			        <th class="table-2">
-						<p class="f-small table_title"><strong>Fecha </strong></p>
-					</th>
-			        <th class="table-2">
-						<p class="f-small table_title"><strong>Saldo Contable</strong></p>
-					</th>
-					<th class="table-2">
-						<p class="f-small table_title"><strong>Saldo Disponible</strong></p>
-					</th>
-					<th class="table-2">
-						<p class="f-small table_title"><strong>Monto Peso / UF</strong></p>
-					</th>
-			      </tr>
-			    </thead>
-
-			    <tbody>
-			      <tr>
-			        <td class="table-4" align="left" valign="middle" data-table-title="Movimiento">
-								<p class="table_desc">Pago de Prima 04/2016</p>
-							</td>
-			        <td class="table-5" align="left" valign="middle" data-table-title="Fecha">
-								<p class="table_desc">22/02/2017</p>
-							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Peso / UF">
-								<p class="table_desc">UF 75 / $ 1.650.000.-</p>
-							</td>
-			      </tr>
-
-			      <tr>
-			        <td class="table-4" align="left" valign="middle" data-table-title="Movimiento">
-								<p class="table_desc">Pago de Prima 03/2016</p>
-							</td>
-			        <td class="table-5" align="left" valign="middle" data-table-title="Fecha">
-								<p class="table_desc">22/04/2015</p>
-							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Peso / UF">
-								<p class="table_desc">UF 75 / $ 1.650.000.-</p>
-							</td>
-			      </tr>
-
-			      <tr>
-			        <td class="table-4" align="left" valign="middle" data-table-title="Movimiento">
-								<p class="table_desc">Pago de Prima 02/2016</p>
-							</td>
-			        <td class="table-5" align="left" valign="middle" data-table-title="Fecha">
-								<p class="table_desc">22/02/2017</p>
-							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Peso / UF">
-								<p class="table_desc">UF 75 / $ 1.250.000.-</p>
-							</td>
-			      </tr>
-			    </tbody>
-			  </table>
-			</div>
-		</section>
+	          <div class="u-row products_col col-xs-12 col-sm-9 card_container ">
+	            <div class="col-sm-9">
+	              <h4>
+	                Aumenta el ahorro para alguno de tus proyectos.
+	              </h4>
+	              <p class="f-small u-top">
+	                Realiza un aporte extraordinario, el que te ayudará a llevar a cabo alguno de tus sueños.
+	              </p>
+	            </div>
+	            <div class="col-sm-3 end-xs u-middle">
+	              <a href="#" target="_blank" class="button button-small">Realizar Aporte</a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </section>
 
 	</div>
 </div>

@@ -49,15 +49,15 @@
 				      <td bgcolor="${ dataBackgroundColor[key] }" width="10"></td>
 				      <td class="table-4" valign="middle">
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
-								<p class="table_desc f-small"><strong>Relación:</strong> ${ dataRelation[key] }</p>
+								<p class="table_desc "><strong>Relación:</strong> ${ dataRelation[key] }</p>
 								<a href="#" class="f-link openContent" data-open-content="openChartMoreInfo-${UID}-${key}">
-									<span class="openContentText is-open" data-rest-text="Ver más" data-open-text="Ver menos">Ver más</span>
+									<span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
 									<i class="fa fa-angle-down" aria-hidden="true"></i>
 								</a>
 								<section class="toggleContent" data-toggle-content="openChartMoreInfo-${UID}-${key}">
-									<p class="table_desc f-small"><strong>Teléfono:</strong> ${ dataPhone[key] }</p>
-									<p class="table_desc f-small"><strong>Dirección:</strong> ${ dataAddress[key] }</p>
-									<p class="table_desc f-small"><strong>Correo Electrónico:</strong> ${ dataEmail[key] }</p>
+									<p class="table_desc "><strong><br>Teléfono:</strong> ${ dataPhone[key] }</p>
+									<p class="table_desc "><strong>Dirección:</strong> ${ dataAddress[key] }</p>
+									<p class="table_desc "><strong>Correo Electrónico:</strong> ${ dataEmail[key] }</p>
 								</section>
 							</td>
 				      <td class="table-2" valign="middle">
