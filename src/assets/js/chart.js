@@ -109,8 +109,6 @@
 					if ( wS > ( hT + hH - wH ) ) {
 						if( animateChart ) { return; }
 
-						console.log(ctx, 'context')
-
 						let myDoughnutChart = new Chart(ctx, {
 							type: 'doughnut',
 							data: data,
@@ -137,7 +135,6 @@
 						wS = $( this ).scrollTop();
 				if ( wS > ( hT + hH - wH ) ) {
 					if( animateChart ) { return; }
-						console.log(ctx, 'context if')
 
 					let myDoughnutChart = new Chart(ctx, {
 						type: 'doughnut',
