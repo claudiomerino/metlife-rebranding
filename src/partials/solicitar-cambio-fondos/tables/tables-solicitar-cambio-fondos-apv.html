@@ -1,0 +1,45 @@
+	{{#each solicitar-cambio-fondos-apv.base}}
+	<section class="payment_history u-space">
+		<p class="f-big tabs-subtitle-profile"><strong>{{title}}</strong></p>
+		<div class="table table-scroll center-xs col-xs-12">
+		  <table class="table-responsive u-striped">
+		    <thead>
+		      <tr>
+		        <th class="table-8">
+							<p class="f-small table_title "><strong>Nombre de Fondo</strong></p>
+						</th>
+		        <th class="table-2">
+							<p class="f-small table_title"><strong>% Stock</strong></p>
+						</th>
+		        <th class="table-2">
+							<p class="f-small table_title"><strong>% Flujo</strong></p>
+						</th>
+		      </tr>
+		    </thead>
+
+		    <tbody>
+
+		    	{{#each funds}}
+		      <tr>
+		        <td class="table-8" align="left" valign="middle" data-table-title="Nombre de Fondo">
+							<p class="table_desc">{{name}}</p>
+						</td>
+		        <td class="table-2" align="left" valign="middle" data-table-title="% Stock">
+							<p class="table_desc f-big"><strong>{{stock}}</strong></p>
+						</td>
+		        <td class="table-2" align="left" valign="middle" data-table-title="% Flujo">
+							<p class="table_desc f-big"><strong>{{flow}}</strong></p>
+						</td>
+		      </tr>
+		      {{/each}}
+
+		    </tbody>
+		  </table>
+
+		  <div class="col-xs-12 end-xs">
+				<a href="">Editar Distribución de Fondos</a>
+			</div>
+
+		</div>
+	</section>
+	{{/each}}
