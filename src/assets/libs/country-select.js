@@ -16,7 +16,6 @@
           else {
             $CountrySelectModifier.addClass('hide-xs')
           }
-          console.log(val, 'val')
         }
       }
       new SelectFx(el, options);
