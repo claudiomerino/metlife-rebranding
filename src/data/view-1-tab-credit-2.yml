@@ -1,0 +1,343 @@
+items:
+  -
+    openContent: 56
+    restText: 56 / 240
+    filterDataDesc: paidStateDividend
+    caducate:
+    state: Pagado
+    dataExpiration: 20 / 06 / 2017
+    dataPay: 05 / 06 / 2017
+    total: UF 20.05 / $ 554.865
+    striped: u-striped-gray
+    dividends:
+      -
+        name: 'Medio de Pago:'
+        value: Pago en Línea
+      -
+        name: 'Amortización:'
+        value: UF 18 / 555.065
+      -
+        name: 'Amortización Extraordinaria:'
+        value: UF 0 / $0
+      -
+        name: 'Interés:'
+        value: UF 0.98 / $25.993
+      -
+        name: 'Interés Penal o Mora:'
+        value: UF 0 / $0
+      -
+        name: 'Seguro Incendio:'
+        value: UF 2.24 / $ 60.352
+      -
+        name: 'Seguro Degravamen:'
+        value: UF 0.65 / $ 18.223
+      -
+        name: 'Otros Seguros'
+        value: UF 0 / $0
+      -
+        name: 'Total Seguros:'
+        value: UF 3.54 / $ 87.773
+  -
+    openContent: 55
+    restText: 55 / 240
+    filterDataDesc: paidStateDividend
+    caducate:
+    state: Pagado
+    dataExpiration: 20 / 06 / 2017
+    dataPay: 05 / 06 / 2017
+    total: UF 20.05 / $ 554.865
+    striped:
+    dividends:
+      -
+        name: 'Medio de Pago:'
+        value: Pago en Línea
+      -
+        name: 'Amortización:'
+        value: UF 18 / 555.065
+      -
+        name: 'Amortización Extraordinaria:'
+        value: UF 0 / $0
+      -
+        name: 'Interés:'
+        value: UF 0.98 / $25.993
+      -
+        name: 'Interés Penal o Mora:'
+        value: UF 0 / $0
+      -
+        name: 'Seguro Incendio:'
+        value: UF 2.24 / $ 60.352
+      -
+        name: 'Seguro Degravamen:'
+        value: UF 0.65 / $ 18.223
+      -
+        name: 'Otros Seguros'
+        value: UF 0 / $0
+      -
+        name: 'Total Seguros:'
+        value: UF 3.54 / $ 87.773
+  -
+    openContent: 54
+    restText: 54 / 240
+    filterDataDesc: paidStateDividend
+    caducate:
+    state: Pagado
+    dataExpiration: 20 / 06 / 2017
+    dataPay: 05 / 06 / 2017
+    total: UF 20.05 / $ 554.865
+    striped: u-striped-gray
+    dividends:
+      -
+        name: 'Medio de Pago:'
+        value: Pago en Línea
+      -
+        name: 'Amortización:'
+        value: UF 18 / 555.065
+      -
+        name: 'Amortización Extraordinaria:'
+        value: UF 0 / $0
+      -
+        name: 'Interés:'
+        value: UF 0.98 / $25.993
+      -
+        name: 'Interés Penal o Mora:'
+        value: UF 0 / $0
+      -
+        name: 'Seguro Incendio:'
+        value: UF 2.24 / $ 60.352
+      -
+        name: 'Seguro Degravamen:'
+        value: UF 0.65 / $ 18.223
+      -
+        name: 'Otros Seguros'
+        value: UF 0 / $0
+      -
+        name: 'Total Seguros:'
+        value: UF 3.54 / $ 87.773
+  -
+    openContent: 53
+    restText: 53 / 240
+    filterDataDesc: paidStateDividend
+    caducate:
+    state: Pagado
+    dataExpiration: 20 / 06 / 2017
+    dataPay: 05 / 06 / 2017
+    total: UF 20.05 / $ 554.865
+    striped:
+    dividends:
+      -
+        name: 'Medio de Pago:'
+        value: Pago en Línea
+      -
+        name: 'Amortización:'
+        value: UF 18 / 555.065
+      -
+        name: 'Amortización Extraordinaria:'
+        value: UF 0 / $0
+      -
+        name: 'Interés:'
+        value: UF 0.98 / $25.993
+      -
+        name: 'Interés Penal o Mora:'
+        value: UF 0 / $0
+      -
+        name: 'Seguro Incendio:'
+        value: UF 2.24 / $ 60.352
+      -
+        name: 'Seguro Degravamen:'
+        value: UF 0.65 / $ 18.223
+      -
+        name: 'Otros Seguros'
+        value: UF 0 / $0
+      -
+        name: 'Total Seguros:'
+        value: UF 3.54 / $ 87.773
+  -
+    openContent: 52
+    restText: 52 / 240
+    filterDataDesc: defeatedStateDividend
+    caducate: caducate
+    state: Impago
+    dataExpiration: 20 / 06 / 2017
+    dataPay: 05 / 06 / 2017
+    total: UF 20.05 / $ 554.865
+    striped: u-striped-gray
+    dividends:
+      -
+        name: 'Medio de Pago:'
+        value: Pago en Línea
+      -
+        name: 'Amortización:'
+        value: UF 18 / 555.065
+      -
+        name: 'Amortización Extraordinaria:'
+        value: UF 0 / $0
+      -
+        name: 'Interés:'
+        value: UF 0.98 / $25.993
+      -
+        name: 'Interés Penal o Mora:'
+        value: UF 0 / $0
+      -
+        name: 'Seguro Incendio:'
+        value: UF 2.24 / $ 60.352
+      -
+        name: 'Seguro Degravamen:'
+        value: UF 0.65 / $ 18.223
+      -
+        name: 'Otros Seguros'
+        value: UF 0 / $0
+      -
+        name: 'Total Seguros:'
+        value: UF 3.54 / $ 87.773
+  -
+    openContent: 51
+    restText: 51 / 240
+    filterDataDesc: defeatedStateDividend
+    caducate: caducate
+    state: Impago
+    dataExpiration: 20 / 06 / 2017
+    dataPay: 05 / 06 / 2017
+    total: UF 20.05 / $ 554.865
+    striped:
+    dividends:
+      -
+        name: 'Medio de Pago:'
+        value: Pago en Línea
+      -
+        name: 'Amortización:'
+        value: UF 18 / 555.065
+      -
+        name: 'Amortización Extraordinaria:'
+        value: UF 0 / $0
+      -
+        name: 'Interés:'
+        value: UF 0.98 / $25.993
+      -
+        name: 'Interés Penal o Mora:'
+        value: UF 0 / $0
+      -
+        name: 'Seguro Incendio:'
+        value: UF 2.24 / $ 60.352
+      -
+        name: 'Seguro Degravamen:'
+        value: UF 0.65 / $ 18.223
+      -
+        name: 'Otros Seguros'
+        value: UF 0 / $0
+      -
+        name: 'Total Seguros:'
+        value: UF 3.54 / $ 87.773
+  -
+    openContent: 50
+    restText: 50 / 240
+    filterDataDesc: paidStateDividend
+    caducate:
+    state: Pagado
+    dataExpiration: 20 / 06 / 2017
+    dataPay: 05 / 06 / 2017
+    total: UF 20.05 / $ 554.865
+    striped: u-striped-gray
+    dividends:
+      -
+        name: 'Medio de Pago:'
+        value: Pago en Línea
+      -
+        name: 'Amortización:'
+        value: UF 18 / 555.065
+      -
+        name: 'Amortización Extraordinaria:'
+        value: UF 0 / $0
+      -
+        name: 'Interés:'
+        value: UF 0.98 / $25.993
+      -
+        name: 'Interés Penal o Mora:'
+        value: UF 0 / $0
+      -
+        name: 'Seguro Incendio:'
+        value: UF 2.24 / $ 60.352
+      -
+        name: 'Seguro Degravamen:'
+        value: UF 0.65 / $ 18.223
+      -
+        name: 'Otros Seguros'
+        value: UF 0 / $0
+      -
+        name: 'Total Seguros:'
+        value: UF 3.54 / $ 87.773
+  -
+    openContent: 49
+    restText: 49 / 240
+    filterDataDesc: paidStateDividend
+    caducate:
+    state: Pagado
+    dataExpiration: 20 / 06 / 2017
+    dataPay: 05 / 06 / 2017
+    total: UF 20.05 / $ 554.865
+    striped:
+    dividends:
+      -
+        name: 'Medio de Pago:'
+        value: Pago en Línea
+      -
+        name: 'Amortización:'
+        value: UF 18 / 555.065
+      -
+        name: 'Amortización Extraordinaria:'
+        value: UF 0 / $0
+      -
+        name: 'Interés:'
+        value: UF 0.98 / $25.993
+      -
+        name: 'Interés Penal o Mora:'
+        value: UF 0 / $0
+      -
+        name: 'Seguro Incendio:'
+        value: UF 2.24 / $ 60.352
+      -
+        name: 'Seguro Degravamen:'
+        value: UF 0.65 / $ 18.223
+      -
+        name: 'Otros Seguros'
+        value: UF 0 / $0
+      -
+        name: 'Total Seguros:'
+        value: UF 3.54 / $ 87.773
+  -
+    openContent: 48
+    restText: 48 / 240
+    filterDataDesc: defeatedStateDividend
+    caducate: caducate
+    state: Impago
+    dataExpiration: 20 / 06 / 2017
+    dataPay: 05 / 06 / 2017
+    total: UF 20.05 / $ 554.865
+    striped: u-striped-gray
+    dividends:
+      -
+        name: 'Medio de Pago:'
+        value: Pago en Línea
+      -
+        name: 'Amortización:'
+        value: UF 18 / 555.065
+      -
+        name: 'Amortización Extraordinaria:'
+        value: UF 0 / $0
+      -
+        name: 'Interés:'
+        value: UF 0.98 / $25.993
+      -
+        name: 'Interés Penal o Mora:'
+        value: UF 0 / $0
+      -
+        name: 'Seguro Incendio:'
+        value: UF 2.24 / $ 60.352
+      -
+        name: 'Seguro Degravamen:'
+        value: UF 0.65 / $ 18.223
+      -
+        name: 'Otros Seguros'
+        value: UF 0 / $0
+      -
+        name: 'Total Seguros:'
+        value: UF 3.54 / $ 87.773
