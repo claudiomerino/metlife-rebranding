@@ -8,7 +8,6 @@
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
-
 ( function( window ) {
 
 	'use strict';
@@ -323,10 +322,5 @@
 	 */
 	window.SelectFx = SelectFx;
 
+
 } )( window );
-
-
-
-[].slice.call( document.querySelectorAll( 'select.GeneralSelect.cs-select' ) ).forEach( (el) => {
-  new SelectFx(el);
-});
