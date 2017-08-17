@@ -140,9 +140,37 @@
 				</div>
 			</div>
 				<div class="col-xs-12 end-xs">
-					<a href="#" class="button button-small button-full-xs">Actualizar Datos de Contacto</a>
+					<a class="button button-small button-full-xs" data-open="productContactDetailsModal">Actualizar Datos de Contacto</a>
 				</div>
 		</section>
+
+    <section>
+      <!--Modal aceptar actualizar datos-->
+    	<div class="reveal large" id="productContactDetailsModal" data-reveal>
+        <div class="col-xs-8 col-xs-offset-2">
+          <h2 class="u-space text-center u-top">Actualización de datos personales</h2>
+
+          <p class="u-space text-center">
+            Declaras que conoces, aceptas y concuerdas que cualquier transacción que se realice en el Portal de Clientes con tu RUT y Clave de Acceso, se entenderá y se reputará, para todos los efectos legales, como realizada por ti mismo.
+            <br>En tal sentido, te haces entera y totalmente responsable del uso y seguridad de tu Clave de Acceso, no cabiéndole a MetLife Chile Seguros de Vida S.A. ninguna responsabilidad por el uso indebido de la misma por un tercero distinto a ti.
+          </p>
+
+          <div class="u-row middle-xs">
+      			<div class="col-xs-12 center-xs u-space-small">
+      				<a href="{{root}}datos-contacto-poliza/datos-contacto-poliza.html" class="button button-small">Acepto actualizar mis datos</a>
+      			</div>
+
+            <div class="col-xs-12 center-xs">
+      				<a data-close aria-label="Close modal" class="f-link">Cancelar</a>
+      			</div>
+      		</div>
+        </div>
+
+        <button class="close-button" data-close aria-label="Cerrar modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    	</div>
+    </section>
 
 	</div>
 </div>
