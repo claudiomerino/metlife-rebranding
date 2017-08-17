@@ -46,5 +46,8 @@
       "es2015"
     ]
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "babel-polyfill": "^6.23.0"
+  }
 }

@@ -1,0 +1,97 @@
+items:
+  -
+    classSection: u-top
+    classSubtitle: double_line hide-xs show-md
+    subTitle: Información de la Póliza
+    subItems:
+      -
+        label: 'Número de Póliza:'
+        value: 0056705543-A
+      -
+        label: 'Fecha de inicio Vigencia:'
+        value: 15/09/1995
+      -
+        label: 'Prima Básica en UF:'
+        value: UF 2.24
+        secondRow: 'true'
+      -
+        label: 'Prima de Ahorro en UF:'
+        value: UF 0.76
+        secondRow: 'true'
+      -
+        label: 'Prima Total:'
+        value: UF 1,35 / $27.445
+        secondRow: 'true'
+  -
+    classSection:
+    classSubtitle:
+    subTitle: Información de Agente
+    subItems:
+      -
+        label: 'Nombre del Asesor:'
+        value: Christian Laupheimer
+      -
+        label: 'Celular del Asesor:'
+        value: +56 965 445 545
+      -
+        label: 'Correo del Asesor:'
+        value: claupheimer@metlife.cl
+      -
+        label: 'Nombre Supervisor:'
+        value: Manuel José Llanos Aranguis
+        secondRow: 'true'
+      -
+        label: 'Celular Supervisor:'
+        value: 17.445.665-1
+        secondRow: 'true'
+  -
+    classSection:
+    classSubtitle:
+    subTitle: Medio de Pago
+    subItems:
+      -
+        label: 'Nombre Pagador:'
+        value: Juanito Perez
+      -
+        label: 'Banco:'
+        value: de Chile
+      -
+        label: 'Número de Cuenta:'
+        value: 0736599442-02
+      -
+        label: 'Frecuencia de Pago:'
+        value: Mensual
+  -
+    classSection:
+    classSubtitle:
+    subTitle: Datos de Contacto
+    subItems:
+      -
+        label: 'Dirección Particular'
+        value: 'Monseñor Escribá de Balaguer 11.365 Casa A, Lo Barnechea, Región Metroplolitana. CP: 7540000'
+      -
+        label: 'Correo Electrónico:'
+        value: daniel.llanos58@gmail.com
+      -
+        label: 'Teléfono:'
+        value: +56 966 554 644 (Móvil)
+        value2: +56 225 709 655 (Fijo)
+      -
+        label: 'Dirección Comercial'
+        value: 'Avda. Vitacura 5885, Of 2001. CP: 7540000'
+      -
+        label: 'Correo Electrónico'
+        value: 'daniel@miempresa.cl'
+      -
+        label: 'Teléfono:'
+        value: +56 223 344 670 (Fijo)
+        value2: +56 223 344 670 (Celular)
+      -
+        label: 'Dirección Comercial'
+        value: 'Avda. Vitacura 5885, Of 2001. CP: 7540000'
+      -
+        label: 'Correo Electrónico:'
+        value: daniel@miempresa.cl
+      -
+        label: 'Teléfono:'
+        value: +56 223 344 670 (Fijo)

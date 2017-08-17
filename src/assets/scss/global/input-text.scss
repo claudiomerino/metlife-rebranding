@@ -6,6 +6,10 @@
 		box-shadow: none !important;
 	}
 
+	input:focus::-webkit-input-placeholder {
+		color: transparent;
+	}
+
 	.form-error {
 		color: $pink;
 		display: none;
