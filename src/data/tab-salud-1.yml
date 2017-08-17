@@ -7,12 +7,18 @@ items:
       -
         label: 'Número de Póliza:'
         value: 0056705543-A
+        classCols: col-xs-12 col-sm-6 col-md-3
+        link: 'https://sample'
       -
         label: 'Fecha de inicio Vigencia:'
         value: 15/09/1995
+        classCols: col-xs-12 col-sm-6 col-md-3
+        link: 'https://sample'
       -
         label: 'Prima Total:'
         value: UF 1,35 / $27.445
+        classCols: col-xs-12 col-sm-6 col-md-3
+        link: 'https://sample'
   -
     classSection:
     classSubtitle:
@@ -85,3 +91,4 @@ items:
         label: 'Teléfono:'
         value: +56 223 344 670 (Fijo)
         value2: +56 223 344 670 (Celular)
+        link2: 'http://'

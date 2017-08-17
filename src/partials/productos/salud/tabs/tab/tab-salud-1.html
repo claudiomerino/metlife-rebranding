@@ -6,10 +6,26 @@
 			<p class="f-big tabs-subtitle-profile {{classSubtitle}}"><strong>{{subTitle}}</strong></p>
 			<div class="u-row u-row-xs-full">
 				{{#each subItems}}
-				<div class="tabs_col col-xs-12 col-sm-6 col-md-3 col-xs-full u-space u-right">
+				<div class="tabs_col {{classCols}} col-xs-full u-space u-right">
 					<p class="line_jump tabs_content_subtitle"><strong>{{label}}</strong></p>
-					<p class="line_jump">{{value}}</p>
-					<p class="line_jump">{{value2}}</p>
+					<p class="line_jump">
+						{{#if link}}
+							<a href="{{link}}">
+						{{/if}}
+							{{value}}
+						{{#if link}}
+							</a>
+						{{/if}}
+					</p>
+					<p class="line_jump">
+						{{#if link2}}
+							<a href="{{link}}">
+						{{/if}}
+							{{value2}}
+						{{#if link2}}
+							</a>
+						{{/if}}
+					</p>
 				</div>
 				{{/each}}
 			</div>
