@@ -1,5 +1,6 @@
 
-	const $inputCurrency = $('input.InputCurrency')
+	let $inputCurrency = $('input.InputCurrency')
+	let $InputCurrencyButton = $('.InputCurrencyButton')
 
 	$inputCurrency.each( (index, el) => {
 
@@ -8,18 +9,34 @@
 			var max = parseInt($(this).attr("max"));
 			var value = parseInt($(this).val());
 
-			if(value < min) {
-				value = min;
-			}
-			if(value > max) {
-				value = max;
+			if(value >= min && value <= max) {
+				$(this).removeClass('is-invalid-input')
+				$InputCurrencyButton.removeClass('button-disabled')
+				$InputCurrencyButton.unbind('click')
+			} else {
+				$(this).addClass('is-invalid-input')
+				$InputCurrencyButton.addClass('button-disabled')
+				$InputCurrencyButton.on('click', (e) => {
+					e.preventDefault()
+					$inputCurrency.focus()
+				})
 			}
 
-			inputCurrencyFn(value, $(el))
+			if(isNaN(value)) {
+				value = 0
+			}
+
+			inputCurrencyFn(value, $(this))
 
 		})
 
 		$(el).focus( function() {
-			inputCurrencyCleanFn($(el))
+			inputCurrencyCleanFn($(this))
 		})
+
+	})
+
+	$InputCurrencyButton.bind('click', (e) => {
+		e.preventDefault()
+		$inputCurrency.focus()
 	})

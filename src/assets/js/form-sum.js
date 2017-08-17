@@ -1,26 +1,36 @@
 
-	let $InputSum = $('input.InputSum')
-	let $InputSumTotal = $('.InputSumTotal')
-	let total = 0
+	let $InputSumButton = $('.InputSumButton')
 
-	$InputSum.each( (index, el) => {
-		$(el).change( function() {
-			var min = parseInt($(this).attr("min"));
-			var max = parseInt($(this).attr("max"));
-			var value = parseInt($(this).val());
+	function formSumFn() {
+		let $InputSum = $('input.InputSum')
+		let $InputSumTotal = $('.InputSumTotal')
 
-			console.log(value, 'change value')
-			console.log($InputSumTotal, 'change $InputSumTotal')
+		$InputSum.each( (index, el) => {
+			const min = parseInt($(el).attr("min"));
+			const max = parseInt($(el).attr("max"));
+			const value = parseInt($(el).attr('normal-value'));
 
-			total += value
-			console.log(total, 'total')
+			TotalSum += value
 
-			inputCurrencyFn(value, $(el))
+			if( $InputSum.hasClass('is-invalid-input') ) {
+				$InputSumButton.addClass('button-disabled')
+				$InputSumButton.on('click', (e) => {
+					e.preventDefault()
+				})
+			} else {
+				$InputSumButton.removeClass('button-disabled')
+				$InputSumButton.unbind('click')
+			}
 
-			$InputSumTotal.html(numeral(total).format('0,0'))
+			if(isNaN(TotalSum)) {
+				$(el).val('');
+				$(el).attr('normal-value', 0);
+			}
 		})
 
-		$(el).focus( function() {
-			inputCurrencyCleanFn($(el))
-		})
+		$InputSumTotal.html(numeral(TotalSum).format('0,0'))
+	}
+
+	$InputSumButton.bind('click', (e) => {
+		e.preventDefault()
 	})
