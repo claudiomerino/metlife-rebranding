@@ -32,15 +32,11 @@
       filterStateDividendFn()
 
       function filterDataNameFn() {
-        console.log('execute')
-
         const $DataNameFilter = $('.DataNameFilter');
 
         $DataNameFilter.each( (index, elDesc) => {
           const $dataFilterName = $(elDesc).data('filter-data-name')
           const $valSelectName = $('.DataSelectFilterName option:selected').val()
-          console.log($valSelectName, 'valSelectName')
-          console.log($dataFilterName, 'dataFilterName')
 
           if($valSelectName == 'allDataName') {
             $($(elDesc).closest('tr')[0]).removeClass('hide-filter-data-name')
