@@ -7,3 +7,24 @@
 		padding: 15px 15px 3px;
 	}
 
+	.bounty_col {
+		padding-left: 20px;
+		padding-right: 10px;
+		position: relative;
+		input.Bounty {
+			left: 0;
+			position: absolute;
+			top: 4px;
+		}
+	}
+
+	@media screen and (min-width: 62em) {
+		.bounty_col {
+			padding-left: 0px;
+			position: relative;
+			input.Bounty {
+				position: relative;
+				top: 0;
+			}
+		}
+	}
