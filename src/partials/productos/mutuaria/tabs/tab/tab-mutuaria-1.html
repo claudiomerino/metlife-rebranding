@@ -8,7 +8,15 @@
 			{{#each tab-mutuaria-1.credits}}
 			<div class="tabs_col {{classCols}} u-space">
 				<p class="tabs_content_subtitle"><strong>{{subtitle}}</strong></p>
-				<p class="line_jump">{{data}}</p>
+				<p class="line_jump">
+					{{#if link}}
+						<a href="{{link}}">
+					{{/if}}
+						{{data}}
+					{{#if link}}
+						</a>
+					{{/if}}
+				</p>
 			</div>
 			{{/each}}
 		</section>
