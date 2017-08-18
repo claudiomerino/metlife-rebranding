@@ -49,6 +49,7 @@
 	.cs-select .cs-options {
 		position: absolute;
 		overflow: hidden;
+		max-height: 300px;
 		width: 100%;
 		background: $white;
 		visibility: hidden;
