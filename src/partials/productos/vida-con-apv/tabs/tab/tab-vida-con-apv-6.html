@@ -4,7 +4,12 @@
 
 		<section class="u-space u-top">
 			<p class="f-big tabs-subtitle-profile"><strong>Información de Ahorro</strong></p>
-			<p><strong>Revisar monto ahorrado en la fecha</strong></p>
+
+      <p class="u-space alert alert-error">
+        <strong>Ten presente que:</strong> El Saldo Total incluye las primas cuyo origen corresponde a Depósitos Convenidos, así como también, a la Bonificación Fiscal -en caso que corresponda-, cuyo retiro sólo podrá efectuarse al momento de pensionarse.
+      </p>
+
+      <p><strong>Revisar monto ahorrado en la fecha</strong></p>
 
 			<div class="col-xs-12 col-sm-6 col-md-3 u-space">
 				<span class="input input_date input--ichiro input--datepicker u-space">
@@ -14,35 +19,49 @@
 			</div>
 
 			<div class="u-row u-row-xs-full u-space">
-				<div class="tabs_col col-xs-12 col-md-4 col-xs-full">
+				<div class="tabs_col col-xs-12 col-md-3 col-xs-full u-space">
 					<p class="line_jump"><strong>Monto Ahorrado a la Fecha</strong></p>
 					<p class="line_jump"> UF 335.67 / $ 7.302.944</p>
 				</div>
 
-				<div class="tabs_col_white col-xs-12 col-md-4"></div>
-
-				<div class="tabs_col_white col-xs-12 col-md-4"></div>
-
-				<div class="tabs_col col-xs-12 col-md-4 col-xs-full u-space">
+				<div class="tabs_col col-xs-12 col-md-3 col-xs-full u-space">
 					<p class="line_jump"><strong>Saldo Régimen A</strong></p>
 					<p class="line_jump">UF 335.67 / $ 7.302.944</p>
 				</div>
 
-				<div class="tabs_col col-xs-12 col-md-4 col-xs-full u-space">
+				<div class="tabs_col col-xs-12 col-md-3 col-xs-full u-space">
 					<p class="line_jump"><strong>Saldo Régimen B</strong></p>
 					<p class="line_jump">UF 335.67 / $ 7.302.944</p>
 				</div>
 
-				<div class="tabs_col col-xs-12 col-md-4 col-xs-full u-space">
+				<div class="tabs_col col-xs-12 col-md-3 col-xs-full u-space">
 					<p class="line_jump"><strong>Saldo Cuenta Bonificación de Cargo Fiscal</strong></p>
 					<p class="line_jump">UF 335.67 / $ 7.302.944</p>
 				</div>
+
+        <div class="tabs_col col-xs-12 col-xs-full start-xs end-md u-space">
+					<a data-open-content="partialRescuesHistory" class="openContent">
+            <span class="openContentText" data-rest-text="Ver Histórico de Rescates Parciales" data-open-text="Ocultar Histórico de Rescates Parciales" data-close="true">
+              Ver Histórico de Rescates Parciales
+            </span>
+            <i class="fa fa-angle-down"></i>
+          </a>
+				</div>
+
+        <div class="col-xs-12 toggleContent" data-toggle-content="partialRescuesHistory">
+          Contenido
+        </div>
 			</div>
 		</section>
 
 		<div class="u-row gutter-lg">
 			<section class="col-xs-12 col-lg-12 u-space">
 				<p class="f-big tabs-subtitle-profile"><strong>Distribución Alternativas de Inversión</strong></p>
+
+        <p class="u-space alert alert-error">
+          <strong>Ten presente que:</strong> Los valores que aquí aparecen, corresponden al porcentaje de distribución que pactaste al momento de la contratación y está vigente en tu póliza a la fecha de la consulta.
+        </p>
+
 				<p><strong>Cuenta: APV</strong></p>
 				<div class="u-row middle-xs">
 					<div class="chartCanvasMain hide-xs col-xs-12 col-sm-6 col-md-4">
@@ -51,9 +70,9 @@
 					</div>
 					<div class="col-xs-12">
 
-						<div class="table-scroll table table-double">
+						<div class="table-scroll table table-double u-space">
 						  <table class="u-striped">
-						    <thead>
+						    <thead class="InitialStyle">
 						      <tr>
 						        <th></th>
 						        <th>
@@ -80,9 +99,9 @@
 					</div>
 					<div class="col-xs-12">
 
-						<div class="table-scroll table table-double">
+						<div class="table-scroll table table-double u-space">
 						  <table class="u-striped">
-						    <thead>
+						    <thead class="InitialStyle">
 						      <tr>
 						        <th></th>
 						        <th>
@@ -109,9 +128,9 @@
 					</div>
 					<div class="col-xs-12">
 
-						<div class="table-scroll table table-double">
+						<div class="table-scroll table table-double u-space">
 						  <table class="u-striped">
-						    <thead>
+						    <thead class="InitialStyle">
 						      <tr>
 						        <th></th>
 						        <th>
@@ -139,16 +158,22 @@
 			<section class="col-xs-12 col-lg-12 u-space">
 				<p class="f-big tabs-subtitle-profile"><strong>Detalle Alternativas de Inversión</strong></p>
 
-				<div class="col-xs-12 col-sm-6 col-md-3 u-space">
-					<span class="input input_date input--ichiro input--datepicker u-space">
-						<input class="input__field input__field--ichiro DatePicker" data-placeholder="dfgdfgdfgdfg" type="text" class="span3">
-						<i class="material-icons">date_range</i>
-					</span>
-				</div>
+        <div class="u-row middle-xs u-space-2x">
+  				<div class="col-xs-12 col-sm-6 col-md-3 u-right u-space-xs">
+  					<span class="input input_date input--ichiro input--datepicker">
+  						<input class="input__field input__field--ichiro DatePicker" data-placeholder="dfgdfgdfgdfg" type="text" class="span3">
+  						<i class="material-icons">date_range</i>
+  					</span>
+  				</div>
+
+          <div class="col-xs-12 col-sm-6 col-md-9">
+            <a href="">Descargar Valores Cuota para la Fecha Seleccionada</a>
+          </div>
+        </div>
 
 				<div class="table table-scroll col-xs-12">
 					<table class="table-responsive u-striped u-space">
-				    <thead>
+				    <thead class="InitialStyle">
 				      <tr>
 				        <th class="table-6">
 									<p class="f-small table_title"><strong>Nombre del Fondo</strong></p>
@@ -229,4 +254,3 @@
 			</section>
 	</div>
 </div>
-
