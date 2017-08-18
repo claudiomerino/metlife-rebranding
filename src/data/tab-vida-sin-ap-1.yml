@@ -5,119 +5,167 @@ items:
     subTitle: Información de la Póliza
     subItems:
       -
+        id: 1
         label: 'Póliza Nº:'
         value: 0056705543-A
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 2
         label: 'Fecha de inicio Vigencia:'
         value: 15/09/1995
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 3
         label: 'Prima Total (mensual):'
         value: UF 2,35 / $55.556
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
   -
     classSection:
     classSubtitle:
     subTitle: Información de mi Asesor
     subItems:
       -
+        id: 4
         label: 'Nombre:'
         value: Christian Laupheimer
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 5
         label: 'Celular:'
         value: +56 965 445 545
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 6
         label: 'Correo del Asesor:'
         value: claupheimer@metlife.cl
         link: 'mailto:claud@metlife.cl'
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 7
         label: 'Nombre Supervisor:'
         value: Manuel José Llanos Aranguis
         secondRow: 'true'
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 8
         label: 'Celular Supervisor:'
         value: 17.445.665-1
         secondRow: 'true'
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
   -
     classSection:
     classSubtitle:
     subTitle: Medio de Pago
     subItems:
       -
+        id: 9
         label: 'Medio de Pago Vigente:'
         value: Pago Automático
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 10
         label: 'Entidad:'
         value: MasterCard
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 11
         label: 'Nombre Pagador:'
         value: Juanito Perez
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 12
         label: 'Banco:'
         value: de Chile
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 13
         label: 'Número de Cuenta:'
         value: 0736599442-02
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 14
         label: 'Frecuencia de Pago:'
         value: Mensual
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
   -
     classSection:
     classSubtitle:
     subTitle: Datos de Contacto
     subItems:
       -
+        id: 15
         label: 'Dirección Particular'
         value: 'Monseñor Escribá de Balaguer 11.365 Casa A, Lo Barnechea, Región Metroplolitana. CP: 7540000'
         classCols: col-xs-12 col-sm-12 col-md-6
+        edit: 'true'
       -
+        id: 16
         label: 'Correo Electrónico:'
         value: daniel.llanos58@gmail.com
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 17
         label: 'Teléfono:'
         value: +56 966 554 644 (Móvil)
         value2: +56 225 709 655 (Fijo)
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'false'
       -
+        id: 18
         label: 'Dirección Comercial'
         value: 'Avda. Vitacura 5885, Of 2001. CP: 7540000'
         classCols: col-xs-12 col-sm-12 col-md-6
+        edit: 'true'
       -
+        id: 19
         label: 'Correo Electrónico'
         value: 'daniel@miempresa.cl'
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 20
         label: 'Teléfono:'
         value: +56 223 344 670 (Fijo)
         value2: +56 223 344 670 (Celular)
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'false'
       -
+        id: 21
         label: 'Dirección Comercial'
         value: 'Avda. Vitacura 5885, Of 2001. CP: 7540000'
         classCols: col-xs-12 col-sm-12 col-md-6
+        edit: 'true'
       -
+        id: 22
         label: 'Correo Electrónico:'
         value: daniel@miempresa.cl
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 23
         label: 'Teléfono:'
         value: +56 223 344 670 (Fijo)
         value2: +56 223 344 670 (Celular)
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'false'
       -
+        id: 24
         label: 'Dirección Para Envío de la Correspondencia:'
         value: Dirección Particular
         classCols: col-xs-12
+        edit: 'true'
