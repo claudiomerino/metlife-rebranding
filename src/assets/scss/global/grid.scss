@@ -15,6 +15,10 @@ $gutter-lg: 15px;
   margin-top: $space-xs;
 }
 
+.u-top-sm {
+  margin-top: $space-xs;
+}
+
 .u-space-2x {
   margin-bottom: $space-md;
 }
@@ -294,6 +298,10 @@ ul.u-row {
 
   .u-space-xs {
     margin-bottom: 0;
+  }
+
+  .u-top-sm {
+    margin-top: 0;
   }
 
   .u-right-sm {
