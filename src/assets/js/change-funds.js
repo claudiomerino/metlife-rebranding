@@ -7,77 +7,93 @@
 	let $dataEditFieldsSubmit = $('[data-edit-fields-submit]')
 
 
-	$dataChangeFundsStock.on('change', (e) => {
-		let totalEditFunds = 0
+	$dataChangeFundsStock.on('keydown', (e) => {
 
-		$dataChangeFundsStock.each( (index, el) => {
-			const dataFunds = $(el).data('edit-fields')
+		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+			return false;
+    }
 
-			let dataFundsValue = parseInt($(el).val())
+		setTimeout( () => {
 
-			if(isNaN(dataFundsValue)) {
-				$(el).val(0)
-				dataFundsValue = parseInt($(el).val())
-				$(el).val('')
+			let totalEditFunds = 0
+
+			$dataChangeFundsStock.each( (index, el) => {
+				const dataFunds = $(el).data('edit-fields')
+
+				let dataFundsValue = parseInt($(el).val())
+
+				if(isNaN(dataFundsValue)) {
+					$(el).val(0)
+					dataFundsValue = parseInt($(el).val())
+					$(el).val('')
+				}
+
+				totalEditFunds += dataFundsValue
+
+			})
+
+			if(totalEditFunds > 100) {
+				$dataChangeFundsStockTotal.addClass('red')
+			} else {
+				$dataChangeFundsStockTotal.removeClass('red')
 			}
 
-			totalEditFunds += dataFundsValue
+			let $dataChangeFundsFlowTotalData = parseInt($('[data-change-funds-flow-total]').text())
 
-		})
+			if(totalEditFunds > 100 || $dataChangeFundsFlowTotalData > 100) {
+				$dataEditFieldsSubmit.addClass('button-disabled')
+			} else {
+				$dataEditFieldsSubmit.removeClass('button-disabled')
+			}
 
-		if(totalEditFunds > 100) {
-			$dataChangeFundsStockTotal.addClass('red')
-		} else {
-			$dataChangeFundsStockTotal.removeClass('red')
-		}
+			$dataChangeFundsStockTotal.html(totalEditFunds)
 
-		let $dataChangeFundsFlowTotalData = parseInt($('[data-change-funds-flow-total]').text())
-
-		if(totalEditFunds > 100 || $dataChangeFundsFlowTotalData > 100) {
-			$dataEditFieldsSubmit.addClass('button-disabled')
-		} else {
-			$dataEditFieldsSubmit.removeClass('button-disabled')
-		}
-
-		$dataChangeFundsStockTotal.html(totalEditFunds)
-
+		}, 1000)
 
 	})
 
 
-	$dataChangeFundsFlow.on('change', (e) => {
+	$dataChangeFundsFlow.on('keydown', (e) => {
 
-		let totalEditFundsFlow = 0
+		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+			return false;
+    }
 
-		$dataChangeFundsFlow.each( (index, el) => {
-			const dataFunds = $(el).data('edit-fields')
+		setTimeout( () => {
 
-			let dataFundsFlowValue = parseInt($(el).val())
+			let totalEditFundsFlow = 0
 
-			if(isNaN(dataFundsFlowValue)) {
-				$(el).val(0)
-				dataFundsFlowValue = parseInt($(el).val())
-				$(el).val('')
+			$dataChangeFundsFlow.each( (index, el) => {
+				const dataFunds = $(el).data('edit-fields')
+
+				let dataFundsFlowValue = parseInt($(el).val())
+
+				if(isNaN(dataFundsFlowValue)) {
+					$(el).val(0)
+					dataFundsFlowValue = parseInt($(el).val())
+					$(el).val('')
+				}
+
+				totalEditFundsFlow += dataFundsFlowValue
+
+			})
+
+			if(totalEditFundsFlow > 100) {
+				$dataChangeFundsFlowTotal.addClass('red')
+			} else {
+				$dataChangeFundsFlowTotal.removeClass('red')
 			}
 
-			totalEditFundsFlow += dataFundsFlowValue
+			let $dataChangeFundsStockTotalData = parseInt($('[data-change-funds-stock-total]').text())
 
-		})
+			if(totalEditFundsFlow > 100 || $dataChangeFundsStockTotalData > 100) {
+				$dataEditFieldsSubmit.addClass('button-disabled')
+			} else {
+				$dataEditFieldsSubmit.removeClass('button-disabled')
+			}
 
-		if(totalEditFundsFlow > 100) {
-			$dataChangeFundsFlowTotal.addClass('red')
-		} else {
-			$dataChangeFundsFlowTotal.removeClass('red')
-		}
+			$dataChangeFundsFlowTotal.html(totalEditFundsFlow)
 
-		let $dataChangeFundsStockTotalData = parseInt($('[data-change-funds-stock-total]').text())
-
-		if(totalEditFundsFlow > 100 || $dataChangeFundsStockTotalData > 100) {
-			$dataEditFieldsSubmit.addClass('button-disabled')
-		} else {
-			$dataEditFieldsSubmit.removeClass('button-disabled')
-		}
-
-		$dataChangeFundsFlowTotal.html(totalEditFundsFlow)
+		}, 1000)
 
 	})
