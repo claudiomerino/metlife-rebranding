@@ -2,33 +2,45 @@ credits:
   -
     subtitle: 'Rut Deudor:'
     data: '12.334.657-7'
+    classCols: col-xs-12 col-sm-6 col-md-3
   -
     subtitle: 'Nombre Deudor:'
     data: 'Daniel Esteban Llanos Marquez'
+    classCols: col-xs-12 col-sm-6 col-md-3
   -
     subtitle: 'Rut Codeudor:'
     data: '6.636.555-6'
+    classCols: col-xs-12 col-sm-6 col-md-3
   -
     subtitle: 'Nombre Codeudor:'
     data: 'María Expropiación Petronila de las Nieves Bolaños'
+    classCols: col-xs-12 col-sm-6 col-md-3
   -
     subtitle: 'Fecha de Otorgamiento del Crédito:'
     data: '26/05/2014'
+    classCols: col-xs-12 col-sm-6 col-md-3
   -
     subtitle: 'Email de Soporte Mutuaria:'
     data: 'jorge.salome@metlife.cl'
+    classCols: col-xs-12 col-sm-6 col-md-3
+    link: 'mailto:claud@metlife.cl'
   -
     subtitle: 'Deuda Original:'
     data: 'UF 3400 / $165.554.935'
+    classCols: col-xs-12 col-sm-6 col-md-3
   -
     subtitle: 'Saldo Insoluto:'
     data: 'UF 3400 / $165.554.935'
+    classCols: col-xs-12 col-sm-6 col-md-3
   -
     subtitle: 'Monto Cuota Mínima:'
     data: 'UF 20 / $554.965'
+    classCols: col-xs-12 col-sm-6 col-md-3
   -
     subtitle: 'Monto Cuota Máxima:'
     data: 'UF 50 / $1.633.065'
+    classCols: col-xs-12 col-sm-6 col-md-3
   -
     subtitle: 'Último Dividendo Pagado:'
     data: 'UF 20 / $554.965'
+    classCols: col-xs-12 col-sm-6 col-md-3
