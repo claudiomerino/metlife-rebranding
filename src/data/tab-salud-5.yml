@@ -1,17 +1,22 @@
 items:
   -
     openContent: name1
+    filterDataDesc: defeatedStateDividend
+    filterDataName: asegurado1
+    caducate: caducate
     desc: Daniel Esteban Llanos Marquez
     restText: Más información
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
     state: EBB434344
-    stateRequest: Aprobado
+    stateRequest: Rechazado
     total: UF 2,35 / $55.558
     striped: u-striped-gray
   -
     openContent: name2
+    filterDataDesc: paidStateDividend
+    filterDataName: asegurado1
     desc: Daniel Esteban Llanos Marquez
     restText: Más información
     openText: Menos información
@@ -22,6 +27,8 @@ items:
     total: UF 2,35 / $55.558
   -
     openContent: name3
+    filterDataDesc: allStateDividend
+    filterDataName: asegurado1
     desc: Daniel Esteban Llanos Marquez
     restText: Más información
     openText: Menos información
@@ -33,7 +40,9 @@ items:
     striped: u-striped-gray
   -
     openContent: name4
-    desc: Daniel Esteban Llanos Marquez
+    filterDataDesc: paidStateDividend
+    filterDataName: asegurado2
+    desc: María Expropiación Petronila de las Nieves
     restText: Más información
     openText: Menos información
     date: 05/02/2017
@@ -43,6 +52,8 @@ items:
     total: UF 2,35 / $55.558
   -
     openContent: name5
+    filterDataDesc: paidStateDividend
+    filterDataName: asegurado1
     desc: Daniel Esteban Llanos Marquez
     restText: Más información
     openText: Menos información
@@ -54,6 +65,8 @@ items:
     striped: u-striped-gray
   -
     openContent: name6
+    filterDataDesc: paidStateDividend
+    filterDataName: asegurado1
     desc: Daniel Esteban Llanos Marquez
     restText: Más información
     openText: Menos información
@@ -64,7 +77,9 @@ items:
     total: UF 2,35 / $55.558
   -
     openContent: name7
-    desc: Daniel Esteban Llanos Marquez
+    filterDataDesc: paidStateDividend
+    filterDataName: asegurado2
+    desc: María Expropiación Petronila de las Nieves
     restText: Más información
     openText: Menos información
     date: 05/02/2017
@@ -75,6 +90,8 @@ items:
     striped: u-striped-gray
   -
     openContent: name8
+    filterDataDesc: paidStateDividend
+    filterDataName: asegurado1
     desc: Daniel Esteban Llanos Marquez
     restText: Más información
     openText: Menos información
@@ -85,22 +102,26 @@ items:
     total: UF 2,35 / $55.558
   -
     openContent: name9
+    filterDataDesc: forPayStateDividend
+    filterDataName: asegurado1
     desc: Daniel Esteban Llanos Marquez
     restText: Más información
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
     state: EBB434344
-    stateRequest: Aprobado
+    stateRequest: Por Pagar
     total: UF 2,35 / $55.558
     striped: u-striped-gray
   -
     openContent: name10
-    desc: Daniel Esteban Llanos Marquez
+    filterDataDesc: forPayStateDividend
+    filterDataName: asegurado3
+    desc: Daniel Esteban Expropiación Llanos Marquez
     restText: Más información
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
     state: EBB434344
-    stateRequest: Aprobado
+    stateRequest: Por Pagar
     total: UF 2,35 / $55.558

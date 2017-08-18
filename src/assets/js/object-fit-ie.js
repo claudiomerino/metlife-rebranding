@@ -9,7 +9,7 @@
                 fitType = $(this).data('fit-type');
             }
 
-            $(this).parent().css({ 'background' : 'transparent url("'+imgSrc+'") no-repeat center center/'+fitType, });
+            $(this).parent().addClass('objFitFigure').css({ 'background' : 'transparent url("'+imgSrc+'") no-repeat center center/'+fitType, });
             $(this).remove();
         });
     }
