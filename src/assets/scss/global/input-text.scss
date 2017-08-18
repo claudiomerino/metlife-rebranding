@@ -41,6 +41,21 @@
 		z-index: 1;
 	}
 
+	.input--ichiro--currency {
+		position: relative;
+		&:before {
+			color: black;
+			content: "$";
+			left: 26px;
+			position: absolute;
+			z-index: 101;
+			top: 11px;
+		}
+		& > .InputCurrency {
+			padding-left: 40px !important;
+		}
+	}
+
 	.input__field {
 		-webkit-appearance: none; /* for box shadows to show on iOS */
 		border: 1px;
