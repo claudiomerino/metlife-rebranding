@@ -27,14 +27,14 @@
 	$($Bounty).on('change', (ev) => {
 
 		if( $(ev.currentTarget).is(':checked') ) {
-			$(ev.currentTarget).parent().next().children().attr('disabled', false)
+			$(ev.currentTarget).closest('.BountyRow').next().find('input.Bounty').attr('disabled', false)
 			let sumTotal = 0;
 
 			$Bounty.each( (index, data) => {
 				const $BountyValue = $(data)
 				if( $BountyValue.is(':checked') ) {
 					sumTotal += parseFloat( $( data ).data('value-uf') )
-				}	
+				}
 			})
 
 			$BountyValueUF.text( numeral(sumTotal).format( '0,0.00' ) )
@@ -42,7 +42,7 @@
 		}
 
 		else {
-			$(ev.currentTarget).parent().nextAll().children().attr('disabled', true)
+			$(ev.currentTarget).closest('.BountyRow').nextAll().find('input.Bounty').attr('disabled', true)
 
 			let sumTotal = numeral($BountyValueUF.text()).format( '0,0.00' )
 
@@ -51,7 +51,7 @@
 			$BountyValueUF.text( numeral(sumTotal).format( '0,0.00' ) )
 			$BountyValueConvertUF.text( numeral( sumTotal * UFVALUE ).format('0,0') )
 
-			let $arrayNextAll = $(ev.currentTarget).parent().nextAll().children('.Bounty').toArray()
+			let $arrayNextAll = $(ev.currentTarget).closest('.BountyRow').nextAll().find('input.Bounty').toArray()
 
 			$( $arrayNextAll ).each( (index, data) => {
 				if( $(data).is(':checked') ) {
@@ -64,7 +64,7 @@
 				}
 			})
 
-			$(ev.currentTarget).parent().nextAll().children().attr('checked', false)
+			$(ev.currentTarget).closest('.BountyRow').nextAll().find('input.Bounty').attr('checked', false)
 
 		}
 

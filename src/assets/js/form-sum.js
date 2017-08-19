@@ -1,36 +1,33 @@
 
 	let $InputSumButton = $('.InputSumButton')
+	let $InputSum = $('.InputSum')
+	let $InputSumTotal = $('.InputSumTotal')
 
-	function formSumFn() {
-		let $InputSum = $('input.InputSum')
-		let $InputSumTotal = $('.InputSumTotal')
+	$InputSum.on( 'keydown', (e) => {
 
-		$InputSum.each( (index, el) => {
-			const min = parseInt($(el).attr("min"));
-			const max = parseInt($(el).attr("max"));
-			const value = parseInt($(el).attr('normal-value'));
+    setTimeout( () => {
+    	let sumTotal = 0
+			let $ArrayInputSum = $(e.currentTarget).closest('.InputSumForm').find('.InputSum')
 
-			TotalSum += value
+			$ArrayInputSum.each( (index, el) => {
+				const value = $(el).val()
 
-			if( $InputSum.hasClass('is-invalid-input') ) {
-				$InputSumButton.addClass('button-disabled')
-				$InputSumButton.on('click', (e) => {
-					e.preventDefault()
-				})
-			} else {
-				$InputSumButton.removeClass('button-disabled')
-				$InputSumButton.unbind('click')
-			}
+				$(el).attr('normal-value', numeral(value).format('0'))
 
-			if(isNaN(TotalSum)) {
-				$(el).val('');
-				$(el).attr('normal-value', 0);
-			}
-		})
+				let normalValueSum = parseInt( $(el).attr('normal-value') )
 
-		$InputSumTotal.html(numeral(TotalSum).format('0,0'))
-	}
+				sumTotal += normalValueSum
+			})
 
-	$InputSumButton.bind('click', (e) => {
-		e.preventDefault()
+			$InputSumTotal.html(numeral(sumTotal).format('0,0'))
+		}, 1000)
+
 	})
+
+	function invalidInputSumFn(el) {
+		if( $(el).closest('.InputSumForm').find('.InputSum').hasClass('is-invalid-input') ) {
+			$InputSumButton.addClass('button-disabled')
+		} else {
+			$InputSumButton.removeClass('button-disabled')
+		}
+	}

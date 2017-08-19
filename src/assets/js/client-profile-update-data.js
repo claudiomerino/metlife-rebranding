@@ -1,13 +1,13 @@
 
-	const $buttonUpdate = $('#clientProfileUpdateData')
-	const $clientProfileCancelUpdateData = $('#clientProfileCancelUpdateData')
-	const $clientProfileSaveUpdateData = $('#clientProfileSaveUpdateData')
+	const $buttonUpdate = $('.clientProfileUpdateData')
+	const $clientProfileCancelUpdateData = $('.clientProfileCancelUpdateData')
+	const $clientProfileSaveUpdateData = $('.clientProfileSaveUpdateData')
 	const $clientProfileEdit = $('.clientProfileEdit')
 	const $clientProfileInitialData = $('.clientProfileInitialData')
 	const $ClientProfileToggleHide = $('.ClientProfileToggleHide')
-	const $ClientProfileMessageSuccess = $('#ClientProfileMessageSuccess')
-	const $ClientProfileMessageCancel = $('#ClientProfileMessageCancel')
-	const $UpdateDataFormInput = $('#UpdateDataForm')
+	const $ClientProfileMessageSuccess = $('.ClientProfileMessageSuccess')
+	const $ClientProfileMessageCancel = $('.ClientProfileMessageCancel')
+	const $UpdateDataFormInput = $('.UpdateDataForm')
 
 	$buttonUpdate.on('click', (e) => {
 		e.preventDefault()

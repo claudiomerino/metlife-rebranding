@@ -5,143 +5,199 @@ items:
     subTitle: Información de la Póliza
     subItems:
       -
+        id: 1
         label: 'Número de Póliza:'
         value: 0056705543-A
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 2
         label: 'Fecha de inicio Vigencia:'
         value: 15/09/1995
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 3
         label: 'Prima Básica en UF:'
         value: UF 2.24
         secondRow: 'true'
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 4
         label: 'Prima de Ahorro en UF:'
         value: UF 0.76
         secondRow: 'true'
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 5
         label: 'Prima Total:'
         value: UF 1,35 / $27.445
         secondRow: 'true'
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
   -
     classSection:
     classSubtitle:
     subTitle: Información de Agente
     subItems:
       -
+        id: 6
         label: 'Nombre del Asesor:'
         value: Christian Laupheimer
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 7
         label: 'Celular del Asesor:'
         value: +56 965 445 545
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 8
         label: 'Correo del Asesor:'
         value: claupheimer@metlife.cl
         classCols: col-xs-12 col-sm-6 col-md-3
         link: 'mailto:claud@metlife.cl'
+        edit: 'true'
       -
+        id: 9
         label: 'Nombre Supervisor:'
         value: Manuel José Llanos Aranguis
         secondRow: 'true'
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 10
         label: 'Celular Supervisor:'
         value: 17.445.665-1
         secondRow: 'true'
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
   -
     classSection:
     classSubtitle:
     subTitle: Becario
     subItems:
       -
+        id: 11
         label: 'Nombre Becado:'
         value: Juanito Perez
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 12
         label: 'Rut Becario:'
         value: de Chile
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 13
         label: 'Nombre Becario:'
         value: 0736599442-02
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 14
         label: 'Fecha de Nacimiento:'
         value: 24/05/2005
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
   -
     classSection:
     classSubtitle:
     subTitle: Medio de Pago
     subItems:
       -
+        id: 15
         label: 'Nombre Pagador:'
         value: Juanito Perez
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 16
         label: 'Banco:'
         value: de Chile
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 17
         label: 'Número de Cuenta:'
         value: 0736599442-02
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 18
         label: 'Frecuencia de Pago:'
         value: Mensual
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
   -
     classSection:
     classSubtitle:
     subTitle: Datos de Contacto
     subItems:
       -
+        id: 19
         label: 'Dirección Particular'
         value: 'Monseñor Escribá de Balaguer 11.365 Casa A, Lo Barnechea, Región Metroplolitana. CP: 7540000'
         classCols: col-xs-12 col-sm-12 col-md-6
+        edit: 'true'
       -
+        id: 20
         label: 'Correo Electrónico:'
         value: daniel.llanos58@gmail.com
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 21
         label: 'Teléfono:'
         value: +56 966 554 644 (Móvil)
         value2: +56 225 709 655 (Fijo)
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'false'
       -
+        id: 22
         label: 'Dirección Comercial'
         value: 'Avda. Vitacura 5885, Of 2001. CP: 7540000'
         classCols: col-xs-12 col-sm-12 col-md-6
+        edit: 'true'
       -
+        id: 23
         label: 'Correo Electrónico'
         value: 'daniel@miempresa.cl'
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 24
         label: 'Teléfono:'
         value: +56 223 344 670 (Fijo)
         value2: +56 223 344 670 (Celular)
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'false'
       -
+        id: 25
         label: 'Dirección Comercial'
         value: 'Avda. Vitacura 5885, Of 2001. CP: 7540000'
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 26
         label: 'Correo Electrónico:'
         value: daniel@miempresa.cl
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
       -
+        id: 27
         label: 'Teléfono:'
         value: +56 223 344 670 (Fijo)
         value2: +56 223 344 670 (Celular)
         classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'false'
       -
+        id: 28
         label: 'Dirección Para Envío de la Correspondencia:'
         value: Dirección Particular
         classCols: col-xs-12 col-sm-6 col-md-6
+        edit: 'true'

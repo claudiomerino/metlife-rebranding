@@ -88,24 +88,23 @@
 
 			<p class="f-big tabs-subtitle-profile"><strong>Movimientos de la Cuenta</strong></p>
 
-			<div class="u-row gutter-xs">
-				<section class="u-select col-xs-12 col-sm-6 col-md-4 u-space">
-					<select class="cs-select cs-skin-border GeneralSelect">
-						<option value="" disabled selected>Seleccionar por Año</option>
-						<option value="asegurado1">2017</option>
-						<option value="asegurado2">2016</option>
-						<option value="asegurado3">2015</option>
-					</select>
-				</section>
+			<div class="col-xs-12 col-md-6">
+				<p class="f-small"><strong>Filtrar por Fecha de Vencimiento:</strong></p>
+				<div class="u-row">
+					<div class="col-xs-12 col-md-6 u-right-small-md">
+						<span class="input input--ichiro input--datepicker DatePickerStart u-space">
+							<input class="input__field input__field--ichiro" placeholder="Desde" type="text" class="span3" readonly>
+							<i class="material-icons">date_range</i>
+						</span>
+					</div>
 
-				<section class="u-select col-xs-12 col-sm-6 col-md-4 u-space">
-					<select class="cs-select cs-skin-border GeneralSelect">
-						<option value="" disabled selected>Seleccionar por Mes</option>
-						<option value="asegurado1">Diciembre</option>
-						<option value="asegurado2">Noviembre</option>
-						<option value="asegurado3">Octubre</option>
-					</select>
-				</section>
+					<div class="col-xs-12 col-md-6">
+						<span class="input input--ichiro input--datepicker DatePickerEnd u-space">
+							<input class="input__field input__field--ichiro" placeholder="Hasta" type="text" class="span2" readonly>
+							<i class="material-icons">date_range</i>
+						</span>
+					</div>
+				</div>
 			</div>
 
 			<div class="table-scroll table center-xs">
@@ -130,7 +129,7 @@
 								<p class="table_desc">Pago de Prima 04/2016</p>
 							</td>
 			        <td class="table-5" align="left" valign="middle" data-table-title="Fecha">
-								<p class="table_desc">22/02/2017</p>
+			        	<p class="table_desc"><span class="DataExpiration">22/02/2017</span></p>
 							</td>
 			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Peso / UF">
 								<p class="table_desc">UF 75 / $ 1.650.000.-</p>
@@ -142,7 +141,7 @@
 								<p class="table_desc">Pago de Prima 03/2016</p>
 							</td>
 			        <td class="table-5" align="left" valign="middle" data-table-title="Fecha">
-								<p class="table_desc">22/04/2015</p>
+			        	<p class="table_desc"><span class="DataExpiration">22/04/2015</span></p>
 							</td>
 			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Peso / UF">
 								<p class="table_desc">UF 75 / $ 1.650.000.-</p>
@@ -154,7 +153,7 @@
 								<p class="table_desc">Pago de Prima 02/2016</p>
 							</td>
 			        <td class="table-5" align="left" valign="middle" data-table-title="Fecha">
-								<p class="table_desc">22/02/2017</p>
+			        	<p class="table_desc"><span class="DataExpiration">22/03/2017</span></p>
 							</td>
 			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Peso / UF">
 								<p class="table_desc">UF 75 / $ 1.250.000.-</p>
