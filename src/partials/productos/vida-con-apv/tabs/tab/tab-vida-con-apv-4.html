@@ -4,16 +4,15 @@
 
 	<section class="info_insured  u-top u-space">
 			<p class="f-big tabs-subtitle-profile"><strong>Cartolas Históricas</strong></p>
-		<div class="u-row ">
-			<div class="col-sm-4">
-				<section class="u-select">
-					<select class="cs-select cs-skin-border GeneralSelect">
-						<option value="" disabled selected>Selecciona un Período de Tiempo</option>
-						<option value="email">E-Mail</option>
-						<option value="twitter">Twitter</option>
-						<option value="linkedin">LinkedIn</option>
+			<div class="u-row ">
+				<div class="col-sm-4 u-select u-select_label">
+					<p class="f-small"><strong>Selecciona un Período de Tiempo:</strong></p>
+					<select class="cs-select cs-skin-border DataSelectFilterName">
+						<option value="allDataName" selected>Todos los Períodos de Tiempo</option>
+			    	{{#each tab-vida-con-ap-4.forms}}
+							<option value="periodo{{@index}}">{{name}}</option>
+			      {{/each}}
 					</select>
-				</section>
 				</div>
 			</div>
 		</section>
@@ -36,7 +35,7 @@
     	    	{{#each tab-vida-con-apv-4.forms}}
 			      <tr>
 			        <td class="table-10" valign="middle" data-table-title="Período">
-								<p class="middle">{{name}}</p>
+								<p class="middle DataNameFilter" data-filter-data-name="periodo{{@index}}">{{name}}</p>
 							</td>
 			        <td class="table-2" valign="middle">
 								<a href="#" class="button button-small">Descargar Cartola</a>
