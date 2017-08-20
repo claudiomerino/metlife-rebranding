@@ -16,7 +16,7 @@ credits:
     data: 'María Expropiación Petronila de las Nieves Bolaños'
     classCols: col-xs-12 col-sm-6 col-md-3
   -
-    subtitle: 'Fecha de Otorgamiento del Crédito:'
+    subtitle: 'Fecha Otorgamiento Crédito:'
     data: '26/05/2014'
     classCols: col-xs-12 col-sm-6 col-md-3
   -
@@ -43,4 +43,8 @@ credits:
   -
     subtitle: 'Último Dividendo Pagado:'
     data: 'UF 20 / $554.965'
+    classCols: col-xs-12 col-sm-6 col-md-3
+  -
+    subtitle: 'Fecha Último Pago:'
+    data: '10/11/1983'
     classCols: col-xs-12 col-sm-6 col-md-3

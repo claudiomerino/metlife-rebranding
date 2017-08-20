@@ -1,7 +1,7 @@
 items:
   -
     classSection: u-top
-    classSubtitle: double_line hide-xs show-md
+    classSubtitle: double_line
     subTitle: Información de la Póliza
     subItems:
       -

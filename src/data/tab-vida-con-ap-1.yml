@@ -1,7 +1,7 @@
 items:
   -
     classSection: u-top
-    classSubtitle: double_line hide-xs show-md
+    classSubtitle: double_line
     subTitle: Información de la Póliza
     subItems:
       -
@@ -9,31 +9,31 @@ items:
         label: 'Número de Póliza:'
         value: 0056705543-A
         classCols: col-xs-12 col-sm-6 col-md-3
-        edit: 'true'
+        edit: 'false'
       -
         id: 2
         label: 'Fecha de inicio Vigencia:'
         value: 15/09/1995
         classCols: col-xs-12 col-sm-6 col-md-3
-        edit: 'true'
+        edit: 'false'
       -
         id: 3
         label: 'Prima Básica en UF:'
         value: UF 2.24
         classCols: col-xs-12 col-sm-6 col-md-3
-        edit: 'true'
+        edit: 'false'
       -
         id: 4
         label: 'Prima de Ahorro en UF:'
         value: UF 0.76
         classCols: col-xs-12 col-sm-6 col-md-3
-        edit: 'true'
+        edit: 'false'
       -
         id: 5
         label: 'Prima Total:'
         value: UF 1,35 / $27.445
         classCols: col-xs-12 col-sm-6 col-md-3
-        edit: 'true'
+        edit: 'false'
   -
     classSection:
     classSubtitle:
@@ -44,34 +44,34 @@ items:
         label: 'Nombre del Asesor:'
         value: Christian Laupheimer
         classCols: col-xs-12 col-sm-6 col-md-3
-        edit: 'true'
+        edit: 'false'
       -
         id: 7
         label: 'Celular del Asesor:'
         value: +56 965 445 545
         classCols: col-xs-12 col-sm-6 col-md-3
-        edit: 'true'
+        edit: 'false'
       -
         id: 8
         label: 'Correo del Asesor:'
         value: claupheimer@metlife.cl
         classCols: col-xs-12 col-sm-6 col-md-3
         link: 'mailto:claud@metlife.cl'
-        edit: 'true'
+        edit: 'false'
       -
         id: 9
         label: 'Nombre Supervisor:'
         value: Manuel José Llanos Aranguis
         classCols: col-xs-12 col-sm-6 col-md-3
         secondRow: 'true'
-        edit: 'true'
+        edit: 'false'
       -
         id: 10
         label: 'Celular Supervisor:'
         value: 17.445.665-1
         classCols: col-xs-12 col-sm-6 col-md-3
         secondRow: 'true'
-        edit: 'true'
+        edit: 'false'
   -
     classSection:
     classSubtitle:
@@ -82,25 +82,25 @@ items:
         label: 'Nombre Pagador:'
         value: Juanito Perez
         classCols: col-xs-12 col-sm-6 col-md-3
-        edit: 'true'
+        edit: 'false'
       -
         id: 12
         label: 'Banco:'
         value: de Chile
         classCols: col-xs-12 col-sm-6 col-md-3
-        edit: 'true'
+        edit: 'false'
       -
         id: 13
         label: 'Número de Cuenta:'
         value: 0736599442-02
         classCols: col-xs-12 col-sm-6 col-md-3
-        edit: 'true'
+        edit: 'false'
       -
         id: 14
         label: 'Frecuencia de Pago:'
         value: Mensual
         classCols: col-xs-12 col-sm-6 col-md-3
-        edit: 'true'
+        edit: 'false'
   -
     classSection:
     classSubtitle:
@@ -124,7 +124,7 @@ items:
         value: +56 966 554 644 (Móvil)
         value2: +56 225 709 655 (Fijo)
         classCols: col-xs-12 col-sm-6 col-md-3
-        edit: 'false'
+        edit: 'true'
       -
         id: 18
         label: 'Dirección Comercial'

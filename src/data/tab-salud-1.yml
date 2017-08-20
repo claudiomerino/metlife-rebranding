@@ -1,7 +1,7 @@
 items:
   -
     classSection: u-top
-    classSubtitle: double_line hide-xs show-md
+    classSubtitle:
     subTitle: Información de la Póliza
     subItems:
       -
@@ -43,7 +43,7 @@ items:
         id: 6
         label: 'Correo del Asesor:'
         value: claupheimer@metlife.cl
-        classCols: col-xs-12 col-sm-6 col-md-3
+        classCols: col-xs-12 col-sm-6 col-md-6
         link: 'mailto:claud@metlife.cl'
         edit: 'true'
       -
