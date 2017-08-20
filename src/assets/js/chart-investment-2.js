@@ -20,9 +20,9 @@
 					15
 				],
 				backgroundColor: [
-					"#0a3c6e",
-					"#1fc2a2",
-					"#896eb3"
+					"#fff",
+					"#fff",
+					"#fff"
 				]
 			}]
 		};

@@ -2,7 +2,7 @@ items:
   -
     classSection: u-top
     classSubtitle: double_line
-    subTitle: Información de la Póliza
+    subTitle: Datos de la Póliza
     subItems:
       -
         id: 1
@@ -148,7 +148,7 @@ items:
         id: 21
         label: 'Dirección Comercial'
         value: 'Avda. Vitacura 5885, Of 2001. CP: 7540000'
-        classCols: col-xs-12 col-sm-6 col-md-3
+        classCols: col-xs-12 col-sm-6 col-md-6
         edit: 'true'
       -
         id: 22

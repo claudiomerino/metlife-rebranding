@@ -71,8 +71,7 @@
 
 					chartTemplate = `
 						<tr>
-				      <td bgcolor="${ dataBackgroundColor[key] }" width="10"></td>
-				      <td class="table-4" valign="middle">
+				      <td class="table-10" valign="middle">
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
 							</td>
 				      <td class="table-2" valign="middle">
