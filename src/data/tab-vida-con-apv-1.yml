@@ -2,7 +2,7 @@ items:
   -
     classSection: u-top
     classSubtitle:
-    subTitle: Información de la Póliza
+    subTitle: Datos de la Póliza
     subItems:
       -
         id: 1
