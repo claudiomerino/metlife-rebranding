@@ -2,7 +2,7 @@ items:
   -
     classSection: u-top
     classSubtitle: double_line
-    subTitle: Información de la Póliza
+    subTitle: Datos de la Póliza
     subItems:
       -
         label: 'Número de Póliza:'
