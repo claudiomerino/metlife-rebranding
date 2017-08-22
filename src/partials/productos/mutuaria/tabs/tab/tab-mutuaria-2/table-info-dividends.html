@@ -6,7 +6,13 @@
 		{{#each dividends}}
 		<div class="col-xs-12 col-sm-6 col-md-3">
 			<p class="card_item"><strong>{{name}}</strong></p>
-			<p class="card_item">{{value}}</p>
+			<p class="card_item">{{#if link}}
+										<a href="{{link}}">
+									{{/if}}
+										{{value}}
+									{{#if link}}
+										</a>
+									{{/if}}</p>
 		</div>
 		{{/each}}
 
