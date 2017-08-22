@@ -163,14 +163,15 @@
       new SelectFx(el, options);
     });
 
-
-    $('.DatePicker').fdatepicker({
+    $('span.DatePicker').fdatepicker({
       format: 'dd-mm-yyyy',
       disableDblClickSelection: true,
       leftArrow:'<i class="material-icons primary">keyboard_arrow_left</i>',
       rightArrow:'<i class="material-icons primary">keyboard_arrow_right</i>',
       closeIcon:'X',
-      closeButton: false,
+      closeButton: false
+    }).on('changeDate', (ev) => {
+      $(ev.currentTarget).find('input.input__field').val(moment(ev.date).add(1, 'days').format('DD / MM / YYYY'))
     })
 
 }( jQuery ));
