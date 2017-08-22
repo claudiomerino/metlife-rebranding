@@ -53,6 +53,7 @@
 		width: 100%;
 		background: $white;
 		visibility: hidden;
+		z-index: 1000;
 	}
 
 	.cs-select.cs-active .cs-options {
