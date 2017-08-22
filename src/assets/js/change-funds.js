@@ -42,8 +42,10 @@
 
 			if(totalEditFunds > 100 || $dataChangeFundsFlowTotalData > 100) {
 				$dataEditFieldsSubmit.addClass('button-disabled')
-			} else {
+			} else if(totalEditFunds == 100 && $dataChangeFundsFlowTotalData == 100) {
 				$dataEditFieldsSubmit.removeClass('button-disabled')
+			} else {
+				$dataEditFieldsSubmit.addClass('button-disabled')
 			}
 
 			$dataChangeFundsStockTotal.html(totalEditFunds)
@@ -88,8 +90,10 @@
 
 			if(totalEditFundsFlow > 100 || $dataChangeFundsStockTotalData > 100) {
 				$dataEditFieldsSubmit.addClass('button-disabled')
-			} else {
+			} else if(totalEditFundsFlow == 100 && $dataChangeFundsStockTotalData == 100) {
 				$dataEditFieldsSubmit.removeClass('button-disabled')
+			} else {
+				$dataEditFieldsSubmit.addClass('button-disabled')
 			}
 
 			$dataChangeFundsFlowTotal.html(totalEditFundsFlow)
