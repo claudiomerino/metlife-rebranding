@@ -1,16 +1,20 @@
 
 	.pagination {
 		button {
-			padding: 1rem 30px;
+			margin-top: 10px;
+			padding: 6px 10px;
+			border: 1px solid $gray;
 		}
 	}
 
 	.pagination_numbers {
-		padding: 10px 1rem;
+		padding: 12px 1rem;
 	}
 
 	.pagination_numbers_item {
 		margin-right: 10px;
+		border: 1px solid $gray;
+		font-size: 14px;
 		&:last-of-type {
 			margin-left: 10px;
 			margin-right: 0;
