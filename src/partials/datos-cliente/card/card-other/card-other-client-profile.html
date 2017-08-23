@@ -32,6 +32,12 @@
 	</div>
 </div>
 
+<div class="u-row clientProfileEdit hide-state-update u-space">
+	<div class="col-xs-12 legal-message">
+		<p class="f-legal"><input type="checkbox" name="personaldata" class="AcceptLegal" /><strong> Tratamiento de Datos Personales:</strong> Para efectos de la Ley N° 19.628, autorizo expresamente a MetLife para que haga tratamiento, almacene, transmita y comunique mis datos personales y la información que he proporcionado voluntariamente, a su matriz, filiales, empresas relacionadas del Grupo Empresarial al que pertenece y terceros prestadores de servicios, ubicados dentro o fuera de Chile, a fin de que MetLife y dichas entidades i) me contacten y pongan a mi disposición, información y oferta de sus productos y servicios; ii) almacenen y traten mi información personal; y iii) hagan efectivos los convenios asociados a los seguros que he contratado.</p>
+	</div>
+</div>
+
 <!--Información animada-->
 <section>
 	<!--Modal aceptar actualizar datos-->
@@ -44,14 +50,9 @@
         <br>En tal sentido, te haces entera y totalmente responsable del uso y seguridad de tu Clave de Acceso, no cabiéndole a MetLife Chile Seguros de Vida S.A. ninguna responsabilidad por el uso indebido de la misma por un tercero distinto a ti.
       </p>
 
-      <div class="u-row middle-xs">
-  			<div class="col-xs-12 center-xs u-space-small">
-  				<button class="button button-small clientProfileUpdateData" data-close aria-label="Close modal" type="button">Acepto actualizar mis datos</button>
-  			</div>
-
-        <div class="col-xs-12 center-xs">
-  				<a data-close aria-label="Close modal" class="f-link">Cancelar</a>
-  			</div>
+      <div class="u-row middle-xs center-xs end-sm u-space">
+  			<a data-close aria-label="Close modal" class="u-right-sm u-top-sm col-xs-12 col-sm-3">Cancelar</a>
+  			<button class="button button-small clientProfileUpdateData" data-close aria-label="Close modal" type="button">Acepto actualizar mis datos</button>
   		</div>
     </div>
 
@@ -65,24 +66,12 @@
 			<a class="button button-small" data-open="clientProfileModal">Actualizar datos</a>
 		</div>
 
-		<div class="col-xs-8 col-xs-full hide-state-update u-space clientProfileCancelUpdateData">
+		<div class="col-xs-10 col-xs-full hide-state-update u-space clientProfileCancelUpdateData">
 			<a href="#" class="f-link">Cancelar</a>
 		</div>
 
-		<div class="col-xs-4 col-xs-full end-xs hide-state-update u-space clientProfileSaveUpdateData">
-			<button type="submit" class="button button-full button-primary">Guardar cambios</button>
-		</div>
-	</div>
-
-	<div class="col-xs-12">
-		<div class="alert alert-error u-space hide-state-update ClientProfileMessageCancel">
-			<p class="alert_desc center-xs">Tus cambios han sido cancelados</p>
-		</div>
-	</div>
-
-	<div class="col-xs-12">
-		<div class="alert alert-error u-space hide-state-update ClientProfileMessageSuccess">
-			<p class="center-xs">Tus cambios han sido guardados</p>
+		<div class="col-xs-2 col-xs-full end-xs hide-state-update u-space clientProfileSaveUpdateData">
+			<button type="submit" class="button button-small button-disabled AcceptLegalSubmit">Guardar cambios</button>
 		</div>
 	</div>
 

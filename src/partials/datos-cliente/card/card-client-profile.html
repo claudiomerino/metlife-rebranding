@@ -4,6 +4,18 @@
 		<section class="tabs_wrap u-space">
 			<div class="client_wrap_container">
 
+				<div class="col-xs-12">
+					<div class="alert alert-success u-space hide-state-update ClientProfileMessageSuccess">
+						<p class="center-xs">Tus cambios han sido guardados</p>
+					</div>
+				</div>
+
+				<div class="col-xs-12">
+					<div class="alert alert-error u-space hide-state-update ClientProfileMessageCancel">
+						<p class="alert_desc center-xs">Tus cambios han sido cancelados</p>
+					</div>
+				</div>
+
 				{{> card-personal-client-profile}}
 				{{> card-contact-client-profile}}
 				{{> card-other-client-profile}}
