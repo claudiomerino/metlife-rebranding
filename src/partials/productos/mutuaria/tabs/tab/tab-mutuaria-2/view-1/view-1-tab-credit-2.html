@@ -12,7 +12,7 @@
 					<option value="paidStateDividend">Pagado</option>
 					<option value="forPayStateDividend">Por Pagar</option>
 					<option value="defeatedStateDividend">Vencido</option>
-				</select> 
+				</select>
 			</div>
 
 			<div class="col-xs-12 col-md-6">
@@ -40,6 +40,12 @@
 		</div>
 
 		<div class="table table-scroll col-xs-12 ">
+      <div class="u-row u-top hide-xs">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <p class="f-big f-error text-center">No se encontró resultados para el rango de fecha ingresada</p>
+        </div>
+      </div>
+      
 		  <table class="table-responsive u-striped u-striped-more">
 		    <thead>
 	      	<tr>
@@ -62,7 +68,6 @@
 		    </thead>
 
 		    <tbody>
-
 		    	{{#each view-1-tab-credit-2.items}}
 	      	<tr class="{{striped}}">
 	        	<td class="table-2" valign="middle" data-table-title="UF 20.05 / $ 554.865">
