@@ -14,6 +14,9 @@ $gutter-lg: 15px;
 .u-top {
   margin-top: $space-xs;
 }
+.u-top-bigger {
+  margin-top: $space-md * 2;
+}
 
 .u-top-sm {
   margin-top: $space-xs;
