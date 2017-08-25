@@ -33,6 +33,7 @@
 			}
 		}
 	}
+
 	.accordion-title {
 		border: 0;
 		padding: 14px 40px 14px 0;
@@ -66,3 +67,29 @@
 			}
 		}
 	}
+
+  .accordion.faq {
+    .accordion-item {
+      border-radius: 0;
+      border: none;
+      border-top: 1px solid $light-gray;
+      margin-bottom: 0;
+      &:last-child {
+        border-bottom: 1px solid $light-gray;
+        &:not(.is-active) > .accordion-title {
+          border-bottom: none;
+        }
+        .accordion-content {
+          border-bottom: none;
+        }
+      }
+      .accordion-title:before {
+        content: '\f067';
+      }
+      &.is-active {
+        .accordion-title:before {
+          content: '\f068';
+        }
+      }
+    }
+  }
