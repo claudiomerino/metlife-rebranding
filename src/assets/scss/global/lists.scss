@@ -29,3 +29,25 @@
 			width: 4px;
 		}
 	}
+
+  .glosary-index {
+    display: none;
+    .glosary-index-item {
+      display: inline-block;
+      &.is-empty {
+        > a {
+          color: $dark-gray-3;
+        }
+      }
+    }
+    @media only screen and (min-width: 48em) {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+    }
+  }
+  .glosary-index-xs {
+    margin: 20px 0 10px 0;
+  }
