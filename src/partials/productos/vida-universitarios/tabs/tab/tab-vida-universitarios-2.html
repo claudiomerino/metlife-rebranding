@@ -69,8 +69,91 @@
 			  </table>
 			</div>
 		</section>
-
+		<div class="u-space-x2">
 		{{> pagination}}
+		</div>
+		<section class="u-space-2x">
+
+			<p class="f-big tabs-subtitle-profile"><strong>Movimientos de la Cuenta</strong></p>
+
+			<div class="u-row">
+				<div class="col-xs-12 col-sm-6 col-md-4 u-right-small-md">
+					<span class="input input--ichiro input--datepicker DatePickerStart u-space">
+						<input class="input__field input__field--ichiro" placeholder="Desde" type="text" class="span3" readonly>
+						<i class="material-icons">date_range</i>
+					</span>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<span class="input input--ichiro input--datepicker DatePickerEnd u-space">
+						<input class="input__field input__field--ichiro" placeholder="Hasta" type="text" class="span2" readonly>
+						<i class="material-icons">date_range</i>
+					</span>
+				</div>
+			</div>
+
+			<div class="table-scroll table center-xs">
+		        <div class="u-row u-top hide-xs">
+		          <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+		            <p class="f-big f-error text-center">No se encontró resultados para el rango de fecha ingresada</p>
+		          </div>
+		        </div>
+        
+			  <table class="table-responsive u-striped">
+			    <thead>
+			      <tr>
+			        <th class="table-4">
+								<p class="f-small table_title"><strong>Movimiento</strong></p>
+							</th>
+			        <th class="table-5">
+								<p class="f-small table_title"><strong>Fecha </strong></p>
+							</th>
+			        <th class="table-3">
+								<p class="f-small table_title"><strong>Monto Peso / UF</strong></p>
+							</th>
+			      </tr>
+			    </thead>
+
+			    <tbody>
+			      <tr>
+			        <td class="table-4" align="left" valign="middle" data-table-title="Movimiento">
+								<p class="table_desc">Pago de Prima 04/2016</p>
+							</td>
+			        <td class="table-5" align="left" valign="middle" data-table-title="Fecha">
+								<p class="table_desc"><span class="DataExpiration">22/02/2017</span></p>
+							</td>
+			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Peso / UF">
+								<p class="table_desc">UF 75 / $ 1.650.000.-</p>
+							</td>
+			      </tr>
+
+			      <tr>
+			        <td class="table-4" align="left" valign="middle" data-table-title="Movimiento">
+								<p class="table_desc">Pago de Prima 03/2016</p>
+							</td>
+			        <td class="table-5" align="left" valign="middle" data-table-title="Fecha">
+								<p class="table_desc"><span class="DataExpiration">22/04/2015</span></p>
+							</td>
+			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Peso / UF">
+								<p class="table_desc">UF 75 / $ 1.650.000.-</p>
+							</td>
+			      </tr>
+
+			      <tr>
+			        <td class="table-4" align="left" valign="middle" data-table-title="Movimiento">
+								<p class="table_desc">Pago de Prima 02/2016</p>
+							</td>
+			        <td class="table-5" align="left" valign="middle" data-table-title="Fecha">
+								<p class="table_desc"><span class="DataExpiration">22/02/2017</span></p>
+							</td>
+			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Peso / UF">
+								<p class="table_desc">UF 75 / $ 1.250.000.-</p>
+							</td>
+			      </tr>
+			    </tbody>
+			  </table>
+			</div>
+		</section>
 
 		<section class="contribution">
 	      <div class="col-md-12 align-middle">
