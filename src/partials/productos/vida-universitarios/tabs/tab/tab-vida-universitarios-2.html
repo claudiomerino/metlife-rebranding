@@ -30,7 +30,7 @@
 		<section class="payment_history">
 			<p class="f-big tabs-subtitle-profile"><strong>Histórico de Pago de Primas</strong></p>
 			<div class="table table-scroll center-xs col-xs-12">
-			  <table class="table-responsive u-striped">
+			  <table class="table-responsive u-striped u-striped-more">
 			    <thead>
 			      <tr>
 			        <th class="table-3">
@@ -50,20 +50,28 @@
 
 			    <tbody>
     	    	{{#each tab-vida-universitarios-2.primas}}
-    	      <tr>
+    	      <tr class="{{striped}}">
     	        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
     						<p class="table_desc">{{coverage}}</p>
+								<a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
+									<span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
     					</td>
-    	        <td class="table-3" align="left" valign="middle" data-table-title="Fecha de Pago">
+    	        <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
     						<p class="table_desc">{{date}}</p>
     					</td>
-    	        <td class="table-3" align="left" valign="middle" data-table-title="Forma de Pago">
+    	        <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
     						<p class="table_desc">{{pay}}</p>
     					</td>
-    	        <td class="table-3" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+    	        <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
     						<p class="table_desc">{{amount}}</p>
     					</td>
     	      </tr>
+
+  	      	<tr class="toggleContent" data-toggle-content="{{openContent}}">
+  	    			{{> tables-vida-sin-ap }}
+  		 			</tr>
     	      {{/each}}
 			    </tbody>
 			  </table>
@@ -98,8 +106,8 @@
 		            <p class="f-big f-error text-center">No se encontró resultados para el rango de fecha ingresada</p>
 		          </div>
 		        </div>
-        
-			  <table class="table-responsive u-striped">
+
+			  <table class="table-responsive u-striped u-striped-more">
 			    <thead>
 			      <tr>
 			        <th class="table-4">
@@ -118,38 +126,62 @@
 			      <tr>
 			        <td class="table-4" align="left" valign="middle" data-table-title="Movimiento">
 								<p class="table_desc">Pago de Prima 04/2016</p>
+								<a href="" class="f-link openContent hide-md" data-open-content="vida-movement-1">
+									<span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-5" align="left" valign="middle" data-table-title="Fecha">
+			        <td class="table-5 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha">
 								<p class="table_desc"><span class="DataExpiration">22/02/2017</span></p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Peso / UF">
+			        <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Peso / UF">
 								<p class="table_desc">UF 75 / $ 1.650.000.-</p>
 							</td>
 			      </tr>
+
+  	      	<tr class="toggleContent" data-toggle-content="vida-movement-1">
+  	    			{{> table-vida-universitarios-2-movimientos }}
+  		 			</tr>
 
 			      <tr>
 			        <td class="table-4" align="left" valign="middle" data-table-title="Movimiento">
 								<p class="table_desc">Pago de Prima 03/2016</p>
+								<a href="" class="f-link openContent hide-md" data-open-content="vida-movement-2">
+									<span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-5" align="left" valign="middle" data-table-title="Fecha">
+			        <td class="table-5 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha">
 								<p class="table_desc"><span class="DataExpiration">22/04/2015</span></p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Peso / UF">
+			        <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Peso / UF">
 								<p class="table_desc">UF 75 / $ 1.650.000.-</p>
 							</td>
 			      </tr>
 
+  	      	<tr class="toggleContent" data-toggle-content="vida-movement-2">
+  	    			{{> table-vida-universitarios-2-movimientos }}
+  		 			</tr>
+
 			      <tr>
 			        <td class="table-4" align="left" valign="middle" data-table-title="Movimiento">
 								<p class="table_desc">Pago de Prima 02/2016</p>
+								<a href="" class="f-link openContent hide-md" data-open-content="vida-movement-3">
+									<span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
 							</td>
-			        <td class="table-5" align="left" valign="middle" data-table-title="Fecha">
+			        <td class="table-5 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha">
 								<p class="table_desc"><span class="DataExpiration">22/02/2017</span></p>
 							</td>
-			        <td class="table-3" align="left" valign="middle" data-table-title="Monto Peso / UF">
+			        <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Peso / UF">
 								<p class="table_desc">UF 75 / $ 1.250.000.-</p>
 							</td>
 			      </tr>
+
+  	      	<tr class="toggleContent" data-toggle-content="vida-movement-3">
+  	    			{{> table-vida-universitarios-2-movimientos }}
+  		 			</tr>
 			    </tbody>
 			  </table>
 			</div>

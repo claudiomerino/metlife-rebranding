@@ -667,6 +667,10 @@ ul.u-row {
   .show-md {
     display: block;
   }
+  .show-table-md {
+    display: table-cell;
+  }
+
   .hide-md-important {
     display: none !important;
   }

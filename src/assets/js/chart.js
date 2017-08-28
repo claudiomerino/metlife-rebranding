@@ -46,7 +46,7 @@
 
 					chartTemplate = `
 						<tr>
-				      <td bgcolor="${ dataBackgroundColor[key] }" width="10" class="hide-xs show-md"></td>
+				      <td bgcolor="${ dataBackgroundColor[key] }" width="10" class="hide-xs show-table-md"></td>
 				      <td class="table-4" valign="middle">
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
 								<p class="table_label_title f-small "><strong>Relación:</strong> ${ dataRelation[key] }</p>
