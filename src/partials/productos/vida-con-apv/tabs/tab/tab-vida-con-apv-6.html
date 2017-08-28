@@ -73,18 +73,18 @@
 			      <tr class="{{striped}}">
 			        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
 								<p class="table_desc">{{desc}}</p>
-								<a href="" class="f-link openContent hide-sm" data-open-content="{{openContent}}">
+								<a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
 									<span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
 									<i class="fa fa-angle-down" aria-hidden="true"></i>
 								</a>
 							</td>
-			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
+			        <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
 								<p class="table_desc">{{dataExpiration}}</p>
 							</td>
-			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
+			        <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
 								<p class="table_desc">{{#if link}}<a href="{{link}}">{{/if}}{{dataPay}}{{#if link}}</a>{{/if}}</p>
 							</td>
-			        <td class="table-3 hide-xs-important show-sm-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+			        <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
 								<p class="table_desc">{{total}}</p>
 							</td>
 			      </tr>
@@ -238,47 +238,71 @@
 				      <tr>
 				        <td class="table-6" valign="middle" data-table-title="Nombre del Fondo">
 									<p class="table_desc">Fondo Mutuo Santander Global Emergente Serie Universal.</p>
+									<a href="" class="f-link openContent hide-md" data-open-content="apv-fund-1">
+										<span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="Valor Actual">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Valor Actual">
 									<p class="table_desc">$ 276.554</p>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="N° de Cuotas">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="N° de Cuotas">
 									<p class="table_desc">45</p>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="Saldo en Pesos">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Saldo en Pesos">
 									<p class="table_desc">$ 12.554.830</p>
 								</td>
 				      </tr>
 
-				      <tr>
-				        <td class="table-6" valign="middle" data-table-title="Nombre del Fondo">
-									<p class="table_desc">Fondo Mutuo Santander Global Emergente Serie Universal.</p>
-								</td>
-				        <td class="table-2" valign="middle" data-table-title="Valor Actual">
-									<p class="table_desc">$ 276.554</p>
-								</td>
-				        <td class="table-2" valign="middle" data-table-title="N° de Cuotas">
-									<p class="table_desc">45</p>
-								</td>
-				        <td class="table-2" valign="middle" data-table-title="Saldo en Pesos">
-									<p class="table_desc">$ 12.554.830</p>
-								</td>
-				      </tr>
+	  	      	<tr class="toggleContent" data-toggle-content="apv-fund-1">
+	  	    			{{> table-vida-con-apv-6 }}
+	  		 			</tr>
 
 				      <tr>
 				        <td class="table-6" valign="middle" data-table-title="Nombre del Fondo">
 									<p class="table_desc">Fondo Mutuo Santander Global Emergente Serie Universal.</p>
+									<a href="" class="f-link openContent hide-md" data-open-content="apv-fund-2">
+										<span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="Valor Actual">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Valor Actual">
 									<p class="table_desc">$ 276.554</p>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="N° de Cuotas">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="N° de Cuotas">
 									<p class="table_desc">45</p>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="Saldo en Pesos">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Saldo en Pesos">
 									<p class="table_desc">$ 12.554.830</p>
 								</td>
 				      </tr>
+
+	  	      	<tr class="toggleContent" data-toggle-content="apv-fund-2">
+	  	    			{{> table-vida-con-apv-6 }}
+	  		 			</tr>
+
+				      <tr>
+				        <td class="table-6" valign="middle" data-table-title="Nombre del Fondo">
+									<p class="table_desc">Fondo Mutuo Santander Global Emergente Serie Universal.</p>
+									<a href="" class="f-link openContent hide-md" data-open-content="apv-fund-3">
+										<span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a>
+								</td>
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Valor Actual">
+									<p class="table_desc">$ 276.554</p>
+								</td>
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="N° de Cuotas">
+									<p class="table_desc">45</p>
+								</td>
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Saldo en Pesos">
+									<p class="table_desc">$ 12.554.830</p>
+								</td>
+				      </tr>
+
+	  	      	<tr class="toggleContent" data-toggle-content="apv-fund-3">
+	  	    			{{> table-vida-con-apv-6 }}
+	  		 			</tr>
 				    </tbody>
 				  </table>
 				</div>
@@ -306,47 +330,71 @@
 				      <tr>
 				        <td class="table-6" valign="middle" data-table-title="Nombre del Fondo">
 									<p class="table_desc">Fondo Mutuo Santander Global Emergente Serie Universal.</p>
+									<a href="" class="f-link openContent hide-md" data-open-content="apv-deposit-1">
+										<span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="Valor Actual">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Valor Actual">
 									<p class="table_desc">$ 276.554</p>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="N° de Cuotas">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="N° de Cuotas">
 									<p class="table_desc">45</p>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="Saldo en Pesos">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Saldo en Pesos">
 									<p class="table_desc">$ 12.554.830</p>
 								</td>
 				      </tr>
 
-				      <tr>
-				        <td class="table-6" valign="middle" data-table-title="Nombre del Fondo">
-									<p class="table_desc">Fondo Mutuo Santander Global Emergente Serie Universal.</p>
-								</td>
-				        <td class="table-2" valign="middle" data-table-title="Valor Actual">
-									<p class="table_desc">$ 276.554</p>
-								</td>
-				        <td class="table-2" valign="middle" data-table-title="N° de Cuotas">
-									<p class="table_desc">45</p>
-								</td>
-				        <td class="table-2" valign="middle" data-table-title="Saldo en Pesos">
-									<p class="table_desc">$ 12.554.830</p>
-								</td>
-				      </tr>
+	  	      	<tr class="toggleContent" data-toggle-content="apv-deposit-1">
+	  	    			{{> table-vida-con-apv-6 }}
+	  		 			</tr>
 
 				      <tr>
 				        <td class="table-6" valign="middle" data-table-title="Nombre del Fondo">
 									<p class="table_desc">Fondo Mutuo Santander Global Emergente Serie Universal.</p>
+									<a href="" class="f-link openContent hide-md" data-open-content="apv-deposit-2">
+										<span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="Valor Actual">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Valor Actual">
 									<p class="table_desc">$ 276.554</p>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="N° de Cuotas">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="N° de Cuotas">
 									<p class="table_desc">45</p>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="Saldo en Pesos">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Saldo en Pesos">
 									<p class="table_desc">$ 12.554.830</p>
 								</td>
 				      </tr>
+
+	  	      	<tr class="toggleContent" data-toggle-content="apv-deposit-2">
+	  	    			{{> table-vida-con-apv-6 }}
+	  		 			</tr>
+
+				      <tr>
+				        <td class="table-6" valign="middle" data-table-title="Nombre del Fondo">
+									<p class="table_desc">Fondo Mutuo Santander Global Emergente Serie Universal.</p>
+									<a href="" class="f-link openContent hide-md" data-open-content="apv-deposit-3">
+										<span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a>
+								</td>
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Valor Actual">
+									<p class="table_desc">$ 276.554</p>
+								</td>
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="N° de Cuotas">
+									<p class="table_desc">45</p>
+								</td>
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Saldo en Pesos">
+									<p class="table_desc">$ 12.554.830</p>
+								</td>
+				      </tr>
+
+	  	      	<tr class="toggleContent" data-toggle-content="apv-deposit-3">
+	  	    			{{> table-vida-con-apv-6 }}
+	  		 			</tr>
 				    </tbody>
 				  </table>
 				</div>
@@ -374,47 +422,71 @@
 				      <tr>
 				        <td class="table-6" valign="middle" data-table-title="Nombre del Fondo">
 									<p class="table_desc">Fondo Mutuo Santander Global Emergente Serie Universal.</p>
+									<a href="" class="f-link openContent hide-md" data-open-content="apv-quotation-1">
+										<span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="Valor Actual">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Valor Actual">
 									<p class="table_desc">$ 276.554</p>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="N° de Cuotas">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="N° de Cuotas">
 									<p class="table_desc">45</p>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="Saldo en Pesos">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Saldo en Pesos">
 									<p class="table_desc">$ 12.554.830</p>
 								</td>
 				      </tr>
 
-				      <tr>
-				        <td class="table-6" valign="middle" data-table-title="Nombre del Fondo">
-									<p class="table_desc">Fondo Mutuo Santander Global Emergente Serie Universal.</p>
-								</td>
-				        <td class="table-2" valign="middle" data-table-title="Valor Actual">
-									<p class="table_desc">$ 276.554</p>
-								</td>
-				        <td class="table-2" valign="middle" data-table-title="N° de Cuotas">
-									<p class="table_desc">45</p>
-								</td>
-				        <td class="table-2" valign="middle" data-table-title="Saldo en Pesos">
-									<p class="table_desc">$ 12.554.830</p>
-								</td>
-				      </tr>
+	  	      	<tr class="toggleContent" data-toggle-content="apv-quotation-1">
+	  	    			{{> table-vida-con-apv-6 }}
+	  		 			</tr>
 
 				      <tr>
 				        <td class="table-6" valign="middle" data-table-title="Nombre del Fondo">
 									<p class="table_desc">Fondo Mutuo Santander Global Emergente Serie Universal.</p>
+									<a href="" class="f-link openContent hide-md" data-open-content="apv-quotation-2">
+										<span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="Valor Actual">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Valor Actual">
 									<p class="table_desc">$ 276.554</p>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="N° de Cuotas">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="N° de Cuotas">
 									<p class="table_desc">45</p>
 								</td>
-				        <td class="table-2" valign="middle" data-table-title="Saldo en Pesos">
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Saldo en Pesos">
 									<p class="table_desc">$ 12.554.830</p>
 								</td>
 				      </tr>
+
+	  	      	<tr class="toggleContent" data-toggle-content="apv-quotation-2">
+	  	    			{{> table-vida-con-apv-6 }}
+	  		 			</tr>
+
+				      <tr>
+				        <td class="table-6" valign="middle" data-table-title="Nombre del Fondo">
+									<p class="table_desc">Fondo Mutuo Santander Global Emergente Serie Universal.</p>
+									<a href="" class="f-link openContent hide-md" data-open-content="apv-quotation-3">
+										<span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a>
+								</td>
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Valor Actual">
+									<p class="table_desc">$ 276.554</p>
+								</td>
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="N° de Cuotas">
+									<p class="table_desc">45</p>
+								</td>
+				        <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Saldo en Pesos">
+									<p class="table_desc">$ 12.554.830</p>
+								</td>
+				      </tr>
+
+	  	      	<tr class="toggleContent" data-toggle-content="apv-quotation-3">
+	  	    			{{> table-vida-con-apv-6 }}
+	  		 			</tr>
 				    </tbody>
 				  </table>
 				</div>
