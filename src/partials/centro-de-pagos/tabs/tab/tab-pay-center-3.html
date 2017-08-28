@@ -5,7 +5,7 @@
 		<section class="payment_history u-space u-top">
 			<p class="f-big tabs-subtitle-profile"><strong>Histórico de Pago de Primas</strong></p>
 			<div class="table table-scroll center-xs col-xs-12">
-			  <table class="table-responsive u-striped">
+			  <table class="table-responsive u-striped u-striped-more">
 			    <thead>
 			      <tr>
 			      	 <th class="table-4">
@@ -28,23 +28,31 @@
 
 			    <tbody>
 			    	{{#each tab-pay-center-3.primas}}
-			    <tr>
-			    	<td class="table-4" align="left" valign="middle" data-table-title="Producto">
-						<p class="table_desc"><a href="#">{{producto}}</a><br><span class="f-small">Póliza Nº: {{poliza}}</p>
-					</td>
-			        <td class="table-2" align="left" valign="middle" data-table-title="Período de Cobertura">
-						<p class="table_desc">{{coverage}}</p>
-					</td>
-			        <td class="table-2" align="left" valign="middle" data-table-title="Fecha de Pago">
-						<p class="table_desc">{{date}}</p>
-					</td>
-			        <td class="table-2" align="left" valign="middle" data-table-title="Forma de Pago">
-						<p class="table_desc">{{pay}}</p>
-					</td>
-			        <td class="table-2" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
-						<p class="table_desc">{{amount}}</p>
-					</td> 
-	     		</tr>
+				    <tr class="{{striped}}">
+				    	<td class="table-4" align="left" valign="middle" data-table-title="Producto">
+								<p class="table_desc"><a href="#">{{producto}}</a><br><span class="f-small">Póliza Nº: {{poliza}}</p>
+								<a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
+									<span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
+							</td>
+					    <td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Período de Cobertura">
+								<p class="table_desc">{{coverage}}</p>
+							</td>
+							<td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
+								<p class="table_desc">{{date}}</p>
+							</td>
+							<td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
+								<p class="table_desc">{{pay}}</p>
+							</td>
+							<td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+								<p class="table_desc">{{amount}}</p>
+							</td>
+		     		</tr>
+
+  	      	<tr class="toggleContent" data-toggle-content="{{openContent}}">
+  	    			{{> table-pay-center-3 }}
+  		 			</tr>
 			      {{/each}}
 			    </tbody>
 			  </table>
