@@ -14,6 +14,12 @@ $gutter-lg: 15px;
 .u-top {
   margin-top: $space-xs;
 }
+.u-top-big {
+  margin-top: $space-md;
+}
+.u-top-bigger {
+  margin-top: $space-md * 2;
+}
 
 .u-top-sm {
   margin-top: $space-xs;
@@ -68,6 +74,15 @@ $gutter-lg: 15px;
   flex-wrap: wrap;
   &.reverse {
     flex-direction: row-reverse;
+  }
+  &.--white {
+    background-color: $white;
+  }
+  &.--padded-md {
+    padding: 20px;
+    @media only screen and (min-width: 48em) {
+      padding: 40px;
+    }
   }
 }
 

@@ -1,0 +1,99 @@
+{{> nav-off-canvas}}
+
+<div class="off-canvas-content" data-off-canvas-content>
+  <div class="double-nav_sticky" data-sticky-container>
+    <div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+      {{> nav-sub}}
+      {{> nav-main}}
+    </div>
+  </div>
+
+  <section class="siniestros bg-white-light u-space">
+    <div class="siniestros_container u-container">
+
+      <div class="u-row">
+        <div class="col-xs-12">
+          <div class="breadcrumb siniestros_breadcrumb">
+            <ul class="u-row u-row-xs-full middle-xs">
+              <li>
+    						<a href="{{root}}ayuda/ayuda.html" class="f-link f-tiny">Ayuda</a>
+    					</li>
+    					<li>
+    						<i class="fa fa-angle-right" aria-hidden="true"></i>
+    					</li>
+    					<li>
+    						<p class="f-tiny">¿Qué hacer en caso de siniestros?</p>
+    					</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xs-12 u-space">
+          <section class="siniestros_heading center-xs">
+            <h2 class="help_title">¿Qué hacer en caso de siniestros?</h2>
+          </section>
+        </div>
+      </div>
+
+      <div class="u-row --white --padded-md">
+        <div class="col-xs-12 col-md-3 hide-xs show-md u-space u-right">
+          <figure class="objFitFigure" style="background-image: url('{{root}}assets/img/simulator.png')">
+            <img src="{{root}}assets/img/simulator.png" class="objFit hide-xs">
+          </figure>
+        </div>
+
+        <div class="col-xs-12 col-md-9 u-top">
+          <h3 class="u-space">Documentos Precisos en el Momento Correcto</h3>
+          <p class="u-space">Si tienes dudas de cómo o qué se necesita para realizar algunos trámites relacionados con tus seguros, revisa con atención los documentos que debes presentar para denunciar un siniestro.</p>
+
+          <div class="u-space">
+            <p><strong>Por Reembolso de Gastos Médicos</strong></p>
+
+            <ul>
+              <li class="bullet-item">Informe médico tratante</li>
+	            <li class="bullet-item">Poder Simple</li>
+	            <li class="bullet-item">Bonos y reembolsos de Isapre o Fonasa, boletas y facturas originales</li>
+	            <li class="bullet-item">Exámenes y estudios</li>
+	            <li class="bullet-item">Programa de atención y detalle de cuenta</li>
+            </ul>
+          </div>
+
+          <div class="u-space">
+            <p><strong>Por Fallecimiento</strong></p>
+
+            <ul>
+              <li class="bullet-item">Certificado de Defunción</li>
+	            <li class="bullet-item">Fotocopia de Cédula de Identidad de Beneficiarios</li>
+	            <li class="bullet-item">Informe médico tratante</li>
+            </ul>
+          </div>
+
+          <div class="u-space">
+            <p><strong>Por Muerte Accidental</strong></p>
+
+            <ul>
+              <li class="bullet-item">Certificado de Defunción</li>
+	            <li class="bullet-item">Fotocopia de Cédula de Identidad de Beneficiarios</li>
+	            <li class="bullet-item">Parte Policial</li>
+              <li class="bullet-item">Certificado de Alcoholemia</li>
+              <li class="bullet-item">Autopsia</li>
+            </ul>
+          </div>
+
+          <div class="u-space">
+            <p><strong>Por Invalidez Accidental</strong></p>
+
+            <ul>
+              <li class="bullet-item">Dictamen de Invalidez emitido por AFP o COMPIN</li>
+	            <li class="bullet-item">Informe médico que acredite invalidez</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-section f-legal u-top-big">
+        {{> legal }}
+      </div>
+    </div>
+  </section>
+</div>

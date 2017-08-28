@@ -1,0 +1,146 @@
+{{> nav-off-canvas}}
+
+<div class="off-canvas-content" data-off-canvas-content>
+  <div class="double-nav_sticky" data-sticky-container>
+    <div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+      {{> nav-sub}}
+      {{> nav-main}}
+    </div>
+  </div>
+
+  <section class="glosario bg-white-light u-space">
+    <div class="glosario_container u-container">
+
+      <div class="u-row">
+        <div class="col-xs-12">
+          <div class="breadcrumb glosario_breadcrumb">
+            <ul class="u-row u-row-xs-full middle-xs">
+              <li>
+    						<a href="{{root}}ayuda/ayuda.html" class="f-link f-tiny">Ayuda</a>
+    					</li>
+    					<li>
+    						<i class="fa fa-angle-right" aria-hidden="true"></i>
+    					</li>
+    					<li>
+    						<p class="f-tiny">Contacto</p>
+    					</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xs-12 u-space">
+          <section class="glosario_heading center-xs">
+            <h2 class="help_title">Contacto</h2>
+
+            <div class="u-row">
+              <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <p class=f-legal>
+                  Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="u-row --white gutter-xs">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 u-top-bigger u-space-2x">
+
+          <div class="u-row gutter-xs">
+            <div class="col-xs-12 col-sm-6">
+              <section class="u-field u-space-2x">
+                <span class="input input--ichiro">
+                  <input class="input__field input__field--ichiro" data-live-validate="true" value="" type="text" id="name" required>
+                  <label class="input__label input__label--ichiro" for="name">
+                    <span class="input__label-content input__label-content--ichiro">
+                      <strong>Nombre*</strong>
+                    </span>
+                  </label>
+                  <p class="form-error f-tiny">Este campo es requerido.</p>
+                </span>
+              </section>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+              <section class="u-field u-space-2x">
+                <span class="input input--ichiro">
+                  <input class="input__field input__field--ichiro" data-live-validate="true" value="" type="text" id="lastname" required>
+                  <label class="input__label input__label--ichiro" for="lastname">
+                    <span class="input__label-content input__label-content--ichiro">
+                      <strong>Apellido*</strong>
+                    </span>
+                  </label>
+                  <p class="form-error f-tiny">Este campo es requerido.</p>
+                </span>
+              </section>
+            </div>
+          </div>
+
+          <div class="u-row gutter-xs">
+            <div class="col-xs-12 col-sm-6">
+              <section class="u-field u-space-2x">
+                <span class="input input--ichiro">
+                  <input class="input__field input__field--ichiro" data-live-validate="true" value="" type="text" id="email" required>
+                  <label class="input__label input__label--ichiro" for="email">
+                    <span class="input__label-content input__label-content--ichiro">
+                      <strong>Email*</strong>
+                    </span>
+                  </label>
+                  <p class="form-error f-tiny">Este campo es requerido.</p>
+                </span>
+              </section>
+            </div>
+          </div>
+
+          <div class="u-row gutter-xs">
+            <div class="col-xs-12 col-sm-6">
+              <section class="u-select u-field u-space-2x">
+                <select class="cs-select cs-skin-border GeneralSelect items_select_box">
+                  <option value="" selected>Fringilla Risus</option>
+                  <option value="">Ultricies Bibendum</option>
+                </select>
+                <p class="form-error f-tiny">Este campo es requerido.</p>
+              </section>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+              <section class="u-select u-field u-space-2x">
+                <select class="cs-select cs-skin-border GeneralSelect items_select_box">
+                  <option value="" selected>Fringilla Risus</option>
+                  <option value="">Ultricies Bibendum</option>
+                </select>
+                <p class="form-error f-tiny">Este campo es requerido.</p>
+              </section>
+            </div>
+          </div>
+
+          <div class="u-row gutter-xs u-space-small">
+            <div class="col-xs-12">
+              <section class="u-field u-space-2x">
+                <span class="input input--ichiro">
+                  <textarea class="input__field input__field--ichiro" data-live-validate="true" value="" type="text" id="message" required></textarea>
+                  <label class="input__label input__label--ichiro" for="message">
+                    <span class="input__label-content input__label-content--ichiro">
+                      <strong>Mensaje</strong>
+                    </span>
+                  </label>
+                  <p class="form-error f-tiny">Este campo es requerido.</p>
+                </span>
+              </section>
+            </div>
+          </div>
+
+          <div class="u-row gutter-xs u-space-2x">
+            <div class="col-xs-12 col-sm-4 col-md-3">
+              <button class="button button-primary button-full">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-section f-legal u-top-big">
+        {{> legal }}
+      </div>
+    </div>
+  </section>
+</div>

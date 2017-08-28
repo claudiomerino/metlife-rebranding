@@ -62,111 +62,55 @@
 		</section>
 		{{/each}}
 
-		<section class="payment_method u-space">
-			<p class="f-big tabs-subtitle-profile"><strong>Medio de Pago</strong></p>
-			<div class="u-row u-row-xs-full">
-				<div class="tabs_col col-xs-12 col-sm-6 col-md-3 col-xs-full u-space">
-					<p class="line_jump tabs_content_subtitle"><strong>Nombre Pagador:</strong></p>
-					<p class="line_jump">Juanito Perez</p>
+		 
+
+    <!--Información animada-->
+			<section>
+				<!--Modal aceptar actualizar datos-->
+				<div class="reveal large" id="updateDataContact" data-reveal>
+			    	<div class="col-xs-10 col-xs-offset-1">
+			      	<h2 class="text-center u-top u-space">Actualización de datos personales</h2>
+
+			      	<p class="u-space text-justify">
+			        Declaras que conoces, aceptas y concuerdas que cualquier transacción que se realice en el Portal de Clientes con tu RUT y Clave de Acceso, se entenderá y se reputará, para todos los efectos legales, como realizada por ti mismo.
+			        <br>En tal sentido, te haces entera y totalmente responsable del uso y seguridad de tu Clave de Acceso, no cabiéndole a MetLife Chile Seguros de Vida S.A. ninguna responsabilidad por el uso indebido de la misma por un tercero distinto a ti.
+			      	</p>
+			  		<div class="u-row middle-xs center-xs end-sm u-space">
+		          		<a href="{{root}}datos-contacto-poliza/datos-contacto-poliza.html" class="button button-small last-sm">Acepto actualizar mis datos</a>
+						<a data-close aria-label="Close modal" class="u-right-sm u-top-sm col-xs-12 col-sm-3">Cancelar</a>
+					</div>
+			    </div>
+			    <button class="close-button" data-close aria-label="Cerrar modal" type="button">
+			      	<span aria-hidden="true">&times;</span>
+			    </button>
+			</div>
+
+			<div class="u-row end-xs gutter-xs middle-xs">
+				<div class="col-xs-full ClientProfileToggleHide">
+					<a class="button button-small" data-open="updateDataContact">Actualizar datos de Contacto</a>
 				</div>
 
-				<div class="tabs_col col-xs-12 col-sm-6 col-md-3 col-xs-full u-space">
-					<p class="line_jump tabs_content_subtitle"><strong>Banco:</strong></p>
-					<p class="line_jump">de Chile</p>
+				<div class="col-xs-8 col-xs-full hide-state-update u-space clientProfileCancelUpdateData">
+					<a href="#" class="f-link">Cancelar</a>
 				</div>
 
-				<div class="tabs_col col-xs-12 col-sm-6 col-md-3 col-xs-full u-space">
-					<p class="line_jump tabs_content_subtitle"><strong>Número de Cuenta:</strong></p>
-					<p class="line_jump">0736599442-02</p>
+				<div class="col-xs-4 col-xs-full end-xs hide-state-update u-space clientProfileSaveUpdateData">
+					<button type="submit" class="button button-full button-primary">Guardar cambios</button>
 				</div>
+			</div>
 
-				<div class="tabs_col col-xs-12 col-sm-6 col-md-3 col-xs-full u-space">
-					<p class="line_jump tabs_content_subtitle"><strong>Frecuencia de Pago:</strong></p>
-					<p class="line_jump">Mensual</p>
+			<div class="col-xs-12">
+				<div class="alert alert-error u-space hide-state-update ClientProfileMessageCancel">
+					<p class="alert_desc center-xs">Tus cambios han sido cancelados</p>
+				</div>
+			</div>
+
+			<div class="col-xs-12">
+				<div class="alert alert-error u-space hide-state-update ClientProfileMessageSuccess">
+					<p class="center-xs">Tus cambios han sido guardados</p>
 				</div>
 			</div>
 		</section>
-
-		<section class="data_contact">
-			<p class="f-big tabs-subtitle-profile"><strong>Datos de Contacto</strong></p>
-			<div class="u-row u-row-xs-full u-space">
-				<div class="tabs_col col-xs-12 col-sm-6 col-md-6 col-xs-full u-space u-right">
-					<p class="line_jump tabs_content_subtitle"><strong>Dirección Particular</strong></p>
-					<p class="line_jump">Monseñor Escribá de Balaguer 11.365 Casa A, Lo Barnechea, Región Metroplolitana. CP: 7540000</p>
-				</div>
-
-				<div class="tabs_col col-xs-12 col-sm-6 col-md-3 col-xs-full u-space">
-					<p class="line_jump tabs_content_subtitle"><strong>Email</strong></p>
-					<p class="line_jump">daniel.llanos58@gmail.com</p>
-				</div>
-
-				<div class="tabs_col col-xs-12 col-sm-6 col-md-3 col-xs-full u-space">
-					<p class="line_jump tabs_content_subtitle"><strong>Teléfono</strong></p>
-					<p class="line_jump">+56 966 554 644 (Móvil)<br>+56 225 709 655 (Fijo)</p>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-6 u-space">
-					<p class="line_jump tabs_content_subtitle"><strong>Dirección Comercial</strong></p>
-					<p class="line_jump">Avda. Vitacura 5885, Of 2001</p>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-3 u-space">
-					<p class="line_jump tabs_content_subtitle"><strong>Correo Electrónico</strong></p>
-					<p class="line_jump">daniel@miempresa.cl</p>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-3 u-space">
-					<p class="line_jump tabs_content_subtitle"><strong>Teléfono</strong></p>
-					<p class="line_jump">+56 223 344 670</p>
-				</div>
-
-				<div class="col-xs-12 col-md-6 u-space">
-					<p class="line_jump tabs_content_subtitle"><strong>Dirección Comercial</strong></p>
-					<p class="line_jump">Avda. Vitacura 5885, Of 2001</p>
-				</div>
-
-				<div class="col-xs-12 col-md-3 u-space">
-					<p class="line_jump tabs_content_subtitle"><strong>Correo Electrónico</strong></p>
-					<p class="line_jump">daniel@miempresa.cl</p>
-				</div>
-
-				<div class="col-xs-12 col-md-3 u-space">
-					<p class="line_jump tabs_content_subtitle"><strong>Teléfono</strong></p>
-					<p class="line_jump">+56 223 344 670</p>
-				</div>
-			</div>
-				<div class="col-xs-12 end-xs">
-					<a class="button button-small button-full-xs" data-open="productContactDetailsModal">Actualizar Datos de Contacto</a>
-				</div>
-		</section>
-
-    <section>
-      <!--Modal aceptar actualizar datos-->
-    	<div class="reveal large" id="productContactDetailsModal" data-reveal>
-        <div class="col-xs-8 col-xs-offset-2">
-          <h2 class="u-space text-center u-top">Actualización de datos personales</h2>
-
-          <p class="u-space text-center">
-            Declaras que conoces, aceptas y concuerdas que cualquier transacción que se realice en el Portal de Clientes con tu RUT y Clave de Acceso, se entenderá y se reputará, para todos los efectos legales, como realizada por ti mismo.
-            <br>En tal sentido, te haces entera y totalmente responsable del uso y seguridad de tu Clave de Acceso, no cabiéndole a MetLife Chile Seguros de Vida S.A. ninguna responsabilidad por el uso indebido de la misma por un tercero distinto a ti.
-          </p>
-
-          <div class="u-row middle-xs">
-      			<div class="col-xs-12 center-xs u-space-small">
-      				<a href="{{root}}datos-contacto-poliza/datos-contacto-poliza.html" class="button button-small">Acepto actualizar mis datos</a>
-      			</div>
-
-            <div class="col-xs-12 center-xs">
-      				<a data-close aria-label="Close modal" class="f-link">Cancelar</a>
-      			</div>
-      		</div>
-        </div>
-
-        <button class="close-button" data-close aria-label="Cerrar modal" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
-    	</div>
-    </section>
 
 	</div>
 </div>

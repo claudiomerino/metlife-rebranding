@@ -1,9 +1,18 @@
 
-<section class="tabs_wrap u-space">
+<section>
 	<div class="client_wrap_container">
-		<div class="u-section">
-			<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-				<form class="recover_form ChangePassForm center-xs" data-abide novalidate  data-live-validate="true">
+		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Cambio de Clave de Acceso</strong></p>
+		<div class="u-row">
+			<!-- <div class="box f-small u-top col-xs-12 col-md-8 col-md-offset-2 u-space">
+                <strong>Te recomendamos:</strong>
+            	<ul>
+            		<li class="bullet-item">Cambiar tu Clave de Acceso periódicamente</li>
+            		<li class="bullet-item">Usar combinaciones complejas de letras (mayúsculas y minúsculas) y números</li>
+            		<li class="bullet-item">No usar claves relacionadas con tu nombre, rut, teléfono u otro dato de identificación</li>
+            	</ul>
+            </div> -->
+			<div class="col-md-4 col-md-offset-4 u-top u-space-2x">
+				<form class="recover_form ChangePassForm" data-abide novalidate  data-live-validate="true">
 
 					<div class="loading hide-xs loadingChangePass">
 						{{> loading-1}}
@@ -65,7 +74,7 @@
 
 						<div class="u-row no-gutter-xs middle-xs">
 							<div class="col-xs-12 end-xs">
-								<input type="submit" class="button button-full button-primary" value="Cambiar Clave">
+								<input type="submit" class="button button-small end-sm u-space-2x" value="Cambiar Clave">
 							</div>
 						</div>
 					</div>
@@ -74,8 +83,24 @@
 				<p class="login_support text-center f-small">Si tienes algún problema, contáctate con nuestro Servicio al Cliente al
 					<a href="tel:+566003903000"><strong>600 390 3000</strong></a>
 				</p>
-
+			
 			</div>
-		</div>
+	    </div>
+
+	    <section class="contribution">
+	      	<div class="col-md-12 align-middle">
+	        	<div class="u-row z-depth-2">
+	          	<div class="products_col col-xs-12 col-sm-3">
+		            <figure>
+		              <img src="{{root}}assets/img/loss-history.png" data-fit-type class="objFit products_img">
+		            </figure>
+	          	</div>
+
+	          	<div class="u-row products_col col-xs-12 col-sm-9 card_container middle-xs">
+	              	<h4>¡Cuida la seguridad y privacidad de tu información!</h4>
+	              	<p class="f-small u-top">La Clave de Acceso garantiza que los datos disponibles en el Portal de Clientes sean sólo accesibles por ti. Recuerda que tu información es sensible y que cualquier transacción que se realice en el Portal de Clientes se entenderá como realizada por ti.</p>
+		        </div>
+			</div>
+		</section>
 	</div>
 </section>

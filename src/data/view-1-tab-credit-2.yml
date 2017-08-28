@@ -52,6 +52,7 @@ items:
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
+        link: '#'
       -
         name: 'Amortización:'
         value: UF 18 / 555.065
@@ -90,6 +91,7 @@ items:
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
+        link: '#'
       -
         name: 'Amortización:'
         value: UF 18 / 555.065
@@ -128,6 +130,7 @@ items:
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
+        link: '#'
       -
         name: 'Amortización:'
         value: UF 18 / 555.065
@@ -166,6 +169,7 @@ items:
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
+        link: '#'
       -
         name: 'Amortización:'
         value: UF 18 / 555.065
@@ -204,6 +208,7 @@ items:
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
+        link: '#'
       -
         name: 'Amortización:'
         value: UF 18 / 555.065
@@ -242,6 +247,7 @@ items:
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
+        link: '#'
       -
         name: 'Amortización:'
         value: UF 18 / 555.065
@@ -280,6 +286,7 @@ items:
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
+        link: '#'
       -
         name: 'Amortización:'
         value: UF 18 / 555.065
@@ -318,6 +325,7 @@ items:
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
+        link: '#'
       -
         name: 'Amortización:'
         value: UF 18 / 555.065

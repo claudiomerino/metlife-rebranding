@@ -46,22 +46,22 @@
 
 					chartTemplate = `
 						<tr>
-				      <td bgcolor="${ dataBackgroundColor[key] }" width="10"></td>
+				      <td bgcolor="${ dataBackgroundColor[key] }" width="10" class="hide-xs show-md"></td>
 				      <td class="table-4" valign="middle">
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
-								<p class="table_desc "><strong>Relación:</strong> ${ dataRelation[key] }</p>
-								<a href="#" class="f-link openContent" data-open-content="openChartMoreInfo-${UID}-${key}">
+								<p class="table_label_title f-small "><strong>Relación:</strong> ${ dataRelation[key] }</p>
+								<a href="#" class="f-link openContent " data-open-content="openChartMoreInfo-${UID}-${key}">
 									<span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
 									<i class="fa fa-angle-down" aria-hidden="true"></i>
 								</a>
 								<section class="toggleContent" data-toggle-content="openChartMoreInfo-${UID}-${key}">
-									<p class="table_desc "><strong><br>Teléfono:</strong> ${ dataPhone[key] }</p>
-									<p class="table_desc "><strong>Dirección:</strong> ${ dataAddress[key] }</p>
-									<p class="table_desc "><strong>Correo Electrónico:</strong> ${ dataEmail[key] }</p>
+									<p class="table_label_title "><strong><br>Teléfono:</strong> ${ dataPhone[key] }</p>
+									<p class="table_label_title "><strong>Dirección:</strong> ${ dataAddress[key] }</p>
+									<p class="table_label_title "><strong>Correo Electrónico:</strong> ${ dataEmail[key] }</p>
 								</section>
 							</td>
-				      <td class="table-2" valign="middle">
-								<p class="table_desc f-big"><strong>${ dataValue[key] } %</strong></p>
+				      <td class="table-2 center-sm" valign="middle">
+								<p class="table_desc f-big center-sm"><strong>${ dataValue[key] } %</strong></p>
 							</td>
 						</tr>
 					`;
@@ -75,7 +75,7 @@
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
 							</td>
 				      <td class="table-2" valign="middle">
-								<p class="table_desc f-big"><strong>${ dataValue[key] } %</strong></p>
+								<p class="table_desc f-big center-sm"><strong>${ dataValue[key] } %</strong></p>
 							</td>
 						</tr>
 					`;
