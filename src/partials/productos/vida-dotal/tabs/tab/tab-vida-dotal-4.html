@@ -2,53 +2,85 @@
 <div class="tabs_wrap">
 	<div class="client_wrap_container">
 
-		<section class="u-space">
+		<section>
 			<p class="f-big tabs-subtitle-profile"><strong>Información de Ahorro</strong></p>
 
 		     <div class="box u-space">
 				<p class="f-small"><strong>Ten presente que:</strong> El Saldo Acumulado incluye las primas cuyo origen corresponde a Depósitos Convenidos, así como también, a la Bonificación Fiscal -en caso que corresponda-, cuyo retiro sólo podrá efectuarse al momento de pensionarse.</p>
 			</div>
 
-			<p><strong>Revisar Saldo Acumulado en la fecha</strong></p>
+			<p><strong>Revisar monto acumulado en la fecha</strong></p>
 
-			<div class="col-xs-12 col-md-3 u-right-small-md">
-							<span class="input input--ichiro input--datepicker DatePicker u-space">
-								<input class="input__field input__field--ichiro" placeholder="Seleccionar fecha" type="text" class="span3" readonly>
-								<i class="material-icons">date_range</i>
-							</span>
-						</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 u-right u-space-xs">
+				<span class="input input_date input--ichiro input--datepicker DatePicker u-space">
+					<input class="input__field input__field--ichiro" placeholder="Seleccionar Fecha" type="text" class="span3" readonly>
+					<i class="material-icons">date_range</i>
+				</span>
+			</div>
+
 
 			<div class="u-row u-row-xs-full u-space">
 				<div class="tabs_col col-xs-12 col-md-3 col-xs-full">
 					<p class="line_jump"><strong>Saldo Acumulado a la Fecha</strong></p>
 					<p class="line_jump"> UF 335.67 / $ 7.302.944</p>
 				</div>
+			</div>
 
-				<div class="tabs_col col-xs-12 col-md-3 col-xs-full">
-					<p class="line_jump"><strong>Saldo Régimen A</strong></p>
-					<p class="line_jump">UF 335.67 / $ 7.302.944</p>
+	        <div class="tabs_col col-xs-12 col-xs-full start-xs end-md u-top">
+						<a data-open-content="partialRescuesHistory" class="openContent">
+	            <span class="openContentText" data-rest-text="Ver Histórico de Rescates Parciales" data-open-text="Ocultar Histórico de Rescates Parciales" data-close="true">
+	              Ver Histórico de Rescates Parciales
+	            </span>
+	            <i class="fa fa-angle-down"></i>
+	          </a>
+			</div>
+
+	        <div class="col-xs-12 toggleContent" data-toggle-content="partialRescuesHistory">
+	          <section class="u-space u-top">
+				<div class="table table-scroll center-xs col-xs-12 u-space">
+				  <table class="table-responsive table-responsive-label u-striped u-striped-more">
+				    <thead>
+				      <tr>
+				        <th class="table-3">
+							<p class="f-small table_title"><strong>Fechas de Solicitud</strong></p>
+						</th>
+				        <th class="table-3">
+							<p class="f-small table_title"><strong>Canal</strong></p>
+						</th>
+				        <th class="table-3">
+							<p class="f-small table_title"><strong>Monto Rescatado UF / $</strong></p>
+						</th>
+				        <th class="table-3">
+							<p class="f-small table_title"><strong>Fecha del Pago</strong></p>
+						</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td class="table-3 start-xs" valign="middle" data-table-title="Fecha Vencimiento">
+							<p>25/04/2016</p>
+						</td>
+				        <td class="table-3 start-xs" valign="middle">
+				        	<p >Sucursal</p>
+						</td>
+						<td class="table-3 start-xs" valign="middle">
+				        	<p> UF 55.4 / $ 4.554.555</p>
+						</td>
+						<td class="table-3 start-xs" valign="middle">
+				        	<p >27/04/2016</a>
+							</p>
+						</td>
+				      </tr>
+				    </tbody>
+				  </table>
+				  <div class="u-row">
+				  	<div class="col-xs-12 end-xs u-space-xs u-top"> 
+		              <a href="#" target="_blank" class="button button-small button-full-xs">Solicitar Rescate Parcial</a>
+		            </div>
+				  </div>
 				</div>
-
-				<div class="tabs_col col-xs-12 col-md-3 col-xs-full">
-					<p class="line_jump"><strong>Saldo Régimen B</strong></p>
-					<p class="line_jump">UF 335.67 / $ 7.302.944</p>
-				</div>
-
-				<div class="tabs_col col-xs-12 col-md-3 col-xs-full">
-					<p class="line_jump"><strong>Saldo Bonificación Cargo Fiscal</strong></p>
-					<p class="line_jump">UF 335.67 / $ 7.302.944</p>
-				</div>
-
-        <div class="tabs_col col-xs-12 col-xs-full start-xs end-md u-top">
-					<a data-open-content="partialRescuesHistory" class="openContent">
-            <span class="openContentText" data-rest-text="Ver Histórico de Rescates Parciales" data-open-text="Ocultar Histórico de Rescates Parciales" data-close="true">
-              Ver Histórico de Rescates Parciales
-            </span>
-            <i class="fa fa-angle-down"></i>
-          </a>
-				</div>
-
-        
-		</section>
-
+			  </section>
+	        </div>
+	    </section>
+	</div>
 </div>

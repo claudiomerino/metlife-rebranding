@@ -110,7 +110,7 @@ items:
       -
         label: 'Dirección Comercial'
         value: 'Avda. Vitacura 5885, Of 2001. CP: 7540000'
-        classCols: col-xs-12 col-sm-6 col-md-6
+        classCols: col-xs-12 col-sm-12 col-md-6
       -
         label: 'Correo Electrónico:'
         value: daniel@miempresa.cl
