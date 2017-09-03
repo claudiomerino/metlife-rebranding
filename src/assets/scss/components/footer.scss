@@ -34,11 +34,29 @@
 		padding-left: 10px;
 		position: relative;
 		margin-right: 10px;
-		&:last-of-type {
+    &:last-of-type {
 			padding-left: 0;
 			margin-right: 0;
-			&:before {
+			&::before {
 				background-color: transparent;
+			}
+		}
+    &.bullet-item_footer {
+      margin-right: 6px;
+    }
+    &:first-of-type.bullet-item_footer {
+      &::before {
+        background-color: transparent;
+        margin: 0;
+        width: 0;
+        padding: 0;
+      }
+    }
+    &:last-of-type.bullet-item_footer {
+			padding-left: 10px;
+      margin-right: 0;
+			&::before {
+				background-color: $medium-gray;
 			}
 		}
 		p {
