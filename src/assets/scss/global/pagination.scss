@@ -21,6 +21,7 @@
 	.pagination_numbers_item, .pagination_numbers_dots {
     position: relative;
     border: 1px solid $gray;
+    background-color: white;
 		font-size: 14px;
     a, span {
       display: block;
@@ -47,4 +48,5 @@
   .pagination_numbers_dots {
     border: none;
     width: auto;
+    background-color: transparent;
   }
