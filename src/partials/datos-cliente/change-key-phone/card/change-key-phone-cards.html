@@ -24,22 +24,22 @@
 					<div class="login_toggle_content toggleChangePass">
 						<section class="u-field input_responsive">
 							<span class="input input--ichiro">
-								<input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="phone-old" required />
-								<label class="input__label input__label--ichiro" for="phone-old">
+								<input class="input__field input__field--ichiro" data-live-validate="true" type="number" data-max-number="4" id="phoneOld" required />
+								<label class="input__label input__label--ichiro" for="phoneOld">
 									<span class="input__label-content input__label-content--ichiro">Código Telefónico Actual</span>
 								</label>
-								<p class="form-error f-tiny">Código no corresponde.</p>
+								<p class="form-error f-tiny">El valor debe ser menor a 4 dígitos</p>
 							</span>
 						</section>
 
 						<div class="changeNewPass">
 							<section class="u-field u-space">
 								<span class="input input--ichiro">
-								<input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="phone-new" required />
-								<label class="input__label input__label--ichiro" for="phone-new">
+								<input class="input__field input__field--ichiro" data-live-validate="true" type="number" data-max-number="4" id="phoneNew" required />
+								<label class="input__label input__label--ichiro" for="phoneNew">
 									<span class="input__label-content input__label-content--ichiro">Código Telefónico Nuevo</span>
 								</label>
-								<p class="form-error f-tiny">Código no corresponde.</p>
+								<p class="form-error f-tiny">El valor debe ser menor a 4 dígitos</p>
 							</span>
 							</section>
 
@@ -47,17 +47,17 @@
 
 						<section class="u-field u-space">
 							<span class="input input--ichiro">
-								<input class="input__field input__field--ichiro" data-live-validate="true" type="text" id="phone-conf" required />
-								<label class="input__label input__label--ichiro" for="phone-conf">
+								<input class="input__field input__field--ichiro" data-live-validate="true" type="number" data-max-number="4" id="phoneConf" required />
+								<label class="input__label input__label--ichiro" for="phoneConf">
 									<span class="input__label-content input__label-content--ichiro">Confirmación Código Telefónico</span>
 								</label>
-								<p class="form-error f-tiny">Código no corresponde.</p>
+								<p class="form-error f-tiny">El código no coincide</p>
 							</span>
 						</section>
 
 						<div class="u-row no-gutter-xs middle-xs">
 							<div class="col-xs-12 end-xs">
-								<input type="submit" class="button button-small button-full-xs end-sm u-space-2x" value="Cambiar Clave">
+								<input type="submit" class="button button-small button-full-xs end-sm u-space-2x button-disabled ChangeKeyPhoneCardsSubmit" value="Cambiar Clave">
 							</div>
 						</div>
 					</div>
