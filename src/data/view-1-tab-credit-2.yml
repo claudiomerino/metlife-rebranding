@@ -1,7 +1,7 @@
 items:
   -
     openContent: 56
-    restText: 56 / 240
+    restText: Dividendo Nº 56 / 240
     filterDataDesc: paidStateDividend
     caducate:
     state: Pagado
@@ -10,6 +10,9 @@ items:
     total: UF 20.05 / $ 554.865
     striped: u-striped-gray
     dividends:
+      -
+        name: 'Total Dividendo:'
+        value: UF 20 / $ 443.334
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
@@ -40,7 +43,7 @@ items:
         value: UF 3.54 / $ 87.773
   -
     openContent: 55
-    restText: 55 / 240
+    restText: Dividendo Nº 55 / 240
     filterDataDesc: paidStateDividend
     caducate:
     state: Pagado
@@ -49,6 +52,9 @@ items:
     total: UF 20.05 / $ 554.865
     striped:
     dividends:
+      -
+        name: 'Total Dividendo:'
+        value: UF 20 / $ 443.334
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
@@ -79,7 +85,7 @@ items:
         value: UF 3.54 / $ 87.773
   -
     openContent: 54
-    restText: 54 / 240
+    restText: Dividendo Nº 54 / 240
     filterDataDesc: paidStateDividend
     caducate:
     state: Pagado
@@ -88,6 +94,9 @@ items:
     total: UF 20.05 / $ 554.865
     striped: u-striped-gray
     dividends:
+      -
+        name: 'Total Dividendo:'
+        value: UF 20 / $ 443.334
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
@@ -118,7 +127,7 @@ items:
         value: UF 3.54 / $ 87.773
   -
     openContent: 53
-    restText: 53 / 240
+    restText: Dividendo Nº 53 / 240
     filterDataDesc: paidStateDividend
     caducate:
     state: Pagado
@@ -127,6 +136,9 @@ items:
     total: UF 20.05 / $ 554.865
     striped:
     dividends:
+      -
+        name: 'Total Dividendo:'
+        value: UF 20 / $ 443.334
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
@@ -157,7 +169,7 @@ items:
         value: UF 3.54 / $ 87.773
   -
     openContent: 52
-    restText: 52 / 240
+    restText: Dividendo Nº 52 / 240
     filterDataDesc: defeatedStateDividend
     caducate: caducate
     state: Impago
@@ -166,6 +178,9 @@ items:
     total: UF 20.05 / $ 554.865
     striped: u-striped-gray
     dividends:
+      -
+        name: 'Total Dividendo:'
+        value: UF 20 / $ 443.334
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
@@ -196,7 +211,7 @@ items:
         value: UF 3.54 / $ 87.773
   -
     openContent: 51
-    restText: 51 / 240
+    restText: Dividendo Nº 51 / 240
     filterDataDesc: defeatedStateDividend
     caducate: caducate
     state: Impago
@@ -205,6 +220,9 @@ items:
     total: UF 20.05 / $ 554.865
     striped:
     dividends:
+      -
+        name: 'Total Dividendo:'
+        value: UF 20 / $ 443.334
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
@@ -235,7 +253,7 @@ items:
         value: UF 3.54 / $ 87.773
   -
     openContent: 50
-    restText: 50 / 240
+    restText: Dividendo Nº 50 / 240
     filterDataDesc: paidStateDividend
     caducate:
     state: Pagado
@@ -244,6 +262,9 @@ items:
     total: UF 20.05 / $ 554.865
     striped: u-striped-gray
     dividends:
+      -
+        name: 'Total Dividendo:'
+        value: UF 20 / $ 443.334
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
@@ -274,7 +295,7 @@ items:
         value: UF 3.54 / $ 87.773
   -
     openContent: 49
-    restText: 49 / 240
+    restText: Dividendo Nº 49 / 240
     filterDataDesc: paidStateDividend
     caducate:
     state: Pagado
@@ -283,6 +304,9 @@ items:
     total: UF 20.05 / $ 554.865
     striped:
     dividends:
+      -
+        name: 'Total Dividendo:'
+        value: UF 20 / $ 443.334
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
@@ -313,7 +337,7 @@ items:
         value: UF 3.54 / $ 87.773
   -
     openContent: 48
-    restText: 48 / 240
+    restText: Dividendo Nº 48 / 240
     filterDataDesc: defeatedStateDividend
     caducate: caducate
     state: Impago
@@ -322,6 +346,9 @@ items:
     total: UF 20.05 / $ 554.865
     striped: u-striped-gray
     dividends:
+      -
+        name: 'Total Dividendo:'
+        value: UF 20 / $ 443.334
       -
         name: 'Medio de Pago:'
         value: Pago en Línea
