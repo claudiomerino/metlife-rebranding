@@ -95,8 +95,7 @@
 		}
 		tr {
 			&.table-display {
-				align-items: center;
-				display: flex;
+				display: block;
 				td[data-table-title] {
 					&:before {
 						content: none;
@@ -152,6 +151,23 @@
 			.card-gray {
 				border: 0;
 				padding: 0 !important;
+			}
+		}
+	}
+
+	@media screen and ( min-width: 48em ) {
+
+		.table-responsive {
+			tr {
+				&.table-display {
+					align-items: center;
+					display: flex;
+					td[data-table-title] {
+						&:before {
+							content: none;
+						}
+					}
+				}
 			}
 		}
 	}
