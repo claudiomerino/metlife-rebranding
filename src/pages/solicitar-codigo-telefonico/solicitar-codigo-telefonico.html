@@ -1,0 +1,113 @@
+{{> nav-off-canvas}}
+<div class="off-canvas-content" data-off-canvas-content>
+  <div class="double-nav_sticky" data-sticky-container>
+    <div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+      {{> nav-sub}}
+      {{> nav-main}}
+    </div>
+  </div>
+  <section class="bg-white-light">
+    <div class="u-container">
+      <div class="breadcrumb life-apv_breadcrumb">
+        <ul class="u-row middle-xs">
+          <li>
+            <a href="/" class="f-link f-tiny">Inicio</a>
+          </li>
+          <li>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+          <li>
+            <p class="f-tiny">Solicitar código telefónico</p>
+          </li>
+        </ul>
+      </div>
+      <h2 class="client-profile_title center-xs u-space">Solicitar código telefónico</h2>
+      <section class="bg-white-light">
+        <div class="u-container">
+          <section class="client_wrap_container">
+            <p class="f-big tabs-subtitle-profile double_line u-top u-space"><strong>Modificación Código Telefónico</strong></p>
+            <div class="box f-small u-top col-xs-12 col-md-12  u-space">
+              <p>Los datos e información contenida corresponde a aquella proporcionada por el cliente contratante al momento de la contratación del seguro y otorgamiento del crédito según corresponda. El cliente será responsable de comunicar a la Compañía Aseguradora cualquier modificación de sus datos personales, información de contacto, u otro.</p>
+            </div>
+            <div data-toggle-match="changePhone" data-switch="show">
+              <div class="u-row center-xs">
+                <div class="col-xs-12 col-md-4">
+                  <section class="u-field u-space">
+                    <span class="input input--ichiro">
+                      <input class="input__field input__field--ichiro" value="email@email.com" data-live-validate="true" type="email" id="emailChangePhone" readonly="true" ondblclick="this.readOnly='';" />
+                      <label class="input__label input__label--ichiro" for="emailChangePhone">
+                        <span class="input__label-content input__label-content--ichiro">Correo electrónico</span>
+                      </label>
+                      <p class="form-error f-tiny">Debes ingresar un correo electrónico válido</p>
+                    </span>
+                  </section>
+                  <section class="u-field u-space">
+                    <span class="input input--ichiro">
+                      <input class="input__field input__field--ichiro" value="3133456578" data-live-validate="true" type="number" id="cellphoneChangePhone" readonly="true" ondblclick="this.readOnly='';" />
+                      <label class="input__label input__label--ichiro" for="cellphoneChangePhone">
+                        <span class="input__label-content input__label-content--ichiro">Celular</span>
+                      </label>
+                    </span>
+                  </section>
+                  <div>
+                    <a href="#" class="button button-small button-full-xs ChangePhoneSubmit">Solicitar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Request change phone -->
+            <div data-toggle-match="changePhone" data-switch="hide">
+              <div class="u-row center-xs">
+                <div class="col-xs-12 col-md-4">
+                  <div class="loading loadingChangePhone">
+                    <p class="f-big tabs-subtitle-profile"><strong>Información</strong></p>
+                    <p>El código se envío a las siguientes direcciones:</p>
+                    <p><strong>Correo:</strong> dllanos@metlife.cl</p>
+                    <p><strong>Nº de teléfono:</strong> 5481307</p>
+                    <p class="loading_message center-xs"><strong>Estamos Procesando tu Solicitud</strong></p>
+                    <div class="sk-fading-circle">
+                      <div class="sk-circle1 sk-circle"></div>
+                      <div class="sk-circle2 sk-circle"></div>
+                      <div class="sk-circle3 sk-circle"></div>
+                      <div class="sk-circle4 sk-circle"></div>
+                      <div class="sk-circle5 sk-circle"></div>
+                      <div class="sk-circle6 sk-circle"></div>
+                      <div class="sk-circle7 sk-circle"></div>
+                      <div class="sk-circle8 sk-circle"></div>
+                      <div class="sk-circle9 sk-circle"></div>
+                      <div class="sk-circle10 sk-circle"></div>
+                      <div class="sk-circle11 sk-circle"></div>
+                      <div class="sk-circle12 sk-circle"></div>
+                    </div>
+                  </div>
+                  <div class="alert alert-success loading u-space hide-xs successChangePhone">
+                    <p class="alert_desc center-xs">
+                      <strong>Tu clave de acceso ha sido cambiada con éxito.</strong> Redireccionando a la página principal
+                      <div class="sk-fading-circle">
+                        <div class="sk-circle1 sk-circle"></div>
+                        <div class="sk-circle2 sk-circle"></div>
+                        <div class="sk-circle3 sk-circle"></div>
+                        <div class="sk-circle4 sk-circle"></div>
+                        <div class="sk-circle5 sk-circle"></div>
+                        <div class="sk-circle6 sk-circle"></div>
+                        <div class="sk-circle7 sk-circle"></div>
+                        <div class="sk-circle8 sk-circle"></div>
+                        <div class="sk-circle9 sk-circle"></div>
+                        <div class="sk-circle10 sk-circle"></div>
+                        <div class="sk-circle11 sk-circle"></div>
+                        <div class="sk-circle12 sk-circle"></div>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="center-xs f-legal u-section">
+            {{> legal }}
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+</div>

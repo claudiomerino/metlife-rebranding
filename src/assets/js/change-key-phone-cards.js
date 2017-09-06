@@ -3,6 +3,8 @@
 	const $phoneOld = $('#phoneOld')
 	const $phoneNew = $('#phoneNew')
 	const $phoneConf = $('#phoneConf')
+	const $emailChangePhone = $('#emailChangePhone')
+	const $ChangePhoneSubmit = $('.ChangePhoneSubmit')
 
 	let $phoneNewValue
 	let $phoneConfValue
@@ -21,6 +23,31 @@
 		changePhoneCard($phoneConf)
 		$phoneConfValue = $phoneConf.val()
 		submitPhoneCard()
+	})
+
+	$emailChangePhone.on('keydown', (e) => {
+		setTimeout(() => {
+			const $emailChangePhoneValue = $(e.currentTarget).val()
+			validateEmail($emailChangePhoneValue, $(e.currentTarget))
+		}, 1000)
+	})
+
+	$ChangeKeyPhoneCardsSubmit.on('click', (e) => {
+		if( $(e.currentTarget).hasClass('button-disabled') ) {
+			e.preventDefault()
+		}
+	})
+
+	$ChangePhoneSubmit.on('click', (e) => {
+		e.preventDefault()
+		switchContent('changePhone')
+		setTimeout( () => {
+			$('.loadingChangePhone').addClass('hide-xs')
+			$('.successChangePhone').removeClass('hide-xs')
+			setTimeout( () => {
+				window.location.replace('./../datos-cliente/datos-cliente.html#parentHorizontalTab3')
+			}, 1000)
+		}, 3000)
 	})
 
 	function changePhoneCard(element) {
