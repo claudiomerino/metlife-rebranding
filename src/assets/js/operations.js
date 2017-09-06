@@ -1,5 +1,5 @@
-
 	let $Bounty = $( '.Bounty' );
+	let $BountyRowWrap = $( '.BountyRowWrap' );
 	let $Total = $( '.Total' );
 	let $BountyValueUF = $('.BountyValueUF')
 	let $BountyValueConvertUF = $('.BountyValueConvertUF')
@@ -27,7 +27,8 @@
 	$($Bounty).on('change', (ev) => {
 
 		if( $(ev.currentTarget).is(':checked') ) {
-			$(ev.currentTarget).closest('.BountyRow').next().find('input.Bounty').attr('disabled', false)
+			$(ev.currentTarget).closest('.BountyRow').addClass('BountyRowActive')
+			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyRowActive').next().find('input.Bounty').attr('disabled', false)
 			let sumTotal = 0;
 
 			$Bounty.each( (index, data) => {
@@ -42,7 +43,9 @@
 		}
 
 		else {
-			$(ev.currentTarget).closest('.BountyRow').nextAll().find('input.Bounty').attr('disabled', true)
+			$(ev.currentTarget).closest('.BountyRowActive').nextAll().find('input.Bounty').attr('disabled', true)
+			$(ev.currentTarget).closest('.BountyRow').removeClass('BountyRowActive')
+			$(ev.currentTarget).closest('.BountyRow').nextAll().removeClass('BountyRowActive')
 
 			let sumTotal = numeral($BountyValueUF.text()).format( '0,0.00' )
 
@@ -70,11 +73,13 @@
 
 	})
 
- 	$Bounty.each( (index, data) => {
+ 	$BountyRowWrap.each( (index, data) => {
 
- 		if(index === 0 ) {
- 			$(data).attr('disabled', false)
- 		}
+ 		$( $(data).find('.BountyRow')[0] ).find('input.Bounty').attr('disabled', false)
+
+ 	})
+
+ 	$Bounty.each( (index, data) => {
 
  		$(data).addClass('BountyValue-' + index)
 
