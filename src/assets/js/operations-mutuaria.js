@@ -18,51 +18,37 @@
 
 		let sumTotal = 0;
 
-		$SumInput.each( (index, data) => {
+		$(ev.currentTarget).closest('.BountyRowWrap').find('.SumInput').each( (index, data) => {
 			const $data = $(data)
-
-			console.log($data.is(':checked'), 'checked')
 
 			if( $data.is(':checked') ) {
 				sumTotal += parseFloat( $( data ).data('value-sum-uf') )
 
-				$SumTotalUF.text( numeral(sumTotal).format( '0,0.00' ) )
-				$SumTotalPeso.text( numeral( sumTotal * UFVALUE ).format('0,0') )
+				$(ev.currentTarget).closest('.BountyRowWrap').find('.SumTotalUF').text( numeral(sumTotal).format( '0,0.00' ) )
+				$(ev.currentTarget).closest('.BountyRowWrap').find('.SumTotalPeso').text( numeral( sumTotal * UFVALUE ).format('0,0') )
 
 				setTimeout( () => {
 					if($data.attr('disabled') == 'disabled') {
 						sumTotal -= parseFloat( $( data ).data('value-sum-uf') )
 						console.log($( data ).data('value-sum-uf'), 'sumTotal bounty')
 					}
-						if ($(".BountyRowWrap .SumInput:checkbox:checked").length > 0)
-						{
-							console.log('hay checkado uno')
-						    // any one is checked
-						}
-						else {
-							sumTotal = 0
-							console.log('NO hay checkado uno')
 
-						}
+					if ($(ev.currentTarget).closest('.BountyRowWrap').find(".SumInput:checkbox:checked").length <= 0) {
+						sumTotal = 0
+					}
 
-						$SumTotalUF.text( numeral(sumTotal).format( '0,0.00' ) )
-						$SumTotalPeso.text( numeral( sumTotal * UFVALUE ).format('0,0') )
+					$(ev.currentTarget).closest('.BountyRowWrap').find('.SumTotalUF').text( numeral(sumTotal).format( '0,0.00' ) )
+					$(ev.currentTarget).closest('.BountyRowWrap').find('.SumTotalPeso').text( numeral( sumTotal * UFVALUE ).format('0,0') )
+
 				}, 10)
 			}
 			else {
-				if ($(".BountyRowWrap .SumInput:checkbox:checked").length > 0)
-				{
-					console.log('hay checkado uno')
-				    // any one is checked
-				}
-				else {
+				if ($(ev.currentTarget).closest('.BountyRowWrap').find(".SumInput:checkbox:checked").length <= 0) {
 					sumTotal = 0
 					console.log('NO hay checkado uno')
-					$SumTotalUF.text( numeral(sumTotal).format( '0,0.00' ) )
-					$SumTotalPeso.text( numeral( sumTotal * UFVALUE ).format('0,0') )
-
+					$(ev.currentTarget).closest('.BountyRowWrap').find('.SumTotalUF').text( numeral(sumTotal).format( '0,0.00' ) )
+					$(ev.currentTarget).closest('.BountyRowWrap').find('.SumTotalPeso').text( numeral( sumTotal * UFVALUE ).format('0,0') )
 				}
-
 			}
 
 		})
