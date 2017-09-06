@@ -55,9 +55,9 @@
 									<i class="fa fa-angle-down" aria-hidden="true"></i>
 								</a>
 								<section class="toggleContent" data-toggle-content="openChartMoreInfo-${UID}-${key}">
-									<p class="table_label_title "><strong><br>Teléfono:</strong> ${ dataPhone[key] }</p>
-									<p class="table_label_title "><strong>Dirección:</strong> ${ dataAddress[key] }</p>
-									<p class="table_label_title "><strong>Correo Electrónico:</strong> ${ dataEmail[key] }</p>
+									<p class="table_label_title f-small "><strong><br>Teléfono:</strong> ${ dataPhone[key] }</p>
+									<p class="table_label_title f-small"><strong>Dirección:</strong> ${ dataAddress[key] }</p>
+									<p class="table_label_title f-small"><strong>Correo Electrónico:</strong> ${ dataEmail[key] }</p>
 								</section>
 							</td>
 				      <td class="table-2 center-sm" valign="middle">
