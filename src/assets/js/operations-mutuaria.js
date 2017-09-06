@@ -23,10 +23,22 @@
 
 			if( $data.is(':checked') ) {
 				sumTotal += parseFloat( $( data ).data('value-sum-uf') )
+
+				console.log($data, '$data')
+				$SumTotalUF.text( numeral(sumTotal).format( '0,0.00' ) )
+				$SumTotalPeso.text( numeral( sumTotal * UFVALUE ).format('0,0') )
+
+				setTimeout( () => {
+					if($data.attr('disabled') == 'disabled') {
+						sumTotal -= parseFloat( $( data ).data('value-sum-uf') )
+						$SumTotalUF.text( numeral(sumTotal).format( '0,0.00' ) )
+						$SumTotalPeso.text( numeral( sumTotal * UFVALUE ).format('0,0') )
+						console.log($( data ).data('value-sum-uf'), 'sumTotal bounty')
+					}
+				}, 10)
 			}
+
 		})
 
-		$SumTotalUF.text( numeral(sumTotal).format( '0,0.00' ) )
-		$SumTotalPeso.text( numeral( sumTotal * UFVALUE ).format('0,0') )
 
 	})

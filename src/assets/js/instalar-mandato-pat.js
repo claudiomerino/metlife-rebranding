@@ -2,11 +2,8 @@
 ( function( $ ) {
 
 	const $DataSelectPolizaSubmit = $('.DataSelectPolizaSubmit');
-	console.log('instalar mandato');
-
 
 	[].slice.call( document.querySelectorAll( 'select.DataSelectPoliza.cs-select' ) ).forEach( (el) => {
-		console.log(el, 'element instalar mandato')
 
 	  const options = {
 	    onChange : function( val ) {
@@ -16,7 +13,6 @@
 				else {
 					$DataSelectPolizaSubmit.removeClass('button-disabled')
 				}
-	      console.log(val, 'value sdnk nsd')
 	    }
 	  }
 	  new SelectFx(el, options);
