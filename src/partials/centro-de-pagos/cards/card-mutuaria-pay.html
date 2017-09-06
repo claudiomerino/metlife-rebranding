@@ -2,66 +2,99 @@
 
 	<div class="card card-green card_container z-depth-2">
     <form class="InputCurrencyForm">
-  		<div class="u-row">
-  			<div class="col-xs-12 u-space">
-  				<p class="f-small"><em>Mutuaria</em></p>
-  				<h5 class="card_title"><strong>Crédito Mutuo Hipotecario</strong></h5>
-  				<p><strong>Crédito N°:</strong>0056705543-A</p>
-  			</div>
-
-        <div class="col-xs-12 col-sm-6 col-md-2 u-space-md">
-          <p class="line_jump table_title"><strong>Dividendo a Pagar:</strong></p>
-          <p class="line_jump">56 / 255</p>
-          <a data-open-content="payDetail" class="openContent">
-            <span class="openContentText u-top u-space" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span> <i class="fa fa-angle-down" aria-hidden="true"></i>
-          </a>
+      <div class="u-row">
+        <div class="col-xs-12 u-space">
+          <p class="f-small"><em>Mutuaria</em></p>
+          <h5 class="card_title"><strong>Crédito Mutuo Hipotecario</strong></h5>
+          <p><strong>Crédito N°:</strong>0056705543-A</p>
         </div>
+      </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-3 u-space-md">
-
-          <p class="line_jump table_title"><strong>Fecha Próximo Vencimiento:</strong></p>
-          <p class="line_jump">26/06/2017 (en 3 días más)</p>
+      <div class="u-row u-space-small">
+        <div class="col-xs-12 col-md-2 u-divider-bottom"><p class="f-small"><strong>Crédito</strong></p></div>
+        <div class="col-xs-12 col-md-2 hide-xs show-md u-divider-bottom"><p class="f-small"><strong>Dividendo a Pagar</strong></p></div>
+        <div class="col-xs-12 col-md-3 hide-xs show-md u-divider-bottom"><p class="f-small"><strong>Fecha Próximo Vencimiento</strong></p></div>
+        <div class="col-xs-12 col-md-3 hide-xs show-md u-divider-bottom"><p class="f-small"><strong>Monto Pago Disponible</strong></p>
         </div>
+        <div class="col-xs-12 col-md-2 hide-xs show-md u-divider-bottom"><p class="f-small"><strong>Monto Total a Pagar</strong></p>
+        </div>
+      </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-5 u-space-md">
-          <div class="u-row">
-            <div class="col-sm-6 col-md-6 u-space">
-              <p class="line_jump"><strong>Monto Pago Mínimo / Máximo:</strong></p>
-              <p class="line_jump">$180.000 / $550.000</p>
+      <!-- BountyRowWrap -->
+      <div class="BountyRowWrap">
+    		<div class="u-row BountyRow">
+
+          <div class="col-xs-12 col-sm-6 col-md-2 u-space-md bounty_col">
+            <p>
+              <input type="checkbox" name="" disabled class="Bounty SumInput" data-value-sum-uf="5.44">
+              <span class="bounty_col_label u-left"><strong>Crédito</strong></span>
+              <span class="f-small">Nº 1</span>
+            </p>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-2 u-space-md bounty_col">
+            <p class="line_jump table_title"><strong>Dividendo a Pagar:</strong></p>
+            <p class="line_jump">56 / 255</p>
+            <a data-open-content="payDetail" class="openContent">
+              <span class="openContentText u-top u-space" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span> <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3 u-space-md bounty_col">
+            <p class="line_jump table_title"><strong>Fecha Próximo Vencimiento:</strong></p>
+            <p class="line_jump">26/06/2017 (en 3 días más)</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-5 u-space-md bounty_col">
+            <div class="u-row">
+              <div class="col-sm-6 col-md-6 u-space">
+                <p class="line_jump"><strong>Monto Pago Mínimo / Máximo:</strong></p>
+                <p class="line_jump">$180.000 / $550.000</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 u-space-small top-xs">
+                <span class="input input--ichiro input--ichiro--currency">
+                  <input class="input__field input__field--ichiro InputCurrency" data-live-validate="true" min="180000" max="550000" placeholder="0" type="text" required>
+                </span>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 u-space-small top-xs">
-              <span class="input input--ichiro input--ichiro--currency">
-                <input class="input__field input__field--ichiro InputCurrency" data-live-validate="true" min="180000" max="550000" placeholder="0" type="text" required>
-              </span>
+          </div>
+
+          <div class="col-xs-12 toggleContent bounty_col" data-toggle-content="payDetail">
+            <p><strong>Detalle del cobro</strong></p>
+            <div class="u-row card-gray">
+              <div class="col-xs-12 col-sm-6 col-md-3 u-space">
+                <strong>Amortización:</strong>
+                <br>UF 200
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 u-space">
+                <strong>Interés Pagado:</strong>
+                <br>$ 3.433.344
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 u-space">
+                <strong>Interés Mora:</strong>
+                <br>$ 0
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 u-space">
+                <strong>Total:</strong>
+                <br>$ 444.443
+              </div>
+            </div>
+          </div>
+    		</div>
+        <div class="u-divider u-row u-top">
+          <div class="col-xs-12 col-md-2"></div>
+          <div class="col-xs-12 col-md-3"></div>
+          <div class="col-xs-12 col-md-2"></div>
+          <div class="col-xs-12 col-md-5 end-xs end-md u-right u-top"><p><strong>Monto Total a Pagar: UF <span class="BountyValueUF">0</span> / $ <span class="BountyValueConvertUF">0</span></strong></p></div>
+          <div class="end-xs col-xs-12 u-top u-space-small">
+            <div class="col-xs-12">
+              <a href="#" class="button button-small button-full-xs button-disabled InputCurrencyButton">Pagar en Línea</a>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-md-2 end-xs">
-            <a href="#pay-online" class="button button-small button-full-xs button-disabled InputCurrencyButton">Pagar en Línea </a>
-        </div>
+      </div>
 
-        <div class="col-xs-12 toggleContent" data-toggle-content="payDetail">
-          <p><strong>Detalle del cobro</strong></p>
-          <div class="u-row card-gray">
-            <div class="col-xs-12 col-sm-6 col-md-3 u-space">
-              <strong>Amortización:</strong>
-              <br>UF 200
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 u-space">
-              <strong>Interés Pagado:</strong>
-              <br>$ 3.433.344
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 u-space">
-              <strong>Interés Mora:</strong>
-              <br>$ 0
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 u-space">
-              <strong>Total:</strong>
-              <br>$ 444.443
-            </div>
-          </div>
-        </div>
-  		</div>
+      <!-- / BountyRowWrap -->
     </form>
 
 		<p class="col-xs-12 end-xs u-top">
