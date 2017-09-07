@@ -9,7 +9,7 @@ items:
         value: 0056705543-A
         classCols: col-xs-12 col-sm-6 col-md-3
       -
-        label: 'Fecha de inicio Vigencia:'
+        label: 'Fecha de Inicio Vigencia:'
         value: 15/09/1995
         classCols: col-xs-12 col-sm-6 col-md-3
       -
@@ -108,7 +108,7 @@ items:
         value2: +56 223 344 670 (Celular)
         classCols: col-xs-12 col-sm-6 col-md-3
       -
-        label: 'Dirección Comercial'
+        label: 'Dirección Alternativa'
         value: 'Avda. Vitacura 5885, Of 2001. CP: 7540000'
         classCols: col-xs-12 col-sm-12 col-md-6
       -
@@ -121,6 +121,6 @@ items:
         value2: +56 223 344 670 (Celular)
         classCols: col-xs-12 col-sm-6 col-md-3
       -
-        label: 'Dirección Para Envío de la Correspondencia:'
+        label: 'Dirección para Envío de la Correspondencia:'
         value: Dirección Particular
         classCols: col-xs-12 col-sm-6 col-md-6
