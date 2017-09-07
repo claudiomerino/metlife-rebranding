@@ -15,6 +15,10 @@
 				const value = $(el).val()
 				const min = parseInt( $(el).attr('min') )
 				const max = parseInt( $(el).attr('max') )
+
+				$(e.currentTarget).closest('.BountyRow').find('.Bounty.SumInput').data('value-sum-uf', value)
+				changeSumInputFn($(e.currentTarget).closest('.BountyRow').find('.Bounty.SumInput'));
+
 				$(el).attr('normal-value', numeral(value).format('0'))
 
 				const normalValue = parseInt($(el).attr('normal-value'))
