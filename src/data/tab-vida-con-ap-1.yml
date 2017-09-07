@@ -12,7 +12,7 @@ items:
         edit: 'false'
       -
         id: 2
-        label: 'Fecha de inicio Vigencia:'
+        label: 'Fecha de Inicio Vigencia:'
         value: 15/09/1995
         classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'false'
@@ -146,7 +146,7 @@ items:
         edit: 'true'
       -
         id: 21
-        label: 'Dirección Comercial'
+        label: 'Dirección Alternativa'
         value: 'Avda. Vitacura 5885, Of 2001. CP: 7540000'
         classCols: col-xs-12 col-sm-6 col-md-6
         edit: 'true'
@@ -165,7 +165,7 @@ items:
         edit: 'true'
       -
         id: 24
-        label: 'Dirección Para Envío de la Correspondencia:'
+        label: 'Dirección para Envío de la Correspondencia:'
         value: Dirección Particular
         classCols: col-xs-12 col-sm-6 col-md-6
         edit: 'true'
