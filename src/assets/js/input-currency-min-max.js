@@ -1,6 +1,15 @@
 
 	let $inputCurrency = $('input.InputCurrency')
 	let $InputCurrencyButton = $('.InputCurrencyButton')
+	let $InputCurrencyButtonDefault = $('.BountyRowDefault .SumInput')
+
+	$InputCurrencyButtonDefault.on('click', (e) => {
+
+		console.log('suminpu click')
+
+    InputCurrencyChangeFn(e)
+
+	})
 
 	$inputCurrency.on( 'keydown', (e) => {
 
@@ -8,22 +17,35 @@
 			return false;
     }
 
+    InputCurrencyChangeFn(e)
+
+	})
+
+	function InputCurrencyChangeFn(e) {
+
 
     setTimeout( () => {
 			let $ArrayInputCurrency = $(e.currentTarget).closest('.InputCurrencyForm').find('.InputCurrency')
-
 			let valueSumUF = 0
 
 			$ArrayInputCurrency.each( (index, el) => {
 				const value = $(el).val()
 				const min = parseInt( $(el).attr('min') )
 				const max = parseInt( $(el).attr('max') )
+				console.log(value, 'value sd')
+				console.log(value, 'value sd')
 				if(value) {
 					if($(e.currentTarget).closest('.BountyRow').find('.Bounty').is(':checked')) {
 
 						$(e.currentTarget).attr('disabled', false)
 
 						valueSumUF += parseInt($(el).val().replace(/\,/g,''))
+						if($(e.currentTarget).closest('.InputCurrencyForm').find('.BountyRowDefault').find('.SumInput').is(':checked')) {
+						}
+						else {
+							console.log($(el).val().replace(/\,/g,''), ' no esta checked el default')
+						}
+						console.log(valueSumUF, 'valueSumUF sd')
 
 						$(e.currentTarget).closest('.BountyRow').find('.Bounty').data('value-sum-uf', valueSumUF)
 
@@ -36,7 +58,18 @@
 
 
 					} else {
-						$(e.currentTarget).attr('disabled', true)
+						if($(e.currentTarget).hasClass('BountyRowDefaultSumInput')) {
+							if($(e.currentTarget).closest('.InputCurrencyForm').find('.BountyRowDefault').find('.SumInput').is(':checked')) {
+								console.log('checked Bounty')
+							}
+							else {
+								$(e.currentTarget).attr('disabled', false)
+							}
+						}
+						else {
+							console.log('NO TIENE BountyRowDefaultSumInput')
+							$(e.currentTarget).attr('disabled', true)
+						}
 					}
 				}
 
@@ -68,7 +101,7 @@
 
     }, 1000)
 
-	})
+	}
 
 	$InputCurrencyButton.bind('click', (e) => {
 		e.preventDefault()

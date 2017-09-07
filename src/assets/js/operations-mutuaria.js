@@ -81,9 +81,8 @@
 					}, 10)
 				}
 				else {
-					console.log($(ev.context), 'entre else checked')
 					$(ev.context).closest('.BountyRow').find(".InputCurrency").val(0)
-					$(ev.context).closest('.BountyRow').nextAll().find(".InputCurrency").val(0)
+					$(ev.context).closest('.BountyRow').nextUntil('.BountyRowDefault').find(".InputCurrency").val(0)
 					if ($(ev.context).closest('.BountyRowWrap').find(".Bounty:checkbox:checked").length <= 0) {
 						sumTotal = 0
 						$(ev.context).closest('.BountyRowWrap').find('.SumTotalUF').text( numeral(sumTotal).format( '0,0.00' ) )
