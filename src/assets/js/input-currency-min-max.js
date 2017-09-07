@@ -8,15 +8,23 @@
 			return false;
     }
 
+
     setTimeout( () => {
 			let $ArrayInputCurrency = $(e.currentTarget).closest('.InputCurrencyForm').find('.InputCurrency')
+
+			let valueSumUF = 0
 
 			$ArrayInputCurrency.each( (index, el) => {
 				const value = $(el).val()
 				const min = parseInt( $(el).attr('min') )
 				const max = parseInt( $(el).attr('max') )
+				if(value) {
+					console.log($(el).val().replace(/\,/g,''), 'value currency')
+					valueSumUF += parseInt($(el).val().replace(/\,/g,''))
+					console.log(valueSumUF, 'valueSumUF value currency')
+					$(e.currentTarget).closest('.BountyRow').find('.Bounty.SumInput').data('value-sum-uf', valueSumUF)
+				}
 
-				$(e.currentTarget).closest('.BountyRow').find('.Bounty.SumInput').data('value-sum-uf', value)
 				changeSumInputFn($(e.currentTarget).closest('.BountyRow').find('.Bounty.SumInput'));
 
 				$(el).attr('normal-value', numeral(value).format('0'))

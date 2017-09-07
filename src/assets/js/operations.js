@@ -39,8 +39,6 @@
 				}
 			})
 
-			console.log('entra si', sumTotal)
-
 			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyValueUF').text( numeral(sumTotal).format( '0,0.00' ) )
 			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyValueConvertUF').text( numeral( sumTotal * UFVALUE ).format('0,0') )
 		}
