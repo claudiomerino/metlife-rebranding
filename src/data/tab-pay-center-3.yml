@@ -1,6 +1,8 @@
 primas:
   -
     openContent: feb-2017
+    filterDataName: product1
+    filterDataDesc: pac
     restText: Más información
     openText: Menos información
     producto: MetLife Salud Full Protección.
@@ -12,6 +14,8 @@ primas:
     striped: u-striped-gray
   -
     openContent: ene-2017
+    filterDataName: product2
+    filterDataDesc: pac
     restText: Más información
     openText: Menos información
     producto: MetLife Seguro Protección Accidental Básico.
@@ -22,6 +26,8 @@ primas:
     amount: UF 2,35 / $55.556
   -
     openContent: dic-2016
+    filterDataName: product1
+    filterDataDesc: pac
     restText: Más información
     openText: Menos información
     producto: MetLife Salud Full Protección.
@@ -33,6 +39,8 @@ primas:
     striped: u-striped-gray
   -
     openContent: nov-2016
+    filterDataName: product1
+    filterDataDesc: pac
     restText: Más información
     openText: Menos información
     producto: MetLife Salud Full Protección.
@@ -43,6 +51,8 @@ primas:
     amount: UF 2,35 / $55.556
   -
     openContent: oct-2016
+    filterDataName: product1
+    filterDataDesc: pac
     restText: Más información
     openText: Menos información
     producto: MetLife Salud Full Protección.
@@ -54,6 +64,8 @@ primas:
     striped: u-striped-gray
   -
     openContent: sep-2016
+    filterDataName: product1
+    filterDataDesc: pac
     restText: Más información
     openText: Menos información
     producto: MetLife Salud Full Protección.
@@ -64,6 +76,8 @@ primas:
     amount: UF 2,35 / $55.556
   -
     openContent: ago-2016
+    filterDataName: product1
+    filterDataDesc: pac
     restText: Más información
     openText: Menos información
     producto: MetLife Salud Full Protección.
@@ -75,6 +89,8 @@ primas:
     striped: u-striped-gray
   -
     openContent: jul-2016
+    filterDataName: product1
+    filterDataDesc: pac
     restText: Más información
     openText: Menos información
     producto: MetLife Salud Full Protección.
@@ -85,22 +101,26 @@ primas:
     amount: UF 2,35 / $55.556
   -
     openContent: jun-2016
+    filterDataName: product1
+    filterDataDesc: other
     restText: Más información
     openText: Menos información
     producto: MetLife Salud Full Protección.
     poliza: 076656-54
     coverage: Junio 2016
     date: 05/06/2016
-    pay: PAC
+    pay: Otro
     amount: UF 2,35 / $55.556
     striped: u-striped-gray
   -
     openContent: may-2016
+    filterDataName: product1
+    filterDataDesc: other
     restText: Más información
     openText: Menos información
     producto: MetLife Salud Full Protección.
     poliza: 076656-54
     coverage: Mayo 2016
     date: 05/05/2016
-    pay: PAC
+    pay: Otro
     amount: UF 2,35 / $55.556
