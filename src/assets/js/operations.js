@@ -25,21 +25,22 @@
 
 
 	$($Bounty).on('change', (ev) => {
+		console.log(ev, 'Bounty')
 
 		if( $(ev.currentTarget).is(':checked') ) {
 			$(ev.currentTarget).closest('.BountyRow').addClass('BountyRowActive')
 			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyRowActive').next().find('input.Bounty').attr('disabled', false)
 			let sumTotal = 0;
 
-			$Bounty.each( (index, data) => {
+			$(ev.currentTarget).closest('.BountyRowWrap').find('.Bounty').each( (index, data) => {
 				const $BountyValue = $(data)
 				if( $BountyValue.is(':checked') ) {
 					sumTotal += parseFloat( $( data ).data('value-uf') )
 				}
 			})
 
-			$BountyValueUF.text( numeral(sumTotal).format( '0,0.00' ) )
-			$BountyValueConvertUF.text( numeral( sumTotal * UFVALUE ).format('0,0') )
+			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyValueUF').text( numeral(sumTotal).format( '0,0.00' ) )
+			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyValueConvertUF').text( numeral( sumTotal * UFVALUE ).format('0,0') )
 		}
 
 		else {
@@ -47,12 +48,12 @@
 			$(ev.currentTarget).closest('.BountyRow').removeClass('BountyRowActive')
 			$(ev.currentTarget).closest('.BountyRow').nextAll().removeClass('BountyRowActive')
 
-			let sumTotal = numeral($BountyValueUF.text()).format( '0,0.00' )
+			let sumTotal = numeral($(ev.currentTarget).closest('.BountyRowWrap').find('.BountyValueUF').text()).format( '0,0.00' )
 
 			sumTotal -= numeral( $(ev.currentTarget).data('value-uf') ).format( '0,0.00' )
 
-			$BountyValueUF.text( numeral(sumTotal).format( '0,0.00' ) )
-			$BountyValueConvertUF.text( numeral( sumTotal * UFVALUE ).format('0,0') )
+			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyValueUF').text( numeral(sumTotal).format( '0,0.00' ) )
+			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyValueConvertUF').text( numeral( sumTotal * UFVALUE ).format('0,0') )
 
 			let $arrayNextAll = $(ev.currentTarget).closest('.BountyRow').nextAll().find('input.Bounty').toArray()
 
@@ -62,8 +63,8 @@
 
 					sumTotal = numeral(sumTotal).format( '0,0.00' ) - $nextAllValueUf
 
-					$BountyValueUF.text( numeral(sumTotal).format( '0,0.00' ) )
-					$BountyValueConvertUF.text( numeral( sumTotal * UFVALUE ).format('0,0') )
+					$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyValueUF').text( numeral(sumTotal).format( '0,0.00' ) )
+					$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyValueConvertUF').text( numeral( sumTotal * UFVALUE ).format('0,0') )
 				}
 			})
 
