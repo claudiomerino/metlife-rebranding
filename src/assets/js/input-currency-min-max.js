@@ -19,13 +19,27 @@
 				const min = parseInt( $(el).attr('min') )
 				const max = parseInt( $(el).attr('max') )
 				if(value) {
-					console.log($(el).val().replace(/\,/g,''), 'value currency')
-					valueSumUF += parseInt($(el).val().replace(/\,/g,''))
-					console.log(valueSumUF, 'valueSumUF value currency')
-					$(e.currentTarget).closest('.BountyRow').find('.Bounty.SumInput').data('value-sum-uf', valueSumUF)
+					if($(e.currentTarget).closest('.BountyRow').find('.Bounty').is(':checked')) {
+
+						$(e.currentTarget).attr('disabled', false)
+
+						valueSumUF += parseInt($(el).val().replace(/\,/g,''))
+
+						$(e.currentTarget).closest('.BountyRow').find('.Bounty').data('value-sum-uf', valueSumUF)
+
+						const numberSumTotal = numeral(valueSumUF);
+						const numberUFVALUE = UFVALUE
+						const numberTotalBounty = numberSumTotal.divide(numberUFVALUE);
+
+						$(e.currentTarget).closest('.BountyRowWrap').find('.SumTotalUF').text( numeral(numberTotalBounty._value).format( '0,0.00' ) )
+						$(e.currentTarget).closest('.BountyRowWrap').find('.SumTotalPeso').text( numeral( valueSumUF ).format('0,0') )
+
+
+					} else {
+						$(e.currentTarget).attr('disabled', true)
+					}
 				}
 
-				changeSumInputFn($(e.currentTarget).closest('.BountyRow').find('.Bounty.SumInput'));
 
 				$(el).attr('normal-value', numeral(value).format('0'))
 

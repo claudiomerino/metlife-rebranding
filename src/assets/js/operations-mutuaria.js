@@ -19,13 +19,9 @@
 
 	function changeSumInputFn (ev) {
 
-		let dataValue
 		let sumTotal = 0;
 
 		if($(ev.currentTarget).length == 1) {
-
-					console.log('mayor a 1')
-			dataValue = $(ev.currentTarget).data('value-sum-uf')
 
 			$(ev.currentTarget).closest('.BountyRowWrap').find('.SumInput').each( (index, data) => {
 				const $data = $(data)
@@ -60,24 +56,14 @@
 
 			})
 		}
+
 		else {
-			dataValue = $(ev).data('value-sum-uf')
-			$(ev).closest('.BountyRowWrap').find('.SumInput').each( (index, data) => {
+			$(ev.context).closest('.BountyRowWrap').find('.Bounty').each( (index, data) => {
 				const $data = $(data)
-				console.log($data, 'data')
 
 				if( $data.is(':checked') ) {
-					console.log('entra')
+					console.log('entre checked')
 					sumTotal += $( data ).data('value-sum-uf')
-					console.log($( data ).data('value-sum-uf'), '$data number')
-					console.log(sumTotal, 'sumTotal')
-
-					const numberSumTotal = numeral($( data ).data('value-sum-uf'));
-					const numberUFVALUE = UFVALUE
-					const numberTotalBounty = numberSumTotal.divide(numberUFVALUE);
-
-					$(ev).closest('.BountyRowWrap').find('.SumTotalUF').text( numeral(numberTotalBounty._value).format( '0,0.00' ) )
-					$(ev).closest('.BountyRowWrap').find('.SumTotalPeso').text( numeral( $( data ).data('value-sum-uf') ).format('0,0') )
 
 					setTimeout( () => {
 						if($data.attr('disabled') == 'disabled') {
@@ -85,25 +71,27 @@
 							console.log($( data ).data('value-sum-uf'), 'sumTotal bounty')
 						}
 
-						if ($(ev).closest('.BountyRowWrap').find(".SumInput:checkbox:checked").length <= 0) {
+						if ($(ev.context).closest('.BountyRowWrap').find(".Bounty:checkbox:checked").length <= 0) {
 							sumTotal = 0
 						}
 
-						$(ev).closest('.BountyRowWrap').find('.SumTotalUF').text( numeral(numberTotalBounty._value).format( '0,0.00' ) )
-						$(ev).closest('.BountyRowWrap').find('.SumTotalPeso').text( numeral( $( data ).data('value-sum-uf') ).format('0,0') )
+						$(ev.context).closest('.BountyRowWrap').find('.SumTotalUF').text( numeral(sumTotal).format( '0,0.00' ) )
+						$(ev.context).closest('.BountyRowWrap').find('.SumTotalPeso').text( numeral( sumTotal ).format('0,0') )
 
 					}, 10)
 				}
 				else {
-					console.log('entra else')
-					if ($(ev).closest('.BountyRowWrap').find(".SumInput:checkbox:checked").length <= 0) {
-					console.log('entra < length')
+					console.log($(ev.context), 'entre else checked')
+					$(ev.context).closest('.BountyRow').find(".InputCurrency").val(0)
+					$(ev.context).closest('.BountyRow').nextAll().find(".InputCurrency").val(0)
+					if ($(ev.context).closest('.BountyRowWrap').find(".Bounty:checkbox:checked").length <= 0) {
 						sumTotal = 0
-						$(ev).closest('.BountyRowWrap').find('.SumTotalUF').text( numeral(sumTotal).format( '0,0.00' ) )
-						$(ev).closest('.BountyRowWrap').find('.SumTotalPeso').text( numeral( sumTotal ).format('0,0') )
+						$(ev.context).closest('.BountyRowWrap').find('.SumTotalUF').text( numeral(sumTotal).format( '0,0.00' ) )
+						$(ev.context).closest('.BountyRowWrap').find('.SumTotalPeso').text( numeral( sumTotal ).format('0,0') )
 					}
 				}
 
 			})
 		}
+
 	}
