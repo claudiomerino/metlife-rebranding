@@ -25,11 +25,13 @@
 
 
 	$($Bounty).on('change', (ev) => {
-		console.log(ev, 'Bounty')
 
 		if( $(ev.currentTarget).is(':checked') ) {
 			$(ev.currentTarget).closest('.BountyRow').addClass('BountyRowActive')
 			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyRowActive').next().find('input.Bounty').attr('disabled', false)
+
+			// Enable Input Currency if not checked .Bounty
+			$(ev.currentTarget).closest('.BountyRow').find('.InputCurrency').attr('disabled', false)
 			let sumTotal = 0;
 
 			$(ev.currentTarget).closest('.BountyRowWrap').find('.Bounty').each( (index, data) => {
@@ -47,6 +49,11 @@
 			$(ev.currentTarget).closest('.BountyRowActive').nextAll().find('input.Bounty').attr('disabled', true)
 			$(ev.currentTarget).closest('.BountyRow').removeClass('BountyRowActive')
 			$(ev.currentTarget).closest('.BountyRow').nextAll().removeClass('BountyRowActive')
+			changeSumInputFn($(ev.currentTarget).closest('.BountyRow').find('.Bounty'));
+
+			// Disable Input Currency if not checked .Bounty
+			$(ev.currentTarget).closest('.BountyRow').find('.InputCurrency').attr('disabled', true)
+			$(ev.currentTarget).closest('.BountyRow').nextAll().find('.InputCurrency').attr('disabled', true)
 
 			let sumTotal = numeral($(ev.currentTarget).closest('.BountyRowWrap').find('.BountyValueUF').text()).format( '0,0.00' )
 
