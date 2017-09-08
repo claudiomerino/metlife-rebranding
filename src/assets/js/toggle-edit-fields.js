@@ -23,7 +23,7 @@
 	})
 
 
-	$editFieldsCancel.on('click', (e) => {
+	$editFieldsCancel.add($editFieldsSubmit).on('click', (e) => {
 		e.preventDefault()
 		console.log(dataFields, 'dataFields')
 		if($editFieldsCancel.data('edit-fields-cancel') == dataFields) {
