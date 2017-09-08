@@ -18,6 +18,7 @@
 	})
 
 	function changeSumInputFn (ev) {
+		console.log(ev, 'changeSumInputFn')
 
 		let sumTotal = 0;
 
@@ -58,6 +59,7 @@
 		}
 
 		else {
+			console.log(ev, 'ELSE changeSumInputFn')
 			$(ev.context).closest('.BountyRowWrap').find('.Bounty').each( (index, data) => {
 				const $data = $(data)
 
