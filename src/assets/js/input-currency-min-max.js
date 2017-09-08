@@ -5,11 +5,7 @@
 	let $InputCurrencyFormButtonBounty = $('.InputCurrencyForm .BountyRowWrap .Bounty')
 
 	$InputCurrencyButtonDefault.add($InputCurrencyFormButtonBounty).on('click', (e) => {
-
-		console.log('suminpu click')
-
     InputCurrencyChangeFn(e)
-
 	})
 
 	$inputCurrency.on( 'keydown', (e) => {
@@ -34,7 +30,6 @@
 				const max = parseInt( $(el).attr('max') )
 				if(value) {
 					if($(e.currentTarget).closest('.BountyRow').find('.Bounty').is(':checked') || $(e.currentTarget).is(':checked') == false || $(e.currentTarget).is(':checked')) {
-						console.log('ENTRA AL IF')
 
 						$(e.currentTarget).attr('disabled', false)
 
@@ -61,17 +56,14 @@
 					}
 
 					else {
-						console.log('ENTRA AL ELSE')
 						if($(e.currentTarget).hasClass('BountyRowDefaultSumInput')) {
 							if($(e.currentTarget).closest('.InputCurrencyForm').find('.BountyRowDefault').find('.SumInput').is(':checked')) {
-								console.log('checked Bounty')
 							}
 							else {
 								$(e.currentTarget).attr('disabled', false)
 							}
 						}
 						else {
-							console.log('NO TIENE BountyRowDefaultSumInput')
 							$(e.currentTarget).attr('disabled', true)
 						}
 					}
