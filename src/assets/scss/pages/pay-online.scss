@@ -18,6 +18,12 @@
 		}
 	}
 
+	.BountyRowDefault {
+		.bounty_col {
+			padding-left: 0;
+		}
+	}
+
 	@media screen and (min-width: 62em) {
 		.bounty_col {
 			padding-left: 0px;
