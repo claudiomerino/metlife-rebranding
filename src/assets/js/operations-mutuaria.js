@@ -18,7 +18,6 @@
 	})
 
 	function changeSumInputFn (ev) {
-		console.log(ev, 'changeSumInputFn')
 
 		let sumTotal = 0;
 
@@ -59,18 +58,15 @@
 		}
 
 		else {
-			console.log(ev, 'ELSE changeSumInputFn')
 			$(ev.context).closest('.BountyRowWrap').find('.Bounty').each( (index, data) => {
 				const $data = $(data)
 
 				if( $data.is(':checked') ) {
-					console.log('entre checked')
 					sumTotal += $( data ).data('value-sum-uf')
 
 					setTimeout( () => {
 						if($data.attr('disabled') == 'disabled') {
 							sumTotal -= numeral( $( data ).data('value-sum-uf') ).format('0,0')
-							console.log($( data ).data('value-sum-uf'), 'sumTotal bounty')
 						}
 
 						if ($(ev.context).closest('.BountyRowWrap').find(".Bounty:checkbox:checked").length <= 0) {
