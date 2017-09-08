@@ -2,7 +2,7 @@ items:
   -
     classSection: u-top
     classSubtitle: double_line
-    subTitle: Datos de la Póliza
+    subTitle: Datos de mi Póliza
     subItems:
       -
         id: 1
@@ -63,7 +63,7 @@ items:
   -
     classSection:
     classSubtitle:
-    subTitle: Medio de Pago
+    subTitle: Mi Medio de Pago
     subItems:
       -
         id: 9
@@ -104,11 +104,11 @@ items:
   -
     classSection:
     classSubtitle:
-    subTitle: Datos de Contacto
+    subTitle: Mis Datos de Contacto
     subItems:
       -
         id: 15
-        label: 'Dirección Particular'
+        label: 'Dirección Particular:'
         value: 'Monseñor Escribá de Balaguer 11.365 Casa A, Lo Barnechea, Región Metroplolitana. CP: 7540000'
         classCols: col-xs-12 col-sm-12 col-md-6
         edit: 'true'
@@ -127,13 +127,13 @@ items:
         edit: 'false'
       -
         id: 18
-        label: 'Dirección Comercial'
+        label: 'Dirección Comercial:'
         value: 'Avda. Vitacura 5885, Of 2001. CP: 7540000'
         classCols: col-xs-12 col-sm-12 col-md-6
         edit: 'true'
       -
         id: 19
-        label: 'Correo Electrónico'
+        label: 'Correo Electrónico:'
         value: 'daniel@miempresa.cl'
         classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'true'
@@ -146,7 +146,7 @@ items:
         edit: 'false'
       -
         id: 21
-        label: 'Dirección Alternativa'
+        label: 'Dirección Alternativa:'
         value: 'Avda. Vitacura 5885, Of 2001. CP: 7540000'
         classCols: col-xs-12 col-sm-12 col-md-6
         edit: 'true'
