@@ -2,8 +2,9 @@
 	let $inputCurrency = $('input.InputCurrency')
 	let $InputCurrencyButton = $('.InputCurrencyButton')
 	let $InputCurrencyButtonDefault = $('.BountyRowDefault .SumInput')
+	let $InputCurrencyFormButtonBounty = $('.InputCurrencyForm .BountyRowWrap .Bounty')
 
-	$InputCurrencyButtonDefault.on('click', (e) => {
+	$InputCurrencyButtonDefault.add($InputCurrencyFormButtonBounty).on('click', (e) => {
 
 		console.log('suminpu click')
 
@@ -23,7 +24,6 @@
 
 	function InputCurrencyChangeFn(e) {
 
-
     setTimeout( () => {
 			let $ArrayInputCurrency = $(e.currentTarget).closest('.InputCurrencyForm').find('.InputCurrency')
 			let valueSumUF = 0
@@ -32,20 +32,21 @@
 				const value = $(el).val()
 				const min = parseInt( $(el).attr('min') )
 				const max = parseInt( $(el).attr('max') )
-				console.log(value, 'value sd')
-				console.log(value, 'value sd')
 				if(value) {
-					if($(e.currentTarget).closest('.BountyRow').find('.Bounty').is(':checked')) {
+					if($(e.currentTarget).closest('.BountyRow').find('.Bounty').is(':checked') || $(e.currentTarget).is(':checked') == false || $(e.currentTarget).is(':checked')) {
+						console.log('ENTRA AL IF')
 
 						$(e.currentTarget).attr('disabled', false)
 
+						if($(el).hasClass('InputCurrencyBountyRowDefault')) {
+							if($(el).closest('.BountyRowDefault').find('.BountyRowDefaultSumInput').is(':checked')) {
+							}
+							else {
+								valueSumUF -= parseInt($(el).val().replace(/\,/g,''))
+							}
+						}
+
 						valueSumUF += parseInt($(el).val().replace(/\,/g,''))
-						if($(e.currentTarget).closest('.InputCurrencyForm').find('.BountyRowDefault').find('.SumInput').is(':checked')) {
-						}
-						else {
-							console.log($(el).val().replace(/\,/g,''), ' no esta checked el default')
-						}
-						console.log(valueSumUF, 'valueSumUF sd')
 
 						$(e.currentTarget).closest('.BountyRow').find('.Bounty').data('value-sum-uf', valueSumUF)
 
@@ -57,7 +58,10 @@
 						$(e.currentTarget).closest('.BountyRowWrap').find('.SumTotalPeso').text( numeral( valueSumUF ).format('0,0') )
 
 
-					} else {
+					}
+
+					else {
+						console.log('ENTRA AL ELSE')
 						if($(e.currentTarget).hasClass('BountyRowDefaultSumInput')) {
 							if($(e.currentTarget).closest('.InputCurrencyForm').find('.BountyRowDefault').find('.SumInput').is(':checked')) {
 								console.log('checked Bounty')

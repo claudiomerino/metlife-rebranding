@@ -46,6 +46,7 @@
 		}
 
 		else {
+			console.log('Bounty ELSE Bounty')
 			$(ev.currentTarget).closest('.BountyRowActive').nextAll().find('input.Bounty').attr('disabled', true)
 			$(ev.currentTarget).closest('.BountyRow').removeClass('BountyRowActive')
 			$(ev.currentTarget).closest('.BountyRow').nextAll().removeClass('BountyRowActive')
