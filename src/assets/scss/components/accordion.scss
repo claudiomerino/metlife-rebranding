@@ -21,7 +21,6 @@
 		border: 1px solid $dark-gray;
 		border-radius: 3px;
 		margin-bottom: 1rem;
-		padding: 0 1rem;
 		&.is-active {
 			.accordion-title {
 				background-color: white;
@@ -90,36 +89,14 @@
 					background-color: transparent;
       	}
       }
-      .accordion-title:after,
-      .accordion-title:before {
+      .accordion-title {
 				font-size: 16px;
-      }
-      .accordion-title:before {
-        content: "\f107";
-      }
-      .accordion-title:after {
-      	color: #0090DA;
-        content: 'Más Información';
-        font-family: Arial,sans-serif;
-        position: absolute;
-				right: 36px;
-				top: 22px;
+				line-height: 1.5;
       }
       &.is-active {
 	      .accordion-title {
 					border-bottom: 2px solid $primary;
 	      }
-        .accordion-title:before {
-          content: "\f106";
-        }
-        .accordion-title:after {
-        	color: #0090DA;
-          content: 'Menos Información';
-          font-family: Arial,sans-serif;
-          position: absolute;
-					right: 36px;
-					top: 22px;
-        }
       }
     }
   }
