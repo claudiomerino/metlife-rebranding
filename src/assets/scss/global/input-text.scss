@@ -18,6 +18,10 @@
 		color: transparent;
 	}
 
+	.intl-tel-input .country-list {
+		z-index: 101;
+	}
+
 	.form-error {
 		color: $pink;
 		display: none;

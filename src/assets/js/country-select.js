@@ -1,19 +1,17 @@
 
-  let $CountrySelectModifier = $('.CountrySelectModifier')
-  let $phone = $('#phone')
-  let $cellPhone = $('#cellPhone');
-
   [].slice.call( document.querySelectorAll( 'select.CountrySelect.cs-select' ) ).forEach( (el) => {
     const options = {
       onChange : function( val ) {
-        $phone.intlTelInput("setCountry", val)
-        $cellPhone.intlTelInput("setCountry", val)
+        $(el).closest('.ChangeCountrySelectWrap').find('.ChangeContryPhone').intlTelInput("setCountry", val)
+        $(el).closest('.ChangeCountrySelectWrap').find('.ChangeContryCellPhone').intlTelInput("setCountry", val)
 
         if(val == 'CL') {
-          $CountrySelectModifier.removeClass('hide-xs')
+          $(el).closest('.ChangeCountrySelectWrap').find('.CountrySelectModifier').removeClass('hide-xs')
+          //$CountrySelectModifier.removeClass('hide-xs')
         }
         else {
-          $CountrySelectModifier.addClass('hide-xs')
+          $(el).closest('.ChangeCountrySelectWrap').find('.CountrySelectModifier').addClass('hide-xs')
+          //$CountrySelectModifier.addClass('hide-xs')
         }
       }
     }
