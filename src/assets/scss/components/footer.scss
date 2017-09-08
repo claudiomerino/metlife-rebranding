@@ -45,6 +45,7 @@
       margin-right: 6px;
     }
     &:first-of-type.bullet-item_footer {
+    	padding-left: 0;
       &::before {
         background-color: transparent;
         margin: 0;
