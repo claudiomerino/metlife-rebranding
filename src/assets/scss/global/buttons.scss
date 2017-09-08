@@ -97,7 +97,7 @@
 	}
 
 	.button-disabled {
-		opacity: .4;
+		opacity: .4 !important;
 		&:hover {
 			cursor: default;
 			text-decoration: none;
