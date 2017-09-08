@@ -46,11 +46,12 @@
 		}
 
 		else {
-			console.log('Bounty ELSE Bounty')
 			$(ev.currentTarget).closest('.BountyRowActive').nextAll().find('input.Bounty').attr('disabled', true)
 			$(ev.currentTarget).closest('.BountyRow').removeClass('BountyRowActive')
 			$(ev.currentTarget).closest('.BountyRow').nextAll().removeClass('BountyRowActive')
-			changeSumInputFn($(ev.currentTarget).closest('.BountyRow').find('.Bounty'));
+			if($(ev.currentTarget).hasClass('BountyDefaultValue')) {
+				changeSumInputFn($(ev.currentTarget).closest('.InputCurrencyForm').find('.BountyRow').find('.Bounty'));
+			}
 
 			// Disable Input Currency if not checked .Bounty
 			$(ev.currentTarget).closest('.BountyRow').find('.InputCurrency').attr('disabled', true)
