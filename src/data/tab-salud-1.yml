@@ -12,7 +12,7 @@ items:
         edit: 'true'
       -
         id: 2
-        label: 'Fecha de Inicio Vigencia:'
+        label: 'Fecha Inicio de Vigencia:'
         value: 15/09/1995
         classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'true'
@@ -25,7 +25,7 @@ items:
   -
     classSection:
     classSubtitle:
-    subTitle: Información de mi Agente
+    subTitle: Información de mi Asesor
     subItems:
       -
         id: 4
