@@ -5,6 +5,8 @@
 	const $phoneConf = $('#phoneConf')
 	const $emailChangePhone = $('#emailChangePhone')
 	const $ChangePhoneSubmit = $('.ChangePhoneSubmit')
+	const $changePhoneHideOnSubmit = $('.changePhoneHideOnSubmit')
+	const $changePhoneSuccess = $('.changePhoneSuccess')
 
 	let $phoneNewValue
 	let $phoneConfValue
@@ -35,6 +37,10 @@
 	$ChangeKeyPhoneCardsSubmit.on('click', (e) => {
 		if( $(e.currentTarget).hasClass('button-disabled') ) {
 			e.preventDefault()
+		}
+		else {
+			$changePhoneHideOnSubmit.addClass('hide-xs')
+			$changePhoneSuccess.removeClass('hide-xs')
 		}
 	})
 
