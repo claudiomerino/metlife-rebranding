@@ -50,6 +50,9 @@ $gutter-lg: 15px;
 .u-right {
   padding-right: $gutter-sm;
 }
+.u-right-small {
+  padding-right: $gutter-xs;
+}
 
 .u-container {
   padding: 0 $gutter-xs;
@@ -83,6 +86,16 @@ $gutter-lg: 15px;
     @media only screen and (min-width: 48em) {
       padding: 40px;
     }
+  }
+}
+.row--white {
+  background-color: $white;
+}
+
+.row--padded-md {
+  padding: 20px;
+  @media only screen and (min-width: 48em) {
+    padding: 40px;
   }
 }
 

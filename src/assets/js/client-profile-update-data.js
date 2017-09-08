@@ -31,6 +31,16 @@
 		InitialStateFn( invalid )
 	})
 
+	$clientProfileSaveUpdateData.on('click', (e) => {
+		e.preventDefault()
+
+		if(!$(e.currentTarget).hasClass('button-disabled')) {
+			const invalid = 'false'
+			InitialStateFn( invalid )
+		}
+
+	})
+
 
 	function InitialStateFn( invalid, cancel ) {
 		if( invalid === 'false' ) {

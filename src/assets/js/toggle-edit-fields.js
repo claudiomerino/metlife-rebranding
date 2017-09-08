@@ -25,8 +25,16 @@
 
 	$editFieldsCancel.on('click', (e) => {
 		e.preventDefault()
-		console.log(dataFields, 'dataFields')
 		if($editFieldsCancel.data('edit-fields-cancel') == dataFields) {
+			$dataEditFieldsButton.removeClass('hide-edit-fields')
+			$showEditFields.addClass('hide-edit-fields')
+			toggleEditFieldsFn($editFieldsCancel.data('edit-fields-cancel'), true)
+		}
+	})
+
+	$editFieldsSubmit.on('click', (e) => {
+		e.preventDefault()
+		if(!$(e.currentTarget).hasClass('button-disabled')) {
 			$dataEditFieldsButton.removeClass('hide-edit-fields')
 			$showEditFields.addClass('hide-edit-fields')
 			toggleEditFieldsFn($editFieldsCancel.data('edit-fields-cancel'), true)

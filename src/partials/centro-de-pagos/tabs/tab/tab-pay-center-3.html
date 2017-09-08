@@ -4,6 +4,51 @@
 
 		<section class="payment_history u-space u-top">
 			<p class="f-big tabs-subtitle-profile"><strong>Histórico de Pagos</strong></p>
+
+			<!-- Filter fields -->
+
+			<div class="u-row middle-xs gutter-xs">
+
+				<div class="col-xs-12 col-md-3 u-select u-select_label u-space">
+					<p class="f-small"><strong>Filtrar por Producto:</strong></p>
+					<select class="cs-select cs-skin-border DataSelectFilterName">
+						<option value="allDataName" selected>Todos los Productos</option>
+						<option value="product1">MetLife Salud Full Protección. Póliza Nº: 076656-54</option>
+						<option value="product2">MetLife Seguro Protección Accidental Básico. Póliza Nº: 076656-54</option>
+					</select>
+				</div>
+
+				<div class="col-xs-12 col-md-3 u-select u-select_label u-space">
+					<p class="f-small"><strong>Filtrar por Forma de Pago:</strong></p>
+					<select class="cs-select cs-skin-border DataSelectFilter">
+						<option value="allStateDividend" selected>Todos los Estados</option>
+						<option value="pac">PAC</option>
+						<option value="other">Otro</option>
+					</select>
+				</div>
+
+				<div class="col-xs-12 col-md-6">
+					<p class="f-small"><strong>Filtrar por Fecha de Pago:</strong></p>
+					<div class="u-row">
+						<div class="col-xs-12 col-md-6 u-right-small-md">
+							<span class="input input--ichiro input--datepicker DatePickerStart u-space">
+								<input class="input__field input__field--ichiro" placeholder="Desde" type="text" class="span3" readonly>
+								<i class="material-icons">date_range</i>
+							</span>
+						</div>
+
+						<div class="col-xs-12 col-md-6">
+							<span class="input input--ichiro input--datepicker DatePickerEnd u-space">
+								<input class="input__field input__field--ichiro" placeholder="Hasta" type="text" class="span2" readonly>
+								<i class="material-icons">date_range</i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- / Filter fields -->
+
 			<div class="table table-scroll center-xs col-xs-12">
 			  <table class="table-responsive u-striped u-striped-more">
 			    <thead>
@@ -30,17 +75,17 @@
 			    	{{#each tab-pay-center-3.primas}}
 				    <tr class="{{striped}}">
 				    	<td class="table-4" align="left" valign="middle" data-table-title="">
-								<p class="table_desc"><a href="#">{{producto}}</a><br><span class="f-small">Póliza Nº: {{poliza}}</p>
+								<p class="table_desc DataNameFilter" data-filter-data-name="{{filterDataName}}"><a href="#">{{producto}}</a><br><span class="f-small">Póliza Nº: {{poliza}}</p>
 								<a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
 									<span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
 									<i class="fa fa-angle-down" aria-hidden="true"></i>
 								</a>
 							</td>
 					    <td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Período de Cobertura">
-								<p class="table_desc">{{coverage}}</p>
+								<p class="table_desc filterDataDesc" data-filter-data-desc="{{filterDataDesc}}">{{coverage}}</p>
 							</td>
 							<td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
-								<p class="table_desc">{{date}}</p>
+								<p class="table_desc"><span class="DataExpiration">{{date}}</span></p>
 							</td>
 							<td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
 								<p class="table_desc">{{pay}}</p>

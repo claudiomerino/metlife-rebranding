@@ -18,6 +18,10 @@
 		color: transparent;
 	}
 
+	.intl-tel-input .country-list {
+		z-index: 101;
+	}
+
 	.form-error {
 		color: $pink;
 		display: none;
@@ -206,10 +210,26 @@
 		padding-bottom: 25px;
 	}
 
+	.InputCurrencyBountyRowDefault {
+		border: 0 !important;
+		color: black;
+		display: inline-block;
+		padding: 0;
+		position: relative;
+		&:not(:focus) {
+			border: 0 !important;
+			background-color: transparent;
+		}
+	}
+
 	@media screen and ( min-width: 62em ) {
 
 		.input_date {
 			padding-bottom: 0;
+		}
+
+		.InputCurrencyBountyRowDefault {
+			max-width: 106px;
 		}
 
 	}

@@ -21,7 +21,6 @@
 		border: 1px solid $dark-gray;
 		border-radius: 3px;
 		margin-bottom: 1rem;
-		padding: 0 1rem;
 		&.is-active {
 			.accordion-title {
 				background-color: white;
@@ -72,7 +71,7 @@
     .accordion-item {
       border-radius: 0;
       border: none;
-      border-top: 1px solid $light-gray;
+      border-bottom: 0;
       margin-bottom: 0;
       &:last-child {
         border-bottom: 1px solid $light-gray;
@@ -83,13 +82,21 @@
           border-bottom: none;
         }
       }
-      .accordion-title:before {
-        content: '\f067';
+      .accordion-title {
+      	border-bottom: 2px solid $light-gray;
+      	&:hover,
+      	&:focus {
+					background-color: transparent;
+      	}
+      }
+      .accordion-title {
+				font-size: 16px;
+				line-height: 1.5;
       }
       &.is-active {
-        .accordion-title:before {
-          content: '\f068';
-        }
+	      .accordion-title {
+					border-bottom: 2px solid $primary;
+	      }
       }
     }
   }

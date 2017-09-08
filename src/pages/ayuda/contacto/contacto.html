@@ -43,18 +43,21 @@
         </div>
       </div>
 
-      <div class="u-row --white gutter-xs">
+      <div class="u-row row--white gutter-xs">
         <div class="col-xs-12 col-md-8 col-md-offset-2 u-top-bigger u-space-2x">
 
           <div class="u-row gutter-xs">
+            <div class="col-xs-12">
+              <div class="alert alert-success u-space hide-state-update ClientProfileMessageSuccess">
+                <p>¡Mensaje enviado exitosamente!</p>
+              </div>
+            </div>
             <div class="col-xs-12 col-sm-6">
               <section class="u-field u-space-2x">
                 <span class="input input--ichiro">
                   <input class="input__field input__field--ichiro" data-live-validate="true" value="" type="text" id="name" required>
                   <label class="input__label input__label--ichiro" for="name">
-                    <span class="input__label-content input__label-content--ichiro">
-                      <strong>Nombre*</strong>
-                    </span>
+                    <span class="input__label-content input__label-content--ichiro">Nombre*</span>
                   </label>
                   <p class="form-error f-tiny">Este campo es requerido.</p>
                 </span>
@@ -66,9 +69,7 @@
                 <span class="input input--ichiro">
                   <input class="input__field input__field--ichiro" data-live-validate="true" value="" type="text" id="lastname" required>
                   <label class="input__label input__label--ichiro" for="lastname">
-                    <span class="input__label-content input__label-content--ichiro">
-                      <strong>Apellido*</strong>
-                    </span>
+                    <span class="input__label-content input__label-content--ichiro">Apellido*</span>
                   </label>
                   <p class="form-error f-tiny">Este campo es requerido.</p>
                 </span>
@@ -82,9 +83,7 @@
                 <span class="input input--ichiro">
                   <input class="input__field input__field--ichiro" data-live-validate="true" value="" type="text" id="email" required>
                   <label class="input__label input__label--ichiro" for="email">
-                    <span class="input__label-content input__label-content--ichiro">
-                      <strong>Email*</strong>
-                    </span>
+                    <span class="input__label-content input__label-content--ichiro">Email*</span>
                   </label>
                   <p class="form-error f-tiny">Este campo es requerido.</p>
                 </span>
@@ -120,9 +119,7 @@
                 <span class="input input--ichiro">
                   <textarea class="input__field input__field--ichiro" data-live-validate="true" value="" type="text" id="message" required></textarea>
                   <label class="input__label input__label--ichiro" for="message">
-                    <span class="input__label-content input__label-content--ichiro">
-                      <strong>Mensaje</strong>
-                    </span>
+                    <span class="input__label-content input__label-content--ichiro">Mensaje</span>
                   </label>
                   <p class="form-error f-tiny">Este campo es requerido.</p>
                 </span>
@@ -132,7 +129,7 @@
 
           <div class="u-row gutter-xs u-space-2x">
             <div class="col-xs-12 col-sm-4 col-md-3">
-              <button class="button button-primary button-full">Enviar</button>
+              <button class="button button-primary button-full clientProfileSaveUpdateData clientProfileEditShowField">Enviar</button>
             </div>
           </div>
         </div>
