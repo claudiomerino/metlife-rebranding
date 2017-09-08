@@ -1,36 +1,31 @@
 
-	<section class="u-space">
-		<h5 class="tabs-subtitle tabs-subtitle-profile">Formularios</h5>
+	<section class="u-space col-md-10 col-md-offset-1 u-top">
+		<h5 class="tabs-subtitle tabs-subtitle-profile">Formularios para Presentar en Sucursales</h5>
 		<div class="table-scroll table">
 		  <table class="table-responsive u-striped">
 		    <thead>
 		      <tr>
-		        <th class="table-6">
+		        <th class="table-8">
 							<p class="table_title"><strong>Nombre</strong></p>
 						</th>
-		        <th class="table-4">
-							<p class="table_title"><strong>Tipo</strong></p>
-						</th>
+		       
 		        <th class="table-2">
-							<p class="table_title"><strong>Descargar</strong></p>
+							<p class="table_title"><strong></strong></p>
 						</th>
 		      </tr>
-		    </thead>
+		    </thead> 
 		    <tbody>
 		    	{{#each form-and-documents-cards.forms}}
 		      <tr>
-		        <td class="table-6" valign="middle" data-table-title="Nombre">
+		        <td class="table-8" valign="middle" data-table-title="Nombre">
 							<p class="table_desc">
-								<a href="#" class="f-link">{{name}}</a>
+								{{name}}
 							</p>
-							<p class="table_desc f-small">Pdf / 35kb</p>
 						</td>
-		        <td class="table-4" valign="middle" data-table-title="Tipo">
-							<p class="table_desc">Formularios</p>
-						</td>
+		        
 		        <td class="table-2" valign="middle">
 							<p class="table_desc">
-								<a href="#" class="button button-primary  button-small">Descargar</a>
+								<a href="#" class="button button-small button-full-xs">Descargar</a>
 							</p>
 						</td>
 		      </tr>
