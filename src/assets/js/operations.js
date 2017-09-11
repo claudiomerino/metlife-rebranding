@@ -55,11 +55,9 @@
 
 		else {
 			if($(ev.currentTarget).closest('.BountyRow').hasClass('BountyRowUntilActive')) {
-				console.log('entra BountyRowUntilActive')
 				$(ev.currentTarget).closest('.BountyRow').nextAll().find('input.Bounty').attr('disabled', true)
 			}
 			else {
-				console.log('NOOOOO entra BountyRowUntilActive')
 				$(ev.currentTarget).closest('.BountyRow').nextUntil('.BountyRowUntilActive').find('input.Bounty').attr('disabled', true)
 			}
 
