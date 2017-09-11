@@ -1,25 +1,37 @@
 forms:
   -
     name: Aportes y cambios sobre valores de ahorro
+    product: Agencia
   -
     name: Declaración de siniestro causa accidental
+    product: Agencia
   -
     name: Declaración de siniestro causas naturales
+    product: Agencia
   -
     name: Solicitud de Cambios en la Distribución de Primas
+    product: Agencia
   -
     name: Solicitud de Endoso de Póliza
+    product: Agencia
   -
     name: Solicitud de Reembolso Gastos Médicos por Accidente
+    product: Agencia
   -
     name: Solicitud de Rescate Parcial o Retiro de Cuenta de Capitalización y Jubilación (CCJ)
+    product: Agencia
   -
     name: Actualización de datos de Contacto
+    product: Agencia
   -
     name: Autorización Solicitud de Antecedentes de Endeudamiento
+    product: Agencia
   -
     name: Carta Oferta de Venta
+    product: Agencia
   -
     name: Declaración Personal de Salud para Seguro Desgravamen
+    product: Agencia
   -
     name: Solicitud de Crédito Empresas
+    product: Agencia
