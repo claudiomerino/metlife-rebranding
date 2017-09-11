@@ -9,7 +9,7 @@ items:
         value: 0056705543-A
         classCols: col-xs-12 col-sm-6 col-md-3
       -
-        label: 'Fecha de Inicio Vigencia:'
+        label: 'Fecha Inicio de Vigencia:'
         value: 15/09/1995
         classCols: col-xs-12 col-sm-6 col-md-3
       -
@@ -30,7 +30,7 @@ items:
   -
     classSection:
     classSubtitle:
-    subTitle: Información de Agente
+    subTitle: Información de mi Asesor
     subItems:
       -
         label: 'Nombre del Asesor:'
