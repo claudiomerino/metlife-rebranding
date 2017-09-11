@@ -2,9 +2,31 @@
 <div class="tabs_wrap u-space">
 	<div class="client_wrap_container">
 
-		{{> card-life-pay-multi-alternative }}
 
-		{{> card-mutuaria-pay}}
+		<ul class="accordion faq sucursales-sirvinco u-space" data-accordion>
+
+		  <li class="accordion-item is-active" data-accordion-item>
+		    <a href="#" class="accordion-title black">
+		      <p class=""><strong>Seguros Individuales</strong></p>
+		    </a>
+
+		    <div class="accordion-content" data-tab-content>
+					{{> card-life-pay-multi-alternative }}
+		    </div>
+		  </li>
+
+		  <li class="accordion-item" data-accordion-item>
+		    <a href="#" class="accordion-title black">
+		      <p class=""><strong>Mutuaria</strong></p>
+		    </a>
+
+		    <div class="accordion-content" data-tab-content>
+					{{> card-mutuaria-pay}}
+		    </div>
+		  </li>
+		</ul>
+
+
 
 	</div>
 </div>

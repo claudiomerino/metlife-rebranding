@@ -26,7 +26,7 @@
                 var $respTabs = $(this);
                 var $respTabsList = $respTabs.find('ul.resp-tabs-list.' + options.tabidentify);
                 var respTabsId = $respTabs.attr('id');
-                $respTabs.find('ul.resp-tabs-list.' + options.tabidentify + ' li').addClass('resp-tab-item').addClass(options.tabidentify);
+                $respTabs.find('ul.resp-tabs-list.' + options.tabidentify + ' > li').addClass('resp-tab-item').addClass(options.tabidentify);
                 $respTabs.css({
                     'display': 'block',
                     'width': jwidth
@@ -130,7 +130,7 @@
                 }
 
                 //Tab Click action function
-                $respTabs.find("[role=tab]").each(function () {
+                $respTabs.find("li[role=tab]").each(function () {
 
                     var $currentTab = $(this);
                     $currentTab.click(function () {
