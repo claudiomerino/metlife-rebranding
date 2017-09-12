@@ -15,14 +15,15 @@ primas:
   -
     openContent: ene-2017
     filterDataName: product2
-    filterDataDesc: pac
+    filterDataDesc: Pago En Línea
     restText: Más información
     openText: Menos información
     producto: MetLife Seguro Protección Accidental Básico.
     poliza: 076656-54
     coverage: Enero 2017
     date: 05/01/2017
-    pay: PAC
+    pay: Pago en Línea
+    link: '#'
     amount: UF 2,35 / $55.556
   -
     openContent: dic-2016
