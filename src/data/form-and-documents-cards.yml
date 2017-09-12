@@ -1,25 +1,37 @@
 forms:
   -
     name: Aportes y cambios sobre valores de ahorro
+    product: Seguros Individuales
   -
     name: Declaración de siniestro causa accidental
+    product: Seguros Individuales
   -
     name: Declaración de siniestro causas naturales
+    product: Seguros Individuales
   -
     name: Solicitud de Cambios en la Distribución de Primas
+    product: Seguros Individuales
   -
     name: Solicitud de Endoso de Póliza
+    product: Seguros Individuales
   -
     name: Solicitud de Reembolso Gastos Médicos por Accidente
+    product: Seguros Individuales
   -
     name: Solicitud de Rescate Parcial o Retiro de Cuenta de Capitalización y Jubilación (CCJ)
+    product: Seguros Individuales
   -
     name: Actualización de datos de Contacto
+    product: Hipotecarios
   -
     name: Autorización Solicitud de Antecedentes de Endeudamiento
+    product: Hipotecarios
   -
     name: Carta Oferta de Venta
+    product: Hipotecarios
   -
     name: Declaración Personal de Salud para Seguro Desgravamen
+    product: Hipotecarios
   -
     name: Solicitud de Crédito Empresas
+    product: Hipotecarios

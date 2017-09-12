@@ -25,6 +25,12 @@
 
 
 	$($Bounty).on('change', (ev) => {
+		BountyChangeFn(ev)
+	})
+
+	function BountyChangeFn(ev) {
+
+		console.log('entra cuando cambia', ev)
 
 		if( $(ev.currentTarget).is(':checked') ) {
 			$(ev.currentTarget).closest('.BountyRow').addClass('BountyRowActive')
@@ -41,14 +47,23 @@
 				}
 			})
 
+			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyActive').attr('disabled', false)
+
 			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyValueUF').text( numeral(sumTotal).format( '0,0.00' ) )
 			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyValueConvertUF').text( numeral( sumTotal * UFVALUE ).format('0,0') )
 		}
 
 		else {
-			$(ev.currentTarget).closest('.BountyRowActive').nextAll().find('input.Bounty').attr('disabled', true)
+			if($(ev.currentTarget).closest('.BountyRow').hasClass('BountyRowUntilActive')) {
+				$(ev.currentTarget).closest('.BountyRow').nextAll().find('input.Bounty').attr('disabled', true)
+			}
+			else {
+				$(ev.currentTarget).closest('.BountyRow').nextUntil('.BountyRowUntilActive').find('input.Bounty').attr('disabled', true)
+			}
+
 			$(ev.currentTarget).closest('.BountyRow').removeClass('BountyRowActive')
 			$(ev.currentTarget).closest('.BountyRow').nextAll().removeClass('BountyRowActive')
+
 			if($(ev.currentTarget).hasClass('BountyDefaultValue')) {
 				changeSumInputFn($(ev.currentTarget).closest('.InputCurrencyForm').find('.BountyRow').find('.Bounty'));
 			}
@@ -77,11 +92,13 @@
 				}
 			})
 
-			$(ev.currentTarget).closest('.BountyRow').nextAll().find('input.Bounty').attr('checked', false)
+			$(ev.currentTarget).closest('.BountyRow').nextUntil('.BountyRowUntilActive').find('input.Bounty').attr('checked', false)
+
+			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyActive').attr('disabled', false)
 
 		}
 
-	})
+	}
 
  	$BountyRowWrap.each( (index, data) => {
 

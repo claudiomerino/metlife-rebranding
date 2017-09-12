@@ -29,6 +29,10 @@ $gutter-lg: 15px;
   margin-bottom: $space-md;
 }
 
+.u-space-3x {
+  margin-bottom: 45px;
+}
+
 .u-space-xs {
   margin-bottom: $space-xs;
 }
@@ -52,6 +56,16 @@ $gutter-lg: 15px;
 }
 .u-right-small {
   padding-right: $gutter-xs;
+}
+
+.u-left {
+  padding-left: $gutter-xs;
+}
+.u-left-small {
+  padding-left: 10px;
+}
+.u-left-2x {
+  padding-left: $gutter-sm;
 }
 
 .u-container {
@@ -526,10 +540,6 @@ ul.u-row {
 
   .u-section {
     padding: 3rem $gutter-md;
-  }
-
-  .u-left {
-    padding-left: 19px;
   }
 
   .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {

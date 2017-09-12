@@ -1,7 +1,7 @@
 	{{#each solicitar-cambio-fondos.base}}
 	<section class="payment_history u-space">
 		<p class="f-big tabs-subtitle-profile"><strong>{{title}}</strong></p>
-		<div class="table table-scroll center-xs col-xs-12">
+		<div class="table table-scroll center-xs col-xs-12 distributionFunds">
 		  <table class="table-responsive u-striped">
 		    <thead>
 		      <tr>
@@ -36,7 +36,6 @@
 		      {{/each}}
 		      <tr class="hide-edit-fields show-edit-fields">
 		        <td class="table-8" align="left" valign="middle" data-table-title="Nombre de Fondo">
-							<p class="table_desc"><a href="">Ver todos los fondos</a></p>
 						</td>
 		        <td class="table-2" align="left" valign="middle" data-table-title="% Stock">
 							<p class="table_desc f-big f-tiny"><strong>Stock <span data-change-funds-stock-total="distributionFunds">0</span>%</strong></p>
@@ -49,8 +48,14 @@
 		    </tbody>
 		  </table>
 
-		  <div class="col-xs-12 end-xs">
+		  <div class="col-xs-12 end-xs u-top">
 				<a href="" class="clientProfileUpdateData" data-edit-fields-button="distributionFunds">Editar Distribución de Fondos</a>
+			</div>
+
+
+			<div class="col-xs-12 end-xs u-space hide-edit-fields show-edit-fields">
+				<a href="#" class="u-right-sm u-top-sm col-xs-12 col-sm-3 clientProfileCancelUpdateData" data-edit-fields-cancel="distributionFunds">Cancelar</a>
+				<a href="#" class="button button-primary button-disabled clientProfileSaveUpdateData" data-edit-fields-submit>Solicitar cambio de Fondos</a>
 			</div>
 
 		</div>
