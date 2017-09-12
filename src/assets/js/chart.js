@@ -71,10 +71,11 @@
 
 					chartTemplate = `
 						<tr>
-				      <td class="table-10" valign="middle">
+				      <td bgcolor="${ dataBackgroundColor[key] }" width="10" class="hide-xs show-table-md"></td>
+				      <td class="table-4" valign="middle">
 				      	<p class="table_label_title f-big">${ dataLabelText }</p>
 							</td>
-				      <td class="table-2" valign="middle">
+				      <td class="table-2 center-sm" valign="middle">
 								<p class="table_desc f-big center-sm"><strong>${ dataValue[key] } %</strong></p>
 							</td>
 						</tr>

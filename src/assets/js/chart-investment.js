@@ -11,7 +11,6 @@
 				"Nombre del Fondo de Inversión con un nombre extremadamente largo"
 			],
 			relation: [
-
 			],
 	    datasets: [{
 				data: [
@@ -20,9 +19,9 @@
 					15
 				],
 				backgroundColor: [
-					"transparent",
-					"transparent",
-					"transparent"
+					"#0a3c6e",
+					"#1fc2a2",
+					"#896eb3"
 				]
 			}]
 		};
