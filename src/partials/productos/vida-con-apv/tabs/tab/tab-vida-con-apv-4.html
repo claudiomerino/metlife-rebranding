@@ -34,6 +34,48 @@
 			  </table>
 			</div>
 		</section>
+		<div class="u-space">
+			{{> pagination}}
+		</div>
+
+		<section class="info_insured  u-top u-space">
+			<p class="f-big tabs-subtitle-profile"><strong>Certificario Tributario APV</strong></p>
+			<div class="u-row ">
+				<div class="col-sm-4 u-select u-select_label">
+					<p class="f-small"><strong>Selecciona un Período de Tiempo:</strong></p>
+					<select class="cs-select cs-skin-border DataSelectFilterName">
+						<option value="allDataName" selected>Todos los Períodos de Tiempo</option>
+			    	{{#each tab-vida-con-ap-4.forms}}
+							<option value="periodo{{@index}}">{{name}}</option>
+			      {{/each}}
+					</select>
+				</div>
+			</div>
+		</section>
+		<section class="u-space">
+			<div class="table-scroll table">
+				<table class="table-responsive u-striped">
+			    <tbody>
+			      <tr class="table-display">
+			        <td class="table-4 col-xs-12 col-sm-6" valign="middle" data-table-title="Período">
+						<p class="middle DataNameFilter" data-filter-data-name="periodo{{@index}}">Certificado Tributario Año 2017</p>
+					</td>
+			        <td class="table-4 col-xs-12 col-sm-6 end-xs" valign="middle">
+						<a href="#" class="button button-full-xs button-small">Descargar Certificado</a>
+					</td>
+			      </tr>
+			      <tr class="table-display">
+			        <td class="table-4 col-xs-12 col-sm-6" valign="middle" data-table-title="Período">
+						<p class="middle DataNameFilter" data-filter-data-name="periodo{{@index}}">Certificado Tributario Año 2016</p>
+					</td>
+			        <td class="table-4 col-xs-12 col-sm-6 end-xs" valign="middle">
+						<a href="#" class="button button-full-xs button-small">Descargar Certificado</a>
+					</td>
+			      </tr>
+			    </tbody>
+			  </table>
+			</div>
+		</section>
 
 		{{> pagination}}
 
