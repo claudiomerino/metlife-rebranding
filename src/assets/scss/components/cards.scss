@@ -9,6 +9,9 @@
 	.card_container {
 		padding: 1rem 1rem 0.3rem 1rem;
 		background-color: white;
+    &--even-padding {
+      padding: 1rem;
+    }
 	}
 
 	.card_container--blue {
