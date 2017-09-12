@@ -36,6 +36,14 @@
 		outline: none;
 	}
 
+  ol {
+    list-style-type: decimal;
+    li {
+      margin-bottom: 10px;
+      list-style: decimal;
+    }
+  }
+
 	ul,
 	li {
 		list-style: none;
