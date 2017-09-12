@@ -157,8 +157,10 @@
 	}
 
 	.input__label-content--ichiro {
-		transform-origin: 0% 50%;
-		transition: transform 0.3s;
+		font-size: 16px;
+		left: 0;
+		top: 0;
+		transition: all .3s cubic-bezier(.4,0,.2,1);
 		border: none;
 	}
 
@@ -180,7 +182,9 @@
 
 	.input__field--ichiro:focus + .input__label--ichiro .input__label-content--ichiro,
 	.input--filled .input__label-content--ichiro {
-		transform: translate3d(-1rem, -2em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
+		font-size: 12.8px;
+		left: -16px;
+		top: -2rem;
 		z-index: -1;
 	}
 
