@@ -1,52 +1,73 @@
 base:
   -
     title: Distribución Actual Fondos de Ahorro Previsión Voluntario
-    id: 1
     funds:
       -
-        id: 1
+        openContent: distribution
+        restText: Más información
+        openText: Menos información
         name: Fondo Mutuo Santander Global Emergente Serie Universal
         stock: 50 %
         flow: 50 %
       -
-        id: 1
+        openContent: distribution2
+        restText: Más información
+        openText: Menos información
         name: Tasa Fija Garantizada en U.F.
         stock: 35 %
         flow: 35 %
       -
-        id: 1
+        openContent: distribution3
+        restText: Más información
+        openText: Menos información
         name: Nombre del Fondo de Inversión con un nombre extremadamente largo
         stock: 15 %
         flow: 15 %
   -
     title: Distribución actual Fondos Depósito Convenido
-    id: 2
     funds:
       -
+        openContent: distribution4
+        restText: Más información
+        openText: Menos información
         name: Fondo Mutuo Santander Global Emergente Serie Universal
         stock: 50 %
         flow: 50 %
       -
+        openContent: distribution5
+        restText: Más información
+        openText: Menos información
         name: Tasa Fija Garantizada en U.F.
         stock: 35 %
         flow: 35 %
       -
+        openContent: distribution6
+        restText: Más información
+        openText: Menos información
         name: Nombre del Fondo de Inversión con un nombre extremadamente largo
         stock: 15 %
         flow: 15 %
   -
     title: Distribución actual Fondos de Cotización Voluntaria
-    id: 3
     funds:
       -
+        openContent: distribution7
+        restText: Más información
+        openText: Menos información
         name: Fondo Mutuo Santander Global Emergente Serie Universal
         stock: 50 %
         flow: 50 %
       -
+        openContent: distribution8
+        restText: Más información
+        openText: Menos información
         name: Tasa Fija Garantizada en U.F.
         stock: 35 %
         flow: 35 %
       -
+        openContent: distribution9
+        restText: Más información
+        openText: Menos información
         name: Nombre del Fondo de Inversión con un nombre extremadamente largo
         stock: 15 %
         flow: 15 %
