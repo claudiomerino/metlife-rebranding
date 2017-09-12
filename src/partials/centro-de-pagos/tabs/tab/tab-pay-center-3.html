@@ -68,7 +68,7 @@
 			        <th class="table-2">
 						<p class="f-small table_title"><strong>Monto Pagado UF / Pesos</strong></p>
 					</th>
-			      </tr> 
+			      </tr>
 			    </thead>
 
 			    <tbody>
@@ -88,7 +88,15 @@
 								<p class="table_desc"><span class="DataExpiration">{{date}}</span></p>
 							</td>
 							<td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
-								<p class="table_desc">{{pay}}</p>
+								<p class="table_desc">
+									{{#if link}}
+										<a href="{{link}}">
+									{{/if}}
+										{{pay}}
+									{{#if link}}
+										</a>
+									{{/if}}
+								</p>
 							</td>
 							<td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
 								<p class="table_desc">{{amount}}</p>
