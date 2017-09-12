@@ -3,14 +3,23 @@ base:
     title: Distribución Actual Fondos de Ahorro Previsión Voluntario
     funds:
       -
+        openContent: distribution
+        restText: Más información
+        openText: Menos información
         name: Fondo Mutuo Santander Global Emergente Serie Universal
         stock: 50 %
         flow: 50 %
       -
+        openContent: distribution2
+        restText: Más información
+        openText: Menos información
         name: Tasa Fija Garantizada en U.F.
         stock: 35 %
         flow: 35 %
       -
+        openContent: distribution3
+        restText: Más información
+        openText: Menos información
         name: Nombre del Fondo de Inversión con un nombre extremadamente largo
         stock: 15 %
         flow: 15 %
@@ -18,14 +27,23 @@ base:
     title: Distribución actual Fondos Depósito Convenido
     funds:
       -
+        openContent: distribution4
+        restText: Más información
+        openText: Menos información
         name: Fondo Mutuo Santander Global Emergente Serie Universal
         stock: 50 %
         flow: 50 %
       -
+        openContent: distribution5
+        restText: Más información
+        openText: Menos información
         name: Tasa Fija Garantizada en U.F.
         stock: 35 %
         flow: 35 %
       -
+        openContent: distribution6
+        restText: Más información
+        openText: Menos información
         name: Nombre del Fondo de Inversión con un nombre extremadamente largo
         stock: 15 %
         flow: 15 %
@@ -33,14 +51,23 @@ base:
     title: Distribución actual Fondos de Cotización Voluntaria
     funds:
       -
+        openContent: distribution7
+        restText: Más información
+        openText: Menos información
         name: Fondo Mutuo Santander Global Emergente Serie Universal
         stock: 50 %
         flow: 50 %
       -
+        openContent: distribution8
+        restText: Más información
+        openText: Menos información
         name: Tasa Fija Garantizada en U.F.
         stock: 35 %
         flow: 35 %
       -
+        openContent: distribution9
+        restText: Más información
+        openText: Menos información
         name: Nombre del Fondo de Inversión con un nombre extremadamente largo
         stock: 15 %
         flow: 15 %

@@ -1,7 +1,7 @@
 	{{#each solicitar-cambio-fondos.base}}
 	<section class="payment_history u-space">
 		<p class="f-big tabs-subtitle-profile"><strong>{{title}}</strong></p>
-		<div class="table table-scroll center-xs col-xs-12">
+		<div class="table table-scroll center-xs col-xs-12 distributionFunds">
 		  <table class="table-responsive u-striped">
 		    <thead>
 		      <tr>
@@ -23,20 +23,28 @@
 		      <tr>
 		        <td class="table-8" align="left" valign="middle" data-table-title="Nombre de Fondo">
 							<p class="table_desc">{{name}}</p>
+							<a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
+								<span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
 						</td>
-		        <td class="table-2" align="left" valign="middle" data-table-title="% Stock">
+		        <td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="% Stock">
 							<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" />
 							<p class="table_desc f-big toggl-edit-fields"><strong>{{stock}}</strong></p>
 						</td>
-		        <td class="table-2" align="left" valign="middle" data-table-title="% Flujo">
+		        <td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="% Flujo">
 							<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-flow data-edit-funds-normal-value="0" />
 							<p class="table_desc f-big toggl-edit-fields"><strong>{{flow}}</strong></p>
 						</td>
 		      </tr>
+
+	      	<tr class="toggleContent" data-toggle-content="{{openContent}}">
+	    			{{> tables-solicitar-cambio-fondos-partial }}
+		 			</tr>
 		      {{/each}}
+
 		      <tr class="hide-edit-fields show-edit-fields">
-		        <td class="table-8" align="left" valign="middle" data-table-title="Nombre de Fondo">
-							<p class="table_desc"><a href="">Ver todos los fondos</a></p>
+		        <td class="table-8" align="left" valign="middle" data-table-title="Total">
 						</td>
 		        <td class="table-2" align="left" valign="middle" data-table-title="% Stock">
 							<p class="table_desc f-big f-tiny"><strong>Stock <span data-change-funds-stock-total="distributionFunds">0</span>%</strong></p>
@@ -49,8 +57,14 @@
 		    </tbody>
 		  </table>
 
-		  <div class="col-xs-12 end-xs">
+		  <div class="col-xs-12 end-xs u-top">
 				<a href="" class="clientProfileUpdateData" data-edit-fields-button="distributionFunds">Editar Distribución de Fondos</a>
+			</div>
+
+
+			<div class="col-xs-12 end-xs u-space hide-edit-fields show-edit-fields">
+				<a href="#" class="u-right-sm u-top-sm col-xs-12 col-sm-3 clientProfileCancelUpdateData" data-edit-fields-cancel="distributionFunds">Cancelar</a>
+				<a href="#" class="button button-primary button-disabled clientProfileSaveUpdateData" data-edit-fields-submit>Solicitar cambio de Fondos</a>
 			</div>
 
 		</div>

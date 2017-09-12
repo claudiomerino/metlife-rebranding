@@ -17,8 +17,7 @@
 
 			let totalEditFunds = 0
 
-			$dataChangeFundsStock.each( (index, el) => {
-				const dataFunds = $(el).data('edit-fields')
+			$(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-stock]').each( (index, el) => {
 
 				let dataFundsValue = parseInt($(el).val())
 
@@ -33,22 +32,22 @@
 			})
 
 			if(totalEditFunds > 100) {
-				$dataChangeFundsStockTotal.addClass('red')
+				$(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-stock-total]').addClass('red')
 			} else {
-				$dataChangeFundsStockTotal.removeClass('red')
+				$(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-stock-total]').removeClass('red')
 			}
 
-			let $dataChangeFundsFlowTotalData = parseInt($('[data-change-funds-flow-total]').text())
+			let $dataChangeFundsFlowTotalData = parseInt($(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-flow-total]').text())
 
 			if(totalEditFunds > 100 || $dataChangeFundsFlowTotalData > 100) {
-				$dataEditFieldsSubmit.addClass('button-disabled')
+				$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').addClass('button-disabled')
 			} else if(totalEditFunds == 100 && $dataChangeFundsFlowTotalData == 100) {
-				$dataEditFieldsSubmit.removeClass('button-disabled')
+				$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').removeClass('button-disabled')
 			} else {
-				$dataEditFieldsSubmit.addClass('button-disabled')
+				$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').addClass('button-disabled')
 			}
 
-			$dataChangeFundsStockTotal.html(totalEditFunds)
+			$(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-stock-total]').html(totalEditFunds)
 
 		}, 1000)
 
@@ -65,8 +64,7 @@
 
 			let totalEditFundsFlow = 0
 
-			$dataChangeFundsFlow.each( (index, el) => {
-				const dataFunds = $(el).data('edit-fields')
+			$(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-flow]').each( (index, el) => {
 
 				let dataFundsFlowValue = parseInt($(el).val())
 
@@ -81,22 +79,22 @@
 			})
 
 			if(totalEditFundsFlow > 100) {
-				$dataChangeFundsFlowTotal.addClass('red')
+				$(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-flow-total]').addClass('red')
 			} else {
-				$dataChangeFundsFlowTotal.removeClass('red')
+				$(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-flow-total]').removeClass('red')
 			}
 
-			let $dataChangeFundsStockTotalData = parseInt($('[data-change-funds-stock-total]').text())
+			let $dataChangeFundsStockTotalData = parseInt($(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-stock-total]').text())
 
 			if(totalEditFundsFlow > 100 || $dataChangeFundsStockTotalData > 100) {
-				$dataEditFieldsSubmit.addClass('button-disabled')
+				$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').addClass('button-disabled')
 			} else if(totalEditFundsFlow == 100 && $dataChangeFundsStockTotalData == 100) {
-				$dataEditFieldsSubmit.removeClass('button-disabled')
+				$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').removeClass('button-disabled')
 			} else {
-				$dataEditFieldsSubmit.addClass('button-disabled')
+				$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').addClass('button-disabled')
 			}
 
-			$dataChangeFundsFlowTotal.html(totalEditFundsFlow)
+			$(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-flow-total]').html(totalEditFundsFlow)
 
 		}, 1000)
 
