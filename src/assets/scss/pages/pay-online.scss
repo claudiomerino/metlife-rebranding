@@ -33,6 +33,14 @@
 		}
 	}
 
+	.center-pay-total {
+		padding-left: 40px;
+	}
+
+	.center-pay-total-small {
+		padding-left: 30px;
+	}
+
 	@media screen and (min-width: 48em) {
 		.bounty-row-wrap-default {
 			.bounty_col {
@@ -62,5 +70,13 @@
 					padding-left: 0;
 				}
 			}
+		}
+
+		.center-pay-total {
+			padding-left: 0;
+		}
+
+		.center-pay-total-small {
+			padding-left: 0;
 		}
 	}
