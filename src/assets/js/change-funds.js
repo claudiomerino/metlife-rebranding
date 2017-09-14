@@ -33,8 +33,10 @@
 
 			if(totalEditFunds > 100) {
 				$(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-stock-total]').addClass('red')
+				$(e.currentTarget).closest('.distributionFunds').find('.distributionFundsPercentage').addClass('red')
 			} else {
 				$(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-stock-total]').removeClass('red')
+				$(e.currentTarget).closest('.distributionFunds').find('.distributionFundsPercentage').removeClass('red')
 			}
 
 			let $dataChangeFundsFlowTotalData = parseInt($(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-flow-total]').text())
@@ -80,8 +82,10 @@
 
 			if(totalEditFundsFlow > 100) {
 				$(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-flow-total]').addClass('red')
+				$(e.currentTarget).closest('.distributionFunds').find('.distributionFundsFlowPercentage').addClass('red')
 			} else {
 				$(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-flow-total]').removeClass('red')
+				$(e.currentTarget).closest('.distributionFunds').find('.distributionFundsFlowPercentage').removeClass('red')
 			}
 
 			let $dataChangeFundsStockTotalData = parseInt($(e.currentTarget).closest('.distributionFunds').find('[data-change-funds-stock-total]').text())
