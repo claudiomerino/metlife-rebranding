@@ -6,14 +6,36 @@
 			<p class="f-big tabs-subtitle-profile"><strong>Información de mi Ahorro</strong></p>
 
 			<p><strong>Fecha de Actualización del Saldo:</strong></p>
+      
+			<div class="u-row u-space-xs">
+        <div class="col-xs-12 col-sm-6 col-md-3 u-right u-space-xs">
+  				<span class="input input_date input--ichiro input--datepicker DatePicker u-space">
+  					<input class="input__field input__field--ichiro" placeholder="Seleccionar Fecha" type="text" class="span3" readonly>
+  					<i class="material-icons">date_range</i>
+  				</span>
+        </div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3 u-right u-space-xs">
-				<span class="input input_date input--ichiro input--datepicker DatePicker u-space">
-					<input class="input__field input__field--ichiro" placeholder="Seleccionar Fecha" type="text" class="span3" readonly>
-					<i class="material-icons">date_range</i>
-				</span>
-			</div>
+        <div class="col-xs-12 col-sm-6 u-space-xs ClientProfileToggleHide life_ap_col_balance">
+          <a class="" data-open="lifeApEvolutionBalance">Ver grafico de evolución de saldos</a>
+        </div>
+      </div>
+      
+      <!--Modal evolución de saldos-->
+      <section>
+        <div class="reveal " id="lifeApEvolutionBalance" data-reveal>
+          <div class="col-xs-12 col-xs-offset-1 center-xs">
+            <h2 class="u-space text-center u-top">Grafico de Evolución de Saldos</h2>
+            <img src="{{root}}/assets/img/balance.png" class="u-space">
+            <div class="u-row center-xs reveal_row_button u-space">
+              <a data-close aria-label="Close modal" class="button button-link col-xs-12 col-sm-3">Volver</a>
+            </div>
+          </div>
 
+          <button class="close-button" data-close aria-label="Cerrar modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </section>    
 
 			<div class="u-row u-row-xs-full u-space-small">
 				<div class="tabs_col col-xs-12 col-md-3 col-xs-full">
