@@ -1,4 +1,4 @@
-forms:
+forms-individual:
   -
     name: Aportes y cambios sobre valores de ahorro
     product: Seguros Individuales
@@ -20,6 +20,8 @@ forms:
   -
     name: Solicitud de Rescate Parcial o Retiro de Cuenta de Capitalización y Jubilación (CCJ)
     product: Seguros Individuales
+
+forms-mortgage:
   -
     name: Actualización de datos de Contacto
     product: Hipotecarios
