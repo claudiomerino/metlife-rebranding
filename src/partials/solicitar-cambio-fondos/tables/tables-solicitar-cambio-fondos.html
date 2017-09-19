@@ -19,7 +19,7 @@
 		    </thead>
 
 		    <tbody>
-          <tr class="hide-md">
+          <tr>
             <td>
               <div class="u-row center-xs hide-md">
                 <div class="col-xs-6">stock 100%</div>
@@ -30,9 +30,13 @@
 		    	{{#each funds}}
 		      <tr>
 		        <td class="table-8" align="left" valign="middle">              
-							<p class="table_desc">{{name}}</p>
-              {{> tables-solicitar-cambio-fondos-partial }}							
-						</td>
+							<p class="table_desc">{{name}}</p> 
+              <div class="u-row hide-md">
+                <div class="col-xs-6"><input class=" input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" /></div>
+                <div class="col-xs-6"><input class=" input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-flow data-edit-funds-normal-value="0" /></div>
+              </div>            					
+						</td>         
+
 		        <td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="% Stock">
 							<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" />
 							<p class="table_desc f-big toggl-edit-fields"><strong>{{stock}}</strong></p>

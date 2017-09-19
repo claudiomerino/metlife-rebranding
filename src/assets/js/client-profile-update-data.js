@@ -98,4 +98,6 @@
 			.add($buttonUpdate)
 			.add($ClientProfileToggleHide)
 			.addClass('hide-state-update')
+      $('.rutUpdate').addClass('f-tiny-rut')
+
 	}
