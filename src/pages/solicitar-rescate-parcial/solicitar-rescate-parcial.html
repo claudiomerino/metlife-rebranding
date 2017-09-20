@@ -41,6 +41,7 @@
 							<p class="f-small"><strong>Monto a Solicitar</strong></p>
 	            <span class="input input--ichiro input--ichiro--currency">
 	  						<input class="input__field input__field--ichiro InputCurrency InputCurrencySelectBank" data-live-validate="true" min="0" max="550000" placeholder="Monto" type="text" required>
+	  						<p class="form-error form-error-top f-tiny">Haz excedido el Máximo de Monto para Rescatar</p>
 	  					</span>
 						</div>
 					</div>
@@ -98,15 +99,14 @@
               <p class="f-small"><strong>Nº de Cuenta</strong></p>
 							<section class="u-field u-space">
 								<span class="input input--ichiro">
-									<input class="input__field input__field--ichiro" data-live-validate="true" type="number" id="ncuenta" />									
-									<p class="form-error f-tiny">No tenemos registrado el RUT que ingresaste.<br/>Revisa que esté correcto e inténtalo nuevamente.</p>
+									<input class="input__field input__field--ichiro" data-live-validate="true" type="number" id="ncuenta" />
 								</span>
 							</section>
 						</div>
 					</div>
 
 					<!-- Modal -->
-					<div class="reveal" id="recate-parcial" data-reveal>
+					<div class="reveal" id="rescate-parcial" data-reveal>
 					  <p>Usted ya tiene una solicitud Web anterior con fecha <strong>10/04/2017</strong> por un monto <strong>$ 120.000</strong></p>
 					  <div class="end-xs">
 						  <button class="button button-small" data-close aria-label="Close modal" type="button">Cancelar</button>
@@ -116,7 +116,7 @@
 					<!-- / Modal -->
 
 					<div class="col-xs-12 end-xs">
-						<button data-open="recate-parcial" class="button button-small last-sm button-disabled button-full-xs InputCurrencyButton u-top">Solicitar Rescate Parcial</button>
+						<a href="#" id="SolicitarRescateParcialSubmit" class="button button-small last-sm button-disabled button-full-xs InputCurrencyRescateButton u-top">Solicitar Rescate Parcial</a>
 					</div>
 				</div>
 
