@@ -1,37 +1,100 @@
 
 	<section class="u-space col-md-12 u-top">
 		<p class="tabs-subtitle tabs-subtitle-profile f-bigger">Formularios para Presentar en Sucursales</p>
-		<div class="table-scroll table">
-		  <table class="table-responsive u-striped">
-		    <thead>
-		      <tr>
-		        <th class="table-8">
-							<p class="table_title"><strong>Nombre</strong></p>
-						</th>
 
-		        <th class="table-2">
-							<p class="table_title"><strong></strong></p>
-						</th>
-		      </tr>
-		    </thead>
-		    <tbody>
-		    	{{#each form-and-documents-cards.forms}}
-		      <tr>
-		        <td class="table-8" valign="middle" data-table-title="Nombre">
-							<p class="table_desc">
-								{{name}}
-							</p>
-							<p class="f-tiny">
-                <em>{{product}}</em>
-              </p>
-						</td>
+    <div class="tabs_wrap u-space">
+      <div class="client_wrap_container">
+        <ul class="accordion faq sucursales-sirvinco u-space" data-accordion>
 
-		        <td class="table-2 text-right" valign="middle">
-							<a href="#" class="button button-small button-full-xs" style="margin-top: 1px;">Descargar</a>
-						</td>
-		      </tr>
-		      {{/each}}
-		    </tbody>
-		  </table>
-		</div>
+          <li class="accordion-item is-active" data-accordion-item>
+            <a href="#" class="accordion-title black">
+              <p class="f-big"><strong>Seguros Individuales</strong></p>
+            </a>
+            <div class="accordion-content" data-tab-content>
+              <section>
+                <div class="table-scroll table">
+                  <table class="table-responsive u-striped">
+                    <thead>
+                      <tr>
+                        <th class="table-8">
+                          <p class="table_title"><strong>Nombre</strong></p>
+                        </th>
+
+                        <th class="table-2">
+                          <p class="table_title"><strong></strong></p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {{#each form-and-documents-cards.forms-individual}}
+                      <tr>
+                        <td class="table-8" valign="middle" data-table-title="Nombre">
+                          <p class="table_desc">
+                            {{name}}
+                          </p>
+                          <p class="f-tiny">
+                            <em>{{product}}</em>
+                          </p>
+                        </td>
+
+                        <td class="table-2 text-right" valign="middle">
+                          <a href="#" class="button button-small button-full-xs" style="margin-top: 1px;">Descargar</a>
+                        </td>
+                      </tr>
+                      {{/each}}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            </div>
+          </li>
+
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title black">
+              <p class="f-big"><strong>Hipotecarios</strong></p>
+            </a>
+            <div class="accordion-content" data-tab-content>
+             
+             <section>
+               <div class="table-scroll table">
+                 <table class="table-responsive u-striped">
+                   <thead>
+                     <tr>
+                       <th class="table-8">
+                         <p class="table_title"><strong>Nombre</strong></p>
+                       </th>
+
+                       <th class="table-2">
+                         <p class="table_title"><strong></strong></p>
+                       </th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                     {{#each form-and-documents-cards.forms-mortgage}}
+                     <tr>
+                       <td class="table-8" valign="middle" data-table-title="Nombre">
+                         <p class="table_desc">
+                           {{name}}
+                         </p>
+                         <p class="f-tiny">
+                           <em>{{product}}</em>
+                         </p>
+                       </td>
+
+                       <td class="table-2 text-right" valign="middle">
+                         <a href="#" class="button button-small button-full-xs" style="margin-top: 1px;">Descargar</a>
+                       </td>
+                     </tr>
+                     {{/each}}
+                   </tbody>
+                 </table>
+               </div>
+             </section>                   
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
 	</section>
