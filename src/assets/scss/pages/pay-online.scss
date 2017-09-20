@@ -41,6 +41,23 @@
 		padding-left: 30px;
 	}
 
+  .bounty_order_col_xs {
+    :nth-child(2) {
+      order: 1;
+    }
+    :nth-child(3) {
+      order: 2;
+    }
+    :nth-child(4) {
+      order: 0;
+      .download_divident {
+        order: 2;
+      }
+    }
+  }
+
+
+
 	@media screen and (min-width: 48em) {
 		.bounty-row-wrap-default {
 			.bounty_col {
@@ -79,4 +96,20 @@
 		.center-pay-total-small {
 			padding-left: 0;
 		}
+
+    .bounty_order_col_xs {
+      :nth-child(2) {
+        order: 0;
+      }
+      :nth-child(3) {
+        order: 0;
+      }
+      :nth-child(4) {
+        order: 0;
+        .download_divident {
+          order: 0;
+        }
+      }
+    }
+
 	}
