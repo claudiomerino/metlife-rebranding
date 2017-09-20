@@ -122,8 +122,6 @@
 
   $('#SolicitarRescateParcialSubmit').on('click', (e) => {
     e.preventDefault()
-    console.log('entra')
-    console.log($(e.currentTarget).hasClass('button-disabled'), 'button-disabled')
     if($(e.currentTarget).hasClass('button-disabled') == false) {
       $('#rescate-parcial').foundation('open');
     }
