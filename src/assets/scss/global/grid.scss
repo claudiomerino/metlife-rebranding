@@ -11,6 +11,9 @@ $gutter-lg: 15px;
 .u-space {
   margin-bottom: $space-xs;
 }
+.u-space-bottom-none {
+  margin-bottom: 0;
+}
 .u-top {
   margin-top: $space-xs;
 }
@@ -74,6 +77,15 @@ $gutter-lg: 15px;
 
 .u-divider {
   border-top: 2px solid $gray;
+}
+
+.u-divider-bottom-strong {
+  border-bottom: 2px solid $gray;
+  padding-bottom: 10px;
+}
+
+.u-divider-bottom {
+  border-bottom: 1px solid $gray;
 }
 
 .u-section {
