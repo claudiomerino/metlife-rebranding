@@ -22,3 +22,13 @@
       margin-bottom: 10px;
     }
   }
+
+  .distributionFunds {
+    .fieldsDistributionFunds {
+      display: inline-block;
+      width: 49.5%;
+      &:before {
+        content: none !important;
+      }
+    }
+  }
