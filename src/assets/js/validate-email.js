@@ -1,5 +1,5 @@
 
-	function validateEmail(emailAddress, element) {
+  function validateEmail(emailAddress, element) {
     var pattern = new RegExp(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/);
 
     if(pattern.test(emailAddress)) {
