@@ -29,12 +29,6 @@
                       <li>Para solicitar un rescate anticipado, deberás acercarse a cualquiera de nuestras sucursales.</li>
                       <li>El monto del rescate parcial solicitado vía web, puede sufrir una variación ya que será calculado de acuerdo al valor cuota de cada alternativa de inversión y a los cargos que se indiquen en el Condicionado Particular a la fecha que se haga efectivo el rescate.</li>
                       <li>Los cargos por rescate parcial se determinan considerando la antigüedad de la póliza. De este modo, cada vez que la póliza cumpla un año más de vigencia, el cargo por rescate parcial irá variando, en los términos indicados en las Condiciones Particulares de la póliza contratada.</li>
-                      <li>
-                      	<p class="f-small">Cargos por Rescate Parcial: <br>
-						- Cargo de UF 0,5 por más de un retiro al mes <br>
-						- Cargo de UF 0,5 por más de cuatro retiros al año <br>
-						- Cargo de UF 0,5 a rescates inferiores a UF 10</p>
-                      </li>
                     </ol>
                 </div>
 
@@ -50,6 +44,7 @@
 							<p class="f-small"><strong>Monto a Solicitar</strong></p>
 	            <span class="input input--ichiro input--ichiro--currency">
 	  						<input class="input__field input__field--ichiro InputCurrency InputCurrencySelectBank" data-live-validate="true" min="0" max="550000" placeholder="Monto" type="text" required>
+	  						<p class="form-error form-error-top f-tiny">Haz excedido el Máximo de Monto para Rescatar</p>
 	  					</span>
 						</div>
 					</div>
@@ -69,7 +64,7 @@
 							</section>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-4 hide-xs RescateParcialSucursal">
-							<p class="f-small"><strong>Sucursal Metlife para retiro</strong></p>
+							<p class="f-small"><strong>Sucursal Metlife para Retiro</strong></p>
 							<section class="u-select u-space">
 								<select class="cs-select cs-skin-border RescateParcialSucSelect">
 									<option value="sucDefault" selected>Seleccionar Sucursal</option>
@@ -103,21 +98,18 @@
 							</section>
 						</div>
 
-						<div class="col-xs-12 col-sm-4 hide-xs u-top RescateParcialCuenta">
+						<div class="col-xs-12 col-sm-4 hide-xs RescateParcialCuenta">
+              <p class="f-small"><strong>Nº de Cuenta</strong></p>
 							<section class="u-field u-space">
 								<span class="input input--ichiro">
 									<input class="input__field input__field--ichiro" data-live-validate="true" type="number" id="ncuenta" />
-									<label class="input__label input__label--ichiro" for="ncuenta">
-										<span class="input__label-content input__label-content--ichiro">Nº de Cuenta</span>
-									</label>
-									<p class="form-error f-tiny">No tenemos registrado el RUT que ingresaste.<br/>Revisa que esté correcto e inténtalo nuevamente.</p>
 								</span>
 							</section>
 						</div>
 					</div>
 
 					<!-- Modal -->
-					<div class="reveal" id="recate-parcial" data-reveal>
+					<div class="reveal" id="rescate-parcial" data-reveal>
 					  <p>Usted ya tiene una solicitud Web anterior con fecha <strong>10/04/2017</strong> por un monto <strong>$ 120.000</strong></p>
 					  <div class="end-xs">
 						  <button class="button button-small" data-close aria-label="Close modal" type="button">Cancelar</button>
@@ -127,7 +119,7 @@
 					<!-- / Modal -->
 
 					<div class="col-xs-12 end-xs">
-						<button data-open="recate-parcial" class="button button-small last-sm button-disabled button-full-xs InputCurrencyButton u-top">Solicitar Rescate Parcial</button>
+						<a href="#" id="SolicitarRescateParcialSubmit" class="button button-small last-sm button-disabled button-full-xs InputCurrencyRescateButton u-top">Solicitar Rescate Parcial</a>
 					</div>
 				</div>
 
