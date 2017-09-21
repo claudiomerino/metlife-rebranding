@@ -3,7 +3,7 @@
     const options = {
       onChange : function( val ) {
         if(val == 'payDefault') {
-          $('.InputCurrencyButton').addClass('button-disabled')
+          $('.InputCurrencyRescateButton').addClass('button-disabled')
           $('.RescateParcialSucursal').addClass('hide-xs')
         }
 
@@ -11,17 +11,17 @@
         	$('.RescateParcialSucursal').removeClass('hide-xs')
         	$('.RescateParcialBanco').add('.RescateParcialTipoCuenta').add('.RescateParcialCuenta').addClass('hide-xs')
           if( $('.InputCurrencySelectBank').val() ) {
-            $('.InputCurrencyButton').removeClass('button-disabled')
+            $('.InputCurrencyRescateButton').removeClass('button-disabled')
           }
           else {
-            $('.InputCurrencyButton').addClass('button-disabled')
+            $('.InputCurrencyRescateButton').addClass('button-disabled')
           }
 
           if($('select.RescateParcialSucSelect.cs-select').val() == 'sucDefault') {
-            $('.InputCurrencyButton').addClass('button-disabled')
+            $('.InputCurrencyRescateButton').addClass('button-disabled')
           }
           else {
-            $('.InputCurrencyButton').removeClass('button-disabled')
+            $('.InputCurrencyRescateButton').removeClass('button-disabled')
           }
         }
 
@@ -29,10 +29,10 @@
         	$('.RescateParcialSucursal').addClass('hide-xs')
         	$('.RescateParcialBanco').add('.RescateParcialTipoCuenta').add('.RescateParcialCuenta').addClass('hide-xs')
           if($('.InputCurrencySelectBank').val()) {
-            $('.InputCurrencyButton').removeClass('button-disabled')
+            $('.InputCurrencyRescateButton').removeClass('button-disabled')
           }
           else {
-            $('.InputCurrencyButton').addClass('button-disabled')
+            $('.InputCurrencyRescateButton').addClass('button-disabled')
           }
         }
 
@@ -49,15 +49,15 @@
     const options = {
       onChange : function( val ) {
         if(val == 'sucDefault') {
-        	$('.InputCurrencyButton').addClass('button-disabled')
+        	$('.InputCurrencyRescateButton').addClass('button-disabled')
         }
         else {
-        	$('.InputCurrencyButton').removeClass('button-disabled')
+        	$('.InputCurrencyRescateButton').removeClass('button-disabled')
           if($('.InputCurrencySelectBank').val()) {
-            $('.InputCurrencyButton').removeClass('button-disabled')
+            $('.InputCurrencyRescateButton').removeClass('button-disabled')
           }
           else {
-            $('.InputCurrencyButton').addClass('button-disabled')
+            $('.InputCurrencyRescateButton').addClass('button-disabled')
           }
         }
       }
@@ -68,19 +68,61 @@
   $('.InputCurrencySelectBank').on('keydown', (e) => {
     setTimeout( () => {
       if($('select.RescateParcialSucSelect').val() == 'sucDefault') {
-        $('.InputCurrencyButton').addClass('button-disabled')
+        $('.InputCurrencyRescateButton').addClass('button-disabled')
       }
       else {
-        $('.InputCurrencyButton').removeClass('button-disabled')
+        $('.InputCurrencyRescateButton').removeClass('button-disabled')
       }
 
       if($('select.RescateParcialSelect.cs-select').val() == 'valevista') {
-        $('.InputCurrencyButton').removeClass('button-disabled')
+        $('.InputCurrencyRescateButton').removeClass('button-disabled')
       }
 
       if($('select.RescateParcialSelect.cs-select').val() == 'deposito') {
-        $('.InputCurrencyButton').removeClass('button-disabled')
+        $('.InputCurrencyRescateButton').removeClass('button-disabled')
       }
+
+      if($(e.currentTarget).hasClass('is-invalid-input')) {
+        $(e.currentTarget).siblings('.form-error').addClass('is-visible')
+        $('.InputCurrencyRescateButton').addClass('button-disabled')
+      }
+      else {
+        $(e.currentTarget).siblings('.form-error').removeClass('is-visible')
+        $('.InputCurrencyRescateButton').removeClass('button-disabled')
+
+        if($('#ncuenta').val().length > 0) {
+          $('.InputCurrencyRescateButton').removeClass('button-disabled')
+        }
+        else {
+          $('.InputCurrencyRescateButton').addClass('button-disabled')
+        }
+      }
+
     }, 1000)
 
+  })
+
+  $('#ncuenta').on('keydown', (e) => {
+    setTimeout( () => {
+      if($(e.currentTarget).val().length > 0) {
+        $('.InputCurrencyRescateButton').removeClass('button-disabled')
+
+        if($('.InputCurrencySelectBank').val().length > 0) {
+          $('.InputCurrencyRescateButton').removeClass('button-disabled')
+        }
+        else {
+          $('.InputCurrencyRescateButton').addClass('button-disabled')
+        }
+      }
+      else {
+        $('.InputCurrencyRescateButton').addClass('button-disabled')
+      }
+    }, 1000)
+  })
+
+  $('#SolicitarRescateParcialSubmit').on('click', (e) => {
+    e.preventDefault()
+    if($(e.currentTarget).hasClass('button-disabled') == false) {
+      $('#rescate-parcial').foundation('open');
+    }
   })

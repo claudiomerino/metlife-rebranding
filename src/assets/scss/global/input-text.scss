@@ -142,7 +142,7 @@
 		cursor: text;
 		text-align: left;
 		width: 100%;
-		border-radius: 3px;   
+		border-radius: 3px;
 	}
 
 	.input__label--ichiro::before {
@@ -255,6 +255,10 @@
   .InputCurrencyBountyRowDefault {
     max-width: 51px;
   }
+
+	.input--ichiro .form-error-top {
+		padding-top: 46px;
+	}
 
 	@media screen and ( min-width: 62em ) {
 
