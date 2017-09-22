@@ -59,6 +59,13 @@
     }
   }
 
+  .tab-accordion-yellow .resp-accordion,
+  .tab-accordion-yellow .tab-accordion {
+    &:before {
+      background-color: $savings !important;
+    }
+  }
+
   @media only screen and (max-width: 62em) {
 
     ul.resp-tabs-list {

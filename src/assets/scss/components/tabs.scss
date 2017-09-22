@@ -5,7 +5,11 @@
 	.tab-accordion-pink .resp-accordion,
 	.tab-accordion-pink .tab-accordion,
 	.tab-accordion-green .resp-accordion,
-	.tab-accordion-green .tab-accordion {
+	.tab-accordion-green .tab-accordion,
+	.tab-accordion-yellow .resp-accordion,
+	.tab-accordion-yellow .tab-accordion,
+	.tab-accordion-gray .resp-accordion,
+	.tab-accordion-gray .tab-accordion {
 		flex-grow: 0;
 		position: relative;
 		transition: color 0.3s;
@@ -102,7 +106,11 @@
 	.tab-accordion-pink .resp-accordion,
 	.tab-accordion-pink .tab-accordion,
 	.tab-accordion-green .resp-accordion,
-	.tab-accordion-green .tab-accordion {
+	.tab-accordion-green .tab-accordion,
+	.tab-accordion-yellow .resp-accordion,
+	.tab-accordion-yellow .tab-accordion,
+	.tab-accordion-gray .resp-accordion,
+	.tab-accordion-gray .tab-accordion {
 		flex-grow: 0;
 		position: relative;
 		transition: color 0.3s;
@@ -146,6 +154,18 @@
 	.tab-accordion-green {
 		&:before {
 			background-color: $accident;
+		}
+	}
+
+	.tab-accordion-yellow {
+		&:before {
+			background-color: $savings;
+		}
+	}
+
+	.tab-accordion-gray {
+		&:before {
+			background-color: $medium-gray;
 		}
 	}
 
