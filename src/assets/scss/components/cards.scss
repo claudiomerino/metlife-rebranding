@@ -33,6 +33,21 @@
 		}
 	}
 
+	.card-yellow {
+		border-color: $savings;
+		.card_icon {
+			color: $savings;
+		}
+	}
+
+	.card-product-gray {
+		border-color: $medium-gray;
+		.card_icon {
+			color: $medium-gray;
+		}
+	}
+
+
   .card_help {
     border-radius: 3px;
     height: 100%;
