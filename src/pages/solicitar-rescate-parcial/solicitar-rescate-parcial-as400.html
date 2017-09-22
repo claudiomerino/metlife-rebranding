@@ -109,12 +109,16 @@
 					</div>
 
 					<!-- Modal -->
-					<div class="reveal" id="rescate-parcial" data-reveal>
-					  <p>Usted ya tiene una solicitud Web anterior con fecha <strong>10/04/2017</strong> por un monto <strong>$ 120.000</strong></p>
-					  <div class="end-xs">
-						  <button class="button button-small" data-close aria-label="Close modal" type="button">Cancelar</button>
-						  <a href="{{root}}solicitar-rescate-parcial/confirmar-rescate-parcial.html" class="button button-small">Continuar</a>
-					  </div>
+          <div class="reveal" id="rescate-parcial" data-reveal>
+            <div class="container-fluid">
+              <h3 class="text-center u-top u-space">Solicitud Rescate Parcial</h3>
+              <p>Ten presente que la actualización de los montos de ahorro y rescate disponibles sólo se hará efectiva cuando MetLife haya aceptado tu solicitud, por lo tanto, seguirás viendo en tu Portal de Clientes los montos anteriores, hasta que ésta sea probada.</p>
+  					  <p class="u-space">Ya tienes una solicitud de rescate parcial vía web en proceso, con fecha <strong>dd/mm/aaaa</strong> por un monto de <strong>$XX.XXXX</strong>. ¿Deseas continuar, teniendo en cuenta que el monto que ahora solicitas podría variar o incluso podría no ser aprobado?</p>
+              <div class="u-row middle-xs center-xs end-sm u-space">
+              	<button class="button button-small button-full-xs last-sm" data-close aria-label="Close modal">Cancelar</button>
+        			  <a href="{{root}}solicitar-rescate-parcial/confirmar-rescate-parcial.html" data-close aria-label="Close modal" class="u-right-sm u-top-sm col-xs-12 col-sm-6">Sí, quiero continuar</a>
+        		  </div>
+            </div>
 					</div>
 					<!-- / Modal -->
 
