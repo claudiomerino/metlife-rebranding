@@ -6,24 +6,35 @@
 	let $dataChangeFundsFlowTotalData = $('[data-change-funds-flow-total]').data('change-funds-flow-total')
 	let $dataEditFieldsSubmit = $('[data-edit-fields-submit]')
 	let $dataEditFundCheck = $('[data-edit-fund-check]')
+	let $editFundsSubmit = $('.editFundsSubmit')
 
 
 	$dataEditFundCheck.on('change', (e) => {
 		const editFundCheckValue = $(e.currentTarget).data('edit-fund-check')
 		const editFundCheckContentValue = $(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-content="${editFundCheckValue}"]`)
+		const editFundCheckTotalValue = $(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${editFundCheckValue}"]`)
 
 		editFundCheckContentValue.each( (index, el) => {
 			if($(e.currentTarget).is(':checked')) {
 				$(el).find('input').removeClass('hide-edit-fields')
 				$(el).find('.table_desc').addClass('hide-edit-fields')
+				$editFundsSubmit.removeClass('hide-edit-fields')
 			}
 			else {
 				$(el).find('input').addClass('hide-edit-fields')
 				$(el).find('.table_desc').removeClass('hide-edit-fields')
+				$editFundsSubmit.addClass('hide-edit-fields')
 			}
 		})
-		console.log(editFundCheckValue, 'editFundCheckValue')
-		console.log(editFundCheckContentValue, 'editFundCheckContentValue')
+
+		editFundCheckTotalValue.each( (index, el) => {
+			if($(e.currentTarget).is(':checked')) {
+				$(el).find('.fieldsTotalFundsCol').removeClass('hide-xs-important')
+			}
+			else {
+				$(el).find('.fieldsTotalFundsCol').addClass('hide-xs-important')
+			}
+		})
 	})
 
 	$dataChangeFundsStock.on('keydown', (e) => {
