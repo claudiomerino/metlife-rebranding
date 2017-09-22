@@ -1,6 +1,17 @@
+accounts:
+  -
+    id: apv
+    title: APV
+  -
+    id: deposit
+    title: Depósito
+  -
+    id: voluntary
+    title: Voluntario
+
 base:
   -
-    title: Distribución Actual Fondos de Ahorro Previsión Voluntario
+    title: Ahorro Previsión Voluntario
     fundTitle: Fondo Mutuo Santander Global Emergente Serie Universal
     funds:
       -
@@ -16,7 +27,7 @@ base:
         stock: 15 %
         flow: 15 %
   -
-    title: Distribución actual Fondos Depósito Convenido
+    title: Depósito Convenido
     fundTitle: Tasa Fija Garantizada en U.F.
     funds:
       -
@@ -32,7 +43,7 @@ base:
         stock: 15 %
         flow: 15 %
   -
-    title: Distribución actual Fondos de Cotización Voluntaria
+    title: Cotización Voluntaria
     fundTitle: Nombre del Fondo de Inversión con un nombre extremadamente largo
     funds:
       -

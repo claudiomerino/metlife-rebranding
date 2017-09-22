@@ -43,6 +43,14 @@
 		    </thead>
 
 		    <tbody>
+					<tr class="hide-md-important">
+						<td>
+							<div>
+								<h2>Distribución actual de fondos</h2>
+								<p>Cuenta: APV</p>
+							</div>
+						</td>
+					</tr>
 
 					{{#each solicitar-cambio-fondos-apv.base}}
 			      <tr>
@@ -51,17 +59,61 @@
 	              <p class="table_desc">{{fundTitle}}</p>
 	            </td>
 				    	{{#each funds}}
-			        <td class="table-1 fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
-								<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" />
-								<p class="table_desc f-big toggl-edit-fields"><strong>{{stock}}</strong></p>
-							</td>
-			        <td class="table-1 fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
-								<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-flow data-edit-funds-normal-value="0" />
-								<p class="table_desc f-big toggl-edit-fields"><strong>{{flow}}</strong></p>
-							</td>
+			    			{{#compare id 'apv' operator='=='}}
+					        <td class="table-1 hide-md-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
+										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" />
+										<p class="table_desc f-big toggl-edit-fields"><strong>{{stock}}</strong></p>
+									</td>
+					        <td class="table-1 hide-md-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
+										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-flow data-edit-funds-normal-value="0" />
+										<p class="table_desc f-big toggl-edit-fields"><strong>{{flow}}</strong></p>
+									</td>
+								{{/compare}}
+				        <td class="table-1 hide-xs-important show-md-table-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
+									<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" />
+									<p class="table_desc f-big toggl-edit-fields"><strong>{{stock}}</strong></p>
+								</td>
+				        <td class="table-1 hide-xs-important show-md-table-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
+									<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-flow data-edit-funds-normal-value="0" />
+									<p class="table_desc f-big toggl-edit-fields"><strong>{{flow}}</strong></p>
+								</td>
 				      {{/each}}
 			      </tr>
 					{{/each}}
+
+					<tr class="hide-md-important">
+						<td>
+							<div>
+								<h2>Distribución actual de fondos</h2>
+								<p>Cuenta: Deposito</p>
+							</div>
+						</td>
+					</tr>
+
+					{{#each solicitar-cambio-fondos-apv.base}}
+			      <tr class="hide-md-important">
+	            <td class="table-6" align="left" valign="middle">
+	              <p class="tabs_content_subtitle"><strong>Nombre de fondo</strong></p>
+	              <p class="table_desc">{{fundTitle}}</p>
+	            </td>
+				    	{{#each funds}}
+			    			{{#compare id 'deposit' operator='=='}}
+					        <td class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
+										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" />
+										<p class="table_desc f-big toggl-edit-fields"><strong>{{stock}}</strong></p>
+									</td>
+					        <td class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
+										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-flow data-edit-funds-normal-value="0" />
+										<p class="table_desc f-big toggl-edit-fields"><strong>{{flow}}</strong></p>
+									</td>
+								{{/compare}}
+				      {{/each}}
+			      </tr>
+					{{/each}}
+
+					<tr>
+						<td>CAMBIO</td>
+					</tr>
 
 
           <tr class="hide-edit-fields show-edit-fields hide-xs-important show-md-table-important">
