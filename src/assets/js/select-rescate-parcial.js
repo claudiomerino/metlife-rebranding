@@ -11,7 +11,7 @@
         	$('.RescateParcialSucursal').removeClass('hide-xs')
         	$('.RescateParcialBanco').add('.RescateParcialTipoCuenta').add('.RescateParcialCuenta').addClass('hide-xs')
 
-          if( $('.InputCurrencySelectBank').val() > 0 && $('select.RescateParcialSucSelect.cs-select').val() != 'sucDefault' ) {
+          if( $('.InputCurrencySelectBank').val() > 0 && $('select.RescateParcialSucSelect.cs-select').val() != null ) {
             activeSubmitFn()
           }
           else {
@@ -33,6 +33,13 @@
         if(val == 'deposito') {
           $('.RescateParcialSucursal').addClass('hide-xs')
         	$('.RescateParcialBanco').add('.RescateParcialTipoCuenta').add('.RescateParcialCuenta').removeClass('hide-xs')
+
+          if($('#ncuenta').val().length > 0 && $('.InputCurrencySelectBank').val() > 0) {
+            activeSubmitFn()
+          }
+          else {
+            inactiveSubmitFn()
+          }
         }
       }
     }
@@ -46,12 +53,11 @@
         	inactiveSubmitFn()
         }
         else {
-        	activeSubmitFn()
-          if($('.InputCurrencySelectBank').val() > 0) {
-            activeSubmitFn()
+          if($('.InputCurrencySelectBank').val() == 0) {
+            inactiveSubmitFn()
           }
           else {
-            inactiveSubmitFn()
+            activeSubmitFn()
           }
         }
       }
@@ -62,8 +68,10 @@
   $('.InputCurrencySelectBank').on('keydown', (e) => {
     setTimeout( () => {
 
+      console.log($('select.RescateParcialSucSelect').val(), 'RescateParcialSucSelect')
+
       if($('select.RescateParcialSelect.cs-select').val() == 'cheque') {
-        if($('select.RescateParcialSucSelect').val() == 'sucDefault') {
+        if($('select.RescateParcialSucSelect').val() == null) {
           inactiveSubmitFn()
         }
         else {
@@ -86,8 +94,7 @@
       }
 
       if($('select.RescateParcialSelect.cs-select').val() == 'deposito') {
-        activeSubmitFn()
-        if($('#ncuenta').val().length > 0) {
+        if($('#ncuenta').val().length > 0 && $(e.currentTarget).val() > 0) {
           activeSubmitFn()
         }
         else {
