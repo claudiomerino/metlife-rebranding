@@ -254,6 +254,9 @@
 			border: 0 !important;
 			background-color: transparent;
 		}
+    &:disabled {
+      color: black !important;
+    }
 	}
 
   .InputCurrencyBountyRowDefault {
