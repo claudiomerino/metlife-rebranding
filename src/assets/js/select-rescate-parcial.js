@@ -61,22 +61,28 @@
 
   $('.InputCurrencySelectBank').on('keydown', (e) => {
     setTimeout( () => {
-      console.log($(e.currentTarget).val(), '$(e.currentTarget).val()')
-      console.log($(e.currentTarget).val() == 0, '$(e.currentTarget).val() == 0')
 
       if($('select.RescateParcialSelect.cs-select').val() == 'cheque') {
-        if($('select.RescateParcialSucSelect').val() == 'sucDefault' || $(e.currentTarget).val() == 0) {
-          console.log('enra inactive')
+        if($('select.RescateParcialSucSelect').val() == 'sucDefault') {
           inactiveSubmitFn()
         }
         else {
-          console.log('enra active')
-          activeSubmitFn()
+          if($(e.currentTarget).val() == 0) {
+            inactiveSubmitFn()
+          }
+          else {
+            activeSubmitFn()
+          }
         }
       }
 
       if($('select.RescateParcialSelect.cs-select').val() == 'valevista') {
-        activeSubmitFn()
+        if($(e.currentTarget).val() == 0) {
+          inactiveSubmitFn()
+        }
+        else {
+          activeSubmitFn()
+        }
       }
 
       if($('select.RescateParcialSelect.cs-select').val() == 'deposito') {
