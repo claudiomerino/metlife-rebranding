@@ -88,6 +88,10 @@ $gutter-lg: 15px;
   border-bottom: 1px solid $gray;
 }
 
+.u-divider-bottom-primary {
+  border-bottom: 4px solid $primary;
+}
+
 .u-section {
   padding: 1.6rem $gutter-xs;
   .u-container {
