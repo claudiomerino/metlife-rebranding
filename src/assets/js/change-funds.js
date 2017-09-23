@@ -75,6 +75,15 @@
 				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.distributionFundsPercentage').removeClass('red')
 			}
 
+
+			if($($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[0]).find('.fieldsTotalFundsValue').hasClass('red')) {
+				$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').addClass('button-disabled')
+			} else if(totalEditFunds == 100) {
+				$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').removeClass('button-disabled')
+			} else {
+				$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').addClass('button-disabled')
+			}
+
 			$(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`).find('.fieldsTotalFundsValue').html(totalEditFunds)
 
 		}, 1000)
