@@ -15,16 +15,32 @@
 		const editFundCheckContentValue = $(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-content="${editFundCheckValue}"]`)
 		const editFundCheckTotalValue = $(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${editFundCheckValue}"]`)
 
+		let checkedEditFunds
+
+
+		$('[data-edit-fund-check]').each( (index, el) => {
+			if($(el).is(':checked')) {
+				console.log('entra')
+				checkedEditFunds = true
+			}
+		})
+		console.log(checkedEditFunds, 'checkedEditFunds')
+
+		if(checkedEditFunds == true) {
+			$editFundsSubmit.removeClass('hide-edit-fields')
+		}
+		else {
+			$editFundsSubmit.addClass('hide-edit-fields')
+		}
+
 		editFundCheckContentValue.each( (index, el) => {
 			if($(e.currentTarget).is(':checked')) {
 				$(el).find('input').removeClass('hide-edit-fields')
 				$(el).find('.table_desc').addClass('hide-edit-fields')
-				$editFundsSubmit.removeClass('hide-edit-fields')
 			}
 			else {
 				$(el).find('input').addClass('hide-edit-fields')
 				$(el).find('.table_desc').removeClass('hide-edit-fields')
-				$editFundsSubmit.addClass('hide-edit-fields')
 			}
 		})
 
@@ -38,16 +54,21 @@
 		})
 	})
 
+
+
+
+
 	$dataChangeFunds.on('keydown', (e) => {
 
 		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
 			return false;
     }
 
-		setTimeout( () => {
-			let totalEditFunds = 0
+		let fieldsDistributionFundsValue = $(e.currentTarget).closest('.fieldsDistributionFunds').data('edit-fund-check-content')
+		let totalEditFunds = 0
 
-			const fieldsDistributionFundsValue = $(e.currentTarget).closest('.fieldsDistributionFunds').data('edit-fund-check-content')
+		setTimeout( () => {
+
 
 			$(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-content="${fieldsDistributionFundsValue}"]`).each( (index, el) => {
 
@@ -61,11 +82,19 @@
 
 				totalEditFunds += dataFundsValue
 
-			})
+				const totalFields = $($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[0]).find('.fieldsTotalFundsValue').text()
+				console.log(totalEditFunds, 'totalEditFunds')
+				console.log(totalFields, 'totalFields')
 
-			console.log(totalEditFunds, 'totalEditFunds')
-			console.log(fieldsDistributionFundsValue, 'fieldsDistributionFundsValue')
-			console.log($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0], 'ELEMENT NEW')
+				if($($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[0]).find('.fieldsTotalFundsValue').hasClass('red')) {
+					$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').addClass('button-disabled')
+				} else if(parseInt(totalFields) == 100) {
+					$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').removeClass('button-disabled')
+				} else {
+					$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').addClass('button-disabled')
+				}
+
+			})
 
 			if(totalEditFunds > 100) {
 				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.fieldsTotalFundsValue').addClass('red')
@@ -75,20 +104,17 @@
 				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.distributionFundsPercentage').removeClass('red')
 			}
 
-
-			if($($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[0]).find('.fieldsTotalFundsValue').hasClass('red')) {
-				$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').addClass('button-disabled')
-			} else if(totalEditFunds == 100) {
-				$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').removeClass('button-disabled')
-			} else {
-				$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-submit]').addClass('button-disabled')
-			}
-
 			$(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`).find('.fieldsTotalFundsValue').html(totalEditFunds)
 
 		}, 1000)
 
 	})
+
+
+
+
+
+/*
 
 	$dataChangeFundsStock.on('keydown', (e) => {
 
@@ -185,4 +211,4 @@
 
 		}, 1000)
 
-	})
+	}) */
