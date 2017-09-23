@@ -1,5 +1,6 @@
 
 	let $dataChangeFundsStock = $('[data-change-funds-stock]')
+	let $dataChangeFunds = $('[data-change-funds]')
 	let $dataChangeFundsFlow = $('[data-change-funds-flow]')
 	let $dataChangeFundsStockTotal = $('[data-change-funds-stock-total]')
 	let $dataChangeFundsFlowTotal = $('[data-change-funds-flow-total]')
@@ -35,6 +36,49 @@
 				$(el).find('.fieldsTotalFundsCol').addClass('hide-xs-important')
 			}
 		})
+	})
+
+	$dataChangeFunds.on('keydown', (e) => {
+
+		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+			return false;
+    }
+
+		setTimeout( () => {
+			let totalEditFunds = 0
+
+			const fieldsDistributionFundsValue = $(e.currentTarget).closest('.fieldsDistributionFunds').data('edit-fund-check-content')
+
+			$(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-content="${fieldsDistributionFundsValue}"]`).each( (index, el) => {
+
+				let dataFundsValue = parseInt($(el).find('input').val())
+
+				if(isNaN(dataFundsValue)) {
+					$(el).find('input').val(0)
+					dataFundsValue = parseInt($(el).find('input').val())
+					$(el).find('input').val('')
+				}
+
+				totalEditFunds += dataFundsValue
+
+			})
+
+			console.log(totalEditFunds, 'totalEditFunds')
+			console.log(fieldsDistributionFundsValue, 'fieldsDistributionFundsValue')
+			console.log($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0], 'ELEMENT NEW')
+
+			if(totalEditFunds > 100) {
+				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.fieldsTotalFundsValue').addClass('red')
+				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.distributionFundsPercentage').addClass('red')
+			} else {
+				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.fieldsTotalFundsValue').removeClass('red')
+				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.distributionFundsPercentage').removeClass('red')
+			}
+
+			$(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`).find('.fieldsTotalFundsValue').html(totalEditFunds)
+
+		}, 1000)
+
 	})
 
 	$dataChangeFundsStock.on('keydown', (e) => {
