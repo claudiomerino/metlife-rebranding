@@ -9,15 +9,20 @@
 	let $editFundsSubmit = $('.editFundsSubmit')
 	let $changeFundsCancel = $('.changeFundsCancel')
 	let $changeFundsEdit = $('.changeFundsEdit')
+	let $changeFundsMessageCancel = $('.changeFundsMessageCancel')
 
 
 	$dataEditFundCheck.on('change', (e) => {
-		console.log(e, 'element esdfsdfsdfsdf')
 		dataEditFundCheckFn(e, 'event')
 	})
 
 	$changeFundsEdit.on('click', (e) => {
 		e.preventDefault()
+		/**
+		 * Edit button on mobile, change all fields to show
+		 * Ready to edit
+		 **/
+
 		$('[data-edit-fund-check]').each( (index, el) => {
 			$(el).attr('checked', true)
 			dataEditFundCheckFn($(el), 'element')
@@ -25,7 +30,27 @@
 	})
 
 	$changeFundsCancel.on('click', (e) => {
+		e.preventDefault()
 
+		/**
+		 * All checkbox disable and remove edit inputs
+		 **/
+		$('[data-edit-fund-check]').each( (index, el) => {
+			$(el).attr('checked', false)
+			dataEditFundCheckFn($(el), 'element')
+		})
+
+		/**
+		 * Remove class to show alert error
+		 **/
+		$changeFundsMessageCancel.removeClass('hide-state-update')
+
+		/**
+		 * Scroll top to message cancel
+		 **/
+		setTimeout( () => {
+   		$( 'html,body' ).animate({ scrollTop: $changeFundsMessageCancel.offset().top - 90 }, 'fast');
+		}, 750 );
 	})
 
 	function dataEditFundCheckFn(e, type) {
@@ -45,6 +70,13 @@
 			editFundCheckTotalValue = $(e).closest('.distributionFunds').find(`[data-edit-fund-check-total="${editFundCheckValue}"]`)
 		}
 
+		editFundCheckContentValueFn(editFundCheckContentValue, type, e)
+		editFundCheckTotalValueFn(editFundCheckTotalValue, type, e)
+		showHideEditFieldsFn()
+	}
+
+	function showHideEditFieldsFn() {
+
 		let checkedEditFunds
 
 		$('[data-edit-fund-check]').each( (index, el) => {
@@ -59,6 +91,10 @@
 		else {
 			$editFundsSubmit.addClass('hide-edit-fields')
 		}
+
+	}
+
+	function editFundCheckContentValueFn(editFundCheckContentValue, type, e) {
 
 		editFundCheckContentValue.each( (index, el) => {
 
@@ -84,6 +120,10 @@
 			}
 		})
 
+	}
+
+	function editFundCheckTotalValueFn(editFundCheckTotalValue, type, e) {
+
 		editFundCheckTotalValue.each( (index, el) => {
 			if(type == 'event') {
 				if($(e.currentTarget).is(':checked')) {
@@ -102,6 +142,7 @@
 				}
 			}
 		})
+
 	}
 
 
@@ -133,8 +174,6 @@
 				totalEditFunds += dataFundsValue
 
 				const totalFields = $($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[0]).find('.fieldsTotalFundsValue').text()
-				console.log(totalEditFunds, 'totalEditFunds')
-				console.log(totalFields, 'totalFields')
 
 				if($($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[0]).find('.fieldsTotalFundsValue').hasClass('red')) {
 					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
