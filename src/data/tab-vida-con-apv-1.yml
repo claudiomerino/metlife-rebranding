@@ -18,7 +18,7 @@ items:
         edit: 'true'
       -
         id: 3
-        label: 'Régimen:'
+        label: 'Régimen Tributario:'
         value: B
         classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'true'
