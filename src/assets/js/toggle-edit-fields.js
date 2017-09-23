@@ -29,9 +29,7 @@
 		if($(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-cancel]').data('edit-fields-cancel') == dataFields) {
 			$(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-button]').removeClass('hide-edit-fields')
 			$(e.currentTarget).closest('.distributionFunds').find('.show-edit-fields').addClass('hide-edit-fields')
-
-			const $editFields = $(e.currentTarget).closest('.distributionFunds').find('[data-change-funds]')
-
+			const $editFields = $(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields]')
 			toggleEditFieldsFn($editFields, $(e.currentTarget).closest('.distributionFunds').find('[data-edit-fields-cancel]').data('edit-fields-cancel'), true)
 		}
 	})

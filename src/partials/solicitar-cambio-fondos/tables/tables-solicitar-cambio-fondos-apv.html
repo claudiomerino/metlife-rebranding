@@ -59,20 +59,20 @@
 				    	{{#each funds}}
 			    			{{#compare id 'apv' operator='=='}}
 					        <td class="table-1 hide-md-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
-										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
 										<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Stock:</span> {{stock}}</strong></p>
 									</td>
 					        <td class="table-1 hide-md-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
-										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
 										<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Flujo:</span> {{flow}}</strong></p>
 									</td>
 								{{/compare}}
 				        <td data-edit-fund-check-content="{{id}}StockCheck" class="table-1 hide-xs-important show-md-table-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
-									<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+									<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
 									<p class="table_desc toggl-edit-fields"><strong>{{stock}}</strong></p>
 								</td>
 				        <td data-edit-fund-check-content="{{id}}FlowCheck" class="table-1 hide-xs-important show-md-table-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
-									<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+									<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
 									<p class="table_desc toggl-edit-fields"><strong>{{flow}}</strong></p>
 								</td>
 				      {{/each}}
@@ -131,11 +131,11 @@
 				    	{{#each funds}}
 			    			{{#compare id 'deposit' operator='=='}}
 					        <td class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
-										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" />
+										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" />
 										<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Stock:</span> {{stock}}</strong></p>
 									</td>
 					        <td class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
-										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-flow data-edit-funds-normal-value="0" />
+										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds-flow data-edit-funds-normal-value="0" />
 										<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Flujo:</span> {{flow}}</strong></p>
 									</td>
 								{{/compare}}
@@ -160,11 +160,11 @@
 				    	{{#each funds}}
 			    			{{#compare id 'voluntary' operator='=='}}
 					        <td class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
-										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" />
+										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" />
 										<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Stock:</span> {{stock}}</strong></p>
 									</td>
 					        <td class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
-										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" data-edit-fields="distributionFunds" placeholder="0" data-change-funds-flow data-edit-funds-normal-value="0" />
+										<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds-flow data-edit-funds-normal-value="0" />
 										<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Flujo:</span> {{flow}}</strong></p>
 									</td>
 								{{/compare}}
@@ -191,8 +191,8 @@
 			</div>
 
 			<div class="col-xs-12 end-xs u-space hide-edit-fields editFundsSubmit">
-				<a href="#" class="u-right-sm u-top-sm col-xs-12 col-sm-3 clientProfileCancelUpdateData" data-edit-fields-cancel="distributionFunds">Cancelar</a>
-				<a href="#" class="button button-primary button-disabled clientProfileSaveUpdateData" data-edit-fields-submit>Solicitar cambio de Fondos</a>
+				<a href="#" class="u-right-sm u-top-sm col-xs-12 col-sm-3 changeFundsCancel">Cancelar</a>
+				<a href="#" class="button button-primary button-disabled changeFundsSubmit">Solicitar cambio de Fondos</a>
 			</div>
 
 		</div>
