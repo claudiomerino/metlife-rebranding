@@ -3,36 +3,30 @@
     const options = {
       onChange : function( val ) {
         if(val == 'payDefault') {
-          $('.InputCurrencyRescateButton').addClass('button-disabled')
+          inactiveSubmitFn()
           $('.RescateParcialSucursal').addClass('hide-xs')
         }
 
         if(val == 'cheque') {
         	$('.RescateParcialSucursal').removeClass('hide-xs')
         	$('.RescateParcialBanco').add('.RescateParcialTipoCuenta').add('.RescateParcialCuenta').addClass('hide-xs')
-          if( $('.InputCurrencySelectBank').val() ) {
-            $('.InputCurrencyRescateButton').removeClass('button-disabled')
-          }
-          else {
-            $('.InputCurrencyRescateButton').addClass('button-disabled')
-          }
 
-          if($('select.RescateParcialSucSelect.cs-select').val() == 'sucDefault') {
-            $('.InputCurrencyRescateButton').addClass('button-disabled')
+          if( $('.InputCurrencySelectBank').val() > 0 && $('select.RescateParcialSucSelect.cs-select').val() != 'sucDefault' ) {
+            activeSubmitFn()
           }
           else {
-            $('.InputCurrencyRescateButton').removeClass('button-disabled')
+            inactiveSubmitFn()
           }
         }
 
         if(val == 'valevista') {
         	$('.RescateParcialSucursal').addClass('hide-xs')
         	$('.RescateParcialBanco').add('.RescateParcialTipoCuenta').add('.RescateParcialCuenta').addClass('hide-xs')
-          if($('.InputCurrencySelectBank').val()) {
-            $('.InputCurrencyRescateButton').removeClass('button-disabled')
+          if($('.InputCurrencySelectBank').val() > 0) {
+            activeSubmitFn()
           }
           else {
-            $('.InputCurrencyRescateButton').addClass('button-disabled')
+            inactiveSubmitFn()
           }
         }
 
@@ -49,15 +43,15 @@
     const options = {
       onChange : function( val ) {
         if(val == 'sucDefault') {
-        	$('.InputCurrencyRescateButton').addClass('button-disabled')
+        	inactiveSubmitFn()
         }
         else {
-        	$('.InputCurrencyRescateButton').removeClass('button-disabled')
-          if($('.InputCurrencySelectBank').val()) {
-            $('.InputCurrencyRescateButton').removeClass('button-disabled')
+        	activeSubmitFn()
+          if($('.InputCurrencySelectBank').val() > 0) {
+            activeSubmitFn()
           }
           else {
-            $('.InputCurrencyRescateButton').addClass('button-disabled')
+            inactiveSubmitFn()
           }
         }
       }
@@ -67,55 +61,58 @@
 
   $('.InputCurrencySelectBank').on('keydown', (e) => {
     setTimeout( () => {
-      if($('select.RescateParcialSucSelect').val() == 'sucDefault') {
-        $('.InputCurrencyRescateButton').addClass('button-disabled')
-      }
-      else {
-        $('.InputCurrencyRescateButton').removeClass('button-disabled')
+      console.log($(e.currentTarget).val(), '$(e.currentTarget).val()')
+      console.log($(e.currentTarget).val() == 0, '$(e.currentTarget).val() == 0')
+
+      if($('select.RescateParcialSelect.cs-select').val() == 'cheque') {
+        if($('select.RescateParcialSucSelect').val() == 'sucDefault' || $(e.currentTarget).val() == 0) {
+          console.log('enra inactive')
+          inactiveSubmitFn()
+        }
+        else {
+          console.log('enra active')
+          activeSubmitFn()
+        }
       }
 
       if($('select.RescateParcialSelect.cs-select').val() == 'valevista') {
-        $('.InputCurrencyRescateButton').removeClass('button-disabled')
+        activeSubmitFn()
       }
 
       if($('select.RescateParcialSelect.cs-select').val() == 'deposito') {
-        $('.InputCurrencyRescateButton').removeClass('button-disabled')
+        activeSubmitFn()
+        if($('#ncuenta').val().length > 0) {
+          activeSubmitFn()
+        }
+        else {
+          inactiveSubmitFn()
+        }
       }
 
       if($(e.currentTarget).hasClass('is-invalid-input')) {
         $(e.currentTarget).siblings('.form-error').addClass('is-visible')
-        $('.InputCurrencyRescateButton').addClass('button-disabled')
       }
       else {
         $(e.currentTarget).siblings('.form-error').removeClass('is-visible')
-        $('.InputCurrencyRescateButton').removeClass('button-disabled')
-
-        if($('#ncuenta').val().length > 0) {
-          $('.InputCurrencyRescateButton').removeClass('button-disabled')
-        }
-        else {
-          $('.InputCurrencyRescateButton').addClass('button-disabled')
-        }
       }
 
     }, 1000)
-
   })
 
   $('#ncuenta').on('keydown', (e) => {
     setTimeout( () => {
-      if($(e.currentTarget).val().length > 0) {
-        $('.InputCurrencyRescateButton').removeClass('button-disabled')
+      if($(e.currentTarget).val() > 0) {
+        activeSubmitFn()
 
-        if($('.InputCurrencySelectBank').val().length > 0) {
-          $('.InputCurrencyRescateButton').removeClass('button-disabled')
+        if($('.InputCurrencySelectBank').val() > 0) {
+          activeSubmitFn()
         }
         else {
-          $('.InputCurrencyRescateButton').addClass('button-disabled')
+          inactiveSubmitFn()
         }
       }
       else {
-        $('.InputCurrencyRescateButton').addClass('button-disabled')
+        inactiveSubmitFn()
       }
     }, 1000)
   })
@@ -126,3 +123,15 @@
       $('#rescate-parcial').foundation('open');
     }
   })
+
+  let $InputCurrencyRescateButton = $('.InputCurrencyRescateButton')
+
+  function activeSubmitFn() {
+    console.log('remove button-disabled')
+    $InputCurrencyRescateButton.removeClass('button-disabled')
+  }
+
+  function inactiveSubmitFn() {
+    console.log('add button-disabled')
+    $InputCurrencyRescateButton.addClass('button-disabled')
+  }
