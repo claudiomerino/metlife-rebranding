@@ -10,119 +10,99 @@
 
 			<p><strong>Fecha de Actualización del Saldo:</strong></p>
   
-      <div class="u-row u-space-xs">
-  			<div class="col-xs-12 col-sm-6 col-md-3 u-right">
-  				<span class="input input--ichiro input--datepicker DatePicker u-space">
-  					<input class="input__field input__field--ichiro" placeholder="Seleccionar fecha" type="text" class="span3" readonly>
-  					<i class="material-icons">date_range</i>
-  				</span>
-  			</div>
+		      <div class="u-row u-space-xs">
+		  			<div class="col-xs-12 col-sm-6 col-md-3 u-right">
+		  				<span class="input input--ichiro input--datepicker DatePicker u-space">
+		  					<input class="input__field input__field--ichiro" placeholder="Seleccionar fecha" type="text" class="span3" readonly>
+		  					<i class="material-icons">date_range</i>
+		  				</span>
+		  			</div>
+		      </div>
 
-        <div class="col-xs-12 col-sm-6 u-space-xs ClientProfileToggleHide life_apv_col_balance">
-          <a class="" data-open="lifeApvEvolutionBalance">Ver grafico de evolución de saldos</a>
-        </div>
-      </div>
+				<div class="u-row u-row-xs-full">
+					<div class="tabs_col col-xs-12 col-md-3 col-xs-full u-space-small">
+						<p class="line_jump"><strong>Saldo Acumulado a la Fecha:</strong></p>
+						<p class="line_jump"> UF 335.67 / $ 7.302.944</p>
+					</div>
 
-      <section>
-        <div class="reveal " id="lifeApvEvolutionBalance" data-reveal>
-          <div class="col-xs-12 col-xs-offset-1 center-xs">
-            <h2 class="u-space text-center u-top">Grafico de Evolución de Saldos</h2>
-            <img src="{{root}}/assets/img/balance.png" class="u-space">
-            <div class="u-row center-xs u-space">
-              <a data-close aria-label="Close modal" class="button button-link col-xs-12 col-sm-3">Volver</a>
-            </div>
-          </div>
+					<div class="tabs_col col-xs-12 col-md-3 col-xs-full u-space-small">
+						<p class="line_jump"><strong>Saldo Régimen A:</strong></p>
+						<p class="line_jump">UF 335.67 / $ 7.302.944</p>
+					</div>
 
-          <button class="close-button" data-close aria-label="Cerrar modal" type="button">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      </section>
+					<div class="tabs_col col-xs-12 col-md-3 col-xs-full u-space-small">
+						<p class="line_jump"><strong>Saldo Régimen B:</strong></p>
+						<p class="line_jump">UF 335.67 / $ 7.302.944</p>
+					</div>
 
-			<div class="u-row u-row-xs-full">
-				<div class="tabs_col col-xs-12 col-md-3 col-xs-full u-space-small">
-					<p class="line_jump"><strong>Saldo Acumulado a la Fecha:</strong></p>
-					<p class="line_jump"> UF 335.67 / $ 7.302.944</p>
+					<div class="tabs_col col-xs-12 col-md-3 col-xs-full u-space-small">
+						<p class="line_jump"><strong>Saldo Bonificación Cargo Fiscal:</strong></p>
+						<p class="line_jump">UF 335.67 / $ 7.302.944</p>
+					</div>
 				</div>
 
-				<div class="tabs_col col-xs-12 col-md-3 col-xs-full u-space-small">
-					<p class="line_jump"><strong>Saldo Régimen A:</strong></p>
-					<p class="line_jump">UF 335.67 / $ 7.302.944</p>
+		        <div class="tabs_col col-xs-12 col-xs-full start-xs end-md">
+					<a data-open-content="partialRescuesHistory" class="openContent">
+		            <span class="openContentText" data-rest-text="Ver Histórico de Rescates Parciales" data-open-text="Ocultar Histórico de Rescates Parciales" data-close="true">
+		              Ver Histórico de Rescates Parciales
+		            </span>
+		            <i class="fa fa-angle-down"></i>
+		          	</a>
 				</div>
 
-				<div class="tabs_col col-xs-12 col-md-3 col-xs-full u-space-small">
-					<p class="line_jump"><strong>Saldo Régimen B:</strong></p>
-					<p class="line_jump">UF 335.67 / $ 7.302.944</p>
-				</div>
+		        <div class="col-xs-12 toggleContent" data-toggle-content="partialRescuesHistory">
+		          <section class="u-top">
+					<div class="table table-scroll center-xs col-xs-12">
+					  <table class="table-responsive table-responsive-label u-striped u-striped-more">
+					    <thead>
+					      <tr>
+					        <th class="table-3">
+								<p class="f-small table_title"><strong>Fecha Solicitud</strong></p>
+							</th>
+					        <th class="table-3">
+								<p class="f-small table_title"><strong>Canal de Solicitud</strong></p>
+							</th>
+					        <th class="table-3">
+								<p class="f-small table_title"><strong>Monto Rescate UF / Pesos</strong></p>
+							</th>
+					        <th class="table-3">
+								<p class="f-small table_title"><strong>Fecha de Pago</strong></p>
+							</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td class="table-3 start-xs" valign="middle" data-table-title="">
+								<p class="show-xs hide-md line_jump"><strong>Fecha Solicitud:</strong></p>
+								<p>25/04/2016</p>
 
-				<div class="tabs_col col-xs-12 col-md-3 col-xs-full u-space-small">
-					<p class="line_jump"><strong>Saldo Bonificación Cargo Fiscal:</strong></p>
-					<p class="line_jump">UF 335.67 / $ 7.302.944</p>
-				</div>
-			</div>
+							</td>
+					        <td class="table-3 start-xs" valign="middle">
+					        <p class="show-xs hide-md line_jump"><strong>Canal de Solicitud:</strong></p>
+					        	<p >Sucursal</p>
+							</td>
+							<td class="table-3 start-xs" valign="middle">
+							<p class="show-xs hide-md line_jump"><strong>Monto Rescate UF / Pesos:</strong></p>
+					        	<p> UF 55.4 / $ 4.554.555</p>
+							</td>
+							<td class="table-3 start-xs" valign="middle">
+							<p class="show-xs hide-md line_jump"><strong>Fecha de Pago:</strong></p>
+					        	<p >27/04/2016</a>
+								</p>
+							</td>
+					      </tr>
+					    </tbody>
+					  </table>
+					  <div class="u-row">
+					  	<div class="col-xs-12 end-xs u-space-xs u-top">
+			              <a href="{{root}}solicitar-rescate-parcial/solicitar-rescate-parcial.html" class="button button-small button-full-xs">Solicitar Rescate Parcial</a>
 
-	        <div class="tabs_col col-xs-12 col-xs-full start-xs end-md">
-				<a data-open-content="partialRescuesHistory" class="openContent">
-	            <span class="openContentText" data-rest-text="Ver Histórico de Rescates Parciales" data-open-text="Ocultar Histórico de Rescates Parciales" data-close="true">
-	              Ver Histórico de Rescates Parciales
-	            </span>
-	            <i class="fa fa-angle-down"></i>
-	          	</a>
-			</div>
+			            </div>
+					  </div>
+					</div>
 
-	        <div class="col-xs-12 toggleContent" data-toggle-content="partialRescuesHistory">
-	          <section class="u-top">
-				<div class="table table-scroll center-xs col-xs-12">
-				  <table class="table-responsive table-responsive-label u-striped u-striped-more">
-				    <thead>
-				      <tr>
-				        <th class="table-3">
-							<p class="f-small table_title"><strong>Fecha Solicitud</strong></p>
-						</th>
-				        <th class="table-3">
-							<p class="f-small table_title"><strong>Canal de Solicitud</strong></p>
-						</th>
-				        <th class="table-3">
-							<p class="f-small table_title"><strong>Monto Rescate UF / Pesos</strong></p>
-						</th>
-				        <th class="table-3">
-							<p class="f-small table_title"><strong>Fecha de Pago</strong></p>
-						</th>
-				      </tr>
-				    </thead>
-				    <tbody>
-				      <tr>
-				        <td class="table-3 start-xs" valign="middle" data-table-title="">
-							<p class="show-xs hide-md line_jump"><strong>Fecha Solicitud:</strong></p>
-							<p>25/04/2016</p>
-
-						</td>
-				        <td class="table-3 start-xs" valign="middle">
-				        <p class="show-xs hide-md line_jump"><strong>Canal de Solicitud:</strong></p>
-				        	<p >Sucursal</p>
-						</td>
-						<td class="table-3 start-xs" valign="middle">
-						<p class="show-xs hide-md line_jump"><strong>Monto Rescate UF / Pesos:</strong></p>
-				        	<p> UF 55.4 / $ 4.554.555</p>
-						</td>
-						<td class="table-3 start-xs" valign="middle">
-						<p class="show-xs hide-md line_jump"><strong>Fecha de Pago:</strong></p>
-				        	<p >27/04/2016</a>
-							</p>
-						</td>
-				      </tr>
-				    </tbody>
-				  </table>
-				  <div class="u-row">
-				  	<div class="col-xs-12 end-xs u-space-xs u-top">
-		              <a href="{{root}}solicitar-rescate-parcial/solicitar-rescate-parcial.html" class="button button-small button-full-xs">Solicitar Rescate Parcial</a>
-
-		            </div>
-				  </div>
-				</div>
-
-			  </section>
-	        </div>
+				  </section>
+		        </div>
 
 
 

@@ -59,6 +59,7 @@ items:
         label: 'Celular del Asesor:'
         value: +56 965 445 545
         classCols: col-xs-12 col-sm-6 col-md-3
+        link: 'tel:+56965445545'
         edit: 'true'
       -
         id: 9
