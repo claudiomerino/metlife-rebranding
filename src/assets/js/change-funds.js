@@ -11,7 +11,6 @@
 	let $changeFundsEdit = $('.changeFundsEdit')
 	let $changeFundsMessageCancel = $('.changeFundsMessageCancel')
 
-
 	$dataEditFundCheck.on('change', (e) => {
 		dataEditFundCheckFn(e, 'event')
 	})

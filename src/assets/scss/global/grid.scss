@@ -89,7 +89,8 @@ $gutter-lg: 15px;
 }
 
 .u-divider-bottom-primary {
-  border-bottom: 4px solid $primary;
+  border-bottom: 2px solid $primary;
+  padding-bottom: 10px;
 }
 
 .u-section {
