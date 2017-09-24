@@ -182,25 +182,30 @@
 
 				totalEditFunds += dataFundsValue
 
-				const totalFields = $($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[0]).find('.fieldsTotalFundsValue').text()
+				$(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`).each( (index, value) => {
 
-				if($($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[0]).find('.fieldsTotalFundsValue').hasClass('red')) {
-					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
-				} else if(parseInt(totalFields) == 100) {
-					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').removeClass('button-disabled')
-				} else {
-					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
-				}
+					const totalFields = $($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[`${index}`]).find('.fieldsTotalFundsValue').text()
+
+					if($($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[`${index}`]).find('.fieldsTotalFundsValue').hasClass('red')) {
+						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
+					} else if(parseInt(totalFields) == 100) {
+						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').removeClass('button-disabled')
+					} else {
+						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
+					}
+				})
 
 			})
 
-			if(totalEditFunds > 100) {
-				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.fieldsTotalFundsValue').addClass('red')
-				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.distributionFundsPercentage').addClass('red')
-			} else {
-				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.fieldsTotalFundsValue').removeClass('red')
-				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.distributionFundsPercentage').removeClass('red')
-			}
+			$(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`).each( (index, value) => {
+				if(totalEditFunds > 100) {
+					$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[`${index}`]).find('.fieldsTotalFundsValue').addClass('red')
+					$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[`${index}`]).find('.distributionFundsPercentage').addClass('red')
+				} else {
+					$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[`${index}`]).find('.fieldsTotalFundsValue').removeClass('red')
+					$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[`${index}`]).find('.distributionFundsPercentage').removeClass('red')
+				}
+			})
 
 			$(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`).find('.fieldsTotalFundsValue').html(totalEditFunds)
 
