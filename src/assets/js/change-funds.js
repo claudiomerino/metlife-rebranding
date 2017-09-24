@@ -8,9 +8,11 @@
 	let $dataEditFundCheck = $('[data-edit-fund-check]')
 	let $editFundsSubmit = $('.editFundsSubmit')
 	let $changeFundsCancel = $('.changeFundsCancel')
+	let $changeFundsSubmit = $('.changeFundsSubmit')
 	let $changeFundsEdit = $('.changeFundsEdit')
 	let $changeFundsMessageCancel = $('.changeFundsMessageCancel')
-
+	let $changeFundsMessageSuccess = $('.changeFundsMessageSuccess')
+	let $ChangeFundsContinueCheckbox = $('.ChangeFundsContinueCheckbox')
 
 	$dataEditFundCheck.on('change', (e) => {
 		dataEditFundCheckFn(e, 'event')
@@ -23,14 +25,49 @@
 		 * Ready to edit
 		 **/
 
+		$(e.currentTarget).addClass('hide-edit-fields')
+		$('.editFundsTitle').addClass('hide-xs')
+		$('.editFundsTitle').siblings('.accordion-title').removeClass('hide-xs')
+		$('.ChangeFundsContinueWrap').removeClass('hide-xs')
+
+		const $targetAcordionChangeFunds = $('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2) .accordion-content')
+		$('.AccordionChangeFunds').foundation('up', $targetAcordionChangeFunds);
+
 		$('[data-edit-fund-check]').each( (index, el) => {
 			$(el).attr('checked', true)
 			dataEditFundCheckFn($(el), 'element')
 		})
 	})
 
+	$ChangeFundsContinueCheckbox.on('click', (e) => {
+		if($(e.currentTarget).is(':checked')) {
+			$('.SameDistributionChange').removeClass('hide-xs')
+			$('.SameDistributionInitial').addClass('hide-xs')
+
+			$('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2)').addClass('inactive-accordion')
+		}
+		else {
+			$('.SameDistributionChange').addClass('hide-xs')
+			$('.SameDistributionInitial').removeClass('hide-xs')
+
+			$('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2)').removeClass('inactive-accordion')
+		}
+	})
+
+	$('.AccordionChangeFunds').find('.accordion-item .accordion-title').on('click', (e) => {
+		e.preventDefault()
+
+		if($ChangeFundsContinueCheckbox.is(':checked')) {
+			const $AcordionChangeCheckFunds = $('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2) .accordion-content')
+			$('.AccordionChangeFunds').foundation('up', $targetAcordionChangeFunds);
+		}
+	})
+
+
 	$changeFundsCancel.on('click', (e) => {
 		e.preventDefault()
+
+		$changeFundsEdit.removeClass('hide-edit-fields')
 
 		/**
 		 * All checkbox disable and remove edit inputs
@@ -44,12 +81,62 @@
 		 * Remove class to show alert error
 		 **/
 		$changeFundsMessageCancel.removeClass('hide-state-update')
+		$('.editFundsTitle').removeClass('hide-xs')
+		$('.editFundsTitle').siblings('.accordion-title').addClass('hide-xs')
+
+		$('.ChangeFundsContinueWrap').addClass('hide-xs')
+
+		const $AcordionChangeCheckFunds = $('.AccordionChangeFunds').find('.accordion-item .accordion-content')
+
+		$('.AccordionChangeFunds').foundation('down', $AcordionChangeCheckFunds);
+
+		$('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2)').removeClass('inactive-accordion')
+
+		$('.AccordionChangeFunds').find('.accordion-item').addClass('is-active')
 
 		/**
 		 * Scroll top to message cancel
 		 **/
 		setTimeout( () => {
    		$( 'html,body' ).animate({ scrollTop: $changeFundsMessageCancel.offset().top - 90 }, 'fast');
+		}, 750 );
+	})
+
+	$changeFundsSubmit.on('click', (e) => {
+		e.preventDefault()
+
+		$changeFundsEdit.removeClass('hide-edit-fields')
+
+		/**
+		 * All checkbox disable and remove edit inputs
+		 **/
+		$('[data-edit-fund-check]').each( (index, el) => {
+			$(el).attr('checked', false)
+			dataEditFundCheckFn($(el), 'element')
+		})
+
+		/**
+		 * Remove class to show alert error
+		 **/
+		$changeFundsMessageSuccess.removeClass('hide-state-update')
+		$('.editFundsTitle').removeClass('hide-xs')
+		$('.editFundsTitle').siblings('.accordion-title').addClass('hide-xs')
+
+		$('.ChangeFundsContinueWrap').addClass('hide-xs')
+
+		const $AcordionChangeCheckFunds = $('.AccordionChangeFunds').find('.accordion-item .accordion-content')
+
+		$('.AccordionChangeFunds').foundation('down', $AcordionChangeCheckFunds);
+
+		$('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2)').removeClass('inactive-accordion')
+
+		$('.AccordionChangeFunds').find('.accordion-item').addClass('is-active')
+
+		/**
+		 * Scroll top to message cancel
+		 **/
+		setTimeout( () => {
+   		$( 'html,body' ).animate({ scrollTop: $changeFundsMessageSuccess.offset().top - 90 }, 'fast');
 		}, 750 );
 	})
 
@@ -146,10 +233,23 @@
 	}
 
 
+	/**
+	 * Continue click
+	 **/
 
+	const $ChangeFundsContinue = $('.ChangeFundsContinue')
+
+	$ChangeFundsContinue.on('click', (e) => {
+		e.preventDefault()
+		const $nextContinueFunds = $(e.currentTarget).closest('.accordion-item').next('.accordion-item').find('.accordion-content')
+
+		$('.AccordionChangeFunds').foundation('up', $(e.currentTarget).closest('.accordion-content'));
+		$('.AccordionChangeFunds').foundation('down', $nextContinueFunds);
+	})
 
 
 	$dataChangeFunds.on('keydown', (e) => {
+		console.log('change input')
 
 		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
 			return false;
@@ -163,6 +263,7 @@
 
 			$(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-content="${fieldsDistributionFundsValue}"]`).each( (index, el) => {
 
+
 				let dataFundsValue = parseInt($(el).find('input').val())
 
 				if(isNaN(dataFundsValue)) {
@@ -173,25 +274,32 @@
 
 				totalEditFunds += dataFundsValue
 
-				const totalFields = $($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[0]).find('.fieldsTotalFundsValue').text()
+				$(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`).each( (index, value) => {
 
-				if($($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[0]).find('.fieldsTotalFundsValue').hasClass('red')) {
-					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
-				} else if(parseInt(totalFields) == 100) {
-					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').removeClass('button-disabled')
-				} else {
-					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
-				}
+					const totalFields = $($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[`${index}`]).find('.fieldsTotalFundsValue').text()
+
+					if($($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[`${index}`]).find('.fieldsTotalFundsValue').hasClass('red')) {
+						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
+					} else if(parseInt(totalFields) == 100) {
+						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').removeClass('button-disabled')
+					} else {
+						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
+					}
+				})
 
 			})
 
-			if(totalEditFunds > 100) {
-				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.fieldsTotalFundsValue').addClass('red')
-				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.distributionFundsPercentage').addClass('red')
-			} else {
-				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.fieldsTotalFundsValue').removeClass('red')
-				$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[0]).find('.distributionFundsPercentage').removeClass('red')
-			}
+			$(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`).each( (index, value) => {
+				if(totalEditFunds > 100) {
+					$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[`${index}`]).find('.fieldsTotalFundsValue').addClass('red')
+					$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[`${index}`]).find('.distributionFundsPercentage').addClass('red')
+				} else {
+					$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[`${index}`]).find('.fieldsTotalFundsValue').removeClass('red')
+					$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[`${index}`]).find('.distributionFundsPercentage').removeClass('red')
+				}
+			})
+
+			console.log(fieldsDistributionFundsValue, 'fieldsDistributionFundsValue')
 
 			$(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`).find('.fieldsTotalFundsValue').html(totalEditFunds)
 
