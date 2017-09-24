@@ -8,8 +8,10 @@
 	let $dataEditFundCheck = $('[data-edit-fund-check]')
 	let $editFundsSubmit = $('.editFundsSubmit')
 	let $changeFundsCancel = $('.changeFundsCancel')
+	let $changeFundsSubmit = $('.changeFundsSubmit')
 	let $changeFundsEdit = $('.changeFundsEdit')
 	let $changeFundsMessageCancel = $('.changeFundsMessageCancel')
+	let $changeFundsMessageSuccess = $('.changeFundsMessageSuccess')
 	let $ChangeFundsContinueCheckbox = $('.ChangeFundsContinueCheckbox')
 
 	$dataEditFundCheck.on('change', (e) => {
@@ -65,7 +67,7 @@
 	$changeFundsCancel.on('click', (e) => {
 		e.preventDefault()
 
-		$changeFundsEdit.removeClass('hide-xs')
+		$changeFundsEdit.removeClass('hide-edit-fields')
 
 		/**
 		 * All checkbox disable and remove edit inputs
@@ -79,12 +81,62 @@
 		 * Remove class to show alert error
 		 **/
 		$changeFundsMessageCancel.removeClass('hide-state-update')
+		$('.editFundsTitle').removeClass('hide-xs')
+		$('.editFundsTitle').siblings('.accordion-title').addClass('hide-xs')
+
+		$('.ChangeFundsContinueWrap').addClass('hide-xs')
+
+		const $AcordionChangeCheckFunds = $('.AccordionChangeFunds').find('.accordion-item .accordion-content')
+
+		$('.AccordionChangeFunds').foundation('down', $AcordionChangeCheckFunds);
+
+		$('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2)').removeClass('inactive-accordion')
+
+		$('.AccordionChangeFunds').find('.accordion-item').addClass('is-active')
 
 		/**
 		 * Scroll top to message cancel
 		 **/
 		setTimeout( () => {
    		$( 'html,body' ).animate({ scrollTop: $changeFundsMessageCancel.offset().top - 90 }, 'fast');
+		}, 750 );
+	})
+
+	$changeFundsSubmit.on('click', (e) => {
+		e.preventDefault()
+
+		$changeFundsEdit.removeClass('hide-edit-fields')
+
+		/**
+		 * All checkbox disable and remove edit inputs
+		 **/
+		$('[data-edit-fund-check]').each( (index, el) => {
+			$(el).attr('checked', false)
+			dataEditFundCheckFn($(el), 'element')
+		})
+
+		/**
+		 * Remove class to show alert error
+		 **/
+		$changeFundsMessageSuccess.removeClass('hide-state-update')
+		$('.editFundsTitle').removeClass('hide-xs')
+		$('.editFundsTitle').siblings('.accordion-title').addClass('hide-xs')
+
+		$('.ChangeFundsContinueWrap').addClass('hide-xs')
+
+		const $AcordionChangeCheckFunds = $('.AccordionChangeFunds').find('.accordion-item .accordion-content')
+
+		$('.AccordionChangeFunds').foundation('down', $AcordionChangeCheckFunds);
+
+		$('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2)').removeClass('inactive-accordion')
+
+		$('.AccordionChangeFunds').find('.accordion-item').addClass('is-active')
+
+		/**
+		 * Scroll top to message cancel
+		 **/
+		setTimeout( () => {
+   		$( 'html,body' ).animate({ scrollTop: $changeFundsMessageSuccess.offset().top - 90 }, 'fast');
 		}, 750 );
 	})
 
@@ -197,6 +249,7 @@
 
 
 			$(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-content="${fieldsDistributionFundsValue}"]`).each( (index, el) => {
+
 
 				let dataFundsValue = parseInt($(el).find('input').val())
 
