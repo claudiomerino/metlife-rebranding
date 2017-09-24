@@ -19,4 +19,11 @@
 	.alert-success {
 		background-color: $success-light;
 		border-color: $success;
+		position: relative;
+	}
+
+	.alert-close {
+		position: absolute;
+		right: 4px;
+		top: 2px;
 	}
