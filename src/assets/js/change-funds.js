@@ -28,8 +28,8 @@
 		$('.editFundsTitle').siblings('.accordion-title').removeClass('hide-xs')
 		$('.ChangeFundsContinueWrap').removeClass('hide-xs')
 
-		const $target = $('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2) .accordion-content')
-		$('.AccordionChangeFunds').foundation('up', $target);
+		const $targetAcordionChangeFunds = $('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2) .accordion-content')
+		$('.AccordionChangeFunds').foundation('up', $targetAcordionChangeFunds);
 
 		$('[data-edit-fund-check]').each( (index, el) => {
 			$(el).attr('checked', true)
@@ -41,12 +41,26 @@
 		if($(e.currentTarget).is(':checked')) {
 			$('.SameDistributionChange').removeClass('hide-xs')
 			$('.SameDistributionInitial').addClass('hide-xs')
+
+			$('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2)').addClass('inactive-accordion')
 		}
 		else {
 			$('.SameDistributionChange').addClass('hide-xs')
 			$('.SameDistributionInitial').removeClass('hide-xs')
+
+			$('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2)').removeClass('inactive-accordion')
 		}
 	})
+
+	$('.AccordionChangeFunds').find('.accordion-item .accordion-title').on('click', (e) => {
+		e.preventDefault()
+
+		if($ChangeFundsContinueCheckbox.is(':checked')) {
+			const $AcordionChangeCheckFunds = $('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2) .accordion-content')
+			$('.AccordionChangeFunds').foundation('up', $targetAcordionChangeFunds);
+		}
+	})
+
 
 	$changeFundsCancel.on('click', (e) => {
 		e.preventDefault()

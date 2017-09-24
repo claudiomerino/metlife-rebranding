@@ -93,6 +93,16 @@
 				}
 			}
 		}
+
+		.inactive-accordion {
+			a {
+				border-bottom: 2px solid #95c2d6 !important;
+				color: $dark-gray-3;
+			}
+			&:last-child:not(.is-active) > .accordion-title {
+				border-bottom: 2px solid #95c2d6 !important;
+			}
+		}
 	}
 
 	.table_desc {
