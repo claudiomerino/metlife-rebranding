@@ -22,6 +22,13 @@
 		 * Ready to edit
 		 **/
 
+		$(e.currentTarget).addClass('hide-edit-fields')
+		$('.editFundsTitle').addClass('hide-xs')
+		$('.editFundsTitle').siblings('.accordion-title').removeClass('hide-xs')
+
+		const $target = $('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2) .accordion-content')
+		$('.AccordionChangeFunds').foundation('up', $target);
+
 		$('[data-edit-fund-check]').each( (index, el) => {
 			$(el).attr('checked', true)
 			dataEditFundCheckFn($(el), 'element')
@@ -30,6 +37,8 @@
 
 	$changeFundsCancel.on('click', (e) => {
 		e.preventDefault()
+
+		$changeFundsEdit.removeClass('hide-xs')
 
 		/**
 		 * All checkbox disable and remove edit inputs
