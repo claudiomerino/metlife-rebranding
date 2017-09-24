@@ -78,6 +78,12 @@
 		}
 	})
 
+	let lastPartUrl = document.referrer.substring(document.referrer.lastIndexOf('/') + 1);
+
+	if( lastPartUrl == 'solicitar-codigo-telefonico.html') {
+		$('.successChangeCode').removeClass('hide-xs')
+	}
+
 	function changePhoneCard(element) {
 
 		setTimeout( (e) => {
