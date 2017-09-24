@@ -14,7 +14,7 @@
 
 	<section class="payment_history u-space">
 		<div class="table table-scroll center-xs col-xs-12 distributionFunds solicitarCambioFondos">
-		  <table class="table-responsive u-striped distributionFundsDesktop">
+		  <table class="table-responsive u-striped distributionFundsDesktop u-space">
 		    <thead>
 		      <tr>
 		        <th class="table-6">
@@ -45,7 +45,7 @@
 					{{#each solicitar-cambio-fondos-apv.base}}
 			      <tr>
 	            <td class="table-6 hide-xs-important show-md-table-important" align="left" valign="middle">
-	              <p class="tabs_content_subtitle"><strong>Nombre de fondo</strong></p>
+	              
 	              <p class="table_desc">{{fundTitle}}</p>
 	            </td>
 				    	{{#each funds}}
@@ -62,7 +62,7 @@
 					{{/each}}
 
           <tr class="fieldsTotalFunds hide-xs-important show-md-table-important">
-		        <td class="table-6" align="left" valign="middle" data-table-title="Nombre de Fondo">
+		        <td class="table-6" align="left" valign="middle">
 						</td>
 		        <td class="table-1" align="left" valign="middle" data-edit-fund-check-total="apvStockCheck">
 		        	<div class="fieldsTotalFundsCol">
@@ -97,7 +97,7 @@
 		      </tr>
 
           <tr class="hide-edit-fields show-edit-fields hide-xs-important show-md-table-important">
-		        <td class="table-8" align="left" valign="middle" data-table-title="Nombre de Fondo">
+		        <td class="table-8" align="left" valign="middle">
 						</td>
 		        <td class="table-2" align="left" valign="middle" data-table-title="% Stock">
 							<p class="table_desc f-big f-tiny"><strong>Stock <span data-change-funds-stock-total="distributionFunds">0</span><span class="distributionFundsPercentage">%</span></strong></p>
@@ -332,19 +332,19 @@
 							</div>
 							<a href="" class="f-link changeFundsCancel">Cancelar</a>
 						</div>
-          </div>
-        </li>
+		          	</div>
+		        </li>
 			</ul>
 
 		  <!-- / End Mobile tables -->
 
-		  <div class="col-xs-12 end-xs u-top hide-md">
-				<a href="" class="changeFundsEdit button button-primary button-full">Editar Distribución de Fondos</a>
+		  	<div class="col-xs-12 end-xs u-top hide-md">
+				<a href="" class="changeFundsEdit button button-small button-full">Editar Distribución de Fondos</a>
 			</div>
 
 			<div class="col-xs-12 end-xs u-space hide-xs show-md editFundsSubmit">
 				<a href="#" class="u-right-sm u-top-sm col-xs-12 col-sm-3 changeFundsCancel">Cancelar</a>
-				<a href="#" class="button button-primary changeFundsSubmit">Solicitar cambio de Fondos</a>
+				<a href="#" class="button button-small changeFundsSubmit">Solicitar cambio de Fondos</a>
 			</div>
 
 		</div>
