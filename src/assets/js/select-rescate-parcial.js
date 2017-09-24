@@ -11,7 +11,10 @@
         	$('.RescateParcialSucursal').removeClass('hide-xs')
         	$('.RescateParcialBanco').add('.RescateParcialTipoCuenta').add('.RescateParcialCuenta').addClass('hide-xs')
 
-          if( $('.InputCurrencySelectBank').val() > 0 && $('select.RescateParcialSucSelect.cs-select').val() != null ) {
+          const normalValue = parseInt($('.InputCurrencySelectBank').attr('normal-value'))
+          const max = parseInt( $('.InputCurrencySelectBank').attr('max') )
+          const min = parseInt( $('.InputCurrencySelectBank').attr('min') )
+          if( normalValue >= min && normalValue <= max && $('select.RescateParcialSucSelect.cs-select').val() != null ) {
             activeSubmitFn()
           }
           else {
@@ -22,19 +25,26 @@
         if(val == 'valevista') {
         	$('.RescateParcialSucursal').addClass('hide-xs')
         	$('.RescateParcialBanco').add('.RescateParcialTipoCuenta').add('.RescateParcialCuenta').addClass('hide-xs')
-          if($('.InputCurrencySelectBank').val() > 0) {
+          const normalValue = parseInt($('.InputCurrencySelectBank').attr('normal-value'))
+          const max = parseInt( $('.InputCurrencySelectBank').attr('max') )
+          const min = parseInt( $('.InputCurrencySelectBank').attr('min') )
+          if(normalValue >= min && normalValue <= max) {
             activeSubmitFn()
           }
           else {
             inactiveSubmitFn()
           }
+
         }
 
         if(val == 'deposito') {
           $('.RescateParcialSucursal').addClass('hide-xs')
         	$('.RescateParcialBanco').add('.RescateParcialTipoCuenta').add('.RescateParcialCuenta').removeClass('hide-xs')
 
-          if($('#ncuenta').val().length > 0 && $('.InputCurrencySelectBank').val() > 0) {
+          const normalValue = parseInt($('.InputCurrencySelectBank').attr('normal-value'))
+          const max = parseInt( $('.InputCurrencySelectBank').attr('max') )
+          const min = parseInt( $('.InputCurrencySelectBank').attr('min') )
+          if($('#ncuenta').val().length > 0 && normalValue >= min && normalValue <= max) {
             activeSubmitFn()
           }
           else {
@@ -68,8 +78,6 @@
   $('.InputCurrencySelectBank').on('keydown', (e) => {
     setTimeout( () => {
 
-      console.log($('select.RescateParcialSucSelect').val(), 'RescateParcialSucSelect')
-
       if($('select.RescateParcialSelect.cs-select').val() == 'cheque') {
         if($('select.RescateParcialSucSelect').val() == null) {
           inactiveSubmitFn()
@@ -79,7 +87,21 @@
             inactiveSubmitFn()
           }
           else {
-            activeSubmitFn()
+
+            const normalValue = parseInt($('.InputCurrencySelectBank').attr('normal-value'))
+            const min = parseInt( $('.InputCurrencySelectBank').attr('min') )
+            const max = parseInt( $('.InputCurrencySelectBank').attr('max') )
+
+            if(normalValue >= min && normalValue <= max) {
+              $('.InputCurrencySelectBank').removeClass('is-invalid-input')
+              activeSubmitFn()
+
+            } else {
+
+              $('.InputCurrencySelectBank').addClass('is-invalid-input')
+              inactiveSubmitFn()
+
+            }
           }
         }
       }
@@ -89,7 +111,20 @@
           inactiveSubmitFn()
         }
         else {
-          activeSubmitFn()
+          const normalValue = parseInt($('.InputCurrencySelectBank').attr('normal-value'))
+          const min = parseInt( $('.InputCurrencySelectBank').attr('min') )
+          const max = parseInt( $('.InputCurrencySelectBank').attr('max') )
+
+          if(normalValue >= min && normalValue <= max) {
+            $('.InputCurrencySelectBank').removeClass('is-invalid-input')
+            activeSubmitFn()
+
+          } else {
+
+            $('.InputCurrencySelectBank').addClass('is-invalid-input')
+            inactiveSubmitFn()
+
+          }
         }
       }
 
@@ -98,7 +133,20 @@
           activeSubmitFn()
         }
         else {
-          inactiveSubmitFn()
+          const normalValue = parseInt($('.InputCurrencySelectBank').attr('normal-value'))
+          const min = parseInt( $('.InputCurrencySelectBank').attr('min') )
+          const max = parseInt( $('.InputCurrencySelectBank').attr('max') )
+
+          if(normalValue >= min && normalValue <= max) {
+            $('.InputCurrencySelectBank').removeClass('is-invalid-input')
+            activeSubmitFn()
+
+          } else {
+
+            $('.InputCurrencySelectBank').addClass('is-invalid-input')
+            inactiveSubmitFn()
+
+          }
         }
       }
 
@@ -116,8 +164,11 @@
     setTimeout( () => {
       if($(e.currentTarget).val() > 0) {
         activeSubmitFn()
+        const max = parseInt( $('.InputCurrencySelectBank').attr('max') )
+        const min = parseInt( $('.InputCurrencySelectBank').attr('min') )
+        const normalValue = parseInt($('.InputCurrencySelectBank').attr('normal-value'))
 
-        if($('.InputCurrencySelectBank').val() > 0) {
+        if(normalValue >= min && normalValue <= max) {
           activeSubmitFn()
         }
         else {
@@ -140,11 +191,9 @@
   let $InputCurrencyRescateButton = $('.InputCurrencyRescateButton')
 
   function activeSubmitFn() {
-    console.log('remove button-disabled')
     $InputCurrencyRescateButton.removeClass('button-disabled')
   }
 
   function inactiveSubmitFn() {
-    console.log('add button-disabled')
     $InputCurrencyRescateButton.addClass('button-disabled')
   }
