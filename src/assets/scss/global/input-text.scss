@@ -135,7 +135,11 @@
 	}
 
 	.input__calculate {
+		border-color: $primary !important;
 		padding: 10px;
+		&:disabled {
+			border-color: black !important;
+		}
 	}
 
 	.input__label--ichiro {

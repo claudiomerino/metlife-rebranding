@@ -10,7 +10,7 @@
 		<div class="alert alert-error u-space hide-state-update changeFundsMessageCancel">
 			<p class="alert_desc">Tus cambios han sido cancelados</p>
 		</div>
-	</div> 
+	</div>
 
 	<section class="payment_history u-space">
 		<div class="table table-scroll center-xs col-xs-12 distributionFunds solicitarCambioFondos">
@@ -25,7 +25,7 @@
 						</th>
 		        <th class="table-1">
 							<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="apvFlowCheck">% Flujo</strong></p>
-						</th>  
+						</th>
 		        <th class="table-1">
 							<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="depositStockCheck">% Stock</strong></p>
 						</th>
@@ -34,10 +34,10 @@
 						</th>
 		        <th class="table-1">
 							<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="voluntaryStockCheck">% Stock</strong></p>
-						</th> 
+						</th>
 		        <th class="table-1">
 							<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="voluntaryFlowCheck">% Flujo</strong></p>
-						</th> 
+						</th>
 		      </tr>
 		    </thead>
 
@@ -45,17 +45,15 @@
 					{{#each solicitar-cambio-fondos-apv.base}}
 			      <tr>
 	            <td class="table-6 hide-xs-important show-md-table-important" align="left" valign="middle">
-	              
+
 	              <p class="table_desc">{{fundTitle}}</p>
 	            </td>
 				    	{{#each funds}}
 				        <td data-edit-fund-check-content="{{id}}StockCheck" class="table-1 hide-xs-important show-md-table-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
-									<input class="input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
-									<p class="hide-edit-fields table_desc toggl-edit-fields"><strong>{{stock}}</strong></p>
+									<input class="input__label input__calculate input__label--ichiro" disabled min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
 								</td>
 				        <td data-edit-fund-check-content="{{id}}FlowCheck" class="table-1 hide-xs-important show-md-table-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
-									<input class="input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
-									<p class="hide-edit-fields table_desc toggl-edit-fields"><strong>{{flow}}</strong></p>
+									<input class="input__label input__calculate input__label--ichiro" disabled min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
 								</td>
 				      {{/each}}
 			      </tr>

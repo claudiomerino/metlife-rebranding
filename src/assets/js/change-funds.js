@@ -158,7 +158,6 @@
 		}
 
 		editFundCheckContentValueFn(editFundCheckContentValue, type, e)
-		editFundCheckTotalValueFn(editFundCheckTotalValue, type, e)
 		showHideEditFieldsFn()
 	}
 
@@ -187,45 +186,22 @@
 
 			if(type == 'event') {
 				if($(e.currentTarget).is(':checked')) {
-					$(el).find('input').removeClass('hide-edit-fields')
+					$(el).find('input').attr('disabled', false)
 					$(el).find('.table_desc').addClass('hide-edit-fields')
 				}
 				else {
-					$(el).find('input').addClass('hide-edit-fields')
+					$(el).find('input').attr('disabled', true)
 					$(el).find('.table_desc').removeClass('hide-edit-fields')
 				}
 			}
 			else {
 				if($(e).is(':checked')) {
-					$(el).find('input').removeClass('hide-edit-fields')
+					$(el).find('input').attr('disabled', false)
 					$(el).find('.table_desc').addClass('hide-edit-fields')
 				}
 				else {
-					$(el).find('input').addClass('hide-edit-fields')
+					$(el).find('input').attr('disabled', true)
 					$(el).find('.table_desc').removeClass('hide-edit-fields')
-				}
-			}
-		})
-
-	}
-
-	function editFundCheckTotalValueFn(editFundCheckTotalValue, type, e) {
-
-		editFundCheckTotalValue.each( (index, el) => {
-			if(type == 'event') {
-				if($(e.currentTarget).is(':checked')) {
-					$(el).find('.fieldsTotalFundsCol').removeClass('hide-xs-important')
-				}
-				else {
-					$(el).find('.fieldsTotalFundsCol').addClass('hide-xs-important')
-				}
-			}
-			else {
-				if($(e).is(':checked')) {
-					$(el).find('.fieldsTotalFundsCol').removeClass('hide-xs-important')
-				}
-				else {
-					$(el).find('.fieldsTotalFundsCol').addClass('hide-xs-important')
 				}
 			}
 		})
