@@ -233,7 +233,19 @@
 	}
 
 
+	/**
+	 * Continue click
+	 **/
 
+	const $ChangeFundsContinue = $('.ChangeFundsContinue')
+
+	$ChangeFundsContinue.on('click', (e) => {
+		e.preventDefault()
+		const $nextContinueFunds = $(e.currentTarget).closest('.accordion-item').next('.accordion-item').find('.accordion-content')
+
+		$('.AccordionChangeFunds').foundation('up', $(e.currentTarget).closest('.accordion-content'));
+		$('.AccordionChangeFunds').foundation('down', $nextContinueFunds);
+	})
 
 
 	$dataChangeFunds.on('keydown', (e) => {
