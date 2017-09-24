@@ -178,10 +178,19 @@
 								<label for="changeFundsCheckbox">Utilizar misma distribución en todas las cuentas</label>
 						  </div>
 
-							<div class="u-space">
-								<a href="" class="button button-primary button-full ChangeFundsContinue">Continuar</a>
+							<div class="SameDistributionInitial">
+								<div class="u-space">
+									<a href="" class="button button-primary button-full ChangeFundsContinue">Continuar</a>
+								</div>
+								<a href="" class="f-link CancelChangeFunds">Cancelar</a>
 							</div>
-							<a href="" class="f-link CancelChangeFunds">Cancelar</a>
+
+							<div class="SameDistributionChange hide-xs">
+								<div class="u-space u-top">
+									<a href="" class="button button-primary button-full changeFundsSubmit">Solicitar cambio de fondos</a>
+								</div>
+								<a href="" class="f-link changeFundsCancel">Cancelar</a>
+							</div>
 						</div>
 
 					</div>
@@ -222,11 +231,11 @@
 				            </td>
 							    	{{#each funds}}
 						    			{{#compare id 'deposit' operator='=='}}
-								        <td class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
+								        <td data-edit-fund-check-content="{{id}}StockCheck" class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
 													<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" />
 													<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Stock:</span> {{stock}}</strong></p>
 												</td>
-								        <td class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
+								        <td data-edit-fund-check-content="{{id}}FlowCheck" class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
 													<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds-flow data-edit-funds-normal-value="0" />
 													<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Flujo:</span> {{flow}}</strong></p>
 												</td>
@@ -291,11 +300,11 @@
 				            </td>
 							    	{{#each funds}}
 						    			{{#compare id 'voluntary' operator='=='}}
-								        <td class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
+								        <td data-edit-fund-check-content="{{id}}StockCheck" class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
 													<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds-stock data-edit-funds-normal-value="0" />
 													<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Stock:</span> {{stock}}</strong></p>
 												</td>
-								        <td class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
+								        <td data-edit-fund-check-content="{{id}}FlowCheck" class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
 													<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds-flow data-edit-funds-normal-value="0" />
 													<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Flujo:</span> {{flow}}</strong></p>
 												</td>

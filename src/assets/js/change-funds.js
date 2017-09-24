@@ -10,6 +10,7 @@
 	let $changeFundsCancel = $('.changeFundsCancel')
 	let $changeFundsEdit = $('.changeFundsEdit')
 	let $changeFundsMessageCancel = $('.changeFundsMessageCancel')
+	let $ChangeFundsContinueCheckbox = $('.ChangeFundsContinueCheckbox')
 
 	$dataEditFundCheck.on('change', (e) => {
 		dataEditFundCheckFn(e, 'event')
@@ -34,6 +35,17 @@
 			$(el).attr('checked', true)
 			dataEditFundCheckFn($(el), 'element')
 		})
+	})
+
+	$ChangeFundsContinueCheckbox.on('click', (e) => {
+		if($(e.currentTarget).is(':checked')) {
+			$('.SameDistributionChange').removeClass('hide-xs')
+			$('.SameDistributionInitial').addClass('hide-xs')
+		}
+		else {
+			$('.SameDistributionChange').addClass('hide-xs')
+			$('.SameDistributionInitial').removeClass('hide-xs')
+		}
 	})
 
 	$changeFundsCancel.on('click', (e) => {
