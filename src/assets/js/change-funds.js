@@ -25,6 +25,7 @@
 		$(e.currentTarget).addClass('hide-edit-fields')
 		$('.editFundsTitle').addClass('hide-xs')
 		$('.editFundsTitle').siblings('.accordion-title').removeClass('hide-xs')
+		$('.ChangeFundsContinueWrap').removeClass('hide-xs')
 
 		const $target = $('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2) .accordion-content')
 		$('.AccordionChangeFunds').foundation('up', $target);

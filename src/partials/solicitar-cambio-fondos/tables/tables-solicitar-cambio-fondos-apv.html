@@ -146,6 +146,19 @@
 								{{/each}}
 					  	</tbody>
 					  </table>
+
+						<div class="ChangeFundsContinueWrap hide-xs">
+						  <div class="u-space u-top">
+						  	<input type="checkbox" id="changeFundsCheckbox" class="ChangeFundsContinueCheckbox" />
+								<label for="changeFundsCheckbox">Utilizar misma distribución en todas las cuentas</label>
+						  </div>
+
+							<div class="u-space">
+								<a href="" class="button button-primary button-full ChangeFundsContinue">Continuar</a>
+							</div>
+							<a href="" class="f-link CancelChangeFunds">Cancelar</a>
+						</div>
+
 					</div>
 				</li>
 
@@ -154,7 +167,7 @@
         		<strong>Distribución actual de fondos <br/> Cuenta: Depósito</strong>
         	</p>
           <a href="#" class="accordion-title black hide-xs">
-          	<p class="f-big"><strong><span class="editFundsTitle">Distribución actual de fondos</span> <br/> Cuenta: Depósito</strong></p>
+          	<p class="f-big"><strong>Cuenta: Depósito</strong></p>
           </a>
           <div class="accordion-content" data-tab-content>
 					  <table class="table-responsive u-striped">
@@ -182,6 +195,13 @@
 								{{/each}}
 					  	</tbody>
 					  </table>
+
+						<div class="ChangeFundsContinueWrap hide-xs">
+							<div class="u-space u-top">
+								<a href="" class="button button-primary button-full ChangeFundsContinue">Continuar</a>
+							</div>
+							<a href="" class="f-link CancelChangeFunds">Cancelar</a>
+						</div>
           </div>
         </li>
 
@@ -190,7 +210,7 @@
         		<strong>Distribución actual de fondos <br/> Cuenta: Voluntario</strong>
         	</p>
           <a href="#" class="accordion-title black hide-xs">
-            <p class="f-big"><strong><span class="editFundsTitle">Distribución actual de fondos</span> <br/> Cuenta: Voluntario</strong></p>
+            <p class="f-big"><strong>Cuenta: Voluntario</strong></p>
           </a>
           <div class="accordion-content" data-tab-content>
 					  <table class="table-responsive u-striped">
@@ -218,6 +238,13 @@
 								{{/each}}
 					  	</tbody>
 					  </table>
+
+						<div class="ChangeFundsContinueWrap hide-xs">
+							<div class="u-space u-top">
+								<a href="" class="button button-primary button-full changeFundsSubmit">Solicitar cambio de fondos</a>
+							</div>
+							<a href="" class="f-link changeFundsCancel">Cancelar</a>
+						</div>
           </div>
         </li>
 			</ul>
@@ -228,7 +255,7 @@
 				<a href="" class="changeFundsEdit button button-primary button-full">Editar Distribución de Fondos</a>
 			</div>
 
-			<div class="col-xs-12 end-xs u-space hide-edit-fields editFundsSubmit">
+			<div class="col-xs-12 end-xs u-space hide-xs show-md hide-edit-fields editFundsSubmit">
 				<a href="#" class="u-right-sm u-top-sm col-xs-12 col-sm-3 changeFundsCancel">Cancelar</a>
 				<a href="#" class="button button-primary button-disabled changeFundsSubmit">Solicitar cambio de Fondos</a>
 			</div>

@@ -76,7 +76,7 @@
 			tbody {
 				border: 0;
 				tr {
-					border-bottom: 1px solid white !important;
+					border-bottom: 1px solid $white-light !important;
 					&:nth-of-type( even ) {
 						background-color: white;
 					}
