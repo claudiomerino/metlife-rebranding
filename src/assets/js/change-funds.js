@@ -249,7 +249,6 @@
 
 
 	$dataChangeFunds.on('keydown', (e) => {
-		console.log('change input')
 
 		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
 			return false;
@@ -274,23 +273,38 @@
 
 				totalEditFunds += dataFundsValue
 
-				$(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`).each( (index, value) => {
+				let arrayValuesChange = []
 
-					const totalFields = $($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[`${index}`]).find('.fieldsTotalFundsValue').text()
+				$(e.currentTarget).closest('.distributionFundsDesktop').find(`[data-edit-fund-check-total]`).each( (index, value) => {
+
+					const dataEditFundTotal = $(value)
+					const findDataEditFundTotal = $(dataEditFundTotal).find('.fieldsTotalFundsValue')
+
+					arrayValuesChange.push( $($(dataEditFundTotal).find('.fieldsTotalFundsValue')[0]).hasClass('red') )
+
+					console.log($(dataEditFundTotal), 'dataEditFundTotal')
+					console.log($(findDataEditFundTotal), 'sd jbsdjhf bshjdf bshjdfb jhsdjbf ')
+
+					if($.inArray('true', arrayValuesChange) == -1){
+						console.log('entra sjd kfsdjb fn', $.inArray('true', arrayValuesChange))
+					    // the element is not in the array
+					};
+
 
 					if($($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[`${index}`]).find('.fieldsTotalFundsValue').hasClass('red')) {
 						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
-					} else if(parseInt(totalFields) == 100) {
-						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').removeClass('button-disabled')
 					} else {
-						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
+						console.log('entra else')
+						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').removeClass('button-disabled')
 					}
 				})
+
+				console.log(arrayValuesChange, 'arrayValuesChange')
 
 			})
 
 			$(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`).each( (index, value) => {
-				if(totalEditFunds > 100) {
+				if(totalEditFunds > 100 || totalEditFunds < 100) {
 					$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[`${index}`]).find('.fieldsTotalFundsValue').addClass('red')
 					$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[`${index}`]).find('.distributionFundsPercentage').addClass('red')
 				} else {
@@ -298,8 +312,6 @@
 					$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[`${index}`]).find('.distributionFundsPercentage').removeClass('red')
 				}
 			})
-
-			console.log(fieldsDistributionFundsValue, 'fieldsDistributionFundsValue')
 
 			$(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`).find('.fieldsTotalFundsValue').html(totalEditFunds)
 

@@ -14,29 +14,29 @@
 
 	<section class="payment_history u-space">
 		<div class="table table-scroll center-xs col-xs-12 distributionFunds solicitarCambioFondos">
-		  <table class="table-responsive u-striped">
+		  <table class="table-responsive u-striped distributionFundsDesktop">
 		    <thead>
 		      <tr>
 		        <th class="table-6">
 							<p class="f-small table_title "><strong>Nombre de Fondo</strong></p>
 						</th>
 		        <th class="table-1">
-							<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="apvStockCheck">% Stock</strong></p>
+							<p class="f-small table_title"><strong><input type="checkbox" checked data-edit-fund-check="apvStockCheck">% Stock</strong></p>
 						</th>
 		        <th class="table-1">
-							<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="apvFlowCheck">% Flujo</strong></p>
+							<p class="f-small table_title"><strong><input type="checkbox" checked data-edit-fund-check="apvFlowCheck">% Flujo</strong></p>
 						</th>
 		        <th class="table-1">
-							<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="depositStockCheck">% Stock</strong></p>
+							<p class="f-small table_title"><strong><input type="checkbox" checked data-edit-fund-check="depositStockCheck">% Stock</strong></p>
 						</th>
 		        <th class="table-1">
-							<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="depositFlowCheck">% Flujo</strong></p>
+							<p class="f-small table_title"><strong><input type="checkbox" checked data-edit-fund-check="depositFlowCheck">% Flujo</strong></p>
 						</th>
 		        <th class="table-1">
-							<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="voluntaryStockCheck">% Stock</strong></p>
+							<p class="f-small table_title"><strong><input type="checkbox" checked data-edit-fund-check="voluntaryStockCheck">% Stock</strong></p>
 						</th>
 		        <th class="table-1">
-							<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="voluntaryFlowCheck">% Flujo</strong></p>
+							<p class="f-small table_title"><strong><input type="checkbox" checked data-edit-fund-check="voluntaryFlowCheck">% Flujo</strong></p>
 						</th>
 		      </tr>
 		    </thead>
@@ -50,12 +50,12 @@
 	            </td>
 				    	{{#each funds}}
 				        <td data-edit-fund-check-content="{{id}}StockCheck" class="table-1 hide-xs-important show-md-table-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
-									<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
-									<p class="table_desc toggl-edit-fields"><strong>{{stock}}</strong></p>
+									<input class="input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+									<p class="hide-edit-fields table_desc toggl-edit-fields"><strong>{{stock}}</strong></p>
 								</td>
 				        <td data-edit-fund-check-content="{{id}}FlowCheck" class="table-1 hide-xs-important show-md-table-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
-									<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
-									<p class="table_desc toggl-edit-fields"><strong>{{flow}}</strong></p>
+									<input class="input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+									<p class="hide-edit-fields table_desc toggl-edit-fields"><strong>{{flow}}</strong></p>
 								</td>
 				      {{/each}}
 			      </tr>
@@ -65,32 +65,32 @@
 		        <td class="table-6" align="left" valign="middle" data-table-title="Nombre de Fondo">
 						</td>
 		        <td class="table-1" align="left" valign="middle" data-edit-fund-check-total="apvStockCheck">
-		        	<div class="fieldsTotalFundsCol hide-xs-important">
+		        	<div class="fieldsTotalFundsCol">
 								<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 							</div>
 						</td>
 		        <td class="table-1" align="left" valign="middle" data-edit-fund-check-total="apvFlowCheck">
-		        	<div class="fieldsTotalFundsCol hide-xs-important">
+		        	<div class="fieldsTotalFundsCol">
 								<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 							</div>
 						</td>
 		        <td class="table-1" align="left" valign="middle" data-edit-fund-check-total="depositStockCheck">
-		        	<div class="fieldsTotalFundsCol hide-xs-important">
+		        	<div class="fieldsTotalFundsCol">
 								<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 							</div>
 						</td>
 		        <td class="table-1" align="left" valign="middle" data-edit-fund-check-total="depositFlowCheck">
-		        	<div class="fieldsTotalFundsCol hide-xs-important">
+		        	<div class="fieldsTotalFundsCol">
 								<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 							</div>
 						</td>
 		        <td class="table-1" align="left" valign="middle" data-edit-fund-check-total="voluntaryStockCheck">
-		        	<div class="fieldsTotalFundsCol hide-xs-important">
+		        	<div class="fieldsTotalFundsCol">
 								<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 							</div>
 						</td>
 		        <td class="table-1" align="left" valign="middle" data-edit-fund-check-total="voluntaryFlowCheck">
-		        	<div class="fieldsTotalFundsCol hide-xs-important">
+		        	<div class="fieldsTotalFundsCol">
 								<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 							</div>
 						</td>
@@ -162,12 +162,12 @@
 					  </table>
 
 	          <div class="table-1" align="left" valign="middle" data-edit-fund-check-total="apvStockCheck">
-	          	<div class="fieldsTotalFundsCol hide-xs-important">
+	          	<div class="fieldsTotalFundsCol">
 	  						<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 	  					</div>
 	  				</div>
 	          <div class="table-1" align="left" valign="middle" data-edit-fund-check-total="apvFlowCheck">
-	          	<div class="fieldsTotalFundsCol hide-xs-important">
+	          	<div class="fieldsTotalFundsCol">
 	  						<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 	  					</div>
 	  				</div>
@@ -247,12 +247,12 @@
 					  </table>
 
 	          <div class="table-1" align="left" valign="middle" data-edit-fund-check-total="depositStockCheck">
-	          	<div class="fieldsTotalFundsCol hide-xs-important">
+	          	<div class="fieldsTotalFundsCol">
 	  						<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 	  					</div>
 	  				</div>
 	          <div class="table-1" align="left" valign="middle" data-edit-fund-check-total="depositFlowCheck">
-	          	<div class="fieldsTotalFundsCol hide-xs-important">
+	          	<div class="fieldsTotalFundsCol">
 	  						<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 	  					</div>
 	  				</div>
@@ -316,12 +316,12 @@
 					  </table>
 
 	          <div class="table-1" align="left" valign="middle" data-edit-fund-check-total="voluntaryStockCheck">
-	          	<div class="fieldsTotalFundsCol hide-xs-important">
+	          	<div class="fieldsTotalFundsCol">
 	  						<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 	  					</div>
 	  				</div>
 	          <div class="table-1" align="left" valign="middle" data-edit-fund-check-total="voluntaryFlowCheck">
-	          	<div class="fieldsTotalFundsCol hide-xs-important">
+	          	<div class="fieldsTotalFundsCol">
 	  						<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 	  					</div>
 	  				</div>
@@ -342,7 +342,7 @@
 				<a href="" class="changeFundsEdit button button-primary button-full">Editar Distribución de Fondos</a>
 			</div>
 
-			<div class="col-xs-12 end-xs u-space hide-xs show-md hide-edit-fields editFundsSubmit">
+			<div class="col-xs-12 end-xs u-space hide-xs show-md editFundsSubmit">
 				<a href="#" class="u-right-sm u-top-sm col-xs-12 col-sm-3 changeFundsCancel">Cancelar</a>
 				<a href="#" class="button button-primary button-disabled changeFundsSubmit">Solicitar cambio de Fondos</a>
 			</div>
