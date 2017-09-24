@@ -237,6 +237,7 @@
 
 
 	$dataChangeFunds.on('keydown', (e) => {
+		console.log('change input')
 
 		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
 			return false;
@@ -285,6 +286,8 @@
 					$($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`)[`${index}`]).find('.distributionFundsPercentage').removeClass('red')
 				}
 			})
+
+			console.log(fieldsDistributionFundsValue, 'fieldsDistributionFundsValue')
 
 			$(`[data-edit-fund-check-total="${fieldsDistributionFundsValue}"]`).find('.fieldsTotalFundsValue').html(totalEditFunds)
 
