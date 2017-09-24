@@ -2,79 +2,106 @@
 <section>
 	<div class="client_wrap_container">
 		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Uso del Código Telefónico</strong></p>
-		<div class="u-row">
+		<div class="u-row u-space-md">
 			<div class=" col-xs-12 col-md-12  u-space">
-        <p>Llama a nuestro Servicio al Cliente al <a href="tel:+6003903000" class="f-link">600 390 3000</a> y usa las opciones de autoatención, ingresando tu Código Telefónico.
+        		<p>Llama a nuestro Servicio al Cliente al <a href="tel:+6003903000" class="f-link">600 390 3000</a> y usa las opciones de autoatención, ingresando tu Código Telefónico.
 				<br/>Si no conoces tu Código Telefónico o lo olvidaste, te lo enviaremos al email y como SMS al número de teléfono que tenemos registrados.</p>
-        <p><strong>Nota:</strong> La autoatención telefónica no está disponible para productos de venta por Sponsors o para Rentas Privadas.</p>
-    	</div>
+        		<p><strong>Nota:</strong> La autoatención telefónica no está disponible para productos de venta por Sponsors o para Rentas Privadas.</p>
+    		</div>
 
 			<div class="col-md-4 col-md-offset-4 center-xs">
 				<div class="alert alert-success u-space hide-xs successChangeCode">
 					<p class="alert_desc center-xs">
 						<strong>Tu clave de acceso ha sido cambiada con éxito.</strong> Te estamos redirigiendo a la página de Acceso para Clientes, donde podrás ingresar al sitio usando tu nueva clave.
 					</p>
-		      <i class="fa fa-times alert-close"></i>
+		      		<i class="fa fa-times alert-close"></i>
 				</div>
 			</div>
-
+		</div>
+		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Cambio de Código Telefónico</strong></p>
+		<div class="u-row">
 			<div class="col-md-4 col-md-offset-4 u-top u-space-2x">
 				<form>
 					<div class="changePhoneSuccess">
 
 						<div class="u-row center-xs">
-						  <div class="col-xs-12">
+						  	<div class="col-xs-12">
 
-					      <section class="u-field input_responsive">
-					        <span class="input input--ichiro">
-					          <input class="input__field input__field--ichiro" data-live-validate="true" type="number" data-max-number="4" id="phoneOld" required />
-					          <label class="input__label input__label--ichiro" for="phoneOld">
-					            <span class="input__label-content input__label-content--ichiro">Código Telefónico Actual</span>
-					          </label>
-					          <p class="form-error f-tiny">El valor debe ser menor a 4 dígitos</p>
-					        </span>
-					      </section>
+						      	<section class="u-field input_responsive">
+						        	<span class="input input--ichiro">
+							          	<input class="input__field input__field--ichiro" data-live-validate="true" type="number" data-max-number="4" id="phoneOld" required />
+							          	<label class="input__label input__label--ichiro" for="phoneOld">
+							            	<span class="input__label-content input__label-content--ichiro">Código Telefónico Actual</span>
+							          	</label>
+							          	<p class="form-error f-tiny start-xs">El valor debe ser menor a 4 dígitos</p>
+						        	</span>
+						      	</section>
 
-					      <div class="changeNewPass">
-					        <section class="u-field input_responsive">
-					          <span class="input input--ichiro">
-					          <input class="input__field input__field--ichiro" data-live-validate="true" type="number" data-max-number="4" id="phoneNew" required />
-					          <label class="input__label input__label--ichiro" for="phoneNew">
-					            <span class="input__label-content input__label-content--ichiro">Nuevo Código Telefónico</span>
-					          </label>
-					          <p class="form-error f-tiny">El valor debe ser menor a 4 dígitos</p>
-					        </span>
-					        </section>
+							    <div class="changeNewPass">
+							        <section class="u-field input_responsive">
+							          	<span class="input input--ichiro">
+								          	<input class="input__field input__field--ichiro" data-live-validate="true" type="number" data-max-number="4" id="phoneNew" required />
+								          	<label class="input__label input__label--ichiro" for="phoneNew">
+								            	<span class="input__label-content input__label-content--ichiro">Nuevo Código Telefónico</span>
+								          	</label>
+								          	<p class="form-error f-tiny start-xs">El valor debe ser menor a 4 dígitos</p>
+							        	</span>
+							        </section>
+					      		</div>
 
-					      </div>
+							    <section class="u-field input_responsive">
+							        <span class="input input--ichiro">
+							          	<input class="input__field input__field--ichiro" data-live-validate="true" type="number" data-max-number="4" id="phoneConf" required />
+							          	<label class="input__label input__label--ichiro" for="phoneConf">
+							            <span class="input__label-content input__label-content--ichiro">Confirmación Nuevo Código Telefónico</span>
+							          	</label>
+							          	<p class="form-error f-tiny start-xs">El código no coincide</p>
+							        </span>
+							    </section>
 
-					      <section class="u-field input_responsive">
-					        <span class="input input--ichiro">
-					          <input class="input__field input__field--ichiro" data-live-validate="true" type="number" data-max-number="4" id="phoneConf" required />
-					          <label class="input__label input__label--ichiro" for="phoneConf">
-					            <span class="input__label-content input__label-content--ichiro">Confirmación Nuevo Código Telefónico</span>
-					          </label>
-					          <p class="form-error f-tiny start-xs">El código no coincide</p>
-					        </span>
-					      </section>
-
-					      <div class="u-row no-gutter-xs end-sm">
-					        <div class="col-xs-12 end-xs u-space-2x">
-					          <a href="{{root}}solicitar-codigo-telefonico/solicitar-codigo-telefonico.html" class="button button-small button-full-xs end-sm button-disabled ChangeKeyPhoneCardsSubmit">Cambiar Código</a>
-					        </div>
-					      </div>
-
-						  </div>
+							    <div class="u-row no-gutter-xs end-sm">
+							        <div class="col-xs-12 end-xs u-space-2x">
+							          	<a href="#" class="button button-small button-full-xs end-sm button-disabled ChangeKeyPhoneCardsSubmit">Cambiar Código</a>
+							        </div>
+							    </div>
+						  	</div>
 						</div>
-
 					</div>
 				</form>
+				<!-- <p class="login_support text-center f-small">Si tienes algún problema, contáctate con nuestro Servicio al Cliente al
+				<a href="tel:+566003903000"><strong>600 390 3000</strong></a></p> -->
+		    </div>
+		</div>
+		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Solicitar Código Telefónico</strong></p>
+		<div class="u-row center-xs">
+            <div class="col-xs-12 col-md-4 u-top u-space">
 
-				<p class="login_support text-center f-small">Si tienes algún problema, contáctate con nuestro Servicio al Cliente al
-					<a href="tel:+566003903000"><strong>600 390 3000</strong></a>
-				</p>
+            	<div class="login_toggle_content toggleChangePass changePhoneHideOnSubmit">
+                    <section class="u-field input_responsive u-top">
+                      	<span class="input input--ichiro">
+                        	<input class="input__field input__field--ichiro" value="email@email.com" data-live-validate="true" type="email" id="emailChangePhone" readonly="true" ondblclick="this.readOnly='';" />
+                        	<label class="input__label input__label--ichiro" for="emailChangePhone">
+                          		<span class="input__label-content input__label-content--ichiro">Correo Electrónico</span>
+                        	</label>
+                        	<p class="form-error f-tiny">Debes ingresar un correo electrónico válido</p>
+                      	</span>
+                    </section>
+                    <section class="u-field input_responsive">
+                      <span class="input input--ichiro">
+                        <input class="input__field input__field--ichiro" value="3133456578" data-live-validate="true" type="number" id="cellphoneChangePhone" readonly="true" ondblclick="this.readOnly='';" />
+                        <label class="input__label input__label--ichiro" for="cellphoneChangePhone">
+                          <span class="input__label-content input__label-content--ichiro">Celular</span>
+                        </label>
+                        <p class="form-error f-tiny">Debes ingresar un número de celular válido</p>
+                      </span>
+                    </section>
+	                <div class="end-sm">
+	              		<a href="#" class="button button-small button-full-xs ChangePhoneSubmit ChangeKeyPhoneCardsSubmit">Solicitar</a>
+	            	</div>
+            	</div>
+            </div>
+        </div>
 
-			</div>
-	    </div>
+
 	</div>
 </section>
