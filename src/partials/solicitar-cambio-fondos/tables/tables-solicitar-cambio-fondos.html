@@ -19,15 +19,15 @@
 		    <thead>
 		      <tr>
 		        <th class="table-6">
-					<p class="f-small table_title "><strong>Nombre de Fondo</strong></p>
-				</th>
+							<p class="f-small table_title "><strong>Nombre de Fondo</strong></p>
+						</th>
 		        <th class="table-1" align="left">
-					<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="apvStockCheck">% Stock</strong></p>
-				</th>
+							<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="apvStockCheck">% Stock</strong></p>
+						</th>
 		        <th class="table-1">
-					<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="apvFlowCheck">% Flujo</strong></p>
-				</th>
-		       
+							<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="apvFlowCheck">% Flujo</strong></p>
+						</th>
+
 		      </tr>
 		    </thead>
 
@@ -35,38 +35,35 @@
 					{{#each solicitar-cambio-fondos.base}}
 			      <tr>
 	            <td class="table-10 hide-xs-important show-md-table-important" align="left" valign="middle">
-
 	              <p class="table_desc">{{fundTitle}}</p>
 	            </td>
 				    	{{#each funds}}
 				        <td data-edit-fund-check-content="{{id}}StockCheck" class="table-1 hide-xs-important show-md-table-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
-									<input class="input__label input__calculate input__calculate_show input__label--ichiro" disabled min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+									<input class="input__calculate input__calculate_show input__label--ichiro" disabled min="0" type="number" placeholder="10" data-change-funds data-edit-funds-normal-value="0" />
 								</td>
 				        <td data-edit-fund-check-content="{{id}}FlowCheck" class="table-1 hide-xs-important show-md-table-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
-									<input class="input__label input__calculate input__calculate_show input__label--ichiro" disabled min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+									<input class="input__calculate input__calculate_show input__label--ichiro" disabled min="0" type="number" placeholder="10" data-change-funds data-edit-funds-normal-value="0" />
 								</td>
 				      {{/each}}
 			      </tr>
 					{{/each}}
 
-            <tr class="fieldsTotalFunds hide-xs-important show-md-table-important">
-		        <td class="table-10" align="left" valign="middle">
-				</td>
+          <tr class="fieldsTotalFunds fieldsTotalFunds-one hide-xs-important show-md-table-important">
+		        <td class="table-10" align="left" valign="middle"></td>
 		        <td class="table-1" align="left" valign="middle" data-edit-fund-check-total="apvStockCheck">
-		        	<div class="fieldsTotalFundsCol">
-						<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
-					</div>
-				</td>
+			        <div class="fieldsTotalFundsCol">
+								<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
+							</div>
+						</td>
 		        <td class="table-1" align="left" valign="middle" data-edit-fund-check-total="apvFlowCheck">
 		        	<div class="fieldsTotalFundsCol">
-						<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
-					</div>
-				</td>
-		    </tr>
-
-          <tr class="hide-edit-fields show-edit-fields hide-xs-important show-md-table-important"> 
-		        <td class="table-10" align="left" valign="middle">
+								<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
+							</div>
 						</td>
+		    	</tr>
+
+          <tr class="hide-edit-fields show-edit-fields hide-xs-important show-md-table-important">
+		        <td class="table-10" align="left" valign="middle"></td>
 		        <td class="table-1" align="left" valign="middle" data-table-title="% Stock">
 							<p class="table_desc f-big f-tiny"><strong>Stock <span data-change-funds-stock-total="distributionFunds">0</span><span class="distributionFundsPercentage">%</span></strong></p>
 						</td>
@@ -83,92 +80,86 @@
 
 	        <li class="accordion-item is-active" data-accordion-item>
 	        	<p class="f-big editFundsTitle text-left u-divider-bottom-primary"><strong>Distribución actual de fondos </strong></p>
-	          	<a href="#" class="accordion-title black hide-xs"><p class="f-small"><strong>Cuenta: APV</strong></p></a>
+          	<a href="#" class="accordion-title black hide-xs"><p class="f-small"><strong>Cuenta: APV</strong></p></a>
 	         	<div class="accordion-content" data-tab-content>
-					<div class="ChangeFundsContinueWrap hide-xs">
-						<div class="u-row u-divider-bottom start-xs middle-xs pd-bottom">
-							<div class="col-xs-12">
-								<p class="f-small table_title"><strong>Editar:</strong></p>
-							</div>
-			  	        	<div class="u-top col-xs-5 col-xs-offset-2">
-		  						<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="apvStockCheck"> % Stock</strong></p>
+							<div class="ChangeFundsContinueWrap">
+								<div class="u-row u-divider-bottom start-xs middle-xs pd-bottom">
+									<div class="col-xs-2">
+										<p class="f-small table_title"><strong>Editar:</strong></p>
+									</div>
+		  	        	<div class="col-xs-2">
+			  						<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="apvStockCheck"> % Stock</strong></p>
+			  					</div>
+		  	        	<div class="col-xs-2">
+			  						<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="apvFlowCheck"> % Flujo</strong></p>
+			  					</div>
 		  					</div>
-			  	        	<div class="col-xs-4 u-top">
-		  						<p class="f-small table_title"><strong><input type="checkbox" data-edit-fund-check="apvFlowCheck"> % Flujo</strong></p>
-		  					</div> 
-	  					</div>
-	  				</div>
+		  				</div>
 
-					<table class="table-responsive u-striped distributionFundsMobile">
-					  	<tbody>
-							{{#each solicitar-cambio-fondos.base}}
+							<table class="table-responsive u-striped distributionFundsMobile">
+						  	<tbody>
+								{{#each solicitar-cambio-fondos.base}}
 					      	<tr class="hide-md-important">
-					            <td class="table-6" align="left" valign="middle">
-					              <p class="tabs_content_subtitle"><strong>Nombre de fondo</strong></p>
-					              <p class="table_desc">{{fundTitle}}</p>
-					            </td>
-						    	{{#each funds}}
-				    			{{#compare id 'apv' operator='=='}}
-						        <td data-edit-fund-check-content="{{id}}StockCheck" class="table-1 hide-md-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
-						        	<div class="u-row middle-xs">
-						        		<div class="col-xs-6">
-						        			<span class="hide-edit-fields LabelEditFunds"><strong>Stock:</strong> </span>
-						        		</div>
-						        		<div class="col-xs-6">
-											<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
-										</div>
-									</div>
-									<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Stock:</span> {{stock}}</strong></p>
-								</td>
-						        <td data-edit-fund-check-content="{{id}}FlowCheck" class="table-1 hide-md-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
-						        	<div class="u-row middle-xs">
-						        		<div class="col-xs-6">
-						        			<span class="hide-edit-fields LabelEditFunds"><strong>Flujo:</strong> </span>
-						        		</div>
-						        		<div class="col-xs-6">
-											<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
-										</div>
-									</div>
-									<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Flujo:</span> {{flow}}</strong></p>
-								</td>
-								{{/compare}}
-						      {{/each}}
-						    </tr>
-							{{/each}}
-					  	</tbody>
-					</table>
+				            <td class="table-6" align="left" valign="middle">
+				              <p class="tabs_content_subtitle"><strong>Nombre de fondo</strong></p>
+				              <p class="table_desc">{{fundTitle}}</p>
+				            </td>
+							    	{{#each funds}}
+						    			{{#compare id 'apv' operator='=='}}
+								        <td data-edit-fund-check-content="{{id}}StockCheck" class="table-1 hide-md-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
+								        	<div class="u-row middle-xs">
+								        		<div class="col-xs-6">
+								        			<span class="LabelEditFunds"><strong>Stock:</strong> </span>
+								        		</div>
+								        		<div class="col-xs-6">
+															<input class="input__calculate input__label--ichiro" min="0" type="number" placeholder="10" data-change-funds data-edit-funds-normal-value="0" disabled />
+														</div>
+													</div>
+												</td>
+								        <td data-edit-fund-check-content="{{id}}FlowCheck" class="table-1 hide-md-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
+								        	<div class="u-row middle-xs">
+								        		<div class="col-xs-6">
+								        			<span class="LabelEditFunds"><strong>Flujo:</strong> </span>
+								        		</div>
+								        		<div class="col-xs-6">
+															<input class="input__calculate input__label--ichiro" min="0" type="number" placeholder="10" data-change-funds data-edit-funds-normal-value="0" disabled />
+														</div>
+													</div>
+												</td>
+											{{/compare}}
+							      {{/each}}
+							    </tr>
+								{{/each}}
+						  	</tbody>
+							</table>
 
-					<div class="u-row u-top totalEditFieldsFunds hide-xs">
-			          	<div class="col-xs-6" data-edit-fund-check-total="apvStockCheck">
-			          		<div class="fieldsTotalFundsCol center-xs">
-		  						<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
-		  					</div>
+							<div class="u-row u-top totalEditFieldsFunds">
+		          	<div class="col-xs-6" data-edit-fund-check-total="apvStockCheck">
+		          		<div class="fieldsTotalFundsCol center-xs">
+		  							<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
+		  						</div>
+			  				</div>
+		          	<div class="col-xs-6" data-edit-fund-check-total="apvFlowCheck">
+		          		<div class="fieldsTotalFundsCol center-xs">
+			  						<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
+			  					</div>
+			  				</div>
 		  				</div>
-			          	<div class="col-xs-6" data-edit-fund-check-total="apvFlowCheck">
-			          		<div class="fieldsTotalFundsCol center-xs">
-		  						<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
-		  					</div>
-		  				</div>
-	  				</div>
 
-					<div class="ChangeFundsContinueWrap hide-xs">
+							<div class="ChangeFundsContinueWrap">
 
-						<div class="SameDistributionChange hide-xs">
-							<div class="u-space u-top">
-								<a href="" class="button button-primary button-full changeFundsSubmit">Solicitar cambio de fondos</a>
+								<div class="SameDistributionChange">
+									<div class="u-space u-top">
+										<a href="" class="button button-primary button-full button-disabled changeFundsSubmit">Solicitar cambio de fondos</a>
+									</div>
+									<a href="" class="f-link changeFundsCancel">Cancelar</a>
+								</div>
 							</div>
-							<a href="" class="f-link changeFundsCancel">Cancelar</a>
 						</div>
-					</div>
-				</div>
-			</li>    
-		</ul>
+					</li>
+				</ul>
 
 		  <!-- / End Mobile tables -->
-
-		  	<div class="col-xs-12 end-xs u-top hide-md">
-				<a href="" class="changeFundsEdit button button-small button-full">Editar Distribución de Fondos</a>
-			</div>
 
 			<div class="col-xs-12 end-xs u-space hide-xs show-md editFundsSubmit">
 				<a href="#" class="u-right-sm u-top-sm col-xs-12 col-sm-3 changeFundsCancel">Cancelar</a>
