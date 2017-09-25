@@ -158,7 +158,6 @@
 		}
 
 		editFundCheckContentValueFn(editFundCheckContentValue, type, e)
-		editFundCheckTotalValueFn(editFundCheckTotalValue, type, e)
 		showHideEditFieldsFn()
 	}
 
@@ -215,29 +214,6 @@
 
 	}
 
-	function editFundCheckTotalValueFn(editFundCheckTotalValue, type, e) {
-
-		editFundCheckTotalValue.each( (index, el) => {
-			if(type == 'event') {
-				if($(e.currentTarget).is(':checked')) {
-					$(el).find('.fieldsTotalFundsCol').removeClass('hide-xs-important')
-				}
-				else {
-					$(el).find('.fieldsTotalFundsCol').addClass('hide-xs-important')
-				}
-			}
-			else {
-				if($(e).is(':checked')) {
-					$(el).find('.fieldsTotalFundsCol').removeClass('hide-xs-important')
-				}
-				else {
-					$(el).find('.fieldsTotalFundsCol').addClass('hide-xs-important')
-				}
-			}
-		})
-
-	}
-
 
 	/**
 	 * Continue click
@@ -279,35 +255,34 @@
 
 				totalEditFunds += dataFundsValue
 
+			})
+
+			setTimeout( () => {
+
 				let arrayValuesChange = []
 
-				$(e.currentTarget).closest('.distributionFundsDesktop').find(`[data-edit-fund-check-total]`).each( (index, value) => {
+				$(e.currentTarget).closest('.distributionFundsDesktop').find('.fieldsTotalFundsValue').each( (index, value) => {
 
-					const dataEditFundTotal = $(value)
-					const findDataEditFundTotal = $(dataEditFundTotal).find('.fieldsTotalFundsValue')
+					arrayValuesChange.push( $(value).hasClass('red') )
 
-					arrayValuesChange.push( $($(dataEditFundTotal).find('.fieldsTotalFundsValue')[0]).hasClass('red') )
-
-					console.log($(dataEditFundTotal), 'dataEditFundTotal')
-					console.log($(findDataEditFundTotal), 'sd jbsdjhf bshjdf bshjdfb jhsdjbf ')
-
-					if($.inArray('true', arrayValuesChange) == -1){
-						console.log('entra sjd kfsdjb fn', $.inArray('true', arrayValuesChange))
-					    // the element is not in the array
-					};
-
-
-					if($($(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`)[`${index}`]).find('.fieldsTotalFundsValue').hasClass('red')) {
-						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
-					} else {
-						console.log('entra else')
-						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').removeClass('button-disabled')
-					}
 				})
 
-				console.log(arrayValuesChange, 'arrayValuesChange')
+				setTimeout( () => {
 
-			})
+					console.log($(arrayValuesChange), 'arrayValuesChange')
+					console.log($.inArray(true, arrayValuesChange), 'arrayValuesChangearrayValuesChange')
+
+					if($.inArray(true, arrayValuesChange) == -1){
+						console.log('entra')
+						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').removeClass('button-disabled')
+					    // the element is not in the array
+					} else {
+						console.log('sale')
+						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
+					}
+				}, 100)
+
+			}, 100)
 
 			$(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-total]`).each( (index, value) => {
 				if(totalEditFunds > 100 || totalEditFunds < 100) {
