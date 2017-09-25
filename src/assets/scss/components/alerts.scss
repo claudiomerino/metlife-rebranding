@@ -17,6 +17,11 @@
 		border-color: $error-border;
 	}
 
+	.alert-warning {
+		background-color: $warning-light;
+		border-color: 1px solid rgba(10, 10, 10, 0.25);
+	}
+
 	.alert-success {
 		background-color: $success-light;
 		border-color: $success;
