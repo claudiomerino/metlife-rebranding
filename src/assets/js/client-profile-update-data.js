@@ -59,10 +59,6 @@
       	$( 'html,body' ).animate({ scrollTop: $ClientProfileMessageSuccess.offset().top - 90 }, 'fast');
 			}, 750 );
 
-			setTimeout( () => {
-				$ClientProfileMessageSuccess
-					.addClass('hide-state-update')
-			}, 5000 );
 		}
 		else if( cancel === 'true' ) {
 
@@ -81,10 +77,6 @@
      		$( 'html,body' ).animate({ scrollTop: $ClientProfileMessageCancel.offset().top - 90 }, 'fast');
 			}, 750 );
 
-			setTimeout( () => {
-				$ClientProfileMessageCancel
-					.addClass('hide-state-update')
-			}, 5000 );
 		}
 	}
 
