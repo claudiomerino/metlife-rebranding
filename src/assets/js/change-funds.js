@@ -33,7 +33,12 @@
 		const $targetAcordionChangeFunds = $('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2) .accordion-content')
 		$('.AccordionChangeFunds').foundation('up', $targetAcordionChangeFunds);
 
-		$('[data-edit-fund-check]').each( (index, el) => {
+		$('[data-edit-fund-check="apvStockCheck"]').each( (index, el) => {
+			$(el).attr('checked', true)
+			dataEditFundCheckFn($(el), 'element')
+		})
+
+		$('[data-edit-fund-check="apvFlowCheck"]').each( (index, el) => {
 			$(el).attr('checked', true)
 			dataEditFundCheckFn($(el), 'element')
 		})
@@ -158,26 +163,6 @@
 		}
 
 		editFundCheckContentValueFn(editFundCheckContentValue, type, e)
-		showHideEditFieldsFn()
-	}
-
-	function showHideEditFieldsFn() {
-
-		let checkedEditFunds
-
-		$('[data-edit-fund-check]').each( (index, el) => {
-			if($(el).is(':checked')) {
-				checkedEditFunds = true
-			}
-		})
-
-		if(checkedEditFunds == true) {
-			$editFundsSubmit.removeClass('hide-edit-fields')
-		}
-		else {
-			$editFundsSubmit.addClass('hide-edit-fields')
-		}
-
 	}
 
 	function editFundCheckContentValueFn(editFundCheckContentValue, type, e) {
@@ -223,10 +208,12 @@
 
 	$ChangeFundsContinue.on('click', (e) => {
 		e.preventDefault()
-		const $nextContinueFunds = $(e.currentTarget).closest('.accordion-item').next('.accordion-item').find('.accordion-content')
+		if(!$(e.currentTarget).hasClass('button-disabled')) {
+			const $nextContinueFunds = $(e.currentTarget).closest('.accordion-item').next('.accordion-item').find('.accordion-content')
 
-		$('.AccordionChangeFunds').foundation('up', $(e.currentTarget).closest('.accordion-content'));
-		$('.AccordionChangeFunds').foundation('down', $nextContinueFunds);
+			$('.AccordionChangeFunds').foundation('up', $(e.currentTarget).closest('.accordion-content'));
+			$('.AccordionChangeFunds').foundation('down', $nextContinueFunds);
+		}
 	})
 
 
@@ -262,25 +249,32 @@
 				let arrayValuesChange = []
 
 				$(e.currentTarget).closest('.distributionFundsDesktop').find('.fieldsTotalFundsValue').each( (index, value) => {
-
 					arrayValuesChange.push( $(value).hasClass('red') )
-
 				})
 
-				setTimeout( () => {
+				if($.inArray(true, arrayValuesChange) == -1) {
+					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').removeClass('button-disabled')
+				} else {
+					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
+				}
 
-					console.log($(arrayValuesChange), 'arrayValuesChange')
-					console.log($.inArray(true, arrayValuesChange), 'arrayValuesChangearrayValuesChange')
 
-					if($.inArray(true, arrayValuesChange) == -1){
-						console.log('entra')
-						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').removeClass('button-disabled')
-					    // the element is not in the array
-					} else {
-						console.log('sale')
-						$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
-					}
-				}, 100)
+				let arrayValuesChangeMobile = []
+
+				console.log($(e.currentTarget).closest('.distributionFundsMobile'), 'distributionFundsMobile currentTarget')
+
+				$(e.currentTarget).closest('.accordion-content').find('.fieldsTotalFundsValue').each( (index, value) => {
+					console.log(value, 'value mobile')
+					arrayValuesChangeMobile.push( $(value).hasClass('red') )
+				})
+
+				console.log(arrayValuesChangeMobile, 'arrayValuesChangeMobile')
+
+				if($.inArray(true, arrayValuesChangeMobile) == -1) {
+					$(e.currentTarget).closest('.distributionFunds').find('.ChangeFundsContinue').removeClass('button-disabled')
+				} else {
+					$(e.currentTarget).closest('.distributionFunds').find('.ChangeFundsContinue').addClass('button-disabled')
+				}
 
 			}, 100)
 

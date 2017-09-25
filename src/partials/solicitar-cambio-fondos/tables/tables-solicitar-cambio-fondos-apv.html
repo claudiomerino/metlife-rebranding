@@ -1,14 +1,15 @@
 
 	<div class="col-xs-12">
 		<div class="alert alert-success u-space hide-state-update changeFundsMessageSuccess">
-
 			<p>¡Has realizado la modificación de tus datos de contacto de forma exitosa!<br>Recuerda que es importante tener tus datos actualizados para comunicarnos contigo.</p>
+			<i class="fa fa-times alert-close"></i>
 		</div>
 	</div>
 
 	<div class="col-xs-12">
 		<div class="alert alert-error u-space hide-state-update changeFundsMessageCancel">
 			<p class="alert_desc">Tus cambios han sido cancelados</p>
+			<i class="fa fa-times alert-close"></i>
 		</div>
 	</div>
 
@@ -134,7 +135,7 @@
 	  					</div>
 	  				</div>
 
-					  <table class="table-responsive u-striped">
+					  <table class="table-responsive u-striped distributionFundsMobile">
 					  	<tbody>
 								{{#each solicitar-cambio-fondos-apv.base}}
 						      <tr class="hide-md-important">
@@ -178,7 +179,7 @@
 
 							<div class="SameDistributionInitial">
 								<div class="u-space">
-									<a href="" class="button button-primary button-full ChangeFundsContinue">Continuar</a>
+									<a href="" class="button button-primary button-full button-disabled ChangeFundsContinue">Continuar</a>
 								</div>
 								<a href="" class="f-link changeFundsCancel">Cancelar</a>
 							</div>
@@ -218,7 +219,7 @@
 	  				</div>
 
 
-					  <table class="table-responsive u-striped">
+					  <table class="table-responsive u-striped distributionFundsMobile">
 					  	<tbody>
 
 								{{#each solicitar-cambio-fondos-apv.base}}
@@ -257,7 +258,7 @@
 
 						<div class="ChangeFundsContinueWrap hide-xs">
 							<div class="u-space u-top">
-								<a href="" class="button button-primary button-full ChangeFundsContinue">Continuar</a>
+								<a href="" class="button button-primary button-full button-disabled ChangeFundsContinue">Continuar</a>
 							</div>
 							<a href="" class="f-link changeFundsCancel">Cancelar</a>
 						</div>
@@ -287,7 +288,7 @@
 	  					</div>
 	  				</div>
 
-					  <table class="table-responsive u-striped">
+					  <table class="table-responsive u-striped distributionFundsMobile">
 					  	<tbody>
 
 								{{#each solicitar-cambio-fondos-apv.base}}
