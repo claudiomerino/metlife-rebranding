@@ -29,6 +29,8 @@
 		$('.editFundsTitle').addClass('hide-xs')
 		$('.editFundsTitle').siblings('.accordion-title').removeClass('hide-xs')
 		$('.ChangeFundsContinueWrap').removeClass('hide-xs')
+		$('.totalEditFieldsFunds').removeClass('hide-xs')
+		$('.AccordionChangeFunds').find('.accordion-item:nth-of-type(1)').find('.LabelEditFunds').removeClass('hide-edit-fields')
 
 		const $targetAcordionChangeFunds = $('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2) .accordion-content')
 		$('.AccordionChangeFunds').foundation('up', $targetAcordionChangeFunds);
@@ -90,6 +92,8 @@
 		$('.editFundsTitle').siblings('.accordion-title').addClass('hide-xs')
 
 		$('.ChangeFundsContinueWrap').addClass('hide-xs')
+		$('.totalEditFieldsFunds').addClass('hide-xs')
+		$('.LabelEditFunds').addClass('hide-edit-fields')
 
 		const $AcordionChangeCheckFunds = $('.AccordionChangeFunds').find('.accordion-item .accordion-content')
 
@@ -128,6 +132,8 @@
 		$('.editFundsTitle').siblings('.accordion-title').addClass('hide-xs')
 
 		$('.ChangeFundsContinueWrap').addClass('hide-xs')
+		$('.totalEditFieldsFunds').addClass('hide-xs')
+		$('.LabelEditFunds').addClass('hide-edit-fields')
 
 		const $AcordionChangeCheckFunds = $('.AccordionChangeFunds').find('.accordion-item .accordion-content')
 
@@ -172,11 +178,13 @@
 			if(type == 'event') {
 				if($(e.currentTarget).is(':checked')) {
 					$(el).find('input').removeClass('hide-edit-fields')
+					$(el).find('.LabelEditFunds').removeClass('hide-edit-fields')
 					$(el).find('input').attr('disabled', false)
 					$(el).find('.table_desc').addClass('hide-edit-fields')
 				}
 				else {
 					$(el).find('input').addClass('hide-edit-fields')
+					$(el).find('.LabelEditFunds').addClass('hide-edit-fields')
 					$(el).find('.input__calculate_show').removeClass('hide-edit-fields')
 					$(el).find('input').attr('disabled', true)
 					$(el).find('.table_desc').removeClass('hide-edit-fields')
@@ -185,11 +193,13 @@
 			else {
 				if($(e).is(':checked')) {
 					$(el).find('input').removeClass('hide-edit-fields')
+					$(el).find('.LabelEditFunds').removeClass('hide-edit-fields')
 					$(el).find('input').attr('disabled', false)
 					$(el).find('.table_desc').addClass('hide-edit-fields')
 				}
 				else {
 					$(el).find('input').addClass('hide-edit-fields')
+					$(el).find('.LabelEditFunds').addClass('hide-edit-fields')
 					$(el).find('.input__calculate_show').removeClass('hide-edit-fields')
 					$(el).find('input').attr('disabled', true)
 					$(el).find('.table_desc').removeClass('hide-edit-fields')

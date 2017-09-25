@@ -146,11 +146,25 @@
 							    	{{#each funds}}
 						    			{{#compare id 'apv' operator='=='}}
 								        <td data-edit-fund-check-content="{{id}}StockCheck" class="table-1 hide-md-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
-													<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+								        	<div class="u-row middle-xs">
+								        		<div class="col-xs-4">
+								        			<span class="hide-edit-fields LabelEditFunds"><strong>Stock:</strong> </span>
+								        		</div>
+								        		<div class="col-xs-8">
+															<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+														</div>
+													</div>
 													<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Stock:</span> {{stock}}</strong></p>
 												</td>
 								        <td data-edit-fund-check-content="{{id}}FlowCheck" class="table-1 hide-md-important fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
-													<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+								        	<div class="u-row middle-xs">
+								        		<div class="col-xs-4">
+								        			<span class="hide-edit-fields LabelEditFunds"><strong>Flujo:</strong> </span>
+								        		</div>
+								        		<div class="col-xs-8">
+															<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+														</div>
+													</div>
 													<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Flujo:</span> {{flow}}</strong></p>
 												</td>
 											{{/compare}}
@@ -160,15 +174,17 @@
 					  	</tbody>
 					  </table>
 
-	          <div class="table-1" align="left" valign="middle" data-edit-fund-check-total="apvStockCheck">
-	          	<div class="fieldsTotalFundsCol">
-	  						<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
-	  					</div>
-	  				</div>
-	          <div class="table-1" align="left" valign="middle" data-edit-fund-check-total="apvFlowCheck">
-	          	<div class="fieldsTotalFundsCol">
-	  						<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
-	  					</div>
+						<div class="u-row u-top totalEditFieldsFunds hide-xs">
+		          <div class="col-xs-6" data-edit-fund-check-total="apvStockCheck">
+		          	<div class="fieldsTotalFundsCol center-xs">
+		  						<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
+		  					</div>
+		  				</div>
+		          <div class="col-xs-6" data-edit-fund-check-total="apvFlowCheck">
+		          	<div class="fieldsTotalFundsCol center-xs">
+		  						<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
+		  					</div>
+		  				</div>
 	  				</div>
 
 						<div class="ChangeFundsContinueWrap hide-xs">
@@ -195,7 +211,7 @@
 					</div>
 				</li>
 
-        <li class="accordion-item is-active" data-accordion-item>
+        <li class="accordion-item u-top is-active" data-accordion-item>
         	<p class="f-big editFundsTitle text-left u-divider-bottom-primary">
         		<strong>Distribución actual de fondos <br/> Cuenta: Depósito</strong>
         	</p>
@@ -231,11 +247,29 @@
 							    	{{#each funds}}
 						    			{{#compare id 'deposit' operator='=='}}
 								        <td data-edit-fund-check-content="{{id}}StockCheck" class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
-													<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+
+								        	<div class="u-row middle-xs">
+								        		<div class="col-xs-4">
+								        			<span class="hide-edit-fields LabelEditFunds"><strong>Stock:</strong> </span>
+								        		</div>
+								        		<div class="col-xs-8">
+															<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+														</div>
+													</div>
+
 													<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Stock:</span> {{stock}}</strong></p>
 												</td>
 								        <td data-edit-fund-check-content="{{id}}FlowCheck" class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
-													<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+
+								        	<div class="u-row middle-xs">
+								        		<div class="col-xs-4">
+								        			<span class="hide-edit-fields LabelEditFunds"><strong>Flujo:</strong> </span>
+								        		</div>
+								        		<div class="col-xs-8">
+															<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+														</div>
+													</div>
+
 													<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Flujo:</span> {{flow}}</strong></p>
 												</td>
 											{{/compare}}
@@ -245,15 +279,17 @@
 					  	</tbody>
 					  </table>
 
-	          <div class="table-1" align="left" valign="middle" data-edit-fund-check-total="depositStockCheck">
-	          	<div class="fieldsTotalFundsCol">
-	  						<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
-	  					</div>
-	  				</div>
-	          <div class="table-1" align="left" valign="middle" data-edit-fund-check-total="depositFlowCheck">
-	          	<div class="fieldsTotalFundsCol">
-	  						<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
-	  					</div>
+						<div class="u-row u-top totalEditFieldsFunds hide-xs">
+		          <div class="col-xs-6" data-edit-fund-check-total="depositStockCheck">
+		          	<div class="fieldsTotalFundsCol center-xs">
+		  						<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
+		  					</div>
+		  				</div>
+		          <div class="col-xs-6" data-edit-fund-check-total="depositFlowCheck">
+		          	<div class="fieldsTotalFundsCol center-xs">
+		  						<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
+		  					</div>
+		  				</div>
 	  				</div>
 
 						<div class="ChangeFundsContinueWrap hide-xs">
@@ -265,7 +301,7 @@
           </div>
         </li>
 
-        <li class="accordion-item is-active" data-accordion-item>
+        <li class="accordion-item u-top is-active" data-accordion-item>
         	<p class="f-big editFundsTitle text-left u-divider-bottom-primary">
         		<strong>Distribución actual de fondos <br/> Cuenta: Voluntario</strong>
         	</p>
@@ -300,11 +336,29 @@
 							    	{{#each funds}}
 						    			{{#compare id 'voluntary' operator='=='}}
 								        <td data-edit-fund-check-content="{{id}}StockCheck" class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Stock">
-													<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+
+								        	<div class="u-row middle-xs">
+								        		<div class="col-xs-4">
+								        			<span class="hide-edit-fields LabelEditFunds"><strong>Stock:</strong> </span>
+								        		</div>
+								        		<div class="col-xs-8">
+															<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+														</div>
+													</div>
+
 													<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Stock:</span> {{stock}}</strong></p>
 												</td>
 								        <td data-edit-fund-check-content="{{id}}FlowCheck" class="table-1 hide-md fieldsDistributionFunds" align="left" valign="middle" data-table-title="% Flujo">
-													<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+
+								        	<div class="u-row middle-xs">
+								        		<div class="col-xs-4">
+								        			<span class="hide-edit-fields LabelEditFunds"><strong>Flujo:</strong> </span>
+								        		</div>
+								        		<div class="col-xs-8">
+															<input class="hide-edit-fields input__label input__calculate input__label--ichiro" min="0" type="text" placeholder="0" data-change-funds data-edit-funds-normal-value="0" />
+														</div>
+													</div>
+
 													<p class="table_desc toggl-edit-fields"><strong><span class="hide-md">Flujo:</span> {{flow}}</strong></p>
 												</td>
 											{{/compare}}
@@ -314,15 +368,17 @@
 					  	</tbody>
 					  </table>
 
-	          <div class="table-1" align="left" valign="middle" data-edit-fund-check-total="voluntaryStockCheck">
-	          	<div class="fieldsTotalFundsCol">
-	  						<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
-	  					</div>
-	  				</div>
-	          <div class="table-1" align="left" valign="middle" data-edit-fund-check-total="voluntaryFlowCheck">
-	          	<div class="fieldsTotalFundsCol">
-	  						<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
-	  					</div>
+						<div class="u-row u-top totalEditFieldsFunds hide-xs">
+		          <div class="col-xs-6" data-edit-fund-check-total="voluntaryStockCheck">
+		          	<div class="fieldsTotalFundsCol center-xs">
+		  						<p class="table_desc f-big f-tiny"><strong>Stock <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
+		  					</div>
+		  				</div>
+		          <div class="col-xs-6" data-edit-fund-check-total="voluntaryFlowCheck">
+		          	<div class="fieldsTotalFundsCol center-xs">
+		  						<p class="table_desc f-big f-tiny"><strong>Flujo <span class="fieldsTotalFundsValue">0</span><span class="distributionFundsPercentage">%</span></strong></p>
+		  					</div>
+		  				</div>
 	  				</div>
 
 						<div class="ChangeFundsContinueWrap hide-xs">
@@ -331,8 +387,8 @@
 							</div>
 							<a href="" class="f-link changeFundsCancel">Cancelar</a>
 						</div>
-		          	</div>
-		        </li>
+        	</div>
+        </li>
 			</ul>
 
 		  <!-- / End Mobile tables -->
