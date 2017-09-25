@@ -233,10 +233,8 @@
 
 				if($.inArray(true, arrayValuesChangeMobile) == -1) {
 					$(e.currentTarget).closest('.distributionFunds').find('.ChangeFundsContinue').removeClass('button-disabled')
-					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').removeClass('button-disabled')
 				} else {
 					$(e.currentTarget).closest('.distributionFunds').find('.ChangeFundsContinue').addClass('button-disabled')
-					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
 				}
 
 			}, 100)
