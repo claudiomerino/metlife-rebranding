@@ -59,15 +59,6 @@
 		}
 	})
 
-	$('.AccordionChangeFunds').find('.accordion-item .accordion-title').on('click', (e) => {
-		e.preventDefault()
-
-		if($ChangeFundsContinueCheckbox.is(':checked')) {
-			const $AcordionChangeCheckFunds = $('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2) .accordion-content')
-			$('.AccordionChangeFunds').foundation('up', $targetAcordionChangeFunds);
-		}
-	})
-
 
 	$changeFundsCancel.on('click', (e) => {
 		e.preventDefault()
