@@ -25,12 +25,10 @@
 		 * Ready to edit
 		 **/
 
-		$(e.currentTarget).addClass('hide-edit-fields')
 		$('.editFundsTitle').addClass('hide-xs')
 		$('.editFundsTitle').siblings('.accordion-title').removeClass('hide-xs')
 		$('.ChangeFundsContinueWrap').removeClass('hide-xs')
 		$('.totalEditFieldsFunds').removeClass('hide-xs')
-		$('.AccordionChangeFunds').find('.accordion-item:nth-of-type(1)').find('.LabelEditFunds').removeClass('hide-edit-fields')
 
 		const $targetAcordionChangeFunds = $('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2) .accordion-content')
 		$('.AccordionChangeFunds').foundation('up', $targetAcordionChangeFunds);
@@ -74,8 +72,6 @@
 	$changeFundsCancel.on('click', (e) => {
 		e.preventDefault()
 
-		$changeFundsEdit.removeClass('hide-edit-fields')
-
 		/**
 		 * All checkbox disable and remove edit inputs
 		 **/
@@ -88,20 +84,6 @@
 		 * Remove class to show alert error
 		 **/
 		$changeFundsMessageCancel.removeClass('hide-state-update')
-		$('.editFundsTitle').removeClass('hide-xs')
-		$('.editFundsTitle').siblings('.accordion-title').addClass('hide-xs')
-
-		$('.ChangeFundsContinueWrap').addClass('hide-xs')
-		$('.totalEditFieldsFunds').addClass('hide-xs')
-		$('.LabelEditFunds').addClass('hide-edit-fields')
-
-		const $AcordionChangeCheckFunds = $('.AccordionChangeFunds').find('.accordion-item .accordion-content')
-
-		$('.AccordionChangeFunds').foundation('down', $AcordionChangeCheckFunds);
-
-		$('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2)').removeClass('inactive-accordion')
-
-		$('.AccordionChangeFunds').find('.accordion-item').addClass('is-active')
 
 		/**
 		 * Scroll top to message cancel
@@ -113,8 +95,6 @@
 
 	$changeFundsSubmit.on('click', (e) => {
 		e.preventDefault()
-
-		$changeFundsEdit.removeClass('hide-edit-fields')
 
 		/**
 		 * All checkbox disable and remove edit inputs
@@ -128,20 +108,6 @@
 		 * Remove class to show alert error
 		 **/
 		$changeFundsMessageSuccess.removeClass('hide-state-update')
-		$('.editFundsTitle').removeClass('hide-xs')
-		$('.editFundsTitle').siblings('.accordion-title').addClass('hide-xs')
-
-		$('.ChangeFundsContinueWrap').addClass('hide-xs')
-		$('.totalEditFieldsFunds').addClass('hide-xs')
-		$('.LabelEditFunds').addClass('hide-edit-fields')
-
-		const $AcordionChangeCheckFunds = $('.AccordionChangeFunds').find('.accordion-item .accordion-content')
-
-		$('.AccordionChangeFunds').foundation('down', $AcordionChangeCheckFunds);
-
-		$('.AccordionChangeFunds').find('.accordion-item:nth-of-type(n + 2)').removeClass('inactive-accordion')
-
-		$('.AccordionChangeFunds').find('.accordion-item').addClass('is-active')
 
 		/**
 		 * Scroll top to message cancel
@@ -177,32 +143,18 @@
 
 			if(type == 'event') {
 				if($(e.currentTarget).is(':checked')) {
-					$(el).find('input').removeClass('hide-edit-fields')
-					$(el).find('.LabelEditFunds').removeClass('hide-edit-fields')
 					$(el).find('input').attr('disabled', false)
-					$(el).find('.table_desc').addClass('hide-edit-fields')
 				}
 				else {
-					$(el).find('input').addClass('hide-edit-fields')
-					$(el).find('.LabelEditFunds').addClass('hide-edit-fields')
-					$(el).find('.input__calculate_show').removeClass('hide-edit-fields')
 					$(el).find('input').attr('disabled', true)
-					$(el).find('.table_desc').removeClass('hide-edit-fields')
 				}
 			}
 			else {
 				if($(e).is(':checked')) {
-					$(el).find('input').removeClass('hide-edit-fields')
-					$(el).find('.LabelEditFunds').removeClass('hide-edit-fields')
 					$(el).find('input').attr('disabled', false)
-					$(el).find('.table_desc').addClass('hide-edit-fields')
 				}
 				else {
-					$(el).find('input').addClass('hide-edit-fields')
-					$(el).find('.LabelEditFunds').addClass('hide-edit-fields')
-					$(el).find('.input__calculate_show').removeClass('hide-edit-fields')
 					$(el).find('input').attr('disabled', true)
-					$(el).find('.table_desc').removeClass('hide-edit-fields')
 				}
 			}
 		})
@@ -271,10 +223,9 @@
 
 				let arrayValuesChangeMobile = []
 
-				console.log($(e.currentTarget).closest('.distributionFundsMobile'), 'distributionFundsMobile currentTarget')
+				console.log($(e.currentTarget).closest('.accordion-content').find('.fieldsTotalFundsValue'), 'fieldsTotalFundsValue')
 
 				$(e.currentTarget).closest('.accordion-content').find('.fieldsTotalFundsValue').each( (index, value) => {
-					console.log(value, 'value mobile')
 					arrayValuesChangeMobile.push( $(value).hasClass('red') )
 				})
 
@@ -282,8 +233,10 @@
 
 				if($.inArray(true, arrayValuesChangeMobile) == -1) {
 					$(e.currentTarget).closest('.distributionFunds').find('.ChangeFundsContinue').removeClass('button-disabled')
+					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').removeClass('button-disabled')
 				} else {
 					$(e.currentTarget).closest('.distributionFunds').find('.ChangeFundsContinue').addClass('button-disabled')
+					$(e.currentTarget).closest('.distributionFunds').find('.changeFundsSubmit').addClass('button-disabled')
 				}
 
 			}, 100)
