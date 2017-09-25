@@ -7,23 +7,34 @@
 	let $successChangePass = $( '.successChangePass' );
 	let $changeNewPass = $( '.changeNewPass input' );
 	let $changeNewPassParent = $( '.changeNewPass' );
+	let $changeActualPass = $( '#changeActualPass' );
+	let $ChangeKeyPhoneCardsSubmit = $( '.ChangeKeyPhoneCardsSubmit' );
 
 	let $errorLength = $( '.errorLength' );
 	let $errorAZ = $( '.errorAZ' );
 	let $errorNumbers = $( '.errorNumbers' );
 
 
+	$changeActualPass.on('keydown', (e) => {
+		activeValidatePassForm()
+	})
 
 	// Change New Pass
 	$changeNewPass.on("valid.zf.abide", function(ev,el) {
 		$(el).closest($changeNewPassParent).find($errorLength).removeClass( 'pink' );
 		$(el).closest($changeNewPassParent).find($errorLength).addClass( 'green' );
+		activeValidatePassForm()
 	});
 
 	$changeNewPass.on("invalid.zf.abide", function(ev,el) {
 		$(el).closest($changeNewPassParent).find($errorLength).removeClass( 'green' );
 		$(el).closest($changeNewPassParent).find($errorLength).addClass( 'pink' );
+		activeValidatePassForm()
 	});
+
+	$('#changeAgainPass').on('keydown', (e) => {
+		activeValidatePassForm()
+	})
 
 	// Change Pass Form
 	$changePassForm.on("submit", ( ev ) => {
@@ -37,6 +48,19 @@
 		}, 3000);
 
 	});
+
+	function activeValidatePassForm() {
+		setTimeout( () => {
+			if($changeActualPass.val().length <= 0 || $('#changeNewPass').val().length <= 0 || $('#changeNewPass').hasClass('is-invalid-input') || $('#changeAgainPass').hasClass('is-invalid-input') || $('#changeAgainPass').val().length <= 0) {
+				console.log('entra')
+				$ChangeKeyPhoneCardsSubmit.addClass('button-disabled')
+			}
+			else {
+				console.log('SALE')
+				$ChangeKeyPhoneCardsSubmit.removeClass('button-disabled')
+			}
+		}, 1000)
+	}
 
 
 	Foundation.Abide.defaults.patterns['length'] = /^(.){8,}$/;
