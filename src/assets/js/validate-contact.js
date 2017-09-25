@@ -76,3 +76,13 @@
     	$(button).addClass('button-disabled')
     }
   }
+
+  $SendContact.on('click', (e) => {
+    e.preventDefault()
+    if($(e.currentTarget).hasClass('button-disabled')) {
+      $('.ClientProfileMessageSuccess').addClass('hide-state-update')
+    }
+    else {
+      $('.ClientProfileMessageSuccess').removeClass('hide-state-update')
+    }
+  })
