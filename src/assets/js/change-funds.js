@@ -143,18 +143,18 @@
 
 			if(type == 'event') {
 				if($(e.currentTarget).is(':checked')) {
-					$(el).find('input').attr('disabled', false)
+					$(el).find('input').prop('disabled', false)
 				}
 				else {
-					$(el).find('input').attr('disabled', true)
+					$(el).find('input').prop('disabled', true)
 				}
 			}
 			else {
 				if($(e).is(':checked')) {
-					$(el).find('input').attr('disabled', false)
+					$(el).find('input').prop('disabled', false)
 				}
 				else {
-					$(el).find('input').attr('disabled', true)
+					$(el).find('input').prop('disabled', true)
 				}
 			}
 		})
