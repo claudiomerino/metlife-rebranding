@@ -93,3 +93,22 @@
       $('.rutUpdate').addClass('f-tiny-rut')
 
 	}
+
+	$('.UpdateDataForm .input__field').on('keydown', (e) => {
+		validateFunctionUpdateData()
+	})
+
+	$('.AcceptLegal').on('click', () => {
+		validateFunctionUpdateData()
+	})
+
+	function validateFunctionUpdateData () {
+		setTimeout( () => {
+			if($('.UpdateDataForm').find('.is-invalid-input').length > 0) {
+				$clientProfileSaveUpdateData.addClass('button-disabled')
+			}
+			else {
+				$clientProfileSaveUpdateData.removeClass('button-disabled')
+			}
+		}, 1000)
+	}
