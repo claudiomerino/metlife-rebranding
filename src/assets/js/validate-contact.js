@@ -61,10 +61,6 @@
   });
 
   function activeSubmitButtonFn(button) {
-  	console.log(!$validateEmail.hasClass('is-invalid-input'), 'validateEmail')
-  	console.log($validateEmptyTextArea.val().length, 'validateEmptyTextArea')
-  	console.log($validateEmpty.val().length, 'validateEmpty')
-  	console.log($('select.SelectContact.cs-select').val(), 'SelectContact')
   	if(!$validateEmail.hasClass('is-invalid-input') && $validateEmptyTextArea.val().length > 0 && $validateEmpty.val().length > 0 && $('select.SelectContact.cs-select').val() != null) {
     	$(button).removeClass('button-disabled')
     }
@@ -83,6 +79,8 @@
       $('.ClientProfileMessageSuccess').addClass('hide-state-update')
     }
     else {
+      $(e.currentTarget).closest('.FormContact').find('.input__field').prop('disabled', 'disabled')
+      $(e.currentTarget).closest('.FormContact').find('.SelectContact').addClass('disabledSelect')
       $('.ClientProfileMessageSuccess').removeClass('hide-state-update')
     }
   })
