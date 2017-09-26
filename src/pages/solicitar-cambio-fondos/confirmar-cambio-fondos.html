@@ -1,0 +1,50 @@
+
+{{> nav-off-canvas}}
+
+<div class="off-canvas-content" data-off-canvas-content>
+
+	<div class="double-nav_sticky" data-sticky-container>
+		<div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+			{{> nav-sub}}
+			{{> nav-main}}
+		</div>
+	</div>
+
+	<section class="client-profile bg-white-light">
+		<div class="client-profile_container u-container">
+
+			{{> breadcrumb-partial-rescue }}
+
+			<h2 class="client-profile_title center-xs">Confirmar Solicitud de Cambio de Fondos</h2>
+			<p class="center-xs u-space"><strong>Metlife Seguro APV.</strong> Póliza N°: 0056705543-A</p>
+
+			<div class="policy_contact_details-wrapper u-space">
+
+				<div class="alert alert-success u-space successChangePass">
+	              <p class="alert_desc center-xs">
+	                <strong>Confirmación Cambio de Fondos.</strong> 
+	              </p>
+	              <i class="fa fa-times alert-close"></i>
+	            </div>
+
+				<section class="box u-space">
+					<p class="f-small"><strong>Ten presente que:</strong></p>
+					<p>La materialización de esta operación se hará efectiva de acuerdo al tipo de rentabilidad que tiene tu seguro. Para seguros de rentabilidad diaria (asociado a un valor cuota), el cambio se hará efectivo el quinto día hábil posterior a tu solicitud, y para aquellos seguros de rentabilidad mensual (valorización en UF), corresponde al décimo día hábil del mes posterior a tu solicitud.
+					</p>
+				</section>
+
+				{{> tables-solicitar-cambio-fondos-apv}}
+
+				<div class="u-row middle-xs center-xs end-sm u-space">
+					<a href="#" class="u-right-sm u-top-sm col-xs-12 col-sm-3">Volver al Producto</a>
+				</div>
+
+			</div>
+
+			<div class="client-profile_info center-xs u-section f-legal">
+				{{> legal }}
+			</div>
+
+		</div>
+	</section>
+</div>
