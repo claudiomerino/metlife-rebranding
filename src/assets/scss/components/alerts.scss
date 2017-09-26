@@ -19,7 +19,7 @@
 
 	.alert-warning {
 		background-color: $warning-light;
-		border-color: 1px solid rgba(10, 10, 10, 0.25);
+		border-color: $warning-border;
 	}
 
 	.alert-success {
