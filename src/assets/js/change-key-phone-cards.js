@@ -72,7 +72,7 @@
 			e.preventDefault()
 		}
 		else {
-			$('.successChangeCode').removeClass('hide-xs')
+			$(e.currentTarget).closest('.js-formholder').prev().find('.successChangeCode').removeClass('hide-xs')
 
 			setTimeout( () => {
 	   		$( 'html,body' ).animate({ scrollTop: $('.successChangeCode').offset().top - 90 }, 'fast');

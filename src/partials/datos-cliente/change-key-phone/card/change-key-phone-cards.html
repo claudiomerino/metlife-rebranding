@@ -10,20 +10,19 @@
     		</div>
 
 
-			<div class="col-md-4 col-md-offset-4 center-xs">
-				<div class="alert alert-success u-space hide-xs successChangeCode">
-					<p class="alert_desc center-xs">
-						<strong>Tu clave de acceso ha sido cambiada con éxito.</strong> Te estamos redirigiendo a la página de Acceso para Clientes, donde podrás ingresar al sitio usando tu nueva clave.
-					</p>
-		      		<i class="fa fa-times alert-close"></i>
-				</div>
-			</div>
 
 		</div>
 
 
 		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Solicitar Código Telefónico</strong></p>
-		<div class="u-row center-xs">
+		<div class="col-md-12 center-xs">
+				<div class="alert alert-success u-space start-md hide-xs successChangeCode">
+					<p class="alert_desc">Tu código telefónico ha sido enviado.
+					</p>
+		      		<i class="fa fa-times alert-close"></i>
+				</div>
+			</div>
+		<div class="u-row center-xs js-formholder">
             <div class="col-xs-12 col-md-4 u-top u-space">
 
             	<div class="login_toggle_content toggleChangePass changePhoneHideOnSubmit">
@@ -46,14 +45,21 @@
                       </span>
                     </section>
 	                <div class="end-sm">
-	              		<a href="#" class="button button-small button-full-xs ChangePhoneSubmit ChangeKeyPhoneCardsSubmit">Solicitar</a>
+	              		<a href="#" class="button button-small button-full-xs ChangePhoneSubmit ChangeKeyPhoneCardsSubmit" value="solicitar">Solicitar</a>
 	            	</div>
             	</div>
             </div>
         </div>
-
+		
 		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Cambio de Código Telefónico</strong></p>
-		<div class="u-row">
+		<div class="col-md-12 center-xs">
+			<div class="alert alert-success u-space start-md hide-xs successChangeCode">
+					<p class="alert_desc">Tu código telefónico ha sido cambiado exitosamente.
+					</p>
+		      		<i class="fa fa-times alert-close"></i>
+				</div>
+		</div>
+		<div class="u-row js-formholder">
 			<div class="col-xs-12 col-md-4 col-md-offset-4 u-top u-space-2x">
 				<form>
 					<div class="changePhoneSuccess">
@@ -67,7 +73,7 @@
 							          	<label class="input__label input__label--ichiro" for="phoneOld">
 							            	<span class="input__label-content input__label-content--ichiro">Código Telefónico Actual</span>
 							          	</label>
-							          	<p class="form-error f-tiny start-xs line_jump">El valor debe ser menor a 4 dígitos</p>
+							          	<p class="form-error f-tiny start-xs line_jump">El valor debe ser de 4 dígitos</p>
 						        	</span>
 						      	</section>
 
@@ -78,7 +84,7 @@
 								          	<label class="input__label input__label--ichiro" for="phoneNew">
 								            	<span class="input__label-content input__label-content--ichiro">Nuevo Código Telefónico</span>
 								          	</label>
-								          	<p class="form-error f-tiny start-xs line_jump">El valor debe ser menor a 4 dígitos</p>
+								          	<p class="form-error f-tiny start-xs line_jump">El valor debe ser de 4 dígitos</p>
 							        	</span>
 							        </section>
 					      		</div>
@@ -95,7 +101,7 @@
 
 							    <div class="u-row no-gutter-xs end-sm">
 							        <div class="col-xs-12 end-xs u-space-2x">
-							          	<a href="#" class="button button-small button-full-xs end-sm button-disabled ChangeKeyPhoneCardsSubmit">Cambiar Código</a>
+							          	<a href="#" class="button button-small button-full-xs end-sm button-disabled ChangeKeyPhoneCardsSubmit" value="cambiar">Cambiar Código</a>
 							        </div>
 							    </div>
 						  	</div>
