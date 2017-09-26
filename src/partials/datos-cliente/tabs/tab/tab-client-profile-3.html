@@ -1,4 +1,9 @@
 
+	<script>
+		$(function(){
+  $(':input[type=number]').on('mousewheel',function(e){ $(this).blur(); });
+});
+	</script>
 	<section>
 		{{> change-key-phone-cards }}
 	</section>

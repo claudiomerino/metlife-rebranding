@@ -49,7 +49,7 @@
 
 						<div class="col-xs-12 col-sm-6 col-md-3 u-space">
 							<p class="f-small"><strong>Monto a Solicitar</strong></p>
-	            <span class="input input--ichiro input--ichiro--currency">
+	            			<span class="input input--ichiro input--ichiro--currency">
 	  						<input class="input__field input__field--ichiro InputCurrency InputCurrencySelectBank" data-live-validate="true" min="1" max="550000" placeholder="Monto" type="text" required>
 	  						<p class="form-error form-error-top f-tiny">Haz excedido el Máximo de Monto para Rescatar</p>
 	  					</span>
@@ -106,26 +106,28 @@
 						</div>
 
 						<div class="col-xs-12 col-sm-4 hide-xs RescateParcialCuenta">
-              <p class="f-small"><strong>Nº de Cuenta</strong></p>
+             		 		<p class="f-small"><strong>Nº de Cuenta</strong></p>
 							<section class="u-field u-space">
-								<span class="input input--ichiro">
-									<input class="input__field input__field--ichiro" data-live-validate="true" type="number" id="ncuenta" />
-								</span>
+								<form>
+									<span class="input input--ichiro">
+										<input class="input__field input__field--ichiro" data-live-validate="true" type="number" id="ncuenta" />
+									</span>
+								</form>
 							</section>
 						</div>
 					</div>
 
 					<!-- Modal -->
 					<div class="reveal large" id="rescate-parcial" data-reveal>
-            <div class="container-fluid">
-              <h3 class="text-center u-top u-space">Solicitud Rescate Parcial</h3>
-              <p>Ten presente que la actualización de los montos de ahorro y rescate disponibles sólo se hará efectiva cuando MetLife haya aceptado tu solicitud, por lo tanto, seguirás viendo en tu Portal de Clientes los montos anteriores, hasta que ésta sea aprobada.</p>
-  					  <p class="u-space">Ya tienes una solicitud de rescate parcial vía web en proceso, con fecha <strong>dd/mm/aaaa</strong> por un monto de <strong>$XX.XXXX</strong>. ¿Deseas continuar, teniendo en cuenta que el monto que ahora solicitas podría variar o incluso podría no ser aprobado?</p>
-              <div class="u-row middle-xs center-xs end-sm u-space">
-              	<button class="button button-small button-full-xs last-sm" data-close aria-label="Close modal">Cancelar</button>
-        			  <a href="{{root}}solicitar-rescate-parcial/confirmar-rescate-parcial.html" data-close aria-label="Close modal" class="u-right-sm u-top-sm col-xs-12 col-sm-6">Sí, quiero continuar</a>
-        		  </div>
-            </div>
+			            <div class="container-fluid">
+			              <h3 class="text-center u-top u-space">Solicitud Rescate Parcial</h3>
+			              <p>Ten presente que la actualización de los montos de ahorro y rescate disponibles sólo se hará efectiva cuando MetLife haya aceptado tu solicitud, por lo tanto, seguirás viendo en tu Portal de Clientes los montos anteriores, hasta que ésta sea aprobada.</p>
+						  <p class="u-space">Ya tienes una solicitud de rescate parcial vía web en proceso, con fecha <strong>dd/mm/aaaa</strong> por un monto de <strong>$XX.XXXX</strong>. ¿Deseas continuar, teniendo en cuenta que el monto que ahora solicitas podría variar o incluso podría no ser aprobado?</p>
+			              <div class="u-row middle-xs center-xs end-sm u-space">
+			              	<button class="button button-small button-full-xs last-sm" data-close aria-label="Close modal">Cancelar</button>
+			    			  <a href="{{root}}solicitar-rescate-parcial/confirmar-rescate-parcial.html" data-close aria-label="Close modal" class="u-right-sm u-top-sm col-xs-12 col-sm-6">Sí, quiero continuar</a>
+			    		  </div>
+			            </div>
 					</div>
 					<!-- / Modal -->
 
@@ -133,13 +135,11 @@
 						<a href="#" id="SolicitarRescateParcialSubmit" class="button button-small last-sm button-disabled button-full-xs InputCurrencyRescateButton u-top">Solicitar Rescate Parcial</a>
 					</div>
 				</div>
-
 			</div>
 
 			<div class="client-profile_info center-xs u-section f-legal">
 				{{> legal }}
 			</div>
-
 		</div>
 	</section>
 </div>
