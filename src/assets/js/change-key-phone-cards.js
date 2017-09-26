@@ -45,12 +45,18 @@
 		setTimeout(() => {
 			const $emailChangePhoneValue = $(e.currentTarget).val()
 			validateEmail($emailChangePhoneValue, $(e.currentTarget))
-			if($(e.currentTarget).hasClass('is-invalid-input')) {
+			console.log($(e.currentTarget).val().length, 'emailChangePhone')
+			if($(e.currentTarget).hasClass('is-invalid-input') || $(e.currentTarget).val().length <= 0) {
 				$ChangePhoneSubmit.addClass('button-disabled')
+				$(e.currentTarget).addClass('is-invalid-input')
+				$(e.currentTarget).siblings('.form-error').addClass('is-visible')
 			}
 			else {
 				$ChangePhoneSubmit.removeClass('button-disabled')
+				$(e.currentTarget).removeClass('is-invalid-input')
+				$(e.currentTarget).siblings('.form-error').removeClass('is-visible')
 			}
+
 		}, 1000)
 	})
 
@@ -61,20 +67,16 @@
 	})
 
 	$ChangeKeyPhoneCardsSubmit.on('click', (e) => {
+		e.preventDefault()
 		if( $(e.currentTarget).hasClass('button-disabled') ) {
 			e.preventDefault()
 		}
 		else {
-			$changePhoneHideOnSubmit.addClass('hide-xs')
-			$changePhoneSuccess.removeClass('hide-xs')
-			switchContent('changePhone')
+			$('.successChangeCode').removeClass('hide-xs')
+
 			setTimeout( () => {
-				$('.loadingChangePhone').addClass('hide-xs')
-				$('.successChangePhone').removeClass('hide-xs')
-				setTimeout( () => {
-					window.location.replace('./../datos-cliente/datos-cliente.html#parentHorizontalTab3')
-				}, 1000)
-			}, 3000)
+	   		$( 'html,body' ).animate({ scrollTop: $('.successChangeCode').offset().top - 90 }, 'fast');
+			}, 750 );
 		}
 	})
 
