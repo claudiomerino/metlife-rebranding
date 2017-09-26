@@ -11,7 +11,7 @@
 	</div>
 
 	<section class="client-profile bg-white-light">
-		<div class="client-profile_container u-container"> 
+		<div class="client-profile_container u-container">
 
 			{{> breadcrumb-change-funds }}
 
@@ -21,6 +21,20 @@
 
 			<div class="tabs_wrap u-space">
 				<div class="client_wrap_container u-space">
+
+					<div class="col-xs-12">
+						<div class="alert alert-success u-space hide-state-update changeFundsMessageSuccess">
+							<p>¡Has solicitado el cambio de fondos de forma exitosa!</p>
+							<i class="fa fa-times alert-close"></i>
+						</div>
+					</div>
+
+					<div class="col-xs-12">
+						<div class="alert alert-error u-space hide-state-update changeFundsMessageCancel">
+							<p class="alert_desc">Tus cambios han sido cancelados</p>
+							<i class="fa fa-times alert-close"></i>
+						</div>
+					</div>
 
 
 
