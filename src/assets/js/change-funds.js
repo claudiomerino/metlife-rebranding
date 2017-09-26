@@ -16,23 +16,42 @@
 
 	$dataEditFundCheck.on('change', (e) => {
 
-		if( $(e.currentTarget).closest('.distributionFundsDesktop').find('[data-edit-fund-check]').is(':checked') ) {
-			const editFundCheckValue = $(e.currentTarget).data('edit-fund-check')
-			const totalValue = $(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-content="${editFundCheckValue}"]`).find('input').text()
-			console.log(totalValue, 'totalValue if')
-			if( parseInt(totalValue) == 100 ) {
-				$changeFundsSubmit.removeClass('button-disabled')
+		if( !$(e.currentTarget).is(':checked') ) {
+			if( $(e.currentTarget).closest('.distributionFundsDesktop').find(`[data-edit-fund-check-total]`).hasClass('red') ) {
+				$changeFundsSubmit.addClass('button-disabled')
 			}
 		}
-		else {
 
+		if( $(e.currentTarget).closest('.distributionFundsDesktop').find('[data-edit-fund-check]').is(':checked') ) {
+			/* Si alguno esta checked active el botón */
 			const editFundCheckValue = $(e.currentTarget).data('edit-fund-check')
-			const totalValue = $(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-content="${editFundCheckValue}"]`).find('input').text()
-			console.log(totalValue, 'totalValue else')
-			if( parseInt(totalValue) == 0 ) {
+
+			const totalValue = $(e.currentTarget).closest('.distributionFundsDesktop').find(`[data-edit-fund-check-total="${editFundCheckValue}"]`).find('.fieldsTotalFundsValue').text()
+
+			const totalValueFunds = $(e.currentTarget).closest('.distributionFundsDesktop').find(`[data-edit-fund-check-total="${editFundCheckValue}"]`).find('.fieldsTotalFundsValue')
+
+			if( parseInt(totalValue) == 100 ) {
+
+				if( $(e.currentTarget).is(':checked') ) {
+					$changeFundsSubmit.removeClass('button-disabled')
+				}
+
+				else {
+					$changeFundsSubmit.removeClass('button-disabled')
+				}
+
+			}
+			else {
 				$changeFundsSubmit.addClass('button-disabled')
 			}
 
+			console.log(totalValueFunds, 'totalValueFunds')
+			console.log($(totalValueFunds).hasClass('red'), 'totalValueFunds RED')
+
+		}
+		else {
+			/* Si nunguno esta checked disabled el botón */
+			$changeFundsSubmit.addClass('button-disabled')
 		}
 
 		dataEditFundCheckFn(e, 'event')
