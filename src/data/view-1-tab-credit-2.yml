@@ -11,6 +11,15 @@ items:
     striped: u-striped-gray
     dividends:
       -
+        name: 'Estado Dividendo:'
+        value: Pagado
+      -
+        name: 'Fecha de Vencimiento:'
+        value: 20 / 06 / 2017
+      -
+        name: 'Fecha de Pago:'
+        value: 05 / 06 / 2017
+      -
         name: 'Total Dividendo:'
         value: UF 20 / $ 443.334
       -
@@ -52,6 +61,15 @@ items:
     total: UF 20.05 / $ 554.865
     striped:
     dividends:
+      -
+        name: 'Estado Dividendo:'
+        value: Pagado
+      -
+        name: 'Fecha de Vencimiento:'
+        value: 20 / 06 / 2017
+      -
+        name: 'Fecha de Pago:'
+        value: 05 / 06 / 2017
       -
         name: 'Total Dividendo:'
         value: UF 20 / $ 443.334
@@ -95,6 +113,15 @@ items:
     striped: u-striped-gray
     dividends:
       -
+        name: 'Estado Dividendo:'
+        value: Pagado
+      -
+        name: 'Fecha de Vencimiento:'
+        value: 20 / 06 / 2017
+      -
+        name: 'Fecha de Pago:'
+        value: 05 / 06 / 2017
+      -
         name: 'Total Dividendo:'
         value: UF 20 / $ 443.334
       -
@@ -136,6 +163,15 @@ items:
     total: UF 20.05 / $ 554.865
     striped:
     dividends:
+      -
+        name: 'Estado Dividendo:'
+        value: Pagado
+      -
+        name: 'Fecha de Vencimiento:'
+        value: 20 / 06 / 2017
+      -
+        name: 'Fecha de Pago:'
+        value: 05 / 06 / 2017
       -
         name: 'Total Dividendo:'
         value: UF 20 / $ 443.334
@@ -179,6 +215,15 @@ items:
     striped: u-striped-gray
     dividends:
       -
+        name: 'Estado Dividendo:'
+        value: Pagado
+      -
+        name: 'Fecha de Vencimiento:'
+        value: 20 / 06 / 2017
+      -
+        name: 'Fecha de Pago:'
+        value: 05 / 06 / 2017
+      -
         name: 'Total Dividendo:'
         value: UF 20 / $ 443.334
       -
@@ -220,6 +265,15 @@ items:
     total: UF 20.05 / $ 554.865
     striped:
     dividends:
+      -
+        name: 'Estado Dividendo:'
+        value: Pagado
+      -
+        name: 'Fecha de Vencimiento:'
+        value: 20 / 06 / 2017
+      -
+        name: 'Fecha de Pago:'
+        value: 05 / 06 / 2017
       -
         name: 'Total Dividendo:'
         value: UF 20 / $ 443.334
@@ -263,6 +317,15 @@ items:
     striped: u-striped-gray
     dividends:
       -
+        name: 'Estado Dividendo:'
+        value: Pagado
+      -
+        name: 'Fecha de Vencimiento:'
+        value: 20 / 06 / 2017
+      -
+        name: 'Fecha de Pago:'
+        value: 05 / 06 / 2017
+      -
         name: 'Total Dividendo:'
         value: UF 20 / $ 443.334
       -
@@ -305,6 +368,15 @@ items:
     striped:
     dividends:
       -
+        name: 'Estado Dividendo:'
+        value: Pagado
+      -
+        name: 'Fecha de Vencimiento:'
+        value: 20 / 06 / 2017
+      -
+        name: 'Fecha de Pago:'
+        value: 05 / 06 / 2017
+      -
         name: 'Total Dividendo:'
         value: UF 20 / $ 443.334
       -
@@ -346,6 +418,15 @@ items:
     total: UF 20.05 / $ 554.865
     striped: u-striped-gray
     dividends:
+      -
+        name: 'Estado Dividendo:'
+        value: Pagado
+      -
+        name: 'Fecha de Vencimiento:'
+        value: 20 / 06 / 2017
+      -
+        name: 'Fecha de Pago:'
+        value: 05 / 06 / 2017
       -
         name: 'Total Dividendo:'
         value: UF 20 / $ 443.334
