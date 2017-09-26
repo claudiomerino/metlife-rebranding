@@ -15,6 +15,26 @@
 	let $ChangeFundsContinueCheckbox = $('.ChangeFundsContinueCheckbox')
 
 	$dataEditFundCheck.on('change', (e) => {
+
+		if( $(e.currentTarget).closest('.distributionFundsDesktop').find('[data-edit-fund-check]').is(':checked') ) {
+			const editFundCheckValue = $(e.currentTarget).data('edit-fund-check')
+			const totalValue = $(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-content="${editFundCheckValue}"]`).find('input').text()
+			console.log(totalValue, 'totalValue if')
+			if( parseInt(totalValue) == 100 ) {
+				$changeFundsSubmit.removeClass('button-disabled')
+			}
+		}
+		else {
+
+			const editFundCheckValue = $(e.currentTarget).data('edit-fund-check')
+			const totalValue = $(e.currentTarget).closest('.distributionFunds').find(`[data-edit-fund-check-content="${editFundCheckValue}"]`).find('input').text()
+			console.log(totalValue, 'totalValue else')
+			if( parseInt(totalValue) == 0 ) {
+				$changeFundsSubmit.addClass('button-disabled')
+			}
+
+		}
+
 		dataEditFundCheckFn(e, 'event')
 	})
 
@@ -214,13 +234,9 @@
 
 				let arrayValuesChangeMobile = []
 
-				console.log($(e.currentTarget).closest('.accordion-content').find('.fieldsTotalFundsValue'), 'fieldsTotalFundsValue')
-
 				$(e.currentTarget).closest('.accordion-content').find('.fieldsTotalFundsValue').each( (index, value) => {
 					arrayValuesChangeMobile.push( $(value).hasClass('red') )
 				})
-
-				console.log(arrayValuesChangeMobile, 'arrayValuesChangeMobile')
 
 				if($.inArray(true, arrayValuesChangeMobile) == -1) {
 					$(e.currentTarget).closest('.distributionFunds').find('.ChangeFundsContinue').removeClass('button-disabled')
