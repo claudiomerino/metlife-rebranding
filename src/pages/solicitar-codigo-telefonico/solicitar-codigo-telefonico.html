@@ -17,43 +17,65 @@
             <i class="fa fa-angle-right" aria-hidden="true"></i>
           </li>
           <li>
-            <p class="f-tiny">Solicitar código telefónico</p>
+            <p class="f-tiny">Cambio de Código Telefónico</p>
           </li>
         </ul>
       </div>
-      <h2 class="client-profile_title center-xs u-space">Solicitar código telefónico</h2>
+      <h2 class="client-profile_title center-xs u-space">Cambio de Código Telefónico</h2>
       <section class="bg-white-light">
         <div class="u-container">
           <section class="client_wrap_container">
             <p class="f-big tabs-subtitle-profile double_line u-top u-space"><strong>Modificación Código Telefónico</strong></p>
-            <div class="box f-small u-top col-xs-12 col-md-12  u-space">
-              <p>Los datos e información contenida corresponde a aquella proporcionada por el cliente contratante al momento de la contratación del seguro y otorgamiento del crédito según corresponda. El cliente será responsable de comunicar a la Compañía Aseguradora cualquier modificación de sus datos personales, información de contacto, u otro.</p>
+            <div class=" col-xs-12 col-md-12  u-space">
+              <p>Si desea cambiar el Código Telefónico, usa esta opción.<br/>
+              Tu nuevo Código Telefónico debe estar compuesto por 4 dígitos (0-9)</p>
+            </div>
+
+            <div class="loading hide-xs loadingChangePass">
+              {{> loading-1}}
+              <p class="loading_message center-xs"><strong>Estamos procesando su solicitud</strong></p>
+            </div>
+
+            <div class="alert alert-success u-space hide-xs successChangePass">
+              <p class="alert_desc center-xs">
+                <strong>Tu clave de acceso ha sido cambiada con éxito.</strong> Te estamos redirigiendo a la página de Acceso para Clientes, donde podrás ingresar al sitio usando tu nueva clave.
+              </p>
+              <i class="fa fa-times alert-close"></i>
             </div>
             <div data-toggle-match="changePhone" data-switch="show">
+
+
               <div class="u-row center-xs">
-                <div class="col-xs-12 col-md-4">
-                  <section class="u-field u-space">
-                    <span class="input input--ichiro">
-                      <input class="input__field input__field--ichiro" value="email@email.com" data-live-validate="true" type="email" id="emailChangePhone" readonly="true" ondblclick="this.readOnly='';" />
-                      <label class="input__label input__label--ichiro" for="emailChangePhone">
-                        <span class="input__label-content input__label-content--ichiro">Correo electrónico</span>
-                      </label>
-                      <p class="form-error f-tiny">Debes ingresar un correo electrónico válido</p>
-                    </span>
-                  </section>
-                  <section class="u-field u-space">
-                    <span class="input input--ichiro">
-                      <input class="input__field input__field--ichiro" value="3133456578" data-live-validate="true" type="number" id="cellphoneChangePhone" readonly="true" ondblclick="this.readOnly='';" />
-                      <label class="input__label input__label--ichiro" for="cellphoneChangePhone">
-                        <span class="input__label-content input__label-content--ichiro">Celular</span>
-                      </label>
-                    </span>
-                  </section>
-                  <div>
-                    <a href="#" class="button button-small button-full-xs ChangePhoneSubmit">Solicitar</a>
+                <div class="col-xs-12 col-md-4 u-top u-space">
+
+                  <div class="login_toggle_content toggleChangePass changePhoneHideOnSubmit">
+                    <section class="u-field input_responsive u-top">
+                      <span class="input input--ichiro">
+                        <input class="input__field input__field--ichiro" value="email@email.com" data-live-validate="true" type="email" id="emailChangePhone" readonly="true" ondblclick="this.readOnly='';" />
+                        <label class="input__label input__label--ichiro" for="emailChangePhone">
+                          <span class="input__label-content input__label-content--ichiro">Correo electrónico</span>
+                        </label>
+                        <p class="form-error f-tiny">Debes ingresar un correo electrónico válido</p>
+                      </span>
+                    </section>
+                    <section class="u-field input_responsive">
+                      <span class="input input--ichiro">
+                        <input class="input__field input__field--ichiro" value="3133456578" data-live-validate="true" type="number" id="cellphoneChangePhone" readonly="true" ondblclick="this.readOnly='';" />
+                        <label class="input__label input__label--ichiro" for="cellphoneChangePhone">
+                          <span class="input__label-content input__label-content--ichiro">Celular</span>
+                        </label>
+                        <p class="form-error f-tiny">Debes ingresar un número de celular válido</p>
+                      </span>
+                    </section>
+                    <div>
+                      <a href="#" class="button button-small button-full-xs ChangePhoneSubmit ChangeKeyPhoneCardsSubmit">Solicitar</a>
+                    </div>
                   </div>
+
                 </div>
               </div>
+
+
             </div>
             <!-- Request change phone -->
             <div data-toggle-match="changePhone" data-switch="hide">
@@ -98,6 +120,7 @@
                         <div class="sk-circle12 sk-circle"></div>
                       </div>
                     </p>
+                    <i class="fa fa-times alert-close"></i>
                   </div>
                 </div>
               </div>

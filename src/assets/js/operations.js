@@ -30,8 +30,6 @@
 
 	function BountyChangeFn(ev) {
 
-		console.log('entra cuando cambia', ev)
-
 		if( $(ev.currentTarget).is(':checked') ) {
 			$(ev.currentTarget).closest('.BountyRow').addClass('BountyRowActive')
 			$(ev.currentTarget).closest('.BountyRowWrap').find('.BountyRowActive').next().find('input.Bounty').attr('disabled', false)

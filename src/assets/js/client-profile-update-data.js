@@ -59,10 +59,6 @@
       	$( 'html,body' ).animate({ scrollTop: $ClientProfileMessageSuccess.offset().top - 90 }, 'fast');
 			}, 750 );
 
-			setTimeout( () => {
-				$ClientProfileMessageSuccess
-					.addClass('hide-state-update')
-			}, 5000 );
 		}
 		else if( cancel === 'true' ) {
 
@@ -81,10 +77,6 @@
      		$( 'html,body' ).animate({ scrollTop: $ClientProfileMessageCancel.offset().top - 90 }, 'fast');
 			}, 750 );
 
-			setTimeout( () => {
-				$ClientProfileMessageCancel
-					.addClass('hide-state-update')
-			}, 5000 );
 		}
 	}
 
@@ -100,4 +92,23 @@
 			.addClass('hide-state-update')
       $('.rutUpdate').addClass('f-tiny-rut')
 
+	}
+
+	$('.UpdateDataForm .input__field').on('keydown', (e) => {
+		validateFunctionUpdateData()
+	})
+
+	$('.AcceptLegal').on('click', () => {
+		validateFunctionUpdateData()
+	})
+
+	function validateFunctionUpdateData () {
+		setTimeout( () => {
+			if($('.UpdateDataForm').find('.is-invalid-input').length > 0) {
+				$clientProfileSaveUpdateData.addClass('button-disabled')
+			}
+			else {
+				$clientProfileSaveUpdateData.removeClass('button-disabled')
+			}
+		}, 1000)
 	}

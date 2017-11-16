@@ -1,12 +1,12 @@
 forms-individual:
   -
-    name: Aportes y cambios sobre valores de ahorro
+    name: Aportes y Cambios sobre Valores de Ahorro
     product: Seguros Individuales
   -
-    name: Declaración de siniestro causa accidental
+    name: Declaración de Siniestro Causa Accidental
     product: Seguros Individuales
   -
-    name: Declaración de siniestro causas naturales
+    name: Declaración de Siniestro Causas Naturales
     product: Seguros Individuales
   -
     name: Solicitud de Cambios en la Distribución de Primas

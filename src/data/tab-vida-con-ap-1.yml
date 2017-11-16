@@ -37,7 +37,7 @@ items:
   -
     classSection:
     classSubtitle:
-    subTitle: Información de mi Agente
+    subTitle: Información de mi Asesor
     subItems:
       -
         id: 6
@@ -50,6 +50,7 @@ items:
         label: 'Celular del Asesor:'
         value: +56 965 445 545
         classCols: col-xs-12 col-sm-6 col-md-3
+        link: 'tel: +56965445545'
         edit: 'false'
       -
         id: 8

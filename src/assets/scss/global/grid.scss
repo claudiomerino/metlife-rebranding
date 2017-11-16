@@ -17,6 +17,12 @@ $gutter-lg: 15px;
 .u-top {
   margin-top: $space-xs;
 }
+.u-top-rut {
+  margin-top: 20px;
+}
+.u-top-small {
+  margin-top: 5px;
+}
 .u-top-big {
   margin-top: $space-md;
 }
@@ -88,11 +94,20 @@ $gutter-lg: 15px;
   border-bottom: 1px solid $gray;
 }
 
+.u-divider-bottom-primary {
+  border-bottom: 2px solid $primary;
+  padding-bottom: 10px;
+}
+
 .u-section {
   padding: 1.6rem $gutter-xs;
   .u-container {
     padding: 0;
   }
+}
+
+.pd-bottom {
+  padding-bottom: 10px;
 }
 
 .u-row {

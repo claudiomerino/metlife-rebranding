@@ -1,26 +1,97 @@
 base:
   -
-    title-xs: Fondos Destacados Ahorro Previsión Voluntario
-    title: Distribución Actual Fondos
+    title: Ahorro Previsión Voluntario
+    fundTitle: Fondo Mutuo Santander Global Emergente Serie Universal
     funds:
       -
-        openContent: distribution
-        restText: Más información
-        openText: Menos información
-        name: Fondo Mutuo Santander Global Emergente Serie Universal
+        id: apv
         stock: 50 %
         flow: 50 %
+  -
+    title: Depósito Convenido
+    fundTitle: Tasa Fija Garantizada en U.F.
+    funds:
       -
-        openContent: distribution1
-        restText: Más información
-        openText: Menos información
-        name: Tasa Fija Garantizada en U.F.
-        stock: 35 %
-        flow: 35 %
+        id: apv
+        stock: 50 %
+        flow: 50 %
+  -
+    title: Cotización Voluntaria
+    fundTitle: Nombre del Fondo de Inversión con un nombre extremadamente largo
+    funds:
       -
-        openContent: distribution2
-        restText: Más información
-        openText: Menos información
-        name: Nombre del Fondo de Inversión con un nombre extremadamente largo
-        stock: 15 %
-        flow: 15 %
+        id: apv
+        stock: 50 %
+        flow: 50 %
+  -
+    title: Cotización Voluntaria 2
+    fundTitle: Nombre del Fondo de Inversión con un nombre extremadamente largo 2
+    funds:
+      -
+        id: apv
+        stock: 50 %
+        flow: 50 %
+  -
+    title: Cotización Voluntaria 3
+    fundTitle: Nombre del Fondo de Inversión con un nombre extremadamente largo 3
+    funds:
+      -
+        id: apv
+        stock: 50 %
+        flow: 50 %
+  -
+    title: Cotización Voluntaria 4
+    fundTitle: Nombre del Fondo de Inversión con un nombre extremadamente largo 4
+    funds:
+      -
+        id: apv
+        stock: 50 %
+        flow: 50 %
+  -
+    title: Cotización Voluntaria 5
+    fundTitle: Nombre del Fondo de Inversión con un nombre extremadamente largo 5
+    funds:
+      -
+        id: apv
+        stock: 50 %
+        flow: 50 %
+  -
+    title: Cotización Voluntaria 6
+    fundTitle: Nombre del Fondo de Inversión con un nombre extremadamente largo 6
+    funds:
+      -
+        id: apv
+        stock: 50 %
+        flow: 50 %
+  -
+    title: Cotización Voluntaria 7
+    fundTitle: Nombre del Fondo de Inversión con un nombre extremadamente largo 7
+    funds:
+      -
+        id: apv
+        stock: 50 %
+        flow: 50 %
+  -
+    title: Cotización Voluntaria 8
+    fundTitle: Nombre del Fondo de Inversión con un nombre extremadamente largo 8
+    funds:
+      -
+        id: apv
+        stock: 50 %
+        flow: 50 %
+  -
+    title: Cotización Voluntaria 9
+    fundTitle: Nombre del Fondo de Inversión con un nombre extremadamente largo 9
+    funds:
+      -
+        id: apv
+        stock: 50 %
+        flow: 50 %
+  -
+    title: Cotización Voluntaria 10
+    fundTitle: Nombre del Fondo de Inversión con un nombre extremadamente largo 10
+    funds:
+      -
+        id: apv
+        stock: 50 %
+        flow: 50 %

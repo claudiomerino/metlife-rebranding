@@ -5,6 +5,7 @@
 		border: 1px solid;
 		border-radius: 3px;
 		padding: 1rem .6rem;
+		position: relative;
 	}
 
 	.alert_desc {
@@ -16,7 +17,20 @@
 		border-color: $error-border;
 	}
 
+	.alert-warning {
+		background-color: $warning-light;
+		border-color: $warning-border;
+	}
+
 	.alert-success {
 		background-color: $success-light;
 		border-color: $success;
+		position: relative;
+	}
+
+	.alert-close {
+		cursor: pointer;
+		position: absolute;
+		right: 4px;
+		top: 2px;
 	}

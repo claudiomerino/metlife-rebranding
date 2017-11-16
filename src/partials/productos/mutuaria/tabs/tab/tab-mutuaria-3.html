@@ -2,14 +2,9 @@
 <div class="tabs_wrap u-space">
 	<div class="client_wrap_container">
 
-		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Pagar Dividendo</strong></p>
+		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Pagar mi Dividendo</strong></p>
 
     <section class="pay_line card card-green z-depth-2 card_container u-space-2x">
-
-			<!-- <div class="center-xs u-space">
-				<p>No puedes pagar en línea. <a href="#">Aprende a pagar tu póliza</a></p>
-				<p>Para pagar tu dividendo atrasado debes dirigirte a una sucursal de Servinco. <a href="#">Busca tu sucursal más cercana</a></p>
-			</div> -->
 
 			<div class="u-row">
 
@@ -63,15 +58,70 @@
 		  </div>
 	  </section>
 
+    <section class="pay_line card card-green z-depth-2 card_container u-space-2x">
+
+      <div class="u-row">
+
+        <div class="col-xs-12 col-sm-6 col-md-3 u-space-md">
+          <p class="line_jump table_title"><strong>Dividendo a Pagar:</strong></p>
+          <p class="line_jump">56 / 255</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3 u-space-md">
+
+          <p class="line_jump table_title"><strong>Fecha Próximo Vencimiento:</strong></p>
+          <p class="line_jump">26/06/2017 (en 3 días más)</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3 u-space-small">
+
+          <p class="card_item"><strong>Monto a Pagar (al 23/06/2017):</strong></p>
+          <p class="line_jump">Mín.: UF 4.5 / $ 322.554</p>
+          <p class="line_jump">Máx.: UF 4.5 / $ 322.554</p>
+          <a data-open-content="payDetail2" class="openContent">
+            <span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span> <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-3 end-xs u-space-md">
+          <a href="#" class="button button-small button-full-xs">Pagar Dividendo</a>
+        </div>
+
+        <div class="col-xs-12 toggleContent" data-toggle-content="payDetail2">
+          <p><strong>Detalle del cobro</strong></p>
+          <div class="u-row card-gray">
+            <div class="col-xs-12 col-sm-6 col-md-3 u-space">
+              <strong>Amortización:</strong>
+              <br>UF 200
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 u-space">
+              <strong>Interés Pagado:</strong>
+              <br>$ 3.433.344
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 u-space">
+              <strong>Interés Mora:</strong>
+              <br>$ 0
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 u-space">
+              <strong>Total:</strong>
+              <br>$ 444.443
+            </div>
+          </div>
+        </div>
+
+        <p class="col-xs-12 end-xs">Si prefieres, puedes descargar tu dividendo y pagar en cualquiera de los lugares habilitados. <br class="show-xs hide-md"><a href="">Descargar mi Dividendo.</a></p>
+      </div>
+    </section>
+
     <section>
-      <p class="f-big tabs-subtitle-profile double_line u-top"><strong>Certificado de Antecedentes Pagados</strong></p>
+      <p class="f-big tabs-subtitle-profile double_line u-top"><strong>Certificado de Intereses Pagados</strong></p>
 
       <div class="table table-scroll center-xs col-xs-12">
         <table class="table-responsive u-striped">
           <tbody>
             <tr class="table-display">
               <td class="table-4 col-xs-12 col-sm-8" align="left" valign="middle" data-table-title="">
-                <p class="table_desc">Certificado de Antecedentes e Intereses Pagados Año 2016</p>
+                <p class="table_desc">Certificado de Intereses Pagados Año 2016</p>
               </td>
               <td class="table-4 col-xs-12 col-sm-4 end-sm" align="left" valign="middle" data-table-title="">
                 <a href="" class="button button-small button-full-xs">Descargar Certificado</a>
@@ -80,7 +130,7 @@
 
             <tr class="table-display">
               <td class="table-4 col-xs-12 col-sm-8" align="left" valign="middle" data-table-title="">
-                <p class="table_desc">Certificado de Antecedentes e Intereses Pagados Año 2015</p>
+                <p class="table_desc">Certificado de Intereses Pagados Año 2015</p>
               </td>
               <td class="table-4 col-xs-12 col-sm-4 end-sm" align="left" valign="middle" data-table-title="">
                 <a href="" class="button button-small button-full-xs">Descargar Certificado</a>
@@ -89,7 +139,7 @@
 
             <tr class="table-display">
               <td class="table-4 col-xs-12 col-sm-8" align="left" valign="middle" data-table-title="">
-                <p class="table_desc">Certificado de Antecedentes e Intereses Pagados Año 2014</p>
+                <p class="table_desc">Certificado de Intereses Pagados Año 2014</p>
               </td>
               <td class="table-4 col-xs-12 col-sm-4 end-sm" align="left" valign="middle" data-table-title="">
                 <a href="" class="button button-small button-full-xs">Descargar Certificado</a>
@@ -101,7 +151,7 @@
     </section>
     <div class="u-space">
     {{> pagination}}
-  </div>
+    </div>
 
   	<section class="contribution">
 
@@ -109,7 +159,7 @@
         <div class="u-row z-depth-2">
           <div class="products_col col-xs-12 col-sm-3">
             <figure>
-              <img src="{{root}}assets/img/products_banner_pago-dividendo.png" data-fit-type class="objFit products_img">
+              <img src="{{root}}assets/img/products_banner_pago-dividendo.jpg" data-fit-type class="objFit products_img">
             </figure>
           </div>
 

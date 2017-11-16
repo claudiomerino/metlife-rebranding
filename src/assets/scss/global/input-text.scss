@@ -27,7 +27,7 @@
 		display: none;
 		line-height: 1.6;
 		margin-bottom: 0;
-		padding: 36px 0 0;
+		padding: 28px 0 0;
 		position: relative;
 	}
 
@@ -111,7 +111,7 @@
 	.input__label-content {
 		display: block;
 		padding: 11px 0;
-		position: relative;
+		position: absolute;
 		width: 100%;
 		z-index: 100;
 	}
@@ -135,14 +135,18 @@
 	}
 
 	.input__calculate {
+		border-color: $primary !important;
 		padding: 10px;
+		&:disabled {
+			border-color: black !important;
+		}
 	}
 
 	.input__label--ichiro {
 		cursor: text;
 		text-align: left;
 		width: 100%;
-		border-radius: 3px;   
+		border-radius: 3px;
 	}
 
 	.input__label--ichiro::before {
@@ -158,9 +162,10 @@
 
 	.input__label-content--ichiro {
 		font-size: 16px;
-		left: 0;
+		left: 11px;
 		top: 0;
 		transition: all .3s cubic-bezier(.4,0,.2,1);
+		border: none;
 		border: none;
     color: $dark-gray;
     strong {
@@ -170,7 +175,7 @@
 
   .input--ichiro {
     .form-error {
-      padding-top: 8px;
+      //padding-top: 8px;
     }
   }
 
@@ -193,7 +198,7 @@
 	.input__field--ichiro:focus + .input__label--ichiro .input__label-content--ichiro,
 	.input--filled .input__label-content--ichiro {
 		font-size: 12.8px;
-		left: -16px;
+		left: 0;
 		top: -2rem;
 		z-index: -1;
     color: $black;
@@ -240,6 +245,10 @@
 		padding-bottom: 25px;
 	}
 
+  .InputCurrencyBountyRowDefaultWrap {
+    min-height: auto;
+  }
+
 	.InputCurrencyBountyRowDefault {
 		border: 0 !important;
 		color: black;
@@ -250,11 +259,18 @@
 			border: 0 !important;
 			background-color: transparent;
 		}
+    &:disabled {
+      color: black !important;
+    }
 	}
 
   .InputCurrencyBountyRowDefault {
     max-width: 51px;
   }
+
+	.input--ichiro .form-error-top {
+		padding-top: 46px;
+	}
 
 	@media screen and ( min-width: 62em ) {
 

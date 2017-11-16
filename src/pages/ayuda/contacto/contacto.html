@@ -35,75 +35,83 @@
         </div>
       </div>
 
-      <div class="u-row row--white gutter-xs">
-        <div class="col-xs-12 col-md-8 col-md-offset-2 u-top-bigger u-space-2x">
+      <form class="FormContact">
 
-          <div class="u-row gutter-xs">
-            <div class="col-xs-12">
-              <div class="alert alert-success u-space hide-state-update ClientProfileMessageSuccess">
-                <p>¡Mensaje enviado exitosamente!</p>
+        <div class="u-row row--white gutter-xs">
+          <div class="col-xs-12 col-md-8 col-md-offset-2 u-top-bigger u-space-2x">
+
+            <div class="u-row gutter-xs">
+              <div class="col-xs-12">
+                <div class="alert alert-success u-space hide-state-update ClientProfileMessageSuccess">
+                  <p>Tu mensaje ha sido enviado con éxito. Te responderemos prontamente</p>
+                  <i class="fa fa-times alert-close"></i>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="u-row gutter-xs">
+              
+              <div class="col-xs-12 col-sm-6 u-space-small">
+                <section class="u-field u-space">
+                  <span class="input input--ichiro">
+                    <input class="input__field input__field--ichiro validateEmail" data-live-validate="true" value="dllanos@casa.cl" type="text" id="emailContact" required>
+                    <label class="input__label input__label--ichiro" for="emailContact">
+                      <span class="input__label-content input__label-content--ichiro"><strong>Correo Electrónico:</strong></span>
+                    </label>
+                    <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+                  </span>
+                </section>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <section class="u-field u-space">
+                  <span class="input input--ichiro">
+                    <input class="input__field input__field--ichiro validateEmpty ValidatePhoneNumber" data-live-validate="true" value="+56 9 5555 9944" type="text" id="phone" required>
+                    <label class="input__label input__label--ichiro" for="phone">
+                      <span class="input__label-content input__label-content--ichiro"><strong>Teléfono:</strong></span>
+                    </label>
+                    <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+                  </span>
+                </section>
+              </div>
+
+            </div>
+
+            <div class="u-row gutter-xs">
+              <div class="col-xs-12">
+                <section class="u-select u-field u-space u-select_label label_select">
+                  <p class="title_label_select"><strong>Producto:</strong></p>
+                  <select class="cs-select cs-skin-border SelectContact items_select_box">
+                    <option value="default" disabled="">Selecciona tu Producto</option>
+                    <option value="metlife">MetLife Seguro Full Protección - AA$5545545</option>
+                  </select>
+                  <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+                </section>
+              </div>
+            </div>
+
+            <div class="u-row gutter-xs u-space">
+              <div class="col-xs-12">
+                <p class="title_label_select"><strong>Comentario:</strong></p>
+                <span class="input input--ichiro input--ichiro--textarea">
+                  <textarea class="input__field input__field--ichiro big validateEmptyTextArea" data-live-validate="true" type="text" id="message" required></textarea>
+                  <label class="input__label input__label--ichiro" for="message">
+                    <span class="input__label-content input__label-content--ichiro"></span>
+                  </label>
+                  <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+                </span>
+              </div>
+            </div>
+
+            <div class="u-row gutter-xs end-xs u-space-2x">
+              <div class="col-xs-12 col-sm-4 col-md-3">
+                <button class="button button-small button-full button-disabled SendContact">Enviar</button>
               </div>
             </div>
           </div>
-
-          <div class="u-row gutter-xs">
-            <div class="col-xs-12 col-sm-6">
-              <section class="u-field u-space-2x">
-                <span class="input input--ichiro">
-                  <input class="input__field input__field--ichiro" data-live-validate="true" value="dllanos@casa.cl" type="text" id="email" required>
-                  <label class="input__label input__label--ichiro" for="email">
-                    <span class="input__label-content input__label-content--ichiro"><strong>Correo Electrónico:</strong></span>
-                  </label>
-                  <p class="form-error f-tiny">Este campo es requerido.</p>
-                </span>
-              </section>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <section class="u-field u-space-2x">
-                <span class="input input--ichiro">
-                  <input class="input__field input__field--ichiro" data-live-validate="true" value="+56 9 5555 9944" type="text" id="phone" required>
-                  <label class="input__label input__label--ichiro" for="phone">
-                    <span class="input__label-content input__label-content--ichiro"><strong>Teléfono:</strong></span>
-                  </label>
-                  <p class="form-error f-tiny">Este campo es requerido.</p>
-                </span>
-              </section>
-            </div>
-          </div>
-
-          <div class="u-row gutter-xs">
-
-            <div class="col-xs-12">
-              <section class="u-select u-field u-space-2x u-select_label label_select">
-                <p class="title_label_select"><strong>Producto:</strong></p>
-                <select class="cs-select cs-skin-border GeneralSelect items_select_box">
-                  <option value="" >Selecciona tu Producto</option>
-                  <option value="">MetLife Seguro Full Protección - AA$5545545</option>
-                </select>
-                <p class="form-error f-tiny">Este campo es requerido.</p>
-              </section>
-            </div>
-          </div>
-
-          <div class="u-row gutter-xs u-space">
-            <div class="col-xs-12">
-              <span class="input input--ichiro input--ichiro--textarea">
-                <textarea class="input__field input__field--ichiro big" data-live-validate="true" type="text" id="message" required></textarea>
-                <label class="input__label input__label--ichiro" for="message">
-                  <span class="input__label-content input__label-content--ichiro"><strong>Comentario:</strong></span>
-                </label>
-                <p class="form-error f-tiny">Este campo es requerido.</p>
-              </span>
-            </div>
-          </div>
-
-          <div class="u-row gutter-xs end-xs u-space-2x">
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <button class="button button-primary button-full clientProfileSaveUpdateData clientProfileEditShowField">Enviar</button>
-            </div>
-          </div>
         </div>
-      </div>
+      </form>
 
       <div class="u-section f-legal u-top-big">
         {{> legal }}

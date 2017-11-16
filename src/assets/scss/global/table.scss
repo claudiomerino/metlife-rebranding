@@ -71,12 +71,46 @@
 		}
 	}
 
+	.solicitarCambioFondos {
+		.u-striped {
+			tbody {
+				border: 0;
+				tr {
+					border-bottom: 1px solid $gray !important;
+					&:nth-of-type( even ) {
+						background-color: white;
+					}
+					&:nth-of-type( odd ) {
+						background-color: white;
+					}
+					// td {
+					// 	padding: 0.5rem 0 0.625rem;
+					// }
+					.u-divider-bottom-primary {
+						padding-bottom: 10px;
+						margin-top: 30px;
+					}
+				}
+			}
+		}
+
+		.inactive-accordion {
+			a {
+				border-bottom: 2px solid #95c2d6 !important;
+				color: $dark-gray-3;
+			}
+			&:last-child:not(.is-active) > .accordion-title {
+				border-bottom: 2px solid #95c2d6 !important;
+			}
+		}
+	}
+
 	.table_desc {
 		margin-bottom: 0;
 	}
 
 	.table_label_title {
-		font-size: 14px;
+		font-size: 16px;
 		margin-bottom: 0;
 	}
 
@@ -195,11 +229,32 @@
 						}
 					}
 				}
+				td {
+					padding: 0.5rem 0.625rem 0.625rem;
+				}
 			}
 		}
 	}
 
 	@media screen and ( min-width: 62em ) {
+
+		.solicitarCambioFondos {
+			.u-striped {
+				tbody {
+					border-bottom: 1px solid #BBBBBB;
+					tr {
+						border-bottom: 1px solid white !important;
+						&:nth-of-type( even ) {
+							background-color: white;
+						}
+						&:nth-of-type( odd ) {
+							background-color: $white-light;
+						}
+					}
+				}
+			}
+		}
+
 		.u-striped {
 			padding: 0;
 			tbody {
@@ -283,6 +338,9 @@
 		.table-8 {
 			min-width: 760px;
 		}
+		.table-9 {
+			min-width: 800px;
+		}
 		.table-10 {
 			min-width: 860px;
 		}
@@ -338,6 +396,18 @@
 					border: 1px solid $medium-gray;
 					padding: 15px !important;
 				}
+			}
+		}
+
+		.fieldsTotalFunds {
+			.table-1 {
+				min-width: 100px !important;
+			}
+		}
+
+		.fieldsTotalFunds-one {
+			.table-1 {
+				min-width: 155px !important;
 			}
 		}
 
