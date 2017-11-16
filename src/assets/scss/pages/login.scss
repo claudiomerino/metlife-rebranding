@@ -1,5 +1,9 @@
 
 	@import './../global/color.scss';
+  
+  .all-login-img {
+    min-height: 300px;
+  }
 
 	.login {
 		padding-bottom: 3rem;
@@ -94,6 +98,10 @@
 	}
 
 	@media screen and ( min-width: 62em ) {
+    
+    .all-login-img {
+      min-height: 600px;
+    }
 
 		.login_col {
 			&:first-of-type {
