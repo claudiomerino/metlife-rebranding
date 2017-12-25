@@ -81,6 +81,13 @@
 		}
 	}
 
+	.card-orange {
+		border-color: $mortgages;
+		.card_icon {
+			color: $mortgages;
+		}
+	}
+
 	.card_item {
 		line-height: 1.2;
 		&:nth-of-type( even ) {
