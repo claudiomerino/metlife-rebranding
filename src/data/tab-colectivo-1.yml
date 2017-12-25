@@ -1,0 +1,55 @@
+items:
+  -
+    classSection: u-top
+    classSubtitle:
+    subTitle: Datos de mi Póliza
+    subItems:
+      -
+        id: 1
+        label: 'Nombre Empresa Contratante:'
+        value: Nombre de Empresa SpA
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+      -
+        id: 2
+        label: 'RUT Empresa Contratante:'
+        value: 76.195.779-1
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+      -
+        id: 3
+        label: 'Fecha Inicio de Vigencia:'
+        value: 15/09/1995
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+      -
+        id: 4
+        label: 'Fecha Término de Vigencia:'
+        value: 15/09/2020
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+  -
+    classSection: u-top
+    classSubtitle:
+    subTitle: Datos de mi Intermediario
+    subItems:
+      -
+        id: 5
+        label: 'Nombre Corredor:'
+        value: Javier Dominguez
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+      -
+        id: 6
+        label: 'Teléfono Corredor:'
+        value: +56 932 333 546
+        classCols: col-xs-12 col-sm-6 col-md-3
+        link: 'tel:+56965445545'
+        edit: 'true'
+      -
+        id: 7
+        label: 'Correo Electrónico:'
+        value: jdominguez@metlife.cl
+        classCols: col-xs-12 col-sm-6 col-md-3
+        link: 'mailto:jdominguez@metlife.cl'
+        edit: 'true'
