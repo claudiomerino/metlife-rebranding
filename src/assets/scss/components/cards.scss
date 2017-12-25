@@ -74,6 +74,13 @@
 		}
 	}
 
+	.card-purple {
+		border-color: $colective;
+		.card_icon {
+			color: $colective;
+		}
+	}
+
 	.card_item {
 		line-height: 1.2;
 		&:nth-of-type( even ) {
