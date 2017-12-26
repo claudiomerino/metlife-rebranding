@@ -1,0 +1,43 @@
+
+<div class="tabs_wrap u-space">
+	<div class="client_wrap_container">
+
+		<p class="f-big tabs-subtitle-profile double_line u-top u-space"><strong>Condiciones de Otorgamiento del Crédito</strong></p>
+		<div class="box u-space">
+			<p class="f-small"><strong>Ten presente que:</strong> En el monto del primer dividendo a pagar, se incluyen los intereses proporcionales correspondientes a los días transcurridos desde la fecha de la firma de la escritura y el último día del mes en que se firmó.</p>
+			<p class="f-small">Para los créditos con plazo de gracia, el monto del saldo insoluto mensual incluye la capitalización de los intereses durante la cantidad de periodos de gracia que tenga el crédito.</p>
+		</div>
+
+		<section class="info_credit u-row u-row-xs-full gutter-xs">
+			{{#each tab-mutuaria-1.credits}}
+			<div class="tabs_col {{classCols}} u-space">
+				<p class="tabs_content_subtitle"><strong>{{subtitle}}</strong></p>
+				<p class="line_jump">
+					{{#if link}}
+						<a href="{{link}}">
+					{{/if}}
+						{{data}}
+					{{#if link}}
+						</a>
+					{{/if}}
+				</p>
+			</div>
+			{{/each}}
+		</section>
+		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Mi Último Pago</strong></p>
+		<div class="info_credit u-row u-row-xs-full gutter-xs">
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Último Dividendo Pagado:</strong></p>
+				<p class="line_jump">14/255</p>
+			</div>
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Monto Último Dividendo Pagado:</strong></p>
+				<p class="line_jump">UF 4.55 / $ 175.445</p>
+			</div>
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Fecha Último Dividendo Pagado:</strong></p>
+				<p class="line_jump">24/07/2017</p>
+			</div>
+		</div>
+	</div>
+</div>

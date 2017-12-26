@@ -73,6 +73,13 @@
     }
   }
 
+     .tab-accordion-orange .resp-accordion,
+  .tab-accordion-orange .tab-accordion {
+    &:before {
+      background-color: $mortgages !important;
+    }
+  }
+
   @media only screen and (max-width: 62em) {
 
     ul.resp-tabs-list {
@@ -123,6 +130,14 @@
       color: $black !important;
     }
   }
+  .tab-accordion-orange .resp-accordion,
+  .tab-accordion-orange .tab-accordion {
+    &:before {
+      background-color: $mortgages !important;
+    }
+  }
+
+
 
   @media screen and (min-width: 62em) {
     .resp-accordion-closed {

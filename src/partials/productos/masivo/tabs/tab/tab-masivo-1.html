@@ -1,0 +1,100 @@
+<div class="tabs_wrap u-space">
+	<div class="client_wrap_container">
+
+		<form action="" data-abide novalidate data-live-validate="true" class="UpdateDataForm">
+			{{#each tab-salud-1.items}}
+			<section class="u-space {{classSection}}">
+				<p class="f-big tabs-subtitle-profile {{classSubtitle}}"><strong>{{subTitle}}</strong></p>
+				<div class="u-row u-row-xs-full">
+					{{#each subItems}}
+					<div class="tabs_col {{classCols}} col-xs-full u-space u-right">
+						<div class="clientProfileInitialData u-space">
+							<p class="line_jump tabs_content_subtitle"><strong>{{label}}</strong></p>
+							<p class="line_jump">
+								{{#if link}}
+									<a href="{{link}}">
+								{{/if}}
+									{{value}}
+								{{#if link}}
+									</a>
+								{{/if}}
+							</p>
+							<p class="line_jump">
+								{{#if link2}}
+									<a href="{{link}}">
+								{{/if}}
+									{{value2}}
+								{{#if link2}}
+									</a>
+								{{/if}}
+							</p>
+						</div>
+						{{#compare edit 'true' operator="=="}}
+						<section class="u-field u-space clientProfileEdit hide-state-update">
+							<span class="input input--ichiro">
+								<input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" type="text" id="{{id}}" required>
+								<label class="input__label input__label--ichiro" for="{{id}}">
+									<span class="input__label-content input__label-content--ichiro"><strong>{{label}}</strong></span>
+								</label>
+								<p class="form-error f-tiny">Este campo es requerido.</p>
+							</span>
+						</section>
+						{{/compare}}
+					</div>
+					{{/each}}
+				</div>
+			</section>
+			{{/each}}
+
+			<!--Información animada-->
+			<section>
+				<!--Modal aceptar actualizar datos-->
+				<div class="reveal large" id="updateDataContact" data-reveal>
+			    	<div class="col-xs-10 col-xs-offset-1">
+			      	<h2 class="text-center u-top u-space">Actualización de Datos Personales</h2>
+
+			      	<p class="u-space text-justify">
+			        Declaras que conoces, aceptas y concuerdas que cualquier transacción que se realice en el Portal de Clientes con tu RUT y Clave de Acceso, se entenderá y se reputará, para todos los efectos legales, como realizada por ti mismo.
+			        <br>En tal sentido, te haces entera y totalmente responsable del uso y seguridad de tu Clave de Acceso, no cabiéndole a MetLife Chile Seguros de Vida S.A. ninguna responsabilidad por el uso indebido de la misma por un tercero distinto a ti.
+			      	</p>
+			  		<div class="u-row middle-xs center-xs end-sm u-space">
+		          		<a href="{{root}}datos-contacto-poliza/datos-contacto-poliza.html" class="button button-small button-full-xs last-sm">Acepto actualizar mis datos</a>
+						<a data-close aria-label="Close modal" class="u-right-sm u-top-sm col-xs-12 col-sm-3">Cancelar</a>
+					</div>
+			    </div>
+			    <button class="close-button" data-close aria-label="Cerrar modal" type="button">
+			      	<span aria-hidden="true">&times;</span>
+			    </button>
+			</div>
+
+			<div class="u-row end-xs gutter-xs middle-xs">
+				<div class="col-xs-12 ClientProfileToggleHide">
+					<a class="button button-small button-full-xs" data-open="updateDataContact">Actualizar datos de Contacto</a>
+				</div>
+
+				<div class="col-xs-8 col-xs-full hide-state-update u-space clientProfileCancelUpdateData">
+					<a href="#" class="f-link">Cancelar</a>
+				</div>
+
+				<div class="col-xs-4 col-xs-full end-xs hide-state-update u-space clientProfileSaveUpdateData">
+					<button type="submit" class="button button-full button-primary">Guardar cambios</button>
+				</div>
+			</div>
+
+			<div class="col-xs-12">
+				<div class="alert alert-error u-space hide-state-update ClientProfileMessageCancel">
+					<p class="alert_desc center-xs">Tus cambios han sido cancelados</p>
+					<i class="fa fa-times alert-close"></i>
+				</div>
+			</div>
+
+			<div class="col-xs-12">
+				<div class="alert alert-error u-space hide-state-update ClientProfileMessageSuccess">
+					<p class="center-xs">Tus cambios han sido guardados</p>
+					<i class="fa fa-times alert-close"></i>
+				</div>
+			</div>
+		</section>
+
+	</div>
+</div>

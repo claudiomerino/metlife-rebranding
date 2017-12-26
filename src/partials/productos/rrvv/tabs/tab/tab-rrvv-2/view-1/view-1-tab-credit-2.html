@@ -1,0 +1,105 @@
+
+<div class="tabs_wrap u-space">
+	<section class="info_dividents client_wrap_container">
+
+		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Información de Dividendos</strong></p>
+
+		<div class="u-row middle-xs gutter-xs">
+			<div class="col-xs-12 col-md-3 u-select u-select_label u-space">
+				<p class="f-small"><strong>Filtrar por Estado de Dividendo:</strong></p>
+				<select class="cs-select cs-skin-border DataSelectFilter">
+					<option value="allStateDividend" selected>Todos los Estados</option>
+					<option value="paidStateDividend">Pagado</option>
+					<option value="forPayStateDividend">Por Pagar</option>
+					<option value="defeatedStateDividend">Vencido</option>
+				</select>
+			</div>
+
+			<div class="col-xs-12 col-md-6">
+				<p class="f-small"><strong>Filtrar por Fecha de Vencimiento:</strong></p>
+				<div class="u-row">
+					<div class="col-xs-12 col-md-6 u-right-small-md">
+						<span class="input input--ichiro input--datepicker DatePickerStart u-space">
+							<input class="input__field input__field--ichiro" placeholder="Desde" type="text" class="span3" readonly>
+							<i class="material-icons">date_range</i>
+						</span>
+					</div>
+
+					<div class="col-xs-12 col-md-6">
+						<span class="input input--ichiro input--datepicker DatePickerEnd u-space">
+							<input class="input__field input__field--ichiro" placeholder="Hasta" type="text" class="span2" readonly>
+							<i class="material-icons">date_range</i>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-3 u-space-sm">
+				<a href="" class="">Exportar Resultados a Excel</a>
+			</div>
+		</div>
+
+		<div class="table table-scroll col-xs-12 ">
+      <div class="u-row u-top hide-xs">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <p class="f-big f-error text-center">No se encontró resultados para el rango de fecha ingresada</p>
+        </div>
+      </div>
+
+		  <table class="table-responsive u-striped u-striped-more">
+		    <thead>
+	      	<tr>
+		        <th class="table-2">
+							<p class="table_title"><strong>Número de Dividendo</strong></p>
+						</th>
+				    <th class="table-2">
+							<p class="table_title"><strong>Estado Dividendo</strong></p>
+						</th>
+				    <th class="table-2">
+							<p class="table_title"><strong>Fecha de Vencimiento</strong></p>
+						</th>
+				    <th class="table-2">
+							<p class="table_title"><strong>Fecha de Pago</strong></p>
+						</th>
+						<th class="table-2">
+							<p class="table_title"><strong>Total Dividendo</strong></p>
+						</th>
+	      	</tr>
+		    </thead>
+
+		    <tbody>
+		    	{{#each view-1-tab-credit-2.items}}
+	      	<tr class="{{striped}}">
+	        	<td class="table-2" valign="middle">
+							<a href="" class="f-link openContent" data-open-content="{{openContent}}">
+								<span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{restText}}" data-close="true">{{restText}}</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+						</td>
+        		<td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Estado Dividendo">
+							<p class="table_desc filterDataDesc {{caducate}}" data-filter-data-desc="{{filterDataDesc}}">{{state}}</p>
+						</td>
+	        	<td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Fecha Vencimiento">
+							<p class="table_desc"><span class="DataExpiration">{{dataExpiration}}</span></p>
+						</td>
+	        	<td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Fecha Pago">
+							<p class="table_desc">{{dataPay}}</p>
+						</td>
+						<td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+							<p class="table_desc">{{total}}</p>
+						</td>
+	      	</tr>
+
+	      	<tr class="toggleContent number-dividend" data-toggle-content="{{openContent}}">
+	    			{{> table-info-dividends}}
+		 			</tr>
+		 			{{/each}}
+
+				</tbody>
+			</table>
+		</div>
+
+		{{> pagination}}
+
+	</section>
+</div>

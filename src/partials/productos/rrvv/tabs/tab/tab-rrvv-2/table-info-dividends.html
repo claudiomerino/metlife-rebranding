@@ -1,0 +1,22 @@
+
+<td class="table-12" valign="middle">
+	<p class="hide-xs show-md"><strong>Detalle del Dividendo</strong></p>
+	<div class="u-row card-gray">
+
+		{{#each dividends}}
+  		<div class="col-xs-12 col-sm-6 col-md-3">
+  			<p class="card_item"><strong>{{name}}</strong></p>
+  			<p class="card_item">
+          {{#if link}}
+  				  <a href="{{link}}">
+  				{{/if}}
+  				{{value}}
+  				{{#if link}}
+  					</a>
+  				{{/if}}
+        </p>
+  		</div>
+		{{/each}}
+
+	</div>
+</td>

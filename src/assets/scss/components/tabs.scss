@@ -9,7 +9,11 @@
 	.tab-accordion-yellow .resp-accordion,
 	.tab-accordion-yellow .tab-accordion,
 	.tab-accordion-gray .resp-accordion,
-	.tab-accordion-gray .tab-accordion {
+	.tab-accordion-gray .tab-accordion
+	.tab-accordion-purple .resp-accordion,
+	.tab-accordion-purple .tab-accordion
+	.tab-accordion-orange .resp-accordion,
+	.tab-accordion-orange .tab-accordion {
 		flex-grow: 0;
 		position: relative;
 		transition: color 0.3s;
@@ -110,7 +114,11 @@
 	.tab-accordion-yellow .resp-accordion,
 	.tab-accordion-yellow .tab-accordion,
 	.tab-accordion-gray .resp-accordion,
-	.tab-accordion-gray .tab-accordion {
+	.tab-accordion-gray .tab-accordion
+	.tab-accordion-purple .resp-accordion,
+	.tab-accordion-purple .tab-accordion
+	.tab-accordion-orange .resp-accordion,
+	.tab-accordion-orange .tab-accordion {
 		flex-grow: 0;
 		position: relative;
 		transition: color 0.3s;
@@ -169,6 +177,18 @@
 		}
 	}
 
+	.tab-accordion-purple {
+		&:before {
+			background-color: $colective;
+		}
+	}
+
+	.tab-accordion-orange {
+		&:before {
+			background-color: $mortgages;
+		}
+	}
+
 
 	.tabs_wrap-green {
 		.tabs-subtitle {
@@ -182,6 +202,22 @@
 			}
 			a:before {
 				background-color: $accident;
+			}
+		}
+	}
+
+	.tabs_wrap-orange {
+		.tabs-subtitle {
+			border-color: $morgages;
+		}
+		.tabs-title {
+			&.is-active {
+				a {
+					color: $morgages;
+				}
+			}
+			a:before {
+				background-color: $mortgages;
 			}
 		}
 	}
