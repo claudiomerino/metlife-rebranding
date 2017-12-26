@@ -208,12 +208,12 @@
 
 	.tabs_wrap-orange {
 		.tabs-subtitle {
-			border-color: $morgages;
+			border-color: $mortgages;
 		}
 		.tabs-title {
 			&.is-active {
 				a {
-					color: $morgages;
+					color: $mortgages;
 				}
 			}
 			a:before {
