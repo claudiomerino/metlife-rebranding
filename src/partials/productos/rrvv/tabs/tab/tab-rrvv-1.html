@@ -3,13 +3,13 @@
 	<div class="client_wrap_container">
 
 		<p class="f-big tabs-subtitle-profile double_line u-top u-space"><strong>Condiciones de Otorgamiento del Crédito</strong></p>
-		<div class="box u-space">
+		<!-- <div class="box u-space">
 			<p class="f-small"><strong>Ten presente que:</strong> En el monto del primer dividendo a pagar, se incluyen los intereses proporcionales correspondientes a los días transcurridos desde la fecha de la firma de la escritura y el último día del mes en que se firmó.</p>
 			<p class="f-small">Para los créditos con plazo de gracia, el monto del saldo insoluto mensual incluye la capitalización de los intereses durante la cantidad de periodos de gracia que tenga el crédito.</p>
-		</div>
+		</div> -->
 
 		<section class="info_credit u-row u-row-xs-full gutter-xs">
-			{{#each tab-mutuaria-1.credits}}
+			{{#each tab-rrvv-1.credits}}
 			<div class="tabs_col {{classCols}} u-space">
 				<p class="tabs_content_subtitle"><strong>{{subtitle}}</strong></p>
 				<p class="line_jump">
@@ -24,19 +24,96 @@
 			</div>
 			{{/each}}
 		</section>
-		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Mi Último Pago</strong></p>
+
+		<p class="f-big tabs-subtitle-profile double_line u-top u-space"><strong>Información de Intermediario</strong></p>
+		<section class="info_credit u-row u-row-xs-full gutter-xs">
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Nombre Intermediario de la Póliza:</strong></p>
+				<p class="line_jump">MetLife Corredores de Seguros</p>
+			</div>
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Correo Electrónico:</strong></p>
+				<p class="line_jump"><a href="#">intermediarios@metlife.cl</a></p>
+			</div>
+		</section>
+
+		<p class="f-big tabs-subtitle-profile double_line u-top u-space"><strong>Medio de Pago</strong></p>
+		<section class="info_credit u-row u-row-xs-full gutter-xs">
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Forma de Pago:</strong></p>
+				<p class="line_jump">Depósito en Cuenta</p>
+			</div>
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Banco:</strong></p>
+				<p class="line_jump">Banco de Chile</p>
+			</div>
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Número  de Cuenta:</strong></p>
+				<p class="line_jump">07445554-02</p>
+			</div>
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Poder para Cobro de Pensión:</strong></p>
+				<p class="line_jump">Existe</p>
+			</div>
+		</section>
+
+		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Plan de Salud</strong></p>
 		<div class="info_credit u-row u-row-xs-full gutter-xs">
 			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
-				<p class="tabs_content_subtitle"><strong>Último Dividendo Pagado:</strong></p>
-				<p class="line_jump">14/255</p>
+				<p class="tabs_content_subtitle"><strong>Institución de Salud:</strong></p>
+				<p class="line_jump">Colmena Golden Cross</p>
 			</div>
 			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
-				<p class="tabs_content_subtitle"><strong>Monto Último Dividendo Pagado:</strong></p>
-				<p class="line_jump">UF 4.55 / $ 175.445</p>
+				<p class="tabs_content_subtitle"><strong>Descuento Plan de Salud:</strong></p>
+				<p class="line_jump">UF 0.75 / $ 18.946</p>
 			</div>
 			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
-				<p class="tabs_content_subtitle"><strong>Fecha Último Dividendo Pagado:</strong></p>
+				<p class="tabs_content_subtitle"><strong>Fecha Inicio de Vigencia:</strong></p>
 				<p class="line_jump">24/07/2017</p>
+			</div>
+		</div>
+
+		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Créditos Vigentes (Con CCAF)</strong></p>
+		<div class="info_credit u-row u-row-xs-full gutter-xs">
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Caja de Compensación:</strong></p>
+				<p class="line_jump">Los Andes</p>
+			</div>
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Monto Cuota:</strong></p>
+				<p class="line_jump">UF 0.75 / $ 18.946</p>
+			</div>
+		</div>
+
+		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Caja de Compensación</strong></p>
+		<div class="info_credit u-row u-row-xs-full gutter-xs">
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Fecha Inicio Afiliación:</strong></p>
+				<p class="line_jump">24/07/2017</p>
+			</div>
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Descuentos Afiliación:</strong></p>
+				<p class="line_jump">UF 0.75 / $ 18.946</p>
+			</div>
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Otros Descuentos:</strong></p>
+				<p class="line_jump">UF 0.75 / $ 18.946</p>
+			</div>
+		</div>
+		<p class="f-big tabs-subtitle-profile double_line u-top"><strong>Información de Contacto</strong></p>
+		<div class="info_credit u-row u-row-xs-full gutter-xs">
+			<div class="tabs_col col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Dirección:</strong></p>
+				<p class="line_jump">Monseñor Escribá de Balaguer 11.365 Casa A, Lo Barnechea, Región Metropolitana, Chile</p>
+			</div>
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Correo Electrónico:</strong></p>
+				<p class="line_jump"><a href="#">micorreo@gmail.com</a></p>
+			</div>
+			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+				<p class="tabs_content_subtitle"><strong>Teléfono:</strong></p>
+				<p class="line_jump">+56 223 333 467(Fijo)</p>
+				<p class="line_jump">+56 9323 333 467(Cel)</p>
 			</div>
 		</div>
 	</div>

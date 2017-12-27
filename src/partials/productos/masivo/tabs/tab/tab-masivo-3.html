@@ -2,104 +2,82 @@
 <div class="tabs_wrap u-space">
 	<div class="client_wrap_container">
 
-		<section class="info_insured u-top">
-			<p class="f-big tabs-subtitle-profile double_line"><strong>Información de mis Asegurados</strong></p>
-			<div class="u-row">
-				<div class="col-xs-12 col-md-3 u-space-md">
-					<p class="line_jump"><strong>Nombre del Asegurado:</strong></p>
-					<p class="line_jump">Danilo Esteban Llanos Marquez</p>
+		<section class="premium_payment u-space-2x u-top">
+			<p class="f-big tabs-subtitle-profile double_line"><strong>Pago de Mis Primas en Línea</strong></p>
+			<div class="card card-pink card_container u-row middle-xs z-depth-2">
+				<div class="col-xs-12 col-sm-12 col-md-3 u-space">
+					<p class="line_jump table_title"><strong>Periodo a Pagar:</strong></p>
+					<p class="line_jump"><span class="red"> (2 primas vencidas)</span></p>
 				</div>
 
-				<div class="col-xs-12 col-md-3 u-space-md">
-					<p class="line_jump"><strong>Fecha de Nacimiento:</strong></p>
-					<p class="line_jump">10/03/1965</p>
+				<div class="col-xs-12 col-sm-12 col-md-3 u-space u-right">
+					<p class="line_jump table_title"><strong>Fecha Próximo Vencimiento:</strong></p>
+					<p class="line_jump">18/05/2017</p>
 				</div>
 
-				<div class="col-xs-12 col-md-3 u-space-md">
-					<p class="line_jump"><strong>Relación:</strong></p>
-					<p class="line_jump">El Mismo</p>
+				<div class="col-xs-12 col-sm-12 col-md-3 u-space">
+					<p class="line_jump table_title"><strong>Monto Total a Pagar:</strong></p>
+					<p class="line_jump">UF 1.95 / $ 54.665</p>
 				</div>
 
-				<div class="col-xs-12 col-md-3">
-					<p class="line_jump"><strong>Fecha de Ingreso:</strong></p>
-					<p class="line_jump">10/03/1988</p>
+				<div class="col-xs-12 col-sm-12 col-md-3 end-xs u-space">
+		      <a href="#" class="button button-small button-full-xs">Pagar en Línea</a>
 				</div>
 
-				<div class="col-xs-12 card_more end-xs">
-					<a href="" class="f-link openContent" data-open-content="openCoverage">
-						<span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
-						<i class="fa fa-angle-down" aria-hidden="true"></i>
-					</a>
-				</div>
 			</div>
 		</section>
 
-		<section class="toggleContent" data-toggle-content="openCoverage">
-			<p><strong>Coberturas Contratadas:</strong></p>
-			<div class="card-gray u-row u-space-small">
-				<div class="col-xs-12 col-md-6">
-					<p class="line_jump"><strong>Nombre Cobertura:</strong></p>
-					<p class="line_jump">Fractura Accidental de Huesos</p>
-				</div>
+		<section class="u-space">
+			<p class="f-big tabs-subtitle-profile"><strong>Histórico de Pago de mis Primas</strong></p>
 
-				<div class="col-xs-12 col-md-3">
-					<p class="line_jump"><strong>Capital Asegurado:</strong></p>
-					<p class="line_jump">UF 30 $ 81.074</p>
-				</div>
+			<div class="table table-scroll center-xs col-xs-12 u-space">
+			  <table class="table-responsive table-responsive-label u-striped u-striped-more">
+			    <thead>
+			      <tr>
+			        <th class="table-3">
+								<p class="f-small table_title"><strong>Período de Cobertura</strong></p>
+							</th>
+			        <th class="table-3">
+								<p class="f-small table_title"><strong>Fecha de Pago</strong></p>
+							</th>
+			        <th class="table-3">
+								<p class="f-small table_title"><strong>Forma de Pago</strong></p>
+							</th>
+			        <th class="table-3">
+								<p class="f-small table_title"><strong>Monto Pagado UF / Pesos</strong></p>
+							</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			    	{{#each tab-salud-2.items}}
+			      <tr class="{{striped}}">
+			        <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
+								<p class="table_desc">{{desc}}</p>
+								<a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
+									<span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
+							</td>
+			        <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
+								<p class="table_desc">{{dataExpiration}}</p>
+							</td>
+			        <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
+								<p class="table_desc">{{#if link}}<a href="{{link}}">{{/if}}{{dataPay}}{{#if link}}</a>{{/if}}</p>
+							</td>
+			        <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+								<p class="table_desc">{{total}}</p>
+							</td>
+			      </tr>
 
-				<div class="col-xs-12 col-md-3">
-					<p class="line_jump"><strong>Prima (UF / Pesos):</strong></p>
-					<p class="line_jump"> UF 0.83 / $ 333.443</p>
-				</div>
-			</div>
-			<div class="card-gray u-row u-space">
-				<div class="col-xs-12 col-md-6">
-					<p class="line_jump"><strong>Nombre Cobertura:</strong></p>
-					<p class="line_jump">Fractura Accidental de Huesos</p>
-				</div>
-
-				<div class="col-xs-12 col-md-3">
-					<p class="line_jump"><strong>Capital Asegurado:</strong></p>
-					<p class="line_jump">UF 30 $ 81.074</p>
-				</div>
-
-				<div class="col-xs-12 col-md-3">
-					<p class="line_jump"><strong>Prima (UF / Pesos):</strong></p>
-					<p class="line_jump"> UF 0.83 / $ 334.443</p>
-				</div> 
-			</div>
-		</section>
-
-		<section class="u-space u-top">
-			<p class="f-big tabs-subtitle-profile"><strong>Información de Beneficiarios</strong></p>
-			<div class="u-row u-row-xs-full middle-xs">
-				<div class="chartCanvasMain hide-xs show-md col-xs-12 col-md-4">
-					<canvas id="chartBeneficiaries" class="chartCanvas" width="200" height="200"></canvas>
-					<div class="chartCanvasContent u-row middle-xs center-xs"><h3>100%</h3></div>
-				</div>
-				<div class="col-xs-12 col-md-8">
-
-					<div class="table-scroll table">
-					  <table class="u-striped">
-					    <thead class="InitialStyle">
-					      <tr>
-					        <th class="hide-xs show-md"></th>
-					        <th>
-										<p class="f-small table_title"><strong>Nombre Beneficiario</strong></p>
-									</th>
-					        <th>
-										<p class="f-small table_title center-sm"><strong>Asignación</strong></p>
-									</th>
-					      </tr>
-					    </thead>
-					    <tbody id="chartTable">
-					    	<!-- Template from chart.js -->
-					    </tbody>
-					  </table>
-					</div>
-				</div>
+  	      	<tr class="toggleContent" data-toggle-content="{{openContent}}">
+  	    			{{> tables-salud }}
+  		 			</tr>
+			      {{/each}}
+			    </tbody>
+			  </table>
 			</div>
 		</section>
 
+		{{> pagination}}
 	</div>
 </div>

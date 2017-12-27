@@ -1,0 +1,46 @@
+credits:
+  -
+    subtitle: 'Nombre Contratante:'
+    data: 'Federico Martinich Grogen'
+    classCols: col-xs-12 col-sm-6 col-md-3 
+  -
+    subtitle: 'Tipo de Pensión:'
+    data: 'Pensión de Supervivencia'
+    classCols: col-xs-12 col-sm-6 col-md-3
+  -
+    subtitle: 'Monto Pensión en UF:'
+    data: 'UF 5.400'
+    classCols: col-xs-12 col-sm-6 col-md-3
+  -
+    subtitle: 'Porcentaje Pensión de Referencia:'
+    data: '50%'
+    classCols: col-xs-12 col-sm-6 col-md-3
+  -
+    subtitle: 'Fecha Inicio de la Póliza:'
+    data: '26/05/2014'
+    classCols: col-xs-12 col-sm-6 col-md-3
+  -
+    subtitle: 'Fecha Inicio Primer Pago:'
+    data: '26/05/2014'
+    classCols: col-xs-12 col-sm-6 col-md-3
+  -
+    subtitle: 'Meses Diferidos:'
+    data: '2'
+    classCols: col-xs-12 col-sm-6 col-md-3
+  -
+    subtitle: 'AFP Origen:'
+    data: 'Provida'
+    classCols: col-xs-12 col-sm-6 col-md-3
+  -
+    subtitle: 'Saldo Insoluto:'
+    data: 'UF 3400 / $165.554.935'
+    classCols: col-xs-12 col-sm-6 col-md-3
+  -
+    subtitle: 'Monto Cuota Mínima:'
+    data: 'UF 20 / $554.965'
+    classCols: col-xs-12 col-sm-6 col-md-3
+  -
+    subtitle: 'Monto Cuota Máxima:'
+    data: 'UF 50 / $1.633.065'
+    classCols: col-xs-12 col-sm-6 col-md-3
+  -

@@ -2,144 +2,102 @@
 <div class="tabs_wrap u-space">
 	<div class="client_wrap_container">
 
-		<section class="u-top">
-			<p class="f-big tabs-subtitle-profile double_line"><strong>Histórico de Siniestros</strong></p>
-
-			<div class="u-row gutter-xs">
-
-				<div class="col-xs-12 col-md-3 u-select u-select_label u-space">
-					<p class="f-small"><strong>Filtrar por Asegurado:</strong></p>
-					<select class="cs-select cs-skin-border DataSelectFilterName">
-						<option value="allDataName" selected>Todos los Asegurados</option>
-						<option value="asegurado1">Daniel Esteban Llanos Marquez</option>
-						<option value="asegurado2">María Expropiación Petronila de las Nieves</option>
-						<option value="asegurado3">Daniel Esteban Expropiación Llanos Marquez</option>
-					</select>
+		<section class="info_insured u-top">
+			<p class="f-big tabs-subtitle-profile double_line"><strong>Información de mis Asegurados</strong></p>
+			<div class="u-row">
+				<div class="col-xs-12 col-md-3 u-space-md">
+					<p class="line_jump"><strong>Nombre del Asegurado:</strong></p>
+					<p class="line_jump">Danilo Esteban Llanos Marquez</p>
 				</div>
 
-				<div class="col-xs-12 col-md-3 u-select u-select_label u-space">
-					<p class="f-small"><strong>Filtrar por Estado de Solicitud:</strong></p>
-					<select class="cs-select cs-skin-border DataSelectFilter">
-						<option value="allStateDividend" selected>Todos los Estados</option>
-						<option value="paidStateDividend">Aprobado</option>
-						<option value="forPayStateDividend">Por Aprobar</option>
-						<option value="defeatedStateDividend">Rechazado</option>
-					</select>
+				<div class="col-xs-12 col-md-3 u-space-md">
+					<p class="line_jump"><strong>Rut del Asegurado:</strong></p>
+					<p class="line_jump">15.443.445-5</p>
 				</div>
 
+				<div class="col-xs-12 col-md-3 u-space-md">
+					<p class="line_jump"><strong>Fecha de Nacimiento:</strong></p>
+					<p class="line_jump">10/03/1965</p>
+				</div>
+
+				<div class="col-xs-12 col-md-3 u-space-md">
+					<p class="line_jump"><strong>Relación:</strong></p>
+					<p class="line_jump">El Mismo</p>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+					<p class="line_jump"><strong>Fecha de Ingreso:</strong></p>
+					<p class="line_jump">10/03/1988</p>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+					<p class="line_jump"><strong>Vigencia Desde:</strong></p>
+					<p class="line_jump">10/03/1988</p>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<p class="line_jump"><strong>Vigencia Hasta:</strong></p>
+					<p class="line_jump">10/03/2020</p>
+				</div>
+
+				<div class="col-xs-12 card_more end-xs">
+					<a href="" class="f-link openContent" data-open-content="openCoverage">
+						<span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="toggleContent" data-toggle-content="openCoverage">
+			<p><strong>Coberturas Contratadas:</strong></p>
+			<div class="card-gray u-row u-space-small">
 				<div class="col-xs-12 col-md-6">
-					<p class="f-small"><strong>Filtrar por Fecha de Notificación:</strong></p>
-					<div class="u-row">
-						<div class="col-xs-12 col-md-6 u-right-small-md">
-							<span class="input input--ichiro input--datepicker DatePickerStart u-space">
-								<input class="input__field input__field--ichiro" placeholder="Desde" type="text" class="span3" readonly>
-								<i class="material-icons">date_range</i>
-							</span>
-						</div>
+					<p class="line_jump"><strong>Nombre Cobertura:</strong></p>
+					<p class="line_jump">Fractura Accidental de Huesos</p>
+				</div>
 
-						<div class="col-xs-12 col-md-6">
-							<span class="input input--ichiro input--datepicker DatePickerEnd u-space">
-								<input class="input__field input__field--ichiro" placeholder="Hasta" type="text" class="span2" readonly>
-								<i class="material-icons">date_range</i>
-							</span>
-						</div>
+				<div class="col-xs-12 col-md-3">
+					<p class="line_jump"><strong>Capital Asegurado:</strong></p>
+					<p class="line_jump">UF 30 $ 81.074</p>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+					<p class="line_jump"><strong>Deducible (UF / Pesos):</strong></p>
+					<p class="line_jump"> UF 0.83 / $ 333.443</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="u-space u-top">
+			<p class="f-big tabs-subtitle-profile"><strong>Información de Beneficiarios</strong></p>
+			<div class="u-row u-row-xs-full middle-xs">
+				<div class="chartCanvasMain hide-xs show-md col-xs-12 col-md-4">
+					<canvas id="chartBeneficiaries" class="chartCanvas" width="200" height="200"></canvas>
+					<div class="chartCanvasContent u-row middle-xs center-xs"><h3>100%</h3></div>
+				</div>
+				<div class="col-xs-12 col-md-8">
+
+					<div class="table-scroll table">
+					  <table class="u-striped">
+					    <thead class="InitialStyle">
+					      <tr>
+					        <th class="hide-xs show-md"></th>
+					        <th>
+										<p class="f-small table_title"><strong>Nombre Beneficiario</strong></p>
+									</th>
+					        <th>
+										<p class="f-small table_title center-sm"><strong>Asignación</strong></p>
+									</th>
+					      </tr>
+					    </thead>
+					    <tbody id="chartTable">
+					    	<!-- Template from chart.js -->
+					    </tbody>
+					  </table>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<section class="u-space">
-			<div class="table table-scroll col-xs-12">
-        <div class="u-row u-top hide-xs">
-          <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-            <p class="f-big f-error text-center">No se encontró resultados para el rango de fecha ingresada</p>
-          </div>
-        </div>
-
-			  <table class="table-responsive table-responsive-label u-striped u-striped-more">
-			    <thead>
-		      	<tr>
-			        <th class="table-4">
-								<p class="f-small table_title"><strong>Nombre Asegurado</strong></p>
-							</th>
-					    <th class="table-2">
-								<p class="f-small table_title"><strong>Fecha Notificación</strong></p>
-							</th>
-					    <th class="table-2">
-								<p class="f-small table_title"><strong>Identificador del Siniestro</strong></p>
-							</th>
-						<th class="table-2">
-								<p class="f-small table_title"><strong>Número de Liquidación</strong></p>
-							</th>
-					    <th class="table-2">
-								<p class="f-small table_title"><strong>Estado Solicitud</strong></p>
-							</th>
-		      	</tr>
-			    </thead>
-
-			    <tbody>
-			    	{{#each tab-salud-5.items}}
-		      	<tr class="{{striped}}">
-		        	<td class="table-4" valign="middle" data-table-title="Nombre del Asegurado">
-								<p class="table_desc DataNameFilter" data-filter-data-name="{{filterDataName}}">{{desc}}</p>
-								<a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
-									<span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
-									<i class="fa fa-angle-down" aria-hidden="true"></i>
-								</a>
-							</td>
-				      <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Fecha de Modificación">
-								<p class="table_desc"><span class="DataExpiration">{{date}}</span></p>
-							</td>
-				      <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Identificador del Siniestro">
-								<p class="table_desc">{{id}}</p>
-							</td>
-				      <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Número de Liquidación">
-								<p class="table_desc"><a href="#">{{state}}</a></p>
-							</td>
-							<td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Estado Solicitud">
-								<p class="table_desc filterDataDesc {{caducate}}" data-filter-data-desc="{{filterDataDesc}}">{{stateRequest}}</p>
-							</td>
-		      	</tr>
-
-  	      	<tr class="toggleContent" data-toggle-content="{{openContent}}">
-  	    			{{> tables-salud-siniestro }}
-  		 			</tr>
-  		 			{{/each}}
-			    </tbody>
-			  </table>
-			</div>
-		</section>
-		<div class="u-space-2x">
-
-			{{> pagination}}
-
-		</div>
-
-		<section class="contribution">
-	      <div class="col-md-12 align-middle">
-	        <div class="u-row z-depth-2">
-	          <div class="products_col col-xs-12 col-md-3">
-	            <figure style="min-height: 145px">
-	              <img src="{{root}}assets/img/loss-history.jpg" data-fit-type class="objFit products_img">
-	            </figure>
-	          </div>
-
-	          <div class="u-row products_col col-xs-12 col-md-9 card_container middle-xs">
-	            <div class="col-md-9">
-	              <h4>
-	                La denuncia de un siniestro puede ser algo complejo.
-	              </h4>
-	              <p class="f-small u-top u-space-sm">
-	                No te preocupes, declara tu siniestro en línea de manera simple y rápida.
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-xs-12 end-md u-space-sm ">
-	              <a href="http://w3.metlife.cl/servicio-al-cliente/tramites/denuncia-un-siniestro/index.html" target="_blank" target="_blank" class="button button-small button-full-xs">Denunciar Siniestro</a>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </section>
 
 	</div>
 </div>
