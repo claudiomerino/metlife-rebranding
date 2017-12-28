@@ -66,6 +66,13 @@
     }
   }
 
+  .tab-accordion-purple .resp-accordion,
+  .tab-accordion-purple .tab-accordion {
+    &:before {
+      background-color: $colective !important;
+    }
+  }
+
    .tab-accordion-gray .resp-accordion,
   .tab-accordion-gray .tab-accordion {
     &:before {
@@ -124,6 +131,12 @@
     .tab-accordion-yellow .tab-accordion {
       color: $black !important;
     }
+  .tab-accordion-purple .resp-accordion,
+  .tab-accordion-purple .tab-accordion {
+    &:before {
+      background-color: $black !important;
+    }
+  }
 
   .tab-accordion-pink .resp-accordion,
     .tab-accordion-pink .tab-accordion {
