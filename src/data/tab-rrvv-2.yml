@@ -1,0 +1,92 @@
+items:
+  -
+    openContent: feb-2017
+    desc: Febrero 2017
+    restText: Más información
+    openText: Menos información
+    dataExpiration: 05/02/2017
+    dataPay: PAC
+    total: UF 2,35 / $55.558
+    striped: u-striped-gray
+  -
+    openContent: ene-2017
+    desc: Enero 2017
+    restText: Más información
+    openText: Menos información
+    dataExpiration: 05/01/2017
+    dataPay: PAC
+    total: UF 2,35 / $55.556
+    striped:
+  -
+    openContent: dic-2016
+    desc: Diciembre 2016
+    restText: Más información
+    openText: Menos información
+    dataExpiration: 05/12/2016
+    dataPay: PAC
+    total: UF 2,35 / $55.556
+    striped: u-striped-gray
+    link: '#'
+  -
+    openContent: nov-2016
+    desc: Noviembre 2016
+    restText: Más información
+    openText: Menos información
+    dataExpiration: 05/11/2016
+    dataPay: PAC
+    total: UF 2,35 / $55.556
+    striped:
+  -
+    openContent: oct-2016
+    desc: Octubre 2016
+    restText: Más información
+    openText: Menos información
+    dataExpiration: 05/10/2016
+    dataPay: PAC
+    total: UF 2,35 / $55.556
+    striped: u-striped-gray
+  -
+    openContent: sep-2016
+    desc: Spetiembre 2016
+    restText: Más información
+    openText: Menos información
+    dataExpiration: 05/09/2016
+    dataPay: PAC
+    total: UF 2,35 / $55.556
+    striped:
+  -
+    openContent: ago-2016
+    desc: Agosto 2016
+    restText: Más información
+    openText: Menos información
+    dataExpiration: 05/08/2016
+    dataPay: PAC
+    total: UF 2,35 / $55.556
+    striped: u-striped-gray
+  -
+    openContent: jul-2016
+    desc: Julio 2016
+    restText: Más información
+    openText: Menos información
+    dataExpiration: 05/07/2016
+    dataPay: PAC
+    total: UF 2,35 / $55.556
+    striped:
+  -
+    openContent: jun-2016
+    desc: Junio 2016
+    restText: Más información
+    openText: Menos información
+    dataExpiration: 05/06/2016
+    dataPay: PAC
+    total: UF 2,35 / $55.556
+    striped: u-striped-gray
+  -
+    openContent: may-2016
+    desc: Mayo 2016
+    restText: Más información
+    openText: Menos información
+    dataExpiration: 05/05/2016
+    dataPay: PAC
+    total: UF 2,35 / $55.556
+    striped:
