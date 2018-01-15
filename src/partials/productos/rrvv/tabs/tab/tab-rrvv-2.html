@@ -1,0 +1,185 @@
+
+<div class="tabs_wrap u-space">
+  <div class="client_wrap_container">
+
+    <p class="f-big tabs-subtitle-profile double_line u-top"><strong>Detalle de Liquidación - Mes Octubre 2017</strong></p>
+    <div class="info_credit u-row u-row-xs-full gutter-xs">
+      <div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+        <p class="tabs_content_subtitle"><strong>Fecha de Pago</strong></p>
+        <p class="line_jump">20 / 11 / 2017</p>
+      </div>
+
+      <div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+        <p class="tabs_content_subtitle"><strong>Forma de Pago</strong></p>
+        <p class="line_jump">Sucursales Servipag</p>
+      </div>
+
+      <div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+        <p class="tabs_content_subtitle"><strong>Monto Pensión:</strong></p>
+        <p class="line_jump">UF 23,445 / $ 554.665</p>
+      </div>
+
+      <div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+        <p class="tabs_content_subtitle"><strong>Institución de Salud</strong></p>
+        <p class="line_jump">Isapre Colmena Golden Cross S.A.</p>
+      </div>
+
+      <div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+        <p class="tabs_content_subtitle"><strong>Valor de la UF</strong></p>
+        <p class="line_jump">$ 27.055</p>
+      </div>
+    </div>
+
+    <section class="u-space">
+      <p class="f-big tabs-subtitle-profile"><strong>Histórico de Pago de mis Primas</strong></p>
+
+      <div class="table table-scroll center-xs col-xs-12 u-space">
+        <table class="table-responsive table-responsive-label u-striped u-striped-more">
+          <thead>
+            <tr>
+              <th class="table-6">
+                <p class="f-small table_title" style="text-align: center;"><strong>Detalle de Haberes</strong></p>
+              </th>
+              <th class="table-6">
+                <p class="f-small table_title"><strong>Detalle de Descuentos</strong></p>
+              </th>
+            </tr>
+          </thead>
+          <tbody> 
+            {{#each tab-rrvv-2.haberes}}
+            <tr class="{{striped}}">
+              <td class="table-3" align="center" valign="middle" data-table-title="Período de Cobertura">
+                <p class="table_desc">{{detail-haberes}}</p>
+                <a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
+                  <span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a>
+              </td>
+
+              <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
+                <p class="table_desc">{{detail-haberes-number}}</p>
+              </td>
+
+              <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
+                <p class="table_desc">{{detail-discount}}</p>
+              </td>
+
+              <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+                <p class="table_desc">{{detail-discount-number}}</p>
+              </td>             
+            </tr>
+
+            <tr class="toggleContent" data-toggle-content="{{openContent}}">
+              {{> tables-salud }} 
+            </tr>
+            {{/each}}
+
+            <tr>
+              <td class="table-6 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+                <p class="table_desc bg f-center" ><strong>Total Haberes:</strong><span> $ 555.435</span></p>
+              </td>
+
+              <td class="table-6 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+                <p class="table_desc f-center"><strong>Total Descuentos:</strong><span> $ 205.665</span></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table-6 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+              </td>
+
+              <td class="table-6 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+                <p class="table_desc f-center"><strong class="f-big">Líquido a Pagar:</strong><span><strong> $ 324.66</strong></span></p>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        {{> pagination}}
+
+      </div>
+    </section>
+
+    <section class="u-space">
+      <p class="f-big tabs-subtitle-profile"><strong>Histórico de Pago de mis Primas</strong></p>
+
+      <div class="table table-scroll center-xs col-xs-12 u-space">
+        <table class="table-responsive table-responsive-label u-striped u-striped-more">
+          <thead>
+            <tr>
+              <th class="table-3">
+                <p class="f-small table_title"><strong>Período de Cobertura</strong></p>
+              </th>
+              <th class="table-3">
+                <p class="f-small table_title"><strong>Fecha de Pago</strong></p>
+              </th>
+              <th class="table-3">
+                <p class="f-small table_title"><strong>Forma de Pago</strong></p>
+              </th>
+              <th class="table-3">
+                <p class="f-small table_title"><strong>Monto Pagado UF / Pesos</strong></p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each tab-rrvv-2.historic}}
+            <tr class="{{striped}}">
+              <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
+                <p class="table_desc">{{desc}}</p>
+                <a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
+                  <span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a>
+              </td>
+              <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
+                <p class="table_desc">{{dataExpiration}}</p>
+              </td>
+              <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
+                <p class="table_desc">{{#if link}}<a href="{{link}}">{{/if}}{{dataPay}}{{#if link}}</a>{{/if}}</p>
+              </td>
+              <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+                <p class="table_desc">{{total}}</p>
+              </td>
+            </tr>
+
+            <tr class="toggleContent" data-toggle-content="{{openContent}}">
+              {{> tables-salud }}
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {{> pagination}}
+
+    <p class="f-big tabs-subtitle-profile double_line u-top"><strong>Medio de Pago</strong></p>
+    <div class="info_credit u-row u-row-xs-full gutter-xs">
+      <div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+        <p class="tabs_content_subtitle"><strong>Forma de Pago</strong></p>
+        <p class="line_jump">Bancario</p>
+      </div>
+
+      <div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+        <p class="tabs_content_subtitle"><strong>Banco</strong></p>
+        <p class="line_jump">Banco de Chile</p>
+      </div>
+
+      <div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+        <p class="tabs_content_subtitle"><strong>Número de Cuenta:</strong></p>
+        <p class="line_jump">07-66566-02</p>
+      </div>
+
+      <div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
+        <p class="tabs_content_subtitle"><strong>Poder para Cobro de Pensión:</strong></p>
+        <p class="line_jump">Existe</p>
+      </div>
+    </div>
+
+    <div class="col-xs-12 ClientProfileToggleHide end-xs">
+      <a class="button button-small button-full-xs" data-open="updateDataContact">Actualizar medio de pago</a>
+    </div>
+
+  </div>
+</div>

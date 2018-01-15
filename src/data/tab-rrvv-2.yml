@@ -1,4 +1,42 @@
-items:
+haberes:
+  - detail-haberes: Pensión Bruta
+    detail-haberes-number: $555.435
+    detail-discount: 7% Isapre Colmena Golden Cross
+    detail-discount-number: $ 44.554
+
+  - detail-haberes: 
+    detail-haberes-number: 
+    detail-discount: Total Cotización Legal a Pagar
+    detail-discount-number: $ 34.665
+
+  - detail-haberes: 
+    detail-haberes-number: 
+    detail-discount: Cotización Adicional
+    detail-discount-number: $ 14.332
+
+  - detail-haberes:
+    detail-haberes-number: 
+    detail-discount: Créditos y/o Préstamos CCAF
+    detail-discount-number: $ 122.690
+
+  - detail-haberes: 
+    detail-haberes-number: 
+    detail-discount: Cuota 10 de 60 Crédito de Consumo
+    detail-discount-number: $ 95.000
+
+  - detail-haberes:
+    detail-haberes-number: 
+    detail-discount: De los Andes
+    detail-discount-number: $ 6.577
+
+  - detail-haberes:
+    detail-haberes-number: 
+    detail-discount: Impuesto de la Renta
+    detail-discount-number: $ 330
+
+
+
+historic:
   -
     openContent: feb-2017
     desc: Febrero 2017
