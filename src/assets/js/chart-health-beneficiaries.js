@@ -1,5 +1,4 @@
 
-
 	if( document.getElementById("chartHealthBeneficiaries") ) {
 		let ctxHealthBeneficiaries = document.getElementById("chartHealthBeneficiaries");
 		let $tableHealthBeneficiaries = $( '#chartHealthTable' );

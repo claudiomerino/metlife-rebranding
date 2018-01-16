@@ -74,7 +74,7 @@
       <p class="f-big tabs-subtitle-profile"><strong>Información de Beneficiarios</strong></p>
       <div class="u-row u-row-xs-full middle-xs">
         <div class="chartCanvasMain hide-xs show-md col-xs-12 col-md-4">
-          <canvas id="chartBeneficiaries" class="chartCanvas" width="200" height="200"></canvas>
+          <canvas id="chartRentsInfoBeneficiaries" class="chartCanvas" width="200" height="200"></canvas>
           <div class="chartCanvasContent u-row middle-xs center-xs"><h3>100%</h3></div>
         </div>
         <div class="col-xs-12 col-md-8">
@@ -92,7 +92,69 @@
                   </th>
                 </tr>
               </thead>
-              <tbody id="chartTable">
+              <tbody id="chartRentsInfoTable">
+                <!-- Template from chart.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="u-space u-top">
+      <p class="f-big tabs-subtitle-profile"><strong>Beneficiarios Legales</strong></p>
+      <div class="u-row u-row-xs-full middle-xs">
+        <div class="chartCanvasMain hide-xs show-md col-xs-12 col-md-4">
+          <canvas id="chartRentsLegalBeneficiaries" class="chartCanvas" width="200" height="200"></canvas>
+          <div class="chartCanvasContent u-row middle-xs center-xs"><h3>100%</h3></div>
+        </div>
+        <div class="col-xs-12 col-md-8">
+
+          <div class="table-scroll table">
+            <table class="u-striped">
+              <thead class="InitialStyle">
+                <tr>
+                  <th class="hide-xs show-md"></th>
+                  <th>
+                    <p class="f-small table_title"><strong>Nombre Beneficiario</strong></p>
+                  </th>
+                  <th>
+                    <p class="f-small table_title center-sm"><strong>Asignación</strong></p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="chartRentsLegalTable">
+                <!-- Template from chart.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="u-space u-top">
+      <p class="f-big tabs-subtitle-profile"><strong>Beneficiarios Potenciales</strong></p>
+      <div class="u-row u-row-xs-full middle-xs">
+        <div class="chartCanvasMain hide-xs show-md col-xs-12 col-md-4">
+          <canvas id="chartRentsPotentialBeneficiaries" class="chartCanvas" width="200" height="200"></canvas>
+          <div class="chartCanvasContent u-row middle-xs center-xs"><h3>100%</h3></div>
+        </div>
+        <div class="col-xs-12 col-md-8">
+
+          <div class="table-scroll table">
+            <table class="u-striped">
+              <thead class="InitialStyle">
+                <tr>
+                  <th class="hide-xs show-md"></th>
+                  <th>
+                    <p class="f-small table_title"><strong>Nombre Beneficiario</strong></p>
+                  </th>
+                  <th>
+                    <p class="f-small table_title center-sm"><strong>Asignación</strong></p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="chartRentsPotentialTable">
                 <!-- Template from chart.js -->
               </tbody>
             </table>

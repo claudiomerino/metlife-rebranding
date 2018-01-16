@@ -31,7 +31,16 @@
 		function customLabelsFn() {
 			let dataLabel = data.labels;
 			let dataRelation = data.relation;
-			let dataPhone = data.phone;
+      let dataPhone = data.phone;
+      let dataRut = data.rut;
+      let dataBirthdate = data.birthdate;
+      let dataGender = data.gender;
+      let dataPension = data.pension;
+      let dataInvalidity = data.invalidity;
+      let dataValidity = data.validity;
+      let dataCharges = data.charges;
+      let dataNameCharge = data.namecharge;
+			let dataState = data.state;
 			let dataAddress = data.address;
 			let dataEmail = data.email;
 			let dataValue = data.datasets[0].data;
@@ -54,8 +63,17 @@
 									<span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
 									<i class="fa fa-angle-down" aria-hidden="true"></i>
 								</a>
-								<section class="toggleContent" data-toggle-content="openChartMoreInfo-${UID}-${key}">
-									<p class="table_label_title"><strong><br>Teléfono:</strong> ${ dataPhone[key] }</p>
+								<section class="toggleContent" data-toggle-content="openChartMoreInfo-${UID}-${key}">									
+                   ${ dataRut ? '<p class="table_label_title"><strong>Rut: </strong>' + dataRut[key] + '</p>' : '' }
+                   ${ dataBirthdate ? '<p class="table_label_title"><strong>Fecha de Nacimiento: </strong>' + dataBirthdate[key] + '</p>' : '' }
+                   ${ dataGender ? '<p class="table_label_title"><strong>Genero: </strong>' + dataGender[key] + '</p>' : '' }
+                   ${ dataPension ? '<p class="table_label_title"><strong>% de Pensión: </strong>' + dataPension[key] + '</p>' : '' }
+                   ${ dataInvalidity ? '<p class="table_label_title"><strong>Invalidez: </strong>' + dataInvalidity[key] + '</p>' : '' }
+                   ${ dataValidity ? '<p class="table_label_title"><strong>Fecha de Vigencia: </strong>' + dataValidity[key] + '</p>' : '' }
+                   ${ dataCharges ? '<p class="table_label_title"><strong>Cargas Familiares Legales: </strong>' + dataCharges[key] + '</p>' : '' }
+                   ${ dataNameCharge ? '<p class="table_label_title"><strong>Nombre de la carga: </strong>' + dataNameCharge[key] + '</p>' : '' }
+                   ${ dataState ? '<p class="table_label_title"><strong>Estado: </strong>' + dataState[key] + '</p>' : '' }
+                  <p class="table_label_title"><strong>Teléfono:</strong> ${ dataPhone[key] }</p>
 									<p class="table_label_title"><strong>Dirección:</strong> ${ dataAddress[key] }</p>
 									<p class="table_label_title"><strong>Correo Electrónico:</strong> ${ dataEmail[key] }</p>
 								</section>
