@@ -36,6 +36,13 @@
 		background-color: #f9ecea;
 	}
 
+  .account-refund-code-confirmation {
+    .smsCodeInvalid:focus {
+      border: 1px solid $error-border !important;
+      background-color: #f9ecea;
+    }
+  }
+
 	.input {
 		display: inline-block;
 		min-height: 40px;

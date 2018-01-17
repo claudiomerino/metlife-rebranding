@@ -1,7 +1,8 @@
 
 	const $buttonUpdate = $('.clientProfileUpdateData')
 	const $clientProfileCancelUpdateData = $('.clientProfileCancelUpdateData')
-	const $clientProfileSaveUpdateData = $('.clientProfileSaveUpdateData')
+  const $clientProfileSaveUpdateData = $('.clientProfileSaveUpdateData')
+	const $codeConfirmationContinue = $('.codeConfirmationContinue')
 	const $clientProfileEdit = $('.clientProfileEdit')
 	const $clientProfileInitialData = $('.clientProfileInitialData')
 	const $ClientProfileToggleHide = $('.ClientProfileToggleHide')
@@ -31,14 +32,12 @@
 		InitialStateFn( invalid )
 	})
 
-	$clientProfileSaveUpdateData.on('click', (e) => {
+	$clientProfileSaveUpdateData.add($codeConfirmationContinue).on('click', (e) => {
 		e.preventDefault()
-
-		if(!$(e.currentTarget).hasClass('button-disabled')) {
+		if( !$(e.currentTarget).hasClass('button-disabled') ) {
 			const invalid = 'false'
 			InitialStateFn( invalid )
 		}
-
 	})
 
 
