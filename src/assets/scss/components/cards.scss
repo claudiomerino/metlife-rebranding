@@ -74,6 +74,13 @@
 		}
 	}
 
+	.card-gris {
+		border-color: $medium-gray;
+		.card_icon {
+			color: $medium-gray;
+		}
+	}
+
 	.card-purple {
 		border-color: $colective;
 		.card_icon {
