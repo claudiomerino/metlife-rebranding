@@ -9,7 +9,7 @@ items:
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
-    state: EBB434344
+    state: Web
     stateRequest: Rechazado
     total: UF 2,35 / $55.558
     striped: u-striped-gray
@@ -22,7 +22,7 @@ items:
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
-    state: EBB434344
+    state: Web
     stateRequest: Aprobado
     total: UF 2,35 / $55.558
   -
@@ -34,7 +34,7 @@ items:
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
-    state: EBB434344
+    state: Sucursal
     stateRequest: Aprobado
     total: UF 2,35 / $55.558
     striped: u-striped-gray
@@ -47,7 +47,7 @@ items:
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
-    state: EBB434344
+    state: Sucursal
     stateRequest: Aprobado
     total: UF 2,35 / $55.558
   -
@@ -59,7 +59,7 @@ items:
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
-    state: EBB434344
+    state: Web
     stateRequest: Aprobado
     total: UF 2,35 / $55.558
     striped: u-striped-gray
@@ -72,7 +72,7 @@ items:
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
-    state: EBB434344
+    state: Web
     stateRequest: Aprobado
     total: UF 2,35 / $55.558
   -
@@ -84,7 +84,7 @@ items:
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
-    state: EBB434344
+    state: Web
     stateRequest: Aprobado
     total: UF 2,35 / $55.558
     striped: u-striped-gray
@@ -97,7 +97,7 @@ items:
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
-    state: EBB434344
+    state: Web
     stateRequest: Aprobado
     total: UF 2,35 / $55.558
   -
@@ -109,7 +109,7 @@ items:
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
-    state: EBB434344
+    state: Web
     stateRequest: Por Pagar
     total: UF 2,35 / $55.558
     striped: u-striped-gray
@@ -122,6 +122,6 @@ items:
     openText: Menos información
     date: 05/02/2017
     id: 13324435355
-    state: EBB434344
+    state: Web
     stateRequest: Por Pagar
     total: UF 2,35 / $55.558
