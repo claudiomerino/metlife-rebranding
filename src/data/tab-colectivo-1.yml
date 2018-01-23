@@ -6,48 +6,91 @@ items:
     subItems:
       -
         id: 1
-        label: 'Nombre Empresa Contratante:'
+        label: 'Contratante:'
         value: Nombre de Empresa SpA
         classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'true'
       -
         id: 2
-        label: 'RUT Empresa Contratante:'
+        label: 'RUT Contratante:'
         value: 76.195.779-1
         classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'true'
       -
         id: 3
-        label: 'Fecha Inicio de Vigencia:'
+        label: 'Fecha Inicio Vigencia:'
         value: 15/09/1995
         classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'true'
       -
         id: 4
-        label: 'Fecha Término de Vigencia:'
+        label: 'Fecha Fin Vigencia:'
         value: 15/09/2020
         classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'true'
+
   -
     classSection: u-top
     classSubtitle:
-    subTitle: Datos de mi Intermediario
+    subTitle: Información de mis Coberturas
     subItems:
       -
         id: 5
-        label: 'Nombre Corredor:'
+        label: 'Cobertura:'
+        value: Invalidez 2/3
+        classCols: col-xs-12 col-sm-6
+        edit: 'true'
+      -
+        id: 6
+        label: 'Monto Asegurado:'
+        value: UF 9.000
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+      -
+        id: 7
+        label: 'Deducible:'
+        value: UF 2.300
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+      -
+        id: 9
+        label: 'Cobertura:'
+        value: Invalidez 2/3
+        classCols: col-xs-12 col-sm-6
+        edit: 'true'
+      -
+        id: 10
+        label: 'Monto Asegurado:'
+        value: UF 9.000
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+      -
+        id: 11
+        label: 'Deducible:'
+        value: UF 2.300
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+
+  -
+    classSection: u-top
+    classSubtitle:
+    subTitle: Datos del Corredor
+    subItems:
+      -
+        id: 8
+        label: 'Nombre:'
         value: Javier Dominguez
         classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'true'
       -
-        id: 6
-        label: 'Teléfono Corredor:'
+        id: 9
+        label: 'Teléfono:'
         value: +56 932 333 546
         classCols: col-xs-12 col-sm-6 col-md-3
         link: 'tel:+56965445545'
         edit: 'true'
       -
-        id: 7
+        id: 10
         label: 'Correo Electrónico:'
         value: jdominguez@metlife.cl
         classCols: col-xs-12 col-sm-6 col-md-3
