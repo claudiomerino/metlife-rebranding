@@ -32,43 +32,35 @@
               <p class="line_jump">Banco Chile</p>
             </div>
 
-            <section class="u-field u-space clientProfileEdit hide-state-update">
-              <span class="input input--ichiro">
-                <input class="input__field input__field--ichiro" data-live-validate="true" value="Daniel Esteban" min="5" type="text" id="clientName" required>
-                <label class="input__label input__label--ichiro" for="clientName">
-                  <span class="input__label-content input__label-content--ichiro"><strong>Banco:</strong></span>
-                </label>
-                <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
-              </span>
+            <section class="u-select u-field clientProfileEdit hide-state-update label_select u-select_labels u-space">
+              <p class="title_label_select"><strong>Banco:</strong></p>
+              <select class="cs-select cs-skin-border GeneralSelect items_select_box">
+                <option value="" selected>Banco Chile</option>
+                <option value="banck">Banco-2</option>
+              </select>
             </section>
           </div>
 
           <div class="col-xs-12 col-sm-6 col-md-3">
             <div class="clientProfileInitialData u-space">
-              <p class="line_jump"><strong>Tipo de Cuenta:</strong></p>
-              <p class="line_jump">Crédito</p>
+              <p class="line_jump"><strong>Tipo de cuenta:</strong></p>
+              <p class="line_jump">cuenta</p>
             </div>
 
-            <section class="u-field u-space clientProfileEdit hide-state-update">
-              <span class="input input--ichiro">
-                <input class="input__field input__field--ichiro" data-live-validate="true" value="Daniel Esteban" min="5" type="text" id="clientName" required>
-                <label class="input__label input__label--ichiro" for="clientName">
-                  <span class="input__label-content input__label-content--ichiro"><strong>Tipo de Cuenta:</strong></span>
-                </label>
-                <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
-              </span>
+            <section class="u-select u-field clientProfileEdit hide-state-update label_select u-select_labels u-space">
+              <p class="title_label_select"><strong>Tipo de cuenta:</strong></p>
+              <select class="cs-select cs-skin-border GeneralSelect items_select_box">
+                <option value="" selected>Cuenta-1</option>
+                <option value="banck">Cuenta-2</option>
+              </select>
             </section>
           </div>
 
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="clientProfileInitialData u-space">
-              <p class="line_jump"><strong>Número de Cuenta:</strong></p>
-              <p class="line_jump">64549</p>
-            </div>
-
+            
             <section class="u-field u-space clientProfileEdit hide-state-update">
               <span class="input input--ichiro">
-                <input class="input__field input__field--ichiro" data-live-validate="true" value="Daniel Esteban" min="5" type="text" id="clientName" required>
+                <input class="input__field input__field--ichiro" data-live-validate="true" value="Daniel Esteban" min="0" type="number" id="clientName" required>
                 <label class="input__label input__label--ichiro" for="clientName">
                   <span class="input__label-content input__label-content--ichiro"><strong>Número de Cuenta:</strong></span>
                 </label>
@@ -78,14 +70,7 @@
           </div>
         </div>        
 
-        <!-- Mensajes de Guardar cambios -->
-        <div class="col-xs-12 col-md-4 mg-0-auto">
-          <div class="alert alert-success u-space hide-state-update ClientProfileMessageSuccess">
-            <p class="center-xs">¡Tus datos han sido actualizados!</p>
-            <i class="fa fa-times alert-close"></i>
-          </div>
-        </div>
-        
+        <!-- Mensajes de Guardar cambios -->        
         <div class="col-xs-12 col-md-4 mg-0-auto">
           <div class="alert alert-warning u-space hide-state-update ClientProfileMessageCancel">
             <p class="alert_desc">Tus cambios han sido cancelados</p>
@@ -100,7 +85,7 @@
           </div>
         </div>
 
-        <div class="u-row middle-xs center-xs end-sm u-space">
+        <div class="u-row middle-xs center-xs end-sm u-space updateDataRefund">
           <button class="button button-small button-full-xs last-sm clientProfileUpdateData" data-close aria-label="Close modal">Actualizar datos</button>
         </div>
 
@@ -127,7 +112,7 @@
         <!-- /Mensajes de Continuar sms -->
 
         <!-- Codigo de confirmación sms -->
-        <div class="smsCodeConfirmation hide-xs">
+        <div class="smsCodeConfirmation hide-xs u-space u-row top-xs">
           <div class="col-xs-12 center-xs" data-toggle-match="PayButtonStep3" data-switch="show">
             <h5>Código de confirmación</h5>
             <p class="f-small">Para tu seguridad, esta operación requiere un código de confirmación, el cual será enviado a tu celular</p>

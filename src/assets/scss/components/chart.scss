@@ -22,3 +22,10 @@
 			font-size: 48px;
 		}
 	}
+
+
+	@media screen and ( min-width: 62em ) {
+		.smsCodeConfirmation {
+			margin-top: -30px;
+		}          
+	}

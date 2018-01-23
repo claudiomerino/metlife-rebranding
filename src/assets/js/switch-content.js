@@ -55,6 +55,7 @@
   $('.updateChangeSave').on( 'click', (e) => {
     if( !$('.updateChangeSave').hasClass('button-disabled') ) {
       $('.smsCodeConfirmation').removeClass('hide-xs')
+      $('.updateDataRefund').addClass('hide-xs')      
     }
   })
 
