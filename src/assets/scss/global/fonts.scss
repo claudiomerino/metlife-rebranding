@@ -79,6 +79,16 @@
 		}
 	}
 
+	.f-link-reg {
+		text-decoration: underline;
+		color: $link-rest;
+		line-height: 1.2;
+		&:hover {
+			text-decoration: none;
+			color: $link-hover;
+		}
+	}
+
 	.f-link-white {
 		color: white;
 		&:hover {
