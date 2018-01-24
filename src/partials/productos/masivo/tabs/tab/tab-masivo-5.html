@@ -1,9 +1,54 @@
 
 <div class="tabs_wrap u-space">
 	<div class="client_wrap_container">
+		<section class="contribution u-top u-space">
+			<div class="u-row z-depth-2">
+			      <!-- <div class="products_col col-xs-12 col-sm-3">
+			        <figure>
+			          <img src="{{root}}assets/img/contactanos_img.jpg" data-fit-type class="objFit products_img">
+			        </figure>
+			      </div> -->
 
-		<section class="u-top">
-			<p class="f-big tabs-subtitle-profile double_line"><strong>Histórico de Siniestros</strong></p>
+			    <div class="u-row products_col col-xs-12 card_container card_container--even-padding card_container--blue middle-xs">
+			        <div class="col-sm-8">
+			          <h4 class="white">Reembolsa tus Gastos Médicos en un click</h4>
+			          <p class="f-small u-top white">Solicita reembolso de gastos de consultas médicas, exámenes y procedimientos para ti y tus asegurados vigentes en línea.</p>
+			        </div>
+
+			        <div class="col-sm-4 col-xs-12 end-xs u-space-xs">
+			          <a href="{{root}}ayuda/contacto/contacto.html" class="button button-small button-green button-full-xs">Solicitar Reembolso</a>
+			        </div>
+			    </div>
+		    </div>
+		</section>
+
+		    <section class="info_insured u-top u-space u-top-bigger">
+			<p class="f-big tabs-subtitle-profile double_line"><strong>Cuenta para Reembolso de Gastos Médicos</strong></p>
+			<div class="u-row">
+				<div class="col-xs-12 col-md-3 u-space-md">
+					<p class="line_jump"><strong>Banco:</strong></p>
+					<p class="line_jump">de Chile</p>
+				</div>
+
+				<div class="col-xs-12 col-md-3 u-space-md">
+					<p class="line_jump"><strong>Tipo de Cuenta:</strong></p>
+					<p class="line_jump">Corriente</p>
+				</div>
+
+				<div class="col-xs-12 col-md-3 u-space-md">
+					<p class="line_jump"><strong>Cuenta Nº:</strong></p>
+					<p class="line_jump">005-4454554-44</p>
+				</div>
+				<div class="col-xs-12 col-md-3 u-space-md end-md">
+					<div class="col-xs-12">
+						<a class="button button-small button-full-xs" data-open="updateDataContact">Cambiar Cuenta</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="u-top-bigger">
+			<p class="f-big tabs-subtitle-profile double_line"><strong>Histórico de mis Siniestros y Reembolsos</strong></p>
 
 			<div class="u-row gutter-xs">
 
@@ -18,7 +63,7 @@
 				</div>
 
 				<div class="col-xs-12 col-md-3 u-select u-select_label u-space">
-					<p class="f-small"><strong>Filtrar por Estado de Solicitud:</strong></p>
+					<p class="f-small"><strong>Filtrar por Estado Solicitud:</strong></p>
 					<select class="cs-select cs-skin-border DataSelectFilter">
 						<option value="allStateDividend" selected>Todos los Estados</option>
 						<option value="paidStateDividend">Aprobado</option>
@@ -28,7 +73,7 @@
 				</div>
 
 				<div class="col-xs-12 col-md-6">
-					<p class="f-small"><strong>Filtrar por Fecha de Notificación:</strong></p>
+					<p class="f-small"><strong>Filtrar por Fecha de Solicitud:</strong></p>
 					<div class="u-row">
 						<div class="col-xs-12 col-md-6 u-right-small-md">
 							<span class="input input--ichiro input--datepicker DatePickerStart u-space">
@@ -60,45 +105,51 @@
 			    <thead>
 		      	<tr>
 			        <th class="table-4">
-								<p class="f-small table_title"><strong>Nombre Asegurado</strong></p>
+								<p class="f-small table_title"><strong>Asegurado</strong></p>
 							</th>
-					    <th class="table-2">
-								<p class="f-small table_title"><strong>Fecha Notificación</strong></p>
+					    <th class="table-1">
+								<p class="f-small table_title"><strong>Estado</strong></p>
 							</th>
-					    <th class="table-2">
-								<p class="f-small table_title"><strong>Identificador del Siniestro</strong></p>
+					    <th class="table-1">
+								<p class="f-small table_title"><strong>Fecha Solicitud</strong></p>
 							</th>
 						<th class="table-2">
-								<p class="f-small table_title"><strong>Número de Liquidación</strong></p>
+								<p class="f-small table_title"><strong>Canal de Solicitud</strong></p>
 							</th>
 					    <th class="table-2">
-								<p class="f-small table_title"><strong>Estado Solicitud</strong></p>
+								<p class="f-small table_title"><strong>Liquidación Nº</strong></p>
 							</th>
-		      	</tr>
+						<th class="table-2">
+								<p class="f-small table_title"><strong>Total Pagado:</strong></p>
+							</th>
+		      	</tr> 
 			    </thead>
 
 			    <tbody>
-			    	{{#each tab-salud-5.items}}
+			    	{{#each tab-colectivo-3.items}}
 		      	<tr class="{{striped}}">
 		        	<td class="table-4" valign="middle" data-table-title="Nombre del Asegurado">
-								<p class="table_desc DataNameFilter" data-filter-data-name="{{filterDataName}}">{{desc}}</p>
-								<a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
-									<span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
-									<i class="fa fa-angle-down" aria-hidden="true"></i>
-								</a>
-							</td>
-				      <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Fecha de Modificación">
-								<p class="table_desc"><span class="DataExpiration">{{date}}</span></p>
-							</td>
-				      <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Identificador del Siniestro">
-								<p class="table_desc">{{id}}</p>
-							</td>
-				      <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Número de Liquidación">
-								<p class="table_desc"><a href="#">{{state}}</a></p>
-							</td>
-							<td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Estado Solicitud">
-								<p class="table_desc filterDataDesc {{caducate}}" data-filter-data-desc="{{filterDataDesc}}">{{stateRequest}}</p>
-							</td>
+						<p class="table_desc DataNameFilter" data-filter-data-name="{{filterDataName}}">{{desc}}</p>
+						<a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
+							<span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
+							<i class="fa fa-angle-down" aria-hidden="true"></i>
+						</a>
+					</td>
+					<td class="table-1 hide-xs-important show-md-table-important" valign="middle" data-table-title="Estado">
+						<p class="table_desc">{{stateRequest}}</p>
+					</td>
+				    <td class="table-1 hide-xs-important show-md-table-important" valign="middle" data-table-title="Fecha de Modificación">
+						<p class="table_desc"><span class="DataExpiration">{{date}}</span></p>
+					</td>
+				    <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Identificador del Siniestro">
+						<p class="table_desc">{{state}}</p>
+					</td>
+				    <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Número de Liquidación">
+						<p class="table_desc"><a href="#">{{id}}</a></p>
+					</td>
+					<td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Estado Solicitud">
+						<p class="table_desc filterDataDesc {{caducate}}" data-filter-data-desc="{{filterDataDesc}}">{{total}}</p>
+					</td>
 		      	</tr>
 
   	      	<tr class="toggleContent" data-toggle-content="{{openContent}}">
@@ -115,42 +166,29 @@
 
 		</div>
 
-		<p class="f-big tabs-subtitle-profile double_line u-top u-space-2x"><strong>Cuenta para Reembolso</strong></p>
-		<section class="info_credit u-row u-row-xs-full gutter-xs">
-			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
-				<p class="tabs_content_subtitle"><strong>Banco:</strong></p>
-				<p class="line_jump">Banco de Crédito e Inversiones</p>
-			</div>
-			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
-				<p class="tabs_content_subtitle"><strong>Tipo de Cuenta:</strong></p>
-				<p class="line_jump">Cuenta Corriente</p>
-			</div>
-			<div class="tabs_col col-md-3 col-xs-12 col-sm-6 u-space">
-				<p class="tabs_content_subtitle"><strong>Número de Cuenta:</strong></p>
-				<p class="line_jump">554-545-03</p>
-			</div>
-		</section>
 
-		<section class="contribution">
+
+		<section class="contribution u-space u-top-bigger">
 	      <div class="col-md-12 align-middle">
 	        <div class="u-row z-depth-2">
 	          <div class="products_col col-xs-12 col-md-3">
-	            <figure style="min-height: 145px">
-	              <img src="{{root}}assets/img/loss-history.jpg" data-fit-type class="objFit products_img">
+	            <figure style="min-height: 220px;">
+	              <img src="{{root}}assets/img/form-siniestros.jpg" data-fit-type class="objFit products_img" height="220px">
 	            </figure>
 	          </div>
 
 	          <div class="u-row products_col col-xs-12 col-md-9 card_container middle-xs">
 	            <div class="col-md-9">
 	              <h4>
-	                La solicitud de un reembolso puede ser algo complejo.
+	                ¿Necesitas un formulario para tus trámites?
 	              </h4>
 	              <p class="f-small u-top u-space-sm">
-	                No te preocupes, solicita tu reembolso en línea de manera simple y rápida.
+	                Descarga alguno de estos formularios que podrían ayudarte y hacer más ágil tus trámites:
 	              </p>
-	            </div>
-	            <div class="col-md-3 col-xs-12 end-md u-space-sm ">
-	              <a href="http://w3.metlife.cl/servicio-al-cliente/tramites/denuncia-un-siniestro/index.html" target="_blank" target="_blank" class="button button-small button-full-xs">Solicitar Reembolso</a>
+	              	<ul>
+						<li class="f-small u-top f-link-reg"><a href="#">Formulario para Solicitar Reembolso de Gastos Médicos</a></li>
+						<li class="f-small u-top f-link-reg"><a href="#">Formulario Informe Médico Tratante</a></li>
+	              	</ul>
 	            </div>
 	          </div>
 	        </div>
