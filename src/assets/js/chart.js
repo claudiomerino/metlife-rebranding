@@ -36,6 +36,7 @@
       let dataBirthdate = data.birthdate;
       let dataGender = data.gender;
       let dataPension = data.pension;
+      let dataAssignement = data.assignement
       let dataInvalidity = data.invalidity;
       let dataValidity = data.validity;
       let dataCharges = data.charges;
@@ -58,7 +59,7 @@
 				      <td bgcolor="${ dataBackgroundColor[key] }" width="10" class="hide-xs show-table-md"></td>
 				      <td class="table-4" valign="middle">
 				      	<p class="table_label_title line_jump">${ dataLabelText }</p>
-								<p class="table_label_title"><strong>Relación:</strong> ${ dataRelation[key] }</p>
+								<p class="table_label_title"><strong>Relación con el Contratante:</strong> ${ dataRelation[key] }</p>
 								<a href="#" class="f-link openContent " data-open-content="openChartMoreInfo-${UID}-${key}">
 									<span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
 									<i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -68,6 +69,7 @@
                    ${ dataBirthdate ? '<p class="table_label_title"><strong>Fecha de Nacimiento: </strong>' + dataBirthdate[key] + '</p>' : '' }
                    ${ dataGender ? '<p class="table_label_title"><strong>Genero: </strong>' + dataGender[key] + '</p>' : '' }
                    ${ dataPension ? '<p class="table_label_title"><strong>% de Pensión: </strong>' + dataPension[key] + '</p>' : '' }
+                   ${ dataAssignement ? '<p class="table_label_title"><strong>% de Asignación para Pago: </strong>' + dataAssignement[key] + '</p>' : '' }
                    ${ dataInvalidity ? '<p class="table_label_title"><strong>Invalidez: </strong>' + dataInvalidity[key] + '</p>' : '' }
                    ${ dataValidity ? '<p class="table_label_title"><strong>Fecha de Vigencia: </strong>' + dataValidity[key] + '</p>' : '' }
                    ${ dataCharges ? '<p class="table_label_title"><strong>Cargas Familiares Legales: </strong>' + dataCharges[key] + '</p>' : '' }
