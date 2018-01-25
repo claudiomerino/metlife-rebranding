@@ -1,10 +1,10 @@
 
-if( document.getElementById("chartRentsLegalBeneficiaries") ) {
-  let ctxRentsLegalBeneficiaries = document.getElementById("chartRentsLegalBeneficiaries");
-  let $tableRentsLegalBeneficiaries = $( '#chartRentsLegalTable' );
+if( document.getElementById("chartRRVVChargesFamily") ) {
+  let ctxRRVVChargesFamily = document.getElementById("chartRRVVChargesFamily");
+  let $tableRRVVChargesFamily = $( '#chartRRVVChargesFamilyTable' );
   let $tabsChartActiveRentsBeneficiaries = $( '.tabs-chart-rents-beneficiaries' );
 
-  let dataRentsLegalBeneficiaries = {
+  let dataRRVVChargesFamily = {
     labels: [
       "Esperanza del Carmen Risopatrón Goycochea",
       "Maria Francisca Llanos Risopatrón",
@@ -17,42 +17,6 @@ if( document.getElementById("chartRentsLegalBeneficiaries") ) {
       "Hijo",
       "Nieta"
     ],
-    rut: [
-      "45984522-2",
-      "45984522-2",
-      "45984522-2",
-      "45984522-2"
-    ],
-    birthdate: [
-      "00/00/0000",
-      "00/00/0000",
-      "00/00/0000",
-      "00/00/0000"
-    ],
-    gender: [
-      "Femenino",
-      "Femenino",
-      "Masculino",
-      "Femenino"
-    ],
-    pension: [
-      "50",
-      "50",
-      "50",
-      "50"
-    ],
-    invalidity: [
-      "Invalisssdez",
-      "Invalidez",
-      "Invalidez",
-      "Invalidez"
-    ],
-    validity: [
-      "00/00/0000",
-      "00/00/0000",
-      "00/00/0000",
-      "00/00/0000"
-    ],
     address: [
       "Monseñor Escribá de Balaguer",
       "Monseñor Escribá de Balaguer",
@@ -64,6 +28,24 @@ if( document.getElementById("chartRentsLegalBeneficiaries") ) {
       "+56 966 554 644",
       "+56 966 554 644",
       "+56 966 554 644"
+    ],
+    typeCharge: [
+      "Cargas",
+      "Cargas",
+      "Cargas",
+      "Cargas"
+    ],
+    nameCharge: [
+      "incognito",
+      "incognito",
+      "incognito",
+      "incognito"
+    ],
+    state: [
+      "Estado",
+      "Estado",
+      "Estado",
+      "Estado"
     ],
     email: [
       "daniel.llanos58@gmail.com",
@@ -88,6 +70,6 @@ if( document.getElementById("chartRentsLegalBeneficiaries") ) {
     }]
   };
 
-  chartFn( dataRentsLegalBeneficiaries, ctxRentsLegalBeneficiaries, $tableRentsLegalBeneficiaries, $tabsChartActiveRentsBeneficiaries );
+  chartFn( dataRRVVChargesFamily, ctxRRVVChargesFamily, $tableRRVVChargesFamily, $tabsChartActiveRentsBeneficiaries );
 
 }
