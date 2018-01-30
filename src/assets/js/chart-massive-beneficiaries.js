@@ -5,6 +5,7 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 	let $tabsChartActiveMassiveBeneficiaries = $( '.tabs-chart-massive-beneficiaries' ); 
 
 	let dataMassiveBeneficiaries = {
+		labelsEdit: true,
 		labels: [
 			"Esperanza del Carmen Risopatrón Goycochea",
 			"Maria Francisca Llanos Risopatrón",
@@ -63,6 +64,13 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 			"daniel.llanos58@gmail.com",
 			"daniel.llanos58@gmail.com",
 			"daniel.llanos58@gmail.com"
+		],
+		changeData: [
+			"Cambiar datos",
+			"Cambiar datos",
+			"Cambiar datos",
+			"Cambiar datos",
+			"Cambiar datos"
 		],
     datasets: [{
 			data: [

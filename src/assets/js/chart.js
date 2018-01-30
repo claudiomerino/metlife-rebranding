@@ -30,6 +30,7 @@
 
 		function customLabelsFn() {
 			let dataLabel = data.labels;
+			let dataLabelsEdit = data.labelsEdit;
 			let dataRelation = data.relation;
       let dataPhone = data.phone;
       let dataRut = data.rut;
@@ -55,7 +56,111 @@
 
 				if( dataRelation.length > 0 ) {
 
-					chartTemplate = `
+/*=============================================
+=            Contenido editable               =
+=============================================*/
+					if( dataLabelsEdit ) {
+						chartTemplate = `
+							<tr>
+					      <td bgcolor="${ dataBackgroundColor[key] }" width="10" class="hide-xs show-table-md"></td>
+					      <td class="table-4 containerDataEdit" valign="middle">
+									<div class="beneficiaryInitialData">												
+										<p class="line_jump">${ dataLabelText }</p>
+									</div>
+									<section class="u-field mg-bottom-5 mg-top-i-0 clientProfileEdit hide-state-update">
+										<span class="input input--ichiro">
+											<input class="input__field input__field--ichiro beneficiaryValidateInput" data-live-validate="true" value="${ dataLabelText }" min="5" type="text" id="clientName" required>										
+											<p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+										</span>
+									</section>
+
+									<div class="beneficiaryInitialData">											 	
+										<p><strong>Relación:</strong> ${ dataRelation[key] }</p>
+									</div>
+									<section class="u-field mg-bottom-5 mg-top-i-0 clientProfileEdit hide-state-update">
+										<span class="input input--ichiro">
+											<input class="input__field input__field--ichiro beneficiaryValidateInput" data-live-validate="true" value="${ dataRelation[key] }" min="5" type="text" id="clientName" required>										
+											<p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+										</span>
+									</section>
+
+
+									<a href="#" class="f-link openContent " data-open-content="openChartMoreInfo-${UID}-${key}">
+										<span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a>
+									<section class="toggleContent infoMore mg-top-15" data-toggle-content="openChartMoreInfo-${UID}-${key}">
+										<div class="beneficiaryInitialData mg-top-15">												
+											<p class="line_jump"><strong>RUT:</strong> ${ dataRut[key] }</p>
+										</div>
+										<section class="u-field mg-bottom-5 mg-top-i-0 clientProfileEdit hide-state-update">
+											<span class="input input--ichiro">
+												<input class="input__field input__field--ichiro beneficiaryValidateInput" data-live-validate="true" value="${ dataRut[key] }" min="5" type="text" id="clientName" required>										
+												<p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+											</span>
+										</section>
+
+										<div class="beneficiaryInitialData">												
+											<p class="line_jump"><strong>Fecha de Nacimiento:</strong> ${ dataBirthdate[key] }</p>
+										</div>
+										<section class="u-field clientProfileEdit hide-state-update label_select">
+											<p class="title_label_select"><strong>Fecha de Nacimiento:</strong></p>
+											<span class="input input--ichiro input--datepicker DatePicker">
+												<input class="input__field input__field--ichiro" type="text" readonly>
+												<i class="material-icons">date_range</i>
+											</span>
+										</section>
+
+										<div class="beneficiaryInitialData">												
+											<p class="line_jump"><strong>Genero:</strong> ${ dataGender[key] }</p>
+										</div>
+										<section class="u-select u-field clientProfileEdit hide-state-update label_select u-select_labels">
+											<p class="title_label_select"><strong>Genero:</strong></p>
+											<select class="cs-select cs-skin-border GeneralSelect items_select_box">
+												<option value="" selected>Masculino</option>
+												<option value="Femenino">Femenino</option>
+											</select>
+										</section>
+
+										<div class="beneficiaryInitialData u-space">												
+											<p class="line_jump"><strong>% de Asignación para Pago:</strong> ${ dataAssignement[key] }</p>
+										</div>
+										<section class="u-field mg-top-i-0 u-space clientProfileEdit hide-state-update">
+											<span class="input input--ichiro">
+												<input class="input__field input__field--ichiro beneficiaryValidateInput" data-live-validate="true" value="${ dataAssignement[key] }" min="5" type="number" id="clientName" required>										
+												<p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+											</span>
+										</section>
+
+										<div class="u-space-md beneficiaryUpdateData">
+										  <a class="button button-small button-full-xs buttonBeneficiaryUpdateData">Cambiar Datos</a>
+										</div>
+
+										<div class="u-row middle-xs center-xs end-sm u-space">
+											<a data-close aria-label="Close modal" class="u-right-sm u-top-sm hide-state-update beneficiaryCancelUpdateData">Cancelar</a>
+											<a class="button button-small AcceptLegalSubmit hide-state-update beneficiarySaveUpdateData">Guardar cambios</a>
+										</div>
+
+										<div class="alert alert-success u-space hide-xs beneficiarySaveData">
+					            <p class="center-xs">¡Operación exitosa!</p>
+					            <i class="fa fa-times alert-close"></i>
+					          </div>
+										<div class="alert alert-warning u-space hide-xs beneficiaryCancelData">
+					            <p class="alert_desc">Tus cambios han sido cancelados</p>
+					            <i class="fa fa-times alert-close"></i>
+					          </div>
+									</section>						
+								</td>
+
+					      <td class="table-2 center-sm" valign="middle">
+									<p class="table_desc f-big center-sm"><strong>${ dataValue[key] } %</strong></p>
+								</td>
+							</tr>
+						`;
+					}
+
+					else {
+						chartTemplate = `
 						<tr>
 				      <td bgcolor="${ dataBackgroundColor[key] }" width="10" class="hide-xs show-table-md"></td>
 				      <td class="table-4" valign="middle">
@@ -87,6 +192,8 @@
 							</td>
 						</tr>
 					`;
+					}
+					/*=====  End Contenido editable  ======*/
 
 				}
 				else {
@@ -104,6 +211,7 @@
 					`;
 
 				}
+
 
 				chartTable.append( chartTemplate );
 
@@ -170,3 +278,13 @@
 			});
 		}
 	}
+
+
+	/*================================================================
+	=            Chart Template editable                             =
+	================================================================*/
+	
+		$( '.infoMore' ).attr( 'style', 'display:block !important;' );		
+	
+	/*=====  Fin Chart Template editable   ======*/
+	
