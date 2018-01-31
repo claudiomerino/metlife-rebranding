@@ -30,7 +30,7 @@ items:
         edit: 'true'
 
   -
-    classSection: u-top
+    classSection:
     classSubtitle:
     subTitle: Información de mis Coberturas
     subItems:
@@ -72,7 +72,7 @@ items:
         edit: 'true'
 
   -
-    classSection: u-top
+    classSection:
     classSubtitle:
     subTitle: Datos del Corredor
     subItems:
