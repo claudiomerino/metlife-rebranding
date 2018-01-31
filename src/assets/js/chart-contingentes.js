@@ -5,6 +5,7 @@
 		let $tabsChartActiveBeneficiaries = $( '.tabs-chart-beneficiaries' );
 
 		let data = {
+
 			labels: [
 				"Esperanza del Carmen Risopatrón Goycochea",
 				"Maria Francisca Llanos Risopatrón",
@@ -12,33 +13,124 @@
 				"Maria Silva Lopez Llanos",
 				"martin"
 			],
-			relation: [
-				"Conyugue",
-				"Hija",
-				"Hijo",
-				"Nieta",
-				"nieta"
-			],
-			address: [
-				"Monseñor Escribá de Balaguer",
-				"Monseñor Escribá de Balaguer",
-				"Monseñor Escribá de Balaguer",
-				"Monseñor Escribá de Balaguer",
-				"Monseñor Escribá de Balaguer"
-			],
-			phone: [
-				"+56 966 554 644",
-				"+56 966 554 644",
-				"+56 966 554 644",
-				"+56 966 554 644",
-				"+56 966 554 644"
-			],
-			email: [
-				"daniel.llanos58@gmail.com",
-				"daniel.llanos58@gmail.com",
-				"daniel.llanos58@gmail.com",
-				"daniel.llanos58@gmail.com",
-				"daniel.llanos58@gmail.com"
+
+			fields: [
+				{
+					row: [
+						{
+							value: 'Esperanza del Carmen Risopatrón Goycochea'
+						},
+						{
+							label: 'Relación',
+							value: 'Conyugue'
+						},
+						{
+							label: 'Dirección',
+							value: 'Monseñor Escribá de Balaguer'
+						},
+						{
+							label: 'Teléfono',
+							value: '+56 966 554 644'
+						},
+						{
+							label: 'Email',
+							value: 'daniel.llanos58@gmail.com'
+						}
+					]
+				},
+				{
+					row: [
+						{
+							value: 'Maria Francisca Llanos Risopatrón'
+						},
+						{
+							label: 'Relación',
+							value: 'Hija'
+						},
+						{
+							label: 'Dirección',
+							value: 'Monseñor Escribá de Balaguer'
+						},
+						{
+							label: 'Teléfono',
+							value: '+56 966 554 644'
+						},
+						{
+							label: 'Email',
+							value: 'daniel.llanos58@gmail.com'
+						}
+					]
+				},
+				{
+					row: [
+						{
+							value: 'Felipe Martin Llanos Risopatrón'
+						},
+						{
+							label: 'Relación',
+							value: 'Hijo'
+						},
+						{
+							label: 'Dirección',
+							value: 'Monseñor Escribá de Balaguer'
+						},
+						{
+							label: 'Teléfono',
+							value: '+56 966 554 644'
+						},
+						{
+							label: 'Email',
+							value: 'daniel.llanos58@gmail.com'
+						}
+					]
+				},
+				{
+					row: [
+						{
+							value: 'Maria Silva Lopez Llanos'
+						},
+						{
+							label: 'Relación',
+							value: 'Nieta'
+						},
+						{
+							label: 'Dirección',
+							value: 'Monseñor Escribá de Balaguer'
+						},
+						{
+							label: 'Teléfono',
+							value: '+56 966 554 644'
+						},
+						{
+							label: 'Email',
+							value: 'daniel.llanos58@gmail.com'
+						}
+					]
+				},
+				{
+					row: [
+						{
+							value: 'Martin'
+						},
+						{
+							label: 'Relación',
+							value: 'Nieta'
+						},
+						{
+							label: 'Dirección',
+							value: 'Monseñor Escribá de Balaguer'
+						},
+						{
+							label: 'Teléfono',
+							value: '+56 966 554 644'
+						},
+						{
+							label: 'Email',
+							value: 'daniel.llanos58@gmail.com'
+						}
+					]
+				}
+
 			],
 	    datasets: [{
 				data: [

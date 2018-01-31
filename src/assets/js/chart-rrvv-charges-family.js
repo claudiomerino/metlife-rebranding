@@ -5,54 +5,172 @@ if( document.getElementById("chartRRVVChargesFamily") ) {
   let $tabsChartActiveRentsBeneficiaries = $( '.tabs-chart-rents-beneficiaries' );
 
   let dataRRVVChargesFamily = {
+    labelsEdit: true,
     labels: [
       "Esperanza del Carmen Risopatrón Goycochea",
       "Maria Francisca Llanos Risopatrón",
       "Felipe Martin Llanos Risopatrón",
       "Maria Silva Lopez Llanos"
     ],
-    relation: [
-      "Conyugue",
-      "Hija",
-      "Hijo",
-      "Nieta"
+
+    fields: [
+      {
+        row: [
+          {
+            type: 'text',
+            value: 'Esperanza del Carmen Risopatrón Goycochea'
+          },
+          {
+            type: 'text',
+            label: 'Relación',
+            value: 'Conyugue'
+          },
+          {
+            type: 'select',
+            label: 'Tipo de Carga',
+            value: 'Tipo de Carga'
+          },
+          {
+            type: 'text',
+            label: 'Estado',
+            value: 'Estado'
+          },
+          {
+            type: 'number',
+            label: 'Teléfono',
+            value: '+56 966 554 644'
+          },
+          {
+            type: 'text',
+            label: 'Dirección',
+            value: 'Monseñor Escribá de Balaguer'
+          },
+          {
+            type: 'text',
+            label: 'Correo Electrónico',
+            value: 'daniel.llanos58@gmail.com'
+          }
+        ]
+      },
+
+      {
+        row: [
+          {
+            type: 'text',
+            value: 'Esperanza del Carmen Risopatrón Goycochea'
+          },
+          {
+            type: 'text',
+            label: 'Relación',
+            value: 'Conyugue'
+          },
+          {
+            type: 'select',
+            label: 'Tipo de Carga',
+            value: 'Tipo de Carga'
+          },
+          {
+            type: 'text',
+            label: 'Estado',
+            value: 'Estado'
+          },
+          {
+            type: 'number',
+            label: 'Teléfono',
+            value: '+56 966 554 644'
+          },
+          {
+            type: 'text',
+            label: 'Dirección',
+            value: 'Monseñor Escribá de Balaguer'
+          },
+          {
+            type: 'text',
+            label: 'Correo Electrónico',
+            value: 'daniel.llanos58@gmail.com'
+          }
+        ]
+      },
+
+      {
+        row: [
+          {
+            type: 'text',
+            value: 'Esperanza del Carmen Risopatrón Goycochea'
+          },
+          {
+            type: 'text',
+            label: 'Relación',
+            value: 'Conyugue'
+          },
+          {
+            type: 'select',
+            label: 'Tipo de Carga',
+            value: 'Tipo de Carga'
+          },
+          {
+            type: 'text',
+            label: 'Estado',
+            value: 'Estado'
+          },
+          {
+            type: 'number',
+            label: 'Teléfono',
+            value: '+56 966 554 644'
+          },
+          {
+            type: 'text',
+            label: 'Dirección',
+            value: 'Monseñor Escribá de Balaguer'
+          },
+          {
+            type: 'text',
+            label: 'Correo Electrónico',
+            value: 'daniel.llanos58@gmail.com'
+          }
+        ]
+      },
+
+      {
+        row: [
+          {
+            type: 'text',
+            value: 'Esperanza del Carmen Risopatrón Goycochea'
+          },
+          {
+            type: 'text',
+            label: 'Relación',
+            value: 'Conyugue'
+          },
+          {
+            type: 'select',
+            label: 'Tipo de Carga',
+            value: 'Tipo de Carga'
+          },
+          {
+            type: 'text',
+            label: 'Estado',
+            value: 'Estado'
+          },
+          {
+            type: 'number',
+            label: 'Teléfono',
+            value: '+56 966 554 644'
+          },
+          {
+            type: 'text',
+            label: 'Dirección',
+            value: 'Monseñor Escribá de Balaguer'
+          },
+          {
+            type: 'text',
+            label: 'Correo Electrónico',
+            value: 'daniel.llanos58@gmail.com'
+          }
+        ]
+      }
     ],
-    address: [
-      "Monseñor Escribá de Balaguer",
-      "Monseñor Escribá de Balaguer",
-      "Monseñor Escribá de Balaguer",
-      "Monseñor Escribá de Balaguer"
-    ],
-    phone: [
-      "+56 966 554 644",
-      "+56 966 554 644",
-      "+56 966 554 644",
-      "+56 966 554 644"
-    ],
-    typeCharge: [
-      "Cargas",
-      "Cargas",
-      "Cargas",
-      "Cargas"
-    ],
-    nameCharge: [
-      "incognito",
-      "incognito",
-      "incognito",
-      "incognito"
-    ],
-    state: [
-      "Estado",
-      "Estado",
-      "Estado",
-      "Estado"
-    ],
-    email: [
-      "daniel.llanos58@gmail.com",
-      "daniel.llanos58@gmail.com",
-      "daniel.llanos58@gmail.com",
-      "daniel.llanos58@gmail.com"
-    ],
+    
     datasets: [{
       data: [
         25,
