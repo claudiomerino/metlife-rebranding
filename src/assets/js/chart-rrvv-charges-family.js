@@ -57,12 +57,12 @@ if( document.getElementById("chartRRVVChargesFamily") ) {
         row: [
           {
             type: 'text',
-            value: 'Esperanza del Carmen Risopatrón Goycochea'
+            value: 'Maria Francisca Llanos Risopatrón'
           },
           {
             type: 'text',
             label: 'Relación',
-            value: 'Conyugue'
+            value: 'Hija'
           },
           {
             type: 'select',
@@ -96,12 +96,12 @@ if( document.getElementById("chartRRVVChargesFamily") ) {
         row: [
           {
             type: 'text',
-            value: 'Esperanza del Carmen Risopatrón Goycochea'
+            value: 'Felipe Martin Llanos Risopatrón'
           },
           {
             type: 'text',
             label: 'Relación',
-            value: 'Conyugue'
+            value: 'Hijo'
           },
           {
             type: 'select',
@@ -135,12 +135,12 @@ if( document.getElementById("chartRRVVChargesFamily") ) {
         row: [
           {
             type: 'text',
-            value: 'Esperanza del Carmen Risopatrón Goycochea'
+            value: 'Maria Silva Lopez Llanos'
           },
           {
             type: 'text',
             label: 'Relación',
-            value: 'Conyugue'
+            value: 'Nieta'
           },
           {
             type: 'select',

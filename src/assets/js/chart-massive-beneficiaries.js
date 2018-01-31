@@ -117,12 +117,12 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 				row: [
 					{
 						type: 'text',
-						value: 'Esperanza del Carmen Risopatrón Goycochea'
+						value: 'Felipe Martin Llanos Risopatrón'
 					},
 					{
 						type: 'text',
 						label: 'Relación',
-						value: 'Conyugue'
+						value: 'Hijo'
 					},
 					{
 						type: 'number',
@@ -137,7 +137,7 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 					{
 						type: 'select',
 						label: 'Genero',
-						value: 'M'
+						value: 'F'
 					},
 					{
 						type: 'number',
@@ -166,12 +166,12 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 				row: [
 					{
 						type: 'text',
-						value: 'Esperanza del Carmen Risopatrón Goycochea'
+						value: 'Maria Silva Lopez Llanos'
 					},
 					{
 						type: 'text',
 						label: 'Relación',
-						value: 'Conyugue'
+						value: 'Nieta'
 					},
 					{
 						type: 'number',
@@ -186,7 +186,7 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 					{
 						type: 'select',
 						label: 'Genero',
-						value: 'M'
+						value: 'F'
 					},
 					{
 						type: 'number',
@@ -215,12 +215,12 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 				row: [
 					{
 						type: 'text',
-						value: 'Esperanza del Carmen Risopatrón Goycochea'
+						value: 'martin'
 					},
 					{
 						type: 'text',
 						label: 'Relación',
-						value: 'Conyugue'
+						value: 'Nieta'
 					},
 					{
 						type: 'number',
@@ -235,7 +235,7 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 					{
 						type: 'select',
 						label: 'Genero',
-						value: 'M'
+						value: 'F'
 					},
 					{
 						type: 'number',
