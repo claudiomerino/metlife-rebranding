@@ -3,12 +3,12 @@
 
 		<form action="" data-abide novalidate data-live-validate="true" class="UpdateDataForm">
 			{{#each tab-masivo-1.items}} 
-			<section class="u-space {{classSection}}">
+			<section class="{{classSection}}">
 				<p class="f-big tabs-subtitle-profile {{classSubtitle}}"><strong>{{subTitle}}</strong></p>
 				<div class="u-row u-row-xs-full">
 					{{#each subItems}}
 					<div class="tabs_col {{classCols}} col-xs-full u-space u-right">
-						<div class="clientProfileInitialData u-space">
+						<div class="clientProfileInitialData">
 							<p class="line_jump tabs_content_subtitle"><strong>{{label}}</strong></p>
 							<p class="line_jump">
 								{{#if link}}
@@ -67,7 +67,7 @@
 			    </button>
 			</div>
 
-			<div class="u-row end-xs gutter-xs middle-xs">
+			<div class="u-row end-xs gutter-xs middle-xs u-space">
 				<div class="col-xs-12 ClientProfileToggleHide">
 					<a class="button button-small button-full-xs" data-open="updateDataContact">Actualizar datos de Contacto</a>
 				</div>
