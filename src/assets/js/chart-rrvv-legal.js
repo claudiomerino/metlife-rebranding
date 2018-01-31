@@ -4,73 +4,252 @@ if( document.getElementById("chartRentsLegalBeneficiaries") ) {
   let $tableRentsLegalBeneficiaries = $( '#chartRentsLegalTable' );
   let $tabsChartActiveRentsBeneficiaries = $( '.tabs-chart-rents-beneficiaries' );
 
-  let dataRentsLegalBeneficiaries = {
+  let dataRentsLegalBeneficiaries = {    
+    labelsEdit: true,
     labels: [
       "Esperanza del Carmen Risopatrón Goycochea",
       "Maria Francisca Llanos Risopatrón",
       "Felipe Martin Llanos Risopatrón",
       "Maria Silva Lopez Llanos"
     ],
-    relation: [
-      "Conyugue",
-      "Hija",
-      "Hijo",
-      "Nieta"
+    fields: [
+      {
+        row: [
+          {
+            type: 'text',
+            value: 'Esperanza del Carmen Risopatrón Goycochea'
+          },
+          {
+            type: 'text',
+            label: 'Relación',
+            value: 'Conyugue'
+          },
+          {
+            type: 'number',
+            label: 'RUT',
+            value: '45984522-2'
+          },
+          {
+            type: 'date',
+            label: 'Fecha de Nacimiento',
+            value: '31/12/0000'
+          },
+          {
+            type: 'select',
+            label: 'Genero',
+            value: 'F'
+          },
+          {
+            type: 'number',
+            label: '% de Pensión',
+            value: '50'
+          },
+          {
+            type: 'text',
+            label: 'Estado de Invalidez',
+            value: 'Invalidez'
+          },
+          {
+            type: 'date',
+            label: 'Fecha de Vigencia',
+            value: '00/00/0000'
+          },
+          {
+            type: 'number',
+            label: 'Teléfono',
+            value: '+56 966 554 644'
+          },
+          {
+            type: 'text',
+            label: 'Dirección',
+            value: 'Monseñor Escribá de Balaguer'
+          },
+          {
+            type: 'text',
+            label: 'Correo electrónico',
+            value: 'daniel.llanos58@gmail.com'
+          }
+        ]
+      },
+
+      {
+        row: [
+          {
+            type: 'text',
+            value: 'Maria Francisca Llanos Risopatrón'
+          },
+          {
+            type: 'text',
+            label: 'Relación',
+            value: 'Hija'
+          },
+          {
+            type: 'number',
+            label: 'RUT',
+            value: '45984522-2'
+          },
+          {
+            type: 'date',
+            label: 'Fecha de Nacimiento',
+            value: '31/12/0000'
+          },
+          {
+            type: 'select',
+            label: 'Genero',
+            value: 'F'
+          },
+          {
+            type: 'number',
+            label: '% de Pensión',
+            value: '50'
+          },
+          {
+            type: 'text',
+            label: 'Estado de Invalidez',
+            value: 'Invalidez'
+          },
+          {
+            type: 'date',
+            label: 'Fecha de Vigencia',
+            value: '00/00/0000'
+          },
+          {
+            type: 'number',
+            label: 'Teléfono',
+            value: '+56 966 554 644'
+          },
+          {
+            type: 'text',
+            label: 'Dirección',
+            value: 'Monseñor Escribá de Balaguer'
+          },
+          {
+            type: 'text',
+            label: 'Correo electrónico',
+            value: 'daniel.llanos58@gmail.com'
+          }
+        ]
+      },
+
+      {
+        row: [
+          {
+            type: 'text',
+            value: 'Felipe Martin Llanos Risopatrón'
+          },
+          {
+            type: 'text',
+            label: 'Relación',
+            value: 'Hijo'
+          },
+          {
+            type: 'number',
+            label: 'RUT',
+            value: '45984522-2'
+          },
+          {
+            type: 'date',
+            label: 'Fecha de Nacimiento',
+            value: '31/12/0000'
+          },
+          {
+            type: 'select',
+            label: 'Genero',
+            value: 'M'
+          },
+          {
+            type: 'number',
+            label: '% de Pensión',
+            value: '50'
+          },
+          {
+            type: 'text',
+            label: 'Estado de Invalidez',
+            value: 'Invalidez'
+          },
+          {
+            type: 'date',
+            label: 'Fecha de Vigencia',
+            value: '00/00/0000'
+          },
+          {
+            type: 'number',
+            label: 'Teléfono',
+            value: '+56 966 554 644'
+          },
+          {
+            type: 'text',
+            label: 'Dirección',
+            value: 'Monseñor Escribá de Balaguer'
+          },
+          {
+            type: 'text',
+            label: 'Correo electrónico',
+            value: 'daniel.llanos58@gmail.com'
+          }
+        ]
+      },
+
+      {
+        row: [
+          {
+            type: 'text',
+            value: 'Maria Silva Lopez Llanos'
+          },
+          {
+            type: 'text',
+            label: 'Relación',
+            value: 'Nieta'
+          },
+          {
+            type: 'number',
+            label: 'RUT',
+            value: '45984522-2'
+          },
+          {
+            type: 'date',
+            label: 'Fecha de Nacimiento',
+            value: '31/12/0000'
+          },
+          {
+            type: 'select',
+            label: 'Genero',
+            value: 'F'
+          },
+          {
+            type: 'number',
+            label: '% de Pensión',
+            value: '50'
+          },
+          {
+            type: 'text',
+            label: 'Estado de Invalidez',
+            value: 'Invalidez'
+          },
+          {
+            type: 'date',
+            label: 'Fecha de Vigencia',
+            value: '00/00/0000'
+          },
+          {
+            type: 'number',
+            label: 'Teléfono',
+            value: '+56 966 554 644'
+          },
+          {
+            type: 'text',
+            label: 'Dirección',
+            value: 'Monseñor Escribá de Balaguer'
+          },
+          {
+            type: 'text',
+            label: 'Correo electrónico',
+            value: 'daniel.llanos58@gmail.com'
+          }
+        ]
+      }
     ],
-    rut: [
-      "45984522-2",
-      "45984522-2",
-      "45984522-2",
-      "45984522-2"
-    ],
-    birthdate: [
-      "00/00/0000",
-      "00/00/0000",
-      "00/00/0000",
-      "00/00/0000"
-    ],
-    gender: [
-      "Femenino",
-      "Femenino",
-      "Masculino",
-      "Femenino"
-    ],
-    pension: [
-      "50",
-      "50",
-      "50",
-      "50"
-    ],
-    invalidity: [
-      "Invalisssdez",
-      "Invalidez",
-      "Invalidez",
-      "Invalidez"
-    ],
-    validity: [
-      "00/00/0000",
-      "00/00/0000",
-      "00/00/0000",
-      "00/00/0000"
-    ],
-    address: [
-      "Monseñor Escribá de Balaguer",
-      "Monseñor Escribá de Balaguer",
-      "Monseñor Escribá de Balaguer",
-      "Monseñor Escribá de Balaguer"
-    ],
-    phone: [
-      "+56 966 554 644",
-      "+56 966 554 644",
-      "+56 966 554 644",
-      "+56 966 554 644"
-    ],
-    email: [
-      "daniel.llanos58@gmail.com",
-      "daniel.llanos58@gmail.com",
-      "daniel.llanos58@gmail.com",
-      "daniel.llanos58@gmail.com"
-    ],
+
     datasets: [{
       data: [
         25,

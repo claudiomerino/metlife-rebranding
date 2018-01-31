@@ -13,65 +13,255 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 			"Maria Silva Lopez Llanos",
 			"martin"
 		],
-		relation: [
-			"Conyugue",
-			"Hija",
-			"Hijo",
-			"Nieta",
-			"nieta"
+
+		fields: [
+			{
+				row: [
+					{
+						type: 'text',
+						value: 'Esperanza del Carmen Risopatrón Goycochea'
+					},
+					{
+						type: 'text',
+						label: 'Relación',
+						value: 'Conyugue'
+					},
+					{
+						type: 'number',
+						label: 'RUT',
+						value: '+56 966 554 644'
+					},
+					{
+						type: 'date',
+						label: 'Fecha de Nacimiento',
+						value: '31/12/0000'
+					},
+					{
+						type: 'select',
+						label: 'Genero',
+						value: 'M'
+					},
+					{
+						type: 'number',
+						label: '% de Asignación para Pago',
+						value: '50'
+					},
+					{
+						type: 'number',
+						label: 'Teléfono',
+						value: '50487478'
+					},
+					{
+						type: 'text',
+						label: 'Dirección',
+						value: 'Monseñor Escribá de Balaguer'
+					},
+					{
+						type: 'text',
+						label: 'Correo electrónico',
+						value: 'daniel.llanos58@gmail.com'
+					}
+				]
+			},
+			
+			{
+				row: [
+					{
+						type: 'text',
+						value: 'Maria Francisca Llanos Risopatrón'
+					},
+					{
+						type: 'text',
+						label: 'Relación',
+						value: 'Hija'
+					},
+					{
+						type: 'number',
+						label: 'RUT',
+						value: '+56 966 554 644'
+					},
+					{
+						type: 'date',
+						label: 'Fecha de Nacimiento',
+						value: '31/12/0000'
+					},
+					{
+						type: 'select',
+						label: 'Genero',
+						value: 'M'
+					},
+					{
+						type: 'number',
+						label: '% de Asignación para Pago',
+						value: '50'
+					},
+					{
+						type: 'number',
+						label: 'Teléfono',
+						value: '50487478'
+					},
+					{
+						type: 'text',
+						label: 'Dirección',
+						value: 'Monseñor Escribá de Balaguer'
+					},
+					{
+						type: 'text',
+						label: 'Correo electrónico',
+						value: 'daniel.llanos58@gmail.com'
+					}
+				]
+			},
+			
+			{
+				row: [
+					{
+						type: 'text',
+						value: 'Felipe Martin Llanos Risopatrón'
+					},
+					{
+						type: 'text',
+						label: 'Relación',
+						value: 'Hijo'
+					},
+					{
+						type: 'number',
+						label: 'RUT',
+						value: '+56 966 554 644'
+					},
+					{
+						type: 'date',
+						label: 'Fecha de Nacimiento',
+						value: '31/12/0000'
+					},
+					{
+						type: 'select',
+						label: 'Genero',
+						value: 'F'
+					},
+					{
+						type: 'number',
+						label: '% de Asignación para Pago',
+						value: '50'
+					},
+					{
+						type: 'number',
+						label: 'Teléfono',
+						value: '50487478'
+					},
+					{
+						type: 'text',
+						label: 'Dirección',
+						value: 'Monseñor Escribá de Balaguer'
+					},
+					{
+						type: 'text',
+						label: 'Correo electrónico',
+						value: 'daniel.llanos58@gmail.com'
+					}
+				]
+			},
+			
+			{
+				row: [
+					{
+						type: 'text',
+						value: 'Maria Silva Lopez Llanos'
+					},
+					{
+						type: 'text',
+						label: 'Relación',
+						value: 'Nieta'
+					},
+					{
+						type: 'number',
+						label: 'RUT',
+						value: '+56 966 554 644'
+					},
+					{
+						type: 'date',
+						label: 'Fecha de Nacimiento',
+						value: '31/12/0000'
+					},
+					{
+						type: 'select',
+						label: 'Genero',
+						value: 'F'
+					},
+					{
+						type: 'number',
+						label: '% de Asignación para Pago',
+						value: '50'
+					},
+					{
+						type: 'number',
+						label: 'Teléfono',
+						value: '50487478'
+					},
+					{
+						type: 'text',
+						label: 'Dirección',
+						value: 'Monseñor Escribá de Balaguer'
+					},
+					{
+						type: 'text',
+						label: 'Correo electrónico',
+						value: 'daniel.llanos58@gmail.com'
+					}
+				]
+			},
+
+			{
+				row: [
+					{
+						type: 'text',
+						value: 'martin'
+					},
+					{
+						type: 'text',
+						label: 'Relación',
+						value: 'Nieta'
+					},
+					{
+						type: 'number',
+						label: 'RUT',
+						value: '+56 966 554 644'
+					},
+					{
+						type: 'date',
+						label: 'Fecha de Nacimiento',
+						value: '31/12/0000'
+					},
+					{
+						type: 'select',
+						label: 'Genero',
+						value: 'F'
+					},
+					{
+						type: 'number',
+						label: '% de Asignación para Pago',
+						value: '50'
+					},
+					{
+						type: 'number',
+						label: 'Teléfono',
+						value: '50487478'
+					},
+					{
+						type: 'text',
+						label: 'Dirección',
+						value: 'Monseñor Escribá de Balaguer'
+					},
+					{
+						type: 'text',
+						label: 'Correo electrónico',
+						value: 'daniel.llanos58@gmail.com'
+					}
+				]
+			}
+
 		],
-		rut: [
-		  "45984522-2",
-		  "45984522-2",
-		  "45984522-2",
-		  "45984522-2"
-		],
-		birthdate: [
-		  "00/00/0000",
-		  "00/00/0000",
-		  "00/00/0000",
-		  "00/00/0000"
-		],
-		gender: [
-		  "Femenino",
-		  "Femenino",
-		  "Masculino",
-		  "Femenino"
-		],		
-		assignement: [
-		  "50",
-		  "50",
-		  "50",
-		  "50"
-		],
-		address: [
-			"Monseñor Escribá de Balaguer",
-			"Monseñor Escribá de Balaguer",
-			"Monseñor Escribá de Balaguer",
-			"Monseñor Escribá de Balaguer",
-			"Monseñor Escribá de Balaguer"
-		],
-		phone: [
-			"+56 966 554 644",
-			"+56 966 554 644",
-			"+56 966 554 644",
-			"+56 966 554 644",
-			"+56 966 554 644"
-		],
-		email: [
-			"daniel.llanos58@gmail.com",
-			"daniel.llanos58@gmail.com",
-			"daniel.llanos58@gmail.com",
-			"daniel.llanos58@gmail.com",
-			"daniel.llanos58@gmail.com"
-		],
-		changeData: [
-			"Cambiar datos",
-			"Cambiar datos",
-			"Cambiar datos",
-			"Cambiar datos",
-			"Cambiar datos"
-		],
+
     datasets: [{
 			data: [
 				30,

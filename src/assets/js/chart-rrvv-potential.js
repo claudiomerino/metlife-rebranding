@@ -5,6 +5,7 @@ if( document.getElementById("chartRentsPotentialBeneficiaries") ) {
   let $tabsChartActiveRentsPotentialBeneficiaries = $( '.tabs-chart-rents-beneficiaries' );
 
   let dataRentsPotentialBeneficiaries = {
+    rentsChargesFamilyLabelsEdit: true,
     labels: [
       "Esperanza del Carmen Risopatrón Goycochea",
       "Maria Francisca Llanos Risopatrón",
