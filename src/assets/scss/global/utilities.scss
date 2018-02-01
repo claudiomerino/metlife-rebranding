@@ -37,6 +37,10 @@
     margin: 0 auto;
   }
 
+  .mg-bottom-0 {
+    margin-bottom: 0;
+  }
+
   .mg-bottom-5 {
     margin-bottom: 5px;
   }
@@ -61,6 +65,13 @@
     height: 100%;
   }
 
+  .row-title-xs {
+    color: white;
+    background-color: #0090DA;
+    margin-bottom: 0;
+  }
+
+
 
 
   @media screen and (min-width: 62em) {
@@ -68,5 +79,9 @@
       .fieldsDistributionFunds {
         width: auto;
       }
+    }
+
+    .row-title-xs {
+      display: none !important;
     }
   }

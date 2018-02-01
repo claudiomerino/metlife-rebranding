@@ -27,18 +27,99 @@
         <div class="col-xs-12 col-sm-12 col-md-3 end-xs u-space-md">
           <a href="#" class="button button-small button-full-xs">Descargar Liquidación</a>
         </div>
-
+      </div>
         <!--==================================================================
         =            Tabla dentro del desplegable Mas información            =
         ===================================================================-->
-        <div class="col-xs-12 toggleContent" data-toggle-content="payDetail">
+      <div class="u-row">
+        <div class="col-xs-12 col-md-6 toggleContent" data-toggle-content="payDetail">
           <div class="table table-scroll center-xs col-xs-12 u-space">
-            
+            <table class="table-responsive u-striped">
+              <thead>
+                <tr>
+                  <th class="table-6">
+                    <p class="f-small table_title center-xs"><strong>Detalle de Haberes</strong></p>
+                  </th>
+                </tr>
+              </thead>
+
+              <p class="row-title-xs">Detalle de Haberes</p>
+
+              <tbody>
+                {{#each tab-rrvv-2.haberes}}
+                  {{#if detail-haberes}}
+                  <tr class="{{striped}}">
+                    <td class="table-3" align="center" valign="middle">
+                      <div class="u-row">
+                        <div class="col-xs-6">
+                          <p class="table_desc">{{detail-haberes}}</p>
+                        </div>
+
+                        <div class="col-xs-6 end-xs">
+                          <p class="mg-bottom-0">{{detail-haberes-number}}</p>
+                        </div>
+                      </div>                   
+                    </td>            
+                  </tr>
+                  {{/if}}                
+                {{/each}}
+
+                <tr>
+                  <td class="table-6" align="left" valign="middle">
+                    <p class="table_desc bg f-center" ><strong>Total Haberes:</strong><span> $ 555.435</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>          
-        <!--====  End of Tabla dentro del desplegable Mas información  ====-->
-        
+        </div>
+
+        <div class="col-xs-12 col-md-6 toggleContent" data-toggle-content="payDetail">
+          <div class="table table-scroll center-xs col-xs-12 u-space">
+            <table class="table-responsive u-striped">
+              <thead>
+                <tr>                  
+                  <th class="table-6">
+                    <p class="f-small table_title center-xs"><strong>Detalle de Descuentos</strong></p>
+                  </th>
+                </tr>         
+              </thead>
+
+              <p class="row-title-xs">Detalle de Descuentos</p>
+
+              <tbody>                
+                {{#each tab-rrvv-2.haberes}}
+                <tr class="{{striped}}">
+                  <td>
+                    <div class="u-row">
+                      <div class="col-xs-6">
+                        <p class="table_desc">{{detail-discount}}</p>
+                      </div>
+
+                      <div class="col-xs-6 end-xs">
+                        <p class="mg-bottom-0">{{detail-discount-number}}</p>
+                      </div>
+                    </div>
+                  </td>                         
+                </tr>                
+                {{/each}}
+                <tr>                 
+                  <td class="table-6" align="left" valign="middle">
+                    <p class="table_desc f-center"><strong>Total Descuentos:</strong><span> $ 205.665</span></p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table-6" align="left" valign="middle">
+                    <p class="table_desc f-center"><strong class="f-big">Líquido a Pagar:</strong><span><strong> $ 324.66</strong></span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>              
       </div>
+        <!--====  End of Tabla dentro del desplegable Mas información  ====-->
 
     </section>
 
