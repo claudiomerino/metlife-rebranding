@@ -5,42 +5,75 @@
 		let $tabsChartActiveColectivosBeneficiaries = $( '.tabs-chart-colectivos-beneficiaries' );
 
 		let dataColectivosBeneficiaries = {
+			labelsEdit: false,
 			labels: [
 				"Esperanza del Carmen Risopatrón Goycochea",
 				"Maria Francisca Llanos Risopatrón",
 				"Felipe Martin Llanos Risopatrón",
-				"Maria Silva Lopez Llanos"
+				"Maria Silva Lopez Llanos",
+				"martin"
 			],
-			relation: [
-				"Conyugue",
-				"Hija",
-				"Hijo",
-				"Nieta"
-			],
-			address: [
-				"Monseñor Escribá de Balaguer",
-				"Monseñor Escribá de Balaguer",
-				"Monseñor Escribá de Balaguer",
-				"Monseñor Escribá de Balaguer",
-				"Monseñor Escribá de Balaguer"
-			],
-			phone: [
-				"+56 966 554 644",
-				"+56 966 554 644",
-				"+56 966 554 644",
-				"+56 966 554 644",
-				"+56 966 554 644"
-			],
-			email: [
-				"daniel.llanos58@gmail.com",
-				"daniel.llanos58@gmail.com",
-				"daniel.llanos58@gmail.com",
-				"daniel.llanos58@gmail.com",
-				"daniel.llanos58@gmail.com"
+
+			fields: [
+				{
+					row: [
+						{
+							type: 'text',
+							value: 'Esperanza del Carmen Risopatrón Goycochea'
+						},
+						{
+							type: 'text',
+							label: 'Cobertura',
+							value: 'Fractura Accidental de Huesos'
+						},
+						{
+							type: 'number',
+							label: '% de Asignación para Pago',
+							value: '33%'
+						}
+					]
+				},
+
+				{
+					row: [
+						{
+							type: 'text',
+							value: 'Esperanza del Carmen Risopatrón Goycochea'
+						},
+						{
+							type: 'text',
+							label: 'Cobertura',
+							value: 'Fractura Accidental de Huesos'
+						},
+						{
+							type: 'number',
+							label: '% de Asignación para Pago',
+							value: '33%'
+						}
+					]
+				},
+
+				{
+					row: [
+						{
+							type: 'text',
+							value: 'Esperanza del Carmen Risopatrón Goycochea'
+						},
+						{
+							type: 'text',
+							label: 'Cobertura',
+							value: 'Fractura Accidental de Huesos'
+						},
+						{
+							type: 'number',
+							label: '% de Asignación para Pago',
+							value: '33%'
+						}
+					]
+				}
 			],
 	    datasets: [{
 				data: [
-					25,
 					25,
 					25,
 					25

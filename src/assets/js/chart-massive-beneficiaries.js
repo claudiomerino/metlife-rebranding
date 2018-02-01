@@ -2,10 +2,10 @@
 if( document.getElementById("chartMassiveBeneficiaries") ) {
 	let ctxMassiveBeneficiaries = document.getElementById("chartMassiveBeneficiaries");
 	let $tableMassiveBeneficiaries = $( '#chartMassiveTable' );
-	let $tabsChartActiveMassiveBeneficiaries = $( '.tabs-chart-massive-beneficiaries' ); 
+	let $tabsChartActiveMassiveBeneficiaries = $( '.tabs-chart-massive-beneficiaries' );
 
 	let dataMassiveBeneficiaries = {
-		labelsEdit: true,
+		labelsEdit: false,
 		labels: [
 			"Esperanza del Carmen Risopatrón Goycochea",
 			"Maria Francisca Llanos Risopatrón",
@@ -63,7 +63,7 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 					}
 				]
 			},
-			
+
 			{
 				row: [
 					{
@@ -112,7 +112,7 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 					}
 				]
 			},
-			
+
 			{
 				row: [
 					{
@@ -161,7 +161,7 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 					}
 				]
 			},
-			
+
 			{
 				row: [
 					{
