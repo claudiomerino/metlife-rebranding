@@ -2,7 +2,7 @@
 <div class="tabs_wrap u-space">
   <div class="client_wrap_container">
 
-    <p class="f-big tabs-subtitle-profile double_line u-top"><strong>Datos de la Última Liquidación de mi Pensión</strong></p> 
+    <p class="f-big tabs-subtitle-profile double_line u-top"><strong>Datos de la Última Liquidación de mi Pensión</strong></p>
     <section class="pay_line card card-pink z-depth-2 card_container u-space-2x">
 
       <div class="u-row">
@@ -31,94 +31,150 @@
         <!--==================================================================
         =            Tabla dentro del desplegable Mas información            =
         ===================================================================-->
-      <div class="u-row">
-        <div class="col-xs-12 col-md-6 toggleContent" data-toggle-content="payDetail">
-          <div class="table table-scroll center-xs col-xs-12 u-space">
-            <table class="table-responsive u-striped">
-              <thead>
-                <tr>
-                  <th class="table-6">
-                    <p class="f-small table_title center-xs"><strong>Detalle de Haberes</strong></p>
-                  </th>
-                </tr>
-              </thead>
+        <div class="toggleContent" data-toggle-content="payDetail">
+          <div class="u-row gutter-xs u-space">
+            <div class="col-xs-12 col-md-6">
+              <p class="table_title center-md bg-primary white pd-05-0625"><strong>Detalle de Haberes</strong></p>
+              {{#each tab-rrvv-2.haberes}}
+                <div class="u-row pd-10">
+                  <div class="col-xs-9">
+                    <p class="table_desc">{{detail-haberes}}</p>
+                  </div>
 
-              <p class="row-title-xs">Detalle de Haberes</p>
+                  <div class="col-xs-3 end-xs">
+                    <p class="mg-bottom-0">{{detail-haberes-number}}</p>
+                  </div>
+                </div>
+              {{/each}}
 
-              <tbody>
-                {{#each tab-rrvv-2.haberes}}
-                  {{#if detail-haberes}}
-                  <tr class="{{striped}}">
-                    <td class="table-3" align="center" valign="middle">
-                      <div class="u-row">
-                        <div class="col-xs-6">
-                          <p class="table_desc">{{detail-haberes}}</p>
-                        </div>
+                <div class="hide-md end-xs">
+                  <p><strong>Total Haberes:</strong><span> $ 555.435</span></p>
+                </div>
+            </div>
 
-                        <div class="col-xs-6 end-xs">
-                          <p class="mg-bottom-0">{{detail-haberes-number}}</p>
-                        </div>
-                      </div>                   
-                    </td>            
-                  </tr>
-                  {{/if}}                
-                {{/each}}
+            <div class="col-xs-12 col-md-6 u-striped">
+              <p class="table_title center-md bg-primary white pd-05-0625"><strong>Detalle de Descuentos</strong></p>
+              {{#each tab-rrvv-2.haberes}}
+                <div class="u-row pd-10 striped">
+                  <div class="col-xs-9">
+                    <p class="table_desc">{{detail-discount}}</p>
+                  </div>
 
-                <tr>
-                  <td class="table-6" align="left" valign="middle">
-                    <p class="table_desc bg f-center" ><strong>Total Haberes:</strong><span> $ 555.435</span></p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  <div class="col-xs-3 end-xs">
+                    <p class="mg-bottom-0">{{detail-discount-number}}</p>
+                  </div>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+
+          <div class="u-row gutter-xs end-xs">
+            <div class="col-xs-12 col-md-6 hide-xs show-md">
+              <p class="pd-0-10"><strong>Total Haberes:</strong><span> $ 555.435</span></p>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+              <p class="pd-0-10"><strong>Total Descuentos:</strong><span> $ 205.665</span></p>
+            </div>
+          </div>
+
+          <div class="u-row end-xs u-divider">
+            <div class="col-xs-12">
+              <p class="pd-top-right"><strong class="f-big ">Líquido a Pagar:</strong><span><strong> $ 324.66</strong></span></p>
+            </div>
           </div>
         </div>
 
-        <div class="col-xs-12 col-md-6 toggleContent" data-toggle-content="payDetail">
-          <div class="table table-scroll center-xs col-xs-12 u-space">
-            <table class="table-responsive u-striped">
-              <thead>
-                <tr>                  
-                  <th class="table-6">
-                    <p class="f-small table_title center-xs"><strong>Detalle de Descuentos</strong></p>
-                  </th>
-                </tr>         
-              </thead>
 
-              <p class="row-title-xs">Detalle de Descuentos</p>
 
-              <tbody>                
-                {{#each tab-rrvv-2.haberes}}
-                <tr class="{{striped}}">
-                  <td>
-                    <div class="u-row">
-                      <div class="col-xs-6">
-                        <p class="table_desc">{{detail-discount}}</p>
-                      </div>
+     <!--  <div class="u-row toggleContent gutter-md" data-toggle-content="payDetail">
+       <div class="col-xs-12 col-md-5">
+         <div class="table center-xs col-xs-12 u-space">
+           <table class="table-responsive u-striped">
+             <thead>
+               <tr>
+                 <th class="table-6">
+                   <p class="f-small table_title center-xs"><strong>Detalle de Haberes</strong></p>
+                 </th>
+               </tr>
+             </thead>
 
-                      <div class="col-xs-6 end-xs">
-                        <p class="mg-bottom-0">{{detail-discount-number}}</p>
-                      </div>
-                    </div>
-                  </td>                         
-                </tr>                
-                {{/each}}
-                <tr>                 
-                  <td class="table-6" align="left" valign="middle">
-                    <p class="table_desc f-center"><strong>Total Descuentos:</strong><span> $ 205.665</span></p>
-                  </td>
-                </tr>
+             <p class="row-title-xs">Detalle de Haberes</p>
 
-                <tr>
-                  <td class="table-6" align="left" valign="middle">
-                    <p class="table_desc f-center"><strong class="f-big">Líquido a Pagar:</strong><span><strong> $ 324.66</strong></span></p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>              
-      </div>
+             <tbody>
+               {{#each tab-rrvv-2.haberes}}
+                 {{#if detail-haberes}}
+                 <tr class="{{striped}}">
+                   <td class="table-3" align="center" valign="middle">
+                     <div class="u-row">
+                       <div class="col-xs-6">
+                         <p class="table_desc">{{detail-haberes}}</p>
+                       </div>
+
+                       <div class="col-xs-6 end-xs">
+                         <p class="mg-bottom-0">{{detail-haberes-number}}</p>
+                       </div>
+                     </div>
+                   </td>
+                 </tr>
+                 {{/if}}
+               {{/each}}
+
+               <tr>
+                 <td class="table-6" align="left" valign="middle">
+                   <p class="table_desc bg f-center" ><strong>Total Haberes:</strong><span> $ 555.435</span></p>
+                 </td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+       </div>
+
+       <div class="col-xs-12 col-md-5 end-xs">
+         <div class="table center-xs col-xs-12 u-space">
+           <table class="table-responsive u-striped">
+             <thead>
+               <tr>
+                 <th class="table-6">
+                   <p class="f-small table_title center-xs"><strong>Detalle de Descuentos</strong></p>
+                 </th>
+               </tr>
+             </thead>
+
+             <p class="row-title-xs">Detalle de Descuentos</p>
+
+             <tbody>
+               {{#each tab-rrvv-2.haberes}}
+               <tr class="{{striped}}">
+                 <td>
+                   <div class="u-row">
+                     <div class="col-xs-6">
+                       <p class="table_desc">{{detail-discount}}</p>
+                     </div>
+
+                     <div class="col-xs-6 end-xs">
+                       <p class="mg-bottom-0">{{detail-discount-number}}</p>
+                     </div>
+                   </div>
+                 </td>
+               </tr>
+               {{/each}}
+               <tr>
+                 <td class="table-6" align="left" valign="middle">
+                   <p class="table_desc f-center"><strong>Total Descuentos:</strong><span> $ 205.665</span></p>
+                 </td>
+               </tr>
+
+               <tr>
+                 <td class="table-6" align="left" valign="middle">
+                   <p class="table_desc f-center"><strong class="f-big">Líquido a Pagar:</strong><span><strong> $ 324.66</strong></span></p>
+                 </td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+       </div>
+     </div> -->
         <!--====  End of Tabla dentro del desplegable Mas información  ====-->
 
     </section>
@@ -126,7 +182,7 @@
     <section class="u-space">
       <p class="f-big tabs-subtitle-profile"><strong>Calendario de Pago de mi Pensión</strong></p>
       <div class="table table-scroll col-xs-12 col-md-8 mg-0-auto">
-        <table class="u-striped"> 
+        <table class="u-striped">
           <thead>
               <tr>
                 <th class="table-3">
@@ -138,7 +194,7 @@
               </tr>
           </thead>
           <tbody>
-            <tr class="{{striped}}"> 
+            <tr class="{{striped}}">
               <td class="table-3" valign="middle">
                 Enero 2017
               </td>
@@ -147,7 +203,7 @@
               </td>
             </tr>
 
-            <tr class="{{striped}}"> 
+            <tr class="{{striped}}">
               <td class="table-3" valign="middle">
                 Febrero 2017
               </td>
@@ -156,7 +212,7 @@
               </td>
             </tr>
 
-            <tr class="{{striped}}"> 
+            <tr class="{{striped}}">
               <td class="table-3" valign="middle">
                 Marzo 2017
               </td>
@@ -165,7 +221,7 @@
               </td>
             </tr>
 
-            <tr class="{{striped}}"> 
+            <tr class="{{striped}}">
               <td class="table-3" valign="middle">
                 Abril 2017
               </td>
@@ -174,7 +230,7 @@
               </td>
             </tr>
 
-            <tr class="{{striped}}"> 
+            <tr class="{{striped}}">
               <td class="table-3" valign="middle">
                 Mayo 2017
               </td>
@@ -183,7 +239,7 @@
               </td>
             </tr>
 
-            <tr class="{{striped}}"> 
+            <tr class="{{striped}}">
               <td class="table-3" valign="middle">
                 Junio 2017
               </td>
@@ -192,7 +248,7 @@
               </td>
             </tr>
 
-            <tr class="{{striped}}"> 
+            <tr class="{{striped}}">
               <td class="table-3" valign="middle">
                 Julio 2017
               </td>
@@ -201,7 +257,7 @@
               </td>
             </tr>
 
-            <tr class="{{striped}}"> 
+            <tr class="{{striped}}">
               <td class="table-3" valign="middle">
                 Agosto 2017
               </td>
@@ -210,7 +266,7 @@
               </td>
             </tr>
 
-            <tr class="{{striped}}"> 
+            <tr class="{{striped}}">
               <td class="table-3" valign="middle">
                 Septiembre 2017
               </td>
@@ -219,7 +275,7 @@
               </td>
             </tr>
 
-            <tr class="{{striped}}"> 
+            <tr class="{{striped}}">
               <td class="table-3" valign="middle">
                 Octubre 2017
               </td>
@@ -228,7 +284,7 @@
               </td>
             </tr>
 
-            <tr class="{{striped}}"> 
+            <tr class="{{striped}}">
               <td class="table-3" valign="middle">
                 Noviembre 2017
               </td>
@@ -237,7 +293,7 @@
               </td>
             </tr>
 
-            <tr class="{{striped}}"> 
+            <tr class="{{striped}}">
               <td class="table-3" valign="middle">
                 Diciembre 2017
               </td>

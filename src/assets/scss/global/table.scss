@@ -216,6 +216,19 @@
     }
   }
 
+
+	.striped {
+		&:nth-of-type( even ) {
+			background-color: white;
+		}
+
+		&:nth-of-type( odd ) {
+			background-color: $white-light;
+		}
+	}
+
+
+
 	@media screen and ( min-width: 48em ) {
 
 		.table-responsive {
