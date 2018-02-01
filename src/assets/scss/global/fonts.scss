@@ -148,6 +148,7 @@
   }
 
 
+
   @media screen and ( min-width: 48em ) {
 
   h5 {
@@ -157,4 +158,20 @@
 	h6 {
 		font-size: 16px;
 	}
+
+	.f-big-sm {
+		font-size: 18px;
+		line-height: 1.2;
+	}
+
 }
+
+
+
+	@media screen and ( min-width: 62em ) {
+
+		.f-big-sm {
+			font-size: 24px;
+			line-height: 1.2;
+		}
+	}

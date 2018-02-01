@@ -2,7 +2,7 @@
 <div class="tabs_wrap u-space">
   <div class="client_wrap_container">
 
-    <p class="f-big tabs-subtitle-profile double_line u-top"><strong>Datos de la Última Liquidación de mi Pensión</strong></p>
+    <p class="f-big tabs-subtitle-profile double_line u-top"><strong>Datos de la Última Liquidación de mi Pensión</strong></p> 
     <section class="pay_line card card-pink z-depth-2 card_container u-space-2x">
 
       <div class="u-row">
@@ -10,10 +10,12 @@
           <p class="line_jump table_title"><strong>Fecha de Pago:</strong></p>
           <p class="line_jump">26/06/2017</p>
         </div>
+
         <div class="col-xs-12 col-sm-6 col-md-3 u-space-small">
           <p class="line_jump table_title"><strong>Forma de Pago:</strong></p>
           <p class="line_jump">Depósito en cuenta</p>
         </div>
+
         <div class="col-xs-12 col-sm-6 col-md-3 u-space-small">
           <p class="line_jump table_title"><strong>Monto de la pensión:</strong></p>
           <p class="line_jump">UF 20.95 / $ 554.665</p>
@@ -21,82 +23,29 @@
             <span class="openContentText" data-rest-text="Más Información" data-open-text="Menos Información" data-close="true">Más Información</span> <i class="fa fa-angle-down" aria-hidden="true"></i>
           </a>
         </div>
+
         <div class="col-xs-12 col-sm-12 col-md-3 end-xs u-space-md">
           <a href="#" class="button button-small button-full-xs">Descargar Liquidación</a>
         </div>
+
+        <!--==================================================================
+        =            Tabla dentro del desplegable Mas información            =
+        ===================================================================-->
         <div class="col-xs-12 toggleContent" data-toggle-content="payDetail">
           <div class="table table-scroll center-xs col-xs-12 u-space">
-            <table class="table-responsive table-responsive-label u-striped u-striped-more">
-              <thead>
-                <tr>
-                  <th class="table-6">
-                    <p class="f-small table_title" style="text-align: center;"><strong>Detalle de Haberes</strong></p>
-                  </th>
-                  <th class="table-6">
-                    <p class="f-small table_title"><strong>Detalle de Descuentos</strong></p>
-                  </th>
-                </tr>
-              </thead>
-              <tbody> 
-                {{#each tab-rrvv-2.haberes}}
-                <tr class="{{striped}}">
-                  <td class="table-3" align="center" valign="middle" data-table-title="Período de Cobertura">
-                    <p class="table_desc">{{detail-haberes}}</p>
-                    <a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
-                      <span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
-                      <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </a>
-                  </td>
-
-                  <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
-                    <p class="table_desc">{{detail-haberes-number}}</p>
-                  </td>
-
-                  <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
-                    <p class="table_desc">{{detail-discount}}</p>
-                  </td>
-
-                  <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
-                    <p class="table_desc">{{detail-discount-number}}</p>
-                  </td>             
-                </tr>
-
-                <tr class="toggleContent" data-toggle-content="{{openContent}}">
-                  {{> tables-salud }} 
-                </tr>
-                {{/each}}
-
-                <tr>
-                  <td class="table-6 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
-                    <p class="table_desc bg f-center" ><strong>Total Haberes:</strong><span> $ 555.435</span></p>
-                  </td>
-
-                  <td class="table-6 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
-                    <p class="table_desc f-center"><strong>Total Descuentos:</strong><span> $ 205.665</span></p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="table-6 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
-                  </td>
-
-                  <td class="table-6 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
-                    <p class="table_desc f-center"><strong class="f-big">Líquido a Pagar:</strong><span><strong> $ 324.66</strong></span></p>
-                  </td>
-                </tr>
-
-              </tbody>
-            </table>
+            
           </div>
-        </div>
+        </div>          
+        <!--====  End of Tabla dentro del desplegable Mas información  ====-->
+        
       </div>
 
     </section>
 
     <section class="u-space">
       <p class="f-big tabs-subtitle-profile"><strong>Calendario de Pago de mi Pensión</strong></p>
-      <div class="table table-scroll col-xs-12 col-md-6 col-md-offset-3">
-        <table class="table-responsive u-striped u-striped-more"> 
+      <div class="table table-scroll col-xs-12 col-md-8 mg-0-auto">
+        <table class="u-striped"> 
           <thead>
               <tr>
                 <th class="table-3">
@@ -112,7 +61,7 @@
               <td class="table-3" valign="middle">
                 Enero 2017
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+              <td class="table-3" valign="middle" data-table-title="Total Dividendo">
                 <p class="table_desc">20 / 01 / 2017</p>
               </td>
             </tr>
@@ -121,7 +70,7 @@
               <td class="table-3" valign="middle">
                 Febrero 2017
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+              <td class="table-3" valign="middle" data-table-title="Total Dividendo">
                 <p class="table_desc">20 / 02 / 2017</p>
               </td>
             </tr>
@@ -130,7 +79,7 @@
               <td class="table-3" valign="middle">
                 Marzo 2017
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+              <td class="table-3" valign="middle" data-table-title="Total Dividendo">
                 <p class="table_desc">20 / 03 / 2017</p>
               </td>
             </tr>
@@ -139,7 +88,7 @@
               <td class="table-3" valign="middle">
                 Abril 2017
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+              <td class="table-3" valign="middle" data-table-title="Total Dividendo">
                 <p class="table_desc">20 / 04 / 2017</p>
               </td>
             </tr>
@@ -148,7 +97,7 @@
               <td class="table-3" valign="middle">
                 Mayo 2017
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+              <td class="table-3" valign="middle" data-table-title="Total Dividendo">
                 <p class="table_desc">20 / 05 / 2017</p>
               </td>
             </tr>
@@ -157,7 +106,7 @@
               <td class="table-3" valign="middle">
                 Junio 2017
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+              <td class="table-3" valign="middle" data-table-title="Total Dividendo">
                 <p class="table_desc">20 / 06 / 2017</p>
               </td>
             </tr>
@@ -166,7 +115,7 @@
               <td class="table-3" valign="middle">
                 Julio 2017
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+              <td class="table-3" valign="middle" data-table-title="Total Dividendo">
                 <p class="table_desc">20 / 07 / 2017</p>
               </td>
             </tr>
@@ -175,7 +124,7 @@
               <td class="table-3" valign="middle">
                 Agosto 2017
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+              <td class="table-3" valign="middle" data-table-title="Total Dividendo">
                 <p class="table_desc">20 / 08 / 2017</p>
               </td>
             </tr>
@@ -184,7 +133,7 @@
               <td class="table-3" valign="middle">
                 Septiembre 2017
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+              <td class="table-3" valign="middle" data-table-title="Total Dividendo">
                 <p class="table_desc">20 / 09 / 2017</p>
               </td>
             </tr>
@@ -193,7 +142,7 @@
               <td class="table-3" valign="middle">
                 Octubre 2017
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+              <td class="table-3" valign="middle" data-table-title="Total Dividendo">
                 <p class="table_desc">20 / 10 / 2017</p>
               </td>
             </tr>
@@ -202,7 +151,7 @@
               <td class="table-3" valign="middle">
                 Noviembre 2017
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+              <td class="table-3" valign="middle" data-table-title="Total Dividendo">
                 <p class="table_desc">20 / 11 / 2017</p>
               </td>
             </tr>
@@ -211,7 +160,7 @@
               <td class="table-3" valign="middle">
                 Diciembre 2017
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" valign="middle" data-table-title="Total Dividendo">
+              <td class="table-3" valign="middle" data-table-title="Total Dividendo">
                 <p class="table_desc">20 / 12 / 2017</p>
               </td>
             </tr>
@@ -309,14 +258,14 @@
       <div class="col-md-12 align-middle">
         <div class="u-row z-depth-2">
           <div class="products_col col-xs-12 col-sm-3">
-            <figure>
+            <figure class="height-100">
               <img src="{{root}}assets/img/products_banner_pago-dividendo.jpg" data-fit-type class="objFit products_img">
             </figure>
           </div>
 
           <div class="u-row products_col col-xs-12 col-sm-9 card_container middle-xs">
             <div class="col-sm-8">
-              <h4>
+              <h4 class="f-big-sm">
                 ¿Necesitas cambiar la forma de recibir el pago de tu pensión?
               </h4>
               <p class="f-small u-top">

@@ -80,7 +80,7 @@
 								</a>
 
 
-								<section class="toggleContent infoMore mg-top-30" data-toggle-content="openChartMoreInfo-${UID}-${key}">
+								<section class="toggleContent infoMore mg-top-15" data-toggle-content="openChartMoreInfo-${UID}-${key}">
 									
 
 	    				    ${dataLabelText.row.map( ( field, key ) => 
@@ -88,7 +88,7 @@
 											${ key > 1 ? 
 
 												`${ field.type == 'text' ? 
-													` <div class="u-space beneficiaryInitialData">
+													` <div class="beneficiaryInitialData">
 															<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>													
 														</div>
 
@@ -111,7 +111,7 @@
 											${ key > 1 ? 
 
 												`${ field.type == 'number' ? 
-													` <div class="u-space beneficiaryInitialData">
+													` <div class="beneficiaryInitialData">
 															<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>													
 														</div>
 
@@ -133,7 +133,7 @@
 											${ key > 1 ? 
 
 												`${ field.type == 'date' ? 
-													`	<div class="line_jump u-space beneficiaryInitialData">
+													`	<div class="line_jump beneficiaryInitialData">
 															<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>												
 														</div>
 
@@ -153,7 +153,7 @@
 											${ key > 1 ? 
 
 												`${ field.type == 'select' ? 
-													`	<div class="beneficiaryInitialData u-space">
+													`	<div class="beneficiaryInitialData">
 															<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>					
 														</div>
 
@@ -163,7 +163,7 @@
 																<option value="" selected>Masculino</option>
 																<option value="Femenino">Femenino</option>
 															</select>
-														</section>
+														</section> 
 													`
 													: ''
 												}`
@@ -174,7 +174,7 @@
 	    			     ).join('')}
 
 
-									<div class="u-space-md beneficiaryUpdateData">
+									<div class="u-space-md beneficiaryUpdateData mg-top-15">
 									  <a class="button button-small button-full-xs buttonBeneficiaryUpdateData">Cambiar Datos</a>
 									</div>
 
