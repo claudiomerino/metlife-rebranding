@@ -4,8 +4,8 @@ if( document.getElementById("chartRentsLegalBeneficiaries") ) {
   let $tableRentsLegalBeneficiaries = $( '#chartRentsLegalTable' );
   let $tabsChartActiveRentsBeneficiaries = $( '.tabs-chart-rents-beneficiaries' );
 
-  let dataRentsLegalBeneficiaries = {    
-    labelsEdit: true,
+  let dataRentsLegalBeneficiaries = {
+    labelsEdit: false,
     labels: [
       "Esperanza del Carmen Risopatrón Goycochea",
       "Maria Francisca Llanos Risopatrón",

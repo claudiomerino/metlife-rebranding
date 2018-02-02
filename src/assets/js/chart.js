@@ -39,10 +39,10 @@
 				let UID = chartTable.attr('id')
 				let chartTemplate;
 
+
 				/*=============================================
 				=            Contenido editable               =
 				=============================================*/
-
 				if( dataLabelsEdit ) {
 
 					chartTemplate = `
@@ -50,17 +50,17 @@
 				      <td bgcolor="${ dataBackgroundColor[key] }" width="10" class="hide-xs show-table-md"></td>
 				      <td class="table-4 containerDataEdit" valign="middle">
 
-    				    ${dataLabelText.row.map( ( field, key ) => 
+    				    ${dataLabelText.row.map( ( field, key ) =>
     	            `
-										${ key < 2 ? 
+										${ key < 2 ?
 
-											`${ field.type == 'text' ? 
-												`	<div class="beneficiaryInitialData">												
+											`${ field.type == 'text' ?
+												`	<div class="beneficiaryInitialData">
 														<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>
 													</div>
 													<section class="u-field u-space clientProfileEdit hide-state-update">
 														<span class="input input--ichiro">
-															<input class="input__field input__field--ichiro beneficiaryValidateInput" data-live-validate="true" value="${ field.value }" min="5" type="text" id="clientName" required>										
+															<input class="input__field input__field--ichiro beneficiaryValidateInput" data-live-validate="true" value="${ field.value }" min="5" type="text" id="clientName" required>
 															<p class="form-error f-tiny line_jump">Este campo es requerido.</p>
 														</span>
 													</section>
@@ -81,15 +81,15 @@
 
 
 								<section class="toggleContent infoMore mg-top-15" data-toggle-content="openChartMoreInfo-${UID}-${key}">
-									
 
-	    				    ${dataLabelText.row.map( ( field, key ) => 
+
+	    				    ${dataLabelText.row.map( ( field, key ) =>
 	    	            `
-											${ key > 1 ? 
+											${ key > 1 ?
 
-												`${ field.type == 'text' ? 
+												`${ field.type == 'text' ?
 													` <div class="beneficiaryInitialData">
-															<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>													
+															<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>
 														</div>
 
 														<section class="u-field clientProfileEdit hide-state-update u-space">
@@ -100,7 +100,7 @@
 																</label>
 																<p class="form-error f-tiny line_jump">Este campo es requerido.</p>
 															</span>
-														</section>													
+														</section>
 													`
 													: ''
 												}`
@@ -108,11 +108,11 @@
 											: '' }
 
 
-											${ key > 1 ? 
+											${ key > 1 ?
 
-												`${ field.type == 'number' ? 
+												`${ field.type == 'number' ?
 													` <div class="beneficiaryInitialData">
-															<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>													
+															<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>
 														</div>
 
 														<section class="u-field clientProfileEdit hide-state-update u-space">
@@ -123,18 +123,18 @@
 																</label>
 																<p class="form-error f-tiny line_jump">Este campo es requerido.</p>
 															</span>
-														</section>													
+														</section>
 													`
 													: ''
 												}`
 
 											: '' }
 
-											${ key > 1 ? 
+											${ key > 1 ?
 
-												`${ field.type == 'date' ? 
+												`${ field.type == 'date' ?
 													`	<div class="line_jump beneficiaryInitialData">
-															<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>												
+															<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>
 														</div>
 
 														<section class="u-field u-space clientProfileEdit hide-state-update label_select">
@@ -150,11 +150,11 @@
 
 											: '' }
 
-											${ key > 1 ? 
+											${ key > 1 ?
 
-												`${ field.type == 'select' ? 
+												`${ field.type == 'select' ?
 													`	<div class="beneficiaryInitialData">
-															<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>					
+															<p class="line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>
 														</div>
 
 														<section class="u-select u-field clientProfileEdit hide-state-update label_select u-select_labels u-space">
@@ -163,12 +163,12 @@
 																<option value="" selected>Masculino</option>
 																<option value="Femenino">Femenino</option>
 															</select>
-														</section> 
+														</section>
 													`
 													: ''
 												}`
 
-											: '' }					
+											: '' }
 	    	            `
 
 	    			     ).join('')}
@@ -191,7 +191,7 @@
 				            <p class="alert_desc">Tus cambios han sido cancelados</p>
 				            <i class="fa fa-times alert-close"></i>
 				          </div>
-								</section>						
+								</section>
 							</td>
 
 				      <td class="table-2 center-sm" valign="middle">
@@ -203,6 +203,7 @@
 					$( '.infoMore' ).attr( 'style', 'display:block !important;' );
 
 				} /*=====  /if  ======*/
+				/*=====  Fin Contenido editable  ======*/
 
 
 
@@ -215,11 +216,11 @@
 			      <td bgcolor="${ dataBackgroundColor[key] }" width="10" class="hide-xs show-table-md"></td>
 			      <td class="table-4" valign="middle">
 
-  				    ${dataLabelText.row.map( ( field, key ) => 
+  				    ${dataLabelText.row.map( ( field, key ) =>
   	            `
-									${ key < 2 ? 
-										`	<p class="table_label_title line_jump">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>`
-										: '' 
+									${ key < 2 ?
+										`	<p class="table_label_title">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>`
+										: ''
 									}
   	            `
   			     ).join('')}
@@ -229,11 +230,11 @@
 								<i class="fa fa-angle-down" aria-hidden="true"></i>
 							</a>
 							<section class="toggleContent" data-toggle-content="openChartMoreInfo-${UID}-${key}">
-	    				    ${dataLabelText.row.map( ( field, key ) => 
+	    				    ${dataLabelText.row.map( ( field, key ) =>
 	    	            `
-											${ key > 1 ? 
+											${ key > 1 ?
 												`	<p class="table_label_title">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>`
-												: '' 
+												: ''
 											}
 	    	            `
 	    			     ).join('')}
@@ -248,9 +249,7 @@
 				chartTable.append( chartTemplate );
 
 			}); /*=====  /each  ======*/
-
-
-			/*=====  End Contenido editable  ======*/
+			/*=====  Fin Contenido NO editable  ======*/
 
 		}
 

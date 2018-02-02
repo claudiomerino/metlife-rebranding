@@ -5,7 +5,7 @@ if( document.getElementById("chartRRVVChargesFamily") ) {
   let $tabsChartActiveRentsBeneficiaries = $( '.tabs-chart-rents-beneficiaries' );
 
   let dataRRVVChargesFamily = {
-    labelsEdit: true,
+    labelsEdit: false,
     labels: [
       "Esperanza del Carmen Risopatrón Goycochea",
       "Maria Francisca Llanos Risopatrón",
@@ -170,7 +170,7 @@ if( document.getElementById("chartRRVVChargesFamily") ) {
         ]
       }
     ],
-    
+
     datasets: [{
       data: [
         25,
