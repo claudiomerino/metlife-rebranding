@@ -1,0 +1,140 @@
+
+<!--===================================
+=            Beneficiarios            =
+====================================-->
+
+<section>
+	{{#each edit-beneficiary.test}}
+  <div class="u-row gutter-xs middle-xs u-space">
+    <div class="col-xs-12 col-md-3">
+      <span class="input input--ichiro">
+        <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="clientName" required>
+        <label class="input__label input__label--ichiro" for="clientName">
+          <span class="input__label-content input__label-content--ichiro"><strong>{{label}}</strong></span>
+        </label>
+        <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+      </span>
+    </div>
+
+    <div class="col-xs-12 col-md-3">
+      <span class="input input--ichiro">
+        <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="clientName" required>
+        <label class="input__label input__label--ichiro" for="clientName">
+          <span class="input__label-content input__label-content--ichiro"><strong>Apellido Paterno</strong></span>
+        </label>
+        <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+      </span>
+    </div>
+
+    <div class="col-xs-12 col-md-3">
+      <span class="input input--ichiro">
+        <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="clientName" required>
+        <label class="input__label input__label--ichiro" for="clientName">
+          <span class="input__label-content input__label-content--ichiro"><strong>Apellido Materno</strong></span>
+        </label>
+        <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+      </span>
+    </div>
+
+    <div class="col-xs-12 col-md-2">
+      <a href="#">Eliminar Beneficiario</a>
+    </div>
+
+    <div class="col-xs-12 col-md-1">
+      <span class="input input--ichiro">
+        <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="clientName" required>
+        <label class="input__label input__label--ichiro" for="clientName">
+          <span class="input__label-content input__label-content--ichiro"><strong>Asignación</strong></span>
+        </label>
+        <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="col-xs-12 u-space">
+    <a href="" class="f-link openContent" data-open-content="more-data-beneficiary">
+      <span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
+      <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </a>
+  </div>
+  <section class="toggleContent no-padding-bottom" data-toggle-content="more-data-beneficiary">
+
+    <div class="u-row gutter-xs bottom-xs">
+      <div class="col-xs-12 col-md-3 u-space">
+        <span class="input input--ichiro">
+          <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="clientName" required>
+          <label class="input__label input__label--ichiro" for="clientName">
+            <span class="input__label-content input__label-content--ichiro"><strong>RUT:</strong></span>
+          </label>
+          <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+        </span>
+      </div>
+
+      <div class="col-xs-12 col-md-3 u-space">
+        <section class="u-select u-field clientProfileEdit label_select u-select_labels">
+          <p class="title_label_select"><strong>Genero:</strong></p>
+          <select class="cs-select cs-skin-border GeneralSelect items_select_box">
+            <option value="" selected>Masculino</option>
+            <option value="Femenino">Femenino</option>
+          </select>
+        </section>
+      </div>
+
+      <div class="col-xs-12 col-md-3 u-space">
+        <span class="input input--ichiro">
+          <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="clientName" required>
+          <label class="input__label input__label--ichiro" for="clientName">
+            <span class="input__label-content input__label-content--ichiro"><strong>Teléfono:</strong></span>
+          </label>
+          <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+        </span>
+      </div>
+
+      <div class="col-xs-12 col-md-3 u-space">
+        <span class="input input--ichiro">
+          <input class="input__field input__field--ichiro" data-live-validate="true" value="Monseñor Escribá de Balaguer 14.554" type="text" id="clientAddress" required>
+          <label class="input__label input__label--ichiro" for="clientAddress">
+            <span class="input__label-content input__label-content--ichiro"><strong>Correo electrónico:</strong></span>
+          </label>
+          <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+        </span>
+      </div>
+    </div>
+
+    <div class="u-row gutter-xs">
+      <div class="col-xs-12 col-md-3">
+        <section class="u-select u-field clientProfileEdit label_select u-select_labels u-space">
+          <p class="title_label_select"><strong>Región:</strong></p>
+          <select class="cs-select cs-skin-border GeneralSelect items_select_box">
+            <option value="" selected>Masculino</option>
+            <option value="Femenino">Femenino</option>
+          </select>
+        </section>
+      </div>
+
+      <div class="col-xs-12 col-md-3">
+        <section class="u-select u-field clientProfileEdit label_select u-select_labels u-space">
+          <p class="title_label_select"><strong>Comuna:</strong></p>
+          <select class="cs-select cs-skin-border GeneralSelect items_select_box">
+            <option value="" selected>Masculino</option>
+            <option value="Femenino">Femenino</option>
+          </select>
+        </section>
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+        <span class="input input--ichiro">
+          <input class="input__field input__field--ichiro" data-live-validate="true" value="Monseñor Escribá de Balaguer 14.554" type="text" id="clientAddress" required>
+          <label class="input__label input__label--ichiro" for="clientAddress">
+            <span class="input__label-content input__label-content--ichiro"><strong>Dirección:</strong></span>
+          </label>
+          <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+        </span>
+      </div>
+    </div>
+  </section>
+  {{/each}}
+</section>
+
+<!--====  End of Beneficiarios  ====-->

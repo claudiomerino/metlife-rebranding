@@ -1,0 +1,40 @@
+
+{{> nav-off-canvas}}
+
+<div class="off-canvas-content" data-off-canvas-content>
+
+  <div class="double-nav_sticky" data-sticky-container>
+    <div class="sticky z-depth-1" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+      {{> nav-sub}}
+      {{> nav-main}}
+    </div>
+  </div>
+
+  <section class="client-profile bg-white-light">
+    <div class="client-profile_container u-container">
+
+      <div class="breadcrumb life-apv_breadcrumb">
+        <ul class="u-row middle-xs">
+          <li>
+            <p class="f-tiny">Asegurados Dependientes</p>
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="client-profile_title center-xs">Solicitud Edición de Beneficiarios</h2>
+      <p class="center-xs u-space"><strong>Metlife Seguro Dotal.</strong> Póliza N°: 0056705543-A</p>
+
+      <div class="tabs_wrap u-space">
+        <div class="client_wrap_container">
+          <p class="u-space"><strong>Ten presente que:</strong> Vista por defecto al ingresar a solicitud de edición de beneficiarios</p>
+          {{> solicitud-edicion-beneficiarios }}
+        </div>
+      </div>
+
+
+      <div class="client-profile_info u-section f-legal">
+        {{> legal }}
+      </div>
+    </div>
+  </section>
+</div>
