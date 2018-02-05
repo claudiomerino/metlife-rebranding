@@ -42,8 +42,8 @@ historic:
     desc: Febrero 2017
     restText: Más información
     openText: Menos información
-    dataExpiration: 05/02/2017
-    dataPay: PAC
+    dataExpiration: UF 2,35 / $55.558
+    dataPay: UF 2,35 / $55.558
     total: UF 2,35 / $55.558
     striped: u-striped-gray
   -
@@ -51,8 +51,8 @@ historic:
     desc: Enero 2017
     restText: Más información
     openText: Menos información
-    dataExpiration: 05/01/2017
-    dataPay: PAC
+    dataExpiration: UF 2,35 / $55.558
+    dataPay: UF 2,35 / $55.558
     total: UF 2,35 / $55.556
     striped:
   -
@@ -60,8 +60,8 @@ historic:
     desc: Diciembre 2016
     restText: Más información
     openText: Menos información
-    dataExpiration: 05/12/2016
-    dataPay: PAC
+    dataExpiration: UF 2,35 / $55.558
+    dataPay: UF 2,35 / $55.558
     total: UF 2,35 / $55.556
     striped: u-striped-gray
     link: '#'
@@ -70,8 +70,8 @@ historic:
     desc: Noviembre 2016
     restText: Más información
     openText: Menos información
-    dataExpiration: 05/11/2016
-    dataPay: PAC
+    dataExpiration: UF 2,35 / $55.558
+    dataPay: UF 2,35 / $55.558
     total: UF 2,35 / $55.556
     striped:
   -
@@ -79,8 +79,8 @@ historic:
     desc: Octubre 2016
     restText: Más información
     openText: Menos información
-    dataExpiration: 05/10/2016
-    dataPay: PAC
+    dataExpiration: UF 2,35 / $55.558
+    dataPay: UF 2,35 / $55.558
     total: UF 2,35 / $55.556
     striped: u-striped-gray
   -
@@ -88,8 +88,8 @@ historic:
     desc: Spetiembre 2016
     restText: Más información
     openText: Menos información
-    dataExpiration: 05/09/2016
-    dataPay: PAC
+    dataExpiration: UF 2,35 / $55.558
+    dataPay: UF 2,35 / $55.558
     total: UF 2,35 / $55.556
     striped:
   -
@@ -97,8 +97,8 @@ historic:
     desc: Agosto 2016
     restText: Más información
     openText: Menos información
-    dataExpiration: 05/08/2016
-    dataPay: PAC
+    dataExpiration: UF 2,35 / $55.558
+    dataPay: UF 2,35 / $55.558
     total: UF 2,35 / $55.556
     striped: u-striped-gray
   -
@@ -106,8 +106,8 @@ historic:
     desc: Julio 2016
     restText: Más información
     openText: Menos información
-    dataExpiration: 05/07/2016
-    dataPay: PAC
+    dataExpiration: UF 2,35 / $55.558
+    dataPay: UF 2,35 / $55.558
     total: UF 2,35 / $55.556
     striped:
   -
@@ -115,8 +115,8 @@ historic:
     desc: Junio 2016
     restText: Más información
     openText: Menos información
-    dataExpiration: 05/06/2016
-    dataPay: PAC
+    dataExpiration: UF 2,35 / $55.558
+    dataPay: UF 2,35 / $55.558
     total: UF 2,35 / $55.556
     striped: u-striped-gray
   -
@@ -124,7 +124,7 @@ historic:
     desc: Mayo 2016
     restText: Más información
     openText: Menos información
-    dataExpiration: 05/05/2016
-    dataPay: PAC
+    dataExpiration: UF 2,35 / $55.558
+    dataPay: UF 2,35 / $55.558
     total: UF 2,35 / $55.556
     striped:
