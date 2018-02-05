@@ -233,14 +233,17 @@
               <th class="table-3">
                 <p class="f-small table_title"><strong>Fecha de Pago</strong></p>
               </th>
-              <th class="table-3">
+              <th class="table-2">
                 <p class="f-small table_title"><strong>Total de Ingresos</strong></p>
               </th>
-              <th class="table-3">
+              <th class="table-2">
                 <p class="f-small table_title"><strong>Total de Descuentos</strong></p>
+              </th> 
+              <th class="table-2">
+                <p class="f-small table_title"><strong>Líquido a Pagar</strong></p>
               </th>
               <th class="table-3">
-                <p class="f-small table_title"><strong>Líquido a Pagar</strong></p>
+                <p class="f-small table_title"><strong></strong></p>
               </th>
             </tr>
           </thead>
@@ -254,14 +257,17 @@
                   <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </a>
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
+              <td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
                 <p class="table_desc">{{dataExpiration}}</p>
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
+              <td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
                 <p class="table_desc">{{#if link}}<a href="{{link}}">{{/if}}{{dataPay}}{{#if link}}</a>{{/if}}</p>
               </td>
-              <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
+              <td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
                 <p class="table_desc">{{total}}</p>
+              </td>
+              <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Descarga">
+                <p class="table_desc"><a href="#">Descargar Liquidación</a></p>
               </td>
             </tr>
 
