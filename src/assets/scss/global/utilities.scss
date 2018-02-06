@@ -98,6 +98,37 @@
     }
   }
 
+  .tag-beneficiary-container {
+    .tag-beneficiary {
+      &:nth-child(15n+1),
+      &:nth-child(15n+2),
+      &:nth-child(15n+3),
+      &:nth-child(15n+4) {
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+  .tag-beneficiary-container {
+    .tag-beneficiary {
+      &:nth-child(15n+1) {
+        border-left: 8px solid #0A3C6E;
+      }
+      &:nth-child(15n+2) {
+        border-left: 8px solid #E57339;
+      }
+      &:nth-child(15n+3) {
+        border-left: 8px solid #896EB3;
+      }
+      &:nth-child(15n+4) {
+        border-left: 8px solid #348C6F;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
 
 
   @media screen and (min-width: 62em) {
