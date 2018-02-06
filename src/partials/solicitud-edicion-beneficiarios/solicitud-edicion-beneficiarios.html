@@ -4,11 +4,11 @@
 ====================================-->
 	<div class="tag-beneficiary-container">
 {{#each edit-beneficiary.test}}
-		<section class="tag-beneficiary">
+		<section class="tag-beneficiary tagBeneficiary">
 		  <div class="u-row gutter-md-edit middle-xs">
 		    <div class="col-xs-12 col-md-3 mg-bottom-xs-30 mg-bottom-md-15">
 		      <span class="input input--ichiro">
-		        <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="name-{{@index}}" required>
+		        <input class="input__field input__field--ichiro" data-live-validate="true" value="{{name}}" min="5" type="text" id="name-{{@index}}" required>
 		        <label class="input__label input__label--ichiro" for="name-{{@index}}">
 		          <span class="input__label-content input__label-content--ichiro"><strong>Nombre</strong></span>
 		        </label>
@@ -37,7 +37,7 @@
 		    </div>
 
 		    <div class="col-xs-12 col-md-2 mg-bottom-xs-30 mg-bottom-md-15">
-		      <a href="#">Eliminar Beneficiario</a>
+		      <a href="#" class="deleteBeneficiary">Eliminar Beneficiario</a>
 		    </div>
 
 		    <div class="col-xs-12 col-md-1 mg-bottom-xs-15 mg-bottom-md-15">

@@ -135,6 +135,7 @@
         padding-left: 15px;
         padding-top: 30px;
         padding-bottom: 15px;
+        border-top: 1px solid $gray;
       }
     }
   }
@@ -143,16 +144,12 @@
     .tag-beneficiary {
       &:nth-child(15n+1) {
         border-left: 8px solid #0A3C6E;
-        border-bottom: 1px solid $gray;
-        border-top: 1px solid $gray;
       }
       &:nth-child(15n+2) {
         border-left: 8px solid #E57339;
-        border-bottom: 1px solid $gray;
       }
       &:nth-child(15n+3) {
         border-left: 8px solid #896EB3;
-        border-bottom: 1px solid $gray;
       }
       &:nth-child(15n+4) {
         border-left: 8px solid #348C6F;
