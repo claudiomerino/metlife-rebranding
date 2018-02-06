@@ -5,8 +5,8 @@
 	<div class="tag-beneficiary-container">
 {{#each edit-beneficiary.test}}
 		<section class="tag-beneficiary">
-		  <div class="u-row gutter-xs middle-xs">
-		    <div class="col-xs-12 col-md-3">
+		  <div class="u-row gutter-md-edit middle-xs">
+		    <div class="col-xs-12 col-md-3 mg-bottom-xs-30 mg-bottom-md-15">
 		      <span class="input input--ichiro">
 		        <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="name-{{@index}}" required>
 		        <label class="input__label input__label--ichiro" for="name-{{@index}}">
@@ -16,9 +16,9 @@
 		      </span>
 		    </div>
 
-		    <div class="col-xs-12 col-md-3">
+		    <div class="col-xs-12 col-md-3 mg-bottom-xs-30 mg-bottom-md-15">
 		      <span class="input input--ichiro">
-		        <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="lastNameF-{{@index}}" required>
+		        <input class="input__field input__field--ichiro" data-live-validate="true" value="" min="5" type="text" id="lastNameF-{{@index}}" required>
 		        <label class="input__label input__label--ichiro" for="lastNameF-{{@index}}">
 		          <span class="input__label-content input__label-content--ichiro"><strong>Apellido Paterno</strong></span>
 		        </label>
@@ -26,9 +26,9 @@
 		      </span>
 		    </div>
 
-		    <div class="col-xs-12 col-md-3">
+		    <div class="col-xs-12 col-md-3 mg-bottom-xs-15 mg-bottom-md-15">
 		      <span class="input input--ichiro">
-		        <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="lastNameM-{{@index}}" required>
+		        <input class="input__field input__field--ichiro" data-live-validate="true" value="" min="5" type="text" id="lastNameM-{{@index}}" required>
 		        <label class="input__label input__label--ichiro" for="lastNameM-{{@index}}">
 		          <span class="input__label-content input__label-content--ichiro"><strong>Apellido Materno</strong></span>
 		        </label>
@@ -36,13 +36,13 @@
 		      </span>
 		    </div>
 
-		    <div class="col-xs-12 col-md-2">
+		    <div class="col-xs-12 col-md-2 mg-bottom-xs-30 mg-bottom-md-15">
 		      <a href="#">Eliminar Beneficiario</a>
 		    </div>
 
-		    <div class="col-xs-12 col-md-1">
+		    <div class="col-xs-12 col-md-1 mg-bottom-xs-15 mg-bottom-md-15">
 		      <span class="input input--ichiro">
-		        <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="assignement-{{@index}}" required>
+		        <input class="input__field input__field--ichiro" data-live-validate="true" value="25%" min="5" type="text" id="assignement-{{@index}}" required>
 		        <label class="input__label input__label--ichiro" for="assignement-{{@index}}">
 		          <span class="input__label-content input__label-content--ichiro"><strong>Asignación</strong></span>
 		        </label>
@@ -56,7 +56,7 @@
 			 ====================================-->
 		  <section class="toggleContent no-padding-bottom" data-toggle-content="more-data-beneficiary-{{@index}}">
 		    <div class="u-row gutter-xs bottom-xs">
-		      <div class="col-xs-12 col-md-3 u-space">
+		      <div class="col-xs-12 col-md-3 mg-bottom-xs-8 mg-bottom-md-19">
 		        <span class="input input--ichiro">
 		          <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="rut" required>
 		          <label class="input__label input__label--ichiro" for="rut">
@@ -66,29 +66,28 @@
 		        </span>
 		      </div>
 
-		      <div class="col-xs-12 col-md-3 u-space">
+		      <div class="col-xs-12 col-md-3 mg-bottom-xs-4 mg-bottom-md-19">
 		        <section class="u-select u-field clientProfileEdit label_select u-select_labels">
-		          <p class="title_label_select"><strong>Genero:</strong></p>
+		          <p class="title_label_select"><strong>Relación:</strong></p>
 		          <select class="cs-select cs-skin-border GeneralSelect items_select_box">
-		            <option value="" selected>Masculino</option>
-		            <option value="Femenino">Femenino</option>
+		            <option value="" selected>Conyugue</option>
+		            <option value="Femenino">Hija</option>
+		            <option value="Femenino">Hijo</option>
 		          </select>
 		        </section>
 		      </div>
 
-		      <div class="col-xs-12 col-md-3 u-space">
-		        <span class="input input--ichiro">
-		          <input class="input__field input__field--ichiro" data-live-validate="true" value="{{value}}" min="5" type="text" id="clientName" required>
-		          <label class="input__label input__label--ichiro" for="clientName">
-		            <span class="input__label-content input__label-content--ichiro"><strong>Teléfono:</strong></span>
-		          </label>
-		          <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
-		        </span>
+		      <div class="col-xs-12 col-md-3 col-phone mg-bottom-xs-30 mg-bottom-md-19">
+		        <section class="u-field clientProfileEdit label_select">
+		        	<p class="title_label_select"><strong>Teléfono Fijo</strong></p>
+		        	<input class="input_countries input__field input__field--ichiro ChangeContryPhone ValidatePhoneNumber" data-live-validate="true" value="+56 227 170 082" type="text" required>
+		        	<p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+		        </section>
 		      </div>
 
-		      <div class="col-xs-12 col-md-3 u-space">
+		      <div class="col-xs-12 col-md-3 mg-bottom-xs-8 mg-bottom-md-19">
 		        <span class="input input--ichiro">
-		          <input class="input__field input__field--ichiro" data-live-validate="true" value="Monseñor Escribá de Balaguer 14.554" type="text" id="email" required>
+		          <input class="input__field input__field--ichiro" data-live-validate="true" value="daniel.llanos@gmail.com" type="text" id="email" required>
 		          <label class="input__label input__label--ichiro" for="email">
 		            <span class="input__label-content input__label-content--ichiro"><strong>Correo electrónico:</strong></span>
 		          </label>
@@ -98,27 +97,29 @@
 		    </div>
 
 		    <div class="u-row gutter-xs middle-xs">
-		      <div class="col-xs-12 col-md-3">
+		      <div class="col-xs-12 col-md-3 mg-bottom-xs--7 mg-bottom-md-0">
 		        <section class="u-select u-field clientProfileEdit label_select u-select_labels u-space">
 		          <p class="title_label_select"><strong>Región:</strong></p>
 		          <select class="cs-select cs-skin-border GeneralSelect items_select_box">
-		            <option value="" selected>Masculino</option>
-		            <option value="Femenino">Femenino</option>
+		            <option value="" selected>Metropolitana</option>
+		            <option>Metroopolitana 2</option>
+		            <option>Metroopolitana 3</option>
 		          </select>
 		        </section>
 		      </div>
 
-		      <div class="col-xs-12 col-md-3">
+		      <div class="col-xs-12 col-md-3 mg-bottom-xs-19 mg-bottom-md-0">
 		        <section class="u-select u-field clientProfileEdit label_select u-select_labels u-space">
 		          <p class="title_label_select"><strong>Comuna:</strong></p>
 		          <select class="cs-select cs-skin-border GeneralSelect items_select_box">
-		            <option value="" selected>Masculino</option>
-		            <option value="Femenino">Femenino</option>
+		            <option value="" selected>Lo Barnechea</option>
+		            <option value="">Lo Barnechea 2</option>
+		            <option value="">Lo Barnechea 3</option>
 		          </select>
 		        </section>
 		      </div>
 
-		      <div class="col-xs-12 col-md-6">
+		      <div class="col-xs-12 col-md-6 col-address mg-bottom-xs-15 mg-bottom-md-0">
 		        <span class="input input--ichiro">
 		          <input class="input__field input__field--ichiro" data-live-validate="true" value="Monseñor Escribá de Balaguer 14.554" type="text" id="clientAddress" required>
 		          <label class="input__label input__label--ichiro" for="clientAddress">

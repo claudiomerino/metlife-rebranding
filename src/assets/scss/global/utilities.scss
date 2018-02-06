@@ -49,6 +49,34 @@
     margin-bottom: 15px;
   }
 
+  .mg-bottom-19 {
+    margin-bottom: 19px;
+  }
+
+  .mg-bottom-xs-19 {
+    margin-bottom: 19px;
+  }
+
+  .mg-bottom-xs-4 {
+    margin-bottom: 4px;
+  }
+
+  .mg-bottom-xs-8 {
+    margin-bottom: 8px;
+  }
+
+  .mg-bottom-xs--7 {
+    margin-bottom: -7px;
+  }
+
+  .mg-bottom-xs-15 {
+    margin-bottom: 15px;
+  }
+
+  .mg-bottom-xs-30 {
+    margin-bottom: 30px;
+  }
+
   .mg-top-i-0 {
     margin-top: 0 !important;
   }
@@ -105,7 +133,7 @@
       &:nth-child(15n+3),
       &:nth-child(15n+4) {
         padding-left: 15px;
-        padding-top: 15px;
+        padding-top: 30px;
         padding-bottom: 15px;
       }
     }
@@ -115,18 +143,33 @@
     .tag-beneficiary {
       &:nth-child(15n+1) {
         border-left: 8px solid #0A3C6E;
+        border-bottom: 1px solid $gray;
+        border-top: 1px solid $gray;
       }
       &:nth-child(15n+2) {
         border-left: 8px solid #E57339;
+        border-bottom: 1px solid $gray;
       }
       &:nth-child(15n+3) {
         border-left: 8px solid #896EB3;
+        border-bottom: 1px solid $gray;
       }
       &:nth-child(15n+4) {
         border-left: 8px solid #348C6F;
+        border-bottom: 1px solid $gray;
         margin-bottom: 30px;
       }
     }
+  }
+
+  .col-phone {
+    position: relative;
+    top: 4px;
+  }
+
+  .col-address {
+    position: relative;
+    bottom: 4px;
   }
 
 
@@ -140,5 +183,37 @@
 
     .row-title-xs {
       display: none !important;
+    }
+
+    .mg-bottom-xs-4 {
+      margin-bottom: 0;
+    }
+
+    .mg-bottom-xs-8 {
+      margin-bottom: 0;
+    }
+
+    .mg-bottom-xs-15 {
+      margin-bottom: 0;
+    }
+
+    .mg-bottom-xs-30 {
+      margin-bottom: 0;
+    }
+
+    .mg-bottom-xs-19 {
+      margin-bottom: 0;
+    }
+
+    .mg-bottom-md-15 {
+      margin-bottom: 15px;
+    }
+
+    .mg-bottom-md-19 {
+      margin-bottom: 19px;
+    }
+
+    .mg-bottom-md-0 {
+      margin-bottom: 0;
     }
   }

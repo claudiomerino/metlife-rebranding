@@ -7,6 +7,7 @@ $gutter-xs: 15px;
 $gutter-sm: 30px;
 $gutter-md: 30px;
 $gutter-lg: 15px;
+$gutter-md-edit: 5px;
 
 .u-space {
   margin-bottom: $space-xs;
@@ -592,6 +593,15 @@ ul.u-row {
     }
   }
 
+  .gutter-md-edit {
+    margin-left: -$gutter-md-edit;
+    margin-right: -$gutter-md-edit;
+    & > [class*="col-"] {
+      padding-right: $gutter-md-edit;
+      padding-left: $gutter-md-edit;
+    }
+  }
+
   .col-md {
     flex-grow: 1;
     max-width: 100%;
@@ -767,6 +777,15 @@ ul.u-row {
     & > [class*="col-"] {
       padding-right: $gutter-lg;
       padding-left: $gutter-lg;
+    }
+  }
+
+  .gutter-md-edit {
+    margin-left: -$gutter-xs;
+    margin-right: -$gutter-xs;
+    & > [class*="col-"] {
+      padding-right: $gutter-xs;
+      padding-left: $gutter-xs;
     }
   }
 
