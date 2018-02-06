@@ -36,8 +36,11 @@
 	}
 
 	@media screen and ( min-width: 62em ) {
-		
+
 		.alert-success {
 			bottom: 25px;
+			&.no-bottom {
+				bottom: 0;
+			}
 		}
 	}
