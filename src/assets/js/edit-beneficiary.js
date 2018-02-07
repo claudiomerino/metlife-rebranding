@@ -159,5 +159,6 @@
 		callChangeCountryPhoneFn();
 		deleteBeneficiaryFn();
 		valuesAssignmentFn();
+		inputFilledNewFn();
 	})
 /*=====  End of Agregar beneficiario  ======*/

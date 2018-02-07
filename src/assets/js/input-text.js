@@ -1,5 +1,5 @@
 
-	(function() {
+
 		// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
 		if (!String.prototype.trim) {
 			(function() {
@@ -22,6 +22,21 @@
 			inputEl.addEventListener( 'blur', onInputBlur );
 		} );
 
+	  function inputFilledNewFn() {
+	  	setTimeout( () => {
+	  		[].slice.call( document.querySelectorAll( '.input__field' ) ).forEach( function( inputEl ) {
+  				// in case the input is already filled..
+  				if( inputEl.value.trim() !== '' ) {
+  					classie.add( inputEl.parentNode, 'input--filled' );
+  				}
+
+  				// events:
+  				inputEl.addEventListener( 'focus', onInputFocus );
+  				inputEl.addEventListener( 'blur', onInputBlur );
+  			} );
+	  	}, 700 )
+	  }
+
 		function onInputFocus( ev ) {
 			classie.add( ev.target.parentNode, 'input--filled' );
 		}
@@ -31,4 +46,3 @@
 				classie.remove( ev.target.parentNode, 'input--filled' );
 			}
 		}
-	})();
