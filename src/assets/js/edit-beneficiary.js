@@ -2,25 +2,21 @@
 /*=============================================
 =            Eliminar beneficiario            =
 =============================================*/
-	$( '.deleteBeneficiary' ).on( 'click', (ev) => {
-		ev.preventDefault();
-		$( ev.currentTarget ).closest('.tagBeneficiary').remove();
-	});
+	function deleteBeneficiaryFn() {
+		$( 'body' ).on( 'click', '.deleteBeneficiary', (ev) => {
+			ev.preventDefault();
+				$( ev.currentTarget ).closest('.tagBeneficiary').remove();
+		});
+	}
+
+	deleteBeneficiaryFn();
 /*=====  End of Eliminar beneficiario  ======*/
-
-
-/*========================================================
-=            Template para nuevo beneficiario            =
-========================================================*/
-
-/*=====  End of Template para nuevo beneficiario  ======*/
 
 
 /*============================================
 =            Agregar beneficiario            =
 ============================================*/
 	let addNewBeneficiary = $('.tag-beneficiary').length + 1
-	console.log( addNewBeneficiary , 'TEST' )
 
 	$( '.addBeneficiary' ).on('click', (ev) => {
 		ev.preventDefault();
@@ -29,7 +25,7 @@
 			  <div class="u-row gutter-md-edit middle-xs">
 			    <div class="col-xs-12 col-md-3 mg-bottom-xs-30 mg-bottom-md-15">
 			      <span class="input input--ichiro">
-			        <input class="input__field input__field--ichiro" data-live-validate="true" value="Maria Jose" min="5" type="text" id="name-${addNewBeneficiary}" required>
+			        <input class="input__field input__field--ichiro" data-live-validate="true" value="" type="text" id="name-${addNewBeneficiary}" required>
 			        <label class="input__label input__label--ichiro" for="name-${addNewBeneficiary}">
 			          <span class="input__label-content input__label-content--ichiro"><strong>Nombre</strong></span>
 			        </label>
@@ -61,12 +57,10 @@
 			      <a href="#" class="deleteBeneficiary">Eliminar Beneficiario</a>
 			    </div>
 
-			    <div class="col-xs-12 col-md-1 mg-bottom-xs-15 mg-bottom-md-15">
+			    <div class="col-xs-12 col-md-1 mg-bottom-xs-15 mg-bottom-md-15 col-assignment">
+			    	<p class="title_label_select line_jump"><strong>Asignación:</strong></p>
 			      <span class="input input--ichiro">
 			        <input class="input__field input__field--ichiro" data-live-validate="true" value="25%" min="5" type="text" id="assignement-${addNewBeneficiary}" required>
-			        <label class="input__label input__label--ichiro" for="assignement-${addNewBeneficiary}">
-			          <span class="input__label-content input__label-content--ichiro"><strong>Asignación</strong></span>
-			        </label>
 			        <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
 			      </span>
 			    </div>
@@ -76,8 +70,8 @@
 			    <div class="u-row gutter-xs bottom-xs">
 			      <div class="col-xs-12 col-md-3 mg-bottom-xs-8 mg-bottom-md-19">
 			        <span class="input input--ichiro">
-			          <input class="input__field input__field--ichiro" data-live-validate="true" value="Maria Jose" min="5" type="text" id="rut" required>
-			          <label class="input__label input__label--ichiro" for="rut">
+			          <input class="input__field input__field--ichiro" data-live-validate="true" value="45986152-2" min="5" type="text" id="rut-${addNewBeneficiary}" required>
+			          <label class="input__label input__label--ichiro" for="rut-${addNewBeneficiary}">
 			            <span class="input__label-content input__label-content--ichiro"><strong>RUT:</strong></span>
 			          </label>
 			          <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
@@ -105,8 +99,8 @@
 
 			      <div class="col-xs-12 col-md-3 mg-bottom-xs-8 mg-bottom-md-19">
 			        <span class="input input--ichiro">
-			          <input class="input__field input__field--ichiro" data-live-validate="true" value="daniel.llanos@gmail.com" type="text" id="email" required>
-			          <label class="input__label input__label--ichiro" for="email">
+			          <input class="input__field input__field--ichiro" data-live-validate="true" value="daniel.llanos@gmail.com" type="text" id="email-${addNewBeneficiary}" required>
+			          <label class="input__label input__label--ichiro" for="email-${addNewBeneficiary}">
 			            <span class="input__label-content input__label-content--ichiro"><strong>Correo electrónico:</strong></span>
 			          </label>
 			          <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
@@ -139,8 +133,8 @@
 
 			      <div class="col-xs-12 col-md-6 col-address mg-bottom-xs-15 mg-bottom-md-0">
 			        <span class="input input--ichiro">
-			          <input class="input__field input__field--ichiro" data-live-validate="true" value="Monseñor Escribá de Balaguer 14.554" type="text" id="clientAddress" required>
-			          <label class="input__label input__label--ichiro" for="clientAddress">
+			          <input class="input__field input__field--ichiro" data-live-validate="true" value="Monseñor Escribá de Balaguer 14.554" type="text" id="clientAddress-${addNewBeneficiary}" required>
+			          <label class="input__label input__label--ichiro" for="clientAddress-${addNewBeneficiary}">
 			            <span class="input__label-content input__label-content--ichiro"><strong>Dirección:</strong></span>
 			          </label>
 			          <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
@@ -162,9 +156,6 @@
 		GeneralSelectNewFn(`GeneralSelectNew-${addNewBeneficiary}`);
 		addNewBeneficiary++;
 		callChangeCountryPhoneFn();
+		deleteBeneficiaryFn();
 	})
-
-
-
-
 /*=====  End of Agregar beneficiario  ======*/

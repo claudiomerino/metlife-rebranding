@@ -5,7 +5,6 @@
 	});
 
   function GeneralSelectNewFn (generalEl) {
-  	console.log(generalEl, 'generalEl')
   	setTimeout( () => {
 	  	[].slice.call( document.querySelectorAll( `select.${generalEl}.cs-select` ) ).forEach( (el) => {
 	  	  new SelectFx(el);
