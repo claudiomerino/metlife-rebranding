@@ -63,8 +63,8 @@
 
 			    <div class="col-xs-12 col-md-1 mg-bottom-xs-15 mg-bottom-md-15">
 			      <span class="input input--ichiro">
-			        <input class="input__field input__field--ichiro" data-live-validate="true" value="25%" min="5" type="text" id="assignement-${addNewBeneficiary}" required>
-			        <label class="input__label input__label--ichiro" for="assignement-${addNewBeneficiary}">
+			        <input class="input__field input__field--ichiro" data-live-validate="true" value="0" min="0" type="number" id="assignment-${addNewBeneficiary}" required>
+			        <label class="input__label input__label--ichiro" for="assignment-${addNewBeneficiary}">
 			          <span class="input__label-content input__label-content--ichiro"><strong>Asignación</strong></span>
 			        </label>
 			        <p class="form-error f-tiny line_jump">Este campo es requerido.</p>
