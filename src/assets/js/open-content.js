@@ -1,8 +1,11 @@
 
   let $openContent = $( '.openContent' );
 
-  $openContent.on( 'click', ( e ) => {
+
+  $('body').on( 'click', '.openContent', ( e ) => {
     e.preventDefault();
+
+    console.log('open content DENTRO', $openContent)
 
     let $openContentData = $( e.currentTarget ).data( 'open-content' );
     let $toggleContentData = $( '.toggleContent[data-toggle-content=' + $openContentData + ']' );
@@ -39,5 +42,5 @@
       }
 
     }
-
+    console.log('TEST')
   });

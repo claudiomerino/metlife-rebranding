@@ -2,8 +2,8 @@
 <!--===================================
 =            Beneficiarios            =
 ====================================-->
-	<div class="tag-beneficiary-container">
-{{#each edit-beneficiary.test}}
+<div class="tag-beneficiary-container tagBeneficiaryContainer">
+	{{#each edit-beneficiary.test}}
 		<section class="tag-beneficiary tagBeneficiary">
 		  <div class="u-row gutter-md-edit middle-xs">
 		    <div class="col-xs-12 col-md-3 mg-bottom-xs-30 mg-bottom-md-15">
@@ -132,36 +132,17 @@
 		  </section>
 
 		  <div class="col-xs-12">
-		    <a href="" class="f-link openContent" data-open-content="more-data-beneficiary-{{@index}}">
+		    <a href="#" class="f-link openContent" data-open-content="more-data-beneficiary-{{@index}}">
 		      <span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
 		      <i class="fa fa-angle-down" aria-hidden="true"></i>
 		    </a>
 		  </div>
 		 <!-- Fin desplegable más información -->
 		</section>
-{{/each}}
-	</div>
+	{{/each}}
+</div>
 <!--====  End of Beneficiarios  ====-->
 
 
-<!--===================================
-=         Agregar Beneficiario        =
-====================================-->
-	<section>
-		<div class="u-row u-space">
-			<div class="col-xs-6">
-				<p><a href="#">Agregar Beneficiario</a></p>
-			</div>
 
-			<div class="col-xs-6 end-xs">
-				<p><strong>Asignación 100%</strong></p>
-			</div>
-		</div>
-
-		<div class="end-xs">
-			<a href="#" class="u-right">Cancelar</a>
-			<a href="#" class="button button-primary">Solicitar Modificación</a>
-		</div>
-	</section>
-<!--====  End of Beneficiarios  ====-->
 
