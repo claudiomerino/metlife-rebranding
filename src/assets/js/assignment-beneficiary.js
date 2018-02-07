@@ -26,9 +26,18 @@
 		let $assignmentEmpty = $.inArray( 'error', $assignmentEmptyArray )
 		let $assignmentTotalText = $('.assignmentTotalText')
 
-		/*=====  All fields assignment has a value or is higher that 0  ======*/
+		/*=====  All fields assignment not has a value with error. If is -1 not find any error  ======*/
 		if( $assignmentEmpty == -1 ) {
 			$assignmentTotalText.removeClass('red')
+
+			/*=====  If Sum total is equal to 100  ======*/
+			if( sumAssignment == 100 ) {
+				$assignmentTotalText.removeClass('red')
+			}
+			else {
+				$assignmentTotalText.addClass('red')
+			}
+
 		}
 		else {
 			$assignmentTotalText.addClass('red')
