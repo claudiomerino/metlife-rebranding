@@ -1,8 +1,9 @@
 
-	let $assignmentFieldValue = $( '.assignmentFieldValue' )
 
 	/*=====  Put all values for the input Assignment  ======*/
 	function valuesAssignmentFn() {
+		console.log('delete executed')
+		let $assignmentFieldValue = $( '.assignmentFieldValue' )
 		let $assignmentTotal = $( '.assignmentTotal' )
 
 		let $assignmentEmptyArray = []
@@ -52,7 +53,7 @@
 	valuesAssignmentFn()
 
 
-	$assignmentFieldValue.on( 'keydown', (ev) => {
+	$('body').on( 'keydown', '.assignmentFieldValue', (ev) => {
 		setTimeout( () => {
 			valuesAssignmentFn()
 		}, 500)

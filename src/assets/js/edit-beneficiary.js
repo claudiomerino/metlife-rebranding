@@ -158,5 +158,6 @@
 		addNewBeneficiary++;
 		callChangeCountryPhoneFn();
 		deleteBeneficiaryFn();
+		valuesAssignmentFn();
 	})
 /*=====  End of Agregar beneficiario  ======*/
