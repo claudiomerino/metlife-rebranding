@@ -53,7 +53,7 @@
 	valuesAssignmentFn()
 
 
-	$('body').on( 'keydown', '.assignmentFieldValue', (ev) => {
+	$('body').on( 'keyup mouseup', '.assignmentFieldValue', (ev) => {
 		setTimeout( () => {
 			valuesAssignmentFn()
 		}, 500)
