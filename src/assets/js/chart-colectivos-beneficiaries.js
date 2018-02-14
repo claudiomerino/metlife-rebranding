@@ -25,11 +25,6 @@
 							type: 'text',
 							label: 'Cobertura',
 							value: 'Fractura Accidental de Huesos'
-						},
-						{
-							type: 'number',
-							label: '% de Asignación para Pago',
-							value: '33%'
 						}
 					]
 				},
@@ -44,11 +39,6 @@
 							type: 'text',
 							label: 'Cobertura',
 							value: 'Fractura Accidental de Huesos'
-						},
-						{
-							type: 'number',
-							label: '% de Asignación para Pago',
-							value: '33%'
 						}
 					]
 				},
@@ -63,11 +53,6 @@
 							type: 'text',
 							label: 'Cobertura',
 							value: 'Fractura Accidental de Huesos'
-						},
-						{
-							type: 'number',
-							label: '% de Asignación para Pago',
-							value: '33%'
 						}
 					]
 				}

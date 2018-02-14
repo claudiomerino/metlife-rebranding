@@ -39,7 +39,6 @@
 				let UID = chartTable.attr('id')
 				let chartTemplate;
 
-
 				/*=============================================
 				=            Contenido editable               =
 				=============================================*/
@@ -49,6 +48,7 @@
 						<tr>
 				      <td bgcolor="${ dataBackgroundColor[key] }" width="10" class="hide-xs show-table-md"></td>
 				      <td class="table-4 containerDataEdit" valign="middle">
+
 
     				    ${dataLabelText.row.map( ( field, key ) =>
     	            `
@@ -73,11 +73,15 @@
 
     			     ).join('')}
 
-
-								<a href="#" class="f-link openContent " data-open-content="openChartMoreInfo-${UID}-${key}">
-									<span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
-									<i class="fa fa-angle-down" aria-hidden="true"></i>
-								</a>
+							${ dataLabelText.row.length > 2 ?
+								`
+									<a href="#" class="f-link openContent " data-open-content="openChartMoreInfo-${UID}-${key}">
+										<span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a>
+								`
+								: ''
+							}
 
 
 								<section class="toggleContent infoMore mg-top-15" data-toggle-content="openChartMoreInfo-${UID}-${key}">
@@ -225,10 +229,17 @@
   	            `
   			     ).join('')}
 
-							<a href="#" class="f-link openContent " data-open-content="openChartMoreInfo-${UID}-${key}">
-								<span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
-								<i class="fa fa-angle-down" aria-hidden="true"></i>
-							</a>
+
+						${ dataLabelText.row.length > 2 ?
+							`
+								<a href="#" class="f-link openContent " data-open-content="openChartMoreInfo-${UID}-${key}">
+									<span class="openContentText is-open" data-rest-text="Más Información" data-open-text="Menos Información">Más Información</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</a>
+							`
+							: ''
+						}
+
 							<section class="toggleContent" data-toggle-content="openChartMoreInfo-${UID}-${key}">
 	    				    ${dataLabelText.row.map( ( field, key ) =>
 	    	            `

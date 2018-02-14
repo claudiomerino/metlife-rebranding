@@ -5,8 +5,6 @@
   $('body').on( 'click', '.openContent', ( e ) => {
     e.preventDefault();
 
-    console.log('open content DENTRO', $openContent)
-
     let $openContentData = $( e.currentTarget ).data( 'open-content' );
     let $toggleContentData = $( '.toggleContent[data-toggle-content=' + $openContentData + ']' );
     let $openContentText = $( e.currentTarget ).find( 'span' );
@@ -42,5 +40,4 @@
       }
 
     }
-    console.log('TEST')
   });

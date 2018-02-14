@@ -84,13 +84,13 @@
 			  <table class="table-responsive table-responsive-label u-striped u-striped-more">
 			    <thead>
 		      	<tr>
-			        <th class="table-3">
+			        <th class="table-4">
 								<p class="f-small table_title"><strong>Asegurado</strong></p>
 							</th>
-					    <th class="table-1">
+					    <th class="table-1 min-width-108">
 								<p class="f-small table_title"><strong>Estado</strong></p>
 							</th>
-					    <th class="table-2">
+					    <th class="table-1 max-width-108">
 								<p class="f-small table_title"><strong>Fecha Solicitud</strong></p>
 							</th>
 						<th class="table-2">
@@ -108,7 +108,7 @@
 			    <tbody>
 			    	{{#each tab-colectivo-3.items}}
 		      	<tr class="{{striped}}">
-		        	<td class="table-3 max-width-285" valign="middle" data-table-title="Nombre del Asegurado">
+		        	<td class="table-4" valign="middle" data-table-title="Nombre del Asegurado">
 								<p class="table_desc DataNameFilter" data-filter-data-name="{{filterDataName}}">{{desc}}</p>
 								<a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
 									<span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
@@ -116,15 +116,15 @@
 								</a>
 							</td>
 
-							<td class="table-1 hide-xs-important show-md-table-important" valign="middle" data-table-title="Estado">
+							<td class="table-1 min-width-108 hide-xs-important show-md-table-important" valign="middle" data-table-title="Estado">
 								<p class="table_desc">{{stateRequest}}</p>
 							</td>
 
-					    <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Fecha de Modificación">
+					    <td class="table-1 min-width-108 hide-xs-important show-md-table-important" valign="middle" data-table-title="Fecha de Solicitud">
 								<p class="table_desc"><span class="DataExpiration">{{date}}</span></p>
 							</td>
 
-					    <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Identificador del Siniestro">
+					    <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Canal de Solicitud">
 								<p class="table_desc">{{state}}</p>
 							</td>
 
@@ -138,7 +138,7 @@
 		      	</tr>
 
   	      	<tr class="toggleContent" data-toggle-content="{{openContent}}">
-  	    			{{> tables-salud-siniestro }}
+  	    			{{> tables-colectivos-siniestro }}
   		 			</tr>
   		 			{{/each}}
 			    </tbody>

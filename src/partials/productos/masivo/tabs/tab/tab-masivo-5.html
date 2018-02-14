@@ -23,7 +23,7 @@
 		</section>
 
 		<section class="info_insured u-top u-space u-top-bigger">
-		  <p class="f-big tabs-subtitle-profile double_line"><strong>Cuenta para Reembolso de Gastos Médicos</strong></p>			
+		  <p class="f-big tabs-subtitle-profile double_line"><strong>Cuenta para Reembolso de Gastos Médicos</strong></p>
 			{{> change-account }}
 		</section>
 
@@ -87,10 +87,10 @@
 			        <th class="table-4">
 								<p class="f-small table_title"><strong>Asegurado</strong></p>
 							</th>
-					    <th class="table-1">
+					    <th class="table-1 min-width-108">
 								<p class="f-small table_title"><strong>Estado</strong></p>
 							</th>
-					    <th class="table-1">
+					    <th class="table-1 max-width-108">
 								<p class="f-small table_title"><strong>Fecha Solicitud</strong></p>
 							</th>
 						<th class="table-2">
@@ -102,7 +102,7 @@
 						<th class="table-2">
 								<p class="f-small table_title"><strong>Total Pagado:</strong></p>
 							</th>
-		      	</tr> 
+		      	</tr>
 			    </thead>
 
 			    <tbody>
@@ -115,10 +115,10 @@
 							<i class="fa fa-angle-down" aria-hidden="true"></i>
 						</a>
 					</td>
-					<td class="table-1 hide-xs-important show-md-table-important" valign="middle" data-table-title="Estado">
+					<td class="table-1 min-width-108 hide-xs-important show-md-table-important" valign="middle" data-table-title="Estado">
 						<p class="table_desc">{{stateRequest}}</p>
 					</td>
-				    <td class="table-1 hide-xs-important show-md-table-important" valign="middle" data-table-title="Fecha de Modificación">
+				    <td class="table-1 min-width-108 hide-xs-important show-md-table-important" valign="middle" data-table-title="Fecha de Modificación">
 						<p class="table_desc"><span class="DataExpiration">{{date}}</span></p>
 					</td>
 				    <td class="table-2 hide-xs-important show-md-table-important" valign="middle" data-table-title="Identificador del Siniestro">
@@ -133,7 +133,7 @@
 		      	</tr>
 
   	      	<tr class="toggleContent" data-toggle-content="{{openContent}}">
-  	    			{{> tables-salud-siniestro }}
+  	    			{{> tables-masivo-siniestro }}
   		 			</tr>
   		 			{{/each}}
 			    </tbody>
