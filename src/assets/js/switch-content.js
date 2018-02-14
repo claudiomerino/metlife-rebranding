@@ -38,14 +38,14 @@
   })
 
   $('.smsCode').on( 'keydown', (e) => {
-    setTimeout( () => { 
+    setTimeout( () => {
       if( $(e.currentTarget).val().length == 0 ) {
         $('.buttonContinue').addClass('button-disabled')
-        $('.smsCode').addClass('smsCodeInvalid')       
+        $('.smsCode').addClass('smsCodeInvalid')
       }
       else {
         $('.buttonContinue').removeClass('button-disabled')
-        $('.smsCode').removeClass('smsCodeInvalid')      
+        $('.smsCode').removeClass('smsCodeInvalid')
       }
     }, 250)
   })
@@ -53,10 +53,10 @@
 
 
   $('.updateChangeSave').on( 'click', (e) => {
-    if( !$('.updateChangeSave').hasClass('button-disabled') ) {
+
       $('.smsCodeConfirmation').removeClass('hide-xs')
-      $('.updateDataRefund').addClass('hide-xs')      
-    }
+      $('.updateDataRefund').addClass('hide-xs')
+
   })
 
 
@@ -64,7 +64,6 @@
     if( !$('.codeConfirmationContinue').hasClass('button-disabled') ) {
       $('.smsCodeConfirmation').addClass('hide-xs')
       $('.codeConfirmationSuccess').removeClass('hide-xs')
-      console.log($('smsCodeConfirmation').addClass('hide-xs'), 'TEST')
     }
   })
 

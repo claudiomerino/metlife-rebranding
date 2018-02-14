@@ -40,11 +40,6 @@ if( document.getElementById("chartRentsLegalBeneficiaries") ) {
             value: 'F'
           },
           {
-            type: 'number',
-            label: '% de Pensión',
-            value: '50'
-          },
-          {
             type: 'text',
             label: 'Estado de Invalidez',
             value: 'Invalidez'
@@ -97,11 +92,6 @@ if( document.getElementById("chartRentsLegalBeneficiaries") ) {
             type: 'select',
             label: 'Genero',
             value: 'F'
-          },
-          {
-            type: 'number',
-            label: '% de Pensión',
-            value: '50'
           },
           {
             type: 'text',
@@ -158,11 +148,6 @@ if( document.getElementById("chartRentsLegalBeneficiaries") ) {
             value: 'M'
           },
           {
-            type: 'number',
-            label: '% de Pensión',
-            value: '50'
-          },
-          {
             type: 'text',
             label: 'Estado de Invalidez',
             value: 'Invalidez'
@@ -215,11 +200,6 @@ if( document.getElementById("chartRentsLegalBeneficiaries") ) {
             type: 'select',
             label: 'Genero',
             value: 'F'
-          },
-          {
-            type: 'number',
-            label: '% de Pensión',
-            value: '50'
           },
           {
             type: 'text',

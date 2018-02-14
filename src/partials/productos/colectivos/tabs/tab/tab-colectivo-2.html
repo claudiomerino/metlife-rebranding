@@ -4,28 +4,118 @@
 
 		<section class="info_insured u-top u-space">
 			<p class="f-big tabs-subtitle-profile double_line"><strong>Información de mis Asegurados</strong></p>
-			<div class="u-row u-space">
-				<div class="col-xs-12 col-sm-6 col-md-4 u-space-md">
-					<p class="line_jump"><strong>Nombre:</strong></p>
-					<p class="line_jump">Danilo Esteban Llanos Marquez</p>
+
+			<div class="u-row gutter-md">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="clientProfileInitialData u-space">
+						<p class="line_jump"><strong>Nombres:</strong></p>
+						<p class="line_jump">Daniel Esteban</p>
+					</div>
+
+					<section class="u-field u-space clientProfileEdit hide-state-update">
+						<span class="input input--ichiro">
+							<input class="input__field input__field--ichiro" data-live-validate="true" value="Daniel Esteban" min="5" type="text" id="clientName" required>
+							<label class="input__label input__label--ichiro" for="clientName">
+								<span class="input__label-content input__label-content--ichiro"><strong>Nombres:</strong></span>
+							</label>
+							<p class="form-error f-tiny line_jump">Este campo es requerido.</p>
+						</span>
+					</section>
 				</div>
 
-				<div class="col-xs-12 col-sm-6 col-md-4 u-space-md">
-					<p class="line_jump"><strong>Fecha Inicio Vigencia:</strong></p>
-					<p class="line_jump">10/03/1965</p>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="line_jump clientProfileInitialData u-space">
+						<p class="line_jump"><strong>Fecha de Nacimiento:</strong></p>
+						<p class="line_jump">10/11/1978</p>
+					</div>
+
+					<section class="u-field u-space clientProfileEdit hide-state-update label_select">
+						<p class="title_label_select"><strong>Fecha de Nacimiento:</strong></p>
+						<span class="input input--ichiro input--datepicker DatePicker">
+							<input class="input__field input__field--ichiro" type="text" readonly>
+							<i class="material-icons">date_range</i>
+						</span>
+					</section>
 				</div>
 
-				<div class="col-xs-12 col-sm-6 col-md-4 u-space-md">
-					<p class="line_jump"><strong>Fecha Fin Vigencia:</strong></p>
-					<p class="line_jump">10/03/1988</p>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="line_jump clientProfileInitialData u-space">
+						<p class="line_jump"><strong>Fecha de Nacimiento:</strong></p>
+						<p class="line_jump">10/11/1978</p>
+					</div>
+
+					<section class="u-field u-space clientProfileEdit hide-state-update label_select">
+						<p class="title_label_select"><strong>Fecha de Nacimiento:</strong></p>
+						<span class="input input--ichiro input--datepicker DatePicker">
+							<input class="input__field input__field--ichiro" type="text" readonly>
+							<i class="material-icons">date_range</i>
+						</span>
+					</section>
 				</div>
 			</div>
-			<div class="u-row end-xs gutter-xs middle-xs u-space">
-				<div class="col-xs-12 ClientProfileToggleHide">
-					<div class="u-row end-md middle-xs">
-						<a class="button button-small button-full-xs first-xs last-md" data-open="updateDataContact">Modificar datos de Asegurado</a>
-					</div>
-				</div>
+
+			<!-- Mensajes de Guardar cambios -->
+			<div class="col-xs-12 col-md-4 mg-0-auto">
+			  <div class="alert alert-warning u-space hide-state-update ClientProfileMessageCancel">
+			    <p class="alert_desc">Tus cambios han sido cancelados</p>
+			    <i class="fa fa-times alert-close"></i>
+			  </div>
+			</div>
+			<!-- /Mensajes de Guardar cambios -->
+
+			<div class="u-row center-xs end-sm updateDataRefund">
+			  <button class="button button-small button-full-xs last-sm clientProfileUpdateData" data-close aria-label="Close modal">Modificar datos de Asegurado</button>
+			</div>
+
+			<div class="u-row middle-xs center-xs end-sm u-space">
+			  <a data-close aria-label="Close modal" class="u-right-sm u-top-sm col-xs-12 col-sm-3 hide-state-update clientProfileCancelUpdateData">Cancelar</a>
+			  <button type="submit" class="button button-small AcceptLegalSubmit hide-state-update clientProfileSaveUpdateData updateChangeSave">Guardar cambios</button>
+			</div>
+
+			<!-- Mensajes de Continuar sms -->
+			<div class="col-xs-12 col-md-4 mg-0-auto">
+			  <div class="alert alert-success u-space hide-xs codeConfirmationSuccess">
+			    <p class="center-xs">¡Operación exitosa!</p>
+			    <i class="fa fa-times alert-close"></i>
+			  </div>
+			</div>
+
+			<div class="col-xs-12 col-md-4 mg-0-auto">
+			  <div class="alert alert-warning u-space hide-state-update codeConfirmationCancel">
+			    <p class="alert_desc">Tus cambios han sido cancelados</p>
+			    <i class="fa fa-times alert-close"></i>
+			  </div>
+			</div>
+			<!-- /Mensajes de Continuar sms -->
+
+			<!-- Codigo de confirmación sms -->
+			<div class="smsCodeConfirmation hide-xs u-space u-row top-xs">
+			  <div class="col-xs-12 center-xs" data-toggle-match="PayButtonStep3" data-switch="show">
+			    <h5>Código de confirmación</h5>
+			    <p class="f-small">Para tu seguridad, esta operación requiere un código de confirmación, el cual será enviado a tu celular</p>
+			    <p class="u-space">Teléfono de contacto: <span class="ConfirmationSmsPhone" data-select="phoneStep1"></span></p>
+			    <div class="col-xs-12 center-xs" data-toggle-match="SendSMSWrap" data-switch="show">
+			      <a href="#" class="button button--large SendSMS">Enviar SMS</a>
+			    </div>
+
+			    <div class="account-refund-code-confirmation" data-toggle-match="SendSMSWrap" data-switch="hide">
+			      <span class="input input--ichiro input__label--ichiro-white col-xs-12 col-md-4 u-space-small">
+			        <input class="input__field input__field--ichiro smsCode" data-live-validate="true" type="text" id="confirmationSendSmsColectivo" required="" data-select="codeStep3">
+			        <label class="input__label input__label--ichiro" for="confirmationSendSmsColectivo">
+			          <span class="input__label-content input__label-content--ichiro ">Escribe tu código aquí</span>
+			        </label>
+			      </span>
+
+			      <div class="u-row send_sms_row middle-xs center-xs">
+			        <div class="col-xs-12 col-md-2 send_sms_col">
+			          <p class="center-xs start-md"><a href="" class="f-link SendSMSCancel">Cancelar</a></p>
+			        </div>
+			        <div class="col-xs-12 col-md-2 start-xs send_sms_col">
+			          <a href="" class="button button-full buttonContinue button-disabled codeConfirmationContinue">Continuar</a>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
 			</div>
 		</section>
 
