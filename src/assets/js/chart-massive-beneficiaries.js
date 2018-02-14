@@ -43,11 +43,6 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 					},
 					{
 						type: 'number',
-						label: '% de Asignación para Pago',
-						value: '50'
-					},
-					{
-						type: 'number',
 						label: 'Teléfono',
 						value: '50487478'
 					},
@@ -89,11 +84,6 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 						type: 'select',
 						label: 'Genero',
 						value: 'M'
-					},
-					{
-						type: 'number',
-						label: '% de Asignación para Pago',
-						value: '50'
 					},
 					{
 						type: 'number',
@@ -141,11 +131,6 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 					},
 					{
 						type: 'number',
-						label: '% de Asignación para Pago',
-						value: '50'
-					},
-					{
-						type: 'number',
 						label: 'Teléfono',
 						value: '50487478'
 					},
@@ -190,11 +175,6 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 					},
 					{
 						type: 'number',
-						label: '% de Asignación para Pago',
-						value: '50'
-					},
-					{
-						type: 'number',
 						label: 'Teléfono',
 						value: '50487478'
 					},
@@ -236,11 +216,6 @@ if( document.getElementById("chartMassiveBeneficiaries") ) {
 						type: 'select',
 						label: 'Genero',
 						value: 'F'
-					},
-					{
-						type: 'number',
-						label: '% de Asignación para Pago',
-						value: '50'
 					},
 					{
 						type: 'number',
