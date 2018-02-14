@@ -223,7 +223,7 @@
   				    ${dataLabelText.row.map( ( field, key ) =>
   	            `
 									${ key < 2 ?
-										`	<p class="table_label_title">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>`
+										`	<p class="mg-bottom-md-0">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>`
 										: ''
 									}
   	            `
@@ -240,11 +240,11 @@
 							: ''
 						}
 
-							<section class="toggleContent" data-toggle-content="openChartMoreInfo-${UID}-${key}">
+							<section class="toggleContent mg-top-xs-15 mg-top-md-8" data-toggle-content="openChartMoreInfo-${UID}-${key}">
 	    				    ${dataLabelText.row.map( ( field, key ) =>
 	    	            `
 											${ key > 1 ?
-												`	<p class="table_label_title">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>`
+												`	<p class="mg-bottom-md-0">${ field.label ? `<strong>${ field.label }:</strong>` : ''} ${ field.value }</p>`
 												: ''
 											}
 	    	            `
