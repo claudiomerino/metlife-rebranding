@@ -57,6 +57,30 @@ items:
         value: UF 3.44
         classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'true'
+      -
+        id: 9
+        label: 'Cobertura:'
+        value: Invalidez 3/4
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+      -
+        id: 10
+        label: 'Prima UF:'
+        value: UF 3.44
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+      -
+        id: 11
+        label: 'Monto Asegurado UF:'
+        value: UF 3.44
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+      -
+        id: 12
+        label: 'Deducible:'
+        value: UF 3.44
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
   -
     classSection:
     classSubtitle:
