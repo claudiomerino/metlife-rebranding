@@ -6,12 +6,6 @@ if( document.getElementById("chartRRVVChargesFamily") ) {
 
   let dataRRVVChargesFamily = {
     labelsEdit: false,
-    labels: [
-      "Esperanza del Carmen Risopatrón Goycochea",
-      "Maria Francisca Llanos Risopatrón",
-      "Felipe Martin Llanos Risopatrón",
-      "Maria Silva Lopez Llanos"
-    ],
 
     fields: [
       {
