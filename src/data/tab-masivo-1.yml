@@ -171,3 +171,56 @@ items:
         value: daniel.llanos58@gmail.com
         classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'true'
+  -
+    classSection:
+    classSubtitle:
+    subTitle: Garantía Estatal
+    subItems:
+      -
+        id: 8
+        label: 'Estado Garantía Estatal (GE):'
+        value: Sin derecho al beneficio de la garantía estatal
+        classCols: col-xs-12 col-sm-6 col-md-3
+        edit: 'true'
+      -
+        id: 9
+        label: 'Fecha de Cambio de Estado:'
+        value: 31/10/17
+        classCols: col-xs-12 col-sm-6 col-md-3
+        link:
+        edit: 'true'
+      -
+        id: 10
+        label: 'Autoriza Pago Garantía Estatal:'
+        value: Pago de garantia Estatal rechazado
+        classCols: col-xs-12 col-sm-6 col-md-3
+        link:
+        edit: 'true'
+      -
+        id: 10
+        label: 'Motivo Suspensión Pago Garantía Estatal:'
+        value: Percibe APS
+        classCols: col-xs-12 col-sm-6 col-md-3
+        link:
+        edit: 'true'
+      -
+        id: 10
+        label: 'Fecha Suspensión Pago Garantía Estatal:'
+        value: 31/10/17
+        classCols: col-xs-12 col-sm-6 col-md-3
+        link:
+        edit: 'true'
+      -
+        id: 10
+        label: 'Fecha Recepción Dec. Jurada:'
+        value: 31/10/17
+        classCols: col-xs-12 col-sm-6 col-md-3
+        link:
+        edit: 'true'
+      -
+        id: 10
+        label: 'Garantía Estatal pagada en Exceso:'
+        value: $ 125.364
+        classCols: col-xs-12 col-sm-6 col-md-3
+        link:
+        edit: 'true'
