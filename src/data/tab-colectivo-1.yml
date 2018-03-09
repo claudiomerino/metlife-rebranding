@@ -38,7 +38,7 @@ items:
         id: 5
         label: 'Cobertura:'
         value: Invalidez 2/3
-        classCols: col-xs-12 col-sm-6
+        classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'true'
       -
         id: 6
@@ -50,13 +50,13 @@ items:
         id: 7
         label: 'Deducible:'
         value: UF 2.300
-        classCols: col-xs-12 col-sm-6 col-md-3
+        classCols: col-xs-12 col-sm-6
         edit: 'true'
       -
         id: 9
         label: 'Cobertura:'
         value: Invalidez 2/3
-        classCols: col-xs-12 col-sm-6
+        classCols: col-xs-12 col-sm-6 col-md-3
         edit: 'true'
       -
         id: 10
@@ -68,7 +68,7 @@ items:
         id: 11
         label: 'Deducible:'
         value: UF 2.300
-        classCols: col-xs-12 col-sm-6 col-md-3
+        classCols: col-xs-12 col-sm-6
         edit: 'true'
 
   -
