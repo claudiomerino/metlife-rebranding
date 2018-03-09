@@ -5,10 +5,15 @@
     <p class="f-big tabs-subtitle-profile double_line u-top"><strong>Datos de la Última Liquidación de mi Pensión</strong></p>
     <section class="pay_line card card-pink z-depth-2 card_container u-space-2x">
 
-      <div class="u-row">
+      <div class="u-row gutter-md">
         <div class="col-xs-12 col-sm-6 col-md-3 u-space-md">
           <p class="line_jump table_title"><strong>Fecha de Pago:</strong></p>
-          <p class="line_jump">26/06/2017</p>
+          <section class="u-field u-space clientProfileEdit label_select">
+            <span class="input input--ichiro input--datepicker DatePicker">
+              <input class="input__field input__field--ichiro" type="text" readonly>
+              <i class="material-icons">date_range</i>
+            </span>
+          </section>
           <!-- <a data-open-content="calendar" class="openContent">
             <span class="openContentText" data-rest-text="Ver Calendario de Pagos" data-open-text="Ocultar Calendario de Pagos" data-close="true">Ver Calendario de Pagos</span> <i class="fa fa-angle-down" aria-hidden="true"></i>
           </a> -->
@@ -92,10 +97,10 @@
         </div>
       </div>
       <!--====  End of Tabla dentro del desplegable Mas información  ====-->
+    </section>
 
-      <section>
+    <section>
       <p class="f-big tabs-subtitle-profile double_line u-top"><strong>Mes de Pago</strong></p>
-
       <div class="u-row middle-xs gutter-md">
         <div class="col-xs-12 col-md-4">
           <section class="u-field u-space clientProfileEdit label_select">
@@ -115,65 +120,6 @@
           <a href="#"> Descargar calendario Anual</a>
         </div>
       </div>
-    </section>
-
-      <section class="u-space">
-        <p class="f-big tabs-subtitle-profile"><strong>Mis Liquidaciones Históricas</strong></p>
-
-        <div class="table table-scroll center-xs col-xs-12 u-space">
-          <table class="table-responsive table-responsive-label u-striped u-striped-more">
-            <thead>
-              <tr>
-                <th class="table-3">
-                  <p class="f-small table_title"><strong>Fecha de Pago</strong></p>
-                </th>
-                <th class="table-2">
-                  <p class="f-small table_title"><strong>Total de Ingresos</strong></p>
-                </th>
-                <th class="table-2">
-                  <p class="f-small table_title"><strong>Total de Descuentos</strong></p>
-                </th>
-                <th class="table-2">
-                  <p class="f-small table_title"><strong>Líquido a Pagar</strong></p>
-                </th>
-                <th class="table-3">
-                  <p class="f-small table_title"><strong></strong></p>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {{#each tab-rrvv-2.historic}}
-              <tr class="{{striped}}">
-                <td class="table-3" align="left" valign="middle" data-table-title="Período de Cobertura">
-                  <p class="table_desc">{{desc}}</p>
-                  <a href="" class="f-link openContent hide-md" data-open-content="{{openContent}}">
-                    <span class="openContentText" data-rest-text="{{restText}}" data-open-text="{{openText}}" data-close="true">{{restText}}</span>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                  </a>
-                </td>
-                <td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Fecha de Pago">
-                  <p class="table_desc">{{dataExpiration}}</p>
-                </td>
-                <td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Forma de Pago">
-                  <p class="table_desc">{{#if link}}<a href="{{link}}">{{/if}}{{dataPay}}{{#if link}}</a>{{/if}}</p>
-                </td>
-                <td class="table-2 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Monto Pagado UF/$">
-                  <p class="table_desc">{{total}}</p>
-                </td>
-                <td class="table-3 hide-xs-important show-md-table-important" align="left" valign="middle" data-table-title="Descarga">
-                  <p class="table_desc"><a href="#">Descargar Liquidación<i class="fa fa-download u-left-small" aria-hidden="true"></i></a></p>
-                </td>
-              </tr>
-
-              <tr class="toggleContent" data-toggle-content="{{openContent}}">
-                {{> tables-salud }}
-              </tr>
-              {{/each}}
-            </tbody>
-          </table>
-        </div>
-         {{> pagination}}
-      </section>
     </section>
 
 
