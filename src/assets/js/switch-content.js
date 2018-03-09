@@ -61,6 +61,8 @@
 
 
   $('.codeConfirmationContinue').on( 'click', (e) => {
+    $('.changeAccountData').removeClass('hide-xs');
+    console.log( 'ENTRY', $('.changeAccountData').removeClass('hide-xs') )
     if( !$('.codeConfirmationContinue').hasClass('button-disabled') ) {
       $('.smsCodeConfirmation').addClass('hide-xs')
       $('.codeConfirmationSuccess').removeClass('hide-xs')
